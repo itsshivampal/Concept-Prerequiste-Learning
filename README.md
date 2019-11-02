@@ -1,4 +1,4 @@
-# Personalise Concept Hierarchy for Machine Learning Course
+# Personalise Concept Hierarchy for ML Course
 **Objective:** Construct a personalise concept hierarchy based on the user’s learning requirement for the machine learning course
 
 
