@@ -1,0 +1,469 @@
+Chapter 2
+
+
+The study of linear algebra involves several types of mathematical objects:
+
+• Scalars: A scalar is just a single number, in contrast to most of the other
+objects studied in linear algebra, which are usually arrays of multiple numbers.
+We write scalars in italics. We usually give scalars lower-case variable names.
+When we introduce them, we specify what kind of number they are. For
+
+31
+
+
+
+example, we might say “Let s ∈ R be the slope of the line,” while deﬁning a
+real-valued scalar, or “Let n ∈ N be the number of units,” while deﬁning a
+natural number scalar.
+
+• Vectors: A vector is an array of numbers. The numbers are arranged in
+order. We can identify each individual number by its index in that ordering.
+Typically we give vectors lower case names written in bold typeface, such
+as x. The elements of the vector are identiﬁed by writing its name in italic
+typeface, with a subscript. The ﬁrst element of x is x1, the second element
+is x2 and so on. We also need to say what kind of numbers are stored in
+the vector. If each element is in R, and the vector has n elements, then the
+vector lies in the set formed by taking the Cartesian product of R n times,
+denoted as Rn. When we need to explicitly identify the elements of a vector,
+we write them as a column enclosed in square brackets:
+
+x =
+
+x1
+x2
+...
+xn
+
+.
+
+
+
+(2.1)
+
+We can think of vectors as identifying points in space, with each element
+giving the coordinate along a diﬀerent axis.
+
+Sometimes we need to index a set of elements of a vector. In this case, we
+deﬁne a set containing the indices and write the set as a subscript. For
+example, to access x1, x3 and x6, we deﬁne the set S = {1, 3, 6} and write
+xS. We use the − sign to index the complement of a set. For example x−1 is
+the vector containing all elements of x except for x1, and x−S is the vector
+containing all of the elements of
+
+except for
+
+x
+
+x1, x3 and x6 .
+
+• Matrices: A matrix is a 2-D array of numbers, so each element is identiﬁed by
+two indices instead of just one. We usually give matrices upper-case variable
+names with bold typeface, such as A. If a real-valued matrix A has a height
+of m and a width of n, then we say that A ∈ Rm n× . We usually identify
+the elements of a matrix using its name in italic but not bold font, and the
+indices are listed with separating commas. For example, A1 1,
+is the upper
+left entry of A and Am,n is the bottom right entry. We can identify all of
+the numbers with vertical coordinate i by writing a “ ” for the horizontal
+coordinate. For example, Ai,: denotes the horizontal cross section of A with
+vertical coordinate i. This is known as the i-th row of A. Likewise, A:,i is
+
+:
+
+32
+
+CHAPTER 2. LINEAR ALGEBRA
+
+A =
+
+A1 1, A1 2,
+A2 1, A2 2,
+A3 1, A3 2,
+
+ ⇒ A = A1 1, A2 1,
+
+A1 2, A2 2,
+
+A3 1,
+
+A3 2, 
+
+Figure 2.1: The transpose of the matrix can be thought of as a mirror image across the
+main diagonal.
+
+the i-th column of A. When we need to explicitly identify the elements of a
+matrix, we write them as an array enclosed in square brackets:
+
+ A1 1, A1 2,
+A2 1, A2 2, .
+
+(2.2)
+
+Sometimes we may need to index matrix-valued expressions that are not just
+a single letter. In this case, we use subscripts after the expression, but do
+not convert anything to lower case. For example, f (A)i,j gives element (i, j)
+of the matrix computed by applying the function
+
+.
+f A
+
+to
+
+• Tensors: In some cases we will need an array with more than two axes. In
+the general case, an array of numbers arranged on a regular grid with a
+variable number of axes is known as a
+We denote a tensor named “A”
+with this typeface: A. We identify the element of A at coordinates (i, j, k)
+by writing A
+
+tensor.
+
+i,j,k.
+
+One important operation on matrices is the transpose. The transpose of a
+matrix is the mirror image of the matrix across a diagonal line, called the main
+diagonal, running down and to the right, starting from its upper left corner. See
+for a graphical depiction of this operation. We denote the transpose of a
+Fig.
+2.1
+asA A, and it is deﬁned such that
+matrix
+
+(A)i,j = Aj,i.
+
+(2.3)
+
+Vectors can be thought of as matrices that contain only one column. The
+transpose of a vector is therefore a matrix with only one row. Sometimes we
+
+33
+
+CHAPTER 2. LINEAR ALGEBRA
+
+deﬁne a vector by writing out its elements in the text inline as a row matrix,
+then using the transpose operator to turn it into a standard column vector, e.g.,
+x = [x1, x2, x3].
+
+A scalar can be thought of as a matrix with only a single entry. From this, we
+
+can see that a scalar is its own transpose: a
+
+a=   .
+
+We can add matrices to each other, as long as they have the same shape, just
+
+by adding their corresponding elements:
+
+C A B
+
+=  +
+
+where
+
+Ci,j = Ai,j + Bi,j.
+
+i,j + c.
+
+We can also add a scalar to a matrix or multiply a matrix by a scalar, just
+by performing that operation on each element of a matrix: D = a · B + c where
+Di,j = a B·
+
+In the context of deep learning, we also use some less conventional notation.
+We allow the addition of matrix and a vector, yielding another matrix: C = A + b,
+where Ci,j = Ai,j + bj. In other words, the vector b is added to each row of the
+matrix. This shorthand eliminates the need to deﬁne a matrix with b copied into
+each row before doing the addition. This implicit copying of b to many locations
+is called broadcasting.
+
+2.2 Multiplying Matrices and Vectors
+
+One of the most important operations involving matrices is multiplication of two
+matrices. The matrix product of matrices A and B is a third matrix C . In order
+for this product to be deﬁned, A must have the same number of columns as B has
+rows. If A is of shape m n× and B is of shape n
+p× , then C is of shape m p× .
+We can write the matrix product just by placing two or more matrices together,
+e.g.
+
+The product operation is deﬁned by
+
+C AB= 
+
+.
+
+Ci,j =k
+
+Ai,kBk,j.
+
+(2.4)
+
+(2.5)
+
+Note that the standard product of two matrices is
+
+just a matrix containing
+the product of the individual elements. Such an operation exists and is called the
+element-wise product
+
+, and is denoted as
+
+Hadamard product
+
+not
+
+or
+
+.
+
+A B
+
+The dot product between two vectors x and y of the same dimensionality is the
+matrix product xy. We can think of the matrix product C = AB as computing
+Ci,j as the dot product between row of
+
+and column
+
+j B
+
+i A
+
+of
+
+.
+
+34
+
+CHAPTER 2. LINEAR ALGEBRA
+
+Matrix product operations have many useful properties that make mathematical
+analysis of matrices more convenient. For example, matrix multiplication is
+distributive:
+
+It is also associative:
+
+A B C
+
+( + ) = 
+
+AB AC
+
++
+
+.
+
+A BC
+
+(
+
+) = (
+
+AB C
+
+)
+
+.
+
+(2.6)
+
+(2.7)
+
+Matrix multiplication is
+AB = BA does not
+always hold), unlike scalar multiplication. However, the dot product between two
+vectors is commutative:
+
+commutative (the condition
+
+not
+
+xy
+
+y=  x.
+
+The transpose of a matrix product has a simple form:
+
+)AB  = B A.
+
+(
+
+(2.8)
+
+(2.9)
+
+This allows us to demonstrate Eq.
+such a product is a scalar and therefore equal to its own transpose:
+
+, by exploiting the fact that the value of
+
+2.8
+
+xy = xy = yx.
+
+(2.10)
+
+Since the focus of this textbook is not linear algebra, we do not attempt to
+develop a comprehensive list of useful properties of the matrix product here, but
+the reader should be aware that many more exist.
+
+We now know enough linear algebra notation to write down a system of linear
+
+equations:
+
+Ax b= 
+
+(2.11)
+where A ∈ Rm n× is a known matrix, b ∈ Rm is a known vector, and x ∈ Rn is a
+vector of unknown variables we would like to solve for. Each element xi of x is one
+of these unknown variables. Each row of A and each element of b provide another
+constraint. We can rewrite Eq.
+
+2.11
+
+as:
+
+A1 :, x = b1
+
+A2 :, x = b2
+
+. . .
+
+Am,:x = bm
+
+or, even more explicitly, as:
+
+A1 1, x1 + A1 2, x2 +
+
++··· A1,nxn = b1
+
+35
+
+(2.12)
+
+(2.13)
+
+(2.14)
+
+(2.15)
+
+(2.16)
+
+CHAPTER 2. LINEAR ALGEBRA
+
+1 0 0
+0 1 0
+0 0 1
+
+
+
+
+
+Figure 2.2:
+
+Example identity matrix
+
+: This is
+
+I3 .
+
+A2 1, x1 + A2 2, x2 +
+
+A m,1x1 + Am,2x2 +
+
++··· A2,nxn = b2
+. . .
++··· Am,nxn = bm .
+
+(2.17)
+
+(2.18)
+
+(2.19)
+
+Matrix-vector product notation provides a more compact representation for
+
+equations of this form.
+
+2.3
+
+Identity and Inverse Matrices
+
+Linear algebra oﬀers a powerful tool called
+for many values of
+analytically solve Eq.
+
+2.11
+
+matrix inversion
+.
+A
+
+that allows us to
+
+To describe matrix inversion, we ﬁrst need to deﬁne the concept of an identity
+matrix. An identity matrix is a matrix that does not change any vector when we
+multiply that vector by that matrix. We denote the identity matrix that preserves
+n-dimensional vectors as In. Formally, I n ∈ Rn n× , and
+
+∀ ∈x Rn, I nx x= 
+.
+
+(2.20)
+
+The structure of the identity matrix is simple: all of the entries along the main
+diagonal are 1, while all of the other entries are zero. See Fig.
+for an example.
+matrix inverse A is denoted as A−1, and it is deﬁned as the matrix
+
+The
+
+2.2
+
+of
+
+such that
+
+A−1A I=  n .
+
+We can now solve Eq.
+
+2.11
+
+by the following steps:
+
+Ax b= 
+
+A−1Ax A=  −1b
+
+Inx A=  −1b
+
+36
+
+(2.21)
+
+(2.22)
+
+(2.23)
+
+(2.24)
+
+CHAPTER 2. LINEAR ALGEBRA
+
+x A=  −1b.
+
+(2.25)
+
+Of course, this depends on it being possible to ﬁnd A−1. We discuss the
+
+conditions for the existence of A−1 in the following section.
+
+When A−1 exists, several diﬀerent algorithms exist for ﬁnding it in closed form.
+In theory, the same inverse matrix can then be used to solve the equation many
+times for diﬀerent values of b. However, A −1 is primarily useful as a theoretical
+tool, and should not actually be used in practice for most software applications.
+Because A−1 can be represented with only limited precision on a digital computer,
+algorithms that make use of the value of b can usually obtain more accurate
+estimates of
+
+.x
+
+

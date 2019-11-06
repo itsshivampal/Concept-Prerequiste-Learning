@@ -1,0 +1,500 @@
+chapter
+study
+several types
+mathematical objects
+• scalars
+scalar
+single number
+contrast
+other objects
+linear algebra
+arrays
+multiple numbers
+scalars
+italics
+scalars lower-case variable names
+kind
+number
+example
+“ let s ∈ r
+slope
+line
+”
+real-valued scalar
+“ let n ∈ n
+number
+units
+”
+natural number scalar
+• vectors
+vector
+array
+numbers
+numbers
+order
+individual number
+index
+ordering
+vectors
+case names
+bold typeface
+x
+elements
+vector
+name
+italic typeface
+subscript
+ﬁrst element
+x
+second element
+kind
+numbers
+vector
+element
+r
+vector
+n elements
+vector
+set
+cartesian product
+r n times
+rn
+elements
+vector
+column
+square brackets
+x = x1 x2
+xn
+
+vectors
+points
+space
+element
+coordinate
+diﬀerent axis
+index
+set
+elements
+vector
+case
+set
+indices
+set
+subscript
+example
+access x1
+x3
+x6
+set s =
+write xs
+− sign
+index
+complement
+set
+example x−1
+vector
+elements
+x
+x1
+x−s
+vector
+elements
+x x1
+x3
+x6
+• matrices
+matrix
+2-d array
+numbers
+element
+indices
+matrices upper-case variable names
+bold typeface
+a
+real-valued matrix a
+height
+m
+width
+n
+a ∈ rm
+elements
+matrix
+name
+bold font
+indices
+commas
+example
+a1
+entry
+a
+am
+n
+bottom right entry
+numbers
+vertical coordinate i
+“ ”
+horizontal coordinate
+example
+ai
+horizontal cross section
+a
+vertical coordinate i
+i-th row
+a
+likewise
+a
+,i
+chapter
+linear algebra a = a1
+a1
+a2
+a2
+a3
+a3
+ ⇒ a = a1
+a2
+a1
+a2
+a3
+a3
+ figure
+transpose
+matrix
+mirror image
+main diagonal
+i-th column
+a
+elements
+matrix
+array
+square brackets
+ a1
+a1
+a2
+a2
+
+index matrix-valued expressions
+single letter
+case
+subscripts
+expression
+anything
+case
+example
+f
+i
+j
+element
+j
+matrix
+function
+• tensors
+cases
+array
+axes
+general case
+array
+numbers
+regular grid
+variable number
+axes
+tensor
+a ”
+typeface
+element
+a
+coordinates
+i
+j
+k
+a tensor
+i
+j
+k
+important operation
+matrices
+transpose
+transpose
+matrix
+mirror image
+matrix
+diagonal line
+right
+upper left corner
+graphical depiction
+operation
+transpose
+fig
+asa a
+matrix
+a
+i
+j = aj
+i
+vectors
+matrices
+column
+transpose
+vector
+matrix
+row
+chapter
+linear algebra
+vector
+elements
+text inline
+row matrix
+transpose operator
+standard column vector
+e.g.
+x = [ x1
+x2
+x3 ] 
+matrix
+single entry
+scalar
+own transpose
+a= 
+matrices
+same shape
+corresponding elements
+b = +
+ci
+j = ai
+j + bi
+j
+i
+j + c.
+matrix
+matrix
+operation
+element
+matrix
+d
+· b + c
+di
+j
+b·
+context
+deep learning
+conventional notation
+addition
+matrix
+vector
+matrix
+c
+a + b
+ci
+j = ai
+j + bj
+other words
+vector b
+row
+matrix
+shorthand
+need
+matrix
+b
+row
+addition
+implicit copying
+b
+many locations
+broadcasting
+matrices
+vectors one
+important operations
+matrices
+multiplication
+matrices
+matrix product
+matrices a
+b
+third matrix c
+order
+product
+same number
+columns
+b
+rows
+shape m n×
+b
+shape n p×
+c
+shape m p×
+matrix product
+matrices
+e.g
+product operation
+c ab=
+ci
+j =k ai
+kbk
+j
+note
+standard product
+matrices
+matrix
+product
+individual elements
+operation exists
+element-wise product
+hadamard product
+b
+dot product
+vectors
+same dimensionality
+matrix product xy
+matrix product c = ab
+ci
+j
+dot product
+row
+j b
+chapter
+linear algebra matrix product operations
+many useful properties
+mathematical analysis
+matrices
+convenient
+example
+matrix multiplication
+b c
++
+ab ac +
+bc
+=
+ab c
+matrix multiplication
+ab = ba
+scalar multiplication
+dot product
+vectors
+commutative
+condition
+xy y= x
+transpose
+matrix product
+simple form
+ab  = b a
+eq
+product
+own transpose
+fact
+value
+xy = xy = yx
+focus
+textbook
+linear algebra
+comprehensive list
+useful properties
+matrix product
+reader
+linear algebra notation
+system
+linear equations
+ax b=
+∈ rm n×
+known matrix
+b ∈ rm
+known vector
+x ∈ rn
+vector
+unknown variables
+element xi
+x
+unknown variables
+row
+a
+element
+b
+constraint
+eq
+a1
+x =
+a2
+x = b2
+am
+:x = bm
+a1
+x1 + a1
+x2 + +··· a1
+nxn = b1
+chapter
+linear algebra
+  figure
+example identity matrix
+i3
+a2
+x1 + a2
+x2
+a m,1x1 + am,2x2 + +··· a2
+nxn = b2
++··· am
+nxn = bm
+matrix-vector product notation
+compact representation
+equations
+form
+identity
+inverse matrices linear
+oﬀers
+powerful tool
+many values
+eq
+matrix inversion
+matrix inversion
+concept
+identity matrix
+identity matrix
+matrix
+vector
+vector
+matrix
+identity matrix
+n-dimensional vectors
+formally
+∈ rn n×
+∀ ∈x rn
+structure
+identity matrix
+entries
+main diagonal
+other entries
+fig
+example
+inverse
+a−1
+matrix
+a−1a i=
+eq
+following steps
+ax b= a−1ax a= −1b inx a=
+chapter
+linear algebra x a= −1b
+course
+a−1
+conditions
+existence
+a−1
+following section
+a−1
+several diﬀerent algorithms
+closed form
+theory
+same inverse matrix
+equation many times
+diﬀerent values
+b
+−1
+theoretical tool
+practice
+software applications
+a−1
+limited precision
+digital computer
+use
+value
+b
+accurate estimates
+.x
