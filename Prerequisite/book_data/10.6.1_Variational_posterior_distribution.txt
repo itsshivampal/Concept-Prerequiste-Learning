@@ -1,0 +1,126 @@
+Here we shall make use of a variational approximation based on the local bounds
+introduced in Section 10.5. This allows the likelihood function for logistic regres-
+sion, which is governed by the logistic sigmoid, to be approximated by the expo-
+nential of a quadratic form. It is therefore again convenient to choose a conjugate
+Gaussian prior of the form (4.140). For the moment, we shall treat the hyperparam-
+eters m0 and S0 as fixed constants. In Section 10.6.3, we shall demonstrate how the
+variational formalism can be extended to the case where there are unknown hyper-
+parameters whose values are to be inferred from the data.
+In the variational framework, we seek to maximize a lower bound on the marginal
+likelihood. For the Bayesian logistic regression model, the marginal likelihood takes
+the form
+p(t) =
+p(t|w)p(w) dw =
+p(tn|w)
+p(w) dw.
+We first note that the conditional distribution for t can be written as
+p(t|w) = σ(a)t {1 − σ(a)}1−t
+1 −
+1
+t
+1 + e−a
+1 + e−a
+e−a
+1 + e−a = eatσ(−a)
+= eat
+1
+1−t
+where a = wTφ. In order to obtain a lower bound on p(t), we make use of the
+variational lower bound on the logistic sigmoid function given by (10.144), which
+(10.147)
+(10.148)
+N
+N
+n=1
+N
+10.6. Variational Logistic Regression
+we reproduce here for convenience
+σ(z) � σ(ξ) exp
+(z − ξ)/2 − λ(ξ)(z2 − ξ2)
+where
+We can therefore write
+1
+2ξ
+1
+2
+499
+(10.149)
+(10.150)
+(10.151)
+p(t|w) = eatσ(−a) � eatσ(ξ) exp
+−(a + ξ)/2 − λ(ξ)(a2 − ξ2)
+Note that because this bound is applied to each of the terms in the likelihood function
+separately, there is a variational parameter ξn corresponding to each training set
+observation (φn, tn). Using a = wTφ, and multiplying by the prior distribution, we
+obtain the following bound on the joint distribution of t and w
+p(t, w) = p(t|w)p(w) � h(w, ξ)p(w)
+where ξ denotes the set {ξn} of variational parameters, and
+(10.152)
+h(w, ξ) =
+σ(ξn) exp
+n=1
+wTφntn − (wTφn + ξn)/2
+− λ(ξn)([wTφn]2 − ξ2
+n)
+(10.153)
+Evaluation of the exact posterior distribution would require normalization of the left-
+hand side of this inequality. Because this is intractable, we work instead with the
+right-hand side. Note that the function on the right-hand side cannot be interpreted
+as a probability density because it is not normalized. Once it is normalized to give a
+variational posterior distribution q(w), however, it no longer represents a bound.
+Because the logarithm function is monotonically increasing, the inequality A �
+B implies ln A � ln B. This gives a lower bound on the log of the joint distribution
+of t and w of the form
+ln{p(t|w)p(w)} � ln p(w) +
+ln σ(ξn) + wTφntn
+− (wTφn + ξn)/2 − λ(ξn)([wTφn]2 − ξ2
+n)
+(10.154)
+Substituting for the prior p(w), the right-hand side of this inequality becomes, as a
+function of w
+1
+2
+(w − m0)TS−1
+0 (w − m0)
+n=1
+wTφn(tn − 1/2) − λ(ξn)wT(φnφT
+n)w
++ const.
+(10.155)
+N
+N
+n=1
+500
+10. APPROXIMATE INFERENCE
+Exercise 10.32
+(10.156)
+(10.157)
+(10.158)
+This is a quadratic function of w, and so we can obtain the corresponding variational
+approximation to the posterior distribution by identifying the linear and quadratic
+terms in w, giving a Gaussian variational posterior of the form
+where
+q(w) = N (w|mN , SN )
+mN = SN
+S−1
+0 m0 +
+(tn − 1/2)φn
+n=1
+S−1
+N = S−1
+0 + 2
+λ(ξn)φnφT
+n.
+As with the Laplace framework, we have again obtained a Gaussian approximation
+to the posterior distribution. However, the additional flexibility provided by the vari-
+ational parameters {ξn} leads to improved accuracy in the approximation (Jaakkola
+and Jordan, 2000).
+Here we have considered a batch learning context in which all of the training
+data is available at once. However, Bayesian methods are intrinsically well suited
+to sequential learning in which the data points are processed one at a time and then
+discarded. The formulation of this variational approach for the sequential case is
+straightforward.
+Note that the bound given by (10.149) applies only to the two-class problem and
+so this approach does not directly generalize to classification problems with K > 2
+classes. An alternative bound for the multiclass case has been explored by Gibbs
+(1997).

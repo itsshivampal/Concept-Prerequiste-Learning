@@ -1,0 +1,63 @@
+In applications of the Bayesian mixture of Gaussians model we will often be
+x of the observed variable. As-
+z, and the pre-
+interested in the predictive density for a new value
+sociated with this observation will be a corresponding latent variable
+dictive density is then given by
+p(
+x|X) =
+z, µ, Λ)p(
+p(
+x|
+z|π)p(π, µ, Λ|X) dπ dµ dΛ
+(10.78)
+Exercise 10.18
+k=1
+k=1
+K
+K
+1
+K
+k=1
+10.2. Illustration: Variational Mixture of Gaussians
+483
+where p(π, µ, Λ|X) is the (unknown) true posterior distribution of the parameters.
+Using (10.37) and (10.38) we can first perform the summation over
+z to give
+p(
+x|X) =
+πkN
+x|µk, Λ−1
+k
+p(π, µ, Λ|X) dπ dµ dΛ.
+(10.79)
+Because the remaining integrations are intractable, we approximate the predictive
+density by replacing the true posterior distribution p(π, µ, Λ|X) with its variational
+approximation q(π)q(µ, Λ) to give
+p(
+x|X) =
+πkN
+x|µk, Λ−1
+k
+q(π)q(µk, Λk) dπ dµk dΛk
+(10.80)
+Exercise 10.19
+where we have made use of the factorization (10.55) and in each term we have im-
+plicitly integrated out all variables {µj, Λj} for j = k The remaining integrations
+can now be evaluated analytically giving a mixture of Student’s t-distributions
+p(
+x|X) =
+αkSt(
+x|mk, Lk, νk + 1 − D)
+in which the kth component has mean mk, and the precision is given by
+Lk =
+(νk + 1 − D)βk
+(1 + βk)
+Wk
+(10.81)
+(10.82)
+Exercise 10.20
+in which νk is given by (10.63). When the size N of the data set is large the predictive
+distribution (10.81) reduces to a mixture of Gaussians.
+Section 10.1.4
+Exercise 10.21

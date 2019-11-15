@@ -1,0 +1,116 @@
+Binary variables can be used to describe quantities that can take one of two possible
+values. Often, however, we encounter discrete variables that can take on one of K
+possible mutually exclusive states. Although there are various alternative ways to
+express such variables, we shall see shortly that a particularly convenient represen-
+tation is the 1-of-K scheme in which the variable is represented by a K-dimensional
+vector x in which one of the elements xk equals 1, and all remaining elements equal
+n=1
+K
+N
+x
+x
+K
+k=1
+P
+xnk
+k=1
+k=1
+k=1
+k
+K
+K
+K
+n
+K
+K
+2.2. Multinomial Variables
+75
+0. So, for instance if we have a variable that can take K = 6 states and a particular
+observation of the variable happens to correspond to the state where x3 = 1, then x
+will be represented by
+Note that such vectors satisfy
+by the parameter µk, then the distribution of x is given
+x = (0, 0, 1, 0, 0, 0)T.
+(2.25)
+k=1 xk = 1. If we denote the probability of xk = 1
+K
+(2.26)
+(2.27)
+(2.28)
+where µ = (µ1, . . . , µK)T, and the parameters µk are constrained to satisfy µk � 0
+k µk = 1, because they represent probabilities. The distribution (2.26) can be
+and
+regarded as a generalization of the Bernoulli distribution to more than two outcomes.
+It is easily seen that the distribution is normalized
+p(x|µ) =
+µxk
+k
+p(x|µ) =
+µk = 1
+and that
+E[x|µ] =
+p(x|µ)x = (µ1, . . . , µM )T = µ.
+Now consider a data set D of N independent observations x1, . . . , xN . The
+corresponding likelihood function takes the form
+p(D|µ) =
+µxnk
+k =
+n xnk)
+µmk
+k .
+k=1
+(2.29)
+We see that the likelihood function depends on the N data points only through the
+K quantities
+mk =
+(2.30)
+Section 2.4
+Appendix E
+which represent the number of observations of xk = 1. These are called the sufficient
+statistics for this distribution.
+In order to find the maximum likelihood solution for µ, we need to maximize
+ln p(D|µ) with respect to µk taking account of the constraint that the µk must sum
+to one. This can be achieved using a Lagrange multiplier λ and maximizing
+mk ln µk + λ
+k=1
+k=1
+µk − 1
+Setting the derivative of (2.31) with respect to µk to zero, we obtain
+µk = −mk/λ.
+(2.31)
+(2.32)
+K
+K
+K
+k=1
+K
+K
+k=1
+76
+2. PROBABILITY DISTRIBUTIONS
+We can solve for the Lagrange multiplier λ by substituting (2.32) into the constraint
+k µk = 1 to give λ = −N. Thus we obtain the maximum likelihood solution in
+(2.33)
+the form
+k = mk
+µML
+N
+which is the fraction of the N observations for which xk = 1.
+We can consider the joint distribution of the quantities m1, . . . , mK, conditioned
+on the parameters µ and on the total number N of observations. From (2.29) this
+takes the form
+Mult(m1, m2, . . . , mK|µ, N) =
+N
+m1m2 . . . mK
+µmk
+k
+k=1
+(2.34)
+which is known as the multinomial distribution. The normalization coefficient is the
+number of ways of partitioning N objects into K groups of size m1, . . . , mK and is
+given by
+N
+m1m2 . . . mK
+N!
+m1!m2! . . . mK! .
+Note that the variables mk are subject to the constraint

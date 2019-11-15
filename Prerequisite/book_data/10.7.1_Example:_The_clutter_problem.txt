@@ -1,0 +1,136 @@
+Following Minka (2001b), we illustrate the EP algorithm using a simple exam-
+ple in which the goal is to infer the mean θ of a multivariate Gaussian distribution
+over a variable x given a set of observations drawn from that distribution. To make
+the problem more interesting, the observations are embedded in background clutter,
+which itself is also Gaussian distributed, as illustrated in Figure 10.15. The distribu-
+tion of observed values x is therefore a mixture of Gaussians, which we take to be
+of the form
+p(x|θ) = (1 − w)N (x|θ, I) + wN (x|0, aI)
+(10.209)
+where w is the proportion of background clutter and is assumed to be known. The
+prior over θ is taken to be Gaussian
+p(θ) = N (θ|0, bI)
+(10.210)
+and Minka (2001a) chooses the parameter values a = 10, b = 100 and w = 0.5.
+The joint distribution of N observations D = {x1, . . . , xN} and θ is given by
+p(D, θ) = p(θ)
+p(xn|θ)
+n=1
+(10.211)
+and so the posterior distribution comprises a mixture of 2N Gaussians. Thus the
+computational cost of solving this problem exactly would grow exponentially with
+the size of the data set, and so an exact solution is intractable for moderately large
+N.
+To apply EP to the clutter problem, we first identify the factors f0(θ) = p(θ)
+and fn(θ) = p(xn|θ). Next we select an approximating distribution from the expo-
+nential family, and for this example it is convenient to choose a spherical Gaussian
+q(θ) = N (θ|m, vI).
+(10.212)
+512
+10. APPROXIMATE INFERENCE
+The factor approximations will therefore take the form of exponential-quadratic
+functions of the form
+fn(θ) = snN (θ|mn, vnI)
+(10.213)
+where n = 1, . . . , N, and we set
+f0(θ) equal to the prior p(θ). Note that the use of
+N (θ|·,·) does not imply that the right-hand side is a well-defined Gaussian density
+(in fact, as we shall see, the variance parameter vn can be negative) but is simply a
+fn(θ), for n = 1, . . . , N, can
+convenient shorthand notation. The approximations
+be initialized to unity, corresponding to sn = (2πvn)D/2, vn → ∞ and mn = 0,
+where D is the dimensionality of x and hence of θ. The initial q(θ), defined by
+(10.191), is therefore equal to the prior.
+We then iteratively refine the factors by taking one factor fn(θ) at a time and
+applying (10.205), (10.206), and (10.207). Note that we do not need to revise the
+term f0(θ) because an EP update will leave this term unchanged. Here we state the
+results and leave the reader to fill in the details.
+First we remove the current estimate
+fn(θ) from q(θ) by division using (10.205)
+to give q\n(θ), which has mean and inverse variance given by
+m\n = m + v\nv−1
+n (m − mn)
+(v\n)−1 = v−1 − v−1
+n .
+Next we evaluate the normalization constant Zn using (10.206) to give
+Zn = (1 − w)N (xn|m\n, (v\n + 1)I) + wN (xn|0, aI).
+Similarly, we compute the mean and variance of qnew(θ) by finding the mean and
+variance of q\n(θ)fn(θ) to give
+Exercise 10.37
+Exercise 10.38
+Exercise 10.39
+m = m\n + ρn
+v = v\n − ρn
+where the quantity
+v\n
+v\n + 1
+(v\n)2
+v\n + 1
+(xn − m\n)
++ ρn(1 − ρn)
+(v\n)2xn − m\n2
+D(v\n + 1)2
+ρn = 1 −
+w
+ZnN (xn|0, aI)
+has a simple interpretation as the probability of the point xn not being clutter. Then
+fn(θ) whose parameters are given by
+we use (10.207) to compute the refined factor
+n = (vnew)−1 − (v\n)−1
+v−1
+mn = m\n + (vn + v\n)(v\n)−1(mnew − m\n)
+sn =
+(10.220)
+(10.221)
+(10.222)
+Zn
+(2πvn)D/2N (mn|m\n, (vn + v\n)I) .
+This refinement process is repeated until a suitable termination criterion is satisfied,
+for instance that the maximum change in parameter values resulting from a complete
+(10.214)
+(10.215)
+(10.216)
+(10.217)
+(10.218)
+(10.219)
+5
+N
+0
+N
+10.7. Expectation Propagation
+513
+10
+(10.223)
+(10.224)
+e
+e
+−5
+0
+5
+10
+−5
+Figure 10.16 Examples of the approximation of specific factors for a one-dimensional version of the clutter
+fn(θ) in red, and q\n(θ) in green. Notice that the current form for q\n(θ) controls
+problem, showing fn(θ) in blue,
+the range of θ over which
+fn(θ) will be a good approximation to fn(θ).
+pass through all factors is less than some threshold. Finally, we use (10.208) to
+evaluate the approximation to the model evidence, given by
+p(D)  (2πvnew)D/2 exp(B/2)
+n=1
+sn(2πvn)−D/2
+where
+B =
+(mnew)Tmnew
+v
+nmn
+mT
+vn
+n=1
+Examples factor approximations for the clutter problem with a one-dimensional pa-
+rameter space θ are shown in Figure 10.16. Note that the factor approximations can
+have infinite or even negative values for the ‘variance’ parameter vn. This simply
+corresponds to approximations that curve upwards instead of downwards and are not
+necessarily problematic provided the overall approximate posterior q(θ) has posi-
+tive variance. Figure 10.17 compares the performance of EP with variational Bayes
+(mean field theory) and the Laplace approximation on the clutter problem.

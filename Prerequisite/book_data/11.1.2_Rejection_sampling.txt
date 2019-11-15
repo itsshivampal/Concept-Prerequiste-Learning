@@ -1,0 +1,91 @@
+The rejection sampling framework allows us to sample from relatively complex
+distributions, subject to certain constraints. We begin by considering univariate dis-
+tributions and discuss the extension to multiple dimensions subsequently.
+Suppose we wish to sample from a distribution p(z) that is not one of the simple,
+standard distributions considered so far, and that sampling directly from p(z) is dif-
+ficult. Furthermore suppose, as is often the case, that we are easily able to evaluate
+p(z) for any given value of z, up to some normalizing constant Z, so that
+p(z) =
+p(z)
+(11.13)
+where
+p(z) can readily be evaluated, but Zp is unknown.
+In order to apply rejection sampling, we need some simpler distribution q(z),
+sometimes called a proposal distribution, from which we can readily draw samples.
+e
+e
+z
+11.1. Basic Sampling Algorithms
+529
+Figure 11.4 In the rejection sampling method,
+samples are drawn from a sim-
+ple distribution q(z) and rejected
+if they fall
+in the grey area be-
+tween the unnormalized distribu-
+tion
+p(z) and the scaled distribu-
+tion kq(z). The resulting samples
+are distributed according to p(z),
+which is the normalized version of
+p(z).
+kq(z)
+˜p(z)
+kq(z0)
+u0
+z0
+Exercise 11.6
+We next introduce a constant k whose value is chosen such that kq(z) �
+p(z) for
+all values of z. The function kq(z) is called the comparison function and is illus-
+trated for a univariate distribution in Figure 11.4. Each step of the rejection sampler
+involves generating two random numbers. First, we generate a number z0 from the
+distribution q(z). Next, we generate a number u0 from the uniform distribution over
+[0, kq(z0)]. This pair of random numbers has uniform distribution under the curve
+p(z0) then the sample is rejected, otherwise
+of the function kq(z). Finally, if u0 >
+u0 is retained. Thus the pair is rejected if it lies in the grey shaded region in Fig-
+p(z),
+ure 11.4. The remaining pairs then have uniform distribution under the curve of
+and hence the corresponding z values are distributed according to p(z), as desired.
+The original values of z are generated from the distribution q(z), and these sam-
+p(z)/kq(z), and so the probability that a
+ples are then accepted with probability
+sample will be accepted is given by
+p(accept) =
+1
+k
+p(z)/kq(z)} q(z) dz
+p(z) dz.
+(11.14)
+Thus the fraction of points that are rejected by this method depends on the ratio of
+p(z) to the area under the curve kq(z).
+the area under the unnormalized distribution
+We therefore see that the constant k should be as small as possible subject to the
+limitation that kq(z) must be nowhere less than
+p(z).
+As an illustration of the use of rejection sampling, consider the task of sampling
+from the gamma distribution
+Gam(z|a, b) = baza−1 exp(−bz)
+Γ(a)
+(11.15)
+which, for a > 1, has a bell-shaped form, as shown in Figure 11.5. A suitable
+proposal distribution is therefore the Cauchy (11.8) because this too is bell-shaped
+and because we can use the transformation method, discussed earlier, to sample from
+it. We need to generalize the Cauchy slightly to ensure that it nowhere has a smaller
+value than the gamma distribution. This can be achieved by transforming a uniform
+random variable y using z = b tan y + c, which gives random numbers distributed
+according to.
+Exercise 11.7
+10
+20
+30
+z
+(11.16)
+q(z) =
+k
+1 + (z − c)2/b2 .
+The minimum reject rate is obtained by setting c = a − 1, b2 = 2a − 1 and choos-
+ing the constant k to be as small as possible while still satisfying the requirement
+kq(z) �
+p(z). The resulting comparison function is also illustrated in Figure 11.5.

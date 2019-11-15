@@ -1,0 +1,165 @@
+In Sections 2.3.1 and 2.3.2, we considered a Gaussian p(x) in which we parti-
+tioned the vector x into two subvectors x = (xa, xb) and then found expressions for
+the conditional distribution p(xa|xb) and the marginal distribution p(xa). We noted
+that the mean of the conditional distribution p(xa|xb) was a linear function of xb.
+Here we shall suppose that we are given a Gaussian marginal distribution p(x) and a
+Gaussian conditional distribution p(y|x) in which p(y|x) has a mean that is a linear
+function of x, and a covariance which is independent of x. This is an example of
+1
+2
+1
+2
+2.3. The Gaussian Distribution
+91
+a linear Gaussian model (Roweis and Ghahramani, 1999), which we shall study in
+greater generality in Section 8.1.4. We wish to find the marginal distribution p(y)
+and the conditional distribution p(x|y). This is a problem that will arise frequently
+in subsequent chapters, and it will prove convenient to derive the general results here.
+We shall take the marginal and conditional distributions to be
+p(x) = N
+p(y|x) = N
+x|µ, Λ−1
+y|Ax + b, L−1
+where µ, A, and b are parameters governing the means, and Λ and L are precision
+matrices. If x has dimensionality M and y has dimensionality D, then the matrix A
+has size D × M.
+define
+First we find an expression for the joint distribution over x and y. To do this, we
+z =
+x
+y
+and then consider the log of the joint distribution
+ln p(z) = ln p(x) + ln p(y|x)
+(x − µ)TΛ(x − µ)
+(y − Ax − b)TL(y − Ax − b) + const
+where ‘const’ denotes terms independent of x and y. As before, we see that this is a
+quadratic function of the components of z, and hence p(z) is Gaussian distribution.
+To find the precision of this Gaussian, we consider the second order terms in (2.102),
+which can be written as
+1
+xT(Λ + ATLA)x −
+2
+x
+y
+1
+2
+T
+1
+2
+yTLy +
+1
+2
+yTLAx +
+xTATLy
+Λ + ATLA −ATL
+L
+−LA
+x
+y
+1
+2
+zTRz
+(2.103)
+1
+2
+and so the Gaussian distribution over z has precision (inverse covariance) matrix
+given by
+R =
+Λ + ATLA −ATL
+L
+−LA
+(2.104)
+(2.99)
+(2.100)
+(2.101)
+(2.102)
+Exercise 2.29
+The covariance matrix is found by taking the inverse of the precision, which can be
+done using the matrix inversion formula (2.76) to give
+cov[z] = R−1 =
+Λ−1
+AΛ−1 L−1 + AΛ−1AT
+Λ−1AT
+(2.105)
+92
+2. PROBABILITY DISTRIBUTIONS
+Similarly, we can find the mean of the Gaussian distribution over z by identify-
+ing the linear terms in (2.102), which are given by
+xTΛµ − xTATLb + yTLb =
+T
+x
+y
+Λµ − ATLb
+Lb
+Using our earlier result (2.71) obtained by completing the square over the quadratic
+form of a multivariate Gaussian, we find that the mean of z is given by
+Exercise 2.30
+Making use of (2.105), we then obtain
+E[z] = R−1
+E[z] =
+Λµ − ATLb
+Lb
+Aµ + b
+(2.106)
+(2.107)
+(2.108)
+Section 2.3
+Section 2.3
+Next we find an expression for the marginal distribution p(y) in which we have
+marginalized over x. Recall that the marginal distribution over a subset of the com-
+ponents of a Gaussian random vector takes a particularly simple form when ex-
+pressed in terms of the partitioned covariance matrix. Specifically, its mean and
+covariance are given by (2.92) and (2.93), respectively. Making use of (2.105) and
+(2.108) we see that the mean and covariance of the marginal distribution p(y) are
+given by
+E[y] = Aµ + b
+cov[y] = L−1 + AΛ−1AT.
+(2.109)
+(2.110)
+A special case of this result is when A = I, in which case it reduces to the convolu-
+tion of two Gaussians, for which we see that the mean of the convolution is the sum
+of the mean of the two Gaussians, and the covariance of the convolution is the sum
+of their covariances.
+Finally, we seek an expression for the conditional p(x|y). Recall that the results
+for the conditional distribution are most easily expressed in terms of the partitioned
+precision matrix, using (2.73) and (2.75). Applying these results to (2.105) and
+(2.108) we see that the conditional distribution p(x|y) has mean and covariance
+given by
+E[x|y] = (Λ + ATLA)−1
+cov[x|y] = (Λ + ATLA)−1.
+ATL(y − b) + Λµ
+(2.111)
+(2.112)
+The evaluation of this conditional can be seen as an example of Bayes’ theorem.
+We can interpret the distribution p(x) as a prior distribution over x. If the variable
+y is observed, then the conditional distribution p(x|y) represents the corresponding
+posterior distribution over x. Having found the marginal and conditional distribu-
+tions, we effectively expressed the joint distribution p(z) = p(x)p(y|x) in the form
+p(x|y)p(y). These results are summarized below.
+N
+1
+2
+n=1
+n=1
+n=1
+N
+N
+N
+2.3. The Gaussian Distribution
+93
+Marginal and Conditional Gaussians
+Given a marginal Gaussian distribution for x and a conditional Gaussian distri-
+bution for y given x in the form
+p(x) = N (x|µ, Λ−1)
+p(y|x) = N (y|Ax + b, L−1)
+the marginal distribution of y and the conditional distribution of x given y are
+given by
+p(y) = N (y|Aµ + b, L−1 + AΛ−1AT)
+p(x|y) = N (x|Σ{ATL(y − b) + Λµ}, Σ)
+where
+Σ = (Λ + ATLA)−1.
+(2.113)
+(2.114)
+(2.115)
+(2.116)
+(2.117)

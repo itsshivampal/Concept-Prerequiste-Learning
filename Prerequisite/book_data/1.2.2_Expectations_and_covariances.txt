@@ -1,0 +1,70 @@
+One of the most important operations involving probabilities is that of finding
+weighted averages of functions. The average value of some function f(x) under a
+probability distribution p(x) is called the expectation of f(x) and will be denoted by
+E[f]. For a discrete distribution, it is given by
+E[f] =
+p(x)f(x)
+(1.33)
+so that the average is weighted by the relative probabilities of the different values
+of x. In the case of continuous variables, expectations are expressed in terms of an
+integration with respect to the corresponding probability density
+E[f] =
+p(x)f(x) dx.
+(1.34)
+In either case, if we are given a finite number N of points drawn from the probability
+distribution or probability density, then the expectation can be approximated as a
+n=1
+N
+20
+1. INTRODUCTION
+finite sum over these points
+E[f] 
+1
+N
+f(xn).
+(1.35)
+We shall make extensive use of this result when we discuss sampling methods in
+Chapter 11. The approximation in (1.35) becomes exact in the limit N → ∞.
+Sometimes we will be considering expectations of functions of several variables,
+in which case we can use a subscript to indicate which variable is being averaged
+over, so that for instance
+(1.36)
+denotes the average of the function f(x, y) with respect to the distribution of x. Note
+that Ex[f(x, y)] will be a function of y.
+Ex[f(x, y)]
+We can also consider a conditional expectation with respect to a conditional
+distribution, so that
+p(x|y)f(x)
+with an analogous definition for continuous variables.
+Ex[f|y] =
+x
+The variance of f(x) is defined by
+var[f] = E
+(f(x) − E[f(x)])2
+and provides a measure of how much variability there is in f(x) around its mean
+value E[f(x)]. Expanding out the square, we see that the variance can also be written
+in terms of the expectations of f(x) and f(x)2
+In particular, we can consider the variance of the variable x itself, which is given by
+var[f] = E[f(x)2] − E[f(x)]2.
+var[x] = E[x2] − E[x]2.
+For two random variables x and y, the covariance is defined by
+cov[x, y] = Ex,y [{x − E[x]}{y − E[y]}]
+= Ex,y[xy] − E[x]E[y]
+which expresses the extent to which x and y vary together. If x and y are indepen-
+dent, then their covariance vanishes.
+In the case of two vectors of random variables x and y, the covariance is a matrix
+cov[x, y] = Ex,y
+{x − E[x]}{yT − E[yT]}
+= Ex,y[xyT] − E[x]E[yT].
+(1.42)
+If we consider the covariance of the components of a vector x with each other, then
+we use a slightly simpler notation cov[x] ≡ cov[x, x].
+(1.37)
+(1.38)
+(1.39)
+(1.40)
+(1.41)
+Exercise 1.5
+Exercise 1.6
+1.2. Probability Theory
+21

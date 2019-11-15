@@ -1,0 +1,100 @@
+In order to motivate the Gaussian process viewpoint, let us return to the linear
+regression example and re-derive the predictive distribution by working in terms
+of distributions over functions y(x, w). This will provide a specific example of a
+Gaussian process.
+Consider a model defined in terms of a linear combination of M fixed basis
+functions given by the elements of the vector φ(x) so that
+y(x) = wTφ(x)
+(6.49)
+where x is the input vector and w is the M-dimensional weight vector. Now consider
+a prior distribution over w given by an isotropic Gaussian of the form
+p(w) = N (w|0, α−1I)
+(6.50)
+governed by the hyperparameter α, which represents the precision (inverse variance)
+of the distribution. For any given value of w, the definition (6.49) defines a partic-
+ular function of x. The probability distribution over w defined by (6.50) therefore
+induces a probability distribution over functions y(x). In practice, we wish to eval-
+uate this function at specific values of x, for example at the training data points
+(6.52)
+(6.53)
+(6.54)
+6.4. Gaussian Processes
+305
+x1, . . . , xN . We are therefore interested in the joint distribution of the function val-
+ues y(x1), . . . , y(xN ), which we denote by the vector y with elements yn = y(xn)
+for n = 1, . . . , N. From (6.49), this vector is given by
+y = Φw
+(6.51)
+where Φ is the design matrix with elements Φnk = φk(xn). We can find the proba-
+bility distribution of y as follows. First of all we note that y is a linear combination of
+Gaussian distributed variables given by the elements of w and hence is itself Gaus-
+sian. We therefore need only to find its mean and covariance, which are given from
+(6.50) by
+E[y] = ΦE[w] = 0
+cov[y] = E
+= ΦE
+where K is the Gram matrix with elements
+yyT
+wwT
+ΦT =
+1
+ΦΦT = K
+Knm = k(xn, xm) =
+1
+φ(xn)Tφ(xm)
+and k(x, x) is the kernel function.
+This model provides us with a particular example of a Gaussian process. In gen-
+eral, a Gaussian process is defined as a probability distribution over functions y(x)
+such that the set of values of y(x) evaluated at an arbitrary set of points x1, . . . , xN
+jointly have a Gaussian distribution. In cases where the input vector x is two di-
+mensional, this may also be known as a Gaussian random field. More generally, a
+stochastic process y(x) is specified by giving the joint probability distribution for
+any finite set of values y(x1), . . . , y(xN ) in a consistent manner.
+A key point about Gaussian stochastic processes is that the joint distribution
+over N variables y1, . . . , yN is specified completely by the second-order statistics,
+namely the mean and the covariance. In most applications, we will not have any
+prior knowledge about the mean of y(x) and so by symmetry we take it to be zero.
+This is equivalent to choosing the mean of the prior over weight values p(w|α) to
+be zero in the basis function viewpoint. The specification of the Gaussian process is
+then completed by giving the covariance of y(x) evaluated at any two values of x,
+which is given by the kernel function
+E [y(xn)y(xm)] = k(xn, xm).
+(6.55)
+For the specific case of a Gaussian process defined by the linear regression model
+(6.49) with a weight prior (6.50), the kernel function is given by (6.54).
+We can also define the kernel function directly, rather than indirectly through a
+choice of basis function. Figure 6.4 shows samples of functions drawn from Gaus-
+sian processes for two different choices of kernel function. The first of these is a
+‘Gaussian’ kernel of the form (6.23), and the second is the exponential kernel given
+by
+k(x, x) = exp (−θ |x − x|)
+(6.56)
+which corresponds to the Ornstein-Uhlenbeck process originally introduced by Uh-
+lenbeck and Ornstein (1930) to describe Brownian motion.
+Exercise 2.31
+306
+6. KERNEL METHODS
+Figure 6.4 Samples from Gaus-
+sian processes for a ‘Gaussian’ ker-
+nel (left) and an exponential kernel
+(right).
+3
+1.5
+0
+−1.5
+−3
+−1
+−0.5
+3
+1.5
+0
+−1.5
+−3
+−1
+0
+0.5
+1
+−0.5
+0
+0.5
+1

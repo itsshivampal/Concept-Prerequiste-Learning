@@ -1,0 +1,181 @@
+We now illustrate the factorized variational approximation using a Gaussian dis-
+tribution over a single variable x (MacKay, 2003). Our goal is to infer the posterior
+distribution for the mean µ and precision τ , given a data set D = {x1, . . . , xN} of
+observed values of x which are assumed to be drawn independently from the Gaus-
+sian. The likelihood function is given by
+p(D|µ, τ) =
+N/2
+2π
+exp
+2
+(xn − µ)2
+(10.21)
+We now introduce conjugate prior distributions for µ and τ given by
+µ|µ0, (λ0τ)−1
+p(µ|τ) = N
+p(τ) = Gam(τ|a0, b0)
+(10.22)
+(10.23)
+where Gam(τ|a0, b0) is the gamma distribution defined by (2.146). Together these
+distributions constitute a Gaussian-Gamma conjugate prior distribution.
+For this simple problem the posterior distribution can be found exactly, and again
+takes the form of a Gaussian-gamma distribution. However, for tutorial purposes
+we will consider a factorized variational approximation to the posterior distribution
+given by
+q(µ, τ) = qµ(µ)qτ (τ).
+(10.24)
+Exercise 10.6
+Section 2.3.6
+Exercise 2.44
+n=1
+n=1
+N
+N
+10.1. Variational Inference
+471
+Note that the true posterior distribution does not factorize in this way. The optimum
+factors qµ(µ) and qτ (τ) can be obtained from the general result (10.9) as follows.
+For qµ(µ) we have
+ln q
+µ(µ) = Eτ [ln p(D|µ, τ) + ln p(µ|τ)] + const
+(xn − µ)2
+λ0(µ − µ0)2 +
+E[τ]
+2
+N
++ const. (10.25)
+Exercise 10.7
+Completing the square over µ we see that qµ(µ) is a Gaussian N
+mean and precision given by
+µ|µN , λ−1
+N
+with
+µN = λ0µ0 + N x
+λ0 + N
+λN = (λ0 + N)E[τ].
+(10.27)
+Note that for N → ∞ this gives the maximum likelihood result in which µN = x
+and the precision is infinite.
+Similarly, the optimal solution for the factor qτ (τ) is given by
+ln q
+τ (τ) = Eµ [ln p(D|µ, τ) + ln p(µ|τ)] + ln p(τ) + const
+= (a0 − 1) ln τ − b0τ + N
+2
+ln τ
+2 Eµ
+(xn − µ)2 + λ0(µ − µ0)2
++ const
+and hence qτ (τ) is a gamma distribution Gam(τ|aN , bN ) with parameters
+aN = a0 + N
+2
+1
+2Eµ
+bN = b0 +
+(xn − µ)2 + λ0(µ − µ0)2
+n=1
+(10.26)
+(10.28)
+(10.29)
+(10.30)
+Exercise 10.8
+Section 10.4.1
+Again this exhibits the expected behaviour when N → ∞.
+It should be emphasized that we did not assume these specific functional forms
+for the optimal distributions qµ(µ) and qτ (τ). They arose naturally from the structure
+of the likelihood function and the corresponding conjugate priors.
+Thus we have expressions for the optimal distributions qµ(µ) and qτ (τ) each of
+which depends on moments evaluated with respect to the other distribution. One ap-
+proach to finding a solution is therefore to make an initial guess for, say, the moment
+E[τ] and use this to re-compute the distribution qµ(µ). Given this revised distri-
+bution we can then extract the required moments E[µ] and E[µ2], and use these to
+recompute the distribution qτ (τ), and so on. Since the space of hidden variables for
+this example is only two dimensional, we can illustrate the variational approxima-
+tion to the posterior distribution by plotting contours of both the true posterior and
+the factorized approximation, as illustrated in Figure 10.4.
+10. APPROXIMATE INFERENCE
+(a)
+(c)
+472
+2
+1
+0
+−1
+2
+1
+0
+−1
+1
+1
+(b)
+(d)
+2
+1
+0
+−1
+2
+1
+0
+−1
+0
+0
+0
+1
+0
+1
+Figure 10.4 Illustration of variational inference for the mean µ and precision τ of a univariate Gaussian distribu-
+tion. Contours of the true posterior distribution p(µ, τ|D) are shown in green. (a) Contours of the initial factorized
+approximation qµ(µ)qτ (τ ) are shown in blue. (b) After re-estimating the factor qµ(µ). (c) After re-estimating the
+factor qτ (τ ). (d) Contours of the optimal factorized approximation, to which the iterative scheme converges, are
+shown in red.
+In general, we will need to use an iterative approach such as this in order to
+solve for the optimal factorized posterior distribution. For the very simple example
+we are considering here, however, we can find an explicit solution by solving the
+simultaneous equations for the optimal factors qµ(µ) and qτ (τ). Before doing this,
+we can simplify these expressions by considering broad, noninformative priors in
+which µ0 = a0 = b0 = λ0 = 0. Although these parameter settings correspond to
+improper priors, we see that the posterior distribution is still well defined. Using the
+standard result E[τ] = aN /bN for the mean of a gamma distribution, together with
+(10.29) and (10.30), we have
+Appendix B
+N
+1
+E[τ]
+= E
+1
+N
+(xn − µ)2
+= x2 − 2xE[µ] + E[µ2].
+n=1
+(10.31)
+Then, using (10.26) and (10.27), we obtain the first and second order moments of
+N
+n=1
+1
+E[τ]
+m
+Z
+473
+(10.32)
+(10.33)
+(10.34)
+(10.35)
+Exercise 10.9
+Section 1.2.4
+Exercise 10.10
+Exercise 10.11
+10.1. Variational Inference
+1
+N − 1
+1
+N − 1
+(x2 − x2)
+(xn − x)2.
+qµ(µ) in the form
+E[µ] = x,
+E[µ2] = x2 +
+1
+NE[τ] .
+We can now substitute these moments into (10.31) and then solve for E[τ] to give
+We recognize the right-hand side as the familiar unbiased estimator for the variance
+of a univariate Gaussian distribution, and so we see that the use of a Bayesian ap-
+proach has avoided the bias of the maximum likelihood solution.

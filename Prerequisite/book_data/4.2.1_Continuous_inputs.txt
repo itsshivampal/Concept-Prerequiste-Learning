@@ -1,0 +1,92 @@
+Let us assume that the class-conditional densities are Gaussian and then explore
+the resulting form for the posterior probabilities. To start with, we shall assume that
+all classes share the same covariance matrix. Thus the density for class Ck is given
+by
+1
+1
+p(x|Ck) =
+(x − µk)TΣ−1(x − µk)
+Consider first the case of two classes. From (4.57) and (4.58), we have
+|Σ|1/2
+(2π)D/2
+exp
+1
+2
+where we have defined
+p(C1|x) = σ(wTx + w0)
+w = Σ−1(µ1 − µ2)
+1 Σ−1µ1 +
+w0 = −
+1
+2 µT
+1
+2 µT
+2 Σ−1µ2 + ln p(C1)
+p(C2) .
+(4.64)
+(4.65)
+(4.66)
+(4.67)
+We see that the quadratic terms in x from the exponents of the Gaussian densities
+have cancelled (due to the assumption of common covariance matrices) leading to
+a linear function of x in the argument of the logistic sigmoid. This result is illus-
+trated for the case of a two-dimensional input space x in Figure 4.10. The resulting
+4.2. Probabilistic Generative Models
+199
+Figure 4.10 The left-hand plot shows the class-conditional densities for two classes, denoted red and blue.
+On the right is the corresponding posterior probability p(C1|x), which is given by a logistic sigmoid of a linear
+function of x. The surface in the right-hand plot is coloured using a proportion of red ink given by p(C1|x) and a
+proportion of blue ink given by p(C2|x) = 1 − p(C1|x).
+decision boundaries correspond to surfaces along which the posterior probabilities
+p(Ck|x) are constant and so will be given by linear functions of x, and therefore
+the decision boundaries are linear in input space. The prior probabilities p(Ck) enter
+only through the bias parameter w0 so that changes in the priors have the effect of
+making parallel shifts of the decision boundary and more generally of the parallel
+contours of constant posterior probability.
+For the general case of K classes we have, from (4.62) and (4.63),
+where we have defined
+ak(x) = wT
+k x + wk0
+wk = Σ−1µk
+1
+wk0 = −
+2 µT
+k Σ−1µk + ln p(Ck).
+(4.68)
+(4.69)
+(4.70)
+We see that the ak(x) are again linear functions of x as a consequence of the cancel-
+lation of the quadratic terms due to the shared covariances. The resulting decision
+boundaries, corresponding to the minimum misclassification rate, will occur when
+two of the posterior probabilities (the two largest) are equal, and so will be defined
+by linear functions of x, and so again we have a generalized linear model.
+If we relax the assumption of a shared covariance matrix and allow each class-
+conditional density p(x|Ck) to have its own covariance matrix Σk, then the earlier
+cancellations will no longer occur, and we will obtain quadratic functions of x, giv-
+ing rise to a quadratic discriminant. The linear and quadratic decision boundaries
+are illustrated in Figure 4.11.
+4. LINEAR MODELS FOR CLASSIFICATION
+200
+2.5
+2
+1.5
+1
+0.5
+0
+−0.5
+−1
+−1.5
+−2
+−2.5
+N
+−2
+−1
+0
+1
+2
+Figure 4.11 The left-hand plot shows the class-conditional densities for three classes each having a Gaussian
+distribution, coloured red, green, and blue, in which the red and green classes have the same covariance matrix.
+The right-hand plot shows the corresponding posterior probabilities, in which the RGB colour vector represents
+the posterior probabilities for the respective three classes. The decision boundaries are also shown. Notice that
+the boundary between the red and green classes, which have the same covariance matrix, is linear, whereas
+those between the other pairs of classes are quadratic.

@@ -1,0 +1,40 @@
+As well as approximating the distribution p(z) we can also obtain an approxi-
+mation to the normalization constant Z. Using the approximation (4.133) we have
+Z =
+f(z) dz
+ f(z0)
+= f(z0)
+(2π)M/2
+|A|1/2
+exp
+1
+2
+(z − z0)TA(z − z0)
+dz
+(4.135)
+where we have noted that the integrand is Gaussian and made use of the standard
+result (2.43) for a normalized Gaussian distribution. We can use the result (4.135) to
+obtain an approximation to the model evidence which, as discussed in Section 3.4,
+plays a central role in Bayesian model comparison.
+Consider a data set D and a set of models {Mi} having parameters {θi}. For
+each model we define a likelihood function p(D|θi,Mi). If we introduce a prior
+p(θi|Mi) over the parameters, then we are interested in computing the model evi-
+dence p(D|Mi) for the various models. From now on we omit the conditioning on
+Mi to keep the notation uncluttered. From Bayes’ theorem the model evidence is
+given by
+(4.136)
+Identifying f(θ) = p(D|θ)p(θ) and Z = p(D), and applying the result (4.135), we
+obtain
+p(D|θ)p(θ) dθ.
+p(D) =
+ln p(D)  ln p(D|θMAP) + ln p(θMAP) + M
+2
+1
+2
+ln|A|
+(4.137)
+ln(2π) −
+Occam factor
+Exercise 4.22
+Exercise 4.23
+Section 3.5.3

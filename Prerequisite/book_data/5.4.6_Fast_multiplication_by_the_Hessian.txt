@@ -1,0 +1,113 @@
+For many applications of the Hessian, the quantity of interest is not the Hessian
+matrix H itself but the product of H with some vector v. We have seen that the
+evaluation of the Hessian takes O(W 2) operations, and it also requires storage that is
+O(W 2). The vector vTH that we wish to calculate, however, has only W elements,
+so instead of computing the Hessian as an intermediate step, we can instead try to
+find an efficient approach to evaluating vTH directly in a way that requires only
+O(W ) operations.
+To do this, we first note that
+vTH = vT∇(∇E)
+(5.96)
+where ∇ denotes the gradient operator in weight space. We can then write down
+the standard forward-propagation and backpropagation equations for the evaluation
+of ∇E and apply (5.96) to these equations to give a set of forward-propagation and
+backpropagation equations for the evaluation of vTH (Møller, 1993; Pearlmutter,
+1994). This corresponds to acting on the original forward-propagation and back-
+propagation equations with a differential operator vT∇. Pearlmutter (1994) used the
+notation R{·} to denote the operator vT∇, and we shall follow this convention. The
+analysis is straightforward and makes use of the usual rules of differential calculus,
+together with the result
+R{w} = v.
+(5.97)
+The technique is best illustrated with a simple example, and again we choose a
+two-layer network of the form shown in Figure 5.1, with linear output units and a
+sum-of-squares error function. As before, we consider the contribution to the error
+function from one pattern in the data set. The required vector is then obtained as
+k
+j
+i
+j
+i
+j
+5.4. The Hessian Matrix
+255
+usual by summing over the contributions from each of the patterns separately. For
+the two-layer network, the forward-propagation equations are given by
+We now act on these equations using the R{·} operator to obtain a set of forward
+propagation equations in the form
+aj =
+wjixi
+zj = h(aj)
+yk =
+wkjzj.
+vjixi
+R{aj} =
+R{zj} = h(aj)R{aj}
+R{yk} =
+wkjR{zj} +
+vkjzj
+(5.98)
+(5.99)
+(5.100)
+(5.101)
+(5.102)
+(5.103)
+(5.104)
+(5.105)
+(5.106)
+where vji is the element of the vector v that corresponds to the weight wji. Quan-
+tities of the form R{zj}, R{aj} and R{yk} are to be regarded as new variables
+whose values are found using the above equations.
+Because we are considering a sum-of-squares error function, we have the fol-
+lowing standard backpropagation expressions:
+δk = yk − tk
+δj = h(aj)
+wkjδk.
+Again, we act on these equations with the R{·} operator to obtain a set of backprop-
+agation equations in the form
+R{δk} = R{yk}
+R{δj} = h(aj)R{aj}
+wkjδk
+k
++ h(aj)
+vkjδk + h(aj)
+k
+wkjR{δk}.
+k
+(5.107)
+Finally, we have the usual equations for the first derivatives of the error
+∂E
+∂wkj
+∂E
+∂wji
+= δkzj
+= δjxi
+(5.108)
+(5.109)
+and acting on these with the R{·} operator, we obtain expressions for the elements
+of the vector vTH
+= R{δk}zj + δkR{zj}
+= xiR{δj}.
+(5.110)
+(5.111)
+R
+R
+∂E
+∂wkj
+∂E
+∂wji
+256
+5. NEURAL NETWORKS
+The implementation of this algorithm involves the introduction of additional
+variables R{aj}, R{zj} and R{δj} for the hidden units and R{δk} and R{yk}
+for the output units. For each input pattern, the values of these quantities can be
+found using the above results, and the elements of vTH are then given by (5.110)
+and (5.111). An elegant aspect of this technique is that the equations for evaluating
+vTH mirror closely those for standard forward and backward propagation, and so the
+extension of existing software to compute this product is typically straightforward.
+If desired, the technique can be used to evaluate the full Hessian matrix by
+choosing the vector v to be given successively by a series of unit vectors of the
+form (0, 0, . . . , 1, . . . , 0) each of which picks out one column of the Hessian. This
+leads to a formalism that is analytically equivalent to the backpropagation procedure
+of Bishop (1992), as described in Section 5.4.5, though with some loss of efficiency
+due to redundant calculations.

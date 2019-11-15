@@ -1,0 +1,371 @@
+Next we seek an efficient procedure for evaluating the quantities γ(znk) and
+ξ(zn−1,j, znk), corresponding to the E step of the EM algorithm. The graph for the
+hidden Markov model, shown in Figure 13.5, is a tree, and so we know that the
+posterior distribution of the latent variables can be obtained efficiently using a two-
+stage message passing algorithm. In the particular context of the hidden Markov
+model, this is known as the forward-backward algorithm (Rabiner, 1989), or the
+Baum-Welch algorithm (Baum, 1972). There are in fact several variants of the basic
+algorithm, all of which lead to the exact marginals, according to the precise form of
+618
+13. SEQUENTIAL DATA
+Gaussian emission densities we have p(x|φk) = N (x|µk, Σk), and maximization
+of the function Q(θ, θold) then gives
+Exercise 13.8
+Section 8.4
+13.2. Hidden Markov Models
+619
+the messages that are propagated along the chain (Jordan, 2007). We shall focus on
+the most widely used of these, known as the alpha-beta algorithm.
+As well as being of great practical importance in its own right, the forward-
+backward algorithm provides us with a nice illustration of many of the concepts
+introduced in earlier chapters. We shall therefore begin in this section with a ‘con-
+ventional’ derivation of the forward-backward equations, making use of the sum
+and product rules of probability, and exploiting conditional independence properties
+which we shall obtain from the corresponding graphical model using d-separation.
+Then in Section 13.2.3, we shall see how the forward-backward algorithm can be
+obtained very simply as a specific example of the sum-product algorithm introduced
+in Section 8.4.4.
+It is worth emphasizing that evaluation of the posterior distributions of the latent
+variables is independent of the form of the emission density p(x|z) or indeed of
+whether the observed variables are continuous or discrete. All we require is the
+values of the quantities p(xn|zn) for each value of zn for every n. Also, in this
+section and the next we shall omit the explicit dependence on the model parameters
+θold because these fixed throughout.
+We therefore begin by writing down the following conditional independence
+properties (Jordan, 2007)
+p(X|zn) = p(x1, . . . , xn|zn)
+p(xn+1, . . . , xN|zn)
+p(x1, . . . , xn−1|xn, zn) = p(x1, . . . , xn−1|zn)
+p(x1, . . . , xn−1|zn−1, zn) = p(x1, . . . , xn−1|zn−1)
+p(xn+1, . . . , xN|zn, zn+1) = p(xn+1, . . . , xN|zn+1)
+p(xn+2, . . . , xN|zn+1, xn+1) = p(xn+2, . . . , xN|zn+1)
+p(X|zn−1, zn) = p(x1, . . . , xn−1|zn−1)
+(13.24)
+(13.25)
+(13.26)
+(13.27)
+(13.28)
+p(zN +1|zN , X) = p(zN +1|zN )
+p(xN +1|X, zN +1) = p(xN +1|zN +1)
+p(xn|zn)p(xn+1, . . . , xN|zn) (13.29)
+(13.30)
+(13.31)
+where X = {x1, . . . , xN}. These relations are most easily proved using d-separation.
+For instance in the first of these results, we note that every path from any one of the
+nodes x1, . . . , xn−1 to the node xn passes through the node zn, which is observed.
+Because all such paths are head-to-tail, it follows that the conditional independence
+property must hold. The reader should take a few moments to verify each of these
+properties in turn, as an exercise in the application of d-separation. These relations
+can also be proved directly, though with significantly greater effort, from the joint
+distribution for the hidden Markov model using the sum and product rules of proba-
+bility.
+Let us begin by evaluating γ(znk). Recall that for a discrete multinomial ran-
+dom variable the expected value of one of its components is just the probability of
+that component having the value 1. Thus we are interested in finding the posterior
+distribution p(zn|x1, . . . , xN ) of zn given the observed data set x1, . . . , xN . This
+Exercise 13.10
+620
+13. SEQUENTIAL DATA
+represents a vector of length K whose entries correspond to the expected values of
+znk. Using Bayes’ theorem, we have
+γ(zn) = p(zn|X) = p(X|zn)p(zn)
+p(X)
+(13.32)
+zn−1
+zn−1
+zn−1
+zn−1
+zn−1
+Note that the denominator p(X) is implicitly conditioned on the parameters θold
+of the HMM and hence represents the likelihood function. Using the conditional
+independence property (13.24), together with the product rule of probability, we
+obtain
+γ(zn) = p(x1, . . . , xn, zn)p(xn+1, . . . , xN|zn)
+p(X)
+= α(zn)β(zn)
+p(X)
+(13.33)
+where we have defined
+α(zn) ≡ p(x1, . . . , xn, zn)
+β(zn) ≡ p(xn+1, . . . , xN|zn).
+(13.34)
+(13.35)
+The quantity α(zn) represents the joint probability of observing all of the given
+data up to time n and the value of zn, whereas β(zn) represents the conditional
+probability of all future data from time n + 1 up to N given the value of zn. Again,
+α(zn) and β(zn) each represent set of K numbers, one for each of the possible
+settings of the 1-of-K coded binary vector zn. We shall use the notation α(znk) to
+denote the value of α(zn) when znk = 1, with an analogous interpretation of β(znk).
+We now derive recursion relations that allow α(zn) and β(zn) to be evaluated
+efficiently. Again, we shall make use of conditional independence properties, in
+particular (13.25) and (13.26), together with the sum and product rules, allowing us
+to express α(zn) in terms of α(zn−1) as follows
+α(zn) = p(x1, . . . , xn, zn)
+= p(x1, . . . , xn|zn)p(zn)
+= p(xn|zn)p(x1, . . . , xn−1|zn)p(zn)
+= p(xn|zn)p(x1, . . . , xn−1, zn)
+= p(xn|zn)
+p(x1, . . . , xn−1, zn−1, zn)
+= p(xn|zn)
+= p(xn|zn)
+= p(xn|zn)
+p(x1, . . . , xn−1, zn|zn−1)p(zn−1)
+p(x1, . . . , xn−1|zn−1)p(zn|zn−1)p(zn−1)
+p(x1, . . . , xn−1, zn−1)p(zn|zn−1)
+Making use of the definition (13.34) for α(zn), we then obtain
+α(zn−1)p(zn|zn−1).
+α(zn) = p(xn|zn)
+(13.36)
+K
+zn+1
+zn+1
+zn+1
+Figure 13.12 Illustration of the forward recursion (13.36) for
+evaluation of the α variables.
+In this fragment
+of the lattice, we see that the quantity α(zn1)
+is obtained by taking the elements α(zn−1,j) of
+α(zn−1) at step n−1 and summing them up with
+weights given by Aj1, corresponding to the val-
+ues of p(zn|zn−1), and then multiplying by the
+data contribution p(xn|zn1).
+621
+p(xn|zn,1)
+13.2. Hidden Markov Models
+α(zn−1,1)
+α(zn,1)
+A11
+k = 1
+A21
+α(zn−1,2)
+k = 2
+A31
+α(zn−1,3)
+k = 3
+n − 1
+n
+It is worth taking a moment to study this recursion relation in some detail. Note
+that there are K terms in the summation, and the right-hand side has to be evaluated
+for each of the K values of zn so each step of the α recursion has computational
+cost that scaled like O(K 2). The forward recursion equation for α(zn) is illustrated
+using a lattice diagram in Figure 13.12.
+In order to start this recursion, we need an initial condition that is given by
+α(z1) = p(x1, z1) = p(z1)p(x1|z1) =
+{πkp(x1|φk)}z1k
+k=1
+(13.37)
+which tells us that α(z1k), for k = 1, . . . , K, takes the value πkp(x1|φk). Starting
+at the first node of the chain, we can then work along the chain and evaluate α(zn)
+for every latent node. Because each step of the recursion involves multiplying by a
+K × K matrix, the overall cost of evaluating these quantities for the whole chain is
+of O(K 2N).
+We can similarly find a recursion relation for the quantities β(zn) by making
+use of the conditional independence properties (13.27) and (13.28) giving
+β(zn) = p(xn+1, . . . , xN|zn)
+p(xn+1, . . . , xN , zn+1|zn)
+p(xn+1, . . . , xN|zn, zn+1)p(zn+1|zn)
+p(xn+1, . . . , xN|zn+1)p(zn+1|zn)
+p(xn+2, . . . , xN|zn+1)p(xn+1|zn+1)p(zn+1|zn).
+zn+1
+622
+13. SEQUENTIAL DATA
+Figure 13.13 Illustration of
+β(zn,1)
+β(zn+1,1)
+n=1
+n
+n
+zn+1
+n=1
+k = 1
+n=1
+n
+n
+k = 2
+k = 3
+the backward recursion
+(13.38) for evaluation of the β variables. In
+this fragment of the lattice, we see that the
+quantity β(zn1) is obtained by taking the
+components β(zn+1,k) of β(zn+1) at step
+n + 1 and summing them up with weights
+given by the products of A1k, correspond-
+ing to the values of p(zn+1|zn) and the cor-
+responding values of the emission density
+p(xn|zn+1,k).
+A11
+A12
+p(xn|zn+1,1)
+β(zn+1,2)
+A13
+p(xn|zn+1,2)
+β(zn+1,3)
+n
+n + 1
+p(xn|zn+1,3)
+Making use of the definition (13.35) for β(zn), we then obtain
+β(zn) =
+β(zn+1)p(xn+1|zn+1)p(zn+1|zn).
+(13.38)
+Note that in this case we have a backward message passing algorithm that evaluates
+β(zn) in terms of β(zn+1). At each step, we absorb the effect of observation xn+1
+through the emission probability p(xn+1|zn+1), multiply by the transition matrix
+p(zn+1|zn), and then marginalize out zn+1. This is illustrated in Figure 13.13.
+Again we need a starting condition for the recursion, namely a value for β(zN ).
+This can be obtained by setting n = N in (13.33) and replacing α(zN ) with its
+definition (13.34) to give
+p(zN|X) = p(X, zN )β(zN )
+p(X)
+(13.39)
+which we see will be correct provided we take β(zN ) = 1 for all settings of zN .
+In the M step equations, the quantity p(X) will cancel out, as can be seen, for
+instance, in the M-step equation for µk given by (13.20), which takes the form
+γ(znk)xn
+α(znk)β(znk)xn
+(13.40)
+µk =
+γ(znk)
+α(znk)β(znk)
+n=1
+However, the quantity p(X) represents the likelihood function whose value we typ-
+ically wish to monitor during the EM optimization, and so it is useful to be able to
+evaluate it. If we sum both sides of (13.33) over zn, and use the fact that the left-hand
+side is a normalized distribution, we obtain
+p(X) =
+α(zn)β(zn).
+zn
+(13.41)
+13.2. Hidden Markov Models
+623
+Thus we can evaluate the likelihood function by computing this sum, for any conve-
+nient choice of n. For instance, if we only want to evaluate the likelihood function,
+then we can do this by running the α recursion from the start to the end of the chain,
+and then use this result for n = N, making use of the fact that β(zN ) is a vector of
+1s. In this case no β recursion is required, and we simply have
+p(X) =
+α(zN ).
+zN
+(13.42)
+Let us take a moment to interpret this result for p(X). Recall that to compute the
+likelihood we should take the joint distribution p(X, Z) and sum over all possible
+values of Z. Each such value represents a particular choice of hidden state for every
+time step, in other words every term in the summation is a path through the lattice
+diagram, and recall that there are exponentially many such paths. By expressing
+the likelihood function in the form (13.42), we have reduced the computational cost
+from being exponential in the length of the chain to being linear by swapping the
+order of the summation and multiplications, so that at each time step n we sum
+the contributions from all paths passing through each of the states znk to give the
+intermediate quantities α(zn).
+Next we consider the evaluation of the quantities ξ(zn−1, zn), which correspond
+to the values of the conditional probabilities p(zn−1, zn|X) for each of the K × K
+settings for (zn−1, zn). Using the definition of ξ(zn−1, zn), and applying Bayes’
+theorem, we have
+ξ(zn−1, zn) = p(zn−1, zn|X)
+= p(X|zn−1, zn)p(zn−1, zn)
+= p(x1, . . . , xn−1|zn−1)p(xn|zn)p(xn+1, . . . , xN|zn)p(zn|zn−1)p(zn−1)
+= α(zn−1)p(xn|zn)p(zn|zn−1)β(zn)
+(13.43)
+p(X)
+p(X)
+p(X)
+where we have made use of the conditional independence property (13.29) together
+with the definitions of α(zn) and β(zn) given by (13.34) and (13.35). Thus we can
+calculate the ξ(zn−1, zn) directly by using the results of the α and β recursions.
+Let us summarize the steps required to train a hidden Markov model using
+the EM algorithm. We first make an initial selection of the parameters θold where
+θ ≡ (π, A, φ). The A and π parameters are often initialized either uniformly or
+randomly from a uniform distribution (respecting their non-negativity and summa-
+tion constraints). Initialization of the parameters φ will depend on the form of the
+distribution. For instance in the case of Gaussians, the parameters µk might be ini-
+tialized by applying the K-means algorithm to the data, and Σk might be initialized
+to the covariance matrix of the corresponding K means cluster. Then we run both
+the forward α recursion and the backward β recursion and use the results to evaluate
+γ(zn) and ξ(zn−1, zn). At this stage, we can also evaluate the likelihood function.
+zN+1
+zN+1
+zN+1
+zN+1
+zN+1
+1
+zN
+zN
+zN
+p(xN +1|X) =
+p(xN +1, zN +1|X)
+p(xN +1|zN +1)p(zN +1|X)
+p(xN +1|zN +1)
+p(zN +1, zN|X)
+p(xN +1|zN +1)
+p(xN +1|zN +1)
+p(zN +1|zN )p(zN|X)
+p(zN +1|zN ) p(zN , X)
+p(X)
+p(X)
+zN+1
+p(xN +1|zN +1)
+zN
+p(zN +1|zN )α(zN ) (13.44)
+which can be evaluated by first running a forward α recursion and then computing
+the final summations over zN and zN +1. The result of the first summation over zN
+can be stored and used once the value of xN +1 is observed in order to run the α
+recursion forward to the next step in order to predict the subsequent value xN +2.
+624
+13. SEQUENTIAL DATA
+This completes the E step, and we use the results to find a revised set of parameters
+θnew using the M-step equations from Section 13.2.1. We then continue to alternate
+between E and M steps until some convergence criterion is satisfied, for instance
+when the change in the likelihood function is below some threshold.
+Note that in these recursion relations the observations enter through conditional
+distributions of the form p(xn|zn). The recursions are therefore independent of
+the type or dimensionality of the observed variables or the form of this conditional
+distribution, so long as its value can be computed for each of the K possible states
+of zn. Since the observed variables {xn} are fixed, the quantities p(xn|zn) can be
+pre-computed as functions of zn at the start of the EM algorithm, and remain fixed
+throughout.
+We have seen in earlier chapters that the maximum likelihood approach is most
+effective when the number of data points is large in relation to the number of parame-
+ters. Here we note that a hidden Markov model can be trained effectively, using max-
+imum likelihood, provided the training sequence is sufficiently long. Alternatively,
+we can make use of multiple shorter sequences, which requires a straightforward
+modification of the hidden Markov model EM algorithm. In the case of left-to-right
+models, this is particularly important because, in a given observation sequence, a
+given state transition corresponding to a nondiagonal element of A will seen at most
+once.
+Another quantity of interest is the predictive distribution, in which the observed
+data is X = {x1, . . . , xN} and we wish to predict xN +1, which would be important
+for real-time applications such as financial forecasting. Again we make use of the
+sum and product rules together with the conditional independence properties (13.29)
+and (13.31) giving
+Exercise 13.12
+Figure 13.14 A fragment of
+the fac-
+tor graph representation for the hidden
+Markov model.
+13.2. Hidden Markov Models
+625
+zn−1
+ψn
+zn
+g1
+gn−1
+gn
+xn−1
+xn
+z1
+x1
+Section 10.1
+Section 8.4.4
+Note that in (13.44), the influence of all data from x1 to xN is summarized in the K
+values of α(zN ). Thus the predictive distribution can be carried forward indefinitely
+using a fixed amount of storage, as may be required for real-time applications.
+Here we have discussed the estimation of the parameters of an HMM using max-
+imum likelihood. This framework is easily extended to regularized maximum likeli-
+hood by introducing priors over the model parameters π, A and φ whose values are
+then estimated by maximizing their posterior probability. This can again be done us-
+ing the EM algorithm in which the E step is the same as discussed above, and the M
+step involves adding the log of the prior distribution p(θ) to the function Q(θ, θold)
+before maximization and represents a straightforward application of the techniques
+developed at various points in this book. Furthermore, we can use variational meth-
+ods to give a fully Bayesian treatment of the HMM in which we marginalize over the
+parameter distributions (MacKay, 1997). As with maximum likelihood, this leads to
+a two-pass forward-backward recursion to compute posterior probabilities.

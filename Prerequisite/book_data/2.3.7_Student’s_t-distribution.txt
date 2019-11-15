@@ -1,0 +1,159 @@
+We have seen that the conjugate prior for the precision of a Gaussian is given
+by a gamma distribution. If we have a univariate Gaussian N (x|µ, τ−1) together
+with a Gamma prior Gam(τ|a, b) and we integrate out the precision, we obtain the
+marginal distribution of x in the form
+Section 2.3.6
+Exercise 2.46
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+−5
+0
+ν = 1.0
+ν = 0.1
+5
+(2.158)
+dτ
+2.3. The Gaussian Distribution
+103
+Figure 2.15 Plot of Student’s t-distribution (2.159)
+for µ = 0 and λ = 1 for various values
+of ν. The limit ν → ∞ corresponds
+to a Gaussian distribution with mean
+µ and precision λ.
+p(x|µ, a, b) =
+0 N (x|µ, τ−1)Gam(τ|a, b) dτ
+exp
+bae(−bτ )τ a−1
+1/2
+0
+ba
+Γ(a)
+Γ(a)
+1/2
+1
+2π
+2π
+(x − µ)2
+2
+b +
+(x − µ)2
+2
+−a−1/2
+Γ(a + 1/2)
+where we have made the change of variable z = τ[b + (x − µ)2/2]. By convention
+we define new parameters given by ν = 2a and λ = a/b, in terms of which the
+distribution p(x|µ, a, b) takes the form
+1 + λ(x − µ)2
+St(x|µ, λ, ν) =
+Γ(ν/2 + 1/2)
+−ν/2−1/2
+Γ(ν/2)
+(2.159)
+1/2
+which is known as Student’s t-distribution. The parameter λ is sometimes called the
+precision of the t-distribution, even though it is not in general equal to the inverse
+of the variance. The parameter ν is called the degrees of freedom, and its effect is
+illustrated in Figure 2.15. For the particular case of ν = 1, the t-distribution reduces
+to the Cauchy distribution, while in the limit ν → ∞ the t-distribution St(x|µ, λ, ν)
+becomes a Gaussian N (x|µ, λ−1) with mean µ and precision λ.
+From (2.158), we see that Student’s t-distribution is obtained by adding up an
+infinite number of Gaussian distributions having the same mean but different preci-
+sions. This can be interpreted as an infinite mixture of Gaussians (Gaussian mixtures
+will be discussed in detail in Section 2.3.9. The result is a distribution that in gen-
+eral has longer ‘tails’ than a Gaussian, as was seen in Figure 2.15. This gives the t-
+distribution an important property called robustness, which means that it is much less
+sensitive than the Gaussian to the presence of a few data points which are outliers.
+The robustness of the t-distribution is illustrated in Figure 2.16, which compares the
+maximum likelihood solutions for a Gaussian and a t-distribution. Note that the max-
+imum likelihood solution for the t-distribution can be found using the expectation-
+maximization (EM) algorithm. Here we see that the effect of a small number of
+Exercise 2.47
+Exercise 12.24
+2. PROBABILITY DISTRIBUTIONS
+104
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+−5
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+−5
+0
+5
+(a)
+10
+0
+5
+10
+(b)
+Figure 2.16 Illustration of the robustness of Student’s t-distribution compared to a Gaussian. (a) Histogram
+distribution of 30 data points drawn from a Gaussian distribution, together with the maximum likelihood fit ob-
+tained from a t-distribution (red curve) and a Gaussian (green curve, largely hidden by the red curve). Because
+the t-distribution contains the Gaussian as a special case it gives almost the same solution as the Gaussian.
+(b) The same data set but with three additional outlying data points showing how the Gaussian (green curve) is
+strongly distorted by the outliers, whereas the t-distribution (red curve) is relatively unaffected.
+outliers is much less significant for the t-distribution than for the Gaussian. Outliers
+can arise in practical applications either because the process that generates the data
+corresponds to a distribution having a heavy tail or simply through mislabelled data.
+Robustness is also an important property for regression problems. Unsurprisingly,
+the least squares approach to regression does not exhibit robustness, because it cor-
+responds to maximum likelihood under a (conditional) Gaussian distribution. By
+basing a regression model on a heavy-tailed distribution such as a t-distribution, we
+obtain a more robust model.
+If we go back to (2.158) and substitute the alternative parameters ν = 2a, λ =
+a/b, and η = τ b/a, we see that the t-distribution can be written in the form
+St(x|µ, λ, ν) =
+x|µ, (ηλ)−1
+Gam(η|ν/2, ν/2) dη.
+(2.160)
+0 N
+We can then generalize this to a multivariate Gaussian N (x|µ, Λ) to obtain the cor-
+responding multivariate Student’s t-distribution in the form
+St(x|µ, Λ, ν) =
+0 N (x|µ, (ηΛ)−1)Gam(η|ν/2, ν/2) dη.
+(2.161)
+Exercise 2.48
+Using the same technique as for the univariate case, we can evaluate this integral to
+give
+2.3. The Gaussian Distribution
+St(x|µ, Λ, ν) =
+Γ(D/2 + ν/2)
+Γ(ν/2)
+|Λ|1/2
+(πν)D/2
+1 +
+∆2
+−D/2−ν/2
+105
+(2.162)
+(2.163)
+where D is the dimensionality of x, and ∆2 is the squared Mahalanobis distance
+defined by
+∆2 = (x − µ)TΛ(x − µ).
+Exercise 2.49
+This is the multivariate form of Student’s t-distribution and satisfies the following
+properties
+E[x] = µ,
+cov[x] =
+mode[x] = µ
+(ν − 2)
+if
+if
+ν > 1
+ν > 2
+Λ−1,
+(2.164)
+(2.165)
+(2.166)
+with corresponding results for the univariate case.

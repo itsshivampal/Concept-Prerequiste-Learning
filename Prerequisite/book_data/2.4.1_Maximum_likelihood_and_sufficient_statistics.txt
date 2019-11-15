@@ -1,0 +1,58 @@
+Let us now consider the problem of estimating the parameter vector η in the gen-
+eral exponential family distribution (2.194) using the technique of maximum likeli-
+hood. Taking the gradient of both sides of (2.195) with respect to η, we have
+h(x) exp
+ηTu(x)
+∇g(η)
++ g(η)
+h(x) exp
+ηTu(x)
+u(x) dx = 0.
+Rearranging, and making use again of (2.195) then gives
+1
+g(η)∇g(η) = g(η)
+h(x) exp
+ηTu(x)
+u(x) dx = E[u(x)]
+where we have used (2.194). We therefore obtain the result
+−∇ ln g(η) = E[u(x)].
+Note that the covariance of u(x) can be expressed in terms of the second derivatives
+of g(η), and similarly for higher order moments. Thus, provided we can normalize a
+distribution from the exponential family, we can always find its moments by simple
+differentiation.
+Now consider a set of independent identically distributed data denoted by X =
+{x1, . . . , xn}, for which the likelihood function is given by
+p(X|η) =
+h(xn)
+n=1
+g(η)N exp
+u(xn)
+(2.227)
+n=1
+Setting the gradient of ln p(X|η) with respect to η to zero, we get the following
+condition to be satisfied by the maximum likelihood estimator ηML
+−∇ ln g(ηML) =
+1
+N
+u(xn)
+n=1
+(2.228)
+N
+2.4. The Exponential Family
+117
+which can in principle be solved to obtain ηML. We see that the solution for the
+n u(xn), which
+maximum likelihood estimator depends on the data only through
+is therefore called the sufficient statistic of the distribution (2.194). We do not need
+to store the entire data set itself but only the value of the sufficient statistic. For
+the Bernoulli distribution, for example, the function u(x) is given just by x and
+so we need only keep the sum of the data points {xn}, whereas for the Gaussian
+u(x) = (x, x2)T, and so we should keep both the sum of {xn} and the sum of {x2
+n}.
+If we consider the limit N → ∞, then the right-hand side of (2.228) becomes
+E[u(x)], and so by comparing with (2.226) we see that in this limit ηML will equal
+the true value η.
+In fact, this sufficiency property holds also for Bayesian inference, although
+we shall defer discussion of this until Chapter 8 when we have equipped ourselves
+with the tools of graphical models and can thereby gain a deeper insight into these
+important concepts.

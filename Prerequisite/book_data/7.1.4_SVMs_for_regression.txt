@@ -1,0 +1,306 @@
+We now extend support vector machines to regression problems while at the
+same time preserving the property of sparseness. In simple linear regression, we
+Section 3.1.4
+n=1
+N
+N
+1
+2
+z
+(7.50)
+(7.51)
+(7.52)
+(7.53)
+(7.54)
+340
+7. SPARSE KERNEL MACHINES
+Figure 7.6 Plot of an -insensitive error function (in
+red) in which the error increases lin-
+early with distance beyond the insen-
+sitive region. Also shown for compar-
+ison is the quadratic error function (in
+green).
+E(z)
+0
+minimize a regularized error function given by
+{yn − tn}2 + λ
+2w2.
+To obtain sparse solutions, the quadratic error function is replaced by an 	-insensitive
+error function (Vapnik, 1995), which gives zero error if the absolute difference be-
+tween the prediction y(x) and the target t is less than 	 where 	 > 0. A simple
+example of an 	-insensitive error function, having a linear cost associated with errors
+outside the insensitive region, is given by
+E(y(x) − t) =
+and is illustrated in Figure 7.6.
+0,
+|y(x) − t| − 	, otherwise
+if |y(x) − t| < 	;
+We therefore minimize a regularized error function given by
+C
+n=1
+E(y(xn) − tn) +
+1
+2w2
+where y(x) is given by (7.1). By convention the (inverse) regularization parameter,
+denoted C, appears in front of the error term.
+As before, we can re-express the optimization problem by introducing slack
+variables. For each data point xn, we now need two slack variables ξn � 0 and
+ξn � 0, where ξn > 0 corresponds to a point for which tn > y(xn) + 	, and
+ξn > 0
+corresponds to a point for which tn < y(xn) − 	, as illustrated in Figure 7.7.
+The condition for a target point to lie inside the 	-tube is that yn − 	 � tn �
+yn+	, where yn = y(xn). Introducing the slack variables allows points to lie outside
+the tube provided the slack variables are nonzero, and the corresponding conditions
+are
+tn � y(xn) + 	 + ξn
+tn � y(xn) − 	 −
+ξn.
+b
+b
+N
+n=1
+n=1
+N
+n=1
+N
+n=1
+n=1
+N
+N
+n=1
+n=1
+N
+N
+∂L
+∂w
+∂L
+∂b
+∂L
+∂ξn
+∂L
+ξn
+341
+y +
+y
+y −
+x
+(7.55)
+(7.57)
+(7.58)
+(7.59)
+(7.60)
+b
+b
+7.1. Maximum Margin Classifiers
+Figure 7.7 Illustration of SVM regression, showing
+the regression curve together with the -
+insensitive ‘tube’. Also shown are exam-
+ξ. Points
+ples of the slack variables ξ and
+above the -tube have ξ > 0 and
+ξ = 0,
+points below the -tube have ξ = 0 and
+ξ > 0, and points inside the -tube have
+ξ = 0.
+y(x)
+ξ > 0
+ξ > 0
+The error function for support vector regression can then be written as
+C
+(ξn +
+ξn) +
+1
+2w2
+ξn � 0 as well as
+which must be minimized subject to the constraints ξn � 0 and
+(7.53) and (7.54). This can be achieved by introducing Lagrange multipliers an � 0,
+an � 0, µn � 0, and
+µn � 0 and optimizing the Lagrangian
+(ξn +
+ξn) +
+1
+2w2 −
+(µnξn +
+µn
+ξn)
+L = C
+an(	 + ξn + yn − tn) −
+an(	 +
+ξn − yn + tn).
+(7.56)
+We now substitute for y(x) using (7.1) and then set the derivatives of the La-
+grangian with respect to w, b, ξn, and
+ξn to zero, giving
+= 0 ⇒ w =
+(an −
+an)φ(xn)
+= 0 ⇒
+(an −
+an) = 0
+= 0 ⇒ an + µn = C
+µn = C.
+= 0 ⇒
+an +
+Exercise 7.7
+Using these results to eliminate the corresponding variables from the Lagrangian, we
+see that the dual problem involves maximizing
+m=1
+n=1
+n=1
+n=1
+N
+N
+N
+N
+0 � an � C
+an � C
+0 �
+n=1
+N
+342
+7. SPARSE KERNEL MACHINES
+L(a,
+a) = −
+1
+2
+(an −
+an)(am −
+am)k(xn, xm)
+(an +
+an) +
+(an −
+an)tn
+(7.61)
+an}, where we have introduced the kernel k(x, x) =
+with respect to {an} and {
+φ(x)Tφ(x). Again, this is a constrained maximization, and to find the constraints
+an � 0 are both required because these are Lagrange
+we note that an � 0 and
+multipliers. Also µn � 0 and
+µn � 0 together with (7.59) and (7.60), require
+an � C and
+an � C, and so again we have the box constraints
+together with the condition (7.58).
+Substituting (7.57) into (7.1), we see that predictions for new inputs can be made
+using
+y(x) =
+(an −
+an)k(x, xn) + b
+which is again expressed in terms of the kernel function.
+The corresponding Karush-Kuhn-Tucker (KKT) conditions, which state that at
+the solution the product of the dual variables and the constraints must vanish, are
+given by
+(7.62)
+(7.63)
+(7.64)
+(7.65)
+(7.66)
+(7.67)
+(7.68)
+an(	 + ξn + yn − tn) = 0
+ξn − yn + tn) = 0
+an(	 +
+(C − an)ξn = 0
+(C −
+ξn = 0.
+an)
+From these we can obtain several useful results. First of all, we note that a coefficient
+an can only be nonzero if 	 + ξn + yn − tn = 0, which implies that the data point
+either lies on the upper boundary of the 	-tube (ξn = 0) or lies above the upper
+ξn − yn + tn = 0,
+boundary (ξn > 0). Similarly, a nonzero value for
+and such points must lie either on or below the lower boundary of the 	-tube.
+ξn − yn + tn = 0
+are incompatible, as is easily seen by adding them together and noting that ξn and
+ξn are nonnegative while 	 is strictly positive, and so for every data point xn, either
+an or
+Furthermore, the two constraints 	 + ξn + yn − tn = 0 and 	 +
+an (or both) must be zero.
+an implies 	 +
+The support vectors are those data points that contribute to predictions given by
+an = 0. These are points that
+(7.64), in other words those for which either an = 0 or
+lie on the boundary of the 	-tube or outside the tube. All points within the tube have
+(an −
+m=1
+n=1
+n=1
+n=1
+N
+N
+N
+N
+1
+2
+0 � an � C/N
+an � C/N
+0 �
+(an −
+an) = 0
+N
+(an +
+n=1
+an) � νC.
+7.1. Maximum Margin Classifiers
+343
+an = 0. We again have a sparse solution, and the only terms that have to be
+an =
+evaluated in the predictive model (7.64) are those that involve the support vectors.
+The parameter b can be found by considering a data point for which 0 < an <
+C, which from (7.67) must have ξn = 0, and from (7.65) must therefore satisfy
++ yn − tn = 0. Using (7.1) and solving for b, we obtain
+b = tn − 	 − wTφ(xn)
+(am −
+= tn − 	 −
+N
+m=1
+am)k(xn, xm)
+(7.69)
+where we have used (7.57). We can obtain an analogous result by considering a point
+for which 0 <
+an < C. In practice, it is better to average over all such estimates of
+b.
+As with the classification case, there is an alternative formulation of the SVM
+for regression in which the parameter governing complexity has a more intuitive
+interpretation (Sch¨olkopf et al., 2000). In particular, instead of fixing the width 	 of
+the insensitive region, we fix instead a parameter ν that bounds the fraction of points
+lying outside the tube. This involves maximizing
+L(a,
+a) = −
+(an −
+an)(am −
+am)k(xn, xm)
+subject to the constraints
+an)tn
+(7.70)
+(7.71)
+(7.72)
+(7.73)
+(7.74)
+Appendix A
+It can be shown that there are at most νN data points falling outside the insensitive
+tube, while at least νN data points are support vectors and so lie either on the tube
+or outside it.
+The use of a support vector machine to solve a regression problem is illustrated
+using the sinusoidal data set in Figure 7.8. Here the parameters ν and C have been
+chosen by hand. In practice, their values would typically be determined by cross-
+validation.
+344
+7. SPARSE KERNEL MACHINES
+Figure 7.8 Illustration of the ν-SVM for re-
+gression applied to the sinusoidal
+synthetic data set using Gaussian
+kernels. The predicted regression
+curve is shown by the red line, and
+the -insensitive tube corresponds
+to the shaded region. Also, the
+data points are shown in green,
+and those with support vectors
+are indicated by blue circles.
+t
+1
+0
+−1
+0
+1
+x

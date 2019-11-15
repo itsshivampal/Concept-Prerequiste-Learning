@@ -1,0 +1,292 @@
+So far, we have assumed that the training data points are linearly separable in the
+feature space φ(x). The resulting support vector machine will give exact separation
+of the training data in the original input space x, although the corresponding decision
+boundary will be nonlinear. In practice, however, the class-conditional distributions
+may overlap, in which case exact separation of the training data can lead to poor
+generalization.
+We therefore need a way to modify the support vector machine so as to allow
+some of the training points to be misclassified. From (7.19) we see that in the case
+of separable classes, we implicitly used an error function that gave infinite error
+if a data point was misclassified and zero error if it was classified correctly, and
+then optimized the model parameters to maximize the margin. We now modify this
+approach so that data points are allowed to be on the ‘wrong side’ of the margin
+boundary, but with a penalty that increases with the distance from that boundary. For
+the subsequent optimization problem, it is convenient to make this penalty a linear
+function of this distance. To do this, we introduce slack variables, ξn � 0 where
+n = 1, . . . , N, with one slack variable for each training data point (Bennett, 1992;
+Cortes and Vapnik, 1995). These are defined by ξn = 0 for data points that are on or
+inside the correct margin boundary and ξn = |tn − y(xn)| for other points. Thus a
+data point that is on the decision boundary y(xn) = 0 will have ξn = 1, and points
+332
+7. SPARSE KERNEL MACHINES
+Figure 7.3 Illustration of the slack variables ξn � 0.
+Data points with circles around them are
+support vectors.
+n=1
+N
+N
+N
+y = −1
+y = 0
+y = 1
+ξ = 0
+ξ > 1
+ξ < 1
+ξ = 0
+N
+with ξn > 1 will be misclassified. The exact classification constraints (7.5) are then
+replaced with
+n = 1, . . . , N
+tny(xn) � 1 − ξn,
+(7.20)
+in which the slack variables are constrained to satisfy ξn � 0. Data points for which
+ξn = 0 are correctly classified and are either on the margin or on the correct side
+of the margin. Points for which 0 < ξn � 1 lie inside the margin, but on the cor-
+rect side of the decision boundary, and those data points for which ξn > 1 lie on
+the wrong side of the decision boundary and are misclassified, as illustrated in Fig-
+ure 7.3. This is sometimes described as relaxing the hard margin constraint to give a
+soft margin and allows some of the training set data points to be misclassified. Note
+that while slack variables allow for overlapping class distributions, this framework is
+still sensitive to outliers because the penalty for misclassification increases linearly
+with ξ.
+Our goal is now to maximize the margin while softly penalizing points that lie
+on the wrong side of the margin boundary. We therefore minimize
+C
+ξn +
+1
+2w2
+(7.21)
+where the parameter C > 0 controls the trade-off between the slack variable penalty
+and the margin. Because any point that is misclassified has ξn > 1, it follows that
+n ξn is an upper bound on the number of misclassified points. The parameter C is
+therefore analogous to (the inverse of) a regularization coefficient because it controls
+the trade-off between minimizing training errors and controlling model complexity.
+In the limit C → ∞, we will recover the earlier support vector machine for separable
+data.
+We now wish to minimize (7.21) subject to the constraints (7.20) together with
+ξn � 0. The corresponding Lagrangian is given by
+L(w, b, a) =
+1
+2w2 + C
+ξn−
+n=1
+n=1
+an {tny(xn) − 1 + ξn}−
+n=1
+µnξn (7.22)
+N
+∂L
+∂w
+∂L
+∂b
+∂L
+∂ξn
+n=1
+n=1
+N
+N
+N
+N
+1
+2
+N
+(7.23)
+(7.24)
+(7.25)
+(7.26)
+(7.27)
+(7.28)
+(7.29)
+(7.30)
+(7.31)
+(7.33)
+(7.34)
+Using these results to eliminate w, b, and {ξn} from the Lagrangian, we obtain the
+dual Lagrangian in the form
+L(a) =
+n=1
+an −
+anamtntmk(xn, xm)
+(7.32)
+n=1
+m=1
+which is identical to the separable case, except that the constraints are somewhat
+different. To see what these constraints are, we note that an � 0 is required because
+these are Lagrange multipliers. Furthermore, (7.31) together with µn � 0 implies
+an � C. We therefore have to minimize (7.32) with respect to the dual variables
+{an} subject to
+0 � an � C
+antn = 0
+n=1
+for n = 1, . . . , N, where (7.33) are known as box constraints. This again represents
+a quadratic programming problem. If we substitute (7.29) into (7.1), we see that
+predictions for new data points are again made by using (7.13).
+We can now interpret the resulting solution. As before, a subset of the data
+points may have an = 0, in which case they do not contribute to the predictive
+Appendix E
+where {an � 0} and {µn � 0} are Lagrange multipliers. The corresponding set of
+KKT conditions are given by
+7.1. Maximum Margin Classifiers
+333
+where n = 1, . . . , N.
+We now optimize out w, b, and {ξn} making use of the definition (7.1) of y(x)
+to give
+an � 0
+tny(xn) − 1 + ξn � 0
+an (tny(xn) − 1 + ξn) = 0
+µn � 0
+ξn � 0
+µnξn = 0
+= 0 ⇒ w =
+antnφ(xn)
+= 0 ⇒
+antn = 0
+= 0 ⇒ an = C − µn.
+tn −
+n∈M
+m∈S
+N
+N
+1
+2
+N
+n=1
+N
+n=1
+m=1
+0 � an � 1/N
+antn = 0
+an � ν.
+n=1
+334
+7. SPARSE KERNEL MACHINES
+model (7.13). The remaining data points constitute the support vectors. These have
+an > 0 and hence from (7.25) must satisfy
+tny(xn) = 1 − ξn.
+(7.35)
+If an < C, then (7.31) implies that µn > 0, which from (7.28) requires ξn = 0 and
+hence such points lie on the margin. Points with an = C can lie inside the margin
+and can either be correctly classified if ξn � 1 or misclassified if ξn > 1.
+To determine the parameter b in (7.1), we note that those support vectors for
+which 0 < an < C have ξn = 0 so that tny(xn) = 1 and hence will satisfy
+tn
+amtmk(xn, xm) + b
+= 1.
+(7.36)
+Again, a numerically stable solution is obtained by averaging to give
+b =
+1
+NM
+amtmk(xn, xm)
+(7.37)
+m∈S
+where M denotes the set of indices of data points having 0 < an < C.
+An alternative, equivalent formulation of the support vector machine, known as
+the ν-SVM, has been proposed by Sch¨olkopf et al. (2000). This involves maximizing
+L(a) = −
+anamtntmk(xn, xm)
+(7.38)
+subject to the constraints
+(7.39)
+(7.40)
+(7.41)
+This approach has the advantage that the parameter ν, which replaces C, can be
+interpreted as both an upper bound on the fraction of margin errors (points for which
+ξn > 0 and hence which lie on the wrong side of the margin boundary and which may
+or may not be misclassified) and a lower bound on the fraction of support vectors. An
+example of the ν-SVM applied to a synthetic data set is shown in Figure 7.4. Here
+Gaussian kernels of the form exp (−γx − x2) have been used, with γ = 0.45.
+Although predictions for new inputs are made using only the support vectors,
+the training phase (i.e., the determination of the parameters a and b) makes use of
+the whole data set, and so it is important to have efficient algorithms for solving
+335
+7.1. Maximum Margin Classifiers
+Figure 7.4 Illustration of the ν-SVM applied
+to a nonseparable data set in two
+dimensions. The support vectors
+are indicated by circles.
+2
+0
+−2
+−2
+0
+2
+L(a)
+the quadratic programming problem. We first note that the objective function
+given by (7.10) or (7.32) is quadratic and so any local optimum will also be a global
+optimum provided the constraints define a convex region (which they do as a conse-
+quence of being linear). Direct solution of the quadratic programming problem us-
+ing traditional techniques is often infeasible due to the demanding computation and
+memory requirements, and so more practical approaches need to be found. The tech-
+nique of chunking (Vapnik, 1982) exploits the fact that the value of the Lagrangian
+is unchanged if we remove the rows and columns of the kernel matrix corresponding
+to Lagrange multipliers that have value zero. This allows the full quadratic pro-
+gramming problem to be broken down into a series of smaller ones, whose goal is
+eventually to identify all of the nonzero Lagrange multipliers and discard the others.
+Chunking can be implemented using protected conjugate gradients (Burges, 1998).
+Although chunking reduces the size of the matrix in the quadratic function from the
+number of data points squared to approximately the number of nonzero Lagrange
+multipliers squared, even this may be too big to fit in memory for large-scale appli-
+cations. Decomposition methods (Osuna et al., 1996) also solve a series of smaller
+quadratic programming problems but are designed so that each of these is of a fixed
+size, and so the technique can be applied to arbitrarily large data sets. However, it
+still involves numerical solution of quadratic programming subproblems and these
+can be problematic and expensive. One of the most popular approaches to training
+support vector machines is called sequential minimal optimization, or SMO (Platt,
+1999). It takes the concept of chunking to the extreme limit and considers just two
+Lagrange multipliers at a time. In this case, the subproblem can be solved analyti-
+cally, thereby avoiding numerical quadratic programming altogether. Heuristics are
+given for choosing the pair of Lagrange multipliers to be considered at each step.
+In practice, SMO is found to have a scaling with the number of data points that is
+somewhere between linear and quadratic depending on the particular application.
+We have seen that kernel functions correspond to inner products in feature spaces
+that can have high, or even infinite, dimensionality. By working directly in terms of
+the kernel function, without introducing the feature space explicitly, it might there-
+fore seem that support vector machines somehow manage to avoid the curse of di-
+7. SPARSE KERNEL MACHINES
+336
+Section 1.4
+mensionality. This is not the case, however, because there are constraints amongst
+the feature values that restrict the effective dimensionality of feature space. To see
+this consider a simple second-order polynomial kernel that we can expand in terms
+of its components
+k(x, z) =
+1 + xTz
+2 = (1 + x1z1 + x2z2)2
+= 1 + 2x1z1 + 2x2z2 + x2
+= (1,√2x1,√2x2, x2
+= φ(x)Tφ(z).
+1z2
+1 + 2x1z1x2z2 + x2
+1,√2x1x2, x2
+2)(1,√2z1,√2z2, z2
+2z2
+2
+1,√2z1z2, z2
+2)T
+(7.42)
+This kernel function therefore represents an inner product in a feature space having
+six dimensions, in which the mapping from input space to feature space is described
+by the vector function φ(x). However, the coefficients weighting these different
+features are constrained to have specific forms. Thus any set of points in the original
+two-dimensional space x would be constrained to lie exactly on a two-dimensional
+nonlinear manifold embedded in the six-dimensional feature space.
+We have already highlighted the fact that the support vector machine does not
+provide probabilistic outputs but instead makes classification decisions for new in-
+put vectors. Veropoulos et al. (1999) discuss modifications to the SVM to allow
+the trade-off between false positive and false negative errors to be controlled. How-
+ever, if we wish to use the SVM as a module in a larger probabilistic system, then
+probabilistic predictions of the class label t for new inputs x are required.
+To address this issue, Platt (2000) has proposed fitting a logistic sigmoid to the
+outputs of a previously trained support vector machine. Specifically, the required
+conditional probability is assumed to be of the form
+p(t = 1|x) = σ (Ay(x) + B)
+(7.43)
+where y(x) is defined by (7.1). Values for the parameters A and B are found by
+minimizing the cross-entropy error function defined by a training set consisting of
+pairs of values y(xn) and tn. The data used to fit the sigmoid needs to be independent
+of that used to train the original SVM in order to avoid severe over-fitting. This two-
+stage approach is equivalent to assuming that the output y(x) of the support vector
+machine represents the log-odds of x belonging to class t = 1. Because the SVM
+training procedure is not specifically intended to encourage this, the SVM can give
+a poor approximation to the posterior probabilities (Tipping, 2001).

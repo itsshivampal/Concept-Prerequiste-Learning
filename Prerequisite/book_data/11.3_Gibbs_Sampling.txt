@@ -1,0 +1,235 @@
+Gibbs sampling (Geman and Geman, 1984) is a simple and widely applicable Markov
+chain Monte Carlo algorithm and can be seen as a special case of the Metropolis-
+Hastings algorithm.
+Consider the distribution p(z) = p(z1, . . . , zM ) from which we wish to sample,
+and suppose that we have chosen some initial state for the Markov chain. Each step
+of the Gibbs sampling procedure involves replacing the value of one of the variables
+by a value drawn from the distribution of that variable conditioned on the values of
+the remaining variables. Thus we replace zi by a value drawn from the distribution
+p(zi|z\i), where zi denotes the ith component of z, and z\i denotes z1, . . . , zM but
+with zi omitted. This procedure is repeated either by cycling through the variables
+11.3. Gibbs Sampling
+543
+in some particular order or by choosing the variable to be updated at each step at
+random from some distribution.
+For example, suppose we have a distribution p(z1, z2, z3) over three variables,
+3 . We first
+obtained by sampling from the conditional distri-
+and at step τ of the algorithm we have selected values z(τ )
+replace z(τ )
+bution
+1 by a new value z(τ +1)
+1 , z(τ )
+and z(τ )
+2
+1
+p(z1|z(τ )
+2 , z(τ )
+3 ).
+obtained by sampling from the conditional
+(11.46)
+Next we replace z(τ )
+distribution
+2
+by a value z(τ +1)
+2
+(11.47)
+so that the new value for z1 is used straight away in subsequent sampling steps. Then
+we update z3 with a sample z(τ +1)
+drawn from
+p(z2|z(τ +1)
+, z(τ )
+3 )
+1
+3
+p(z3|z(τ +1)
+1
+, z(τ +1)
+2
+(11.48)
+and so on, cycling through the three variables in turn.
+Gibbs Sampling
+1. Initialize {zi : i = 1, . . . , M}
+2. For τ = 1, . . . , T :
+– Sample z(τ +1)
+– Sample z(τ +1)
+∼ p(z1|z(τ )
+∼ p(z2|z(τ +1)
+1
+2
+1
+2 , z(τ )
+3 , . . . , z(τ )
+M ).
+3 , . . . , z(τ )
+, z(τ )
+M ).
+– Sample z(τ +1)
+j
+∼ p(zj|z(τ +1)
+1
+, . . . , z(τ +1)
+j−1 , z(τ )
+j+1, . . . , z(τ )
+M ).
+– Sample z(τ +1)
+M
+∼ p(zM|z(τ +1)
+1
+, z(τ +1)
+2
+, . . . , z(τ +1)
+M−1 ).
+Josiah Willard Gibbs
+1839–1903
+Gibbs spent almost his entire life liv-
+ing in a house built by his father in
+New Haven, Connecticut.
+In 1863,
+Gibbs was granted the first PhD in
+engineering in the United States,
+and in 1871 he was appointed to
+the first chair of mathematical physics in the United
+States at Yale, a post for which he received no salary
+because at the time he had no publications. He de-
+veloped the field of vector analysis and made contri-
+butions to crystallography and planetary orbits. His
+most famous work, entitled OntheEquilibriumofHet-
+erogeneous Substances, laid the foundations for the
+science of physical chemistry.
+544
+11. SAMPLING METHODS
+To show that this procedure samples from the required distribution, we first of
+all note that the distribution p(z) is an invariant of each of the Gibbs sampling steps
+individually and hence of the whole Markov chain. This follows from the fact that
+when we sample from p(zi|{z\i), the marginal distribution p(z\i) is clearly invariant
+because the value of z\i is unchanged. Also, each step by definition samples from the
+correct conditional distribution p(zi|z\i). Because these conditional and marginal
+distributions together specify the joint distribution, we see that the joint distribution
+is itself invariant.
+The second requirement to be satisfied in order that the Gibbs sampling proce-
+dure samples from the correct distribution is that it be ergodic. A sufficient condition
+for ergodicity is that none of the conditional distributions be anywhere zero. If this
+is the case, then any point in z space can be reached from any other point in a finite
+number of steps involving one update of each of the component variables. If this
+requirement is not satisfied, so that some of the conditional distributions have zeros,
+then ergodicity, if it applies, must be proven explicitly.
+The distribution of initial states must also be specified in order to complete the
+algorithm, although samples drawn after many iterations will effectively become
+independent of this distribution. Of course, successive samples from the Markov
+chain will be highly correlated, and so to obtain samples that are nearly independent
+it will be necessary to subsample the sequence.
+We can obtain the Gibbs sampling procedure as a particular instance of the
+Metropolis-Hastings algorithm as follows. Consider a Metropolis-Hastings sampling
+step involving the variable zk in which the remaining variables z\k remain fixed, and
+for which the transition probability from z to z is given by qk(z|z) = p(z
+k|z\k).
+\k = z\k because these components are unchanged by the sampling
+We note that z
+step. Also, p(z) = p(zk|z\k)p(z\k). Thus the factor that determines the acceptance
+probability in the Metropolis-Hastings (11.44) is given by
+k|z
+\k)p(z
+p(z
+p(zk|z\k)p(z\k)p(z
+\k)p(zk|z
+\k)
+k|z\k)
+= 1
+(11.49)
+A(z, z) = p(z)qk(z|z)
+p(z)qk(z|z)
+where we have used z
+accepted.
+\k = z\k. Thus the Metropolis-Hastings steps are always
+As with the Metropolis algorithm, we can gain some insight into the behaviour of
+Gibbs sampling by investigating its application to a Gaussian distribution. Consider
+a correlated Gaussian in two variables, as illustrated in Figure 11.11, having con-
+ditional distributions of width l and marginal distributions of width L. The typical
+step size is governed by the conditional distributions and will be of order l. Because
+the state evolves according to a random walk, the number of steps needed to obtain
+independent samples from the distribution will be of order (L/l)2. Of course if the
+Gaussian distribution were uncorrelated, then the Gibbs sampling procedure would
+be optimally efficient. For this simple problem, we could rotate the coordinate sys-
+tem in order to decorrelate the variables. However, in practical applications it will
+generally be infeasible to find such transformations.
+One approach to reducing random walk behaviour in Gibbs sampling is called
+over-relaxation (Adler, 1981). In its original form, this applies to problems for which
+z2
+Figure 11.11 Illustration of Gibbs sampling by alter-
+nate updates of two variables whose
+distribution is a correlated Gaussian.
+The step size is governed by the stan-
+dard deviation of the conditional distri-
+bution (green curve), and is O(l), lead-
+ing to slow progress in the direction of
+elongation of the joint distribution (red
+ellipse). The number of steps needed
+to obtain an independent sample from
+the distribution is O((L/l)2).
+11.3. Gibbs Sampling
+545
+L
+l
+z1
+the conditional distributions are Gaussian, which represents a more general class of
+distributions than the multivariate Gaussian because, for example, the non-Gaussian
+distribution p(z, y) ∝ exp(−z2y2) has Gaussian conditional distributions. At each
+step of the Gibbs sampling algorithm, the conditional distribution for a particular
+component zi has some mean µi and some variance σ2
+i . In the over-relaxation frame-
+work, the value of zi is replaced with
+zi = µi + α(zi − µi) + σi(1 − α2
+i )1/2ν
+(11.50)
+where ν is a Gaussian random variable with zero mean and unit variance, and α
+is a parameter such that −1 < α < 1. For α = 0, the method is equivalent to
+standard Gibbs sampling, and for α < 0 the step is biased to the opposite side of the
+mean. This step leaves the desired distribution invariant because if zi has mean µi
+i , then so too does zi. The effect of over-relaxation is to encourage
+and variance σ2
+directed motion through state space when the variables are highly correlated. The
+framework of ordered over-relaxation (Neal, 1999) generalizes this approach to non-
+Gaussian distributions.
+The practical applicability of Gibbs sampling depends on the ease with which
+samples can be drawn from the conditional distributions p(zk|z\k). In the case of
+probability distributions specified using graphical models, the conditional distribu-
+tions for individual nodes depend only on the variables in the corresponding Markov
+blankets, as illustrated in Figure 11.12. For directed graphs, a wide choice of condi-
+tional distributions for the individual nodes conditioned on their parents will lead to
+conditional distributions for Gibbs sampling that are log concave. The adaptive re-
+jection sampling methods discussed in Section 11.1.3 therefore provide a framework
+for Monte Carlo sampling from directed graphs with broad applicability.
+If the graph is constructed using distributions from the exponential family, and
+if the parent-child relationships preserve conjugacy, then the full conditional distri-
+butions arising in Gibbs sampling will have the same functional form as the orig-
+546
+11. SAMPLING METHODS
+Figure 11.12 The Gibbs sampling method requires samples
+to be drawn from the conditional distribution of a variable condi-
+tioned on the remaining variables. For graphical models, this
+conditional distribution is a function only of the states of the
+nodes in the Markov blanket. For an undirected graph this com-
+prises the set of neighbours, as shown on the left, while for a
+directed graph the Markov blanket comprises the parents, the
+children, and the co-parents, as shown on the right.
+inal conditional distributions (conditioned on the parents) defining each node, and
+so standard sampling techniques can be employed. In general, the full conditional
+distributions will be of a complex form that does not permit the use of standard sam-
+pling algorithms. However, if these conditionals are log concave, then sampling can
+be done efficiently using adaptive rejection sampling (assuming the corresponding
+variable is a scalar).
+If, at each stage of the Gibbs sampling algorithm, instead of drawing a sample
+from the corresponding conditional distribution, we make a point estimate of the
+variable given by the maximum of the conditional distribution, then we obtain the
+iterated conditional modes (ICM) algorithm discussed in Section 8.3.3. Thus ICM
+can be seen as a greedy approximation to Gibbs sampling.
+Because the basic Gibbs sampling technique considers one variable at a time,
+there are strong dependencies between successive samples. At the opposite extreme,
+if we could draw samples directly from the joint distribution (an operation that we
+are supposing is intractable), then successive samples would be independent. We can
+hope to improve on the simple Gibbs sampler by adopting an intermediate strategy in
+which we sample successively from groups of variables rather than individual vari-
+ables. This is achieved in the blocking Gibbs sampling algorithm by choosing blocks
+of variables, not necessarily disjoint, and then sampling jointly from the variables in
+each block in turn, conditioned on the remaining variables (Jensen et al., 1995).

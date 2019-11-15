@@ -1,0 +1,55 @@
+In many applications of pattern recognition, it is known that predictions should
+be unchanged, or invariant, under one or more transformations of the input vari-
+ables. For example, in the classification of objects in two-dimensional images, such
+as handwritten digits, a particular object should be assigned the same classification
+irrespective of its position within the image (translation invariance) or of its size
+(scale invariance). Such transformations produce significant changes in the raw
+data, expressed in terms of the intensities at each of the pixels in the image, and
+yet should give rise to the same output from the classification system. Similarly
+in speech recognition, small levels of nonlinear warping along the time axis, which
+preserve temporal ordering, should not change the interpretation of the signal.
+If sufficiently large numbers of training patterns are available, then an adaptive
+model such as a neural network can learn the invariance, at least approximately. This
+involves including within the training set a sufficiently large number of examples of
+the effects of the various transformations. Thus, for translation invariance in an im-
+age, the training set should include examples of objects at many different positions.
+This approach may be impractical, however, if the number of training examples
+is limited, or if there are several invariants (because the number of combinations of
+transformations grows exponentially with the number of such transformations). We
+therefore seek alternative approaches for encouraging an adaptive model to exhibit
+the required invariances. These can broadly be divided into four categories:
+1. The training set is augmented using replicas of the training patterns, trans-
+formed according to the desired invariances. For instance, in our digit recog-
+nition example, we could make multiple copies of each example in which the
+w
+w2
+wML
+w1
+e
+262
+5. NEURAL NETWORKS
+Figure 5.13 A schematic illustration of why
+early stopping can give similar
+results to weight decay in the
+case of a quadratic error func-
+tion. The ellipse shows a con-
+tour of constant error, and wML
+denotes the minimum of the er-
+ror function.
+If the weight vector
+starts at the origin and moves ac-
+cording to the local negative gra-
+dient direction, then it will follow
+the path shown by the curve. By
+stopping training early, a weight
+vector
+w is found that is qual-
+itatively similar to that obtained
+with a simple weight-decay reg-
+ularizer and training to the mini-
+mum of the regularized error, as
+can be seen by comparing with
+Figure 3.15.
+digit is shifted to a different position in each image.
+2. A regularization term is added to the error function that penalizes changes in
+the model output when the input is transformed. This leads to the technique of

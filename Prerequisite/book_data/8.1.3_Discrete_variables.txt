@@ -1,0 +1,174 @@
+We have discussed the importance of probability distributions that are members
+of the exponential family, and we have seen that this family includes many well-
+known distributions as particular cases. Although such distributions are relatively
+simple, they form useful building blocks for constructing more complex probability
+Section 2.4
+k=1
+K
+K
+K
+Figure 8.9 (a) This fully-connected graph describes a general distribu-
+tion over two K-state discrete variables having a total of
+K 2 − 1 parameters.
+(b) By dropping the link between the
+nodes, the number of parameters is reduced to 2(K − 1).
+x1
+x1
+(a)
+(b)
+8.1. Bayesian Networks
+367
+x2
+x2
+distributions, and the framework of graphical models is very useful in expressing the
+way in which these building blocks are linked together.
+Such models have particularly nice properties if we choose the relationship be-
+tween each parent-child pair in a directed graph to be conjugate, and we shall ex-
+plore several examples of this shortly. Two cases are particularly worthy of note,
+namely when the parent and child node each correspond to discrete variables and
+when they each correspond to Gaussian variables, because in these two cases the
+relationship can be extended hierarchically to construct arbitrarily complex directed
+acyclic graphs. We begin by examining the discrete case.
+The probability distribution p(x|µ) for a single discrete variable x having K
+possible states (using the 1-of-K representation) is given by
+p(x|µ) =
+µxk
+k
+(8.9)
+distribution.
+and is governed by the parameters µ = (µ1, . . . , µK)T. Due to the constraint
+k µk = 1, only K − 1 values for µk need to be specified in order to define the
+Now suppose that we have two discrete variables, x1 and x2, each of which has
+K states, and we wish to model their joint distribution. We denote the probability of
+observing both x1k = 1 and x2l = 1 by the parameter µkl, where x1k denotes the
+kth component of x1, and similarly for x2l. The joint distribution can be written
+p(x1, x2|µ) =
+k=1
+l=1
+µx1kx2l
+kl
+k
+l µkl = 1, this distri-
+Because the parameters µkl are subject to the constraint
+bution is governed by K 2 − 1 parameters. It is easily seen that the total number of
+parameters that must be specified for an arbitrary joint distribution over M variables
+is KM − 1 and therefore grows exponentially with the number M of variables.
+Using the product rule, we can factor the joint distribution p(x1, x2) in the form
+p(x2|x1)p(x1), which corresponds to a two-node graph with a link going from the
+x1 node to the x2 node as shown in Figure 8.9(a). The marginal distribution p(x1)
+is governed by K − 1 parameters, as before, Similarly, the conditional distribution
+p(x2|x1) requires the specification of K − 1 parameters for each of the K possible
+values of x1. The total number of parameters that must be specified in the joint
+distribution is therefore (K − 1) + K(K − 1) = K 2 − 1 as before.
+Now suppose that the variables x1 and x2 were independent, corresponding to
+the graphical model shown in Figure 8.9(b). Each variable is then described by
+368
+8. GRAPHICAL MODELS
+Figure 8.10 This chain of M discrete nodes, each
+having K states, requires the specification of K − 1 +
+(M − 1)K(K − 1) parameters, which grows linearly
+with the length M of the chain. In contrast, a fully con-
+nected graph of M nodes would have KM − 1 param-
+eters, which grows exponentially with M.
+x1
+x2
+xM
+a separate multinomial distribution, and the total number of parameters would be
+2(K − 1). For a distribution over M independent discrete variables, each having K
+states, the total number of parameters would be M(K − 1), which therefore grows
+linearly with the number of variables. From a graphical perspective, we have reduced
+the number of parameters by dropping links in the graph, at the expense of having a
+restricted class of distributions.
+More generally, if we have M discrete variables x1, . . . , xM , we can model
+the joint distribution using a directed graph with one variable corresponding to each
+node. The conditional distribution at each node is given by a set of nonnegative pa-
+rameters subject to the usual normalization constraint. If the graph is fully connected
+then we have a completely general distribution having KM − 1 parameters, whereas
+if there are no links in the graph the joint distribution factorizes into the product of
+the marginals, and the total number of parameters is M(K − 1). Graphs having in-
+termediate levels of connectivity allow for more general distributions than the fully
+factorized one while requiring fewer parameters than the general joint distribution.
+As an illustration, consider the chain of nodes shown in Figure 8.10. The marginal
+distribution p(x1) requires K − 1 parameters, whereas each of the M − 1 condi-
+tional distributions p(xi|xi−1), for i = 2, . . . , M, requires K(K − 1) parameters.
+This gives a total parameter count of K − 1 + (M − 1)K(K − 1), which is quadratic
+in K and which grows linearly (rather than exponentially) with the length M of the
+chain.
+An alternative way to reduce the number of independent parameters in a model
+is by sharing parameters (also known as tying of parameters). For instance, in the
+chain example of Figure 8.10, we can arrange that all of the conditional distributions
+p(xi|xi−1), for i = 2, . . . , M, are governed by the same set of K(K−1) parameters.
+Together with the K−1 parameters governing the distribution of x1, this gives a total
+of K 2 − 1 parameters that must be specified in order to define the joint distribution.
+We can turn a graph over discrete variables into a Bayesian model by introduc-
+ing Dirichlet priors for the parameters. From a graphical point of view, each node
+then acquires an additional parent representing the Dirichlet distribution over the pa-
+rameters associated with the corresponding discrete node. This is illustrated for the
+chain model in Figure 8.11. The corresponding model in which we tie the parame-
+ters governing the conditional distributions p(xi|xi−1), for i = 2, . . . , M, is shown
+in Figure 8.12.
+Another way of controlling the exponential growth in the number of parameters
+in models of discrete variables is to use parameterized models for the conditional
+distributions instead of complete tables of conditional probability values. To illus-
+trate this idea, consider the graph in Figure 8.13 in which all of the nodes represent
+binary variables. Each of the parent variables xi is governed by a single parame-
+Figure 8.11 An extension of the model of
+Figure 8.10 to include Dirich-
+let priors over
+the param-
+eters governing the discrete
+distributions.
+Figure 8.12 As in Figure 8.11 but with a sin-
+gle set of parameters µ shared
+amongst all of the conditional
+distributions p(xi|xi−1).
+µ1
+x1
+µ1
+x1
+8.1. Bayesian Networks
+x2
+369
+µM
+xM
+xM
+M
+µ2
+x2
+ter µi representing the probability p(xi = 1), giving M parameters in total for the
+parent nodes. The conditional distribution p(y|x1, . . . , xM ), however, would require
+2M parameters representing the probability p(y = 1) for each of the 2M possible
+settings of the parent variables. Thus in general the number of parameters required
+to specify this conditional distribution will grow exponentially with M. We can ob-
+tain a more parsimonious form for the conditional distribution by using a logistic
+sigmoid function acting on a linear combination of the parent variables, giving
+Section 2.4
+p(y = 1|x1, . . . , xM ) = σ
+w0 +
+wixi
+= σ(wTx)
+(8.10)
+i=1
+where σ(a) = (1+exp(−a))−1 is the logistic sigmoid, x = (x0, x1, . . . , xM )T is an
+(M + 1)-dimensional vector of parent states augmented with an additional variable
+x0 whose value is clamped to 1, and w = (w0, w1, . . . , wM )T is a vector of M + 1
+parameters. This is a more restricted form of conditional distribution than the general
+case but is now governed by a number of parameters that grows linearly with M. In
+this sense, it is analogous to the choice of a restrictive form of covariance matrix (for
+example, a diagonal matrix) in a multivariate Gaussian distribution. The motivation
+for the logistic sigmoid representation was discussed in Section 4.2.
+Figure 8.13 A graph comprising M parents x1, . . . , xM and a sin-
+gle child y, used to illustrate the idea of parameterized
+conditional distributions for discrete variables.
+x1
+xM
+y
+⎞⎠2
+i=1
+D
+D
+j∈pai
+xi
+j∈pai
+370
+8. GRAPHICAL MODELS

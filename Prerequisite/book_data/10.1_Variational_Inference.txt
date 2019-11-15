@@ -1,0 +1,115 @@
+Variational methods have their origins in the 18th century with the work of Euler,
+Lagrange, and others on the calculus of variations. Standard calculus is concerned
+with finding derivatives of functions. We can think of a function as a mapping that
+takes the value of a variable as the input and returns the value of the function as the
+output. The derivative of the function then describes how the output value varies
+as we make infinitesimal changes to the input value. Similarly, we can define a
+functional as a mapping that takes a function as the input and that returns the value
+of the functional as the output. An example would be the entropy H[p], which takes
+a probability distribution p(x) as the input and returns the quantity
+H[p] =
+p(x) ln p(x) dx
+(10.1)
+10.1. Variational Inference
+463
+as the output. We can the introduce the concept of a functional derivative, which ex-
+presses how the value of the functional changes in response to infinitesimal changes
+to the input function (Feynman et al., 1964). The rules for the calculus of variations
+mirror those of standard calculus and are discussed in Appendix D. Many problems
+can be expressed in terms of an optimization problem in which the quantity being
+optimized is a functional. The solution is obtained by exploring all possible input
+functions to find the one that maximizes, or minimizes, the functional. Variational
+methods have broad applicability and include such areas as finite element methods
+(Kapur, 1989) and maximum entropy (Schwarz, 1988).
+Although there is nothing intrinsically approximate about variational methods,
+they do naturally lend themselves to finding approximate solutions. This is done
+by restricting the range of functions over which the optimization is performed, for
+instance by considering only quadratic functions or by considering functions com-
+posed of a linear combination of fixed basis functions in which only the coefficients
+of the linear combination can vary. In the case of applications to probabilistic in-
+ference, the restriction may for example take the form of factorization assumptions
+(Jordan et al., 1999; Jaakkola, 2001).
+Now let us consider in more detail how the concept of variational optimization
+can be applied to the inference problem. Suppose we have a fully Bayesian model in
+which all parameters are given prior distributions. The model may also have latent
+variables as well as parameters, and we shall denote the set of all latent variables
+and parameters by Z. Similarly, we denote the set of all observed variables by X.
+For example, we might have a set of N independent, identically distributed data,
+for which X = {x1, . . . , xN} and Z = {z1, . . . , zN}. Our probabilistic model
+specifies the joint distribution p(X, Z), and our goal is to find an approximation for
+the posterior distribution p(Z|X) as well as for the model evidence p(X). As in our
+discussion of EM, we can decompose the log marginal probability using
+where we have defined
+ln p(X) = L(q) + KL(qp)
+L(q) =
+q(Z) ln
+KL(qp) = −
+q(Z) ln
+p(X, Z)
+q(Z)
+p(Z|X)
+q(Z)
+dZ
+dZ.
+(10.2)
+(10.3)
+(10.4)
+This differs from our discussion of EM only in that the parameter vector θ no longer
+appears, because the parameters are now stochastic variables and are absorbed into
+Z. Since in this chapter we will mainly be interested in continuous variables we have
+used integrations rather than summations in formulating this decomposition. How-
+ever, the analysis goes through unchanged if some or all of the variables are discrete
+simply by replacing the integrations with summations as required. As before, we
+can maximize the lower bound L(q) by optimization with respect to the distribution
+q(Z), which is equivalent to minimizing the KL divergence. If we allow any possible
+choice for q(Z), then the maximum of the lower bound occurs when the KL diver-
+gence vanishes, which occurs when q(Z) equals the posterior distribution p(Z|X).
+464
+10. APPROXIMATE INFERENCE
+1
+0.8
+0.6
+0.4
+0.2
+0
+−2
+−1
+0
+1
+2
+3
+4
+40
+30
+20
+10
+0
+−2
+Figure 10.1 Illustration of the variational approximation for the example considered earlier in Figure 4.14. The
+left-hand plot shows the original distribution (yellow) along with the Laplace (red) and variational (green) approx-
+imations, and the right-hand plot shows the negative logarithms of the corresponding curves.
+−1
+0
+1
+2
+3
+4
+M
+However, we shall suppose the model is such that working with the true posterior
+distribution is intractable.
+We therefore consider instead a restricted family of distributions q(Z) and then
+seek the member of this family for which the KL divergence is minimized. Our goal
+is to restrict the family sufficiently that they comprise only tractable distributions,
+while at the same time allowing the family to be sufficiently rich and flexible that it
+can provide a good approximation to the true posterior distribution. It is important to
+emphasize that the restriction is imposed purely to achieve tractability, and that sub-
+ject to this requirement we should use as rich a family of approximating distributions
+as possible. In particular, there is no ‘over-fitting’ associated with highly flexible dis-
+tributions. Using more flexible approximations simply allows us to approach the true
+posterior distribution more closely.
+One way to restrict the family of approximating distributions is to use a paramet-
+ric distribution q(Z|ω) governed by a set of parameters ω. The lower bound L(q)
+then becomes a function of ω, and we can exploit standard nonlinear optimization
+techniques to determine the optimal values for the parameters. An example of this
+approach, in which the variational distribution is a Gaussian and we have optimized
+with respect to its mean and variance, is shown in Figure 10.1.

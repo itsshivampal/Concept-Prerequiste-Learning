@@ -1,0 +1,77 @@
+In Section 3.3.3, we saw that the prediction of a linear regression model for a
+new input x takes the form of a linear combination of the training set target values
+with coefficients given by the ‘equivalent kernel’ (3.62) where the equivalent kernel
+satisfies the summation constraint (3.64).
+We can motivate the kernel regression model (3.61) from a different perspective,
+starting with kernel density estimation. Suppose we have a training set {xn, tn} and
+we use a Parzen density estimator to model the joint distribution p(x, t), so that
+p(x, t) =
+1
+N
+f(x − xn, t − tn)
+n=1
+(6.42)
+where f(x, t) is the component density function, and there is one such component
+centred on each data point. We now find an expression for the regression function
+y(x), corresponding to the conditional average of the target variable conditioned on
+m
+m
+n
+n
+m
+n
+N
+y(x) =
+g(x − xn)tn
+g(x − xm)
+k(x, xn)tn
+k(x, xn) = g(x − xn)
+g(x − xm)
+g(x) =
+f(x, t) dt.
+k(x, xn) = 1.
+n=1
+where n, m = 1, . . . , N and the kernel function k(x, xn) is given by
+and we have defined
+The result (6.45) is known as the Nadaraya-Watson model, or kernel regression
+(Nadaraya, 1964; Watson, 1964). For a localized kernel function, it has the prop-
+erty of giving more weight to the data points xn that are close to x. Note that the
+kernel (6.46) satisfies the summation constraint
+302
+6. KERNEL METHODS
+the input variable, which is given by
+y(x) = E[t|x] =
+tp(t|x) dt
+tp(x, t) dt
+p(x, t) dt
+tf(x − xn, t − tn) dt
+f(x − xm, t − tm) dt
+(6.43)
+We now assume for simplicity that the component density functions have zero mean
+so that
+f(x, t)t dt = 0
+for all values of x. Using a simple change of variable, we then obtain
+(6.44)
+(6.45)
+(6.46)
+(6.47)
+0
+Figure 6.3 Illustration of the Nadaraya-Watson kernel
+regression model using isotropic Gaussian kernels, for the
+sinusoidal data set. The original sine function is shown
+by the green curve, the data points are shown in blue,
+and each is the centre of an isotropic Gaussian kernel.
+The resulting regression function, given by the condi-
+tional mean, is shown by the red line, along with the two-
+standard-deviation region for the conditional distribution
+p(t|x) shown by the red shading. The blue ellipse around
+each data point shows one standard deviation contour for
+the corresponding kernel. These appear noncircular due
+to the different scales on the horizontal and vertical axes.
+1.5
+1
+0.5
+0
+−0.5
+−1
+−1.5

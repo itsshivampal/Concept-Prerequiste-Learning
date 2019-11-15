@@ -1,0 +1,77 @@
+165
+a Bayesian approach, like any approach to pattern recognition, needs to make as-
+sumptions about the form of the model, and if these are invalid then the results can
+be misleading. In particular, we see from Figure 3.12 that the model evidence can
+be sensitive to many aspects of the prior, such as the behaviour in the tails. Indeed,
+the evidence is not defined if the prior is improper, as can be seen by noting that
+an improper prior has an arbitrary scaling factor (in other words, the normalization
+coefficient is not defined because the distribution cannot be normalized). If we con-
+sider a proper prior and then take a suitable limit in order to obtain an improper prior
+(for example, a Gaussian prior in which we take the limit of infinite variance) then
+the evidence will go to zero, as can be seen from (3.70) and Figure 3.12. It may,
+however, be possible to consider the evidence ratio between two models first and
+then take a limit to obtain a meaningful answer.
+In a practical application, therefore, it will be wise to keep aside an independent
+test set of data on which to evaluate the overall performance of the final system.
+3.5. The Evidence Approximation
+In a fully Bayesian treatment of the linear basis function model, we would intro-
+duce prior distributions over the hyperparameters α and β and make predictions by
+marginalizing with respect to these hyperparameters as well as with respect to the
+parameters w. However, although we can integrate analytically over either w or
+over the hyperparameters, the complete marginalization over all of these variables
+is analytically intractable. Here we discuss an approximation in which we set the
+hyperparameters to specific values determined by maximizing the marginal likeli-
+hood function obtained by first integrating over the parameters w. This framework
+is known in the statistics literature as empirical Bayes (Bernardo and Smith, 1994;
+Gelman et al., 2004), or type 2 maximum likelihood (Berger, 1985), or generalized
+maximum likelihood (Wahba, 1975), and in the machine learning literature is also
+called the evidence approximation (Gull, 1989; MacKay, 1992a).
+If we introduce hyperpriors over α and β, the predictive distribution is obtained
+by marginalizing over w, α and β so that
+p(t|t) =
+p(t|w, β)p(w|t, α, β)p(α, β|t) dw dα dβ
+(3.74)
+where p(t|w, β) is given by (3.8) and p(w|t, α, β) is given by (3.49) with mN and
+SN defined by (3.53) and (3.54) respectively. Here we have omitted the dependence
+on the input variable x to keep the notation uncluttered. If the posterior distribution
+p(α, β|t) is sharply peaked around values
+β, then the predictive distribution is
+obtained simply by marginalizing over w in which α and β are fixed to the values
+and
+β, so that
+α and
+p(t|t)  p(t|t,
+p(t|w,
+β)p(w|t,
+β) dw.
+(3.75)
+166
+3. LINEAR MODELS FOR REGRESSION
+From Bayes’ theorem, the posterior distribution for α and β is given by
+p(α, β|t) ∝ p(t|α, β)p(α, β).
+(3.76)
+α and
+If the prior is relatively flat, then in the evidence framework the values of
+β are obtained by maximizing the marginal likelihood function p(t|α, β). We shall
+proceed by evaluating the marginal likelihood for the linear basis function model and
+then finding its maxima. This will allow us to determine values for these hyperpa-
+rameters from the training data alone, without recourse to cross-validation. Recall
+that the ratio α/β is analogous to a regularization parameter.
+As an aside it is worth noting that, if we define conjugate (Gamma) prior distri-
+butions over α and β, then the marginalization over these hyperparameters in (3.74)
+can be performed analytically to give a Student’s t-distribution over w (see Sec-
+tion 2.3.7). Although the resulting integral over w is no longer analytically tractable,
+it might be thought that approximating this integral, for example using the Laplace
+approximation discussed (Section 4.4) which is based on a local Gaussian approxi-
+mation centred on the mode of the posterior distribution, might provide a practical
+alternative to the evidence framework (Buntine and Weigend, 1991). However, the
+integrand as a function of w typically has a strongly skewed mode so that the Laplace
+approximation fails to capture the bulk of the probability mass, leading to poorer re-
+sults than those obtained by maximizing the evidence (MacKay, 1999).
+Returning to the evidence framework, we note that there are two approaches that
+we can take to the maximization of the log evidence. We can evaluate the evidence
+function analytically and then set its derivative equal to zero to obtain re-estimation
+equations for α and β, which we shall do in Section 3.5.2. Alternatively we use a
+technique called the expectation maximization (EM) algorithm, which will be dis-
+cussed in Section 9.3.4 where we shall also show that these two approaches converge
+to the same solution.

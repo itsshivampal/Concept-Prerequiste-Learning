@@ -1,0 +1,19 @@
+181
+(McCullagh and Nelder, 1989). Note, however, that in contrast to the models used
+for regression, they are no longer linear in the parameters due to the presence of the
+nonlinear function f(·). This will lead to more complex analytical and computa-
+tional properties than for linear regression models. Nevertheless, these models are
+still relatively simple compared to the more general nonlinear models that will be
+studied in subsequent chapters.
+The algorithms discussed in this chapter will be equally applicable if we first
+make a fixed nonlinear transformation of the input variables using a vector of basis
+functions φ(x) as we did for regression models in Chapter 3. We begin by consider-
+ing classification directly in the original input space x, while in Section 4.3 we shall
+find it convenient to switch to a notation involving basis functions for consistency
+with later chapters.
+4.1. Discriminant Functions
+A discriminant is a function that takes an input vector x and assigns it to one of K
+classes, denoted Ck. In this chapter, we shall restrict attention to linear discriminants,
+namely those for which the decision surfaces are hyperplanes. To simplify the dis-
+cussion, we consider first the case of two classes and then investigate the extension
+to K > 2 classes.

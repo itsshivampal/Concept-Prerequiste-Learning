@@ -1,0 +1,209 @@
+So far in this chapter, we have focussed on distributions over continuous vari-
+ables described by mixtures of Gaussians. As a further example of mixture mod-
+elling, and to illustrate the EM algorithm in a different context, we now discuss mix-
+tures of discrete binary variables described by Bernoulli distributions. This model
+is also known as latent class analysis (Lazarsfeld and Henry, 1968; McLachlan and
+Peel, 2000). As well as being of practical importance in its own right, our discus-
+sion of Bernoulli mixtures will also lay the foundation for a consideration of hidden
+Markov models over discrete variables.
+Exercise 9.11
+Section 13.2
+i=1
+i=1
+D
+D
+N
+k=1
+K
+K
+k=1
+K
+K
+(9.44)
+(9.45)
+(9.46)
+(9.47)
+(9.48)
+(9.49)
+(9.50)
+9.3. An Alternative View of EM
+445
+Consider a set of D binary variables xi, where i = 1, . . . , D, each of which is
+governed by a Bernoulli distribution with parameter µi, so that
+where x = (x1, . . . , xD)T and µ = (µ1, . . . , µD)T. We see that the individual
+variables xi are independent, given µ. The mean and covariance of this distribution
+are easily seen to be
+Now let us consider a finite mixture of these distributions given by
+p(x|µ) =
+µxi
+i (1 − µi)(1−xi)
+E[x] = µ
+cov[x] = diag{µi(1 − µi)}.
+p(x|µ, π) =
+πkp(x|µk)
+where µ = {µ1, . . . , µK}, π = {π1, . . . , πK}, and
+p(x|µk) =
+µxi
+ki(1 − µki)(1−xi).
+Exercise 9.12
+The mean and covariance of this mixture distribution are given by
+E[x] =
+πkµk
+cov[x] =
+k=1
+πk
+Σk + µkµT
+k
+− E[x]E[x]T
+where Σk = diag {µki(1 − µki)}. Because the covariance matrix cov[x] is no
+longer diagonal, the mixture distribution can capture correlations between the vari-
+ables, unlike a single Bernoulli distribution.
+If we are given a data set X = {x1, . . . , xN} then the log likelihood function
+for this model is given by
+ln p(X|µ, π) =
+ln
+n=1
+k=1
+πkp(xn|µk)
+(9.51)
+Again we see the appearance of the summation inside the logarithm, so that the
+maximum likelihood solution no longer has closed form.
+We now derive the EM algorithm for maximizing the likelihood function for
+the mixture of Bernoulli distributions. To do this, we first introduce an explicit latent
+N
+znk
+n=1
+k=1
+k=1
+k=1
+znk
+znj
+N
+K
+K
+K
+K
+i=1
+D
+D
+446
+9. MIXTURE MODELS AND EM
+variable z associated with each instance of x. As in the case of the Gaussian mixture,
+z = (z1, . . . , zK)T is a binary K-dimensional variable having a single component
+equal to 1, with all other components equal to 0. We can then write the conditional
+distribution of x, given the latent variable, as
+while the prior distribution for the latent variables is the same as for the mixture of
+Gaussians model, so that
+p(x|z, µ) =
+p(x|µk)zk
+p(z|π) =
+πzk
+k .
+(9.52)
+(9.53)
+Exercise 9.14
+If we form the product of p(x|z, µ) and p(z|π) and then marginalize over z, then we
+recover (9.47).
+In order to derive the EM algorithm, we first write down the complete-data log
+likelihood function, which is given by
+ln p(X, Z|µ, π) =
+n=1
+k=1
+ln πk
+[xni ln µki + (1 − xni) ln(1 − µki)]
+(9.54)
+where X = {xn} and Z = {zn}. Next we take the expectation of the complete-data
+log likelihood with respect to the posterior distribution of the latent variables to give
+EZ[ln p(X, Z|µ, π)] =
+γ(znk)
+ln πk
+i=1
+[xni ln µki + (1 − xni) ln(1 − µki)]
+(9.55)
+where γ(znk) = E[znk] is the posterior probability, or responsibility, of component
+k given data point xn. In the E step, these responsibilities are evaluated using Bayes’
+theorem, which takes the form
+γ(znk) = E[znk] =
+znk [πkp(xn|µk)]znk
+πjp(xn|µj)
+znj
+K
+πkp(xn|µk)
+πjp(xn|µj)
+j=1
+(9.56)
+N
+N
+n=1
+9.3. An Alternative View of EM
+447
+If we consider the sum over n in (9.55), we see that the responsibilities enter
+only through two terms, which can be written as
+γ(znk)
+Nk =
+xk =
+n=1
+1
+Nk
+γ(znk)xn
+(9.57)
+(9.58)
+where Nk is the effective number of data points associated with component k. In the
+M step, we maximize the expected complete-data log likelihood with respect to the
+parameters µk and π. If we set the derivative of (9.55) with respect to µk equal to
+zero and rearrange the terms, we obtain
+µk = xk.
+(9.59)
+We see that this sets the mean of component k equal to a weighted mean of the
+data, with weighting coefficients given by the responsibilities that component k takes
+for data points. For the maximization with respect to πk, we need to introduce a
+k πk = 1. Following analogous
+Lagrange multiplier to enforce the constraint
+steps to those used for the mixture of Gaussians, we then obtain
+πk = Nk
+N
+(9.60)
+which represents the intuitively reasonable result that the mixing coefficient for com-
+ponent k is given by the effective fraction of points in the data set explained by that
+component.
+Note that in contrast to the mixture of Gaussians, there are no singularities in
+which the likelihood function goes to infinity. This can be seen by noting that the
+likelihood function is bounded above because 0 � p(xn|µk) � 1. There exist
+singularities at which the likelihood function goes to zero, but these will not be
+found by EM provided it is not initialized to a pathological starting point, because
+the EM algorithm always increases the value of the likelihood function, until a local
+maximum is found. We illustrate the Bernoulli mixture model in Figure 9.10 by
+using it to model handwritten digits. Here the digit images have been turned into
+binary vectors by setting all elements whose values exceed 0.5 to 1 and setting the
+remaining elements to 0. We now fit a data set of N = 600 such digits, comprising
+the digits ‘2’, ‘3’, and ‘4’, with a mixture of K = 3 Bernoulli distributions by
+running 10 iterations of the EM algorithm. The mixing coefficients were initialized
+to πk = 1/K, and the parameters µkj were set to random values chosen uniformly in
+j µkj = 1.
+the range (0.25, 0.75) and then normalized to satisfy the constraint that
+We see that a mixture of 3 Bernoulli distributions is able to find the three clusters in
+the data set corresponding to the different digits.
+The conjugate prior for the parameters of a Bernoulli distribution is given by
+the beta distribution, and we have seen that a beta prior is equivalent to introducing
+Exercise 9.15
+Exercise 9.16
+Exercise 9.17
+Section 9.4
+448
+9. MIXTURE MODELS AND EM
+Figure 9.10 Illustration of the Bernoulli mixture model in which the top row shows examples from the digits data
+set after converting the pixel values from grey scale to binary using a threshold of 0.5. On the bottom row the first
+three images show the parameters µki for each of the three components in the mixture model. As a comparison,
+we also fit the same data set using a single multivariate Bernoulli distribution, again using maximum likelihood.
+This amounts to simply averaging the counts in each pixel and is shown by the right-most image on the bottom
+row.
+Section 2.1.1
+Exercise 9.18
+Exercise 9.19
+additional effective observations of x. We can similarly introduce priors into the
+Bernoulli mixture model, and use EM to maximize the posterior probability distri-
+butions.
+It is straightforward to extend the analysis of Bernoulli mixtures to the case of
+multinomial binary variables having M > 2 states by making use of the discrete dis-
+tribution (2.26). Again, we can introduce Dirichlet priors over the model parameters
+if desired.

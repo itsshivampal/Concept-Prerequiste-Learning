@@ -1,0 +1,331 @@
+In order to formulate a variational treatment of this model, we next write down
+the joint distribution of all of the random variables, which is given by
+p(X, Z, π, µ, Λ) = p(X|Z, µ, Λ)p(Z|π)p(π)p(µ|Λ)p(Λ)
+(10.41)
+in which the various factors are defined above. The reader should take a moment to
+verify that this decomposition does indeed correspond to the probabilistic graphical
+model shown in Figure 10.5. Note that only the variables X = {x1, . . . , xN} are
+observed.
+N
+n=1
+k=1
+K
+N
+N
+K
+K
+k=1
+476
+10. APPROXIMATE INFERENCE
+We now consider a variational distribution which factorizes between the latent
+variables and the parameters so that
+q(Z, π, µ, Λ) = q(Z)q(π, µ, Λ).
+(10.42)
+It is remarkable that this is the only assumption that we need to make in order to
+obtain a tractable practical solution to our Bayesian mixture model. In particular, the
+functional form of the factors q(Z) and q(π, µ, Λ) will be determined automatically
+by optimization of the variational distribution. Note that we are omitting the sub-
+scripts on the q distributions, much as we do with the p distributions in (10.41), and
+are relying on the arguments to distinguish the different distributions.
+The corresponding sequential update equations for these factors can be easily
+derived by making use of the general result (10.9). Let us consider the derivation of
+the update equation for the factor q(Z). The log of the optimized factor is given by
+ln q(Z) = Eπ,µ,Λ[ln p(X, Z, π, µ, Λ)] + const.
+(10.43)
+We now make use of the decomposition (10.41). Note that we are only interested in
+the functional dependence of the right-hand side on the variable Z. Thus any terms
+that do not depend on Z can be absorbed into the additive normalization constant,
+giving
+ln q(Z) = Eπ[ln p(Z|π)] + Eµ,Λ[ln p(X|Z, µ, Λ)] + const.
+(10.44)
+Substituting for the two conditional distributions on the right-hand side, and again
+absorbing any terms that are independent of Z into the additive constant, we have
+ln q(Z) =
+n=1
+where we have defined
+znk ln ρnk + const
+ln ρnk = E[ln πk] +
+D
+2
+1
+2E [ln|Λk| ] −
+(xn − µk)TΛk(xn − µk)
+ln(2π)
+1
+2Eµk,Λk
+(10.45)
+(10.46)
+where D is the dimensionality of the data variable x. Taking the exponential of both
+sides of (10.45) we obtain
+q(Z) ∝
+ρznk
+nk .
+(10.47)
+Exercise 10.12
+Requiring that this distribution be normalized, and noting that for each value of n
+the quantities znk are binary and sum to 1 over all values of k, we obtain
+q(Z) =
+rznk
+nk
+n=1
+k=1
+(10.48)
+k=1
+j=1
+K
+K
+n=1
+N
+rnk
+N
+n=1
+n=1
+1
+Nk
+1
+Nk
+N
+N
+K
+10.2. Illustration: Variational Mixture of Gaussians
+where
+rnk = ρnk
+ρnj
+K
+We see that the optimal solution for the factor q(Z) takes the same functional form
+as the prior p(Z|π). Note that because ρnk is given by the exponential of a real
+quantity, the quantities rnk will be nonnegative and will sum to one, as required.
+For the discrete distribution q(Z) we have the standard result
+E[znk] = rnk
+(10.50)
+from which we see that the quantities rnk are playing the role of responsibilities.
+Note that the optimal solution for q(Z) depends on moments evaluated with respect
+to the distributions of other variables, and so again the variational update equations
+are coupled and must be solved iteratively.
+At this point, we shall find it convenient to define three statistics of the observed
+data set evaluated with respect to the responsibilities, given by
+477
+(10.49)
+(10.51)
+(10.52)
+(10.53)
+Nk =
+xk =
+rnkxn
+Sk =
+rnk(xn − xk)(xn − xk)T.
+Note that these are analogous to quantities evaluated in the maximum likelihood EM
+algorithm for the Gaussian mixture model.
+Now let us consider the factor q(π, µ, Λ) in the variational posterior distribu-
+tion. Again using the general result (10.9) we have
+ln q(π, µ, Λ) = ln p(π) +
+ln p(µk, Λk) + EZ [ln p(Z|π)]
+k=1
+n=1
+E[znk] lnN
+xn|µk, Λ−1
+k
++ const.
+(10.54)
+We observe that the right-hand side of this expression decomposes into a sum of
+terms involving only π together with terms only involving µ and Λ, which implies
+that the variational posterior q(π, µ, Λ) factorizes to give q(π)q(µ, Λ). Further-
+more, the terms involving µ and Λ themselves comprise a sum over k of terms
+involving µk and Λk leading to the further factorization
+q(π, µ, Λ) = q(π)
+q(µk, Λk).
+(10.55)
+k=1
+k=1
+K
+D
+i=1
+n=1
+k=1
+K
+N
+2
+478
+10. APPROXIMATE INFERENCE
+Identifying the terms on the right-hand side of (10.54) that depend on π, we have
+ln q(π) = (α0 − 1)
+ln πk +
+rnk ln πk + const
+(10.56)
+where we have used (10.50). Taking the exponential of both sides, we recognize
+q(π) as a Dirichlet distribution
+q(π) = Dir(π|α)
+(10.57)
+where α has components αk given by
+αk = α0 + Nk.
+(10.58)
+Finally, the variational posterior distribution q(µk, Λk) does not factorize into
+the product of the marginals, but we can always use the product rule to write it in the
+form q(µk, Λk) = q(µk|Λk)q(Λk). The two factors can be found by inspecting
+(10.54) and reading off those terms that involve µk and Λk. The result, as expected,
+is a Gaussian-Wishart distribution and is given by
+µk|mk, (βkΛk)−1
+q(µk, Λk) = N
+W(Λk|Wk, νk)
+(10.59)
+where we have defined
+βk = β0 + Nk
+mk =
+1
+βk
+= W−1
+W−1
+k
+νk = ν0 + Nk.
+(β0m0 + Nkxk)
+0 + NkSk + β0Nk
+β0 + Nk
+(xk − m0)(xk − m0)T
+(10.60)
+(10.61)
+(10.62)
+(10.63)
+These update equations are analogous to the M-step equations of the EM algorithm
+for the maximum likelihood solution of the mixture of Gaussians. We see that the
+computations that must be performed in order to update the variational posterior
+distribution over the model parameters involve evaluation of the same sums over the
+data set, as arose in the maximum likelihood treatment.
+In order to perform this variational M step, we need the expectations E[znk] =
+rnk representing the responsibilities. These are obtained by normalizing the ρnk that
+are given by (10.46). We see that this expression involves expectations with respect
+to the variational distributions of the parameters, and these are easily evaluated to
+give
+Eµk,Λk
+(xn − µk)TΛk(xn − µk)
+= Dβ−1
+k + νk(xn − mk)TWk(xn − mk)
+νk + 1 − i
+(10.64)
++ D ln 2 + ln|Wk| (10.65)
+(10.66)
+ln
+Λk ≡ E [ln|Λk| ] =
+ln
+πk ≡ E [ln πk] = ψ(αk) − ψ(
+Exercise 10.13
+Exercise 10.14
+Appendix B
+Section 10.4.1
+Section 3.4
+Exercise 10.15
+10.2. Illustration: Variational Mixture of Gaussians
+479
+where we have introduced definitions of
+defined by (B.25), with
+the standard properties of the Wishart and Dirichlet distributions.
+πk, and ψ(·) is the digamma function
+k αk. The results (10.65) and (10.66) follow from
+Λk and
+If we substitute (10.64), (10.65), and (10.66) into (10.46) and make use of
+(10.49), we obtain the following result for the responsibilities
+rnk ∝
+πk
+Λ1/2
+k
+exp
+D
+2βk −
+νk
+2
+(xn − mk)TWk(xn − mk)
+(10.67)
+Notice the similarity to the corresponding result for the responsibilities in maximum
+likelihood EM, which from (9.13) can be written in the form
+rnk ∝ πk|Λk|1/2 exp
+1
+2
+(xn − µk)TΛk(xn − µk)
+(10.68)
+where we have used the precision in place of the covariance to highlight the similarity
+to (10.67).
+Thus the optimization of the variational posterior distribution involves cycling
+between two stages analogous to the E and M steps of the maximum likelihood EM
+algorithm. In the variational equivalent of the E step, we use the current distributions
+over the model parameters to evaluate the moments in (10.64), (10.65), and (10.66)
+and hence evaluate E[znk] = rnk. Then in the subsequent variational equivalent
+of the M step, we keep these responsibilities fixed and use them to re-compute the
+variational distribution over the parameters using (10.57) and (10.59). In each case,
+we see that the variational posterior distribution has the same functional form as the
+corresponding factor in the joint distribution (10.41). This is a general result and is
+a consequence of the choice of conjugate distributions.
+Figure 10.6 shows the results of applying this approach to the rescaled Old Faith-
+ful data set for a Gaussian mixture model having K = 6 components. We see that
+after convergence, there are only two components for which the expected values
+of the mixing coefficients are numerically distinguishable from their prior values.
+This effect can be understood qualitatively in terms of the automatic trade-off in a
+Bayesian model between fitting the data and the complexity of the model, in which
+the complexity penalty arises from components whose parameters are pushed away
+from their prior values. Components that take essentially no responsibility for ex-
+plaining the data points have rnk  0 and hence Nk  0. From (10.58), we see
+that αk  α0 and from (10.60)–(10.63) we see that the other parameters revert to
+their prior values. In principle such components are fitted slightly to the data points,
+but for broad priors this effect is too small to be seen numerically. For the varia-
+tional Gaussian mixture model the expected values of the mixing coefficients in the
+posterior distribution are given by
+E[πk] = αk + Nk
+Kα0 + N
+(10.69)
+Consider a component for which Nk  0 and αk  α0. If the prior is broad so that
+α0 → 0, then E[πk] → 0 and the component plays no role in the model, whereas if
+480
+10. APPROXIMATE INFERENCE
+Figure 10.6 Variational Bayesian
+mixture of K = 6 Gaussians ap-
+plied to the Old Faithful data set, in
+which the ellipses denote the one
+standard-deviation density contours
+for each of the components, and the
+density of red ink inside each ellipse
+corresponds to the mean value of
+the mixing coefficient for each com-
+ponent. The number in the top left
+of each diagram shows the num-
+ber of iterations of variational infer-
+ence. Components whose expected
+mixing coefficient are numerically in-
+distinguishable from zero are not
+plotted.
+0
+60
+15
+120
+the prior tightly constrains the mixing coefficients so that α0 → ∞, then E[πk] →
+1/K.
+In Figure 10.6, the prior over the mixing coefficients is a Dirichlet of the form
+(10.39). Recall from Figure 2.5 that for α0 < 1 the prior favours solutions in which
+some of the mixing coefficients are zero. Figure 10.6 was obtained using α0 = 10−3,
+and resulted in two components having nonzero mixing coefficients. If instead we
+choose α0 = 1 we obtain three components with nonzero mixing coefficients, and
+for α = 10 all six components have nonzero mixing coefficients.
+As we have seen there is a close similarity between the variational solution for
+the Bayesian mixture of Gaussians and the EM algorithm for maximum likelihood.
+In fact if we consider the limit N → ∞ then the Bayesian treatment converges to the
+maximum likelihood EM algorithm. For anything other than very small data sets,
+the dominant computational cost of the variational algorithm for Gaussian mixtures
+arises from the evaluation of the responsibilities, together with the evaluation and
+inversion of the weighted data covariance matrices. These computations mirror pre-
+cisely those that arise in the maximum likelihood EM algorithm, and so there is little
+computational overhead in using this Bayesian approach as compared to the tradi-
+tional maximum likelihood one. There are, however, some substantial advantages.
+First of all, the singularities that arise in maximum likelihood when a Gaussian com-
+ponent ‘collapses’ onto a specific data point are absent in the Bayesian treatment.
+k=1
+K
+N
+K
+K
+Section 10.2.4
+Exercise 10.16
+10.2. Illustration: Variational Mixture of Gaussians
+481
+Indeed, these singularities are removed if we simply introduce a prior and then use a
+MAP estimate instead of maximum likelihood. Furthermore, there is no over-fitting
+if we choose a large number K of components in the mixture, as we saw in Fig-
+ure 10.6. Finally, the variational treatment opens up the possibility of determining
+the optimal number of components in the mixture without resorting to techniques
+such as cross validation.

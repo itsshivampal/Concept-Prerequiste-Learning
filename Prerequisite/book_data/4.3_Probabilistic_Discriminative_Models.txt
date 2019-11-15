@@ -1,0 +1,88 @@
+203
+2 classes) or softmax (K � 2 classes) activation functions. These are particular cases
+of a more general result obtained by assuming that the class-conditional densities
+p(x|Ck) are members of the exponential family of distributions.
+distribution of x can be written in the form
+Using the form (2.194) for members of the exponential family, we see that the
+p(x|λk) = h(x)g(λk) exp
+k u(x)
+λT
+(4.83)
+We now restrict attention to the subclass of such distributions for which u(x) = x.
+Then we make use of (2.236) to introduce a scaling parameter s, so that we obtain
+the restricted set of exponential family class-conditional densities of the form
+p(x|λk, s) =
+1
+s
+h
+1
+s
+x
+g(λk) exp
+1
+s
+λT
+k x
+(4.84)
+Note that we are allowing each class to have its own parameter vector λk but we are
+assuming that the classes share the same scale parameter s.
+For the two-class problem, we substitute this expression for the class-conditional
+densities into (4.58) and we see that the posterior class probability is again given by
+a logistic sigmoid acting on a linear function a(x) which is given by
+a(x) = (λ1 − λ2)Tx + ln g(λ1) − ln g(λ2) + ln p(C1) − ln p(C2).
+(4.85)
+Similarly, for the K-class problem, we substitute the class-conditional density ex-
+pression into (4.63) to give
+ak(x) = λT
+k x + ln g(λk) + ln p(Ck)
+(4.86)
+and so again is a linear function of x.
+4.3. Probabilistic Discriminative Models
+For the two-class classification problem, we have seen that the posterior probability
+of class C1 can be written as a logistic sigmoid acting on a linear function of x, for a
+wide choice of class-conditional distributions p(x|Ck). Similarly, for the multiclass
+case, the posterior probability of class Ck is given by a softmax transformation of a
+linear function of x. For specific choices of the class-conditional densities p(x|Ck),
+we have used maximum likelihood to determine the parameters of the densities as
+well as the class priors p(Ck) and then used Bayes’ theorem to find the posterior class
+probabilities.
+However, an alternative approach is to use the functional form of the generalized
+linear model explicitly and to determine its parameters directly by using maximum
+likelihood. We shall see that there is an efficient algorithm finding such solutions
+known as iterative reweighted least squares, or IRLS.
+The indirect approach to finding the parameters of a generalized linear model,
+by fitting class-conditional densities and class priors separately and then applying
+204
+4. LINEAR MODELS FOR CLASSIFICATION
+x2
+1
+0
+−1
+−1
+0
+x1
+1
+1
+φ2
+0.5
+0
+0
+0.5
+φ1
+1
+Figure 4.12 Illustration of the role of nonlinear basis functions in linear classification models. The left plot
+shows the original input space (x1, x2) together with data points from two classes labelled red and blue. Two
+‘Gaussian’ basis functions φ1(x) and φ2(x) are defined in this space with centres shown by the green crosses
+and with contours shown by the green circles. The right-hand plot shows the corresponding feature space
+(φ1, φ2) together with the linear decision boundary obtained given by a logistic regression model of the form
+discussed in Section 4.3.2. This corresponds to a nonlinear decision boundary in the original input space,
+shown by the black curve in the left-hand plot.
+Bayes’ theorem, represents an example of generative modelling, because we could
+take such a model and generate synthetic data by drawing values of x from the
+marginal distribution p(x). In the direct approach, we are maximizing a likelihood
+function defined through the conditional distribution p(Ck|x), which represents a
+form of discriminative training. One advantage of the discriminative approach is
+that there will typically be fewer adaptive parameters to be determined, as we shall
+see shortly. It may also lead to improved predictive performance, particularly when
+the class-conditional density assumptions give a poor approximation to the true dis-
+tributions.

@@ -1,0 +1,9 @@
+We have seen that standard decision trees are restricted by hard, axis-aligned splits of
+the input space. These constraints can be relaxed, at the expense of interpretability,
+by allowing soft, probabilistic splits that can be functions of all of the input variables,
+not just one of them at a time. If we also give the leaf models a probabilistic inter-
+pretation, we arrive at a fully probabilistic tree-based model called the hierarchical
+mixture of experts, which we consider in Section 14.5.3.
+An alternative way to motivate the hierarchical mixture of experts model is to
+start with a standard probabilistic mixtures of unconditional density models such as
+Gaussians and replace the component densities with conditional distributions. Here

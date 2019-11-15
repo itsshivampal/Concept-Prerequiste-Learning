@@ -1,0 +1,128 @@
+439
+3. M step. Re-estimate the parameters using the current responsibilities
+µnew
+k
+1
+Nk
+Σnew
+k
+πnew
+k
+1
+Nk
+= Nk
+N
+where
+γ(znk) (xn − µnew
+k
+) (xn − µnew
+k
+4. Evaluate the log likelihood
+ln p(X|µ, Σ, π) =
+γ(znk).
+πkN (xn|µk, Σk)
+and check for convergence of either the parameters or the log likelihood. If
+the convergence criterion is not satisfied return to step 2.
+9.3. An Alternative View of EM
+In this section, we present a complementary view of the EM algorithm that recog-
+nizes the key role played by latent variables. We discuss this approach first of all
+in an abstract setting, and then for illustration we consider once again the case of
+Gaussian mixtures.
+The goal of the EM algorithm is to find maximum likelihood solutions for mod-
+els having latent variables. We denote the set of all observed data by X, in which the
+n, and similarly we denote the set of all latent variables by Z,
+nth row represents xT
+with a corresponding row zT
+n. The set of all model parameters is denoted by θ, and
+so the log likelihood function is given by
+ln p(X|θ) = ln
+p(X, Z|θ)
+Z
+(9.29)
+Note that our discussion will apply equally well to continuous latent variables simply
+by replacing the sum over Z with an integral.
+A key observation is that the summation over the latent variables appears inside
+the logarithm. Even if the joint distribution p(X, Z|θ) belongs to the exponential
+Z
+440
+9. MIXTURE MODELS AND EM
+family, the marginal distribution p(X|θ) typically does not as a result of this sum-
+mation. The presence of the sum prevents the logarithm from acting directly on the
+joint distribution, resulting in complicated expressions for the maximum likelihood
+solution.
+Now suppose that, for each observation in X, we were told the corresponding
+value of the latent variable Z. We shall call {X, Z} the complete data set, and we
+shall refer to the actual observed data X as incomplete, as illustrated in Figure 9.5.
+The likelihood function for the complete data set simply takes the form ln p(X, Z|θ),
+and we shall suppose that maximization of this complete-data log likelihood function
+is straightforward.
+In practice, however, we are not given the complete data set {X, Z}, but only
+the incomplete data X. Our state of knowledge of the values of the latent variables
+in Z is given only by the posterior distribution p(Z|X, θ). Because we cannot use
+the complete-data log likelihood, we consider instead its expected value under the
+posterior distribution of the latent variable, which corresponds (as we shall see) to the
+E step of the EM algorithm. In the subsequent M step, we maximize this expectation.
+If the current estimate for the parameters is denoted θold, then a pair of successive
+E and M steps gives rise to a revised estimate θnew. The algorithm is initialized by
+choosing some starting value for the parameters θ0. The use of the expectation may
+seem somewhat arbitrary. However, we shall see the motivation for this choice when
+we give a deeper treatment of EM in Section 9.4.
+In the E step, we use the current parameter values θold to find the posterior
+distribution of the latent variables given by p(Z|X, θold). We then use this posterior
+distribution to find the expectation of the complete-data log likelihood evaluated for
+some general parameter value θ. This expectation, denoted Q(θ, θold), is given by
+(9.30)
+Q(θ, θold) =
+p(Z|X, θold) ln p(X, Z|θ).
+In the M step, we determine the revised parameter estimate θnew by maximizing this
+function
+θnew = arg max
+Q(θ, θold).
+(9.31)
+Section 9.4
+Note that in the definition of Q(θ, θold), the logarithm acts directly on the joint
+distribution p(X, Z|θ), and so the corresponding M-step maximization will, by sup-
+position, be tractable.
+The general EM algorithm is summarized below. It has the property, as we shall
+show later, that each cycle of EM will increase the incomplete-data log likelihood
+(unless it is already at a local maximum).
+The General EM Algorithm
+Given a joint distribution p(X, Z|θ) over observed variables X and latent vari-
+ables Z, governed by parameters θ, the goal is to maximize the likelihood func-
+tion p(X|θ) with respect to θ.
+1. Choose an initial setting for the parameters θold.
+9.3. An Alternative View of EM
+441
+(9.32)
+(9.33)
+2. E step Evaluate p(Z|X, θold).
+3. M step Evaluate θnew given by
+θnew = arg max
+Q(θ, θold)
+where
+Q(θ, θold) =
+Z
+p(Z|X, θold) ln p(X, Z|θ).
+Exercise 9.4
+4. Check for convergence of either the log likelihood or the parameter values.
+If the convergence criterion is not satisfied, then let
+θold ← θnew
+(9.34)
+and return to step 2.
+The EM algorithm can also be used to find MAP (maximum posterior) solutions
+for models in which a prior p(θ) is defined over the parameters. In this case the E
+step remains the same as in the maximum likelihood case, whereas in the M step the
+quantity to be maximized is given by Q(θ, θold) + ln p(θ). Suitable choices for the
+prior will remove the singularities of the kind illustrated in Figure 9.7.
+Here we have considered the use of the EM algorithm to maximize a likelihood
+function when there are discrete latent variables. However, it can also be applied
+when the unobserved variables correspond to missing values in the data set. The
+distribution of the observed values is obtained by taking the joint distribution of all
+the variables and then marginalizing over the missing ones. EM can then be used
+to maximize the corresponding likelihood function. We shall show an example of
+the application of this technique in the context of principal component analysis in
+Figure 12.11. This will be a valid procedure if the data values are missing at random,
+meaning that the mechanism causing values to be missing does not depend on the
+unobserved values. In many situations this will not be the case, for instance if a
+sensor fails to return a value whenever the quantity it is measuring exceeds some
+threshold.

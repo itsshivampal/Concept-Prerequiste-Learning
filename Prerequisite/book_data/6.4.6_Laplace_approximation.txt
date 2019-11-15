@@ -1,0 +1,257 @@
+The third approach to Gaussian process classification is based on the Laplace
+approximation, which we now consider in detail. In order to evaluate the predictive
+distribution (6.76), we seek a Gaussian approximation to the posterior distribution
+over aN +1, which, using Bayes’ theorem, is given by
+p(aN +1|tN ) =
+p(aN +1, aN|tN ) daN
+1
+p(tN )
+1
+p(tN )
+p(aN +1, aN )p(tN|aN +1, aN ) daN
+p(aN +1|aN )p(aN )p(tN|aN ) daN
+p(aN +1|aN )p(aN|tN ) daN
+(6.77)
+6.4. Gaussian Processes
+315
+Section 2.3
+Section 10.1
+Section 10.7
+Section 4.4
+N
+N
+1
+2
+N
+316
+6. KERNEL METHODS
+where we have used p(tN|aN +1, aN ) = p(tN|aN ). The conditional distribution
+p(aN +1|aN ) is obtained by invoking the results (6.66) and (6.67) for Gaussian pro-
+cess regression, to give
+p(aN +1|aN ) = N (aN +1|kTC−1
+N aN , c − kTC−1
+N k).
+(6.78)
+We can therefore evaluate the integral in (6.77) by finding a Laplace approximation
+for the posterior distribution p(aN|tN ), and then using the standard result for the
+convolution of two Gaussian distributions.
+The prior p(aN ) is given by a zero-mean Gaussian process with covariance ma-
+trix CN , and the data term (assuming independence of the data points) is given by
+p(tN|aN ) =
+n=1
+σ(an)tn(1 − σ(an))1−tn =
+eantnσ(−an).
+n=1
+(6.79)
+We then obtain the Laplace approximation by Taylor expanding the logarithm of
+p(aN|tN ), which up to an additive normalization constant is given by the quantity
+Ψ(aN ) = ln p(aN ) + ln p(tN|aN )
+N C−1
+aT
+N aN −
+N
+2
+ln(2π) −
+1
+2
+ln|CN| + tT
+N aN
+ln(1 + ean) + const.
+n=1
+(6.80)
+First we need to find the mode of the posterior distribution, and this requires that we
+evaluate the gradient of Ψ(aN ), which is given by
+∇Ψ(aN ) = tN − σN − C−1
+N aN
+(6.81)
+where σN is a vector with elements σ(an). We cannot simply find the mode by
+setting this gradient to zero, because σN depends nonlinearly on aN , and so we
+resort to an iterative scheme based on the Newton-Raphson method, which gives rise
+to an iterative reweighted least squares (IRLS) algorithm. This requires the second
+derivatives of Ψ(aN ), which we also require for the Laplace approximation anyway,
+and which are given by
+N
+∇∇Ψ(aN ) = −WN − C−1
+(6.82)
+where WN is a diagonal matrix with elements σ(an)(1− σ(an)), and we have used
+the result (4.88) for the derivative of the logistic sigmoid function. Note that these
+diagonal elements lie in the range (0, 1/4), and hence WN is a positive definite
+matrix. Because CN (and hence its inverse) is positive definite by construction, and
+because the sum of two positive definite matrices is also positive definite, we see
+that the Hessian matrix A = −∇∇Ψ(aN ) is positive definite and so the posterior
+distribution p(aN|tN ) is log convex and therefore has a single mode that is the global
+Section 4.3.3
+Exercise 6.24
+6.4. Gaussian Processes
+317
+maximum. The posterior distribution is not Gaussian, however, because the Hessian
+is a function of aN .
+Using the Newton-Raphson formula (4.92), the iterative update equation for aN
+is given by
+N = CN (I + WN CN )−1 {tN − σN + WN aN} .
+anew
+(6.83)
+These equations are iterated until they converge to the mode which we denote by
+N . At the mode, the gradient ∇Ψ(aN ) will vanish, and hence a
+a
+N will satisfy
+N = CN (tN − σN ).
+a
+(6.84)
+Once we have found the mode a
+N of the posterior, we can evaluate the Hessian
+matrix given by
+H = −∇∇Ψ(aN ) = WN + C−1
+where the elements of WN are evaluated using a
+proximation to the posterior distribution p(aN|tN ) given by
+N
+(6.85)
+N . This defines our Gaussian ap-
+q(aN ) = N (aN|a
+N , H−1).
+(6.86)
+Exercise 6.25
+Exercise 6.26
+We can now combine this with (6.78) and hence evaluate the integral (6.77). Because
+this corresponds to a linear-Gaussian model, we can use the general result (2.115) to
+give
+N + CN )−1k.
+E[aN +1|tN ] = kT(tN − σN )
+var[aN +1|tN ] = c − kT(W−1
+(6.87)
+(6.88)
+Now that we have a Gaussian distribution for p(aN +1|tN ), we can approximate
+the integral (6.76) using the result (4.153). As with the Bayesian logistic regression
+model of Section 4.5, if we are only interested in the decision boundary correspond-
+ing to p(tN +1|tN ) = 0.5, then we need only consider the mean and we can ignore
+the effect of the variance.
+We also need to determine the parameters θ of the covariance function. One
+approach is to maximize the likelihood function given by p(tN|θ) for which we need
+expressions for the log likelihood and its gradient. If desired, suitable regularization
+terms can also be added, leading to a penalized maximum likelihood solution. The
+likelihood function is defined by
+p(tN|θ) =
+p(tN|aN )p(aN|θ) daN .
+(6.89)
+This integral is analytically intractable, so again we make use of the Laplace approx-
+imation. Using the result (4.135), we obtain the following approximation for the log
+of the likelihood function
+ln p(tN|θ) = Ψ(a
+N ) −
+1
+2
+ln|WN + C−1
+N | + N
+2
+ln(2π)
+(6.90)
+N
+∂θj
+N
+318
+6. KERNEL METHODS
+N ) = ln p(a
+N|θ) + ln p(tN|a
+N ). We also need to evaluate the gradient
+where Ψ(a
+of ln p(tN|θ) with respect to the parameter vector θ. Note that changes in θ will
+cause changes in a
+N , leading to additional terms in the gradient. Thus, when we
+differentiate (6.90) with respect to θ, we obtain two sets of terms, the first arising
+from the dependence of the covariance matrix CN on θ, and the rest arising from
+dependence of a
+The terms arising from the explicit dependence on θ can be found by using
+N on θ.
+(6.80) together with the results (C.21) and (C.22), and are given by
+∂ ln p(tN|θ)
+1
+2
+N C−1
+aT
+N
+C−1
+N a
+N
+∂CN
+∂θj
+1
+2
+Tr
+(I + CN WN )−1WN
+∂CN
+∂θj
+(6.91)
+To compute the terms arising from the dependence of a
+N on θ, we note that
+the Laplace approximation has been constructed such that Ψ(aN ) has zero gradient
+at aN = a
+N ) gives no contribution to the gradient as a result of its
+dependence on a
+N . This leaves the following contribution to the derivative with
+respect to a component θj of θ
+N , and so Ψ(a
+1
+2
+∂ ln|WN + C−1
+N |
+∂a
+n
+∂a
+n
+∂θj
+n=1
+1
+2
+(I + CN WN )−1CN
+nn
+n=1
+n(1 − σ
+n)(1 − 2σ
+n) ∂a
+n
+∂θj
+(6.92)
+n = σ(a
+where σ
+definition of WN . We can evaluate the derivative of a
+entiating the relation (6.84) with respect to θj to give
+n), and again we have used the result (C.22) together with the
+N with respect to θj by differ-
+∂a
+n
+∂θj
+= ∂CN
+∂θj
+(tN − σN ) − CN WN
+∂a
+n
+∂θj
+Rearranging then gives
+∂a
+n
+∂θj
+= (I + WN CN )−1 ∂CN
+∂θj
+(tN − σN ).
+(6.93)
+(6.94)
+Combining (6.91), (6.92), and (6.94), we can evaluate the gradient of the log
+likelihood function, which can be used with standard nonlinear optimization algo-
+rithms in order to determine a value for θ.
+We can illustrate the application of the Laplace approximation for Gaussian pro-
+cesses using the synthetic two-class data set shown in Figure 6.12. Extension of the
+Laplace approximation to Gaussian processes involving K > 2 classes, using the
+softmax activation function, is straightforward (Williams and Barber, 1998).
+Appendix A
+6.4. Gaussian Processes
+319
+2
+0
+−2
+−2
+0
+2
+Figure 6.12 Illustration of the use of a Gaussian process for classification, showing the data on the left together
+with the optimal decision boundary from the true distribution in green, and the decision boundary from the
+Gaussian process classifier in black. On the right is the predicted posterior probability for the blue and red
+classes together with the Gaussian process decision boundary.

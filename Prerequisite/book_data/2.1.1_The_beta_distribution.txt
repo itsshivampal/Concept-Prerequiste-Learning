@@ -1,0 +1,204 @@
+We have seen in (2.8) that the maximum likelihood setting for the parameter µ
+in the Bernoulli distribution, and hence in the binomial distribution, is given by the
+fraction of the observations in the data set having x = 1. As we have already noted,
+this can give severely over-fitted results for small data sets. In order to develop a
+Bayesian treatment for this problem, we need to introduce a prior distribution p(µ)
+over the parameter µ. Here we consider a form of prior distribution that has a simple
+interpretation as well as some useful analytical properties. To motivate this prior,
+we note that the likelihood function takes the form of the product of factors of the
+form µx(1 − µ)1−x. If we choose a prior to be proportional to powers of µ and
+(1 − µ), then the posterior distribution, which is proportional to the product of the
+prior and the likelihood function, will have the same functional form as the prior.
+This property is called conjugacy and we will see several examples of it later in this
+chapter. We therefore choose a prior, called the beta distribution, given by
+Beta(µ|a, b) =
+Γ(a + b)
+Γ(a)Γ(b) µa−1(1 − µ)b−1
+(2.13)
+where Γ(x) is the gamma function defined by (1.141), and the coefficient in (2.13)
+ensures that the beta distribution is normalized, so that
+Exercise 2.4
+Exercise 2.5
+Exercise 2.6
+The mean and variance of the beta distribution are given by
+1
+0
+Beta(µ|a, b) dµ = 1.
+E[µ] =
+var[µ] =
+a
+a + b
+(a + b)2(a + b + 1) .
+ab
+(2.14)
+(2.15)
+(2.16)
+The parameters a and b are often called hyperparameters because they control the
+distribution of the parameter µ. Figure 2.2 shows plots of the beta distribution for
+various values of the hyperparameters.
+The posterior distribution of µ is now obtained by multiplying the beta prior
+(2.13) by the binomial likelihood function (2.9) and normalizing. Keeping only the
+factors that depend on µ, we see that this posterior distribution has the form
+p(µ|m, l, a, b) ∝ µm+a−1(1 − µ)l+b−1
+(2.17)
+72
+2. PROBABILITY DISTRIBUTIONS
+a = 0.1
+b = 0.1
+a = 2
+b = 3
+3
+2
+1
+0
+0
+3
+2
+1
+0
+0
+0.5
+1
+a = 1
+b = 1
+0
+0.5
+1
+a = 8
+b = 4
+3
+2
+1
+0
+3
+2
+1
+0.5
+1
+0
+0
+0.5
+1
+Figure 2.2 Plots of the beta distribution Beta(µ|a, b) given by (2.13) as a function of µ for various values of the
+hyperparameters a and b.
+where l = N − m, and therefore corresponds to the number of ‘tails’ in the coin
+example. We see that (2.17) has the same functional dependence on µ as the prior
+distribution, reflecting the conjugacy properties of the prior with respect to the like-
+lihood function. Indeed, it is simply another beta distribution, and its normalization
+coefficient can therefore be obtained by comparison with (2.13) to give
+p(µ|m, l, a, b) =
+Γ(m + a + l + b)
+Γ(m + a)Γ(l + b) µm+a−1(1 − µ)l+b−1.
+(2.18)
+We see that the effect of observing a data set of m observations of x = 1 and
+l observations of x = 0 has been to increase the value of a by m, and the value of
+b by l, in going from the prior distribution to the posterior distribution. This allows
+us to provide a simple interpretation of the hyperparameters a and b in the prior as
+an effective number of observations of x = 1 and x = 0, respectively. Note that
+a and b need not be integers. Furthermore, the posterior distribution can act as the
+prior if we subsequently observe additional data. To see this, we can imagine taking
+observations one at a time and after each observation updating the current posterior
+likelihood function
+prior
+2
+1
+0
+0
+2
+1
+0
+0.5
+1
+0
+0.5
+1
+2.1. Binary Variables
+73
+posterior
+2
+1
+0
+0
+0.5
+1
+Figure 2.3 Illustration of one step of sequential Bayesian inference. The prior is given by a beta distribution
+with parameters a = 2, b = 2, and the likelihood function, given by (2.9) with N = m = 1, corresponds to a
+single observation of x = 1, so that the posterior is given by a beta distribution with parameters a = 3, b = 2.
+Section 2.3.5
+distribution by multiplying by the likelihood function for the new observation and
+then normalizing to obtain the new, revised posterior distribution. At each stage, the
+posterior is a beta distribution with some total number of (prior and actual) observed
+values for x = 1 and x = 0 given by the parameters a and b. Incorporation of an
+additional observation of x = 1 simply corresponds to incrementing the value of a
+by 1, whereas for an observation of x = 0 we increment b by 1. Figure 2.3 illustrates
+one step in this process.
+We see that this sequential approach to learning arises naturally when we adopt
+a Bayesian viewpoint. It is independent of the choice of prior and of the likelihood
+function and depends only on the assumption of i.i.d. data. Sequential methods make
+use of observations one at a time, or in small batches, and then discard them before
+the next observations are used. They can be used, for example, in real-time learning
+scenarios where a steady stream of data is arriving, and predictions must be made
+before all of the data is seen. Because they do not require the whole data set to be
+stored or loaded into memory, sequential methods are also useful for large data sets.
+Maximum likelihood methods can also be cast into a sequential framework.
+If our goal is to predict, as best we can, the outcome of the next trial, then we
+must evaluate the predictive distribution of x, given the observed data set D. From
+the sum and product rules of probability, this takes the form
+p(x = 1|D) =
+1
+0
+p(x = 1|µ)p(µ|D) dµ =
+1
+0
+µp(µ|D) dµ = E[µ|D].
+(2.19)
+Using the result (2.18) for the posterior distribution p(µ|D), together with the result
+(2.15) for the mean of the beta distribution, we obtain
+m + a
+(2.20)
+p(x = 1|D) =
+m + a + l + b
+which has a simple interpretation as the total fraction of observations (both real ob-
+servations and fictitious prior observations) that correspond to x = 1. Note that in
+the limit of an infinitely large data set m, l → ∞ the result (2.20) reduces to the
+maximum likelihood result (2.8). As we shall see, it is a very general property that
+the Bayesian and maximum likelihood results will agree in the limit of an infinitely
+74
+2. PROBABILITY DISTRIBUTIONS
+Exercise 2.7
+Exercise 2.8
+large data set. For a finite data set, the posterior mean for µ always lies between the
+prior mean and the maximum likelihood estimate for µ corresponding to the relative
+frequencies of events given by (2.7).
+From Figure 2.2, we see that as the number of observations increases, so the
+posterior distribution becomes more sharply peaked. This can also be seen from
+the result (2.16) for the variance of the beta distribution, in which we see that the
+variance goes to zero for a → ∞ or b → ∞. In fact, we might wonder whether it is
+a general property of Bayesian learning that, as we observe more and more data, the
+uncertainty represented by the posterior distribution will steadily decrease.
+To address this, we can take a frequentist view of Bayesian learning and show
+that, on average, such a property does indeed hold. Consider a general Bayesian
+inference problem for a parameter θ for which we have observed a data set D, de-
+scribed by the joint distribution p(θ,D). The following result
+Eθ[θ] = ED [Eθ[θ|D]]
+p(θ)θ dθ
+where
+Eθ[θ] ≡
+ED[Eθ[θ|D]] ≡
+θp(θ|D) dθ
+p(D) dD
+(2.21)
+(2.22)
+(2.23)
+says that the posterior mean of θ, averaged over the distribution generating the data,
+is equal to the prior mean of θ. Similarly, we can show that
+varθ[θ] = ED [varθ[θ|D]] + varD [Eθ[θ|D]] .
+(2.24)
+The term on the left-hand side of (2.24) is the prior variance of θ. On the right-
+hand side, the first term is the average posterior variance of θ, and the second term
+measures the variance in the posterior mean of θ. Because this variance is a positive
+quantity, this result shows that, on average, the posterior variance of θ is smaller than
+the prior variance. The reduction in variance is greater if the variance in the posterior
+mean is greater. Note, however, that this result only holds on average, and that for a
+particular observed data set it is possible for the posterior variance to be larger than
+the prior variance.

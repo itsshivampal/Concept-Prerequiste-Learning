@@ -1,0 +1,120 @@
+In Section 2.3.9 we motivated the Gaussian mixture model as a simple linear super-
+position of Gaussian components, aimed at providing a richer class of density mod-
+els than the single Gaussian. We now turn to a formulation of Gaussian mixtures in
+terms of discrete latent variables. This will provide us with a deeper insight into this
+important distribution, and will also serve to motivate the expectation-maximization
+algorithm.
+Recall from (2.188) that the Gaussian mixture distribution can be written as a
+linear superposition of Gaussians in the form
+p(x) =
+πkN (x|µk, Σk).
+k=1
+(9.7)
+Let us introduce a K-dimensional binary random variable z having a 1-of-K repre-
+sentation in which a particular element zk is equal to 1 and all other elements are
+equal to 0. The values of zk therefore satisfy zk ∈ {0, 1} and
+k zk = 1, and we
+see that there are K possible states for the vector z according to which element is
+nonzero. We shall define the joint distribution p(x, z) in terms of a marginal dis-
+tribution p(z) and a conditional distribution p(x|z), corresponding to the graphical
+model in Figure 9.4. The marginal distribution over z is specified in terms of the
+mixing coefficients πk, such that
+p(zk = 1) = πk
+k=1
+K
+K
+k=1
+K
+K
+k=1
+Figure 9.4 Graphical representation of a mixture model,
+in which
+the joint distribution is expressed in the form p(x, z) =
+p(z)p(x|z).
+9.2. Mixtures of Gaussians
+z
+x
+431
+(9.8)
+(9.9)
+where the parameters {πk} must satisfy
+together with
+0 � πk � 1
+πk = 1
+in order to be valid probabilities. Because z uses a 1-of-K representation, we can
+also write this distribution in the form
+p(z) =
+πzk
+k .
+(9.10)
+Similarly, the conditional distribution of x given a particular value for z is a Gaussian
+which can also be written in the form
+p(x|zk = 1) = N (x|µk, Σk)
+p(x|z) =
+N (x|µk, Σk)zk .
+(9.11)
+Exercise 9.3
+The joint distribution is given by p(z)p(x|z), and the marginal distribution of x is
+then obtained by summing the joint distribution over all possible states of z to give
+p(x) =
+p(z)p(x|z) =
+z
+k=1
+πkN (x|µk, Σk)
+(9.12)
+where we have made use of (9.10) and (9.11). Thus the marginal distribution of x is
+a Gaussian mixture of the form (9.7). If we have several observations x1, . . . , xN ,
+then, because we have represented the marginal distribution in the form p(x) =
+z p(x, z), it follows that for every observed data point xn there is a corresponding
+latent variable zn.
+We have therefore found an equivalent formulation of the Gaussian mixture in-
+volving an explicit latent variable.
+It might seem that we have not gained much
+by doing so. However, we are now able to work with the joint distribution p(x, z)
+j=1
+K
+K
+j=1
+432
+9. MIXTURE MODELS AND EM
+instead of the marginal distribution p(x), and this will lead to significant simplifica-
+tions, most notably through the introduction of the expectation-maximization (EM)
+algorithm.
+Another quantity that will play an important role is the conditional probability
+of z given x. We shall use γ(zk) to denote p(zk = 1|x), whose value can be found
+using Bayes’ theorem
+γ(zk) ≡ p(zk = 1|x) =
+p(zk = 1)p(x|zk = 1)
+p(zj = 1)p(x|zj = 1)
+πkN (x|µk, Σk)
+πjN (x|µj, Σj)
+(9.13)
+Section 8.1.2
+We shall view πk as the prior probability of zk = 1, and the quantity γ(zk) as the
+corresponding posterior probability once we have observed x. As we shall see later,
+γ(zk) can also be viewed as the responsibility that component k takes for ‘explain-
+ing’ the observation x.
+We can use the technique of ancestral sampling to generate random samples
+distributed according to the Gaussian mixture model. To do this, we first generate a
+z, from the marginal distribution p(z) and then generate
+value for z, which we denote
+a value for x from the conditional distribution p(x|
+z). Techniques for sampling from
+standard distributions are discussed in Chapter 11. We can depict samples from the
+joint distribution p(x, z) by plotting points at the corresponding values of x and
+then colouring them according to the value of z, in other words according to which
+Gaussian component was responsible for generating them, as shown in Figure 9.5(a).
+Similarly samples from the marginal distribution p(x) are obtained by taking the
+samples from the joint distribution and ignoring the values of z. These are illustrated
+in Figure 9.5(b) by plotting the x values without any coloured labels.
+We can also use this synthetic data set to illustrate the ‘responsibilities’ by eval-
+uating, for every data point, the posterior probability for each component in the
+mixture distribution from which this data set was generated. In particular, we can
+represent the value of the responsibilities γ(znk) associated with data point xn by
+plotting the corresponding point using proportions of red, blue, and green ink given
+by γ(znk) for k = 1, 2, 3, respectively, as shown in Figure 9.5(c). So, for instance,
+a data point for which γ(zn1) = 1 will be coloured red, whereas one for which
+γ(zn2) = γ(zn3) = 0.5 will be coloured with equal proportions of blue and green
+ink and so will appear cyan. This should be compared with Figure 9.5(a) in which
+the data points were labelled using the true identity of the component from which
+they were generated.

@@ -1,0 +1,107 @@
+We have seen that one way to encourage invariance of a model to a set of trans-
+formations is to expand the training set using transformed versions of the original
+input patterns. Here we show that this approach is closely related to the technique of
+tangent propagation (Bishop, 1995b; Leen, 1995).
+As in Section 5.5.4, we shall consider a transformation governed by a single
+parameter ξ and described by the function s(x, ξ), with s(x, 0) = x. We shall
+also consider a sum-of-squares error function. The error function for untransformed
+inputs can be written (in the infinite data set limit) in the form
+E =
+1
+2
+{y(x) − t}2p(t|x)p(x) dx dt
+(5.129)
+as discussed in Section 1.5.5. Here we have considered a network having a single
+output, in order to keep the notation uncluttered.
+If we now consider an infinite
+number of copies of each data point, each of which is perturbed by the transformation
+2
+266
+5. NEURAL NETWORKS
+in which the parameter ξ is drawn from a distribution p(ξ), then the error function
+defined over this expanded data set can be written as
+E =
+1
+2
+{y(s(x, ξ)) − t}2p(t|x)p(x)p(ξ) dx dt dξ.
+(5.130)
+We now assume that the distribution p(ξ) has zero mean with small variance, so that
+we are only considering small transformations of the original input vectors. We can
+then expand the transformation function as a Taylor series in powers of ξ to give
+s(x, ξ) = s(x, 0) + ξ
+s(x, ξ)
++ ξ2
+2
+∂2
+∂ξ2 s(x, ξ)
+ξ=0
++ O(ξ3)
+ξ=0
+1
+2 ξ2τ  + O(ξ3)
+= x + ξτ +
+where τ  denotes the second derivative of s(x, ξ) with respect to ξ evaluated at ξ = 0.
+This allows us to expand the model function to give
+y(s(x, ξ)) = y(x) + ξτ T∇y(x) + ξ2
+2
+(τ )T ∇y(x) + τ T∇∇y(x)τ
++ O(ξ3).
+Substituting into the mean error function (5.130) and expanding, we then have
+E =
+1
+2
+{y(x) − t}2p(t|x)p(x) dx dt
++ E[ξ]
+{y(x) − t}τ T∇y(x)p(t|x)p(x) dx dt
++ E[ξ2]
+{y(x) − t}
+1
+2
+(τ )T ∇y(x) + τ T∇∇y(x)τ
+τ T∇y(x)
+p(t|x)p(x) dx dt + O(ξ3).
+Because the distribution of transformations has zero mean we have E[ξ] = 0. Also,
+we shall denote E[ξ2] by λ. Omitting terms of O(ξ3), the average error function then
+becomes
+(5.131)
+where E is the original sum-of-squares error, and the regularization term Ω takes the
+form
+E = E + λΩ
+{y(x) − E[t|x]}
+τ T∇y(x)
+2
+p(x) dx
+1
+2
+(τ )T ∇y(x) + τ T∇∇y(x)τ
+(5.132)
+in which we have performed the integration over t.
+We can further simplify this regularization term as follows. In Section 1.5.5 we
+saw that the function that minimizes the sum-of-squares error is given by the condi-
+tional average E[t|x] of the target values t. From (5.131) we see that the regularized
+error will equal the unregularized sum-of-squares plus terms which are O(ξ), and so
+the network function that minimizes the total error will have the form
+y(x) = E[t|x] + O(ξ).
+(5.133)
+Thus, to leading order in ξ, the first term in the regularizer vanishes and we are left
+with
+1
+2
+τ T∇y(x)
+2
+p(x) dx
+(5.134)
+which is equivalent to the tangent propagation regularizer (5.128).
+If we consider the special case in which the transformation of the inputs simply
+consists of the addition of random noise, so that x → x + ξ, then the regularizer
+takes the form
+(5.135)
+1
+2
+∇y(x)2 p(x) dx
+which is known as Tikhonov regularization (Tikhonov and Arsenin, 1977; Bishop,
+1995b). Derivatives of this regularizer with respect to the network weights can be
+found using an extended backpropagation algorithm (Bishop, 1993). We see that, for
+small noise amplitudes, Tikhonov regularization is related to the addition of random
+noise to the inputs, which has been shown to improve generalization in appropriate
+circumstances (Sietsma and Dow, 1991).
