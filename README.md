@@ -1,12 +1,12 @@
 # Personalise Concept Hierarchy for ML Course
-**Objective:** Construct a personalise concept hierarchy based on the user’s learning requirement for the machine learning course
+**Objective:** Construct a learning path based on the user’s learning requirement assuming user has zero knowledge in the field of machine learning
 
 ## Folders Description
 **Required Data:** Contains all the required data in PDF format<br/>
 **Data Preprocessing:** Contains the code of processing, extracting and cleaning data
 
 
-## Algorithm has 3 parts
+## Algorithm Layout/Steps
 **1. Data Preparation**<br/>
 Output:<br/>
 1. List of Required Unique Concepts<br/>
