@@ -25,6 +25,12 @@ Using the data got in above steps, merge all the topics and create a final csv f
 ## Step 6: Division of book chapters data corresponding to each Table of Content entry
 
 
+## Step 7: Merge all TOCs and arrange the book chapters data
+
+
+## Step 8: Extracting Wikipedia Data for the topics present in Step 5 file
+
+
 
 # Task Done
 Step 1 <br/>
@@ -38,3 +44,5 @@ Step 6 <br/>
 # Pending Task
 Step 4 <br/>
 Step 5 <br/>
+Step 7 <br/>
+Step 8 <br/>
