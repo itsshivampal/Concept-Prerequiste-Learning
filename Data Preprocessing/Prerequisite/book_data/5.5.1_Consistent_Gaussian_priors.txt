@@ -1,0 +1,159 @@
+One of the limitations of simple weight decay in the form (5.112) is that is
+inconsistent with certain scaling properties of network mappings. To illustrate this,
+consider a multilayer perceptron network having two layers of weights and linear
+output units, which performs a mapping from a set of input variables {xi} to a set
+of output variables {yk}. The activations of the hidden units in the first hidden layer
+Figure 5.10 Plot of the sum-of-squares test-set
+error for the polynomial data set ver-
+sus the number of hidden units in the
+network, with 30 random starts for
+each network size, showing the ef-
+fect of local minima. For each new
+start, the weight vector was initial-
+ized by sampling from an isotropic
+Gaussian distribution having a mean
+of zero and a variance of 10.
+160
+140
+120
+100
+80
+60
+0
+2
+4
+6
+8
+10
+5.5. Regularization in Neural Networks
+257
+1
+0
+−1
+M = 1
+1
+0
+−1
+0
+1
+0
+M = 10
+M = 3
+1
+0
+−1
+1
+0
+1
+Figure 5.9 Examples of two-layer networks trained on 10 data points drawn from the sinusoidal data set. The
+graphs show the result of fitting networks having M = 1, 3 and 10 hidden units, respectively, by minimizing a
+sum-of-squares error function using a scaled conjugate-gradient algorithm.
+wji =
+yk →
+xi →
+j
+i
+b
+a
+i
+(5.113)
+(5.114)
+(5.115)
+(5.116)
+(5.117)
+(5.118)
+(5.119)
+(5.120)
+258
+5. NEURAL NETWORKS
+take the form
+while the activations of the output units are given by
+zj = h
+wjixi + wj0
+yk =
+wkjzj + wk0.
+Suppose we perform a linear transformation of the input data of the form
+xi = axi + b.
+Exercise 5.24
+Then we can arrange for the mapping performed by the network to be unchanged
+by making a corresponding linear transformation of the weights and biases from the
+inputs to the units in the hidden layer of the form
+Similarly, a linear transformation of the output variables of the network of the form
+can be achieved by making a transformation of the second-layer weights and biases
+using
+1
+a
+wji
+wji →
+wj0 →
+wj0 = wj0 −
+wji.
+yk = cyk + d
+wkj →
+wk0 →
+wkj = cwkj
+wk0 = cwk0 + d.
+If we train one network using the original data and one network using data for which
+the input and/or target variables are transformed by one of the above linear transfor-
+mations, then consistency requires that we should obtain equivalent networks that
+differ only by the linear transformation of the weights as given. Any regularizer
+should be consistent with this property, otherwise it arbitrarily favours one solution
+over another, equivalent one. Clearly, simple weight decay (5.112), that treats all
+weights and biases on an equal footing, does not satisfy this property.
+We therefore look for a regularizer which is invariant under the linear trans-
+formations (5.116), (5.117), (5.119) and (5.120). These require that the regularizer
+should be invariant to re-scaling of the weights and to shifts of the biases. Such a
+regularizer is given by
+λ1
+2
+w2 + λ2
+2
+w∈W1
+w∈W2
+w2
+(5.121)
+where W1 denotes the set of weights in the first layer, W2 denotes the set of weights
+in the second layer, and biases are excluded from the summations. This regularizer
+w∈W1
+k
+1
+2
+5.5. Regularization in Neural Networks
+259
+will remain unchanged under the weight transformations provided the regularization
+parameters are re-scaled using λ1 → a1/2λ1 and λ2 → c−1/2λ2.
+The regularizer (5.121) corresponds to a prior of the form
+p(w|α1, α2) ∝ exp
+α1
+2
+w2 −
+α2
+2
+w2
+(5.122)
+w∈W2
+Note that priors of this form are improper (they cannot be normalized) because the
+bias parameters are unconstrained. The use of improper priors can lead to difficulties
+in selecting regularization coefficients and in model comparison within the Bayesian
+framework, because the corresponding evidence is zero. It is therefore common to
+include separate priors for the biases (which then break shift invariance) having their
+own hyperparameters. We can illustrate the effect of the resulting four hyperpa-
+rameters by drawing samples from the prior and plotting the corresponding network
+functions, as shown in Figure 5.11.
+More generally, we can consider priors in which the weights are divided into
+any number of groups Wk so that
+p(w) ∝ exp
+αkw2
+k
+where
+w2
+k =
+w2
+j .
+j∈Wk
+(5.123)
+(5.124)
+As a special case of this prior, if we choose the groups to correspond to the sets
+of weights associated with each of the input units, and we optimize the marginal
+likelihood with respect to the corresponding parameters αk, we obtain automatic
+relevance determination as discussed in Section 7.2.2.

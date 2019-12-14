@@ -1,0 +1,2 @@
+As we have seen, for both Gaussian distributed and discrete inputs, the posterior
+class probabilities are given by generalized linear models with logistic sigmoid (K =

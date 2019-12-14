@@ -1,0 +1,285 @@
+Chapter 9
+666
+14. COMBINING MODELS
+of performance. If we define pτ k to be the proportion of data points in region Rτ
+assigned to class k, where k = 1, . . . , K, then two commonly used choices are the
+cross-entropy
+Qτ (T ) =
+pτ k ln pτ k
+and the Gini index
+k=1
+k=1
+K
+K
+n=1
+N
+K
+N
+14.5. Conditional Mixture Models
+667
+logistic regression models (Section 14.5.2). In the simplest case, the mixing coeffi-
+cients are independent of the input variables. If we make a further generalization to
+allow the mixing coefficients also to depend on the inputs then we obtain a mixture
+of experts model. Finally, if we allow each component in the mixture model to be
+itself a mixture of experts model, then we obtain a hierarchical mixture of experts.
+14.5.1 Mixtures of linear regression models
+One of the many advantages of giving a probabilistic interpretation to the lin-
+ear regression model is that it can then be used as a component in more complex
+probabilistic models. This can be done, for instance, by viewing the conditional
+distribution representing the linear regression model as a node in a directed prob-
+abilistic graph. Here we consider a simple example corresponding to a mixture of
+linear regression models, which represents a straightforward extension of the Gaus-
+sian mixture model discussed in Section 9.2 to the case of conditional Gaussian
+distributions.
+We therefore consider K linear regression models, each governed by its own
+weight parameter wk. In many applications, it will be appropriate to use a common
+noise variance, governed by a precision parameter β, for all K components, and this
+is the case we consider here. We will once again restrict attention to a single target
+variable t, though the extension to multiple outputs is straightforward. If we denote
+the mixing coefficients by πk, then the mixture distribution can be written
+p(t|θ) =
+πkN (t|wT
+k φ, β−1)
+(14.34)
+where θ denotes the set of all adaptive parameters in the model, namely W = {wk},
+π = {πk}, and β. The log likelihood function for this model, given a data set of
+observations {φn, tn}, then takes the form
+ln p(t|θ) =
+ln
+πkN (tn|wT
+k φn, β−1)
+(14.35)
+where t = (t1, . . . , tN )T denotes the vector of target variables.
+In order to maximize this likelihood function, we can once again appeal to the
+EM algorithm, which will turn out to be a simple extension of the EM algorithm for
+unconditional Gaussian mixtures of Section 9.2. We can therefore build on our expe-
+rience with the unconditional mixture and introduce a set Z = {zn} of binary latent
+variables where znk ∈ {0, 1} in which, for each data point n, all of the elements
+k = 1, . . . , K are zero except for a single value of 1 indicating which component
+of the mixture was responsible for generating that data point. The joint distribution
+over latent and observed variables can be represented by the graphical model shown
+in Figure 14.7.
+The complete-data log likelihood function then takes the form
+ln p(t, Z|θ) =
+n=1
+k=1
+znk ln
+πkN (tn|wT
+k φn, β−1)
+(14.36)
+Exercise 14.12
+Exercise 14.13
+zn
+tn
+φn
+N
+n=1
+k=1
+K
+N
+n=1
+N
+πk =
+W
+N
+668
+14. COMBINING MODELS
+Figure 14.7 Probabilistic directed graph representing a mixture of
+linear regression models, defined by (14.35).
+The EM algorithm begins by first choosing an initial value θold for the model param-
+eters. In the E step, these parameter values are then used to evaluate the posterior
+probabilities, or responsibilities, of each component k for every data point n given
+by
+γnk = E[znk] = p(k|φn, θold) = πkN (tn|wT
+j πjN (tn|wT
+k φn, β−1)
+j φn, β−1) .
+(14.37)
+The responsibilities are then used to determine the expectation, with respect to the
+posterior distribution p(Z|t, θold), of the complete-data log likelihood, which takes
+the form
+Q(θ, θold) = EZ [ln p(t, Z|θ)] =
+γnk
+ln πk + lnN (tn|wT
+k φn, β−1)
+In the M step, we maximize the function Q(θ, θold) with respect to θ, keeping the
+γnk fixed. For the optimization with respect to the mixing coefficients πk we need
+k πk = 1, which can be done with the aid of a
+to take account of the constraint
+Lagrange multiplier, leading to an M-step re-estimation equation for πk in the form
+Exercise 14.14
+1
+N
+γnk.
+(14.38)
+Note that this has exactly the same form as the corresponding result for a simple
+mixture of unconditional Gaussians given by (9.22).
+Next consider the maximization with respect to the parameter vector wk of the
+kth linear regression model. Substituting for the Gaussian distribution, we see that
+the function Q(θ, θold), as a function of the parameter vector wk, takes the form
+Q(θ, θold) =
+γnk
+n=1
+2
+tn − wT
+k φn
+2
++ const
+(14.39)
+where the constant term includes the contributions from other weight vectors wj for
+j = k. Note that the quantity we are maximizing is similar to the (negative of the)
+standard sum-of-squares error (3.12) for a single linear regression model, but with
+the inclusion of the responsibilities γnk. This represents a weighted least squares
+γnk
+γnk
+1
+2
+n=1
+N
+N
+K
+n=1
+k=1
+N
+K
+14.5. Conditional Mixture Models
+669
+problem, in which the term corresponding to the nth data point carries a weighting
+coefficient given by βγnk, which could be interpreted as an effective precision for
+each data point. We see that each component linear regression model in the mixture,
+governed by its own parameter vector wk, is fitted separately to the whole data set in
+the M step, but with each data point n weighted by the responsibility γnk that model
+k takes for that data point. Setting the derivative of (14.39) with respect to wk equal
+to zero gives
+0 =
+tn − wT
+k φn
+φn
+(14.40)
+which we can write in matrix notation as
+0 = ΦTRk(t − Φwk)
+(14.41)
+where Rk = diag(γnk) is a diagonal matrix of size N × N. Solving for wk, we
+obtain
+(14.42)
+This represents a set of modified normal equations corresponding to the weighted
+least squares problem, of the same form as (4.99) found in the context of logistic
+regression. Note that after each E step, the matrix Rk will change and so we will
+have to solve the normal equations afresh in the subsequent M step.
+−1 ΦTRkt.
+ΦTRkΦ
+wk =
+Finally, we maximize Q(θ, θold) with respect to β. Keeping only terms that
+depend on β, the function Q(θ, θold) can be written
+Q(θ, θold) =
+n=1
+k=1
+ln β −
+2
+tn − wT
+k φn
+2
+(14.43)
+Setting the derivative with respect to β equal to zero, and rearranging, we obtain the
+M-step equation for β in the form
+1
+1
+N
+γnk
+tn − wT
+k φn
+2
+(14.44)
+In Figure 14.8, we illustrate this EM algorithm using the simple example of
+fitting a mixture of two straight lines to a data set having one input variable x and
+one target variable t. The predictive density (14.34) is plotted in Figure 14.9 using
+the converged parameter values obtained from the EM algorithm, corresponding to
+the right-hand plot in Figure 14.8. Also shown in this figure is the result of fitting
+a single linear regression model, which gives a unimodal predictive density. We see
+that the mixture model gives a much better representation of the data distribution,
+and this is reflected in the higher likelihood value. However, the mixture model
+also assigns significant probability mass to regions where there is no data because its
+predictive distribution is bimodal for all values of x. This problem can be resolved by
+extending the model to allow the mixture coefficients themselves to be functions of
+x, leading to models such as the mixture density networks discussed in Section 5.6,
+and hierarchical mixture of experts discussed in Section 14.5.3.
+670
+14. COMBINING MODELS
+1.5
+1
+0.5
+0
+−0.5
+−1
+−1.5
+1
+0.8
+0.6
+0.4
+0.2
+1.5
+1
+0.5
+0
+−0.5
+−1
+−1.5
+−1
+−0.5
+0
+0.5
+1
+−1
+−0.5
+0
+1
+0.8
+0.6
+0.4
+0.2
+0
+−1
+−0.5
+0
+0.5
+1
+0
+−1
+−0.5
+0
+1.5
+1
+0.5
+0
+−0.5
+−1
+−1.5
+1
+0.8
+0.6
+0.4
+0.2
+−1
+−0.5
+0
+0.5
+1
+0
+−1
+−0.5
+0
+0.5
+1
+0.5
+0.5
+k=1
+K
+1
+1
+Figure 14.8 Example of a synthetic data set, shown by the green points, having one input variable x and one
+target variable t, together with a mixture of two linear regression models whose mean functions y(x, wk), where
+k ∈ {1, 2}, are shown by the blue and red lines. The upper three plots show the initial configuration (left), the
+result of running 30 iterations of EM (centre), and the result after 50 iterations of EM (right). Here β was initialized
+to the reciprocal of the true variance of the set of target values. The lower three plots show the corresponding
+responsibilities plotted as a vertical line for each data point in which the length of the blue segment gives the
+posterior probability of the blue line for that data point (and similarly for the red segment).

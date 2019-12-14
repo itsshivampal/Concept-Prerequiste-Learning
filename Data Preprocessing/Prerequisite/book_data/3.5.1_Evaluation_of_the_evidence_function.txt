@@ -1,0 +1,122 @@
+The marginal likelihood function p(t|α, β) is obtained by integrating over the
+weight parameters w, so that
+p(t|α, β) =
+p(t|w, β)p(w|α) dw.
+(3.77)
+Exercise 3.16
+Exercise 3.17
+One way to evaluate this integral is to make use once again of the result (2.115)
+for the conditional distribution in a linear-Gaussian model. Here we shall evaluate
+the integral instead by completing the square in the exponent and making use of the
+standard form for the normalization coefficient of a Gaussian.
+From (3.11), (3.12), and (3.52), we can write the evidence function in the form
+p(t|α, β) =
+2π
+N/2
+M/2
+2π
+exp{−E(w)} dw
+(3.78)
+1
+2
+167
+(3.79)
+(3.80)
+(3.81)
+(3.82)
+(3.83)
+(3.84)
+Exercise 3.18
+Exercise 3.19
+3.5. The Evidence Approximation
+where M is the dimensionality of w, and we have defined
+E(w) = βED(w) + αEW (w)
+2 t − Φw2 + α
+2
+wTw.
+We recognize (3.79) as being equal, up to a constant of proportionality, to the reg-
+ularized sum-of-squares error function (3.27). We now complete the square over w
+giving
+E(w) = E(mN ) +
+(w − mN )TA(w − mN )
+A = αI + βΦTΦ
+where we have introduced
+together with
+E(mN ) = β
+2 t − ΦmN2 + α
+2
+mT
+N mN .
+Note that A corresponds to the matrix of second derivatives of the error function
+and is known as the Hessian matrix. Here we have also defined mN given by
+A = ∇∇E(w)
+mN = βA−1ΦTt.
+Using (3.54), we see that A = S−1
+definition (3.53), and therefore represents the mean of the posterior distribution.
+N , and hence (3.84) is equivalent to the previous
+The integral over w can now be evaluated simply by appealing to the standard
+result for the normalization coefficient of a multivariate Gaussian, giving
+exp{−E(w)} dw
+= exp{−E(mN )}
+= exp{−E(mN )}(2π)M/2|A|−1/2.
+exp
+1
+2
+(w − mN )TA(w − mN )
+dw
+(3.85)
+Using (3.78) we can then write the log of the marginal likelihood in the form
+ln p(t|α, β) = M
+2
+ln α + N
+2
+ln β − E(mN ) −
+1
+2
+ln|A| −
+N
+2
+ln(2π)
+(3.86)
+which is the required expression for the evidence function.
+Returning to the polynomial regression problem, we can plot the model evidence
+against the order of the polynomial, as shown in Figure 3.14. Here we have assumed
+a prior of the form (1.65) with the parameter α fixed at α = 5 × 10−3. The form
+of this plot is very instructive. Referring back to Figure 1.4, we see that the M = 0
+polynomial has very poor fit to the data and consequently gives a relatively low value
+168
+3. LINEAR MODELS FOR REGRESSION
+Figure 3.14 Plot of the model evidence versus
+the order M, for the polynomial re-
+gression model, showing that the
+evidence favours the model with
+M = 3.
+−18
+−20
+−22
+−24
+−26
+i
+2
+0
+6
+8
+4
+M
+for the evidence. Going to the M = 1 polynomial greatly improves the data fit, and
+hence the evidence is significantly higher. However, in going to M = 2, the data
+fit is improved only very marginally, due to the fact that the underlying sinusoidal
+function from which the data is generated is an odd function and so has no even terms
+in a polynomial expansion. Indeed, Figure 1.5 shows that the residual data error is
+reduced only slightly in going from M = 1 to M = 2. Because this richer model
+suffers a greater complexity penalty, the evidence actually falls in going from M = 1
+to M = 2. When we go to M = 3 we obtain a significant further improvement in
+data fit, as seen in Figure 1.4, and so the evidence is increased again, giving the
+highest overall evidence for any of the polynomials. Further increases in the value
+of M produce only small improvements in the fit to the data but suffer increasing
+complexity penalty, leading overall to a decrease in the evidence values. Looking
+again at Figure 1.5, we see that the generalization error is roughly constant between
+M = 3 and M = 8, and it would be difficult to choose between these models on
+the basis of this plot alone. The evidence values, however, show a clear preference
+for M = 3, since this is the simplest model which gives a good explanation for the
+observed data.

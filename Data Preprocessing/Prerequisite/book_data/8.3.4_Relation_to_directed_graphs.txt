@@ -1,0 +1,109 @@
+We have introduced two graphical frameworks for representing probability dis-
+tributions, corresponding to directed and undirected graphs, and it is instructive to
+discuss the relation between these. Consider first the problem of taking a model that
+is specified using a directed graph and trying to convert it to an undirected graph. In
+some cases this is straightforward, as in the simple example in Figure 8.32. Here the
+joint distribution for the directed graph is given as a product of conditionals in the
+form
+p(x) = p(x1)p(x2|x1)p(x3|x2)··· p(xN|xN−1).
+(8.44)
+Now let us convert this to an undirected graph representation, as shown in Fig-
+ure 8.32. In the undirected graph, the maximal cliques are simply the pairs of neigh-
+bouring nodes, and so from (8.39) we wish to write the joint distribution in the form
+p(x) =
+1
+Z
+ψ1,2(x1, x2)ψ2,3(x2, x3)··· ψN−1,N (xN−1, xN ).
+(8.45)
+Figure 8.33 Example of a simple
+directed graph (a) and the corre-
+sponding moral graph (b).
+x1
+x3
+x1
+x3
+x2
+x2
+8.3. Markov Random Fields
+391
+x4
+(a)
+x4
+(b)
+This is easily done by identifying
+ψ1,2(x1, x2) = p(x1)p(x2|x1)
+ψ2,3(x2, x3) = p(x3|x2)
+ψN−1,N (xN−1, xN ) = p(xN|xN−1)
+where we have absorbed the marginal p(x1) for the first node into the first potential
+function. Note that in this case, the partition function Z = 1.
+Let us consider how to generalize this construction, so that we can convert any
+distribution specified by a factorization over a directed graph into one specified by a
+factorization over an undirected graph. This can be achieved if the clique potentials
+of the undirected graph are given by the conditional distributions of the directed
+graph. In order for this to be valid, we must ensure that the set of variables that
+appears in each of the conditional distributions is a member of at least one clique of
+the undirected graph. For nodes on the directed graph having just one parent, this is
+achieved simply by replacing the directed link with an undirected link. However, for
+nodes in the directed graph having more than one parent, this is not sufficient. These
+are nodes that have ‘head-to-head’ paths encountered in our discussion of conditional
+independence. Consider a simple directed graph over 4 nodes shown in Figure 8.33.
+The joint distribution for the directed graph takes the form
+p(x) = p(x1)p(x2)p(x3)p(x4|x1, x2, x3).
+(8.46)
+We see that the factor p(x4|x1, x2, x3) involves the four variables x1, x2, x3, and
+x4, and so these must all belong to a single clique if this conditional distribution is
+to be absorbed into a clique potential. To ensure this, we add extra links between
+all pairs of parents of the node x4. Anachronistically, this process of ‘marrying
+the parents’ has become known as moralization, and the resulting undirected graph,
+after dropping the arrows, is called the moral graph. It is important to observe that
+the moral graph in this example is fully connected and so exhibits no conditional
+independence properties, in contrast to the original directed graph.
+Thus in general to convert a directed graph into an undirected graph, we first add
+additional undirected links between all pairs of parents for each node in the graph and
+392
+8. GRAPHICAL MODELS
+Section 8.4
+Section 8.2
+then drop the arrows on the original links to give the moral graph. Then we initialize
+all of the clique potentials of the moral graph to 1. We then take each conditional
+distribution factor in the original directed graph and multiply it into one of the clique
+potentials. There will always exist at least one maximal clique that contains all of
+the variables in the factor as a result of the moralization step. Note that in all cases
+the partition function is given by Z = 1.
+The process of converting a directed graph into an undirected graph plays an
+important role in exact inference techniques such as the junction tree algorithm.
+Converting from an undirected to a directed representation is much less common
+and in general presents problems due to the normalization constraints.
+We saw that in going from a directed to an undirected representation we had to
+discard some conditional independence properties from the graph. Of course, we
+could always trivially convert any distribution over a directed graph into one over an
+undirected graph by simply using a fully connected undirected graph. This would,
+however, discard all conditional independence properties and so would be vacuous.
+The process of moralization adds the fewest extra links and so retains the maximum
+number of independence properties.
+We have seen that the procedure for determining the conditional independence
+properties is different between directed and undirected graphs. It turns out that the
+two types of graph can express different conditional independence properties, and
+it is worth exploring this issue in more detail. To do so, we return to the view of
+a specific (directed or undirected) graph as a filter, so that the set of all possible
+distributions over the given variables could be reduced to a subset that respects the
+conditional independencies implied by the graph. A graph is said to be a D map
+(for ‘dependency map’) of a distribution if every conditional independence statement
+satisfied by the distribution is reflected in the graph. Thus a completely disconnected
+graph (no links) will be a trivial D map for any distribution.
+Alternatively, we can consider a specific distribution and ask which graphs have
+the appropriate conditional independence properties. If every conditional indepen-
+dence statement implied by a graph is satisfied by a specific distribution, then the
+graph is said to be an I map (for ‘independence map’) of that distribution. Clearly a
+fully connected graph will be a trivial I map for any distribution.
+If it is the case that every conditional independence property of the distribution
+is reflected in the graph, and vice versa, then the graph is said to be a perfect map for
+Figure 8.34 Venn diagram illustrating the set of all distributions
+P over a given set of variables, together with the
+set of distributions D that can be represented as a
+perfect map using a directed graph, and the set U
+that can be represented as a perfect map using an
+undirected graph.
+D
+U
+P

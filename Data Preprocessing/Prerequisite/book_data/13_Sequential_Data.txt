@@ -1,0 +1,49 @@
+So far in this book, we have focussed primarily on sets of data points that were as-
+sumed to be independent and identically distributed (i.i.d.). This assumption allowed
+us to express the likelihood function as the product over all data points of the prob-
+ability distribution evaluated at each data point. For many applications, however,
+the i.i.d. assumption will be a poor one. Here we consider a particularly important
+class of such data sets, namely those that describe sequential data. These often arise
+through measurement of time series, for example the rainfall measurements on suc-
+cessive days at a particular location, or the daily values of a currency exchange rate,
+or the acoustic features at successive time frames used for speech recognition. An
+example involving speech data is shown in Figure 13.1. Sequential data can also
+arise in contexts other than time series, for example the sequence of nucleotide base
+pairs along a strand of DNA or the sequence of characters in an English sentence.
+For convenience, we shall sometimes refer to ‘past’ and ‘future’ observations in a
+sequence. However, the models explored in this chapter are equally applicable to all
+605
+606
+13. SEQUENTIAL DATA
+Figure 13.1 Example of a spectro-
+gram of the spoken words “Bayes’ theo-
+rem” showing a plot of the intensity of the
+spectral coefficients versus time index.
+forms of sequential data, not just temporal sequences.
+It is useful to distinguish between stationary and nonstationary sequential dis-
+tributions. In the stationary case, the data evolves in time, but the distribution from
+which it is generated remains the same. For the more complex nonstationary situa-
+tion, the generative distribution itself is evolving with time. Here we shall focus on
+the stationary case.
+For many applications, such as financial forecasting, we wish to be able to pre-
+dict the next value in a time series given observations of the previous values. In-
+tuitively, we expect that recent observations are likely to be more informative than
+more historical observations in predicting future values. The example in Figure 13.1
+shows that successive observations of the speech spectrum are indeed highly cor-
+related. Furthermore, it would be impractical to consider a general dependence of
+future observations on all previous observations because the complexity of such a
+model would grow without limit as the number of observations increases. This leads
+us to consider Markov models in which we assume that future predictions are inde-
+N
+pendent of all but the most recent observations.
+Although such models are tractable, they are also severely limited. We can ob-
+tain a more general framework, while still retaining tractability, by the introduction
+of latent variables, leading to state space models. As in Chapters 9 and 12, we shall
+see that complex models can thereby be constructed from simpler components (in
+particular, from distributions belonging to the exponential family) and can be read-
+ily characterized using the framework of probabilistic graphical models. Here we
+focus on the two most important examples of state space models, namely the hid-
+den Markov model, in which the latent variables are discrete, and linear dynamical
+systems, in which the latent variables are Gaussian. Both models are described by di-
+rected graphs having a tree structure (no loops) for which inference can be performed
+efficiently using the sum-product algorithm.

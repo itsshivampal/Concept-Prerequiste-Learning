@@ -1,0 +1,99 @@
+Consider the problem of predicting a single continuous target variable t from
+a vector x of inputs (the extension to multiple targets is straightforward). We shall
+suppose that the conditional distribution p(t|x) is Gaussian, with an x-dependent
+mean given by the output of a neural network model y(x, w), and with precision
+(inverse variance) β
+p(t|x, w, β) = N (t|y(x, w), β−1).
+(5.161)
+Similarly, we shall choose a prior distribution over the weights w that is Gaussian of
+the form
+(5.162)
+For an i.i.d. data set of N observations x1, . . . , xN , with a corresponding set of target
+values D = {t1, . . . , tN}, the likelihood function is given by
+p(w|α) = N (w|0, α−1I).
+p(D|w, β) =
+n=1
+N (tn|y(xn, w), β−1)
+and so the resulting posterior distribution is then
+p(w|D, α, β) ∝ p(w|α)p(D|w, β).
+(5.163)
+(5.164)
+which, as a consequence of the nonlinear dependence of y(x, w) on w, will be non-
+Gaussian.
+We can find a Gaussian approximation to the posterior distribution by using the
+Laplace approximation. To do this, we must first find a (local) maximum of the
+posterior, and this must be done using iterative numerical optimization. As usual, it
+is convenient to maximize the logarithm of the posterior, which can be written in the
+n=1
+N
+Exercise 5.38
+We can therefore make use of the general result (2.115) for the marginal p(t) to give
+p(t|x, w, β)  N
+t|y(x, wMAP) + gT(w − wMAP), β−1
+(5.171)
+p(t|x,D, α, β) = N
+t|y(x, wMAP), σ2(x)
+(5.172)
+279
+(5.165)
+(5.167)
+(5.168)
+5.7. Bayesian Neural Networks
+form
+ln p(w|D) = −
+2
+wTw −
+2
+{y(xn, w) − tn}2 + const
+which corresponds to a regularized sum-of-squares error function. Assuming for
+the moment that α and β are fixed, we can find a maximum of the posterior, which
+we denote wMAP, by standard nonlinear optimization algorithms such as conjugate
+gradients, using error backpropagation to evaluate the required derivatives.
+Having found a mode wMAP, we can then build a local Gaussian approximation
+by evaluating the matrix of second derivatives of the negative log posterior distribu-
+tion. From (5.165), this is given by
+A = −∇∇ ln p(w|D, α, β) = αI + βH
+(5.166)
+where H is the Hessian matrix comprising the second derivatives of the sum-of-
+squares error function with respect to the components of w. Algorithms for comput-
+ing and approximating the Hessian were discussed in Section 5.4. The corresponding
+Gaussian approximation to the posterior is then given from (4.134) by
+q(w|D) = N (w|wMAP, A−1).
+Similarly, the predictive distribution is obtained by marginalizing with respect
+to this posterior distribution
+p(t|x,D) =
+p(t|x, w)q(w|D) dw.
+However, even with the Gaussian approximation to the posterior, this integration is
+still analytically intractable due to the nonlinearity of the network function y(x, w)
+as a function of w. To make progress, we now assume that the posterior distribution
+has small variance compared with the characteristic scales of w over which y(x, w)
+is varying. This allows us to make a Taylor series expansion of the network function
+around wMAP and retain only the linear terms
+y(x, w)  y(x, wMAP) + gT(w − wMAP)
+(5.169)
+where we have defined
+(5.170)
+With this approximation, we now have a linear-Gaussian model with a Gaussian
+distribution for p(w) and a Gaussian for p(t|w) whose mean is a linear function of
+w of the form
+g = ∇wy(x, w)|w=wMAP .
+280
+5. NEURAL NETWORKS
+N
+n=1
+Exercise 5.39
+This is easily evaluated by making use of the Laplace approximation result (4.135).
+Taking logarithms then gives
+p(D|α, β) =
+p(D|w, β)p(w|α) dw.
+(5.174)
+where the input-dependent variance is given by
+σ2(x) = β−1 + gTA−1g.
+(5.173)
+We see that the predictive distribution p(t|x,D) is a Gaussian whose mean is given
+by the network function y(x, wMAP) with the parameter set to their MAP value. The
+variance has two terms, the first of which arises from the intrinsic noise on the target
+variable, whereas the second is an x-dependent term that expresses the uncertainty
+in the interpolant due to the uncertainty in the model parameters w. This should
+be compared with the corresponding predictive distribution for the linear regression
+model, given by (3.58) and (3.59).

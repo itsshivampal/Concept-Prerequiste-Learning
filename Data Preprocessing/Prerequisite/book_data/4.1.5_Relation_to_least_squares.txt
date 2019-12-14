@@ -1,0 +1,93 @@
+The least-squares approach to the determination of a linear discriminant was
+based on the goal of making the model predictions as close as possible to a set of
+target values. By contrast, the Fisher criterion was derived by requiring maximum
+class separation in the output space. It is interesting to see the relationship between
+these two approaches. In particular, we shall show that, for the two-class problem,
+the Fisher criterion can be obtained as a special case of least squares.
+So far we have considered 1-of-K coding for the target values. If, however, we
+adopt a slightly different target coding scheme, then the least-squares solution for
+E =
+1
+2
+n=1
+n=1
+N
+n=1
+n=1
+N
+N
+N
+190
+4. LINEAR MODELS FOR CLASSIFICATION
+the weights becomes equivalent to the Fisher solution (Duda and Hart, 1973). In
+particular, we shall take the targets for class C1 to be N/N1, where N1 is the number
+of patterns in class C1, and N is the total number of patterns. This target value
+approximates the reciprocal of the prior probability for class C1. For class C2, we
+shall take the targets to be −N/N2, where N2 is the number of patterns in class C2.
+The sum-of-squares error function can be written
+wTxn + w0 − tn
+2
+(4.31)
+Setting the derivatives of E with respect to w0 and w to zero, we obtain respectively
+wTxn + w0 − tn
+= 0
+wTxn + w0 − tn
+xn = 0.
+(4.32)
+(4.33)
+From (4.32), and making use of our choice of target coding scheme for the tn, we
+obtain an expression for the bias in the form
+where we have used
+w0 = −wTm
+tn = N1
+N
+N1 − N2
+(4.34)
+(4.35)
+N
+N2
+= 0
+and where m is the mean of the total data set and is given by
+m =
+1
+N
+N
+xn =
+n=1
+1
+N
+(N1m1 + N2m2).
+(4.36)
+Exercise 4.6
+After some straightforward algebra, and again making use of the choice of tn, the
+second equation (4.33) becomes
+SW + N1N2
+N
+SB
+w = N(m1 − m2)
+(4.37)
+where SW is defined by (4.28), SB is defined by (4.27), and we have substituted for
+the bias using (4.34). Using (4.27), we note that SBw is always in the direction of
+(m2 − m1). Thus we can write
+w ∝ S−1
+W (m2 − m1)
+(4.38)
+where we have ignored irrelevant scale factors. Thus the weight vector coincides
+with that found from the Fisher criterion. In addition, we have also found an expres-
+sion for the bias value w0 given by (4.34). This tells us that a new vector x should be
+classified as belonging to class C1 if y(x) = wT(x−m) > 0 and class C2 otherwise.
+K
+k=1
+n∈Ck
+1
+Nk
+1
+N
+n=1
+n=1
+N
+N
+K
+K
+4.1. Discriminant Functions
+191

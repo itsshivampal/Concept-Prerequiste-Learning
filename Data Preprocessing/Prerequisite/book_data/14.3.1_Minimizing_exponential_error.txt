@@ -1,0 +1,157 @@
+Boosting was originally motivated using statistical learning theory, leading to
+upper bounds on the generalization error. However, these bounds turn out to be too
+loose to have practical value, and the actual performance of boosting is much better
+than the bounds alone would suggest. Friedman et al. (2000) gave a different and
+very simple interpretation of boosting in terms of the sequential minimization of an
+exponential error function.
+Consider the exponential error function defined by
+E =
+n=1
+exp{−tnfm(xn)}
+(14.20)
+where fm(x) is a classifier defined in terms of a linear combination of base classifiers
+yl(x) of the form
+fm(x) =
+1
+2
+αlyl(x)
+l=1
+(14.21)
+and tn ∈ {−1, 1} are the training set target values. Our goal is to minimize E with
+respect to both the weighting coefficients αl and the parameters of the base classifiers
+yl(x).
+Section 14.4
+n=1
+N
+N
+660
+14. COMBINING MODELS
+m = 1
+−1
+0
+1
+2
+m = 6
+2
+0
+−2
+2
+0
+−2
+2
+0
+−2
+2
+0
+−2
+−1
+−1
+0
+1
+2
+−1
+m = 2
+0
+0
+1
+1
+m = 10
+2
+2
+2
+0
+−2
+2
+0
+−2
+−1
+−1
+0
+0
+m = 3
+1
+2
+m = 150
+1
+2
+Figure 14.2 Illustration of boosting in which the base learners consist of simple thresholds applied to one or
+other of the axes. Each figure shows the number m of base learners trained so far, along with the decision
+boundary of the most recent base learner (dashed black line) and the combined decision boundary of the en-
+semble (solid green line). Each data point is depicted by a circle whose radius indicates the weight assigned to
+that data point when training the most recently added base learner. Thus, for instance, we see that points that
+are misclassified by the m = 1 base learner are given greater weight when training the m = 2 base learner.
+Instead of doing a global error function minimization, however, we shall sup-
+pose that the base classifiers y1(x), . . . , ym−1(x) are fixed, as are their coefficients
+α1, . . . , αm−1, and so we are minimizing only with respect to αm and ym(x). Sep-
+arating off the contribution from base classifier ym(x), we can then write the error
+function in the form
+E =
+exp
+−tnfm−1(xn) −
+1
+2 tnαmym(xn)
+w(m)
+n
+exp
+n=1
+1
+2 tnαmym(xn)
+(14.22)
+where the coefficients w(m)
+n = exp{−tnfm−1(xn)} can be viewed as constants
+because we are optimizing only αm and ym(x).
+If we denote by Tm the set of
+data points that are correctly classified by ym(x), and if we denote the remaining
+misclassified points by Mm, then we can in turn rewrite the error function in the
+form
+E = e−αm/2
+n∈Tm
+N
+w(m)
+n
+n=1
+N
+n
+14.3. Boosting
+661
+w(m)
+n + eαm/2
+n∈Mm
+= (eαm/2 − e−αm/2)
+n I(ym(xn) = tn) + e−αm/2
+w(m)
+w(m)
+n .
+n=1
+(14.23)
+When we minimize this with respect to ym(x), we see that the second term is con-
+stant, and so this is equivalent to minimizing (14.15) because the overall multiplica-
+tive factor in front of the summation does not affect the location of the minimum.
+Similarly, minimizing with respect to αm, we obtain (14.17) in which 	m is defined
+by (14.16).
+From (14.22) we see that, having found αm and ym(x), the weights on the data
+points are updated using
+w(m+1)
+n
+Making use of the fact that
+= w(m)
+exp
+1
+2 tnαmym(xn)
+(14.24)
+(14.25)
+tnym(xn) = 1 − 2I(ym(xn) = tn)
+we see that the weights w(m)
+n
+are updated at the next iteration using
+exp(−αm/2) exp{αmI(ym(xn) = tn)} .
+n
+n
+= w(m)
+w(m+1)
+(14.26)
+Because the term exp(−αm/2) is independent of n, we see that it weights all data
+points by the same factor and so can be discarded. Thus we obtain (14.18).
+Finally, once all the base classifiers are trained, new data points are classified by
+evaluating the sign of the combined function defined according to (14.21). Because
+the factor of 1/2 does not affect the sign it can be omitted, giving (14.19).

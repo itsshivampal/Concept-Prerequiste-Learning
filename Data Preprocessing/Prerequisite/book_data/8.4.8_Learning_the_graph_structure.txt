@@ -1,0 +1,205 @@
+In our discussion of inference in graphical models, we have assumed that the
+structure of the graph is known and fixed. However, there is also interest in go-
+ing beyond the inference problem and learning the graph structure itself from data
+(Friedman and Koller, 2003). This requires that we define a space of possible struc-
+tures as well as a measure that can be used to score each structure.
+From a Bayesian viewpoint, we would ideally like to compute a posterior dis-
+tribution over graph structures and to make predictions by averaging with respect
+to this distribution. If we have a prior p(m) over graphs indexed by m, then the
+posterior distribution is given by
+p(m|D) ∝ p(m)p(D|m)
+(8.103)
+where D is the observed data set. The model evidence p(D|m) then provides the
+score for each model. However, evaluation of the evidence involves marginalization
+over the latent variables and presents a challenging computational problem for many
+models.
+Exploring the space of structures can also be problematic. Because the number
+of different graph structures grows exponentially with the number of nodes, it is
+often necessary to resort to heuristics to find good candidates.
+Exercises
+8.1 () www By marginalizing out the variables in order, show that the representation
+(8.5) for the joint distribution of a directed graph is correctly normalized, provided
+each of the conditional distributions is normalized.
+8.2 () www Show that the property of there being no directed cycles in a directed
+graph follows from the statement that there exists an ordered numbering of the nodes
+such that for each node there are no links going to a lower-numbered node.
+Table 8.2 The joint distribution over three binary variables.
+Exercises
+419
+a
+0
+0
+0
+0
+1
+1
+1
+1
+b
+0
+0
+1
+1
+0
+0
+1
+1
+c
+0
+1
+0
+1
+0
+1
+0
+1
+p(a, b, c)
+0.192
+0.144
+0.048
+0.216
+0.192
+0.064
+0.048
+0.096
+M
+8.3 ( ) Consider three binary variables a, b, c ∈ {0, 1} having the joint distribution
+given in Table 8.2. Show by direct evaluation that this distribution has the property
+that a and b are marginally dependent, so that p(a, b) = p(a)p(b), but that they
+become independent when conditioned on c, so that p(a, b|c) = p(a|c)p(b|c) for
+both c = 0 and c = 1.
+8.4 ( ) Evaluate the distributions p(a), p(b|c), and p(c|a) corresponding to the joint
+distribution given in Table 8.2. Hence show by direct evaluation that p(a, b, c) =
+p(a)p(c|a)p(b|c). Draw the corresponding directed graph.
+8.5 () www Draw a directed probabilistic graphical model corresponding to the
+relevance vector machine described by (7.79) and (7.80).
+8.6 () For the model shown in Figure 8.13, we have seen that the number of parameters
+required to specify the conditional distribution p(y|x1, . . . , xM ), where xi ∈ {0, 1},
+could be reduced from 2M to M + 1 by making use of the logistic sigmoid represen-
+tation (8.10). An alternative representation (Pearl, 1988) is given by
+p(y = 1|x1, . . . , xM ) = 1 − (1 − µ0)
+(1 − µi)xi
+i=1
+(8.104)
+where the parameters µi represent the probabilities p(xi = 1), and µ0 is an additional
+parameters satisfying 0 � µ0 � 1. The conditional distribution (8.104) is known as
+the noisy-OR. Show that this can be interpreted as a ‘soft’ (probabilistic) form of the
+logical OR function (i.e., the function that gives y = 1 whenever at least one of the
+xi = 1). Discuss the interpretation of µ0.
+8.7 ( ) Using the recursion relations (8.15) and (8.16), show that the mean and covari-
+ance of the joint distribution for the graph shown in Figure 8.14 are given by (8.17)
+and (8.18), respectively.
+8.8 () www Show that a ⊥⊥ b, c | d implies a ⊥⊥ b | d.
+8.9 () www Using the d-separation criterion, show that the conditional distribution
+for a node x in a directed graph, conditioned on all of the nodes in the Markov
+blanket, is independent of the remaining variables in the graph.
+420
+8. GRAPHICAL MODELS
+Figure 8.54 Example of a graphical model used to explore the con-
+ditional independence properties of the head-to-head
+path a–c–b when a descendant of c, namely the node
+d, is observed.
+a
+b
+c
+d
+8.10 () Consider the directed graph shown in Figure 8.54 in which none of the variables
+is observed. Show that a ⊥⊥ b | ∅. Suppose we now observe the variable d. Show
+that in general a ⊥⊥ b | d.
+8.11 ( ) Consider the example of the car fuel system shown in Figure 8.21, and suppose
+that instead of observing the state of the fuel gauge G directly, the gauge is seen by
+the driver D who reports to us the reading on the gauge. This report is either that the
+gauge shows full D = 1 or that it shows empty D = 0. Our driver is a bit unreliable,
+as expressed through the following probabilities
+p(D = 1|G = 1) = 0.9
+p(D = 0|G = 0) = 0.9.
+(8.105)
+(8.106)
+Suppose that the driver tells us that the fuel gauge shows empty, in other words
+that we observe D = 0. Evaluate the probability that the tank is empty given only
+this observation. Similarly, evaluate the corresponding probability given also the
+observation that the battery is flat, and note that this second probability is lower.
+Discuss the intuition behind this result, and relate the result to Figure 8.54.
+8.12 () www Show that there are 2M (M−1)/2 distinct undirected graphs over a set of
+M distinct random variables. Draw the 8 possibilities for the case of M = 3.
+8.13 () Consider the use of iterated conditional modes (ICM) to minimize the energy
+function given by (8.42). Write down an expression for the difference in the values
+of the energy associated with the two states of a particular variable xj, with all other
+variables held fixed, and show that it depends only on quantities that are local to xj
+in the graph.
+8.14 () Consider a particular case of the energy function given by (8.42) in which the
+coefficients β = h = 0. Show that the most probable configuration of the latent
+variables is given by xi = yi for all i.
+8.15 ( ) www Show that the joint distribution p(xn−1, xn) for two neighbouring
+nodes in the graph shown in Figure 8.38 is given by an expression of the form (8.58).
+Exercises
+421
+8.16 ( ) Consider the inference problem of evaluating p(xn|xN ) for the graph shown
+in Figure 8.38, for all nodes n ∈ {1, . . . , N − 1}. Show that the message passing
+algorithm discussed in Section 8.4.1 can be used to solve this efficiently, and discuss
+which messages are modified and in what way.
+8.17 ( ) Consider a graph of the form shown in Figure 8.38 having N = 5 nodes, in
+which nodes x3 and x5 are observed. Use d-separation to show that x2 ⊥⊥ x5 | x3.
+Show that if the message passing algorithm of Section 8.4.1 is applied to the evalu-
+ation of p(x2|x3, x5), the result will be independent of the value of x5.
+8.18 ( ) www Show that a distribution represented by a directed tree can trivially
+be written as an equivalent distribution over the corresponding undirected tree. Also
+show that a distribution expressed as an undirected tree can, by suitable normaliza-
+tion of the clique potentials, be written as a directed tree. Calculate the number of
+distinct directed trees that can be constructed from a given undirected tree.
+8.19 ( ) Apply the sum-product algorithm derived in Section 8.4.4 to the chain-of-
+nodes model discussed in Section 8.4.1 and show that the results (8.54), (8.55), and
+(8.57) are recovered as a special case.
+8.20 () www Consider the message passing protocol for the sum-product algorithm on
+a tree-structured factor graph in which messages are first propagated from the leaves
+to an arbitrarily chosen root node and then from the root node out to the leaves. Use
+proof by induction to show that the messages can be passed in such an order that
+at every step, each node that must send a message has received all of the incoming
+messages necessary to construct its outgoing messages.
+8.21 ( ) www Show that the marginal distributions p(xs) over the sets of variables
+xs associated with each of the factors fx(xs) in a factor graph can be found by first
+running the sum-product message passing algorithm and then evaluating the required
+marginals using (8.72).
+8.22 () Consider a tree-structured factor graph, in which a given subset of the variable
+nodes form a connected subgraph (i.e., any variable node of the subset is connected
+to at least one of the other variable nodes via a single factor node). Show how the
+sum-product algorithm can be used to compute the marginal distribution over that
+subset.
+8.23 ( ) www In Section 8.4.4, we showed that the marginal distribution p(xi) for a
+variable node xi in a factor graph is given by the product of the messages arriving at
+this node from neighbouring factor nodes in the form (8.63). Show that the marginal
+p(xi) can also be written as the product of the incoming message along any one of
+the links with the outgoing message along the same link.
+8.24 ( ) Show that the marginal distribution for the variables xs in a factor fs(xs) in
+a tree-structured factor graph, after running the sum-product message passing algo-
+rithm, can be written as the product of the message arriving at the factor node along
+all its links, times the local factor f(xs), in the form (8.72).
+422
+8. GRAPHICAL MODELS
+8.25 ( )
+In (8.86), we verified that the sum-product algorithm run on the graph in
+Figure 8.51 with node x3 designated as the root node gives the correct marginal for
+x2. Show that the correct marginals are obtained also for x1 and x3. Similarly, show
+that the use of the result (8.72) after running the sum-product algorithm on this graph
+gives the correct joint distribution for x1, x2.
+8.26 () Consider a tree-structured factor graph over discrete variables, and suppose we
+wish to evaluate the joint distribution p(xa, xb) associated with two variables xa and
+xb that do not belong to a common factor. Define a procedure for using the sum-
+product algorithm to evaluate this joint distribution in which one of the variables is
+successively clamped to each of its allowed values.
+8.27 ( ) Consider two discrete variables x and y each having three possible states, for
+example x, y ∈ {0, 1, 2}. Construct a joint distribution p(x, y) over these variables
+x that maximizes the marginal p(x), along with
+having the property that the value
+y that maximizes the marginal p(y), together have probability zero under
+the value
+the joint distribution, so that p(
+y) = 0.
+x,
+8.28 ( ) www The concept of a pending message in the sum-product algorithm for
+a factor graph was defined in Section 8.4.7. Show that if the graph has one or more
+cycles, there will always be at least one pending message irrespective of how long
+the algorithm runs.
+8.29 ( ) www Show that if the sum-product algorithm is run on a factor graph with a
+tree structure (no loops), then after a finite number of messages have been sent, there
+will be no pending messages.

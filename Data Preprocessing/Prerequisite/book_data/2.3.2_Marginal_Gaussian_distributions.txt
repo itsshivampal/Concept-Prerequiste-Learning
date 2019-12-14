@@ -1,0 +1,159 @@
+We have seen that if a joint distribution p(xa, xb) is Gaussian, then the condi-
+tional distribution p(xa|xb) will again be Gaussian. Now we turn to a discussion of
+the marginal distribution given by
+p(xa) =
+p(xa, xb) dxb
+(2.83)
+which, as we shall see, is also Gaussian. Once again, our strategy for evaluating this
+distribution efficiently will be to focus on the quadratic form in the exponent of the
+joint distribution and thereby to identify the mean and covariance of the marginal
+distribution p(xa).
+The quadratic form for the joint distribution can be expressed, using the par-
+titioned precision matrix, in the form (2.70). Because our goal is to integrate out
+xb, this is most easily achieved by first considering the terms involving xb and then
+completing the square in order to facilitate integration. Picking out just those terms
+that involve xb, we have
+1
+2
+b Λbbxb+xT
+xT
+where we have defined
+b m = −
+1
+2
+(xb−Λ−1
+bb m)TΛbb(xb−Λ−1
+bb m)+
+m = Λbbµb − Λba(xa − µa).
+1
+2
+mTΛ−1
+bb m (2.84)
+(2.85)
+We see that the dependence on xb has been cast into the standard quadratic form of a
+Gaussian distribution corresponding to the first term on the right-hand side of (2.84),
+plus a term that does not depend on xb (but that does depend on xa). Thus, when
+we take the exponential of this quadratic form, we see that the integration over xb
+required by (2.83) will take the form
+exp
+1
+2
+(xb − Λ−1
+bb m)TΛbb(xb − Λ−1
+bb m)
+dxb.
+(2.86)
+This integration is easily performed by noting that it is the integral over an unnor-
+malized Gaussian, and so the result will be the reciprocal of the normalization co-
+efficient. We know from the form of the normalized Gaussian given by (2.43), that
+this coefficient is independent of the mean and depends only on the determinant of
+the covariance matrix. Thus, by completing the square with respect to xb, we can
+integrate out xb and the only term remaining from the contributions on the left-hand
+side of (2.84) that depends on xa is the last term on the right-hand side of (2.84) in
+which m is given by (2.85). Combining this term with the remaining terms from
+89
+(2.87)
+(2.88)
+(2.89)
+(2.90)
+(2.91)
+(2.92)
+(2.93)
+2.3. The Gaussian Distribution
+(2.70) that depend on xa, we obtain
+1
+2
+[Λbbµb − Λba(xa − µa)]T Λ−1
+bb [Λbbµb − Λba(xa − µa)]
+a (Λaaµa + Λabµb) + const
+a Λaaxa + xT
+xT
+1
+2
+1
+a (Λaa − ΛabΛ−1
+xT
+2
+a (Λaa − ΛabΛ−1
++xT
+bb Λba)xa
+bb Λba)−1µa + const
+where ‘const’ denotes quantities independent of xa. Again, by comparison with
+(2.71), we see that the covariance of the marginal distribution of p(xa) is given by
+Similarly, the mean is given by
+Σa = (Λaa − ΛabΛ−1
+bb Λba)−1.
+Σa(Λaa − ΛabΛ−1
+bb Λba)µa = µa
+where we have used (2.88). The covariance in (2.88) is expressed in terms of the
+partitioned precision matrix given by (2.69). We can rewrite this in terms of the
+corresponding partitioning of the covariance matrix given by (2.67), as we did for
+the conditional distribution. These partitioned matrices are related by
+Making use of (2.76), we then have
+Thus we obtain the intuitively satisfying result that the marginal distribution p(xa)
+has mean and covariance given by
+Λaa Λab
+Λba Λbb
+−1
+Σaa Σab
+Σba Σbb
+Λaa − ΛabΛ−1
+bb Λba
+−1 = Σaa.
+E[xa] = µa
+cov[xa] = Σaa.
+We see that for a marginal distribution, the mean and covariance are most simply ex-
+pressed in terms of the partitioned covariance matrix, in contrast to the conditional
+distribution for which the partitioned precision matrix gives rise to simpler expres-
+sions.
+Our results for the marginal and conditional distributions of a partitioned Gaus-
+sian are summarized below.
+Partitioned Gaussians
+Given a joint Gaussian distribution N (x|µ, Σ) with Λ ≡ Σ−1 and
+x =
+xa
+xb
+µa
+µb
+(2.94)
+1
+10
+5
+0
+0
+2. PROBABILITY DISTRIBUTIONS
+xb = 0.7
+p(xa|xb = 0.7)
+90
+1
+xb
+0.5
+p(xa, xb)
+0
+0
+0.5
+xa
+p(xa)
+0.5
+xa
+1
+Figure 2.9 The plot on the left shows the contours of a Gaussian distribution p(xa, xb) over two variables, and
+the plot on the right shows the marginal distribution p(xa) (blue curve) and the conditional distribution p(xa|xb)
+for xb = 0.7 (red curve).
+Σaa Σab
+Σba Σbb
+Λaa Λab
+Λba Λbb
+Conditional distribution:
+p(xa|xb) = N (x|µa|b, Λ−1
+aa )
+µa|b = µa − Λ−1
+aa Λab(xb − µb).
+Marginal distribution:
+p(xa) = N (xa|µa, Σaa).
+(2.95)
+(2.96)
+(2.97)
+(2.98)
+We illustrate the idea of conditional and marginal distributions associated with
+a multivariate Gaussian using an example involving two variables in Figure 2.9.

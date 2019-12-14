@@ -1,0 +1,80 @@
+We turn next to a probabilistic view of classification and show how models with
+linear decision boundaries arise from simple assumptions about the distribution of
+the data. In Section 1.5.4, we discussed the distinction between the discriminative
+and the generative approaches to classification. Here we shall adopt a generative
+4.2. Probabilistic Generative Models
+197
+Figure 4.9 Plot of the logistic sigmoid function
+σ(a) defined by (4.59), shown in
+red, together with the scaled pro-
+bit function Φ(λa), for λ2 = π/8,
+shown in dashed blue, where Φ(a)
+is defined by (4.114). The scal-
+ing factor π/8 is chosen so that the
+derivatives of the two curves are
+equal for a = 0.
+1
+0.5
+0
+−5
+0
+5
+approach in which we model the class-conditional densities p(x|Ck), as well as the
+class priors p(Ck), and then use these to compute posterior probabilities p(Ck|x)
+through Bayes’ theorem.
+Consider first of all the case of two classes. The posterior probability for class
+C1 can be written as
+p(C1|x) =
+p(x|C1)p(C1)
+p(x|C1)p(C1) + p(x|C2)p(C2)
+1 + exp(−a)
+= σ(a)
+1
+where we have defined
+a = ln p(x|C1)p(C1)
+p(x|C2)p(C2)
+and σ(a) is the logistic sigmoid function defined by
+σ(a) =
+1
+1 + exp(−a)
+which is plotted in Figure 4.9. The term ‘sigmoid’ means S-shaped. This type of
+function is sometimes also called a ‘squashing function’ because it maps the whole
+real axis into a finite interval. The logistic sigmoid has been encountered already
+in earlier chapters and plays an important role in many classification algorithms. It
+satisfies the following symmetry property
+as is easily verified. The inverse of the logistic sigmoid is given by
+σ(−a) = 1 − σ(a)
+a = ln
+1 − σ
+and is known as the logit function. It represents the log of the ratio of probabilities
+ln [p(C1|x)/p(C2|x)] for the two classes, also known as the log odds.
+(4.57)
+(4.58)
+(4.59)
+(4.60)
+(4.61)
+198
+4. LINEAR MODELS FOR CLASSIFICATION
+Note that in (4.57) we have simply rewritten the posterior probabilities in an
+equivalent form, and so the appearance of the logistic sigmoid may seem rather vac-
+uous. However, it will have significance provided a(x) takes a simple functional
+form. We shall shortly consider situations in which a(x) is a linear function of x, in
+which case the posterior probability is governed by a generalized linear model.
+For the case of K > 2 classes, we have
+p(Ck|x) =
+p(x|Ck)p(Ck)
+j p(x|Cj)p(Cj)
+exp(ak)
+j exp(aj)
+ak = ln p(x|Ck)p(Ck).
+(4.62)
+(4.63)
+which is known as the normalized exponential and can be regarded as a multiclass
+generalization of the logistic sigmoid. Here the quantities ak are defined by
+The normalized exponential is also known as the softmax function, as it represents
+a smoothed version of the ‘max’ function because, if ak
+aj for all j = k, then
+p(Ck|x)  1, and p(Cj|x)  0.
+We now investigate the consequences of choosing specific forms for the class-
+conditional densities, looking first at continuous input variables x and then dis-
+cussing briefly the case of discrete inputs.

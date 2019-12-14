@@ -1,0 +1,220 @@
+We now turn to the problem of finding the marginal distributions for the latent
+variables conditional on the observation sequence. For given parameter settings, we
+also wish to make predictions of the next latent state zn and of the next observation
+xn conditioned on the observed data x1, . . . , xn−1 for use in real-time applications.
+These inference problems can be solved efficiently using the sum-product algorithm,
+which in the context of the linear dynamical system gives rise to the Kalman filter
+and Kalman smoother equations.
+It is worth emphasizing that because the linear dynamical system is a linear-
+Gaussian model, the joint distribution over all latent and observed variables is simply
+a Gaussian, and so in principle we could solve inference problems by using the
+standard results derived in previous chapters for the marginals and conditionals of a
+multivariate Gaussian. The role of the sum-product algorithm is to provide a more
+efficient way to perform such computations.
+Linear dynamical systems have the identical factorization, given by (13.6), to
+hidden Markov models, and are again described by the factor graphs in Figures 13.14
+and 13.15. Inference algorithms therefore take precisely the same form except that
+summations over latent variables are replaced by integrations. We begin by consid-
+ering the forward equations in which we treat zN as the root node, and propagate
+messages from the leaf node h(z1) to the root. From (13.77), the initial message will
+be Gaussian, and because each of the factors is Gaussian, all subsequent messages
+will also be Gaussian. By convention, we shall propagate messages that are nor-
+malized marginal distributions corresponding to p(zn|x1, . . . , xn), which we denote
+by
+(13.84)
+α(zn) given by
+This is precisely analogous to the propagation of scaled variables
+(13.59) in the discrete case of the hidden Markov model, and so the recursion equa-
+tion now takes the form
+α(zn) = N (zn|µn, Vn).
+cn
+α(zn) = p(xn|zn)
+α(zn−1)p(zn|zn−1) dzn−1.
+(13.85)
+Substituting for the conditionals p(zn|zn−1) and p(xn|zn), using (13.75) and (13.76),
+respectively, and making use of (13.84), we see that (13.85) becomes
+cnN (zn|µn, Vn) = N (xn|Czn, Σ)
+N (zn|Azn−1, Γ)N (zn−1|µn−1, Vn−1) dzn−1.
+(13.86)
+Here we are supposing that µn−1 and Vn−1 are known, and by evaluating the inte-
+gral in (13.86), we wish to determine values for µn and Vn. The integral is easily
+evaluated by making use of the result (2.115), from which it follows that
+N (zn|Azn−1, Γ)N (zn−1|µn−1, Vn−1) dzn−1
+= N (zn|Aµn−1, Pn−1)
+(13.87)
+13.3. Linear Dynamical Systems
+639
+(13.88)
+(13.89)
+(13.90)
+(13.91)
+where we have defined
+Pn−1 = AVn−1AT + Γ.
+We can now combine this result with the first factor on the right-hand side of (13.86)
+by making use of (2.115) and (2.116) to give
+µn = Aµn−1 + Kn(xn − CAµn−1)
+Vn = (I − KnC)Pn−1
+cn = N (xn|CAµn−1, CPn−1CT + Σ).
+Here we have made use of the matrix inverse identities (C.5) and (C.7) and also
+defined the Kalman gain matrix
+Kn = Pn−1CT
+(13.92)
+Thus, given the values of µn−1 and Vn−1, together with the new observation xn,
+we can evaluate the Gaussian marginal for zn having mean µn and covariance Vn,
+as well as the normalization coefficient cn.
+CPn−1CT + Σ
+The initial conditions for these recursion equations are obtained from
+−1
+(13.93)
+Because p(z1) is given by (13.77), and p(x1|z1) is given by (13.76), we can again
+make use of (2.115) to calculate c1 and (2.116) to calculate µ1 and V1 giving
+α(z1) = p(z1)p(x1|z1).
+c1
+µ1 = µ0 + K1(x1 − Cµ0)
+V1 = (I − K1C)V0
+c1 = N (x1|Cµ0, CV0CT + Σ)
+K1 = V0CT
+CV0CT + Σ
+−1
+(13.94)
+(13.95)
+(13.96)
+(13.97)
+where
+Similarly, the likelihood function for the linear dynamical system is given by (13.63)
+in which the factors cn are found using the Kalman filtering equations.
+We can interpret the steps involved in going from the posterior marginal over
+zn−1 to the posterior marginal over zn as follows.
+In (13.89), we can view the
+quantity Aµn−1 as the prediction of the mean over zn obtained by simply taking the
+mean over zn−1 and projecting it forward one step using the transition probability
+matrix A. This predicted mean would give a predicted observation for xn given by
+CAzn−1 obtained by applying the emission probability matrix C to the predicted
+hidden state mean. We can view the update equation (13.89) for the mean of the
+hidden variable distribution as taking the predicted mean Aµn−1 and then adding
+a correction that is proportional to the error xn − CAzn−1 between the predicted
+observation and the actual observation. The coefficient of this correction is given by
+the Kalman gain matrix. Thus we can view the Kalman filter as a process of making
+successive predictions and then correcting these predictions in the light of the new
+observations. This is illustrated graphically in Figure 13.21.
+640
+13. SEQUENTIAL DATA
+zn−1
+zn
+zn
+Figure 13.21 The linear dynamical system can be viewed as a sequence of steps in which increasing un-
+certainty in the state variable due to diffusion is compensated by the arrival of new data. In the left-hand plot,
+the blue curve shows the distribution p(zn−1|x1, . . . , xn−1), which incorporates all the data up to step n − 1.
+The diffusion arising from the nonzero variance of the transition probability p(zn|zn−1) gives the distribution
+p(zn|x1, . . . , xn−1), shown in red in the centre plot. Note that this is broader and shifted relative to the blue curve
+(which is shown dashed in the centre plot for comparison). The next data observation xn contributes through the
+emission density p(xn|zn), which is shown as a function of zn in green on the right-hand plot. Note that this is not
+a density with respect to zn and so is not normalized to one. Inclusion of this new data point leads to a revised
+distribution p(zn|x1, . . . , xn) for the state density shown in blue. We see that observation of the data has shifted
+and narrowed the distribution compared to p(zn|x1, . . . , xn−1) (which is shown in dashed in the right-hand plot
+for comparison).
+Exercise 13.27
+Exercise 13.28
+If we consider a situation in which the measurement noise is small compared
+to the rate at which the latent variable is evolving, then we find that the posterior
+distribution for zn depends only on the current measurement xn, in accordance with
+the intuition from our simple example at the start of the section. Similarly, if the
+latent variable is evolving slowly relative to the observation noise level, we find that
+the posterior mean for zn is obtained by averaging all of the measurements obtained
+up to that time.
+One of the most important applications of the Kalman filter is to tracking, and
+this is illustrated using a simple example of an object moving in two dimensions in
+Figure 13.22.
+So far, we have solved the inference problem of finding the posterior marginal
+for a node zn given observations from x1 up to xn. Next we turn to the problem of
+finding the marginal for a node zn given all observations x1 to xN . For temporal
+data, this corresponds to the inclusion of future as well as past observations. Al-
+though this cannot be used for real-time prediction, it plays a key role in learning the
+parameters of the model. By analogy with the hidden Markov model, this problem
+can be solved by propagating messages from node xN back to node x1 and com-
+bining this information with that obtained during the forward message passing stage
+used to compute the
+α(zn).
+In the LDS literature, it is usual to formulate this backward recursion in terms
+β(zn). Because γ(zn) must also be
+β(zn) rather than in terms of
+of γ(zn) =
+Gaussian, we write it in the form
+α(zn)
+γ(zn) =
+α(zn)
+β(zn) = N (zn|
+µn,
+Vn).
+(13.98)
+To derive the required recursion, we start from the backward recursion (13.62) for
+13.3. Linear Dynamical Systems
+641
+Figure 13.22 An illustration of a linear dy-
+namical system being used to
+track a moving object. The blue
+points indicate the true positions
+of the object in a two-dimensional
+space at successive time steps,
+the green points denote noisy
+measurements of the positions,
+and the red crosses indicate the
+means of the inferred posterior
+distributions of the positions ob-
+tained by running the Kalman fil-
+tering equations.
+The covari-
+ances of
+the inferred positions
+are indicated by the red ellipses,
+which correspond to contours
+having one standard deviation.
+β(zn), which, for continuous latent variables, can be written in the form
+cn+1
+β(zn) =
+β(zn+1)p(xn+1|zn+1)p(zn+1|zn) dzn+1.
+(13.99)
+α(zn) and substitute for p(xn+1|zn+1)
+We now multiply both sides of (13.99) by
+and p(zn+1|zn) using (13.75) and (13.76). Then we make use of (13.89), (13.90)
+and (13.91), together with (13.98), and after some manipulation we obtain
+µn = µn + Jn
+Vn = Vn + Jn
+µn+1 − AµN
+Vn+1 − Pn
+JT
+n
+(13.100)
+(13.101)
+where we have defined
+(13.102)
+and we have made use of AVn = PnJT
+n. Note that these recursions require that the
+forward pass be completed first so that the quantities µn and Vn will be available
+for the backward pass.
+Jn = VnAT (Pn)−1
+For the EM algorithm, we also require the pairwise posterior marginals, which
+can be obtained from (13.65) in the form
+ξ(zn−1, zn) = (cn)−1
+= N (zn−1|µn−1, Vn−1)N (zn|Azn−1, Γ)N (xn|Czn, Σ)N (zn|
+α(zn−1)p(xn|zn)p(zn|z−1)
+β(zn)
+µn,
+Vn)
+cn
+α(zn)
+(13.103)
+α(zn) using (13.84) and rearranging, we see that ξ(zn−1, zn) is a
+Substituting for
+Gaussian with mean given with components γ(zn−1) and γ(zn), and a covariance
+between zn and zn−1 given by
+cov[zn, zn−1] = Jn−1
+Vn.
+(13.104)
+Exercise 13.29
+Exercise 13.31
+N
+n=2
+N
+642
+13. SEQUENTIAL DATA

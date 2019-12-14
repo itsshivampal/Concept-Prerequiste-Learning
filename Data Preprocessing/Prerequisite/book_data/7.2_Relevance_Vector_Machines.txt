@@ -1,0 +1,32 @@
+345
+case, because they apply to any choice for the distribution p(x, t), so long as both
+the training and the test examples are drawn (independently) from the same distribu-
+tion, and for any choice for the function f(x) so long as it belongs to F. In real-world
+applications of machine learning, we deal with distributions that have significant reg-
+ularity, for example in which large regions of input space carry the same class label.
+As a consequence of the lack of any assumptions about the form of the distribution,
+the PAC bounds are very conservative, in other words they strongly over-estimate
+the size of data sets required to achieve a given generalization performance. For this
+reason, PAC bounds have found few, if any, practical applications.
+One attempt to improve the tightness of the PAC bounds is the PAC-Bayesian
+framework (McAllester, 2003), which considers a distribution over the space F of
+functions, somewhat analogous to the prior in a Bayesian treatment. This still con-
+siders any possible choice for p(x, t), and so although the bounds are tighter, they
+are still very conservative.
+7.2. Relevance Vector Machines
+Support vector machines have been used in a variety of classification and regres-
+sion applications. Nevertheless, they suffer from a number of limitations, several
+of which have been highlighted already in this chapter. In particular, the outputs of
+an SVM represent decisions rather than posterior probabilities. Also, the SVM was
+originally formulated for two classes, and the extension to K > 2 classes is prob-
+lematic. There is a complexity parameter C, or ν (as well as a parameter 	 in the case
+of regression), that must be found using a hold-out method such as cross-validation.
+Finally, predictions are expressed as linear combinations of kernel functions that are
+centred on training data points and that are required to be positive definite.
+The relevance vector machine or RVM (Tipping, 2001) is a Bayesian sparse ker-
+nel technique for regression and classification that shares many of the characteristics
+of the SVM whilst avoiding its principal limitations. Additionally, it typically leads
+to much sparser models resulting in correspondingly faster performance on test data
+whilst maintaining comparable generalization error.
+In contrast to the SVM we shall find it more convenient to introduce the regres-
+sion form of the RVM first and then consider the extension to classification tasks.

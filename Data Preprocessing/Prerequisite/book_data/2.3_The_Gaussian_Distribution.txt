@@ -1,0 +1,479 @@
+The Gaussian, also known as the normal distribution, is a widely used model for the
+distribution of continuous variables. In the case of a single variable x, the Gaussian
+distribution can be written in the form
+1
+(2.42)
+N (x|µ, σ2) =
+(2πσ2)1/2
+exp
+1
+2σ2 (x − µ)2
+where µ is the mean and σ2 is the variance. For a D-dimensional vector x, the
+multivariate Gaussian distribution takes the form
+Section 1.6
+Exercise 2.14
+N (x|µ, Σ) =
+1
+1
+(2π)D/2
+|Σ|1/2
+exp
+1
+2
+(x − µ)TΣ−1(x − µ)
+(2.43)
+where µ is a D-dimensional mean vector, Σ is a D × D covariance matrix, and |Σ|
+denotes the determinant of Σ.
+The Gaussian distribution arises in many different contexts and can be motivated
+from a variety of different perspectives. For example, we have already seen that for
+a single real variable, the distribution that maximizes the entropy is the Gaussian.
+This property applies also to the multivariate Gaussian.
+Another situation in which the Gaussian distribution arises is when we consider
+the sum of multiple random variables. The central limit theorem (due to Laplace)
+tells us that, subject to certain mild conditions, the sum of a set of random variables,
+which is of course itself a random variable, has a distribution that becomes increas-
+ingly Gaussian as the number of terms in the sum increases (Walker, 1969). We can
+2.3. The Gaussian Distribution
+79
+N = 1
+3
+2
+1
+0
+0
+N = 2
+3
+2
+1
+0
+0
+N = 10
+3
+2
+1
+0
+0
+0.5
+1
+0.5
+1
+0.5
+1
+Figure 2.6 Histogram plots of the mean of N uniformly distributed numbers for various values of N. We
+observe that as N increases, the distribution tends towards a Gaussian.
+illustrate this by considering N variables x1, . . . , xN each of which has a uniform
+distribution over the interval [0, 1] and then considering the distribution of the mean
+(x1 + ··· + xN )/N. For large N, this distribution tends to a Gaussian, as illustrated
+in Figure 2.6.
+In practice, the convergence to a Gaussian as N increases can be
+very rapid. One consequence of this result is that the binomial distribution (2.9),
+which is a distribution over m defined by the sum of N observations of the random
+binary variable x, will tend to a Gaussian as N → ∞ (see Figure 2.1 for the case of
+N = 10).
+The Gaussian distribution has many important analytical properties, and we shall
+consider several of these in detail. As a result, this section will be rather more tech-
+nically involved than some of the earlier sections, and will require familiarity with
+various matrix identities. However, we strongly encourage the reader to become pro-
+ficient in manipulating Gaussian distributions using the techniques presented here as
+this will prove invaluable in understanding the more complex models presented in
+later chapters.
+We begin by considering the geometrical form of the Gaussian distribution. The
+Appendix C
+Carl Friedrich Gauss
+1777–1855
+It
+is said that when Gauss went
+to elementary school at age 7, his
+teacher B¨uttner, trying to keep the
+class occupied, asked the pupils to
+sum the integers from 1 to 100. To
+the teacher’s amazement, Gauss
+arrived at the answer in a matter of moments by noting
+that the sum can be represented as 50 pairs (1 + 100,
+2+99, etc.) each of which added to 101, giving the an-
+swer 5,050. It is now believed that the problem which
+was actually set was of the same form but somewhat
+harder in that the sequence had a larger starting value
+and a larger increment. Gauss was a German math-
+ematician and scientist with a reputation for being a
+hard-working perfectionist. One of his many contribu-
+tions was to show that least squares can be derived
+under the assumption of normally distributed errors.
+He also created an early formulation of non-Euclidean
+geometry (a self-consistent geometrical theory that vi-
+olates the axioms of Euclid) but was reluctant to dis-
+cuss it openly for fear that his reputation might suffer
+if it were seen that he believed in such a geometry.
+At one point, Gauss was asked to conduct a geodetic
+survey of the state of Hanover, which led to his for-
+mulation of the normal distribution, now also known
+as the Gaussian. After his death, a study of his di-
+aries revealed that he had discovered several impor-
+tant mathematical results years or even decades be-
+fore they were published by others.
+i=1
+i=1
+D
+D
+Σui = λiui
+i uj = Iij
+uT
+Iij =
+if i = j
+1,
+0, otherwise.
+λiuiuT
+i
+Σ−1 =
+1
+λi
+uiuT
+i .
+D
+∆2 =
+i=1
+y2
+i
+λi
+80
+2. PROBABILITY DISTRIBUTIONS
+Exercise 2.17
+Exercise 2.18
+Exercise 2.19
+functional dependence of the Gaussian on x is through the quadratic form
+∆2 = (x − µ)TΣ−1(x − µ)
+(2.44)
+which appears in the exponent. The quantity ∆ is called the Mahalanobis distance
+from µ to x and reduces to the Euclidean distance when Σ is the identity matrix. The
+Gaussian distribution will be constant on surfaces in x-space for which this quadratic
+form is constant.
+First of all, we note that the matrix Σ can be taken to be symmetric, without
+loss of generality, because any antisymmetric component would disappear from the
+exponent. Now consider the eigenvector equation for the covariance matrix
+where i = 1, . . . , D. Because Σ is a real, symmetric matrix its eigenvalues will be
+real, and its eigenvectors can be chosen to form an orthonormal set, so that
+where Iij is the i, j element of the identity matrix and satisfies
+The covariance matrix Σ can be expressed as an expansion in terms of its eigenvec-
+tors in the form
+and similarly the inverse covariance matrix Σ−1 can be expressed as
+Substituting (2.49) into (2.44), the quadratic form becomes
+(2.45)
+(2.46)
+(2.47)
+(2.48)
+(2.49)
+(2.50)
+where we have defined
+(2.51)
+We can interpret {yi} as a new coordinate system defined by the orthonormal vectors
+ui that are shifted and rotated with respect to the original xi coordinates. Forming
+the vector y = (y1, . . . , yD)T, we have
+i (x − µ).
+yi = uT
+y = U(x − µ)
+(2.52)
+Appendix C
+x2
+Figure 2.7 The red curve shows the ellip-
+tical surface of constant proba-
+bility density for a Gaussian in
+a two-dimensional space x =
+(x1, x2) on which the density
+its value at
+is exp(−1/2) of
+x = µ. The major axes of
+the ellipse are defined by the
+eigenvectors ui of the covari-
+ance matrix, with correspond-
+ing eigenvalues λi.
+λ1/2
+2
+2.3. The Gaussian Distribution
+y2
+u2
+y1
+u1
+λ1/2
+1
+81
+x1
+where U is a matrix whose rows are given by uT
+i . From (2.46) it follows that U is
+an orthogonal matrix, i.e., it satisfies UUT = I, and hence also UTU = I, where I
+is the identity matrix.
+The quadratic form, and hence the Gaussian density, will be constant on surfaces
+If all of the eigenvalues λi are positive, then these
+for which (2.51) is constant.
+surfaces represent ellipsoids, with their centres at µ and their axes oriented along ui,
+and with scaling factors in the directions of the axes given by λ1/2
+, as illustrated in
+Figure 2.7.
+i
+For the Gaussian distribution to be well defined, it is necessary for all of the
+eigenvalues λi of the covariance matrix to be strictly positive, otherwise the dis-
+tribution cannot be properly normalized. A matrix whose eigenvalues are strictly
+positive is said to be positive definite. In Chapter 12, we will encounter Gaussian
+distributions for which one or more of the eigenvalues are zero, in which case the
+distribution is singular and is confined to a subspace of lower dimensionality. If all
+of the eigenvalues are nonnegative, then the covariance matrix is said to be positive
+semidefinite.
+Now consider the form of the Gaussian distribution in the new coordinate system
+defined by the yi. In going from the x to the y coordinate system, we have a Jacobian
+matrix J with elements given by
+Jij = ∂xi
+∂yj
+= Uji
+(2.53)
+where Uji are the elements of the matrix UT. Using the orthonormality property of
+the matrix U, we see that the square of the determinant of the Jacobian matrix is
+(2.54)
+and hence |J| = 1. Also, the determinant |Σ| of the covariance matrix can be written
+= |I| = 1
+|J|2 =
+|U| =
+UTU
+UT
+UT
+2 =
+j=1
+D
+j=1
+D
+D
+82
+2. PROBABILITY DISTRIBUTIONS
+as the product of its eigenvalues, and hence
+|Σ|1/2 =
+λ1/2
+j
+(2.55)
+(2.56)
+Thus in the yj coordinate system, the Gaussian distribution takes the form
+p(y) = p(x)|J| =
+1
+exp
+(2πλj)1/2
+y2
+j
+2λj
+which is the product of D independent univariate Gaussian distributions. The eigen-
+vectors therefore define a new set of shifted and rotated coordinates with respect
+to which the joint probability distribution factorizes into a product of independent
+distributions. The integral of the distribution in the y coordinate system is then
+p(y) dy =
+j=1
+1
+exp
+(2πλj)1/2
+y2
+j
+2λj
+dyj = 1
+(2.57)
+where we have used the result (1.48) for the normalization of the univariate Gaussian.
+This confirms that the multivariate Gaussian (2.43) is indeed normalized.
+We now look at the moments of the Gaussian distribution and thereby provide an
+interpretation of the parameters µ and Σ. The expectation of x under the Gaussian
+distribution is given by
+E[x] =
+1
+(2π)D/2
+1
+(2π)D/2
+1
+1
+|Σ|1/2
+|Σ|1/2
+exp
+exp
+(x − µ)TΣ−1(x − µ)
+zTΣ−1z
+(z + µ) dz
+x dx
+(2.58)
+1
+2
+1
+2
+where we have changed variables using z = x − µ. We now note that the exponent
+is an even function of the components of z and, because the integrals over these are
+taken over the range (−∞,∞), the term in z in the factor (z + µ) will vanish by
+symmetry. Thus
+(2.59)
+E[x] = µ
+and so we refer to µ as the mean of the Gaussian distribution.
+We now consider second order moments of the Gaussian. In the univariate case,
+we considered the second order moment given by E[x2]. For the multivariate Gaus-
+sian, there are D2 second order moments given by E[xixj], which we can group
+together to form the matrix E[xxT]. This matrix can be written as
+E[xxT] =
+1
+(2π)D/2
+1
+1
+1
+|Σ|1/2
+(2π)D/2
+|Σ|1/2
+exp
+1
+2
+(x − µ)TΣ−1(x − µ)
+xxT dx
+exp
+1
+2
+zTΣ−1z
+(z + µ)(z + µ)T dz
+D
+i=1
+yjuj
+D
+j=1
+1
+2
+D
+z =
+j=1
+i=1
+D
+k=1
+D
+2.3. The Gaussian Distribution
+83
+where again we have changed variables using z = x − µ. Note that the cross-terms
+involving µzT and µTz will again vanish by symmetry. The term µµT is constant
+and can be taken outside the integral, which itself is unity because the Gaussian
+distribution is normalized. Consider the term involving zzT. Again, we can make
+use of the eigenvector expansion of the covariance matrix given by (2.45), together
+with the completeness of the set of eigenvectors, to write
+(2.60)
+(2.61)
+where yj = uT
+j z, which gives
+1
+(2π)D/2
+1
+|Σ|1/2
+1
+(2π)D/2
+1
+|Σ|1/2
+uiuT
+i λi = Σ
+exp
+zTΣ−1z
+zzT dz
+uiuT
+j
+exp
+y2
+k
+2λk
+yiyj dy
+where we have made use of the eigenvector equation (2.45), together with the fact
+that the integral on the right-hand side of the middle line vanishes by symmetry
+unless i = j, and in the final line we have made use of the results (1.50) and (2.55),
+together with (2.48). Thus we have
+E[xxT] = µµT + Σ.
+(2.62)
+For single random variables, we subtracted the mean before taking second mo-
+ments in order to define a variance. Similarly, in the multivariate case it is again
+convenient to subtract off the mean, giving rise to the covariance of a random vector
+x defined by
+(2.63)
+For the specific case of a Gaussian distribution, we can make use of E[x] = µ,
+together with the result (2.62), to give
+(x − E[x])(x − E[x])T
+cov[x] = E
+cov[x] = Σ.
+(2.64)
+Because the parameter matrix Σ governs the covariance of x under the Gaussian
+distribution, it is called the covariance matrix.
+Although the Gaussian distribution (2.43) is widely used as a density model, it
+suffers from some significant limitations. Consider the number of free parameters in
+the distribution. A general symmetric covariance matrix Σ will have D(D + 1)/2
+independent parameters, and there are another D independent parameters in µ, giv-
+ing D(D + 3)/2 parameters in total. For large D, the total number of parameters
+Exercise 2.21
+84
+2. PROBABILITY DISTRIBUTIONS
+Figure 2.8 Contours of constant
+probability density for a Gaussian
+distribution in two dimensions in
+which the covariance matrix is (a) of
+general form, (b) diagonal, in which
+the elliptical contours are aligned
+with the coordinate axes, and (c)
+proportional to the identity matrix, in
+which the contours are concentric
+circles.
+x2
+x2
+x2
+x1
+x1
+x1
+(a)
+(b)
+(c)
+therefore grows quadratically with D, and the computational task of manipulating
+and inverting large matrices can become prohibitive. One way to address this prob-
+lem is to use restricted forms of the covariance matrix. If we consider covariance
+matrices that are diagonal, so that Σ = diag(σ2
+i ), we then have a total of 2D inde-
+pendent parameters in the density model. The corresponding contours of constant
+density are given by axis-aligned ellipsoids. We could further restrict the covariance
+matrix to be proportional to the identity matrix, Σ = σ2I, known as an isotropic co-
+variance, giving D + 1 independent parameters in the model and spherical surfaces
+of constant density. The three possibilities of general, diagonal, and isotropic covari-
+ance matrices are illustrated in Figure 2.8. Unfortunately, whereas such approaches
+limit the number of degrees of freedom in the distribution and make inversion of the
+covariance matrix a much faster operation, they also greatly restrict the form of the
+probability density and limit its ability to capture interesting correlations in the data.
+A further limitation of the Gaussian distribution is that it is intrinsically uni-
+modal (i.e., has a single maximum) and so is unable to provide a good approximation
+to multimodal distributions. Thus the Gaussian distribution can be both too flexible,
+in the sense of having too many parameters, while also being too limited in the range
+of distributions that it can adequately represent. We will see later that the introduc-
+tion of latent variables, also called hidden variables or unobserved variables, allows
+both of these problems to be addressed. In particular, a rich family of multimodal
+distributions is obtained by introducing discrete latent variables leading to mixtures
+of Gaussians, as discussed in Section 2.3.9. Similarly, the introduction of continuous
+latent variables, as described in Chapter 12, leads to models in which the number of
+free parameters can be controlled independently of the dimensionality D of the data
+space while still allowing the model to capture the dominant correlations in the data
+set. Indeed, these two approaches can be combined and further extended to derive
+a very rich set of hierarchical models that can be adapted to a broad range of prac-
+tical applications. For instance, the Gaussian version of the Markov random field,
+which is widely used as a probabilistic model of images, is a Gaussian distribution
+over the joint space of pixel intensities but rendered tractable through the imposition
+of considerable structure reflecting the spatial organization of the pixels. Similarly,
+the linear dynamical system, used to model time series data for applications such
+as tracking, is also a joint Gaussian distribution over a potentially large number of
+observed and latent variables and again is tractable due to the structure imposed on
+the distribution. A powerful framework for expressing the form and properties of
+Section 8.3
+Section 13.3
+and of the covariance matrix Σ given by
+µa
+µb
+Σaa Σab
+Σba Σbb
+Note that the symmetry ΣT = Σ of the covariance matrix implies that Σaa and Σbb
+are symmetric, while Σba = ΣT
+ab.
+In many situations, it will be convenient to work with the inverse of the covari-
+ance matrix
+Λ ≡ Σ−1
+which is known as the precision matrix. In fact, we shall see that some properties
+of Gaussian distributions are most naturally expressed in terms of the covariance,
+whereas others take a simpler form when viewed in terms of the precision. We
+therefore also introduce the partitioned form of the precision matrix
+(2.66)
+(2.67)
+(2.68)
+2.3. The Gaussian Distribution
+85
+such complex distributions is that of probabilistic graphical models, which will form
+the subject of Chapter 8.

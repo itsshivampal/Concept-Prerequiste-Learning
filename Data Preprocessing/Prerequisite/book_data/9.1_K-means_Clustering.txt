@@ -1,0 +1,244 @@
+We begin by considering the problem of identifying groups, or clusters, of data points
+in a multidimensional space. Suppose we have a data set {x1, . . . , xN} consisting
+of N observations of a random D-dimensional Euclidean variable x. Our goal is to
+partition the data set into some number K of clusters, where we shall suppose for
+the moment that the value of K is given. Intuitively, we might think of a cluster as
+comprising a group of data points whose inter-point distances are small compared
+with the distances to points outside of the cluster. We can formalize this notion by
+first introducing a set of D-dimensional vectors µk, where k = 1, . . . , K, in which
+µk is a prototype associated with the kth cluster. As we shall see shortly, we can
+think of the µk as representing the centres of the clusters. Our goal is then to find
+an assignment of data points to clusters, as well as a set of vectors {µk}, such that
+the sum of the squares of the distances of each data point to its closest vector µk, is
+a minimum.
+It is convenient at this point to define some notation to describe the assignment
+of data points to clusters. For each data point xn, we introduce a corresponding set
+of binary indicator variables rnk ∈ {0, 1}, where k = 1, . . . , K describing which of
+the K clusters the data point xn is assigned to, so that if data point xn is assigned to
+cluster k then rnk = 1, and rnj = 0 for j = k. This is known as the 1-of-K coding
+scheme. We can then define an objective function, sometimes called a distortion
+measure, given by
+J =
+n=1
+k=1
+rnkxn − µk2
+(9.1)
+which represents the sum of the squares of the distances of each data point to its
+N
+which we can easily solve for µk to give
+2
+n=1
+rnk(xn − µk) = 0
+µk =
+n rnkxn
+n rnk
+(9.3)
+(9.4)
+The denominator in this expression is equal to the number of points assigned to
+cluster k, and so this result has a simple interpretation, namely set µk equal to the
+mean of all of the data points xn assigned to cluster k. For this reason, the procedure
+is known as the K-means algorithm.
+The two phases of re-assigning data points to clusters and re-computing the clus-
+ter means are repeated in turn until there is no further change in the assignments (or
+until some maximum number of iterations is exceeded). Because each phase reduces
+the value of the objective function J, convergence of the algorithm is assured. How-
+ever, it may converge to a local rather than global minimum of J. The convergence
+properties of the K-means algorithm were studied by MacQueen (1967).
+The K-means algorithm is illustrated using the Old Faithful data set in Fig-
+ure 9.1. For the purposes of this example, we have made a linear re-scaling of the
+data, known as standardizing, such that each of the variables has zero mean and
+unit standard deviation. For this example, we have chosen K = 2, and so in this
+9.1. K-means Clustering
+425
+assigned vector µk. Our goal is to find values for the {rnk} and the {µk} so as to
+minimize J. We can do this through an iterative procedure in which each iteration
+involves two successive steps corresponding to successive optimizations with respect
+to the rnk and the µk. First we choose some initial values for the µk. Then in the first
+phase we minimize J with respect to the rnk, keeping the µk fixed. In the second
+phase we minimize J with respect to the µk, keeping rnk fixed. This two-stage
+optimization is then repeated until convergence. We shall see that these two stages
+of updating rnk and updating µk correspond respectively to the E (expectation) and
+M (maximization) steps of the EM algorithm, and to emphasize this we shall use the
+terms E step and M step in the context of the K-means algorithm.
+Consider first the determination of the rnk. Because J in (9.1) is a linear func-
+tion of rnk, this optimization can be performed easily to give a closed form solution.
+The terms involving different n are independent and so we can optimize for each
+n separately by choosing rnk to be 1 for whichever value of k gives the minimum
+value of xn − µk2. In other words, we simply assign the nth data point to the
+closest cluster centre. More formally, this can be expressed as
+if k = arg minj xn − µj2
+otherwise.
+rnk =
+(9.2)
+1
+0
+Now consider the optimization of the µk with the rnk held fixed. The objective
+function J is a quadratic function of µk, and it can be minimized by setting its
+derivative with respect to µk to zero giving
+Section 9.4
+Exercise 9.1
+Appendix A
+426
+9. MIXTURE MODELS AND EM
+(a)
+−2
+(d)
+−2
+(g)
+2
+0
+−2
+2
+0
+−2
+2
+0
+−2
+0
+2
+0
+2
+(b)
+−2
+(e)
+−2
+(h)
+2
+0
+−2
+2
+0
+−2
+2
+0
+−2
+0
+2
+(c)
+−2
+(f)
+2
+0
+−2
+2
+0
+−2
+0
+2
+0
+2
+−2
+0
+2
+2
+(i)
+0
+−2
+−2
+0
+2
+−2
+0
+2
+−2
+0
+2
+Figure 9.1 Illustration of the K-means algorithm using the re-scaled Old Faithful data set. (a) Green points
+denote the data set in a two-dimensional Euclidean space. The initial choices for centres µ1 and µ2 are shown
+by the red and blue crosses, respectively. (b) In the initial E step, each data point is assigned either to the red
+cluster or to the blue cluster, according to which cluster centre is nearer. This is equivalent to classifying the
+points according to which side of the perpendicular bisector of the two cluster centres, shown by the magenta
+line, they lie on. (c) In the subsequent M step, each cluster centre is re-computed to be the mean of the points
+assigned to the corresponding cluster. (d)–(i) show successive E and M steps through to final convergence of
+the algorithm.
+9.1. K-means Clustering
+427
+Figure 9.2 Plot of the cost function J given by
+(9.1) after each E step (blue points)
+and M step (red points) of the K-
+means algorithm for the example
+shown in Figure 9.1. The algo-
+rithm has converged after the third
+M step, and the final EM cycle pro-
+duces no changes in either the as-
+signments or the prototype vectors.
+1000
+J
+500
+0
+1
+2
+3
+4
+case, the assignment of each data point to the nearest cluster centre is equivalent to a
+classification of the data points according to which side they lie of the perpendicular
+bisector of the two cluster centres. A plot of the cost function J given by (9.1) for
+the Old Faithful example is shown in Figure 9.2.
+Note that we have deliberately chosen poor initial values for the cluster centres
+so that the algorithm takes several steps before convergence. In practice, a better
+initialization procedure would be to choose the cluster centres µk to be equal to a
+random subset of K data points. It is also worth noting that the K-means algorithm
+itself is often used to initialize the parameters in a Gaussian mixture model before
+applying the EM algorithm.
+A direct implementation of the K-means algorithm as discussed here can be
+relatively slow, because in each E step it is necessary to compute the Euclidean dis-
+tance between every prototype vector and every data point. Various schemes have
+been proposed for speeding up the K-means algorithm, some of which are based on
+precomputing a data structure such as a tree such that nearby points are in the same
+subtree (Ramasubramanian and Paliwal, 1990; Moore, 2000). Other approaches
+make use of the triangle inequality for distances, thereby avoiding unnecessary dis-
+tance calculations (Hodgson, 1998; Elkan, 2003).
+So far, we have considered a batch version of K-means in which the whole data
+set is used together to update the prototype vectors. We can also derive an on-line
+stochastic algorithm (MacQueen, 1967) by applying the Robbins-Monro procedure
+to the problem of finding the roots of the regression function given by the derivatives
+of J in (9.1) with respect to µk. This leads to a sequential update in which, for each
+data point xn in turn, we update the nearest prototype µk using
+Section 9.2.2
+Section 2.3.5
+Exercise 9.2
+µnew
+k = µold
+k + ηn(xn − µold
+k )
+(9.5)
+where ηn is the learning rate parameter, which is typically made to decrease mono-
+tonically as more data points are considered.
+The K-means algorithm is based on the use of squared Euclidean distance as the
+measure of dissimilarity between a data point and a prototype vector. Not only does
+this limit the type of data variables that can be considered (it would be inappropriate
+for cases where some or all of the variables represent categorical labels for instance),
+N
+K
+428
+9. MIXTURE MODELS AND EM
+Section 2.3.7
+but it can also make the determination of the cluster means nonrobust to outliers. We
+can generalize the K-means algorithm by introducing a more general dissimilarity
+measure V(x, x) between two vectors x and x and then minimizing the following
+distortion measure
+J =
+n=1
+k=1
+rnkV(xn, µk)
+(9.6)
+which gives the K-medoids algorithm. The E step again involves, for given cluster
+prototypes µk, assigning each data point to the cluster for which the dissimilarity to
+the corresponding prototype is smallest. The computational cost of this is O(KN),
+as is the case for the standard K-means algorithm. For a general choice of dissimi-
+larity measure, the M step is potentially more complex than for K-means, and so it
+is common to restrict each cluster prototype to be equal to one of the data vectors as-
+signed to that cluster, as this allows the algorithm to be implemented for any choice
+of dissimilarity measure V(·,·) so long as it can be readily evaluated. Thus the M
+step involves, for each cluster k, a discrete search over the Nk points assigned to that
+cluster, which requires O(N 2
+One notable feature of the K-means algorithm is that at each iteration, every
+data point is assigned uniquely to one, and only one, of the clusters. Whereas some
+data points will be much closer to a particular centre µk than to any other centre,
+there may be other data points that lie roughly midway between cluster centres. In
+the latter case, it is not clear that the hard assignment to the nearest cluster is the
+most appropriate. We shall see in the next section that by adopting a probabilistic
+approach, we obtain ‘soft’ assignments of data points to clusters in a way that reflects
+the level of uncertainty over the most appropriate assignment. This probabilistic
+formulation brings with it numerous benefits.
+k) evaluations of V(·,·).

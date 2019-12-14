@@ -1,0 +1,151 @@
+One of the principal reasons for wishing to sample from complicated probability
+distributions is to be able to evaluate expectations of the form (11.1). The technique
+of importance sampling provides a framework for approximating expectations di-
+rectly but does not itself provide a mechanism for drawing samples from distribution
+p(z).
+The finite sum approximation to the expectation, given by (11.2), depends on
+being able to draw samples from the distribution p(z). Suppose, however, that it is
+impractical to sample directly from p(z) but that we can evaluate p(z) easily for any
+given value of z. One simplistic strategy for evaluating expectations would be to
+discretize z-space into a uniform grid and to evaluate the integrand as a sum of the
+form
+E[f] 
+l=1
+p(z(l))f(z(l)).
+(11.18)
+An obvious problem with this approach is that the number of terms in the summation
+grows exponentially with the dimensionality of z. Furthermore, as we have already
+noted, the kinds of probability distributions of interest will often have much of their
+mass confined to relatively small regions of z space and so uniform sampling will be
+very inefficient because in high-dimensional problems, only a very small proportion
+of the samples will make a significant contribution to the sum. We would really like
+to choose the sample points to fall in regions where p(z) is large, or ideally where
+the product p(z)f(z) is large.
+As in the case of rejection sampling, importance sampling is based on the use
+of a proposal distribution q(z) from which it is easy to draw samples, as illustrated
+in Figure 11.8. We can then express the expectation in the form of a finite sum over
+Zq
+Zp
+l=1
+L
+1
+L
+rl
+f(z)
+1
+L
+l=1
+l=1
+l=1
+L
+L
+L
+1
+Zq
+1
+L
+p(z)
+p(z)
+E[f] =
+f(z)p(z) dz
+= Zq
+Zp
+q(z) q(z) dz
+rlf(z(l)).
+samples {z(l)} drawn from q(z)
+E[f] =
+11.1. Basic Sampling Algorithms
+f(z)p(z) dz
+f(z) p(z)
+q(z) q(z) dz
+p(z(l))
+q(z(l)) f(z(l)).
+The quantities rl = p(z(l))/q(z(l)) are known as importance weights, and they cor-
+rect the bias introduced by sampling from the wrong distribution. Note that, unlike
+rejection sampling, all of the samples generated are retained.
+It will often be the case that the distribution p(z) can only be evaluated up to a
+normalization constant, so that p(z) =
+p(z) can be evaluated easily,
+whereas Zp is unknown. Similarly, we may wish to use an importance sampling
+distribution q(z) =
+q(z)/Zq, which has the same property. We then have
+p(z)/Zp where
+rl =
+p(z(l))/
+where
+Zp/Zq with the result
+q(z(l)). We can use the same sample set to evaluate the ratio
+p(z) dz =
+q(z) q(z) dz
+Zp
+Zq
+and hence
+where we have defined
+wl =
+E[f] 
+wlf(z(l))
+rl
+rm
+m
+p(z(l))/q(z(l))
+p(z(m))/q(z(m)) .
+m
+As with rejection sampling, the success of the importance sampling approach
+depends crucially on how well the sampling distribution q(z) matches the desired
+533
+(11.19)
+(11.20)
+(11.21)
+(11.22)
+(11.23)
+534
+11. SAMPLING METHODS
+distribution p(z). If, as is often the case, p(z)f(z) is strongly varying and has a sig-
+nificant proportion of its mass concentrated over relatively small regions of z space,
+then the set of importance weights {rl} may be dominated by a few weights hav-
+ing large values, with the remaining weights being relatively insignificant. Thus the
+effective sample size can be much smaller than the apparent sample size L. The prob-
+lem is even more severe if none of the samples falls in the regions where p(z)f(z)
+is large. In that case, the apparent variances of rl and rlf(z(l)) may be small even
+though the estimate of the expectation may be severely wrong. Hence a major draw-
+back of the importance sampling method is the potential to produce results that are
+arbitrarily in error and with no diagnostic indication. This also highlights a key re-
+quirement for the sampling distribution q(z), namely that it should not be small or
+zero in regions where p(z) may be significant.
+For distributions defined in terms of a graphical model, we can apply the impor-
+tance sampling technique in various ways. For discrete variables, a simple approach
+is called uniform sampling. The joint distribution for a directed graph is defined
+by (11.4). Each sample from the joint distribution is obtained by first setting those
+variables zi that are in the evidence set equal to their observed values. Each of the
+remaining variables is then sampled independently from a uniform distribution over
+the space of possible instantiations. To determine the corresponding weight associ-
+q(z) is uniform over
+ated with a sample z(l), we note that the sampling distribution
+p(z), where x denotes the subset of
+the possible choices for z, and that
+variables that are observed, and the equality follows from the fact that every sample
+z that is generated is necessarily consistent with the evidence. Thus the weights rl
+are simply proportional to p(z). Note that the variables can be sampled in any order.
+This approach can yield poor results if the posterior distribution is far from uniform,
+as is often the case in practice.
+p(z|x) =
+An improvement on this approach is called likelihood weighted sampling (Fung
+and Chang, 1990; Shachter and Peot, 1990) and is based on ancestral sampling of
+the variables. For each variable in turn, if that variable is in the evidence set, then it
+is just set to its instantiated value. If it is not in the evidence set, then it is sampled
+from the conditional distribution p(zi|pai) in which the conditioning variables are
+set to their currently sampled values. The weighting associated with the resulting
+sample z is then given by
+r(z) =
+p(zi|pai)
+p(zi|pai)
+zi∈e
+zi∈e
+p(zi|pai)
+1
+zi∈e
+p(zi|pai).
+(11.24)
+This method can be further extended using self-importance sampling (Shachter and
+Peot, 1990) in which the importance sampling distribution is continually updated to
+reflect the current estimated posterior distribution.

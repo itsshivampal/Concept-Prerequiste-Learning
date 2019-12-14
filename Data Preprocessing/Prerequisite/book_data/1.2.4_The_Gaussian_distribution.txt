@@ -1,0 +1,259 @@
+We shall devote the whole of Chapter 2 to a study of various probability dis-
+tributions and their key properties. It is convenient, however, to introduce here one
+of the most important probability distributions for continuous variables, called the
+normal or Gaussian distribution. We shall make extensive use of this distribution in
+the remainder of this chapter and indeed throughout much of the book.
+For the case of a single real-valued variable x, the Gaussian distribution is de-
+fined by
+N
+x|µ, σ2
+1
+(2πσ2)1/2
+exp
+1
+2σ2 (x − µ)2
+(1.46)
+which is governed by two parameters: µ, called the mean, and σ2, called the vari-
+ance. The square root of the variance, given by σ, is called the standard deviation,
+and the reciprocal of the variance, written as β = 1/σ2, is called the precision. We
+shall see the motivation for these terms shortly. Figure 1.13 shows a plot of the
+Gaussian distribution.
+From the form of (1.46) we see that the Gaussian distribution satisfies
+N (x|µ, σ2) > 0.
+(1.47)
+Exercise 1.7
+Also it is straightforward to show that the Gaussian is normalized, so that
+Pierre-Simon Laplace
+1749–1827
+It
+is said that Laplace was seri-
+ously lacking in modesty and at one
+point declared himself
+to be the
+best mathematician in France at the
+time, a claim that was arguably true.
+As well as being prolific in mathe-
+matics, he also made numerous contributions to as-
+tronomy, including the nebular hypothesis by which the
+earth is thought to have formed from the condensa-
+tion and cooling of a large rotating disk of gas and
+dust. In 1812 he published the first edition of Th´eorie
+Analytique des Probabilit´es, in which Laplace states
+that “probability theory is nothing but common sense
+reduced to calculation”. This work included a discus-
+sion of the inverse probability calculation (later termed
+Bayes’ theorem by Poincar´e), which he used to solve
+problems in life expectancy, jurisprudence, planetary
+masses, triangulation, and error estimation.
+2σ
+25
+x
+(1.48)
+(1.49)
+(1.50)
+(1.51)
+Figure 1.13 Plot of the univariate Gaussian
+showing the mean µ and the
+standard deviation σ.
+N (x|µ, σ2)
+1.2. Probability Theory
+Exercise 1.8
+Exercise 1.9
+N
+x|µ, σ2
+dx = 1.
+Thus (1.46) satisfies the two requirements for a valid probability density.
+We can readily find expectations of functions of x under the Gaussian distribu-
+tion. In particular, the average value of x is given by
+E[x] =
+N
+x|µ, σ2
+x dx = µ.
+Because the parameter µ represents the average value of x under the distribution, it
+is referred to as the mean. Similarly, for the second order moment
+E[x2] =
+N
+x|µ, σ2
+x2 dx = µ2 + σ2.
+From (1.49) and (1.50), it follows that the variance of x is given by
+var[x] = E[x2] − E[x]2 = σ2
+and hence σ2 is referred to as the variance parameter. The maximum of a distribution
+is known as its mode. For a Gaussian, the mode coincides with the mean.
+We are also interested in the Gaussian distribution defined over a D-dimensional
+vector x of continuous variables, which is given by
+N (x|µ, Σ) =
+1
+1
+(2π)D/2
+|Σ|1/2
+exp
+1
+2
+(x − µ)TΣ−1(x − µ)
+(1.52)
+where the D-dimensional vector µ is called the mean, the D × D matrix Σ is called
+the covariance, and |Σ| denotes the determinant of Σ. We shall make use of the
+multivariate Gaussian distribution briefly in this chapter, although its properties will
+be studied in detail in Section 2.3.
+26
+1. INTRODUCTION
+Figure 1.14 Illustration of the likelihood function for
+a Gaussian distribution, shown by the
+red curve. Here the black points de-
+note a data set of values {xn}, and
+the likelihood function given by (1.53)
+corresponds to the product of the blue
+values. Maximizing the likelihood in-
+volves adjusting the mean and vari-
+ance of the Gaussian so as to maxi-
+mize this product.
+p(x)
+N (xn|µ, σ2)
+xn
+x
+N
+Now suppose that we have a data set of observations x = (x1, . . . , xN )T, rep-
+resenting N observations of the scalar variable x. Note that we are using the type-
+face x to distinguish this from a single observation of the vector-valued variable
+(x1, . . . , xD)T, which we denote by x. We shall suppose that the observations are
+drawn independently from a Gaussian distribution whose mean µ and variance σ2
+are unknown, and we would like to determine these parameters from the data set.
+Data points that are drawn independently from the same distribution are said to be
+independent and identically distributed, which is often abbreviated to i.i.d. We have
+seen that the joint probability of two independent events is given by the product of
+the marginal probabilities for each event separately. Because our data set x is i.i.d.,
+we can therefore write the probability of the data set, given µ and σ2, in the form
+Section 1.2.5
+p(x|µ, σ2) =
+N
+xn|µ, σ2
+n=1
+(1.53)
+When viewed as a function of µ and σ2, this is the likelihood function for the Gaus-
+sian and is interpreted diagrammatically in Figure 1.14.
+One common criterion for determining the parameters in a probability distribu-
+tion using an observed data set is to find the parameter values that maximize the
+likelihood function. This might seem like a strange criterion because, from our fore-
+going discussion of probability theory, it would seem more natural to maximize the
+probability of the parameters given the data, not the probability of the data given the
+parameters. In fact, these two criteria are related, as we shall discuss in the context
+of curve fitting.
+For the moment, however, we shall determine values for the unknown parame-
+ters µ and σ2 in the Gaussian by maximizing the likelihood function (1.53). In prac-
+tice, it is more convenient to maximize the log of the likelihood function. Because
+the logarithm is a monotonically increasing function of its argument, maximization
+of the log of a function is equivalent to maximization of the function itself. Taking
+the log not only simplifies the subsequent mathematical analysis, but it also helps
+numerically because the product of a large number of small probabilities can easily
+underflow the numerical precision of the computer, and this is resolved by computing
+instead the sum of the log probabilities. From (1.46) and (1.53), the log likelihood
+N
+n=1
+1
+N
+n=1
+N
+N − 1
+N
+N
+2
+xn
+n=1
+N
+N
+Exercise 1.11
+Section 1.1
+Exercise 1.12
+1.2. Probability Theory
+27
+function can be written in the form
+ln p
+x|µ, σ2
+1
+2σ2
+(xn − µ)2 −
+ln σ2 −
+N
+2
+ln(2π).
+(1.54)
+Maximizing (1.54) with respect to µ, we obtain the maximum likelihood solution
+given by
+µML =
+(1.55)
+(1.56)
+which is the sample mean, i.e., the mean of the observed values {xn}. Similarly,
+maximizing (1.54) with respect to σ2, we obtain the maximum likelihood solution
+for the variance in the form
+ML =
+σ2
+1
+N
+(xn − µML)2
+which is the sample variance measured with respect to the sample mean µML. Note
+that we are performing a joint maximization of (1.54) with respect to µ and σ2, but
+in the case of the Gaussian distribution the solution for µ decouples from that for σ2
+so that we can first evaluate (1.55) and then subsequently use this result to evaluate
+(1.56).
+Later in this chapter, and also in subsequent chapters, we shall highlight the sig-
+nificant limitations of the maximum likelihood approach. Here we give an indication
+of the problem in the context of our solutions for the maximum likelihood param-
+eter settings for the univariate Gaussian distribution. In particular, we shall show
+that the maximum likelihood approach systematically underestimates the variance
+of the distribution. This is an example of a phenomenon called bias and is related
+to the problem of over-fitting encountered in the context of polynomial curve fitting.
+We first note that the maximum likelihood solutions µML and σ2
+ML are functions of
+the data set values x1, . . . , xN . Consider the expectations of these quantities with
+respect to the data set values, which themselves come from a Gaussian distribution
+with parameters µ and σ2. It is straightforward to show that
+E[µML] = µ
+E[σ2
+ML] =
+σ2
+(1.57)
+(1.58)
+so that on average the maximum likelihood estimate will obtain the correct mean but
+will underestimate the true variance by a factor (N − 1)/N. The intuition behind
+this result is given by Figure 1.15.
+From (1.58) it follows that the following estimate for the variance parameter is
+unbiased
+σ2 = N
+ML =
+N − 1 σ2
+1
+N − 1
+n=1
+(xn − µML)2.
+(1.59)
+28
+1. INTRODUCTION
+Figure 1.15 Illustration of how bias arises in using max-
+imum likelihood to determine the variance
+of a Gaussian. The green curve shows
+the true Gaussian distribution from which
+data is generated, and the three red curves
+show the Gaussian distributions obtained
+by fitting to three data sets, each consist-
+ing of two data points shown in blue, us-
+ing the maximum likelihood results (1.55)
+and (1.56). Averaged across the three data
+sets, the mean is correct, but the variance
+is systematically under-estimated because
+it is measured relative to the sample mean
+and not relative to the true mean.
+(a)
+(b)
+(c)
+Section 1.1
+In Section 10.1.3, we shall see how this result arises automatically when we adopt a
+Bayesian approach.
+Note that the bias of the maximum likelihood solution becomes less significant
+as the number N of data points increases, and in the limit N → ∞ the maximum
+likelihood solution for the variance equals the true variance of the distribution that
+generated the data. In practice, for anything other than small N, this bias will not
+prove to be a serious problem. However, throughout this book we shall be interested
+in more complex models with many parameters, for which the bias problems asso-
+ciated with maximum likelihood will be much more severe. In fact, as we shall see,
+the issue of bias in maximum likelihood lies at the root of the over-fitting problem
+that we encountered earlier in the context of polynomial curve fitting.

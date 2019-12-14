@@ -1,0 +1,126 @@
+Insight into the optimization problem, and into the various techniques for solv-
+ing it, can be obtained by considering a local quadratic approximation to the error
+function.
+Consider the Taylor expansion of E(w) around some point
+w in weight space
+E(w)  E(
+w) + (w −
+w)Tb +
+1
+2
+(w −
+w)TH(w −
+w)
+(5.28)
+238
+5. NEURAL NETWORKS
+b
+b
+w=
+where cubic and higher terms have been omitted. Here b is defined to be the gradient
+of E evaluated at
+w
+b ≡ ∇E|w=
+and the Hessian matrix H = ∇∇E has elements
+w
+(H)ij ≡
+∂E
+∂wi∂wj
+w
+(5.30)
+From (5.28), the corresponding local approximation to the gradient is given by
+∇E  b + H(w −
+w).
+For points w that are sufficiently close to
+approximations for the error and its gradient.
+w, these expressions will give reasonable
+Consider the particular case of a local quadratic approximation around a point
+w that is a minimum of the error function. In this case there is no linear term,
+because ∇E = 0 at w, and (5.28) becomes
+E(w) = E(w) +
+1
+2
+(w − w)TH(w − w)
+where the Hessian H is evaluated at w. In order to interpret this geometrically,
+consider the eigenvalue equation for the Hessian matrix
+(5.29)
+(5.31)
+(5.32)
+(5.33)
+Hui = λiui
+where the eigenvectors ui form a complete orthonormal set (Appendix C) so that
+(5.34)
+We now expand (w − w) as a linear combination of the eigenvectors in the form
+(5.35)
+i uj = δij.
+uT
+αiui.
+w − w =
+i
+This can be regarded as a transformation of the coordinate system in which the origin
+is translated to the point w, and the axes are rotated to align with the eigenvectors
+(through the orthogonal matrix whose columns are the ui), and is discussed in more
+detail in Appendix C. Substituting (5.35) into (5.32), and using (5.33) and (5.34),
+allows the error function to be written in the form
+E(w) = E(w) +
+1
+2
+i
+λiα2
+i .
+A matrix H is said to be positive definite if, and only if,
+vTHv > 0
+for all v.
+(5.36)
+(5.37)
+i
+i
+w2
+the error
+Figure 5.6 In the neighbourhood of a min-
+imum w,
+function
+can be approximated by a
+quadratic. Contours of con-
+stant error are then ellipses
+whose axes are aligned with
+the eigenvectors ui of the Hes-
+sian matrix, with lengths that
+are inversely proportional to the
+square roots of the correspond-
+ing eigenvectors λi.
+λ−1/2
+2
+5.2. Network Training
+239
+u2
+w
+u1
+w1
+λ−1/2
+1
+Because the eigenvectors {ui} form a complete set, an arbitrary vector v can be
+written in the form
+(5.38)
+v =
+ciui.
+From (5.33) and (5.34), we then have
+vTHv =
+c2
+i λi
+(5.39)
+Exercise 5.10
+Exercise 5.11
+and so H will be positive definite if, and only if, all of its eigenvalues are positive.
+In the new coordinate system, whose basis vectors are given by the eigenvectors
+{ui}, the contours of constant E are ellipses centred on the origin, as illustrated
+in Figure 5.6. For a one-dimensional weight space, a stationary point w will be a
+minimum if
+∂2E
+∂w2
+w
+> 0.
+(5.40)
+Exercise 5.12
+The corresponding result in D-dimensions is that the Hessian matrix, evaluated at
+w, should be positive definite.

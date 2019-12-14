@@ -1,0 +1,258 @@
+The hidden Markov model can be viewed as a specific instance of the state space
+model of Figure 13.5 in which the latent variables are discrete. However, if we
+examine a single time slice of the model, we see that it corresponds to a mixture
+distribution, with component densities given by p(x|z).
+It can therefore also be
+interpreted as an extension of a mixture model in which the choice of mixture com-
+ponent for each observation is not selected independently but depends on the choice
+of component for the previous observation. The HMM is widely used in speech
+recognition (Jelinek, 1997; Rabiner and Juang, 1993), natural language modelling
+(Manning and Sch¨utze, 1999), on-line handwriting recognition (Nag et al., 1986),
+and for the analysis of biological sequences such as proteins and DNA (Krogh et al.,
+1994; Durbin et al., 1998; Baldi and Brunak, 2001).
+As in the case of a standard mixture model, the latent variables are the discrete
+multinomial variables zn describing which component of the mixture is responsible
+for generating the corresponding observation xn. Again, it is convenient to use a
+1-of-K coding scheme, as used for mixture models in Chapter 9. We now allow the
+probability distribution of zn to depend on the state of the previous latent variable
+zn−1 through a conditional distribution p(zn|zn−1). Because the latent variables are
+K-dimensional binary variables, this conditional distribution corresponds to a table
+of numbers that we denote by A, the elements of which are known as transition
+probabilities. They are given by Ajk ≡ p(znk = 1|zn−1,j = 1), and because they
+are probabilities, they satisfy 0 � Ajk � 1 with
+k Ajk = 1, so that the matrix A
+j=1
+K
+K
+K
+k=1
+Figure 13.6 Transition diagram showing a model whose la-
+tent variables have three possible states corre-
+sponding to the three boxes. The black lines
+denote the elements of the transition matrix
+Ajk.
+13.2. Hidden Markov Models
+611
+A32
+A23
+k = 1
+A11
+A22
+A21
+A12
+k = 2
+k = 3
+A31
+A13
+A33
+has K(K−1) independent parameters. We can then write the conditional distribution
+explicitly in the form
+p(zn|zn−1,A) =
+Azn−1,j znk
+jk
+(13.7)
+The initial latent node z1 is special in that it does not have a parent node, and so
+it has a marginal distribution p(z1) represented by a vector of probabilities π with
+elements πk ≡ p(z1k = 1), so that
+p(z1|π) =
+πz1k
+k
+k=1
+(13.8)
+where
+k πk = 1.
+The transition matrix is sometimes illustrated diagrammatically by drawing the
+states as nodes in a state transition diagram as shown in Figure 13.6 for the case of
+K = 3. Note that this does not represent a probabilistic graphical model, because
+the nodes are not separate variables but rather states of a single variable, and so we
+have shown the states as boxes rather than circles.
+Section 8.4.5
+It is sometimes useful to take a state transition diagram, of the kind shown in
+Figure 13.6, and unfold it over time. This gives an alternative representation of the
+transitions between latent states, known as a lattice or trellis diagram, and which is
+shown for the case of the hidden Markov model in Figure 13.7.
+The specification of the probabilistic model is completed by defining the con-
+ditional distributions of the observed variables p(xn|zn, φ), where φ is a set of pa-
+rameters governing the distribution. These are known as emission probabilities, and
+might for example be given by Gaussians of the form (9.11) if the elements of x are
+continuous variables, or by conditional probability tables if x is discrete. Because
+xn is observed, the distribution p(xn|zn, φ) consists, for a given value of φ, of a
+vector of K numbers corresponding to the K possible states of the binary vector zn.
+K
+N
+N
+k = 1
+k = 2
+612
+13. SEQUENTIAL DATA
+Figure 13.7 If we unfold the state transition dia-
+gram of Figure 13.6 over time, we obtain a lattice,
+or trellis, representation of the latent states. Each
+column of this diagram corresponds to one of the
+latent variables zn.
+A11
+A11
+A11
+A33
+n + 1
+n
+(13.9)
+We can represent the emission probabilities in the form
+k = 3
+A33
+A33
+n − 2
+n − 1
+p(xn|zn, φ) =
+p(xn|φk)znk .
+k=1
+We shall focuss attention on homogeneous models for which all of the condi-
+tional distributions governing the latent variables share the same parameters A, and
+similarly all of the emission distributions share the same parameters φ (the extension
+to more general cases is straightforward). Note that a mixture model for an i.i.d. data
+set corresponds to the special case in which the parameters Ajk are the same for all
+values of j, so that the conditional distribution p(zn|zn−1) is independent of zn−1.
+This corresponds to deleting the horizontal links in the graphical model shown in
+Figure 13.5.
+The joint probability distribution over both latent and observed variables is then
+given by
+p(X, Z|θ) = p(z1|π)
+p(zn|zn−1, A)
+n=2
+m=1
+p(xm|zm, φ)
+(13.10)
+where X = {x1, . . . , xN}, Z = {z1, . . . , zN}, and θ = {π, A, φ} denotes the set
+of parameters governing the model. Most of our discussion of the hidden Markov
+model will be independent of the particular choice of the emission probabilities.
+Indeed, the model is tractable for a wide range of emission distributions including
+discrete tables, Gaussians, and mixtures of Gaussians. It is also possible to exploit
+discriminative models such as neural networks. These can be used to model the
+emission density p(x|z) directly, or to provide a representation for p(z|x) that can
+be converted into the required emission density p(x|z) using Bayes’ theorem (Bishop
+et al., 2004).
+We can gain a better understanding of the hidden Markov model by considering
+it from a generative point of view. Recall that to generate samples from a mixture of
+Exercise 13.4
+1
+0.5
+k = 1
+0
+0
+k = 3
+k = 2
+0.5
+13.2. Hidden Markov Models
+613
+1
+0.5
+1
+0
+0
+0.5
+1
+Figure 13.8 Illustration of sampling from a hidden Markov model having a 3-state latent variable z and a
+Gaussian emission model p(x|z) where x is 2-dimensional. (a) Contours of constant probability density for the
+emission distributions corresponding to each of the three states of the latent variable. (b) A sample of 50 points
+drawn from the hidden Markov model, colour coded according to the component that generated them and with
+lines connecting the successive observations. Here the transition matrix was fixed so that in any state there is a
+5% probability of making a transition to each of the other states, and consequently a 90% probability of remaining
+in the same state.
+Gaussians, we first chose one of the components at random with probability given by
+the mixing coefficients πk and then generate a sample vector x from the correspond-
+ing Gaussian component. This process is repeated N times to generate a data set of
+N independent samples. In the case of the hidden Markov model, this procedure is
+modified as follows. We first choose the initial latent variable z1 with probabilities
+governed by the parameters πk and then sample the corresponding observation x1.
+Now we choose the state of the variable z2 according to the transition probabilities
+p(z2|z1) using the already instantiated value of z1. Thus suppose that the sample for
+z1 corresponds to state j. Then we choose the state k of z2 with probabilities Ajk
+for k = 1, . . . , K. Once we know z2 we can draw a sample for x2 and also sample
+the next latent variable z3 and so on. This is an example of ancestral sampling for
+a directed graphical model. If, for instance, we have a model in which the diago-
+nal transition elements Akk are much larger than the off-diagonal elements, then a
+typical data sequence will have long runs of points generated from a single compo-
+nent, with infrequent transitions from one component to another. The generation of
+samples from a hidden Markov model is illustrated in Figure 13.8.
+There are many variants of the standard HMM model, obtained for instance by
+imposing constraints on the form of the transition matrix A (Rabiner, 1989). Here we
+mention one of particular practical importance called the left-to-right HMM, which
+is obtained by setting the elements Ajk of A to zero if k < j, as illustrated in the
+Section 8.1.2
+614
+13. SEQUENTIAL DATA
+Figure 13.9 Example of the state transition diagram for a 3-state
+left-to-right hidden Markov model. Note that once a
+state has been vacated, it cannot later be re-entered.
+A11
+A22
+A33
+A12
+A23
+k = 1
+A13
+k = 2
+k = 3
+state transition diagram for a 3-state HMM in Figure 13.9. Typically for such models
+the initial state probabilities for p(z1) are modified so that p(z11) = 1 and p(z1j) = 0
+for j = 1, in other words every sequence is constrained to start in state j = 1. The
+transition matrix may be further constrained to ensure that large changes in the state
+index do not occur, so that Ajk = 0 if k > j + ∆. This type of model is illustrated
+using a lattice diagram in Figure 13.10.
+Many applications of hidden Markov models, for example speech recognition,
+or on-line character recognition, make use of left-to-right architectures. As an illus-
+tration of the left-to-right hidden Markov model, we consider an example involving
+handwritten digits. This uses on-line data, meaning that each digit is represented
+by the trajectory of the pen as a function of time in the form of a sequence of pen
+coordinates, in contrast to the off-line digits data, discussed in Appendix A, which
+comprises static two-dimensional pixellated images of the ink. Examples of the on-
+line digits are shown in Figure 13.11. Here we train a hidden Markov model on a
+subset of data comprising 45 examples of the digit ‘2’. There are K = 16 states,
+each of which can generate a line segment of fixed length having one of 16 possible
+angles, and so the emission distribution is simply a 16 × 16 table of probabilities
+associated with the allowed angle values for each state index value. Transition prob-
+abilities are all set to zero except for those that keep the state index k the same or
+that increment it by 1, and the model parameters are optimized using 25 iterations of
+EM. We can gain some insight into the resulting model by running it generatively, as
+shown in Figure 13.11.
+Figure 13.10 Lattice diagram for a 3-state left-
+to-right HMM in which the state index k is allowed
+to increase by at most 1 at each transition.
+k = 1
+k = 2
+k = 3
+A11
+A11
+A11
+A33
+n − 2
+n − 1
+A33
+A33
+n + 1
+n
+13.2. Hidden Markov Models
+615
+Figure 13.11 Top row: examples of on-line handwritten
+digits. Bottom row: synthetic digits sam-
+pled generatively from a left-to-right hid-
+den Markov model that has been trained
+on a data set of 45 handwritten digits.
+One of the most powerful properties of hidden Markov models is their ability to
+exhibit some degree of invariance to local warping (compression and stretching) of
+the time axis. To understand this, consider the way in which the digit ‘2’ is written
+in the on-line handwritten digits example. A typical digit comprises two distinct
+sections joined at a cusp. The first part of the digit, which starts at the top left, has a
+sweeping arc down to the cusp or loop at the bottom left, followed by a second more-
+or-less straight sweep ending at the bottom right. Natural variations in writing style
+will cause the relative sizes of the two sections to vary, and hence the location of the
+cusp or loop within the temporal sequence will vary. From a generative perspective
+such variations can be accommodated by the hidden Markov model through changes
+in the number of transitions to the same state versus the number of transitions to the
+successive state. Note, however, that if a digit ‘2’ is written in the reverse order, that
+is, starting at the bottom right and ending at the top left, then even though the pen tip
+coordinates may be identical to an example from the training set, the probability of
+the observations under the model will be extremely small. In the speech recognition
+context, warping of the time axis is associated with natural variations in the speed of
+speech, and again the hidden Markov model can accommodate such a distortion and
+not penalize it too heavily.

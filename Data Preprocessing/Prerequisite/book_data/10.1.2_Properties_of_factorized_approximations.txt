@@ -1,0 +1,223 @@
+Our approach to variational inference is based on a factorized approximation to
+the true posterior distribution. Let us consider for a moment the problem of approx-
+imating a general distribution by a factorized distribution. To begin with, we discuss
+the problem of approximating a Gaussian distribution using a factorized Gaussian,
+which will provide useful insight into the types of inaccuracy introduced in using
+factorized approximations. Consider a Gaussian distribution p(z) = N (z|µ, Λ−1)
+over two correlated variables z = (z1, z2) in which the mean and precision have
+elements
+µ1
+µ2
+Λ11 Λ12
+Λ21 Λ22
+(10.10)
+and Λ21 = Λ12 due to the symmetry of the precision matrix. Now suppose we
+wish to approximate this distribution using a factorized Gaussian of the form q(z) =
+q1(z1)q2(z2). We first apply the general result (10.9) to find an expression for the
+1(z1). In doing so it is useful to note that on the right-hand side we
+optimal factor q
+only need to retain those terms that have some functional dependence on z1 because
+all other terms can be absorbed into the normalization constant. Thus we have
+ln q
+1(z1) = Ez2[ln p(z)] + const
+10.1. Variational Inference
+467
+1
+2
+(z1 − µ1)2Λ11 − (z1 − µ1)Λ12(z2 − µ2)
+= Ez2
+1
+1Λ11 + z1µ1Λ11 − z1Λ12 (E[z2] − µ2) + const.
+2 z2
++ const
+(10.11)
+Next we observe that the right-hand side of this expression is a quadratic function of
+z1, and so we can identify q(z1) as a Gaussian distribution. It is worth emphasizing
+that we did not assume that q(zi) is Gaussian, but rather we derived this result by
+variational optimization of the KL divergence over all possible distributions q(zi).
+Note also that we do not need to consider the additive constant in (10.9) explicitly
+because it represents the normalization constant that can be found at the end by
+inspection if required. Using the technique of completing the square, we can identify
+the mean and precision of this Gaussian, giving
+Section 2.3.1
+q(z1) = N (z1|m1, Λ−1
+11 )
+where
+By symmetry, q
+11 Λ12 (E[z2] − µ2) .
+2(z2) is also Gaussian and can be written as
+m1 = µ1 − Λ−1
+2(z2) = N (z2|m2, Λ−1
+22 )
+q
+(10.12)
+(10.13)
+(10.14)
+in which
+m2 = µ2 − Λ−1
+22 Λ21 (E[z1] − µ1) .
+(10.15)
+Note that these solutions are coupled, so that q(z1) depends on expectations com-
+puted with respect to q(z2) and vice versa. In general, we address this by treating
+the variational solutions as re-estimation equations and cycling through the variables
+in turn updating them until some convergence criterion is satisfied. We shall see
+an example of this shortly. Here, however, we note that the problem is sufficiently
+simple that a closed form solution can be found. In particular, because E[z1] = m1
+and E[z2] = m2, we see that the two equations are satisfied if we take E[z1] = µ1
+and E[z2] = µ2, and it is easily shown that this is the only solution provided the dis-
+tribution is nonsingular. This result is illustrated in Figure 10.2(a). We see that the
+mean is correctly captured but that the variance of q(z) is controlled by the direction
+of smallest variance of p(z), and that the variance along the orthogonal direction is
+significantly under-estimated. It is a general result that a factorized variational ap-
+proximation tends to give approximations to the posterior distribution that are too
+compact.
+By way of comparison, suppose instead that we had been minimizing the reverse
+Kullback-Leibler divergence KL(pq). As we shall see, this form of KL divergence
+Exercise 10.2
+468
+10. APPROXIMATE INFERENCE
+1
+z2
+0.5
+0
+0
+Figure 10.2 Comparison
+of
+the two alternative forms for
+the
+Kullback-Leibler divergence.
+The
+green contours corresponding to
+1, 2, and 3 standard deviations for
+a correlated Gaussian distribution
+p(z) over two variables z1 and z2,
+and the red contours represent
+the corresponding levels for an
+approximating
+q(z)
+over the same variables given by
+the product of
+two independent
+univariate Gaussian distributions
+whose parameters are obtained by
+minimization of
+the Kullback-
+Leibler divergence KL(qp), and
+the reverse Kullback-Leibler
+(b)
+divergence KL(pq).
+distribution
+(a)
+i=1
+z1
+M
+i=j
+0
+z2
+0.5
+1
+0
+0.5
+(a)
+1
+0.5
+(b)
+z1
+1
+Section 10.7
+Exercise 10.3
+is used in an alternative approximate inference framework called expectation prop-
+agation. We therefore consider the general problem of minimizing KL(pq) when
+q(Z) is a factorized approximation of the form (10.5). The KL divergence can then
+be written in the form
+KL(pq) = −
+p(Z)
+ln qi(Zi)
+dZ + const
+(10.16)
+where the constant term is simply the entropy of p(Z) and so does not depend on
+q(Z). We can now optimize with respect to each of the factors qj(Zj), which is
+easily done using a Lagrange multiplier to give
+j (Zj) =
+q
+p(Z)
+dZi = p(Zj).
+(10.17)
+In this case, we find that the optimal solution for qj(Zj) is just given by the corre-
+sponding marginal distribution of p(Z). Note that this is a closed-form solution and
+so does not require iteration.
+To apply this result to the illustrative example of a Gaussian distribution p(z)
+over a vector z we can use (2.98), which gives the result shown in Figure 10.2(b).
+We see that once again the mean of the approximation is correct, but that it places
+significant probability mass in regions of variable space that have very low probabil-
+ity.
+The difference between these two results can be understood by noting that there
+is a large positive contribution to the Kullback-Leibler divergence
+KL(qp) = −
+q(Z) ln
+p(Z)
+q(Z)
+dZ
+(10.18)
+10.1. Variational Inference
+469
+(a)
+(b)
+(c)
+Figure 10.3 Another comparison of the two alternative forms for the Kullback-Leibler divergence. (a) The blue
+contours show a bimodal distribution p(Z) given by a mixture of two Gaussians, and the red contours correspond
+to the single Gaussian distribution q(Z) that best approximates p(Z) in the sense of minimizing the Kullback-
+Leibler divergence KL(pq). (b) As in (a) but now the red contours correspond to a Gaussian distribution q(Z)
+found by numerical minimization of the Kullback-Leibler divergence KL(qp). (c) As in (b) but showing a different
+local minimum of the Kullback-Leibler divergence.
+from regions of Z space in which p(Z) is near zero unless q(Z) is also close to
+zero. Thus minimizing this form of KL divergence leads to distributions q(Z) that
+avoid regions in which p(Z) is small. Conversely, the Kullback-Leibler divergence
+KL(pq) is minimized by distributions q(Z) that are nonzero in regions where p(Z)
+is nonzero.
+We can gain further insight into the different behaviour of the two KL diver-
+gences if we consider approximating a multimodal distribution by a unimodal one,
+as illustrated in Figure 10.3.
+In practical applications, the true posterior distri-
+bution will often be multimodal, with most of the posterior mass concentrated in
+some number of relatively small regions of parameter space. These multiple modes
+may arise through nonidentifiability in the latent space or through complex nonlin-
+ear dependence on the parameters. Both types of multimodality were encountered in
+Chapter 9 in the context of Gaussian mixtures, where they manifested themselves as
+multiple maxima in the likelihood function, and a variational treatment based on the
+minimization of KL(qp) will tend to find one of these modes. By contrast, if we
+were to minimize KL(pq), the resulting approximations would average across all
+of the modes and, in the context of the mixture model, would lead to poor predictive
+distributions (because the average of two good parameter values is typically itself
+not a good parameter value). It is possible to make use of KL(pq) to define a useful
+inference procedure, but this requires a rather different approach to the one discussed
+here, and will be considered in detail when we discuss expectation propagation.
+The two forms of Kullback-Leibler divergence are members of the alpha family
+Section 10.7
+N
+n=1
+470
+10. APPROXIMATE INFERENCE
+of divergences (Ali and Silvey, 1966; Amari, 1985; Minka, 2005) defined by
+Dα(pq) =
+4
+1 − α2
+1 −
+p(x)(1+α)/2q(x)(1−α)/2 dx
+(10.19)
+where −∞ < α < ∞ is a continuous parameter. The Kullback-Leibler divergence
+KL(pq) corresponds to the limit α → 1, whereas KL(qp) corresponds to the limit
+α → −1. For all values of α we have Dα(pq) � 0, with equality if, and only if,
+p(x) = q(x). Suppose p(x) is a fixed distribution, and we minimize Dα(pq) with
+respect to some set of distributions q(x). Then for α � −1 the divergence is zero
+forcing, so that any values of x for which p(x) = 0 will have q(x) = 0, and typically
+q(x) will under-estimate the support of p(x) and will tend to seek the mode with the
+largest mass. Conversely for α � 1 the divergence is zero-avoiding, so that values
+of x for which p(x) > 0 will have q(x) > 0, and typically q(x) will stretch to cover
+all of p(x), and will over-estimate the support of p(x). When α = 0 we obtain a
+symmetric divergence that is linearly related to the Hellinger distance given by
+DH(pq) =
+p(x)1/2 − q(x)1/2
+dx.
+(10.20)
+The square root of the Hellinger distance is a valid distance metric.

@@ -1,0 +1,90 @@
+We have seen that one of the difficulties with the Metropolis algorithm is the sensi-
+tivity to step size. If this is too small, the result is slow decorrelation due to random
+walk behaviour, whereas if it is too large the result is inefficiency due to a high rejec-
+tion rate. The technique of slice sampling (Neal, 2003) provides an adaptive step size
+that is automatically adjusted to match the characteristics of the distribution. Again
+it requires that we are able to evaluate the unnormalized distribution
+p(z).
+Consider first the univariate case. Slice sampling involves augmenting z with
+an additional variable u and then drawing samples from the joint (z, u) space. We
+shall see another example of this approach when we discuss hybrid Monte Carlo in
+Section 11.5. The goal is to sample uniformly from the area under the distribution
+e
+˜p(z)
+u
+z(τ )
+(a)
+given by
+e
+z
+547
+z
+(11.51)
+(11.52)
+11.4. Slice Sampling
+˜p(z)
+zmin
+zmax
+u
+z(τ )
+(b)
+(a) For a given value z(τ ), a value of u is chosen uniformly in
+p(z(τ )), which then defines a ‘slice’ through the distribution, shown by the solid horizontal
+(b) Because it is infeasible to sample directly from a slice, a new sample of z is drawn from a region
+Figure 11.13 Illustration of slice sampling.
+the region 0 � u �
+lines.
+zmin � z � zmax, which contains the previous value z(τ ).
+p(z, u) =
+1/Zp
+0
+if 0 � u �
+otherwise
+p(z)
+where Zp =
+p(z) dz. The marginal distribution over z is given by
+p(z, u) du =
+p(z)
+1
+Zp
+0
+du =
+p(z)
+Zp
+= p(z)
+p(z) and then sample u uniformly in the range 0 � u �
+p(z) > u}. This is illustrated in Figure 11.13(a).
+and so we can sample from p(z) by sampling from
+p(z, u) and then ignoring the u
+values. This can be achieved by alternately sampling z and u. Given the value of z
+p(z), which is
+we evaluate
+straightforward. Then we fix u and sample z uniformly from the ‘slice’ through the
+distribution defined by {z :
+In practice, it can be difficult to sample directly from a slice through the distribu-
+tion and so instead we define a sampling scheme that leaves the uniform distribution
+p(z, u) invariant, which can be achieved by ensuring that detailed balance is
+under
+satisfied. Suppose the current value of z is denoted z(τ ) and that we have obtained
+a corresponding sample u. The next value of z is obtained by considering a region
+zmin � z � zmax that contains z(τ ). It is in the choice of this region that the adap-
+tation to the characteristic length scales of the distribution takes place. We want the
+region to encompass as much of the slice as possible so as to allow large moves in z
+space while having as little as possible of this region lying outside the slice, because
+this makes the sampling less efficient.
+One approach to the choice of region involves starting with a region containing
+z(τ ) having some width w and then testing each of the end points to see if they lie
+within the slice.
+If either end point does not, then the region is extended in that
+direction by increments of value w until the end point lies outside the region. A
+candidate value z is then chosen uniformly from this region, and if it lies within the
+slice, then it forms z(τ +1). If it lies outside the slice, then the region is shrunk such
+that z forms an end point and such that the region still contains z(τ ). Then another
+548
+11. SAMPLING METHODS
+candidate point is drawn uniformly from this reduced region and so on, until a value
+of z is found that lies within the slice.
+Slice sampling can be applied to multivariate distributions by repeatedly sam-
+pling each variable in turn, in the manner of Gibbs sampling. This requires that
+we are able to compute, for each component zi, a function that is proportional to
+p(zi|z\i).

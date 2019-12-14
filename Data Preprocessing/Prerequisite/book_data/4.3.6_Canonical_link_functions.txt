@@ -1,0 +1,42 @@
+For the linear regression model with a Gaussian noise distribution, the error
+function, corresponding to the negative log likelihood, is given by (3.12). If we take
+the derivative with respect to the parameter vector w of the contribution to the error
+function from a data point n, this takes the form of the ‘error’ yn − tn times the
+feature vector φn, where yn = wTφn. Similarly, for the combination of the logistic
+sigmoid activation function and the cross-entropy error function (4.90), and for the
+softmax activation function with the multiclass cross-entropy error function (4.108),
+we again obtain this same simple form. We now show that this is a general result
+of assuming a conditional distribution for the target variable from the exponential
+family, along with a corresponding choice for the activation function known as the
+canonical link function.
+We again make use of the restricted form (4.84) of exponential family distribu-
+tions. Note that here we are applying the assumption of exponential family distribu-
+tion to the target variable t, in contrast to Section 4.2.4 where we applied it to the
+input vector x. We therefore consider conditional distributions of the target variable
+of the form
+p(t|η, s) =
+1
+s
+h
+t
+s
+g(η) exp
+(4.118)
+ηt
+s
+Using the same line of argument as led to the derivation of the result (2.226), we see
+that the conditional mean of t, which we denote by y, is given by
+y ≡ E[t|η] = −s
+d
+dη
+ln g(η).
+(4.119)
+N
+n=1
+N
+N
+n=1
+N
+d
+dηn
+N

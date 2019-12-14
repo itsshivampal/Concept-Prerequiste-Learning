@@ -1,0 +1,35 @@
+In addition to providing a mechanism for direct implementation of the Bayesian
+framework, Monte Carlo methods can also play a role in the frequentist paradigm,
+for example to find maximum likelihood solutions. In particular, sampling methods
+can be used to approximate the E step of the EM algorithm for models in which the
+E step cannot be performed analytically. Consider a model with hidden variables
+Z, visible (observed) variables X, and parameters θ. The function that is optimized
+with respect to θ in the M step is the expected complete-data log likelihood, given
+by
+Q(θ, θold) =
+p(Z|X, θold) ln p(Z, X|θ) dZ.
+(11.28)
+We can use sampling methods to approximate this integral by a finite sum over sam-
+ples {Z(l)}, which are drawn from the current estimate for the posterior distribution
+p(Z|X, θold), so that
+Q(θ, θold) 
+1
+L
+ln p(Z(l), X|θ).
+l=1
+(11.29)
+The Q function is then optimized in the usual way in the M step. This procedure is
+called the Monte Carlo EM algorithm.
+It is straightforward to extend this to the problem of finding the mode of the
+posterior distribution over θ (the MAP estimate) when a prior distribution p(θ) has
+been defined, simply by adding ln p(θ) to the function Q(θ, θold) before performing
+the M step.
+A particular instance of the Monte Carlo EM algorithm, called stochastic EM,
+arises if we consider a finite mixture model, and draw just one sample at each E step.
+Here the latent variable Z characterizes which of the K components of the mixture
+is responsible for generating each data point. In the E step, a sample of Z is taken
+from the posterior distribution p(Z|X, θold) where X is the data set. This effectively
+makes a hard assignment of each data point to one of the components in the mixture.
+In the M step, this sampled approximation to the posterior distribution is used to
+update the model parameters in the usual way.
+L

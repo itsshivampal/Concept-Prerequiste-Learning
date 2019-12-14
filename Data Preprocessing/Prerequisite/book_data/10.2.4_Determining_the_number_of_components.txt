@@ -1,0 +1,85 @@
+We have seen that the variational lower bound can be used to determine a pos-
+terior distribution over the number K of components in the mixture model. There
+is, however, one subtlety that needs to be addressed. For any given setting of the
+parameters in a Gaussian mixture model (except for specific degenerate settings),
+there will exist other parameter settings for which the density over the observed vari-
+ables will be identical. These parameter values differ only through a re-labelling of
+the components. For instance, consider a mixture of two Gaussians and a single ob-
+served variable x, in which the parameters have the values π1 = a, π2 = b, µ1 = c,
+µ2 = d, σ1 = e, σ2 = f. Then the parameter values π1 = b, π2 = a, µ1 = d,
+µ2 = c, σ1 = f, σ2 = e, in which the two components have been exchanged, will
+by symmetry give rise to the same value of p(x). If we have a mixture model com-
+prising K components, then each parameter setting will be a member of a family of
+K! equivalent settings.
+In the context of maximum likelihood, this redundancy is irrelevant because the
+parameter optimization algorithm (for example EM) will, depending on the initial-
+ization of the parameters, find one specific solution, and the other equivalent solu-
+tions play no role. In a Bayesian setting, however, we marginalize over all possible
+484
+10. APPROXIMATE INFERENCE
+Figure 10.7 Plot of the variational lower bound
+L versus the number K of com-
+ponents in the Gaussian mixture
+model, for the Old Faithful data,
+showing a distinct peak at K =
+2 components. For each value
+of K, the model
+is trained from
+100 different random starts, and
+the results shown as ‘+’ symbols
+plotted with small random hori-
+zontal perturbations so that they
+can be distinguished. Note that
+some solutions find suboptimal
+local maxima, but that this hap-
+pens infrequently.
+p(D|K)
+N
+1
+2
+3
+4
+5
+6
+K
+parameter values. We have seen in Figure 10.2 that if the true posterior distribution
+is multimodal, variational inference based on the minimization of KL(qp) will tend
+to approximate the distribution in the neighbourhood of one of the modes and ignore
+the others. Again, because equivalent modes have equivalent predictive densities,
+this is of no concern provided we are considering a model having a specific number
+K of components. If, however, we wish to compare different values of K, then we
+need to take account of this multimodality. A simple approximate solution is to add
+a term ln K! onto the lower bound when used for model comparison and averaging.
+Figure 10.7 shows a plot of the lower bound, including the multimodality fac-
+tor, versus the number K of components for the Old Faithful data set. It is worth
+emphasizing once again that maximum likelihood would lead to values of the likeli-
+hood function that increase monotonically with K (assuming the singular solutions
+have been avoided, and discounting the effects of local maxima) and so cannot be
+used to determine an appropriate model complexity. By contrast, Bayesian inference
+automatically makes the trade-off between model complexity and fitting the data.
+This approach to the determination of K requires that a range of models having
+different K values be trained and compared. An alternative approach to determining
+a suitable value for K is to treat the mixing coefficients π as parameters and make
+point estimates of their values by maximizing the lower bound (Corduneanu and
+Bishop, 2001) with respect to π instead of maintaining a probability distribution
+over them as in the fully Bayesian approach. This leads to the re-estimation equation
+Exercise 10.22
+Section 3.4
+Exercise 10.23
+πk =
+1
+N
+rnk
+n=1
+(10.83)
+and this maximization is interleaved with the variational updates for the q distribution
+over the remaining parameters. Components that provide insufficient contribution
+Section 7.2.2
+10.2. Illustration: Variational Mixture of Gaussians
+485
+to explaining the data will have their mixing coefficients driven to zero during the
+optimization, and so they are effectively removed from the model through automatic
+relevance determination. This allows us to make a single training run in which we
+start with a relatively large initial value of K, and allow surplus components to be
+pruned out of the model. The origins of the sparsity when optimizing with respect to
+hyperparameters is discussed in detail in the context of the relevance vector machine.

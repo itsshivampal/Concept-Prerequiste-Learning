@@ -1,0 +1,36 @@
+As in the case of the first derivatives of the error function, we can find the second
+derivatives by using finite differences, with accuracy limited by numerical precision.
+If we perturb each possible pair of weights in turn, we obtain
+∂wji∂wlk
+∂2E
+1
+4	2 {E(wji + 	, wlk + 	) − E(wji + 	, wlk − 	)
+−E(wji − 	, wlk + 	) + E(wji − 	, wlk − 	)} + O(	2).
+(5.90)
+5.4. The Hessian Matrix
+253
+Again, by using a symmetrical central differences formulation, we ensure that the
+residual errors are O(	2) rather than O(	). Because there are W 2 elements in the
+Hessian matrix, and because the evaluation of each element requires four forward
+propagations each needing O(W ) operations (per pattern), we see that this approach
+will require O(W 3) operations to evaluate the complete Hessian. It therefore has
+poor scaling properties, although in practice it is very useful as a check on the soft-
+ware implementation of backpropagation methods.
+A more efficient version of numerical differentiation can be found by applying
+central differences to the first derivatives of the error function, which are themselves
+calculated using backpropagation. This gives
+∂2E
+∂wji∂wlk
+1
+2
+∂E
+∂wji
+(wlk + 	) −
+∂E
+∂wji
+(wlk − 	)
++ O(	2).
+(5.91)
+Because there are now only W weights to be perturbed, and because the gradients
+can be evaluated in O(W ) steps, we see that this method gives the Hessian in O(W 2)
+operations.

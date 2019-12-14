@@ -1,0 +1,153 @@
+An important property of the multivariate Gaussian distribution is that if two
+sets of variables are jointly Gaussian, then the conditional distribution of one set
+conditioned on the other is again Gaussian. Similarly, the marginal distribution of
+either set is also Gaussian.
+Consider first the case of conditional distributions. Suppose x is a D-dimensional
+vector with Gaussian distribution N (x|µ, Σ) and that we partition x into two dis-
+joint subsets xa and xb. Without loss of generality, we can take xa to form the first
+M components of x, with xb comprising the remaining D − M components, so that
+(2.65)
+x =
+xa
+xb
+We also define corresponding partitions of the mean vector µ given by
+Exercise 2.22
+Λaa Λab
+Λba Λbb
+(2.69)
+corresponding to the partitioning (2.65) of the vector x. Because the inverse of a
+symmetric matrix is also symmetric, we see that Λaa and Λbb are symmetric, while
+ab = Λba. It should be stressed at this point that, for instance, Λaa is not simply
+ΛT
+given by the inverse of Σaa. In fact, we shall shortly examine the relation between
+the inverse of a partitioned matrix and the inverses of its partitions.
+Let us begin by finding an expression for the conditional distribution p(xa|xb).
+From the product rule of probability, we see that this conditional distribution can be
+86
+2. PROBABILITY DISTRIBUTIONS
+evaluated from the joint distribution p(x) = p(xa, xb) simply by fixing xb to the
+observed value and normalizing the resulting expression to obtain a valid probability
+distribution over xa.
+Instead of performing this normalization explicitly, we can
+obtain the solution more efficiently by considering the quadratic form in the exponent
+of the Gaussian distribution given by (2.44) and then reinstating the normalization
+coefficient at the end of the calculation. If we make use of the partitioning (2.65),
+(2.66), and (2.69), we obtain
+1
+2
+(x − µ)TΣ−1(x − µ) =
+(xa − µa)TΛaa(xa − µa) −
+(xb − µb)TΛba(xa − µa) −
+1
+2
+1
+2
+1
+(xa − µa)TΛab(xb − µb)
+2
+1
+(xb − µb)TΛbb(xb − µb).
+2
+(2.70)
+We see that as a function of xa, this is again a quadratic form, and hence the cor-
+responding conditional distribution p(xa|xb) will be Gaussian. Because this distri-
+bution is completely characterized by its mean and its covariance, our goal will be
+to identify expressions for the mean and covariance of p(xa|xb) by inspection of
+(2.70).
+This is an example of a rather common operation associated with Gaussian
+distributions, sometimes called ‘completing the square’, in which we are given a
+quadratic form defining the exponent terms in a Gaussian distribution, and we need
+to determine the corresponding mean and covariance. Such problems can be solved
+straightforwardly by noting that the exponent in a general Gaussian distribution
+N (x|µ, Σ) can be written
+xTΣ−1x + xTΣ−1µ + const
+(2.71)
+1
+2
+(x − µ)TΣ−1(x − µ) = −
+1
+2
+where ‘const’ denotes terms which are independent of x, and we have made use of
+the symmetry of Σ. Thus if we take our general quadratic form and express it in
+the form given by the right-hand side of (2.71), then we can immediately equate the
+matrix of coefficients entering the second order term in x to the inverse covariance
+matrix Σ−1 and the coefficient of the linear term in x to Σ−1µ, from which we can
+obtain µ.
+Now let us apply this procedure to the conditional Gaussian distribution p(xa|xb)
+for which the quadratic form in the exponent is given by (2.70). We will denote the
+mean and covariance of this distribution by µa|b and Σa|b, respectively. Consider
+the functional dependence of (2.70) on xa in which xb is regarded as a constant. If
+we pick out all terms that are second order in xa, we have
+1
+2
+a Λaaxa
+xT
+(2.72)
+from which we can immediately conclude that the covariance (inverse precision) of
+p(xa|xb) is given by
+(2.73)
+Σa|b = Λ−1
+aa .
+2.3. The Gaussian Distribution
+87
+(2.74)
+(2.75)
+Now consider all of the terms in (2.70) that are linear in xa
+a {Λaaµa − Λab(xb − µb)}
+xT
+where we have used ΛT
+the coefficient of xa in this expression must equal Σ−1
+ba = Λab. From our discussion of the general form (2.71),
+a|bµa|b and hence
+µa|b = Σa|b {Λaaµa − Λab(xb − µb)}
+= µa − Λ−1
+aa Λab(xb − µb)
+where we have made use of (2.73).
+The results (2.73) and (2.75) are expressed in terms of the partitioned precision
+matrix of the original joint distribution p(xa, xb). We can also express these results
+in terms of the corresponding partitioned covariance matrix. To do this, we make use
+of the following identity for the inverse of a partitioned matrix
+A B
+C D
+where we have defined
+−1
+M
+−D−1CM D−1 + D−1CMBD−1
+−MBD−1
+(2.76)
+(2.77)
+The quantity M−1 is known as the Schur complement of the matrix on the left-hand
+side of (2.76) with respect to the submatrix D. Using the definition
+M = (A − BD−1C)−1.
+Σaa Σab
+Σba Σbb
+−1
+Λaa Λab
+Λba Λbb
+and making use of (2.76), we have
+Λaa = (Σaa − ΣabΣ−1
+Λab = −(Σaa − ΣabΣ−1
+bb Σba)−1
+bb Σba)−1ΣabΣ−1
+bb .
+(2.78)
+(2.79)
+(2.80)
+From these we obtain the following expressions for the mean and covariance of the
+conditional distribution p(xa|xb)
+bb (xb − µb)
+bb Σba.
+µa|b = µa + ΣabΣ−1
+Σa|b = Σaa − ΣabΣ−1
+(2.81)
+(2.82)
+Comparing (2.73) and (2.82), we see that the conditional distribution p(xa|xb) takes
+a simpler form when expressed in terms of the partitioned precision matrix than
+when it is expressed in terms of the partitioned covariance matrix. Note that the
+mean of the conditional distribution p(xa|xb), given by (2.81), is a linear function of
+xb and that the covariance, given by (2.82), is independent of xa. This represents an
+example of a linear-Gaussian model.
+Exercise 2.24
+Section 8.1.4
+88
+2. PROBABILITY DISTRIBUTIONS

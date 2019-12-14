@@ -1,0 +1,34 @@
+So far, we have considered the case of a single target variable t. In some applica-
+tions, we may wish to predict K > 1 target variables, which we denote collectively
+by the target vector t. This could be done by introducing a different set of basis func-
+tions for each component of t, leading to multiple, independent regression problems.
+However, a more interesting, and more common, approach is to use the same set of
+basis functions to model all of the components of the target vector so that
+y(x, w) = WTφ(x)
+(3.31)
+where y is a K-dimensional column vector, W is an M × K matrix of parameters,
+and φ(x) is an M-dimensional column vector with elements φj(x), with φ0(x) = 1
+as before. Suppose we take the conditional distribution of the target vector to be an
+isotropic Gaussian of the form
+p(t|x, W, β) = N (t|WTφ(x), β−1I).
+(3.32)
+If we have a set of observations t1, . . . , tN , we can combine these into a matrix T
+of size N × K such that the nth row is given by tT
+n. Similarly, we can combine the
+input vectors x1, . . . , xN into a matrix X. The log likelihood function is then given
+by
+ln p(T|X, W, β) =
+n=1
+lnN (tn|WTφ(xn), β−1I)
+= N K
+2
+ln
+2π
+2
+tn − WTφ(xn)
+n=1
+2
+. (3.33)
+147
+(3.34)
+(3.35)

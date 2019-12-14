@@ -1,0 +1,134 @@
+In the previous section, we saw how to construct joint probability distributions
+over a set of discrete variables by expressing the variables as nodes in a directed
+acyclic graph. Here we show how a multivariate Gaussian can be expressed as a
+directed graph corresponding to a linear-Gaussian model over the component vari-
+ables. This allows us to impose interesting structure on the distribution, with the
+general Gaussian and the diagonal covariance Gaussian representing opposite ex-
+tremes. Several widely used techniques are examples of linear-Gaussian models,
+such as probabilistic principal component analysis, factor analysis, and linear dy-
+namical systems (Roweis and Ghahramani, 1999). We shall make extensive use of
+the results of this section in later chapters when we consider some of these techniques
+in detail.
+Consider an arbitrary directed acyclic graph over D variables in which node i
+represents a single continuous random variable xi having a Gaussian distribution.
+The mean of this distribution is taken to be a linear combination of the states of its
+parent nodes pai of node i
+p(xi|pai) = N
+wijxj + bi, vi
+(8.11)
+where wij and bi are parameters governing the mean, and vi is the variance of the
+conditional distribution for xi. The log of the joint distribution is then the log of the
+product of these conditionals over all nodes in the graph and hence takes the form
+ln p(x) =
+ln p(xi|pai)
+(8.12)
+i=1
+1
+2vi
+xi −
+wijxj − bi
+j∈pai
++ const
+(8.13)
+where x = (x1, . . . , xD)T and ‘const’ denotes terms independent of x. We see that
+this is a quadratic function of the components of x, and hence the joint distribution
+p(x) is a multivariate Gaussian.
+We can determine the mean and covariance of the joint distribution recursively
+as follows. Each variable xi has (conditional on the states of its parents) a Gaussian
+distribution of the form (8.11) and so
+xi =
+wijxj + bi + √vi	i
+(8.14)
+where 	i is a zero mean, unit variance Gaussian random variable satisfying E[	i] = 0
+and E[	i	j] = Iij, where Iij is the i, j element of the identity matrix. Taking the
+expectation of (8.14), we have
+E[xi] =
+wijE[xj] + bi.
+(8.15)
+j∈pai
+Figure 8.14 A directed graph over three Gaussian variables,
+x1
+x2
+with one missing link.
+8.1. Bayesian Networks
+371
+x3
+Thus we can find the components of E[x] = (E[x1], . . . , E[xD])T by starting at the
+lowest numbered node and working recursively through the graph (here we again
+assume that the nodes are numbered such that each node has a higher number than
+its parents). Similarly, we can use (8.14) and (8.15) to obtain the i, j element of the
+covariance matrix for p(x) in the form of a recursion relation
+cov[xi, xj] = E [(xi − E[xi])(xj − E[xj])]
+= E
+(xi − E[xi])
+wjk(xk − E[xk]) + √vj	j
+k∈paj
+wjkcov[xi, xk] + Iijvj
+k∈paj
+(8.16)
+and so the covariance can similarly be evaluated recursively starting from the lowest
+numbered node.
+Let us consider two extreme cases. First of all, suppose that there are no links
+in the graph, which therefore comprises D isolated nodes. In this case, there are no
+parameters wij and so there are just D parameters bi and D parameters vi. From
+the recursion relations (8.15) and (8.16), we see that the mean of p(x) is given by
+(b1, . . . , bD)T and the covariance matrix is diagonal of the form diag(v1, . . . , vD).
+The joint distribution has a total of 2D parameters and represents a set of D inde-
+pendent univariate Gaussian distributions.
+Now consider a fully connected graph in which each node has all lower num-
+bered nodes as parents. The matrix wij then has i − 1 entries on the ith row and
+hence is a lower triangular matrix (with no entries on the leading diagonal). Then
+the total number of parameters wij is obtained by taking the number D2 of elements
+in a D× D matrix, subtracting D to account for the absence of elements on the lead-
+ing diagonal, and then dividing by 2 because the matrix has elements only below the
+diagonal, giving a total of D(D−1)/2. The total number of independent parameters
+{wij} and {vi} in the covariance matrix is therefore D(D + 1)/2 corresponding to
+a general symmetric covariance matrix.
+Graphs having some intermediate level of complexity correspond to joint Gaus-
+sian distributions with partially constrained covariance matrices. Consider for ex-
+ample the graph shown in Figure 8.14, which has a link missing between variables
+x1 and x3. Using the recursion relations (8.15) and (8.16), we see that the mean and
+covariance of the joint distribution are given by
+µ = (b1, b2 + w21b1, b3 + w32b2 + w32w21b1)T
+v1
+w21v1
+v2 + w2
+w21v1
+21v1
+w32w21v1 w32(v2 + w2
+w32w21v1
+w32(v2 + w2
+21v1)
+32(v2 + w2
+21v1)
+21v1) v3 + w2
+(8.17)
+. (8.18)
+Section 2.3
+Exercise 8.7
+372
+8. GRAPHICAL MODELS
+We can readily extend the linear-Gaussian graphical model to the case in which
+the nodes of the graph represent multivariate Gaussian variables. In this case, we can
+write the conditional distribution for node i in the form
+p(xi|pai) = N
+xi
+j∈pai
+Wijxj + bi, Σi
+(8.19)
+Section 2.3.6
+where now Wij is a matrix (which is nonsquare if xi and xj have different dimen-
+sionalities). Again it is easy to verify that the joint distribution over all variables is
+Gaussian.
+Note that we have already encountered a specific example of the linear-Gaussian
+relationship when we saw that the conjugate prior for the mean µ of a Gaussian
+variable x is itself a Gaussian distribution over µ. The joint distribution over x and
+µ is therefore Gaussian. This corresponds to a simple two-node graph in which
+the node representing µ is the parent of the node representing x. The mean of the
+distribution over µ is a parameter controlling a prior, and so it can be viewed as a
+hyperparameter. Because the value of this hyperparameter may itself be unknown,
+we can again treat it from a Bayesian perspective by introducing a prior over the
+hyperparameter, sometimes called a hyperprior, which is again given by a Gaussian
+distribution. This type of construction can be extended in principle to any level and is
+an illustration of a hierarchical Bayesian model, of which we shall encounter further
+examples in later chapters.

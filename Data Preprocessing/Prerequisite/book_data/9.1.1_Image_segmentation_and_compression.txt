@@ -1,0 +1,65 @@
+As an illustration of the application of the K-means algorithm, we consider
+the related problems of image segmentation and image compression. The goal of
+segmentation is to partition an image into regions each of which has a reasonably
+homogeneous visual appearance or which corresponds to objects or parts of objects
+(Forsyth and Ponce, 2003). Each pixel in an image is a point in a 3-dimensional space
+comprising the intensities of the red, blue, and green channels, and our segmentation
+algorithm simply treats each pixel in the image as a separate data point. Note that
+strictly this space is not Euclidean because the channel intensities are bounded by
+the interval [0, 1]. Nevertheless, we can apply the K-means algorithm without diffi-
+culty. We illustrate the result of running K-means to convergence, for any particular
+value of K, by re-drawing the image replacing each pixel vector with the {R, G, B}
+intensity triplet given by the centre µk to which that pixel has been assigned. Results
+for various values of K are shown in Figure 9.3. We see that for a given value of K,
+the algorithm is representing the image using a palette of only K colours. It should
+be emphasized that this use of K-means is not a particularly sophisticated approach
+to image segmentation, not least because it takes no account of the spatial proximity
+of different pixels. The image segmentation problem is in general extremely difficult
+K = 2
+K = 3
+K = 10
+Original image
+9.1. K-means Clustering
+429
+Figure 9.3 Two examples of the application of the K-means clustering algorithm to image segmentation show-
+ing the initial images together with their K-means segmentations obtained using various values of K. This
+also illustrates of the use of vector quantization for data compression, in which smaller values of K give higher
+compression at the expense of poorer image quality.
+and remains the subject of active research and is introduced here simply to illustrate
+the behaviour of the K-means algorithm.
+We can also use the result of a clustering algorithm to perform data compres-
+sion.
+It is important to distinguish between lossless data compression, in which
+the goal is to be able to reconstruct the original data exactly from the compressed
+representation, and lossy data compression, in which we accept some errors in the
+reconstruction in return for higher levels of compression than can be achieved in the
+lossless case. We can apply the K-means algorithm to the problem of lossy data
+compression as follows. For each of the N data points, we store only the identity
+k of the cluster to which it is assigned. We also store the values of the K clus-
+ter centres µk, which typically requires significantly less data, provided we choose
+K  N. Each data point is then approximated by its nearest centre µk. New data
+points can similarly be compressed by first finding the nearest µk and then storing
+the label k instead of the original data vector. This framework is often called vector
+quantization, and the vectors µk are called code-book vectors.
+430
+9. MIXTURE MODELS AND EM
+K
+The image segmentation problem discussed above also provides an illustration
+of the use of clustering for data compression. Suppose the original image has N
+pixels comprising {R, G, B} values each of which is stored with 8 bits of precision.
+Then to transmit the whole image directly would cost 24N bits. Now suppose we
+first run K-means on the image data, and then instead of transmitting the original
+pixel intensity vectors we transmit the identity of the nearest vector µk. Because
+there are K such vectors, this requires log2 K bits per pixel. We must also transmit
+the K code book vectors µk, which requires 24K bits, and so the total number of
+bits required to transmit the image is 24K + N log2 K (rounding up to the nearest
+integer). The original image shown in Figure 9.3 has 240 × 180 = 43, 200 pixels
+and so requires 24 × 43, 200 = 1, 036, 800 bits to transmit directly. By comparison,
+the compressed images require 43, 248 bits (K = 2), 86, 472 bits (K = 3), and
+173, 040 bits (K = 10), respectively, to transmit. These represent compression ratios
+compared to the original image of 4.2%, 8.3%, and 16.7%, respectively. We see that
+there is a trade-off between degree of compression and image quality. Note that our
+aim in this example is to illustrate the K-means algorithm. If we had been aiming to
+produce a good image compressor, then it would be more fruitful to consider small
+blocks of adjacent pixels, for instance 5× 5, and thereby exploit the correlations that
+exist in natural images between nearby pixels.

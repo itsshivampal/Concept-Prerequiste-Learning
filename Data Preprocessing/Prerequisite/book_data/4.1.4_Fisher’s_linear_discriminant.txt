@@ -1,0 +1,168 @@
+One way to view a linear classification model is in terms of dimensionality
+reduction. Consider first the case of two classes, and suppose we take the D-
+0
+4.1. Discriminant Functions
+187
+6
+4
+2
+0
+−2
+−4
+−6
+−6
+−4
+−2
+0
+2
+4
+6
+6
+4
+2
+0
+−2
+−4
+−6
+−6
+−4
+−2
+Figure 4.5 Example of a synthetic data set comprising three classes, with training data points denoted in red
+(×), green (+), and blue (◦). Lines denote the decision boundaries, and the background colours denote the
+respective classes of the decision regions. On the left is the result of using a least-squares discriminant. We see
+that the region of input space assigned to the green class is too small and so most of the points from this class
+are misclassified. On the right is the result of using logistic regressions as described in Section 4.3.2 showing
+correct classification of the training data.
+2
+4
+6
+dimensional input vector x and project it down to one dimension using
+y = wTx.
+(4.20)
+If we place a threshold on y and classify y � −w0 as class C1, and otherwise class
+C2, then we obtain our standard linear classifier discussed in the previous section.
+In general, the projection onto one dimension leads to a considerable loss of infor-
+mation, and classes that are well separated in the original D-dimensional space may
+become strongly overlapping in one dimension. However, by adjusting the com-
+ponents of the weight vector w, we can select a projection that maximizes the class
+separation. To begin with, consider a two-class problem in which there are N1 points
+of class C1 and N2 points of class C2, so that the mean vectors of the two classes are
+given by
+(4.21)
+m1 =
+xn.
+xn,
+m2 =
+1
+N1
+n ∈ C1
+1
+N2
+n ∈ C2
+The simplest measure of the separation of the classes, when projected onto w, is the
+separation of the projected class means. This suggests that we might choose w so as
+to maximize
+where
+m2 − m1 = wT(m2 − m1)
+mk = wTmk
+(4.22)
+(4.23)
+n∈Ck
+4. LINEAR MODELS FOR CLASSIFICATION
+4
+2
+0
+−2
+−2
+2
+6
+188
+4
+2
+0
+−2
+Appendix E
+Exercise 4.4
+Figure 4.6 The left plot shows samples from two classes (depicted in red and blue) along with the histograms
+resulting from projection onto the line joining the class means. Note that there is considerable class overlap in
+the projected space. The right plot shows the corresponding projection based on the Fisher linear discriminant,
+showing the greatly improved class separation.
+−2
+2
+6
+i w2
+is the mean of the projected data from class Ck. However, this expression can be
+made arbitrarily large simply by increasing the magnitude of w. To solve this
+i = 1. Using
+problem, we could constrain w to have unit length, so that
+a Lagrange multiplier to perform the constrained maximization, we then find that
+w ∝ (m2 − m1). There is still a problem with this approach, however, as illustrated
+in Figure 4.6. This shows two classes that are well separated in the original two-
+dimensional space (x1, x2) but that have considerable overlap when projected onto
+the line joining their means. This difficulty arises from the strongly nondiagonal
+covariances of the class distributions. The idea proposed by Fisher is to maximize
+a function that will give a large separation between the projected class means while
+also giving a small variance within each class, thereby minimizing the class overlap.
+The projection formula (4.20) transforms the set of labelled data points in x
+into a labelled set in the one-dimensional space y. The within-class variance of the
+transformed data from class Ck is therefore given by
+(yn − mk)2
+k =
+s2
+(4.24)
+where yn = wTxn. We can define the total within-class variance for the whole
+2. The Fisher criterion is defined to be the ratio of the
+data set to be simply s2
+between-class variance to the within-class variance and is given by
+1 + s2
+J(w) =
+(m2 − m1)2
+1 + s2
+s2
+2
+(4.25)
+Exercise 4.5
+We can make the dependence on w explicit by using (4.20), (4.23), and (4.24) to
+rewrite the Fisher criterion in the form
+4.1. Discriminant Functions
+J(w) =
+wTSBw
+wTSWw
+189
+(4.26)
+(4.27)
+where SB is the between-class covariance matrix and is given by
+SB = (m2 − m1)(m2 − m1)T
+and SW is the total within-class covariance matrix, given by
+SW =
+n∈C1
+(xn − m1)(xn − m1)T +
+n∈C2
+(xn − m2)(xn − m2)T.
+(4.28)
+Differentiating (4.26) with respect to w, we find that J(w) is maximized when
+(wTSBw)SWw = (wTSWw)SBw.
+(4.29)
+From (4.27), we see that SBw is always in the direction of (m2−m1). Furthermore,
+we do not care about the magnitude of w, only its direction, and so we can drop the
+scalar factors (wTSBw) and (wTSWw). Multiplying both sides of (4.29) by S−1
+W
+we then obtain
+(4.30)
+Note that if the within-class covariance is isotropic, so that SW is proportional to the
+unit matrix, we find that w is proportional to the difference of the class means, as
+discussed above.
+W (m2 − m1).
+w ∝ S−1
+The result (4.30) is known as Fisher’s linear discriminant, although strictly it
+is not a discriminant but rather a specific choice of direction for projection of the
+data down to one dimension. However, the projected data can subsequently be used
+to construct a discriminant, by choosing a threshold y0 so that we classify a new
+point as belonging to C1 if y(x) � y0 and classify it as belonging to C2 otherwise.
+For example, we can model the class-conditional densities p(y|Ck) using Gaussian
+distributions and then use the techniques of Section 1.2.4 to find the parameters
+of the Gaussian distributions by maximum likelihood. Having found Gaussian ap-
+proximations to the projected classes, the formalism of Section 1.5.1 then gives an
+expression for the optimal threshold. Some justification for the Gaussian assumption
+comes from the central limit theorem by noting that y = wTx is the sum of a set of
+random variables.

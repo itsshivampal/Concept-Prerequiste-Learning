@@ -1,0 +1,121 @@
+We can illustrate the application of undirected graphs using an example of noise
+removal from a binary image (Besag, 1974; Geman and Geman, 1984; Besag, 1986).
+Although a very simple example, this is typical of more sophisticated applications.
+Let the observed noisy image be described by an array of binary pixel values yi ∈
+{−1, +1}, where the index i = 1, . . . , D runs over all pixels. We shall suppose
+that the image is obtained by taking an unknown noise-free image, described by
+binary pixel values xi ∈ {−1, +1} and randomly flipping the sign of pixels with
+some small probability. An example binary image, together with a noise corrupted
+image obtained by flipping the sign of the pixels with probability 10%, is shown in
+Figure 8.30. Given the noisy image, our goal is to recover the original noise-free
+image.
+Because the noise level is small, we know that there will be a strong correlation
+between xi and yi. We also know that neighbouring pixels xi and xj in an image
+are strongly correlated. This prior knowledge can be captured using the Markov
+388
+8. GRAPHICAL MODELS
+Figure 8.30 Illustration of image de-noising using a Markov random field. The top row shows the original
+binary image on the left and the corrupted image after randomly changing 10% of the pixels on the right. The
+bottom row shows the restored images obtained using iterated conditional models (ICM) on the left and using
+the graph-cut algorithm on the right.
+ICM produces an image where 96% of the pixels agree with the original
+image, whereas the corresponding number for graph-cut is 99%.
+random field model whose undirected graph is shown in Figure 8.31. This graph has
+two types of cliques, each of which contains two variables. The cliques of the form
+{xi, yi} have an associated energy function that expresses the correlation between
+these variables. We choose a very simple energy function for these cliques of the
+form −ηxiyi where η is a positive constant. This has the desired effect of giving a
+lower energy (thus encouraging a higher probability) when xi and yi have the same
+sign and a higher energy when they have the opposite sign.
+The remaining cliques comprise pairs of variables {xi, xj} where i and j are
+indices of neighbouring pixels. Again, we want the energy to be lower when the
+pixels have the same sign than when they have the opposite sign, and so we choose
+an energy given by −βxixj where β is a positive constant.
+Because a potential function is an arbitrary, nonnegative function over a maximal
+clique, we can multiply it by any nonnegative functions of subsets of the clique, or
+xi
+8.3. Markov Random Fields
+389
+Figure 8.31 An undirected graphical model representing a
+Markov random field for image de-noising,
+in
+which xi is a binary variable denoting the state
+of pixel i in the unknown noise-free image, and yi
+denotes the corresponding value of pixel i in the
+observed noisy image.
+yi
+equivalently we can add the corresponding energies. In this example, this allows us
+to add an extra term hxi for each pixel i in the noise-free image. Such a term has
+the effect of biasing the model towards pixel values that have one particular sign in
+preference to the other.
+The complete energy function for the model then takes the form
+E(x, y) = h
+xi − β
+i
+{i,j}
+xixj − η
+i
+xiyi
+which defines a joint distribution over x and y given by
+p(x, y) =
+1
+Z
+exp{−E(x, y)}.
+(8.42)
+(8.43)
+We now fix the elements of y to the observed values given by the pixels of the
+noisy image, which implicitly defines a conditional distribution p(x|y) over noise-
+free images. This is an example of the Ising model, which has been widely studied in
+statistical physics. For the purposes of image restoration, we wish to find an image x
+having a high probability (ideally the maximum probability). To do this we shall use
+a simple iterative technique called iterated conditional modes, or ICM (Kittler and
+F¨oglein, 1984), which is simply an application of coordinate-wise gradient ascent.
+The idea is first to initialize the variables {xi}, which we do by simply setting xi =
+yi for all i. Then we take one node xj at a time and we evaluate the total energy
+for the two possible states xj = +1 and xj = −1, keeping all other node variables
+fixed, and set xj to whichever state has the lower energy. This will either leave
+the probability unchanged, if xj is unchanged, or will increase it. Because only
+one variable is changed, this is a simple local computation that can be performed
+efficiently. We then repeat the update for another site, and so on, until some suitable
+stopping criterion is satisfied. The nodes may be updated in a systematic way, for
+instance by repeatedly raster scanning through the image, or by choosing nodes at
+random.
+If we have a sequence of updates in which every site is visited at least once,
+and in which no changes to the variables are made, then by definition the algorithm
+Exercise 8.13
+390
+8. GRAPHICAL MODELS
+Figure 8.32 (a) Example of a directed
+graph.
+(b) The equivalent undirected
+graph.
+x1
+x1
+(a)
+(b)
+x2
+x2
+xN−1
+xN
+xN
+xN−1
+will have converged to a local maximum of the probability. This need not, however,
+correspond to the global maximum.
+For the purposes of this simple illustration, we have fixed the parameters to be
+β = 1.0, η = 2.1 and h = 0. Note that leaving h = 0 simply means that the prior
+probabilities of the two states of xi are equal. Starting with the observed noisy image
+as the initial configuration, we run ICM until convergence, leading to the de-noised
+image shown in the lower left panel of Figure 8.30. Note that if we set β = 0,
+which effectively removes the links between neighbouring pixels, then the global
+most probable solution is given by xi = yi for all i, corresponding to the observed
+noisy image.
+Later we shall discuss a more effective algorithm for finding high probability so-
+lutions called the max-product algorithm, which typically leads to better solutions,
+although this is still not guaranteed to find the global maximum of the posterior dis-
+tribution. However, for certain classes of model, including the one given by (8.42),
+there exist efficient algorithms based on graph cuts that are guaranteed to find the
+global maximum (Greig et al., 1989; Boykov et al., 2001; Kolmogorov and Zabih,
+2004). The lower right panel of Figure 8.30 shows the result of applying a graph-cut
+algorithm to the de-noising problem.
+Exercise 8.14
+Section 8.4

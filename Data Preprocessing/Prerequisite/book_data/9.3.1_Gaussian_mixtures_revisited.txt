@@ -1,0 +1,107 @@
+We now consider the application of this latent variable view of EM to the spe-
+cific case of a Gaussian mixture model. Recall that our goal is to maximize the log
+likelihood function (9.14), which is computed using the observed data set X, and we
+saw that this was more difficult than for the case of a single Gaussian distribution
+due to the presence of the summation over k that occurs inside the logarithm. Sup-
+pose then that in addition to the observed data set X, we were also given the values
+of the corresponding discrete variables Z. Recall that Figure 9.5(a) shows a ‘com-
+plete’ data set (i.e., one that includes labels showing which component generated
+each data point) while Figure 9.5(b) shows the corresponding ‘incomplete’ data set.
+The graphical model for the complete data is shown in Figure 9.9.
+N
+K
+N
+K
+N
+(9.35)
+(9.36)
+Now consider the problem of maximizing the likelihood for the complete data
+set {X, Z}. From (9.10) and (9.11), this likelihood function takes the form
+p(X, Z|µ, Σ, π) =
+πznk
+k N (xn|µk, Σk)znk
+n=1
+k=1
+where znk denotes the kth component of zn. Taking the logarithm, we obtain
+ln p(X, Z|µ, Σ, π) =
+n=1
+k=1
+znk {ln πk + lnN (xn|µk, Σk)} .
+Comparison with the log likelihood function (9.14) for the incomplete data shows
+that the summation over k and the logarithm have been interchanged. The loga-
+rithm now acts directly on the Gaussian distribution, which itself is a member of
+the exponential family. Not surprisingly, this leads to a much simpler solution to
+the maximum likelihood problem, as we now show. Consider first the maximization
+with respect to the means and covariances. Because zn is a K-dimensional vec-
+tor with all elements equal to 0 except for a single element having the value 1, the
+complete-data log likelihood function is simply a sum of K independent contribu-
+tions, one for each mixture component. Thus the maximization with respect to a
+mean or a covariance is exactly as for a single Gaussian, except that it involves only
+the subset of data points that are ‘assigned’ to that component. For the maximization
+with respect to the mixing coefficients, we note that these are coupled for different
+values of k by virtue of the summation constraint (9.9). Again, this can be enforced
+using a Lagrange multiplier as before, and leads to the result
+πk =
+1
+N
+znk
+n=1
+(9.37)
+so that the mixing coefficients are equal to the fractions of data points assigned to
+the corresponding components.
+Thus we see that the complete-data log likelihood function can be maximized
+trivially in closed form. In practice, however, we do not have values for the latent
+variables so, as discussed earlier, we consider the expectation, with respect to the
+posterior distribution of the latent variables, of the complete-data log likelihood.
+442
+9. MIXTURE MODELS AND EM
+Figure 9.9 This shows the same graph as in Figure 9.6 except that
+we now suppose that the discrete variables zn are ob-
+served, as well as the data variables xn.
+zn
+xn
+N
+K
+n=1
+j=1
+znk
+znj
+N
+N
+K
+9.3. An Alternative View of EM
+443
+Using (9.10) and (9.11) together with Bayes’ theorem, we see that this posterior
+distribution takes the form
+p(Z|X, µ, Σ, π) ∝
+[πkN (xn|µk, Σk)]znk .
+k=1
+(9.38)
+and hence factorizes over n so that under the posterior distribution the {zn} are
+independent. This is easily verified by inspection of the directed graph in Figure 9.6
+and making use of the d-separation criterion. The expected value of the indicator
+variable znk under this posterior distribution is then given by
+E[znk] =
+znk [πkN (xn|µk, Σk)]znk
+πjN (xn|µj, Σj)
+znj
+K
+πkN (xn|µk, Σk)
+πjN (xn|µj, Σj)
+= γ(znk)
+(9.39)
+which is just the responsibility of component k for data point xn. The expected value
+of the complete-data log likelihood function is therefore given by
+EZ[ln p(X, Z|µ, Σ, π)] =
+n=1
+k=1
+γ(znk){ln πk + lnN (xn|µk, Σk)} .
+(9.40)
+We can now proceed as follows. First we choose some initial values for the param-
+eters µold, Σold and πold, and use these to evaluate the responsibilities (the E step).
+We then keep the responsibilities fixed and maximize (9.40) with respect to µk, Σk
+and πk (the M step). This leads to closed form solutions for µnew, Σnew and πnew
+given by (9.17), (9.19), and (9.22) as before. This is precisely the EM algorithm for
+Gaussian mixtures as derived earlier. We shall gain more insight into the role of the
+expected complete-data log likelihood function when we give a proof of convergence
+of the EM algorithm in Section 9.4.

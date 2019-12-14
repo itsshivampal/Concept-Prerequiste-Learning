@@ -1,0 +1,253 @@
+We can extend the relevance vector machine framework to classification prob-
+lems by applying the ARD prior over weights to a probabilistic linear classification
+model of the kind studied in Chapter 4. To start with, we consider two-class prob-
+lems with a binary target variable t ∈ {0, 1}. The model now takes the form of a
+linear combination of basis functions transformed by a logistic sigmoid function
+y(x, w) = σ
+wTφ(x)
+(7.108)
+n=1
+7. SPARSE KERNEL MACHINES
+354
+Section 4.4
+where σ(·) is the logistic sigmoid function defined by (4.59).
+If we introduce a
+Gaussian prior over the weight vector w, then we obtain the model that has been
+considered already in Chapter 4. The difference here is that in the RVM, this model
+uses the ARD prior (7.80) in which there is a separate precision hyperparameter
+associated with each weight parameter.
+In contrast to the regression model, we can no longer integrate analytically over
+the parameter vector w. Here we follow Tipping (2001) and use the Laplace ap-
+proximation, which was applied to the closely related problem of Bayesian logistic
+regression in Section 4.5.1.
+We begin by initializing the hyperparameter vector α. For this given value of
+α, we then build a Gaussian approximation to the posterior distribution and thereby
+obtain an approximation to the marginal likelihood. Maximization of this approxi-
+mate marginal likelihood then leads to a re-estimated value for α, and the process is
+repeated until convergence.
+Let us consider the Laplace approximation for this model in more detail. For
+a fixed value of α, the mode of the posterior distribution over w is obtained by
+maximizing
+ln p(w|t, α) = ln{p(t|w)p(w|α)} − ln p(t|α)
+1
+{tn ln yn + (1 − tn) ln(1 − yn)} −
+2
+N
+wTAw + const (7.109)
+∇ ln p(w|t, α) = ΦT(t − y) − Aw
+∇∇ ln p(w|t, α) = −
+ΦTBΦ + A
+(7.110)
+(7.111)
+where B is an N × N diagonal matrix with elements bn = yn(1 − yn), the vector
+y = (y1, . . . , yN )T, and Φ is the design matrix with elements Φni = φi(xn). Here
+we have used the property (4.88) for the derivative of the logistic sigmoid function.
+At convergence of the IRLS algorithm, the negative Hessian represents the inverse
+covariance matrix for the Gaussian approximation to the posterior distribution.
+The mode of the resulting approximation to the posterior distribution, corre-
+sponding to the mean of the Gaussian approximation, is obtained setting (7.110) to
+zero, giving the mean and covariance of the Laplace approximation in the form
+w = A−1ΦT(t − y)
+−1
+ΦTBΦ + A
+(7.112)
+(7.113)
+We can now use this Laplace approximation to evaluate the marginal likelihood.
+Using the general result (4.135) for an integral evaluated using the Laplace approxi-
+Exercise 7.18
+where A = diag(αi). This can be done using iterative reweighted least squares
+(IRLS) as discussed in Section 4.3.3. For this, we need the gradient vector and
+Hessian matrix of the log posterior distribution, which from (7.109) are given by
+7.2. Relevance Vector Machines
+355
+mation, we have
+p(t|α) =
+p(t|w)p(w|α) dw
+(7.114)
+If we substitute for p(t|w) and p(w|α) and then set the derivative of the marginal
+likelihood with respect to αi equal to zero, we obtain
+ p(t|w)p(w|α)(2π)M/2|Σ|1/2.
+Exercise 7.19
+1
+2
+(w
+i )2 +
+1
+2αi −
+1
+2
+Σii = 0.
+Defining γi = 1 − αiΣii and rearranging then gives
+i = γi
+αnew
+i )2
+(w
+which is identical to the re-estimation formula (7.87) obtained for the regression
+RVM.
+If we define
+we can write the approximate log marginal likelihood in the form
+t = Φw + B−1(t − y)
+ln p(t|α, β) = −
+1
+2
+N ln(2π) + ln|C| + (
+t)TC−1
+t
+where
+C = B + ΦAΦT.
+(7.115)
+(7.116)
+(7.117)
+(7.118)
+(7.119)
+Appendix A
+Section 13.3
+This takes the same form as (7.85) in the regression case, and so we can apply the
+same analysis of sparsity and obtain the same fast learning algorithm in which we
+fully optimize a single hyperparameter αi at each step.
+Figure 7.12 shows the relevance vector machine applied to a synthetic classifi-
+cation data set. We see that the relevance vectors tend not to lie in the region of the
+decision boundary, in contrast to the support vector machine. This is consistent with
+our earlier discussion of sparsity in the RVM, because a basis function φi(x) centred
+on a data point near the boundary will have a vector ϕi that is poorly aligned with
+the training data vector t.
+One of the potential advantages of the relevance vector machine compared with
+the SVM is that it makes probabilistic predictions. For example, this allows the RVM
+to be used to help construct an emission density in a nonlinear extension of the linear
+dynamical system for tracking faces in video sequences (Williams et al., 2005).
+So far, we have considered the RVM for binary classification problems. For
+K > 2 classes, we again make use of the probabilistic approach in Section 4.3.4 in
+which there are K linear models of the form
+ak = wT
+k x
+(7.120)
+exp(ak)
+j
+N
+K
+(7.121)
+(7.122)
+The log likelihood function is then given by
+ln p(T|w1, . . . , wK) =
+ytnk
+nk
+n=1
+k=1
+where the target values tnk have a 1-of-K coding for each data point n, and T is a
+matrix with elements tnk. Again, the Laplace approximation can be used to optimize
+the hyperparameters (Tipping, 2001), in which the model and its Hessian are found
+using IRLS. This gives a more principled approach to multiclass classification than
+the pairwise method used in the support vector machine and also provides probabilis-
+tic predictions for new data points. The principal disadvantage is that the Hessian
+matrix has size M K×M K, where M is the number of active basis functions, which
+gives an additional factor of K 3 in the computational cost of training compared with
+the two-class RVM.
+The principal disadvantage of the relevance vector machine is the relatively long
+training times compared with the SVM. This is offset, however, by the avoidance of
+cross-validation runs to set the model complexity parameters. Furthermore, because
+it yields sparser models, the computation time on test points, which is usually the
+more important consideration in practice, is typically much less.
+356
+7. SPARSE KERNEL MACHINES
+2
+0
+−2
+−2
+0
+2
+Figure 7.12 Example of the relevance vector machine applied to a synthetic data set, in which the left-hand plot
+shows the decision boundary and the data points, with the relevance vectors indicated by circles. Comparison
+with the results shown in Figure 7.4 for the corresponding support vector machine shows that the RVM gives a
+much sparser model. The right-hand plot shows the posterior probability given by the RVM output in which the
+proportion of red (blue) ink indicates the probability of that point belonging to the red (blue) class.
+which are combined using a softmax function to give outputs
+yk(x) =
+exp(aj)
+n=1
+N
+Exercises
+Exercises
+357
+7.1 ( ) www Suppose we have a data set of input vectors {xn} with corresponding
+target values tn ∈ {−1, 1}, and suppose that we model the density of input vec-
+tors within each class separately using a Parzen kernel density estimator (see Sec-
+tion 2.5.1) with a kernel k(x, x). Write down the minimum misclassification-rate
+decision rule assuming the two classes have equal prior probability. Show also that,
+if the kernel is chosen to be k(x, x) = xTx, then the classification rule reduces to
+simply assigning a new input vector to the class having the closest mean. Finally,
+show that, if the kernel takes the form k(x, x) = φ(x)Tφ(x), that the classification
+is based on the closest mean in the feature space φ(x).
+7.2 () Show that, if the 1 on the right-hand side of the constraint (7.5) is replaced by
+some arbitrary constant γ > 0, the solution for the maximum margin hyperplane is
+unchanged.
+7.3 ( )
+Show that, irrespective of the dimensionality of the data space, a data set
+consisting of just two data points, one from each class, is sufficient to determine the
+location of the maximum-margin hyperplane.
+7.4 ( ) www Show that the value ρ of the margin for the maximum-margin hyper-
+plane is given by
+(7.123)
+(7.124)
+(7.125)
+where {an} are given by maximizing (7.10) subject to the constraints (7.11) and
+(7.12).
+7.5 ( ) Show that the values of ρ and {an} in the previous exercise also satisfy
+1
+ρ2 =
+an
+1
+ρ2 = 2
+L(a)
+where
+L(a) is defined by (7.10). Similarly, show that
+1
+ρ2 = w2.
+7.6 () Consider the logistic regression model with a target variable t ∈ {−1, 1}. If
+we define p(t = 1|y) = σ(y) where y(x) is given by (7.1), show that the negative
+log likelihood, with the addition of a quadratic regularization term, takes the form
+(7.47).
+7.7 () Consider the Lagrangian (7.56) for the regression support vector machine. By
+setting the derivatives of the Lagrangian with respect to w, b, ξn, and
+ξn to zero and
+then back substituting to eliminate the corresponding variables, show that the dual
+Lagrangian is given by (7.61).
+358
+7. SPARSE KERNEL MACHINES
+7.8 () www For the regression support vector machine considered in Section 7.1.4,
+show that all training data points for which ξn > 0 will have an = C, and similarly
+all points for which
+ξn > 0 will have
+an = C.
+7.9 () Verify the results (7.82) and (7.83) for the mean and covariance of the posterior
+distribution over weights in the regression RVM.
+7.10 ( ) www Derive the result (7.85) for the marginal likelihood function in the
+regression RVM, by performing the Gaussian integral over w in (7.84) using the
+technique of completing the square in the exponential.
+7.11 ( ) Repeat the above exercise, but this time make use of the general result (2.115).
+7.12 ( ) www Show that direct maximization of the log marginal likelihood (7.85) for
+the regression relevance vector machine leads to the re-estimation equations (7.87)
+and (7.88) where γi is defined by (7.89).
+7.13 ( )
+In the evidence framework for RVM regression, we obtained the re-estimation
+formulae (7.87) and (7.88) by maximizing the marginal likelihood given by (7.85).
+Extend this approach by inclusion of hyperpriors given by gamma distributions of
+the form (B.26) and obtain the corresponding re-estimation formulae for α and β by
+maximizing the corresponding posterior probability p(t, α, β|X) with respect to α
+and β.
+7.14 ( ) Derive the result (7.90) for the predictive distribution in the relevance vector
+machine for regression. Show that the predictive variance is given by (7.91).
+7.15 ( ) www Using the results (7.94) and (7.95), show that the marginal likelihood
+(7.85) can be written in the form (7.96), where λ(αn) is defined by (7.97) and the
+sparsity and quality factors are defined by (7.98) and (7.99), respectively.
+7.16 () By taking the second derivative of the log marginal likelihood (7.97) for the
+regression RVM with respect to the hyperparameter αi, show that the stationary
+point given by (7.101) is a maximum of the marginal likelihood.
+7.17 ( ) Using (7.83) and (7.86), together with the matrix identity (C.7), show that
+the quantities Sn and Qn defined by (7.102) and (7.103) can be written in the form
+(7.106) and (7.107).
+7.18 () www Show that the gradient vector and Hessian matrix of the log poste-
+rior distribution (7.109) for the classification relevance vector machine are given by
+(7.110) and (7.111).
+7.19 ( ) Verify that maximization of the approximate log marginal likelihood function
+(7.114) for the classification relevance vector machine leads to the result (7.116) for
+re-estimation of the hyperparameters.

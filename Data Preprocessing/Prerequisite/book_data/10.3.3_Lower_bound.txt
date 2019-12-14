@@ -1,0 +1,79 @@
+Another quantity of importance is the lower bound L defined by
+L(q) = E[ln p(w, α, t)] − E[ln q(w, α)]
+−Eα[ln q(w)]w − E[ln q(α)].
+= Ew[ln p(t|w)] + Ew,α[ln p(w|α)] + Eα[ln p(α)]
+(10.107)
+Exercise 10.27
+Evaluation of the various terms is straightforward, making use of results obtained in
+previous chapters, and gives
+E[ln p(t|w)]w = N
+2
+E[ln p(w|α)]w,α = −
+ln
+2
+M
+2
+aN
+2bN
+2π
+2
+tTt + βmT
+N ΦTt
+ΦTΦ(mN mT
+N + SN )
+Tr
+ln(2π) + M
+2
+(ψ(aN ) − ln bN )
+mT
+N mN + Tr(SN )
+E[ln p(α)]α = a0 ln b0 + (a0 − 1) [ψ(aN ) − ln bN ]
+(10.108)
+(10.109)
+(10.110)
+aN
+bN − ln Γ(aN )
+−b0
+1
+ln|SN| + M
+2
+2
+[1 + ln(2π)]
+−E[ln q(w)]w =
+(10.111)
+−E[ln q(α)]α = ln Γ(aN ) − (aN − 1)ψ(aN ) − ln bN + aN . (10.112)
+Figure 10.9 shows a plot of the lower bound L(q) versus the degree of a polynomial
+model for a synthetic data set generated from a degree three polynomial. Here the
+prior parameters have been set to a0 = b0 = 0, corresponding to the noninformative
+prior p(α) ∝ 1/α, which is uniform over ln α as discussed in Section 2.3.6. As
+we saw in Section 10.1, the quantity L represents lower bound on the log marginal
+likelihood p(t|M) for the model. If we assign equal prior probabilities p(M) to the
+different values of M, then we can interpret L as an approximation to the poste-
+rior model probability p(M|t). Thus the variational framework assigns the highest
+probability to the model with M = 3. This should be contrasted with the maximum
+likelihood result, which assigns ever smaller residual error to models of increasing
+complexity until the residual error is driven to zero, causing maximum likelihood to
+favour severely over-fitted models.
+N
+490
+10. APPROXIMATE INFERENCE
+Figure 10.9 Plot of
+the lower bound L ver-
+sus the order M of the polyno-
+mial, for a polynomial model, in
+which a set of 10 data points is
+generated from a polynomial with
+M = 3 sampled over the inter-
+val (−5, 5) with additive Gaussian
+noise of variance 0.09. The value
+of the bound gives the log prob-
+ability of the model, and we see
+that the value of the bound peaks
+at M = 3, corresponding to the
+true model from which the data
+set was generated.
+1
+3
+5
+7
+9

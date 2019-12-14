@@ -1,0 +1,220 @@
+The relevance vector machine for regression is a linear model of the form studied
+in Chapter 3 but with a modified prior that results in sparse solutions. The model
+defines a conditional distribution for a real-valued target variable t, given an input
+vector x, which takes the form
+p(t|x, w, β) = N (t|y(x), β−1)
+(7.76)
+n=1
+i=1
+M
+N
+N
+M
+with fixed nonlinear basis functions φi(x), which will typically include a constant
+term so that the corresponding weight parameter represents a ‘bias’.
+The relevance vector machine is a specific instance of this model, which is in-
+tended to mirror the structure of the support vector machine. In particular, the basis
+functions are given by kernels, with one kernel associated with each of the data
+points from the training set. The general expression (7.77) then takes the SVM-like
+form
+y(x) =
+wnk(x, xn) + b
+(7.78)
+where b is a bias parameter. The number of parameters in this case is M = N + 1,
+and y(x) has the same form as the predictive model (7.64) for the SVM, except that
+the coefficients an are here denoted wn. It should be emphasized that the subsequent
+analysis is valid for arbitrary choices of basis function, and for generality we shall
+work with the form (7.77). In contrast to the SVM, there is no restriction to positive-
+definite kernels, nor are the basis functions tied in either number or location to the
+training data points.
+Suppose we are given a set of N observations of the input vector x, which we
+n with n = 1, . . . , N. The
+denote collectively by a data matrix X whose nth row is xT
+corresponding target values are given by t = (t1, . . . , tN )T. Thus, the likelihood
+function is given by
+p(t|X, w, β) =
+p(tn|xn, w, β−1).
+(7.79)
+n=1
+Next we introduce a prior distribution over the parameter vector w and as in
+Chapter 3, we shall consider a zero-mean Gaussian prior. However, the key differ-
+ence in the RVM is that we introduce a separate hyperparameter αi for each of the
+weight parameters wi instead of a single shared hyperparameter. Thus the weight
+prior takes the form
+p(w|α) =
+i=1
+N (wi|0, α−1
+i )
+(7.80)
+where αi represents the precision of the corresponding parameter wi, and α denotes
+(α1, . . . , αM )T. We shall see that, when we maximize the evidence with respect
+to these hyperparameters, a significant proportion of them go to infinity, and the
+corresponding weight parameters have posterior distributions that are concentrated
+at zero. The basis functions associated with these parameters therefore play no role
+346
+7. SPARSE KERNEL MACHINES
+where β = σ−2 is the noise precision (inverse noise variance), and the mean is given
+by a linear model of the form
+y(x) =
+wiφi(x) = wTφ(x)
+(7.77)
+7.2. Relevance Vector Machines
+347
+in the predictions made by the model and so are effectively pruned out, resulting in
+a sparse model.
+Using the result (3.49) for linear regression models, we see that the posterior
+distribution for the weights is again Gaussian and takes the form
+p(w|t, X, α, β) = N (w|m, Σ)
+(7.81)
+where the mean and covariance are given by
+A + βΦTΦ
+m = βΣΦTt
+(7.82)
+(7.83)
+where Φ is the N × M design matrix with elements Φni = φi(xn), and A =
+diag(αi). Note that in the specific case of the model (7.78), we have Φ = K, where
+K is the symmetric (N + 1) × (N + 1) kernel matrix with elements k(xn, xm).
+The values of α and β are determined using type-2 maximum likelihood, also
+known as the evidence approximation, in which we maximize the marginal likeli-
+hood function obtained by integrating out the weight parameters
+−1
+p(t|X, α, β) =
+p(t|X, w, β)p(w|α) dw.
+(7.84)
+Because this represents the convolution of two Gaussians, it is readily evaluated to
+give the log marginal likelihood in the form
+ln p(t|X, α, β) = lnN (t|0, C)
+1
+2
+N ln(2π) + ln|C| + tTC−1t
+where t = (t1, . . . , tN )T, and we have defined the N × N matrix C given by
+C = β−1I + ΦA−1ΦT.
+Our goal is now to maximize (7.85) with respect to the hyperparameters α and
+β. This requires only a small modification to the results obtained in Section 3.5 for
+the evidence approximation in the linear regression model. Again, we can identify
+two approaches. In the first, we simply set the required derivatives of the marginal
+likelihood to zero and obtain the following re-estimation equations
+(7.85)
+(7.86)
+(7.87)
+(7.88)
+αnew
+i
+= γi
+m2
+i
+(βnew)−1 = t − Φm2
+i γi
+N −
+Section 3.5
+Exercise 7.10
+Exercise 7.12
+Section 3.5.3
+where mi is the ith component of the posterior mean m defined by (7.82). The
+quantity γi measures how well the corresponding parameter wi is determined by the
+data and is defined by
+348
+7. SPARSE KERNEL MACHINES
+γi = 1 − αiΣii
+(7.89)
+in which Σii is the ith diagonal component of the posterior covariance Σ given by
+(7.83). Learning therefore proceeds by choosing initial values for α and β, evalu-
+ating the mean and covariance of the posterior using (7.82) and (7.83), respectively,
+and then alternately re-estimating the hyperparameters, using (7.87) and (7.88), and
+re-estimating the posterior mean and covariance, using (7.82) and (7.83), until a suit-
+able convergence criterion is satisfied.
+The second approach is to use the EM algorithm, and is discussed in Sec-
+tion 9.3.4. These two approaches to finding the values of the hyperparameters that
+maximize the evidence are formally equivalent. Numerically, however, it is found
+that the direct optimization approach corresponding to (7.87) and (7.88) gives some-
+what faster convergence (Tipping, 2001).
+As a result of the optimization, we find that a proportion of the hyperparameters
+{αi} are driven to large (in principle infinite) values, and so the weight parameters
+wi corresponding to these hyperparameters have posterior distributions with mean
+and variance both zero. Thus those parameters, and the corresponding basis func-
+tions φi(x), are removed from the model and play no role in making predictions for
+new inputs. In the case of models of the form (7.78), the inputs xn corresponding to
+the remaining nonzero weights are called relevance vectors, because they are iden-
+tified through the mechanism of automatic relevance determination, and are analo-
+gous to the support vectors of an SVM. It is worth emphasizing, however, that this
+mechanism for achieving sparsity in probabilistic models through automatic rele-
+vance determination is quite general and can be applied to any model expressed as
+an adaptive linear combination of basis functions.
+Having found values α and β for the hyperparameters that maximize the
+marginal likelihood, we can evaluate the predictive distribution over t for a new
+input x. Using (7.76) and (7.81), this is given by
+p(t|x, X, t, α, β) =
+= N
+p(t|x, w, β)p(w|X, t, α, β) dw
+t|mTφ(x), σ2(x)
+(7.90)
+Thus the predictive mean is given by (7.76) with w set equal to the posterior mean
+m, and the variance of the predictive distribution is given by
+σ2(x) = (β)−1 + φ(x)TΣφ(x)
+(7.91)
+where Σ is given by (7.83) in which α and β are set to their optimized values α and
+β. This is just the familiar result (3.59) obtained in the context of linear regression.
+Recall that for localized basis functions, the predictive variance for linear regression
+models becomes small in regions of input space where there are no basis functions.
+In the case of an RVM with the basis functions centred on data points, the model will
+therefore become increasingly certain of its predictions when extrapolating outside
+the domain of the data (Rasmussen and Qui˜nonero-Candela, 2005), which of course
+is undesirable. The predictive distribution in Gaussian process regression does not
+Exercise 9.23
+Section 7.2.2
+Exercise 7.14
+Section 6.4.2
+7.2. Relevance Vector Machines
+349
+Figure 7.9 Illustration of RVM regression us-
+ing the same data set, and the
+same Gaussian kernel functions,
+the
+as used in Figure 7.8 for
+ν-SVM regression model.
+The
+mean of
+the predictive distribu-
+tion for the RVM is shown by the
+red line, and the one standard-
+deviation predictive distribution is
+shown by the shaded region.
+Also, the data points are shown
+in green, and the relevance vec-
+tors are indicated by blue circles.
+Note that there are only 3 rele-
+vance vectors compared to 7 sup-
+port vectors for the ν-SVM in Fig-
+ure 7.8.
+t
+1
+0
+−1
+0
+1
+x
+suffer from this problem. However, the computational cost of making predictions
+with a Gaussian processes is typically much higher than with an RVM.
+Figure 7.9 shows an example of the RVM applied to the sinusoidal regression
+data set. Here the noise precision parameter β is also determined through evidence
+maximization. We see that the number of relevance vectors in the RVM is signif-
+icantly smaller than the number of support vectors used by the SVM. For a wide
+range of regression and classification tasks, the RVM is found to give models that
+are typically an order of magnitude more compact than the corresponding support
+vector machine, resulting in a significant improvement in the speed of processing on
+test data. Remarkably, this greater sparsity is achieved with little or no reduction in
+generalization error compared with the corresponding SVM.
+The principal disadvantage of the RVM compared to the SVM is that training
+involves optimizing a nonconvex function, and training times can be longer than for a
+comparable SVM. For a model with M basis functions, the RVM requires inversion
+of a matrix of size M × M, which in general requires O(M 3) computation. In the
+specific case of the SVM-like model (7.78), we have M = N +1. As we have noted,
+there are techniques for training SVMs whose cost is roughly quadratic in N. Of
+course, in the case of the RVM we always have the option of starting with a smaller
+number of basis functions than N + 1. More significantly, in the relevance vector
+machine the parameters governing complexity and noise variance are determined
+automatically from a single training run, whereas in the support vector machine the
+parameters C and 	 (or ν) are generally found using cross-validation, which involves
+multiple training runs. Furthermore, in the next section we shall derive an alternative
+procedure for training the relevance vector machine that improves training speed
+significantly.

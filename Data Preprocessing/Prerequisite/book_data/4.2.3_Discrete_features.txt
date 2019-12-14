@@ -1,0 +1,24 @@
+Let us now consider the case of discrete feature values xi. For simplicity, we
+begin by looking at binary feature values xi ∈ {0, 1} and discuss the extension to
+more general discrete features shortly. If there are D inputs, then a general distribu-
+tion would correspond to a table of 2D numbers for each class, containing 2D − 1
+independent variables (due to the summation constraint). Because this grows expo-
+nentially with the number of features, we might seek a more restricted representa-
+tion. Here we will make the naive Bayes assumption in which the feature values are
+treated as independent, conditioned on the class Ck. Thus we have class-conditional
+distributions of the form
+p(x|Ck) =
+i=1
+ki(1 − µki)1−xi
+µxi
+(4.81)
+which contain D independent parameters for each class. Substituting into (4.63) then
+gives
+ak(x) =
+i=1
+{xi ln µki + (1 − xi) ln(1 − µki)} + ln p(Ck)
+(4.82)
+which again are linear functions of the input values xi. For the case of K = 2 classes,
+we can alternatively consider the logistic sigmoid formulation given by (4.57). Anal-
+ogous results are obtained for discrete variables each of which can take M > 2
+states.
