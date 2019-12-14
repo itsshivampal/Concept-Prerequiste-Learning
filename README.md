@@ -8,7 +8,7 @@
 
 
 ## Algorithm Layout/Steps
-<br/>
+
 ### 1. Data Preparation
 **Book Used**: Pattern Recognition and Machine Learning by Bishop
 **Location**: Processed Data, Link: https://drive.google.com/open?id=1un8y8Pc9JCBLFu6h1FVq65KtWlHJrC-X
