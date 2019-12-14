@@ -1,9 +1,0 @@
-As we have already noted, one of the major limitations of the Metropolis algorithm
-is that it can exhibit random walk behaviour whereby the distance traversed through
-the state space grows only as the square root of the number of steps. The problem
-cannot be resolved simply by taking bigger steps as this leads to a high rejection rate.
-In this section, we introduce a more sophisticated class of transitions based on an
-analogy with physical systems and that has the property of being able to make large
-changes to the system state while keeping the rejection probability small. It is ap-
-plicable to distributions over continuous variables for which we can readily evaluate
-the gradient of the log probability with respect to the state variables. We will discuss
