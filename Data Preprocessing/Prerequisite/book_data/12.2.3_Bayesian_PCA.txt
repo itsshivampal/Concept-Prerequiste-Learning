@@ -1,0 +1,184 @@
+So far in our discussion of PCA, we have assumed that the value M for the
+dimensionality of the principal subspace is given. In practice, we must choose a
+suitable value according to the application. For visualization, we generally choose
+M = 2, whereas for other applications the appropriate choice for M may be less
+clear. One approach is to plot the eigenvalue spectrum for the data set, analogous
+to the example in Figure 12.4 for the off-line digits data set, and look to see if the
+eigenvalues naturally form two groups comprising a set of small values separated by
+a signiﬁcant gap from a set of relatively large values, indicating a natural choice for
+M. In practice, such a gap is often not seen.
+12.2. Probabilistic PCA
+581
+(a)
+−2
+(d)
+2
+0
+−2
+2
+0
+−2
+0
+2
+(b)
+−2
+(e)
+2
+0
+−2
+2
+0
+−2
+0
+2
+(c)
+−2
+(f)
+2
+0
+−2
+2
+0
+−2
+0
+2
+−2
+0
+2
+−2
+0
+2
+−2
+0
+2
+Figure 12.12 Synthetic data illustrating the EM algorithm for PCA deﬁned by (12.58) and (12.59). (a) A data
+set X with the data points shown in green, together with the true principal components (shown as eigenvectors
+scaled by the square roots of the eigenvalues). (b) Initial conﬁguration of the principal subspace deﬁned by W,
+shown in red, together with the projections of the latent points Z into the data space, given by ZWT, shown in
+cyan. (c) After one M step, the latent space has been updated with Z held ﬁxed. (d) After the successive E step,
+the values of Z have been updated, giving orthogonal projections, with W held ﬁxed. (e) After the second M
+step. (f) After the second E step.
+Section 1.3
+Because the probabilistic PCA model has a well-deﬁned likelihood function, we
+could employ cross-validation to determine the value of dimensionality by selecting
+the largest log likelihood on a validation data set. Such an approach, however, can
+become computationally costly, particularly if we consider a probabilistic mixture
+of PCA models (Tipping and Bishop, 1999a) in which we seek to determine the
+appropriate dimensionality separately for each component in the mixture.
+Given that we have a probabilistic formulation of PCA, it seems natural to seek
+a Bayesian approach to model selection. To do this, we need to marginalize out
+the model parameters µ, W, and σ2 with respect to appropriate prior distributions.
+This can be done by using a variational framework to approximate the analytically
+intractable marginalizations (Bishop, 1999b). The marginal likelihood values, given
+by the variational lower bound, can then be compared for a range of different values
+of M and the value giving the largest marginal likelihood selected.
+Here we consider a simpler approach introduced by based on the evidence ap-
+582
+12. CONTINUOUS LATENT VARIABLES
+Figure 12.13 Probabilistic graphical model for Bayesian PCA in
+which the distribution over the parameter matrix W
+is governed by a vector α of hyperparameters.
+σ2
+zn
+xn
+N
+W
+proximation, which is appropriate when the number of data points is relatively large
+and the corresponding posterior distribution is tightly peaked (Bishop, 1999a). It
+involves a speciﬁc choice of prior over W that allows surplus dimensions in the
+principal subspace to be pruned out of the model. This corresponds to an example of
+automatic relevance determination, or ARD, discussed in Section 7.2.2. Speciﬁcally,
+we deﬁne an independent Gaussian prior over each column of W, which represent
+the vectors deﬁning the principal subspace. Each such Gaussian has an independent
+variance governed by a precision hyperparameter αi so that
+(cid:18)D/2
+(cid:12)
+M(cid:14)
+(cid:17)
+i=1
+αi
+2π
+(cid:13)
+p(W|α) =
+exp
+−1
+2 αiwT
+i wi
+(12.60)
+where wi is the ith column of W. The resulting model can be represented using the
+directed graph shown in Figure 12.13.
+The values for αi will be found iteratively by maximizing the marginal likeli-
+hood function in which W has been integrated out. As a result of this optimization,
+some of the αi may be driven to inﬁnity, with the corresponding parameters vec-
+tor wi being driven to zero (the posterior distribution becomes a delta function at
+the origin) giving a sparse solution. The effective dimensionality of the principal
+subspace is then determined by the number of ﬁnite αi values, and the correspond-
+ing vectors wi can be thought of as ‘relevant’ for modelling the data distribution.
+In this way, the Bayesian approach is automatically making the trade-off between
+improving the ﬁt to the data, by using a larger number of vectors wi with their cor-
+responding eigenvalues λi each tuned to the data, and reducing the complexity of
+the model by suppressing some of the wi vectors. The origins of this sparsity were
+discussed earlier in the context of relevance vector machines.
+The values of αi are re-estimated during training by maximizing the log marginal
+likelihood given by
+p(X|α, µ, σ2) =
+p(X|W, µ, σ2)p(W|α) dW
+(12.61)
+where the log of p(X|W, µ, σ2) is given by (12.43). Note that for simplicity we also
+treat µ and σ2 as parameters to be estimated, rather than deﬁning priors over these
+parameters.
+(cid:6)
+Section 7.2
+12.2. Probabilistic PCA
+583
+Section 4.4
+Section 3.5.3
+Because this integration is intractable, we make use of the Laplace approxima-
+tion. If we assume that the posterior distribution is sharply peaked, as will occur for
+sufﬁciently large data sets, then the re-estimation equations obtained by maximizing
+the marginal likelihood with respect to αi take the simple form
+i = D
+αnew
+i wi
+wT
+(12.62)
+which follows from (3.98), noting that the dimensionality of wi is D. These re-
+estimations are interleaved with the EM algorithm updates for determining W and
+σ2. The E-step equations are again given by (12.54) and (12.55). Similarly, the M-
+step equation for σ2 is again given by (12.57). The only change is to the M-step
+equation for W, which is modiﬁed to give
+(cid:31)
+N(cid:2)
+(cid:31)
+N(cid:2)
+−1
+Wnew =
+(xn − x)E[zn]T
+E[znzT
+n] + σ2A
+(12.63)
+n=1
+n=1
+where A = diag(αi). The value of µ is given by the sample mean, as before.
+If we choose M = D − 1 then, if all αi values are ﬁnite, the model represents
+a full-covariance Gaussian, while if all the αi go to inﬁnity the model is equivalent
+to an isotropic Gaussian, and so the model can encompass all permissible values for
+the effective dimensionality of the principal subspace. It is also possible to consider
+smaller values of M, which will save on computational cost but which will limit
+the maximum dimensionality of the subspace. A comparison of the results of this
+algorithm with standard probabilistic PCA is shown in Figure 12.14.
+Bayesian PCA provides an opportunity to illustrate the Gibbs sampling algo-
+rithm discussed in Section 11.3. Figure 12.15 shows an example of the samples
+from the hyperparameters ln αi for a data set in D = 4 dimensions in which the di-
+mensionality of the latent space is M = 3 but in which the data set is generated from
+a probabilistic PCA model having one direction of high variance, with the remaining
+directions comprising low variance noise. This result shows clearly the presence of
+three distinct modes in the posterior distribution. At each step of the iteration, one of
+the hyperparameters has a small value and the remaining two have large values, so
+that two of the three latent variables are suppressed. During the course of the Gibbs
+sampling, the solution makes sharp transitions between the three modes.
+The model described here involves a prior only over the matrix W. A fully
+Bayesian treatment of PCA, including priors over µ, σ2, and α, and solved us-
+ing variational methods, is described in Bishop (1999b). For a discussion of vari-
+ous Bayesian approaches to determining the appropriate dimensionality for a PCA
+model, see Minka (2001c).

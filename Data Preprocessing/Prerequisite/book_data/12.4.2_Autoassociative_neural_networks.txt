@@ -1,0 +1,116 @@
+In Chapter 5 we considered neural networks in the context of supervised learn-
+ing, where the role of the network is to predict the output variables given values
+12.4. Nonlinear Latent Variable Models
+593
+Figure 12.18 An autoassociative multilayer perceptron having
+two layers of weights. Such a network is trained to
+map input vectors onto themselves by minimiza-
+tion of a sum-of-squares error. Even with non-
+linear units in the hidden layer, such a network
+is equivalent to linear principal component anal-
+ysis. Links representing bias parameters have
+been omitted for clarity.
+xD
+zM
+xD
+inputs
+outputs
+x1
+z1
+x1
+for the input variables. However, neural networks have also been applied to un-
+supervised learning where they have been used for dimensionality reduction. This
+is achieved by using a network having the same number of outputs as inputs, and
+optimizing the weights so as to minimize some measure of the reconstruction error
+between inputs and outputs with respect to a set of training data.
+Consider ﬁrst a multilayer perceptron of the form shown in Figure 12.18, hav-
+ing D inputs, D output units and M hidden units, with M < D. The targets used
+to train the network are simply the input vectors themselves, so that the network
+is attempting to map each input vector onto itself. Such a network is said to form
+an autoassociative mapping. Since the number of hidden units is smaller than the
+number of inputs, a perfect reconstruction of all input vectors is not in general pos-
+sible. We therefore determine the network parameters w by minimizing an error
+function which captures the degree of mismatch between the input vectors and their
+reconstructions. In particular, we shall choose a sum-of-squares error of the form
+N(cid:2)
+n=1
+E(w) =
+1
+2
+(cid:5)y(xn, w) − xn(cid:5)2.
+(12.91)
+If the hidden units have linear activations functions, then it can be shown that the
+error function has a unique global minimum, and that at this minimum the network
+performs a projection onto the M-dimensional subspace which is spanned by the ﬁrst
+M principal components of the data (Bourlard and Kamp, 1988; Baldi and Hornik,
+1989). Thus, the vectors of weights which lead into the hidden units in Figure 12.18
+form a basis set which spans the principal subspace. Note, however, that these vec-
+tors need not be orthogonal or normalized. This result is unsurprising, since both
+principal component analysis and the neural network are using linear dimensionality
+reduction and are minimizing the same sum-of-squares error function.
+It might be thought that the limitations of a linear dimensionality reduction could
+be overcome by using nonlinear (sigmoidal) activation functions for the hidden units
+in the network in Figure 12.18. However, even with nonlinear hidden units, the min-
+imum error solution is again given by the projection onto the principal component
+subspace (Bourlard and Kamp, 1988). There is therefore no advantage in using two-
+layer neural networks to perform dimensionality reduction. Standard techniques for
+principal component analysis (based on singular value decomposition) are guaran-
+teed to give the correct solution in ﬁnite time, and they also generate an ordered set
+of eigenvalues with corresponding orthonormal eigenvectors.
+594
+12. CONTINUOUS LATENT VARIABLES
+Figure 12.19 Addition of extra hidden lay-
+ers of nonlinear units gives an
+autoassociative network which
+can perform a nonlinear dimen-
+sionality reduction.
+xD
+inputs
+x1
+F1
+F2
+non-linear
+xD
+outputs
+x1
+The situation is different, however, if additional hidden layers are permitted in
+the network. Consider the four-layer autoassociative network shown in Figure 12.19.
+Again the output units are linear, and the M units in the second hidden layer can also
+be linear, however, the ﬁrst and third hidden layers have sigmoidal nonlinear activa-
+tion functions. The network is again trained by minimization of the error function
+(12.91). We can view this network as two successive functional mappings F1 and
+F2, as indicated in Figure 12.19. The ﬁrst mapping F1 projects the original D-
+dimensional data onto an M-dimensional subspace S deﬁned by the activations of
+the units in the second hidden layer. Because of the presence of the ﬁrst hidden layer
+of nonlinear units, this mapping is very general, and in particular is not restricted to
+being linear. Similarly, the second half of the network deﬁnes an arbitrary functional
+mapping from the M-dimensional space back into the original D-dimensional input
+space. This has a simple geometrical interpretation, as indicated for the case D = 3
+and M = 2 in Figure 12.20.
+Such a network effectively performs a nonlinear principal component analysis.
+x3
+z2
+F1
+x3
+F2
+S
+x1
+z1
+x1
+x2
+x2
+Figure 12.20 Geometrical interpretation of the mappings performed by the network in Figure 12.19 for the case
+of D = 3 inputs and M = 2 units in the middle hidden layer. The function F2 maps from an M-dimensional
+space S into a D-dimensional space and therefore deﬁnes the way in which the space S is embedded within the
+original x-space. Since the mapping F2 can be nonlinear, the embedding of S can be nonplanar, as indicated
+in the ﬁgure. The mapping F1 then deﬁnes a projection of points in the original D-dimensional space into the
+M-dimensional subspace S.
+12.4. Nonlinear Latent Variable Models
+595
+It has the advantage of not being limited to linear transformations, although it con-
+tains standard principal component analysis as a special case. However, training
+the network now involves a nonlinear optimization problem, since the error function
+(12.91) is no longer a quadratic function of the network parameters. Computation-
+ally intensive nonlinear optimization techniques must be used, and there is the risk of
+ﬁnding a suboptimal local minimum of the error function. Also, the dimensionality
+of the subspace must be speciﬁed before training the network.

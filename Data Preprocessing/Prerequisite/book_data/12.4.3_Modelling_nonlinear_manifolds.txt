@@ -1,0 +1,166 @@
+As we have already noted, many natural sources of data correspond to low-
+dimensional, possibly noisy, nonlinear manifolds embedded within the higher di-
+mensional observed data space. Capturing this property explicitly can lead to im-
+proved density modelling compared with more general methods. Here we consider
+brieﬂy a range of techniques that attempt to do this.
+One way to model the nonlinear structure is through a combination of linear
+models, so that we make a piece-wise linear approximation to the manifold. This can
+be obtained, for instance, by using a clustering technique such as K-means based on
+Euclidean distance to partition the data set into local groups with standard PCA ap-
+plied to each group. A better approach is to use the reconstruction error for cluster
+assignment (Kambhatla and Leen, 1997; Hinton et al., 1997) as then a common cost
+function is being optimized in each stage. However, these approaches still suffer
+from limitations due to the absence of an overall density model. By using prob-
+abilistic PCA it is straightforward to deﬁne a fully probabilistic model simply by
+considering a mixture distribution in which the components are probabilistic PCA
+models (Tipping and Bishop, 1999a). Such a model has both discrete latent vari-
+ables, corresponding to the discrete mixture, as well as continuous latent variables,
+and the likelihood function can be maximized using the EM algorithm. A fully
+Bayesian treatment, based on variational inference (Bishop and Winn, 2000), allows
+the number of components in the mixture, as well as the effective dimensionalities
+of the individual models, to be inferred from the data. There are many variants of
+this model in which parameters such as the W matrix or the noise variances are tied
+across components in the mixture, or in which the isotropic noise distributions are
+replaced by diagonal ones, giving rise to a mixture of factor analysers (Ghahramani
+and Hinton, 1996a; Ghahramani and Beal, 2000). The mixture of probabilistic PCA
+models can also be extended hierarchically to produce an interactive data visualiza-
+tion algorithm (Bishop and Tipping, 1998).
+An alternative to considering a mixture of linear models is to consider a single
+nonlinear model. Recall that conventional PCA ﬁnds a linear subspace that passes
+close to the data in a least-squares sense. This concept can be extended to one-
+dimensional nonlinear surfaces in the form of principal curves (Hastie and Stuetzle,
+1989). We can describe a curve in a D-dimensional data space using a vector-valued
+function f(λ), which is a vector each of whose elements is a function of the scalar λ.
+There are many possible ways to parameterize the curve, of which a natural choice
+is the arc length along the curve. For any given point(cid:1)x in data space, we can ﬁnd
+the point on the curve that is closest in Euclidean distance. We denote this point by
+596
+12. CONTINUOUS LATENT VARIABLES
+λ = gf (x) because it depends on the particular curve f(λ). For a continuous data
+density p(x), a principal curve is deﬁned as one for which every point on the curve
+is the mean of all those points in data space that project to it, so that
+E [x|gf (x) = λ] = f(λ).
+(12.92)
+For a given continuous density, there can be many principal curves. In practice, we
+are interested in ﬁnite data sets, and we also wish to restrict attention to smooth
+curves. Hastie and Stuetzle (1989) propose a two-stage iterative procedure for ﬁnd-
+ing such principal curves, somewhat reminiscent of the EM algorithm for PCA. The
+curve is initialized using the ﬁrst principal component, and then the algorithm alter-
+nates between a data projection step and curve re-estimation step. In the projection
+step, each data point is assigned to a value of λ corresponding to the closest point
+on the curve. Then in the re-estimation step, each point on the curve is given by
+a weighted average of those points that project to nearby points on the curve, with
+points closest on the curve given the greatest weight. In the case where the subspace
+is constrained to be linear, the procedure converges to the ﬁrst principal component
+and is equivalent to the power method for ﬁnding the largest eigenvector of the co-
+variance matrix. Principal curves can be generalized to multidimensional manifolds
+called principal surfaces although these have found limited use due to the difﬁculty
+of data smoothing in higher dimensions even for two-dimensional manifolds.
+PCA is often used to project a data set onto a lower-dimensional space, for ex-
+ample two dimensional, for the purposes of visualization. Another linear technique
+with a similar aim is multidimensional scaling, or MDS (Cox and Cox, 2000). It ﬁnds
+a low-dimensional projection of the data such as to preserve, as closely as possible,
+the pairwise distances between data points, and involves ﬁnding the eigenvectors of
+the distance matrix. In the case where the distances are Euclidean, it gives equivalent
+results to PCA. The MDS concept can be extended to a wide variety of data types
+speciﬁed in terms of a similarity matrix, giving nonmetric MDS.
+Two other nonprobabilistic methods for dimensionality reduction and data vi-
+sualization are worthy of mention. Locally linear embedding, or LLE (Roweis and
+Saul, 2000) ﬁrst computes the set of coefﬁcients that best reconstructs each data
+point from its neighbours. These coefﬁcients are arranged to be invariant to rota-
+tions, translations, and scalings of that data point and its neighbours, and hence they
+characterize the local geometrical properties of the neighbourhood. LLE then maps
+the high-dimensional data points down to a lower dimensional space while preserv-
+ing these neighbourhood coefﬁcients.
+If the local neighbourhood for a particular
+data point can be considered linear, then the transformation can be achieved using
+a combination of translation, rotation, and scaling, such as to preserve the angles
+formed between the data points and their neighbours. Because the weights are in-
+variant to these transformations, we expect the same weight values to reconstruct the
+data points in the low-dimensional space as in the high-dimensional data space. In
+spite of the nonlinearity, the optimization for LLE does not exhibit local minima.
+In isometric feature mapping, or isomap (Tenenbaum et al., 2000), the goal is
+to project the data to a lower-dimensional space using MDS, but where the dissim-
+ilarities are deﬁned in terms of the geodesic distances measured along the mani-
+12.4. Nonlinear Latent Variable Models
+597
+fold. For instance, if two points lie on a circle, then the geodesic is the arc-length
+distance measured around the circumference of the circle not the straight line dis-
+tance measured along the chord connecting them. The algorithm ﬁrst deﬁnes the
+neighbourhood for each data point, either by ﬁnding the K nearest neighbours or by
+ﬁnding all points within a sphere of radius . A graph is then constructed by link-
+ing all neighbouring points and labelling them with their Euclidean distance. The
+geodesic distance between any pair of points is then approximated by the sum of
+the arc lengths along the shortest path connecting them (which itself is found using
+standard algorithms). Finally, metric MDS is applied to the geodesic distance matrix
+to ﬁnd the low-dimensional projection.
+Our focus in this chapter has been on models for which the observed vari-
+ables are continuous. We can also consider models having continuous latent vari-
+ables together with discrete observed variables, giving rise to latent trait models
+(Bartholomew, 1987). In this case, the marginalization over the continuous latent
+variables, even for a linear relationship between latent and observed variables, can-
+not be performed analytically, and so more sophisticated techniques are required.
+Tipping (1999) uses variational inference in a model with a two-dimensional latent
+space, allowing a binary data set to be visualized analogously to the use of PCA to
+visualize continuous data. Note that this model is the dual of the Bayesian logistic
+regression problem discussed in Section 4.5. In the case of logistic regression we
+have N observations of the feature vector φn which are parameterized by a single
+parameter vector w, whereas in the latent space visualization model there is a single
+latent space variable x (analogous to φ) and N copies of the latent variable wn. A
+generalization of probabilistic latent variable models to general exponential family
+distributions is described in Collins et al. (2002).
+We have already noted that an arbitrary distribution can be formed by taking a
+Gaussian random variable and transforming it through a suitable nonlinearity. This
+is exploited in a general latent variable model called a density network (MacKay,
+1995; MacKay and Gibbs, 1999) in which the nonlinear function is governed by a
+multilayered neural network. If the network has enough hidden units, it can approx-
+imate a given nonlinear function to any desired accuracy. The downside of having
+such a ﬂexible model is that the marginalization over the latent variables, required in
+order to obtain the likelihood function, is no longer analytically tractable. Instead,
+the likelihood is approximated using Monte Carlo techniques by drawing samples
+from the Gaussian prior. The marginalization over the latent variables then becomes
+a simple sum with one term for each sample. However, because a large number
+of sample points may be required in order to give an accurate representation of the
+marginal, this procedure can be computationally costly.
+If we consider more restricted forms for the nonlinear function, and make an ap-
+propriate choice of the latent variable distribution, then we can construct a latent vari-
+able model that is both nonlinear and efﬁcient to train. The generative topographic
+mapping, or GTM (Bishop et al., 1996; Bishop et al., 1997a; Bishop et al., 1998b)
+uses a latent distribution that is deﬁned by a ﬁnite regular grid of delta functions over
+the (typically two-dimensional) latent space. Marginalization over the latent space
+then simply involves summing over the contributions from each of the grid locations.
+Chapter 5
+Chapter 11
+598
+12. CONTINUOUS LATENT VARIABLES
+Figure 12.21 Plot of the oil ﬂow data set visualized using PCA on the left and GTM on the right. For the GTM
+model, each data point is plotted at the mean of its posterior distribution in latent space. The nonlinearity of the
+GTM model allows the separation between the groups of data points to be seen more clearly.
+Chapter 3
+Section 1.4
+The nonlinear mapping is given by a linear regression model that allows for general
+nonlinearity while being a linear function of the adaptive parameters. Note that the
+usual limitation of linear regression models arising from the curse of dimensionality
+does not arise in the context of the GTM since the manifold generally has two dimen-
+sions irrespective of the dimensionality of the data space. A consequence of these
+two choices is that the likelihood function can be expressed analytically in closed
+form and can be optimized efﬁciently using the EM algorithm. The resulting GTM
+model ﬁts a two-dimensional nonlinear manifold to the data set, and by evaluating
+the posterior distribution over latent space for the data points, they can be projected
+back to the latent space for visualization purposes. Figure 12.21 shows a comparison
+of the oil data set visualized with linear PCA and with the nonlinear GTM.
+The GTM can be seen as a probabilistic version of an earlier model called the self
+organizing map, or SOM (Kohonen, 1982; Kohonen, 1995), which also represents
+a two-dimensional nonlinear manifold as a regular array of discrete points. The
+SOM is somewhat reminiscent of the K-means algorithm in that data points are
+assigned to nearby prototype vectors that are then subsequently updated. Initially,
+the prototypes are distributed at random, and during the training process they ‘self
+organize’ so as to approximate a smooth manifold. Unlike K-means, however, the
+SOM is not optimizing any well-deﬁned cost function (Erwin et al., 1992) making it
+difﬁcult to set the parameters of the model and to assess convergence. There is also
+no guarantee that the ‘self-organization’ will take place as this is dependent on the
+choice of appropriate parameter values for any particular data set.
+By contrast, GTM optimizes the log likelihood function, and the resulting model
+deﬁnes a probability density in data space. In fact, it corresponds to a constrained
+mixture of Gaussians in which the components share a common variance, and the
+means are constrained to lie on a smooth two-dimensional manifold. This proba-

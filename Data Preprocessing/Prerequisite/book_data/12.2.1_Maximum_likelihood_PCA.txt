@@ -1,0 +1,178 @@
+We next consider the determination of the model parameters using maximum
+likelihood. Given a data set X = {xn} of observed data points, the probabilistic
+PCA model can be expressed as a directed graph, as shown in Figure 12.10. The
+corresponding log likelihood function is given, from (12.35), by
+N(cid:2)
+ln p(X|µ, W, σ2) =
+ln p(xn|W, µ, σ2)
+n=1
+= − N D
+2
+ln(2π) − N
+2
+ln|C| − 1
+2
+N(cid:2)
+n=1
+(xn − µ)TC−1(xn − µ). (12.43)
+Setting the derivative of the log likelihood with respect to µ equal to zero gives the
+expected result µ = x where x is the data mean deﬁned by (12.1). Back-substituting
+we can then write the log likelihood function in the form
+D ln(2π) + ln|C| + Tr
+ln p(X|W, µ, σ2) = − N
+2
+C−1S
+(cid:11)(cid:27)
+(12.44)
+(cid:26)
+(cid:10)
+where S is the data covariance matrix deﬁned by (12.3). Because the log likelihood
+is a quadratic function of µ, this solution represents the unique maximum, as can be
+conﬁrmed by computing second derivatives.
+Maximization with respect to W and σ2 is more complex but nonetheless has
+an exact closed-form solution. It was shown by Tipping and Bishop (1999b) that all
+of the stationary points of the log likelihood function can be written as
+WML = UM (LM − σ2I)1/2R
+(12.45)
+where UM is a D × M matrix whose columns are given by any subset (of size M)
+of the eigenvectors of the data covariance matrix S, the M × M diagonal matrix
+LM has elements given by the corresponding eigenvalues λi, and R is an arbitrary
+M × M orthogonal matrix.
+Furthermore, Tipping and Bishop (1999b) showed that the maximum of the like-
+lihood function is obtained when the M eigenvectors are chosen to be those whose
+eigenvalues are the M largest (all other solutions being saddle points). A similar re-
+sult was conjectured independently by Roweis (1998), although no proof was given.
+12.2. Probabilistic PCA
+575
+Again, we shall assume that the eigenvectors have been arranged in order of decreas-
+ing values of the corresponding eigenvalues, so that the M principal eigenvectors are
+u1, . . . , uM . In this case, the columns of W deﬁne the principal subspace of stan-
+dard PCA. The corresponding maximum likelihood solution for σ2 is then given by
+D(cid:2)
+σ2
+ML =
+1
+D − M
+λi
+i=M +1
+(12.46)
+so that σ2
+ML is the average variance associated with the discarded dimensions.
+Because R is orthogonal, it can be interpreted as a rotation matrix in the M ×M
+latent space. If we substitute the solution for W into the expression for C, and make
+use of the orthogonality property RRT = I, we see that C is independent of R.
+This simply says that the predictive density is unchanged by rotations in the latent
+space as discussed earlier. For the particular case of R = I, we see that the columns
+of W are the principal component eigenvectors scaled by the variance parameters
+λi − σ2. The interpretation of these scaling factors is clear once we recognize that
+for a convolution of independent Gaussian distributions (in this case the latent space
+distribution and the noise model) the variances are additive. Thus the variance λi
+in the direction of an eigenvector ui is composed of the sum of a contribution λi −
+σ2 from the projection of the unit-variance latent space distribution into data space
+through the corresponding column of W, plus an isotropic contribution of variance
+σ2 which is added in all directions by the noise model.
+It is worth taking a moment to study the form of the covariance matrix given
+by (12.36). Consider the variance of the predictive distribution along some direction
+speciﬁed by the unit vector v, where vTv = 1, which is given by vTCv. First
+suppose that v is orthogonal to the principal subspace, in other words it is given by
+some linear combination of the discarded eigenvectors. Then vTU = 0 and hence
+vTCv = σ2. Thus the model predicts a noise variance orthogonal to the principal
+subspace, which, from (12.46), is just the average of the discarded eigenvalues. Now
+suppose that v = ui where ui is one of the retained eigenvectors deﬁning the prin-
+cipal subspace. Then vTCv = (λi − σ2) + σ2 = λi. In other words, this model
+correctly captures the variance of the data along the principal axes, and approximates
+the variance in all remaining directions with a single average value σ2.
+One way to construct the maximum likelihood density model would simply be
+to ﬁnd the eigenvectors and eigenvalues of the data covariance matrix and then to
+evaluate W and σ2 using the results given above. In this case, we would choose
+R = I for convenience. However, if the maximum likelihood solution is found by
+numerical optimization of the likelihood function, for instance using an algorithm
+such as conjugate gradients (Fletcher, 1987; Nocedal and Wright, 1999; Bishop and
+Nabney, 2008) or through the EM algorithm, then the resulting value of R is es-
+sentially arbitrary. This implies that the columns of W need not be orthogonal. If
+an orthogonal basis is required, the matrix W can be post-processed appropriately
+(Golub and Van Loan, 1996). Alternatively, the EM algorithm can be modiﬁed in
+such a way as to yield orthonormal principal directions, sorted in descending order
+of the corresponding eigenvalues, directly (Ahn and Oh, 2003).
+Section 12.2.2
+576
+12. CONTINUOUS LATENT VARIABLES
+The rotational invariance in latent space represents a form of statistical noniden-
+tiﬁability, analogous to that encountered for mixture models in the case of discrete
+latent variables. Here there is a continuum of parameters all of which lead to the
+same predictive density, in contrast to the discrete nonidentiﬁability associated with
+component re-labelling in the mixture setting.
+If we consider the case of M = D, so that there is no reduction of dimension-
+ality, then UM = U and LM = L. Making use of the orthogonality properties
+UUT = I and RRT = I, we see that the covariance C of the marginal distribution
+for x becomes
+C = U(L − σ2I)1/2RRT(L − σ2I)1/2UT + σ2I = ULUT = S
+(12.47)
+and so we obtain the standard maximum likelihood solution for an unconstrained
+Gaussian distribution in which the covariance matrix is given by the sample covari-
+ance.
+Conventional PCA is generally formulated as a projection of points from the D-
+dimensional data space onto an M-dimensional linear subspace. Probabilistic PCA,
+however, is most naturally expressed as a mapping from the latent space into the data
+space via (12.33). For applications such as visualization and data compression, we
+can reverse this mapping using Bayes’ theorem. Any point x in data space can then
+be summarized by its posterior mean and covariance in latent space. From (12.42)
+the mean is given by
+E[z|x] = M−1WT
+ML(x − x)
+where M is given by (12.41). This projects to a point in data space given by
+WE[z|x] + µ.
+(12.48)
+(12.49)
+Section 3.3.1
+Note that this takes the same form as the equations for regularized linear regression
+and is a consequence of maximizing the likelihood function for a linear Gaussian
+model. Similarly, the posterior covariance is given from (12.42) by σ2M−1 and is
+independent of x.
+If we take the limit σ2 → 0, then the posterior mean reduces to
+MLWML)−1WT
+ML(x − x)
+(WT
+(12.50)
+Exercise 12.11
+Exercise 12.12
+Section 2.3
+which represents an orthogonal projection of the data point onto the latent space,
+and so we recover the standard PCA model. The posterior covariance in this limit is
+zero, however, and the density becomes singular. For σ2 > 0, the latent projection
+is shifted towards the origin, relative to the orthogonal projection.
+Finally, we note that an important role for the probabilistic PCA model is in
+deﬁning a multivariate Gaussian distribution in which the number of degrees of free-
+dom, in other words the number of independent parameters, can be controlled whilst
+still allowing the model to capture the dominant correlations in the data. Recall
+that a general Gaussian distribution has D(D + 1)/2 independent parameters in its
+covariance matrix (plus another D parameters in its mean). Thus the number of
+parameters scales quadratically with D and can become excessive in spaces of high
+12.2. Probabilistic PCA
+577
+dimensionality. If we restrict the covariance matrix to be diagonal, then it has only D
+independent parameters, and so the number of parameters now grows linearly with
+dimensionality. However, it now treats the variables as if they were independent and
+hence can no longer express any correlations between them. Probabilistic PCA pro-
+vides an elegant compromise in which the M most signiﬁcant correlations can be
+captured while still ensuring that the total number of parameters grows only linearly
+with D. We can see this by evaluating the number of degrees of freedom in the
+PPCA model as follows. The covariance matrix C depends on the parameters W,
+which has size D× M, and σ2, giving a total parameter count of DM +1. However,
+we have seen that there is some redundancy in this parameterization associated with
+rotations of the coordinate system in the latent space. The orthogonal matrix R that
+expresses these rotations has size M × M. In the ﬁrst column of this matrix there are
+M − 1 independent parameters, because the column vector must be normalized to
+unit length. In the second column there are M − 2 independent parameters, because
+the column must be normalized and also must be orthogonal to the previous column,
+and so on. Summing this arithmetic series, we see that R has a total of M(M −1)/2
+independent parameters. Thus the number of degrees of freedom in the covariance
+matrix C is given by
+(12.51)
+The number of independent parameters in this model therefore only grows linearly
+with D, for ﬁxed M. If we take M = D − 1, then we recover the standard result
+for a full covariance Gaussian. In this case, the variance along D − 1 linearly in-
+dependent directions is controlled by the columns of W, and the variance along the
+remaining direction is given by σ2. If M = 0, the model is equivalent to the isotropic
+covariance case.
+DM + 1 − M(M − 1)/2.
