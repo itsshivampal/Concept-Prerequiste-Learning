@@ -3,7 +3,7 @@
 
 ## Folders Description
 **Required Data:** Contains all the required data in PDF format<br/>
-**Data Preprocessing:** Contains the code of processing, extracting and cleaning data<br/>
+**Data Processing:** Contains the code of processing, extracting and cleaning data<br/>
 **Processed Data:** Contains the data which needed for building the model
 
 
