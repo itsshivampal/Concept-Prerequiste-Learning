@@ -1,0 +1,15 @@
+Date: 8th Jan, 2020
+Method: Equal Weights
+
+No of rows in cs edge dataset:  108
+No of rows in cs edge negative dataset:  570
+No of rows in calculated prereq calculation dataset:  2960
+
+No of repeated rows in prereq calculated file:  0
+No of repeated rows in cs edge file:  0
+No of repeated rows in cs edge negative file:  88
+
+No of same rows in cs_edge and prereq_cal file:  74
+No of same rows in cs_edge_neg and prereq_cal file:  183
+
+------------------------------------------------------------------------------------------
