@@ -1,3 +1,25 @@
+Insights About Dataset
+- Dataset contains prerequisite relationships in between Courses
+- No of unique course names in CS.edges = 63
+- No of unique course names in CS.edges_neg = 63
+- No of unique course names in MATH.edges = 52
+- No of unique course names in MATH.edges_neg = 65
+
+Data Cleaning
+- Math Dataset: Read wrong entries for
+-- C*-alegebra (C star algebra)
+-- K-theory (K theory)
+- CS Dataset
+-- Have different title but contain correct data
+--- Algorithm design (Algorithm)
+--- Compiler construction (Compiler)
+--- Mobile application development (Mobile app development)
+--- System programming (Systems programming)
+-- Have wrong interpretation for
+--- Parallel processing (Parallel processing (DSP implementation))
+-------------------------------------------------------------------------------------------
+
+
 Date: 8th Jan, 2020
 Method: Equal Weights
 

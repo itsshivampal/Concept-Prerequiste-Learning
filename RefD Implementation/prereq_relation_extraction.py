@@ -27,8 +27,16 @@ all_topics = list(set(all_topics))
 df = pd.read_csv("RefD Implementation/output_data/keyterms_wiki_data.csv", encoding="utf-8")
 topic = df[["topic"]]
 wiki_links = df[["wiki_links"]]
+title = df[["wiki_title"]]
+
 index_length = df.shape[0]
+print(index_length)
+
 wiki_links.iloc[18].values[0] = ""
+
+print(topic.iloc[18].values[0])
+print(title.iloc[18].values[0])
+
 all_keyword_data = {}
 
 for i in range(index_length):
@@ -38,6 +46,16 @@ for i in range(index_length):
     }
 
 # End Reading Data
+
+
+count = 0
+for i in range(index_length):
+    if topic.iloc[i].values[0] == title.iloc[i].values[0]:
+        count += 1
+
+print(count)
+
+
 
 # RefD code implementation
 def get_id(topic):
@@ -70,7 +88,11 @@ def get_w_value_equal(topic_a, topic_b):
 
 
 def get_w_value_tfidf(topic_a, topic_b):
-    pass
+    referred_link_b = get_all_referred_links(topic_b)
+    if topic_a in referred_link_b:
+        pass
+    else:
+        return 0
 
 # Foloowing functions for RefD implementation
 
@@ -115,46 +137,46 @@ def refd_score_calc(topic_a, topic_b):
         return RefD_a_b
 
 
-all_pairs_refd_value = []
-
-for topic_a in all_topics:
-    temp_topic = []
-    for topic_b in all_topics:
-        refd_score = refd_score_calc(topic_a, topic_b)
-        temp_topic.append(refd_score)
-    all_pairs_refd_value.append(temp_topic)
-
-prereq_a = []
-prereq_b = []
-
-theta = 0.02
-theta_neg = -0.02
-
-for i in range(len(all_topics)):
-    for j in range(len(all_topics)):
-        if all_pairs_refd_value[i][j] > theta:
-            prereq_b.append(all_topics[j])
-            prereq_a.append(all_topics[i])
-        elif all_pairs_refd_value[i][j] < theta_neg:
-            prereq_b.append(all_topics[i])
-            prereq_a.append(all_topics[j])
-        else:
-            continue
-
-prereq_results = {}
-
-for i in range(len(prereq_a)):
-    prereq_results[i] = {
-        "topic_a": prereq_a[i],
-        "topic_b": prereq_b[i]
-    }
+# all_pairs_refd_value = []
+#
+# for topic_a in all_topics:
+#     temp_topic = []
+#     for topic_b in all_topics:
+#         refd_score = refd_score_calc(topic_a, topic_b)
+#         temp_topic.append(refd_score)
+#     all_pairs_refd_value.append(temp_topic)
+#
+# prereq_a = []
+# prereq_b = []
+#
+# theta = 0.02
+# theta_neg = -0.02
+#
+# for i in range(len(all_topics)):
+#     for j in range(len(all_topics)):
+#         if all_pairs_refd_value[i][j] > theta:
+#             prereq_b.append(all_topics[j])
+#             prereq_a.append(all_topics[i])
+#         elif all_pairs_refd_value[i][j] < theta_neg:
+#             prereq_b.append(all_topics[i])
+#             prereq_a.append(all_topics[j])
+#         else:
+#             continue
+#
+# prereq_results = {}
+#
+# for i in range(len(prereq_a)):
+#     prereq_results[i] = {
+#         "topic_a": prereq_a[i],
+#         "topic_b": prereq_b[i]
+#     }
 
 
 # Exporting all results in CSV format
 
-df = pd.DataFrame(columns=['topic_a', 'topic_b'])
-
-for i in range(len(prereq_results)):
-    df = df.append(prereq_results[i], ignore_index=True)
-
-df.to_csv("RefD Implementation/output_data/prereq_matches.csv")
+# df = pd.DataFrame(columns=['topic_a', 'topic_b'])
+#
+# for i in range(len(prereq_results)):
+#     df = df.append(prereq_results[i], ignore_index=True)
+#
+# df.to_csv("RefD Implementation/output_data/prereq_matches.csv")
