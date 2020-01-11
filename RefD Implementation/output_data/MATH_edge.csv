@@ -1,0 +1,76 @@
+,topic_a,topic_b
+0,Algebraic number theory,Abstract algebra
+1,Analytical mechanics,Ordinary differential equation
+2,Mathematical model,Fourier series
+3,Linear programming,Multivariable calculus
+4,Numerical analysis,Matrix (mathematics)
+5,Vector calculus,Calculus
+6,Mathematical statistics,Probability theory
+7,Fourier series,Ordinary differential equation
+8,Analytical mechanics,Partial differential equation
+9,Analytic geometry,Algebra
+10,Differentiable manifold,Topological space
+11,Fourier analysis,Fourier series
+12,Finite element method,Complex analysis
+13,Real analysis,Mathematical analysis
+14,Wavelet,Partial differential equation
+15,Ordinary differential equation,Fourier series
+16,Ordinary differential equation,Calculus
+17,Mathematical analysis,Discrete mathematics
+18,Ordinary differential equation,Vector calculus
+19,Topological space,Topology
+20,Wavelet,Real analysis
+21,Von Neumann algebra,Functional analysis
+22,Linear programming,Matrix (mathematics)
+23,Linear programming,Vector calculus
+24,Differential equation,Calculus
+25,Numerical linear algebra,Matrix (mathematics)
+26,Partial differential equation,Calculus
+27,Commutative algebra,Abstract algebra
+28,Approximation theory,Numerical analysis
+29,Fourier analysis,Partial differential equation
+30,Complex analysis,Real analysis
+31,Computability theory,Mathematical logic
+32,Lie theory,Differentiable manifold
+33,Numerical linear algebra,Numerical analysis
+34,Orthogonal polynomials,Partial differential equation
+35,Orthogonal polynomials,Ordinary differential equation
+36,Numerical analysis,Vector calculus
+37,Statistics,Trigonometry
+38,Matrix (mathematics),Analytic geometry
+39,Numerical linear algebra,Linear algebra
+40,Fourier series,Partial differential equation
+41,Complex analysis,Vector calculus
+42,Complex analysis,Mathematical analysis
+43,Trigonometry,Algebra
+44,Metric (mathematics),Topology
+45,Differential topology,Differentiable manifold
+46,Analytic geometry,Trigonometry
+47,Number theory,Complex analysis
+48,Matrix (mathematics),Calculus
+49,Multivariable calculus,Calculus
+50,C*-algebra,Functional analysis
+51,Probability theory,Mathematical analysis
+52,Differential geometry,Differentiable manifold
+53,Wavelet,Fourier series
+54,Fourier series,Vector calculus
+55,Discrete mathematics,Calculus
+56,Mathematical logic,Abstract algebra
+57,Analytic number theory,Complex analysis
+58,Mathematical statistics,Calculus
+59,Probability theory,Calculus
+60,Stochastic process,Probability theory
+61,Calculus,Analytic geometry
+62,Differential topology,Multivariable calculus
+63,Von Neumann algebra,Group theory
+64,Numerical analysis,Calculus
+65,Von Neumann algebra,Linear algebra
+66,Algebraic geometry,Field (mathematics)
+67,Lie theory,Algebra
+68,Multiscale modeling,Linear algebra
+69,Commutative algebra,Linear algebra
+70,Ergodic theory,Partial differential equation
+71,Finite element method,Matrix (mathematics)
+72,Finite element method,Functional analysis
+73,Ergodic theory,Vector calculus
+74,Complex analysis,Multivariable calculus

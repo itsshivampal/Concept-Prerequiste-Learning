@@ -7,7 +7,7 @@ import os
 # Reading files from Course Dataset for CS
 file1 = "RefD Implementation/RefD_dataset/Course/CS.edges"
 file2 = "RefD Implementation/RefD_dataset/Course/CS.edges_neg"
-prereq_file = "RefD Implementation/output_data/prereq_matches.csv"
+prereq_file = "RefD Implementation/output_data/prereq_CS_refd_equal.csv"
 
 def read_file(file_name):
     file = open(file_name)
@@ -31,7 +31,6 @@ df_cs_edge_neg = read_file(file2)
 
 # Reading calculated prerequisite relation file
 df_prereq_match = pd.read_csv(prereq_file, encoding = "utf-8")
-
 
 def read_csv_file(df):
     topic_pair_list = {}

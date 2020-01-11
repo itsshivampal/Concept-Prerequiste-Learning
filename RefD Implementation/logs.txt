@@ -35,3 +35,9 @@ No of same rows in cs_edge and prereq_cal file:  74
 No of same rows in cs_edge_neg and prereq_cal file:  183
 
 ------------------------------------------------------------------------------------------
+
+
+
+Next Task
+- Think which pair of calculated results you have to take in order to validate your results with exisitng data
+- Make your evaluation metrics for comparing your results

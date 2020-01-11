@@ -1,0 +1,584 @@
+,topic_a,topic_b
+0,Mathematical analysis,Vector calculus
+1,Numerical analysis,Ordinary differential equation
+2,Computability theory,K-theory
+3,Wavelet,Complex analysis
+4,Mathematical model,Mathematical logic
+5,Partial differential equation,General relativity
+6,Topological space,Calculus
+7,Abstract algebra,Lie theory
+8,General relativity,Differential topology
+9,Linear programming,Trigonometry
+10,Coding theory,Mathematical optimization
+11,Ergodic theory,Mathematical model
+12,Multivariable calculus,Set theory
+13,Numerical linear algebra,Commutative algebra
+14,Primality test,Mathematical model
+15,Mathematical optimization,Fourier series
+16,K-theory,Calculus
+17,Orthogonal polynomials,Primality test
+18,Statistics,Commutative algebra
+19,Mathematical logic,Differentiable manifold
+20,Lie theory,Discrete mathematics
+21,Orthogonal polynomials,Number theory
+22,Approximation theory,Functional analysis
+23,Discrete mathematics,Statistics
+24,Wavelet,Topology
+25,Vector calculus,Algebraic topology
+26,Analytical mechanics,Algebraic geometry
+27,Combinatorics,Statistics
+28,Computability theory,Set theory
+29,Abstract algebra,Trigonometry
+30,Differential equation,Stochastic process
+31,Algebra,Vector calculus
+32,Fourier series,Analytical mechanics
+33,Differential geometry,Mathematical optimization
+34,Abstract algebra,Differential equation
+35,Special relativity,Fourier series
+36,K-theory,Ordinary differential equation
+37,Differential geometry,Discrete mathematics
+38,K-theory,Commutative algebra
+39,Differentiable manifold,Linear algebra
+40,Discrete mathematics,Algebra
+41,Number theory,Numerical linear algebra
+42,Discrete mathematics,Fourier series
+43,Complex analysis,Mathematical statistics
+44,Coding theory,Special relativity
+45,Calculus,Stochastic process
+46,Stochastic process,Fourier analysis
+47,Analytic number theory,Statistics
+48,Approximation theory,Multiscale modeling
+49,Von Neumann algebra,Analytic geometry
+50,Factorization,Set theory
+51,Mathematical model,Stochastic process
+52,Algebra,Wavelet
+53,Approximation theory,Fourier series
+54,Topological space,Differential equation
+55,Differential equation,Fourier analysis
+56,Operations research,Lie theory
+57,Fourier series,Numerical linear algebra
+58,Differentiable manifold,Fourier analysis
+59,Trigonometry,Stochastic process
+60,Linear algebra,Real analysis
+61,Mathematical analysis,Analytic geometry
+62,Commutative algebra,Fourier series
+63,Linear programming,C*-algebra
+64,Probability theory,Numerical linear algebra
+65,Mathematical logic,Special relativity
+66,Special relativity,Numerical linear algebra
+67,K-theory,Ergodic theory
+68,Abstract algebra,Factorization
+69,Algebraic geometry,C*-algebra
+70,Lie theory,Mathematical logic
+71,Vector calculus,Topological space
+72,Complex analysis,Stochastic process
+73,Mathematical model,Trigonometry
+74,Calculus,Mathematical statistics
+75,Differentiable manifold,Abstract algebra
+76,Mathematical analysis,Analytic number theory
+77,Real analysis,Multivariable calculus
+78,Algebraic geometry,Algebraic number theory
+79,Ergodic theory,Algebraic number theory
+80,Coding theory,Vector calculus
+81,Analytical mechanics,Mathematical statistics
+82,Stochastic process,Lie theory
+83,Numerical linear algebra,Mathematical logic
+84,Dynamical system,C*-algebra
+85,Numerical analysis,Number theory
+86,Differential geometry,Fourier series
+87,C*-algebra,Stochastic process
+88,Algebra,Discrete mathematics
+89,Discrete mathematics,Algebraic topology
+90,Von Neumann algebra,Number theory
+91,Differentiable manifold,Number theory
+92,Partial differential equation,Topology
+93,Fourier series,General relativity
+94,Ordinary differential equation,Operations research
+95,Lie theory,Mathematical analysis
+96,Commutative algebra,Mathematical statistics
+97,Matrix (mathematics),Numerical analysis
+98,Algebraic number theory,Algebraic topology
+99,Multivariable calculus,Abstract algebra
+100,Functional analysis,K-theory
+101,Primality test,Field (mathematics)
+102,Dynamical system,Trigonometry
+103,Numerical linear algebra,Mathematical analysis
+104,C*-algebra,Field (mathematics)
+105,Linear algebra,Mathematical logic
+106,Algebraic number theory,Topology
+107,Number theory,Operations research
+108,Calculus,Discrete mathematics
+109,Mathematical analysis,Stochastic process
+110,K-theory,Factorization
+111,Calculus,Algebraic number theory
+112,K-theory,Real analysis
+113,Multiscale modeling,Algebraic geometry
+114,Numerical analysis,Special relativity
+115,Trigonometry,Coding theory
+116,Number theory,Field (mathematics)
+117,Lie theory,Wavelet
+118,Topological space,Mathematical logic
+119,Matrix (mathematics),Algebraic geometry
+120,Factorization,Complex analysis
+121,Number theory,Probability theory
+122,Metric (mathematics),General relativity
+123,Topology,Commutative algebra
+124,Trigonometry,Finite element method
+125,Primality test,Fourier analysis
+126,Vector calculus,Operations research
+127,Metric (mathematics),Statistics
+128,Algebraic topology,Statistics
+129,Numerical linear algebra,Complex analysis
+130,Special relativity,K-theory
+131,Commutative algebra,Differentiable manifold
+132,Numerical analysis,Algebraic geometry
+133,Multiscale modeling,Matrix (mathematics)
+134,Wavelet,Analytic number theory
+135,Differential topology,Mathematical analysis
+136,Algebraic number theory,Discrete mathematics
+137,Primality test,Von Neumann algebra
+138,Numerical analysis,Differential topology
+139,Matrix (mathematics),Statistics
+140,Differential geometry,Combinatorics
+141,Topological space,Primality test
+142,Stochastic process,Real analysis
+143,Differential equation,Finite element method
+144,Combinatorics,Topology
+145,Analytic number theory,Stochastic process
+146,Primality test,Group theory
+147,Linear programming,Von Neumann algebra
+148,Field (mathematics),Graph theory
+149,Algebra,Numerical analysis
+150,Algebra,Statistics
+151,Mathematical logic,Functional analysis
+152,Analytic geometry,Factorization
+153,Number theory,Von Neumann algebra
+154,Analytic number theory,Mathematical analysis
+155,Finite element method,Analytical mechanics
+156,Partial differential equation,Abstract algebra
+157,K-theory,Lie theory
+158,Algebraic topology,Mathematical model
+159,Orthogonal polynomials,Lie theory
+160,Calculus,General relativity
+161,Numerical analysis,Graph theory
+162,Orthogonal polynomials,Special relativity
+163,Graph theory,Algebraic topology
+164,Calculus,C*-algebra
+165,Mathematical statistics,Wavelet
+166,Algebra,Coding theory
+167,Von Neumann algebra,Calculus
+168,Operations research,Von Neumann algebra
+169,Analytic number theory,Matrix (mathematics)
+170,Primality test,Matrix (mathematics)
+171,Mathematical analysis,Finite element method
+172,Finite element method,Fourier series
+173,Calculus,Mathematical model
+174,Primality test,K-theory
+175,Fourier series,Functional analysis
+176,Topology,Metric (mathematics)
+177,Lie theory,Mathematical optimization
+178,Approximation theory,Group theory
+179,Algebraic topology,Operations research
+180,Number theory,Statistics
+181,Approximation theory,Ordinary differential equation
+182,Algebraic topology,Metric (mathematics)
+183,Analytical mechanics,K-theory
+184,Mathematical model,Topology
+185,Fourier analysis,Combinatorics
+186,Fourier analysis,Dynamical system
+187,Numerical linear algebra,Computability theory
+188,Differential geometry,Coding theory
+189,Dynamical system,Set theory
+190,Coding theory,Orthogonal polynomials
+191,Field (mathematics),Ordinary differential equation
+192,Partial differential equation,Trigonometry
+193,Calculus,Primality test
+194,Algebraic topology,Primality test
+195,Special relativity,Differential geometry
+196,Algebraic topology,Multivariable calculus
+197,Calculus,Algebraic geometry
+198,Metric (mathematics),Complex analysis
+199,Statistics,Primality test
+200,Mathematical optimization,Differential topology
+201,Mathematical logic,Algebraic number theory
+202,Vector calculus,Fourier analysis
+203,Analytic geometry,Discrete mathematics
+204,Algebraic number theory,Complex analysis
+205,Primality test,Algebraic topology
+206,Linear programming,Commutative algebra
+207,Coding theory,Probability theory
+208,Fourier series,Mathematical statistics
+209,Linear algebra,Analytic number theory
+210,Algebraic number theory,Numerical linear algebra
+211,Group theory,Multivariable calculus
+212,Metric (mathematics),Real analysis
+213,Finite element method,Primality test
+214,Functional analysis,Discrete mathematics
+215,Dynamical system,Orthogonal polynomials
+216,Lie theory,Algebraic number theory
+217,Primality test,Operations research
+218,Functional analysis,Combinatorics
+219,Mathematical model,Commutative algebra
+220,Topology,Number theory
+221,Algebraic topology,Vector calculus
+222,Combinatorics,Fourier analysis
+223,Commutative algebra,Coding theory
+224,Computability theory,Mathematical analysis
+225,Statistics,Operations research
+226,Number theory,Trigonometry
+227,General relativity,K-theory
+228,Differentiable manifold,Group theory
+229,Dynamical system,Topological space
+230,Orthogonal polynomials,Complex analysis
+231,Partial differential equation,Factorization
+232,Finite element method,Computability theory
+233,Algebraic geometry,Statistics
+234,Lie theory,Stochastic process
+235,Topology,Probability theory
+236,Algebraic number theory,Primality test
+237,Topological space,Mathematical optimization
+238,Topological space,Number theory
+239,Differential equation,Topological space
+240,Orthogonal polynomials,Statistics
+241,Special relativity,Ergodic theory
+242,Matrix (mathematics),K-theory
+243,Probability theory,Ergodic theory
+244,Field (mathematics),Probability theory
+245,Statistics,Coding theory
+246,Field (mathematics),General relativity
+247,Probability theory,Algebraic geometry
+248,Mathematical logic,Number theory
+249,Metric (mathematics),Finite element method
+250,Lie theory,Combinatorics
+251,Analytic geometry,Functional analysis
+252,Analytic geometry,Coding theory
+253,K-theory,Finite element method
+254,Group theory,Vector calculus
+255,Fourier series,Differential equation
+256,Field (mathematics),Analytical mechanics
+257,Algebraic number theory,Commutative algebra
+258,Stochastic process,Combinatorics
+259,Mathematical model,Topological space
+260,Operations research,Differentiable manifold
+261,Primality test,Set theory
+262,Lie theory,Fourier analysis
+263,Abstract algebra,Mathematical statistics
+264,Finite element method,Fourier analysis
+265,Group theory,Analytical mechanics
+266,Probability theory,Graph theory
+267,Multivariable calculus,Field (mathematics)
+268,Differentiable manifold,Analytic number theory
+269,Mathematical optimization,Coding theory
+270,Algebraic number theory,Special relativity
+271,Numerical analysis,Combinatorics
+272,Special relativity,Linear programming
+273,Primality test,Finite element method
+274,Approximation theory,Algebraic number theory
+275,Statistics,Fourier analysis
+276,Statistics,Mathematical model
+277,Vector calculus,Commutative algebra
+278,Linear programming,Combinatorics
+279,Numerical analysis,Stochastic process
+280,Mathematical logic,Wavelet
+281,Algebra,Stochastic process
+282,Linear programming,K-theory
+283,C*-algebra,Mathematical optimization
+284,Matrix (mathematics),General relativity
+285,Matrix (mathematics),Linear programming
+286,Mathematical model,K-theory
+287,Abstract algebra,Stochastic process
+288,Algebraic geometry,Numerical linear algebra
+289,Number theory,Coding theory
+290,Matrix (mathematics),Algebra
+291,Fourier analysis,Metric (mathematics)
+292,Probability theory,Primality test
+293,Factorization,Wavelet
+294,Complex analysis,Differential equation
+295,Computability theory,Differential equation
+296,Trigonometry,Real analysis
+297,Factorization,Fourier series
+298,Multivariable calculus,Wavelet
+299,Differential topology,Approximation theory
+300,Real analysis,Discrete mathematics
+301,Differentiable manifold,Factorization
+302,Ergodic theory,Analytic geometry
+303,Multiscale modeling,Special relativity
+304,Partial differential equation,Linear algebra
+305,Fourier analysis,Algebra
+306,Abstract algebra,Graph theory
+307,Trigonometry,Topological space
+308,Statistics,Ordinary differential equation
+309,Differential geometry,Set theory
+310,Coding theory,Fourier analysis
+311,Algebraic number theory,Stochastic process
+312,Algebra,Differential topology
+313,Discrete mathematics,Linear programming
+314,Topology,Set theory
+315,C*-algebra,Trigonometry
+316,Field (mathematics),Matrix (mathematics)
+317,Primality test,Trigonometry
+318,Computability theory,Von Neumann algebra
+319,Dynamical system,Differential topology
+320,Fourier analysis,Analytic number theory
+321,Trigonometry,Analytic geometry
+322,Numerical linear algebra,Special relativity
+323,Mathematical logic,Multiscale modeling
+324,Wavelet,Graph theory
+325,Vector calculus,Numerical linear algebra
+326,Group theory,Linear programming
+327,Analytic number theory,Algebraic topology
+328,Algebraic number theory,Probability theory
+329,Algebra,Mathematical logic
+330,Vector calculus,Probability theory
+331,Functional analysis,Algebra
+332,Mathematical logic,Finite element method
+333,Number theory,Wavelet
+334,Finite element method,Operations research
+335,Multiscale modeling,Mathematical optimization
+336,Ergodic theory,Mathematical optimization
+337,Orthogonal polynomials,Combinatorics
+338,Differential equation,Number theory
+339,Ergodic theory,Discrete mathematics
+340,Algebra,Set theory
+341,Wavelet,Factorization
+342,Numerical analysis,Coding theory
+343,Von Neumann algebra,Matrix (mathematics)
+344,Finite element method,C*-algebra
+345,Mathematical analysis,General relativity
+346,Metric (mathematics),Orthogonal polynomials
+347,Orthogonal polynomials,Stochastic process
+348,Dynamical system,Mathematical model
+349,Mathematical optimization,Dynamical system
+350,Analytical mechanics,Operations research
+351,Ordinary differential equation,Linear algebra
+352,Commutative algebra,Analytic number theory
+353,Probability theory,Special relativity
+354,Real analysis,Field (mathematics)
+355,Analytical mechanics,Number theory
+356,Analytical mechanics,Topology
+357,Operations research,General relativity
+358,Differential geometry,Approximation theory
+359,Algebraic topology,Ergodic theory
+360,Approximation theory,Combinatorics
+361,Mathematical analysis,Lie theory
+362,Ordinary differential equation,K-theory
+363,Lie theory,Differential topology
+364,Factorization,Differential geometry
+365,Vector calculus,Functional analysis
+366,Set theory,Mathematical statistics
+367,Analytic number theory,Multiscale modeling
+368,Complex analysis,Computability theory
+369,Statistics,Computability theory
+370,Partial differential equation,Dynamical system
+371,Computability theory,Analytic number theory
+372,Set theory,Differential equation
+373,Orthogonal polynomials,Factorization
+374,Mathematical logic,Trigonometry
+375,Graph theory,Set theory
+376,Ergodic theory,Group theory
+377,Analytic geometry,Primality test
+378,Commutative algebra,Functional analysis
+379,Lie theory,Ergodic theory
+380,Wavelet,Computability theory
+381,Complex analysis,C*-algebra
+382,Mathematical statistics,Lie theory
+383,Topology,Mathematical optimization
+384,Matrix (mathematics),Primality test
+385,Computability theory,Dynamical system
+386,Stochastic process,Trigonometry
+387,Multiscale modeling,Differentiable manifold
+388,Dynamical system,Multiscale modeling
+389,Special relativity,Topological space
+390,Commutative algebra,Computability theory
+391,Metric (mathematics),Calculus
+392,Fourier series,Multivariable calculus
+393,Fourier analysis,Complex analysis
+394,Coding theory,Algebraic topology
+395,Analytic number theory,Primality test
+396,Stochastic process,Abstract algebra
+397,Group theory,Primality test
+398,Differentiable manifold,Set theory
+399,Number theory,Mathematical model
+400,Multivariable calculus,Topology
+401,Analytical mechanics,Combinatorics
+402,Commutative algebra,Differential equation
+403,Real analysis,Operations research
+404,Ordinary differential equation,Numerical linear algebra
+405,Factorization,Abstract algebra
+406,Matrix (mathematics),Numerical linear algebra
+407,Multiscale modeling,Stochastic process
+408,Primality test,Combinatorics
+409,Computability theory,Discrete mathematics
+410,Commutative algebra,Calculus
+411,Analytical mechanics,Finite element method
+412,Differential geometry,Trigonometry
+413,Real analysis,Numerical analysis
+414,Field (mathematics),Factorization
+415,Numerical analysis,Finite element method
+416,Complex analysis,Coding theory
+417,General relativity,Trigonometry
+418,Algebraic geometry,Computability theory
+419,Wavelet,Primality test
+420,Fourier analysis,Linear programming
+421,Numerical linear algebra,Mathematical model
+422,Lie theory,Trigonometry
+423,Numerical analysis,Dynamical system
+424,Set theory,Factorization
+425,Group theory,Probability theory
+426,Functional analysis,Primality test
+427,Mathematical model,Differentiable manifold
+428,Commutative algebra,Matrix (mathematics)
+429,Calculus,Mathematical optimization
+430,Ergodic theory,Algebraic geometry
+431,C*-algebra,Algebraic topology
+432,Mathematical analysis,Dynamical system
+433,Mathematical statistics,Linear algebra
+434,Multiscale modeling,Mathematical statistics
+435,Set theory,Differentiable manifold
+436,Special relativity,Numerical analysis
+437,Group theory,Computability theory
+438,Von Neumann algebra,Ergodic theory
+439,Vector calculus,Dynamical system
+440,Operations research,Combinatorics
+441,C*-algebra,Multiscale modeling
+442,Topology,Algebraic number theory
+443,Mathematical analysis,Number theory
+444,Calculus,Real analysis
+445,Analytical mechanics,Set theory
+446,Fourier series,Set theory
+447,Metric (mathematics),Topological space
+448,K-theory,Analytic number theory
+449,Multivariable calculus,Stochastic process
+450,Complex analysis,Graph theory
+451,Coding theory,Complex analysis
+452,Ergodic theory,Mathematical logic
+453,Approximation theory,Discrete mathematics
+454,Finite element method,Mathematical statistics
+455,Field (mathematics),Numerical analysis
+456,Operations research,Primality test
+457,Primality test,Differential geometry
+458,Von Neumann algebra,Numerical linear algebra
+459,Real analysis,Abstract algebra
+460,Mathematical analysis,Special relativity
+461,Complex analysis,Functional analysis
+462,Differentiable manifold,Topology
+463,Probability theory,Abstract algebra
+464,Statistics,Lie theory
+465,Primality test,Statistics
+466,Lie theory,Group theory
+467,Differentiable manifold,Computability theory
+468,Operations research,Graph theory
+469,Mathematical logic,Analytic number theory
+470,Von Neumann algebra,Stochastic process
+471,Complex analysis,Linear programming
+472,Von Neumann algebra,Linear programming
+473,Differential geometry,Group theory
+474,Dynamical system,Combinatorics
+475,Topology,Topological space
+476,Partial differential equation,Mathematical optimization
+477,Special relativity,Statistics
+478,Graph theory,Approximation theory
+479,Operations research,Ergodic theory
+480,K-theory,Field (mathematics)
+481,Real analysis,Matrix (mathematics)
+482,Abstract algebra,Set theory
+483,Finite element method,Algebra
+484,Mathematical optimization,Primality test
+485,Matrix (mathematics),Mathematical logic
+486,Topology,Complex analysis
+487,Approximation theory,Linear programming
+488,Discrete mathematics,Vector calculus
+489,Statistics,Combinatorics
+490,Partial differential equation,Computability theory
+491,Lie theory,Coding theory
+492,Ergodic theory,Matrix (mathematics)
+493,Multiscale modeling,Combinatorics
+494,Number theory,Topology
+495,Special relativity,Metric (mathematics)
+496,Analytic number theory,Differential topology
+497,Trigonometry,Matrix (mathematics)
+498,Linear algebra,Multiscale modeling
+499,Linear programming,Differentiable manifold
+500,Mathematical analysis,Mathematical model
+501,Analytic number theory,Analytical mechanics
+502,Multivariable calculus,Metric (mathematics)
+503,Multivariable calculus,Algebraic number theory
+504,Factorization,Topology
+505,Ergodic theory,Operations research
+506,Partial differential equation,Differential equation
+507,C*-algebra,Coding theory
+508,Real analysis,Metric (mathematics)
+509,Commutative algebra,General relativity
+510,Partial differential equation,Primality test
+511,Real analysis,Number theory
+512,Linear algebra,Topological space
+513,Set theory,Metric (mathematics)
+514,Mathematical statistics,Finite element method
+515,Field (mathematics),Discrete mathematics
+516,Vector calculus,Coding theory
+517,General relativity,Metric (mathematics)
+518,Wavelet,Discrete mathematics
+519,Partial differential equation,Set theory
+520,Orthogonal polynomials,Set theory
+521,Discrete mathematics,Mathematical analysis
+522,Primality test,Calculus
+523,Operations research,Real analysis
+524,Multiscale modeling,Calculus
+525,Partial differential equation,Commutative algebra
+526,Metric (mathematics),Probability theory
+527,Mathematical analysis,Ordinary differential equation
+528,Linear algebra,Topology
+529,Approximation theory,Commutative algebra
+530,Analytic geometry,Differentiable manifold
+531,Matrix (mathematics),Vector calculus
+532,Mathematical logic,Analytical mechanics
+533,Probability theory,Complex analysis
+534,Discrete mathematics,K-theory
+535,Multiscale modeling,Differential geometry
+536,Numerical analysis,Linear programming
+537,Vector calculus,Orthogonal polynomials
+538,Abstract algebra,Primality test
+539,Mathematical optimization,Mathematical analysis
+540,Finite element method,Coding theory
+541,Coding theory,Linear programming
+542,Commutative algebra,Finite element method
+543,Numerical linear algebra,C*-algebra
+544,Topological space,Lie theory
+545,Combinatorics,Algebra
+546,Linear algebra,Differential geometry
+547,Functional analysis,Fourier analysis
+548,Differentiable manifold,Graph theory
+549,Differential equation,Mathematical optimization
+550,Differentiable manifold,Von Neumann algebra
+551,Ordinary differential equation,Group theory
+552,Analytic geometry,Vector calculus
+553,Commutative algebra,Analytical mechanics
+554,Group theory,Stochastic process
+555,Operations research,Algebraic topology
+556,Complex analysis,K-theory
+557,Functional analysis,Statistics
+558,Computability theory,Commutative algebra
+559,Stochastic process,General relativity
+560,Trigonometry,Abstract algebra
+561,Mathematical logic,Fourier analysis
+562,Differentiable manifold,Partial differential equation
+563,Discrete mathematics,Metric (mathematics)
+564,Mathematical optimization,Fourier analysis
+565,Differential geometry,Primality test
+566,Topological space,Differential geometry
+567,Stochastic process,Algebra
+568,Mathematical logic,Partial differential equation
+569,Von Neumann algebra,Graph theory
+570,Abstract algebra,Topological space
+571,Complex analysis,Algebraic topology
+572,Field (mathematics),Calculus
+573,Mathematical model,General relativity
+574,Graph theory,Abstract algebra
+575,General relativity,Approximation theory
+576,Real analysis,Functional analysis
+577,Complex analysis,Set theory
+578,Differential equation,Wavelet
+579,Partial differential equation,K-theory
+580,Fourier analysis,Differential equation
+581,Mathematical optimization,Metric (mathematics)
+582,Approximation theory,Stochastic process
