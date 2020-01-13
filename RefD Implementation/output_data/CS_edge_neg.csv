@@ -81,7 +81,6 @@
 79,Parallel processing (DSP implementation),Computer security
 80,Computer-aided software engineering,Software analytics
 81,Wireless network,Computer-aided software engineering
-82,Algorithm,Knowledge management
 83,Information management,Software project management
 84,Software metric,Data integration
 85,Software testing,Theory of computation
@@ -401,7 +400,6 @@
 399,Natural language processing,Wireless network
 400,Robotics,Software engineering
 401,Network security,Broadband networks
-402,Algorithm,Graphical model
 403,Artificial intelligence,Cryptography
 404,Programming language,Data-intensive computing
 405,Cryptography,Software analytics
@@ -424,7 +422,6 @@
 422,Parallel processing (DSP implementation),Mobile app development
 423,Software engineering,Computer graphics
 424,Compiler,Software quality management
-425,Software quality management,Algorithm
 426,Parallel computing,Distributed computing
 427,Information management,Analysis of algorithms
 428,Computer-aided software engineering,Software architecture
@@ -436,7 +433,6 @@
 434,Software project management,Graphical model
 435,Programming language,Natural language processing
 436,Algorithm,Internet protocol suite
-437,Algorithm,Information retrieval
 438,Test automation,Software analytics
 439,Theory of computation,Graphical model
 440,Algorithm,Object-oriented programming
@@ -553,7 +549,6 @@
 551,Graphical model,Data integration
 552,Data structure,Social network analysis
 553,Object-oriented design,Broadband networks
-554,Algorithm,Information management
 555,Information retrieval,Distributed computing
 556,Computational geometry,Object-oriented programming
 557,Computational linguistics,Graphical model

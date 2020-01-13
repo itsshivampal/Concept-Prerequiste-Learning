@@ -1,0 +1,2743 @@
+,topic_a,topic_b
+0,Data-intensive computing,Parallel computing
+1,Data-intensive computing,Modeling language
+2,Data-intensive computing,Cloud computing
+3,Data-intensive computing,Software testing
+4,Data-intensive computing,Data structure
+5,Data-intensive computing,Assembly language
+6,Data-intensive computing,Knowledge management
+7,Data-intensive computing,Computer graphics
+8,Data-intensive computing,Computational geometry
+9,Data-intensive computing,Algorithm
+10,Data-intensive computing,Object-oriented programming
+11,Data-intensive computing,Machine learning
+12,Data-intensive computing,Software project management
+13,Data-intensive computing,Graphical model
+14,Data-intensive computing,Data integration
+15,Data-intensive computing,Software architecture
+16,Data-intensive computing,Compiler
+17,Data-intensive computing,Distributed computing
+18,Data-intensive computing,Cryptography
+19,Data-intensive computing,Artificial intelligence
+20,Data-intensive computing,Operating system
+21,Data-intensive computing,Data warehouse
+22,Data-intensive computing,Computer architecture
+23,Data-intensive computing,Software development
+24,Data-intensive computing,Programming language
+25,Data-intensive computing,Theory of computation
+26,Data-intensive computing,Computer network
+27,Data-intensive computing,Analysis of algorithms
+28,Data-intensive computing,Data mining
+29,Data-intensive computing,Computer security
+30,Data-intensive computing,Software engineering
+31,Data-intensive computing,Database
+32,Data-intensive computing,Parallel computing
+33,Modeling language,Parallel computing
+34,Cloud computing,Parallel computing
+35,Software testing,Parallel computing
+36,Wireless network,Parallel computing
+37,Data structure,Parallel computing
+38,Assembly language,Parallel computing
+39,Network security,Parallel computing
+40,Knowledge management,Parallel computing
+41,Object-oriented analysis and design,Parallel computing
+42,Parallel computing,Computer graphics
+43,Parallel computing,Algorithm
+44,Object-oriented programming,Parallel computing
+45,Software project management,Parallel computing
+46,Graphical model,Parallel computing
+47,Data integration,Parallel computing
+48,Software architecture,Parallel computing
+49,Parallel computing,Compiler
+50,Distributed object,Parallel computing
+51,Information security,Parallel computing
+52,Translator (computing),Parallel computing
+53,Distributed computing,Parallel computing
+54,Cryptography,Parallel computing
+55,Broadband networks,Parallel computing
+56,Artificial intelligence,Parallel computing
+57,Natural language processing,Parallel computing
+58,Computer vision,Parallel computing
+59,Object-oriented design,Parallel computing
+60,Combinatorial optimization,Parallel computing
+61,Social network analysis,Parallel computing
+62,Computational linguistics,Parallel computing
+63,Network service,Parallel computing
+64,Game theory,Parallel computing
+65,Computer-aided software engineering,Parallel computing
+66,Data warehouse,Parallel computing
+67,Computer architecture,Parallel computing
+68,Parallel computing,Software development
+69,Parallel computing,Programming language
+70,Parallel computing,Theory of computation
+71,Parallel computing,Computer network
+72,Software metric,Parallel computing
+73,Analysis of algorithms,Parallel computing
+74,Internet protocol suite,Parallel computing
+75,Data mining,Parallel computing
+76,Software analytics,Parallel computing
+77,Discrete mathematics,Parallel computing
+78,Test automation,Parallel computing
+79,Computer security,Parallel computing
+80,Software engineering,Parallel computing
+81,Information retrieval,Parallel computing
+82,Robotics,Parallel computing
+83,Microarchitecture,Parallel computing
+84,Data-intensive computing,Modeling language
+85,Modeling language,Parallel computing
+86,Cloud computing,Modeling language
+87,Modeling language,Software testing
+88,Wireless network,Modeling language
+89,Modeling language,Data structure
+90,Assembly language,Modeling language
+91,Network security,Modeling language
+92,Object-oriented analysis and design,Modeling language
+93,Modeling language,Computer graphics
+94,Computational geometry,Modeling language
+95,Modeling language,Algorithm
+96,Modeling language,Object-oriented programming
+97,Machine learning,Modeling language
+98,Software project management,Modeling language
+99,Graphical model,Modeling language
+100,Data integration,Modeling language
+101,Modeling language,Software architecture
+102,Modeling language,Compiler
+103,Distributed object,Modeling language
+104,Information security,Modeling language
+105,Distributed computing,Modeling language
+106,Cryptography,Modeling language
+107,Broadband networks,Modeling language
+108,Natural language processing,Modeling language
+109,Modeling language,Computer vision
+110,Object-oriented design,Modeling language
+111,Combinatorial optimization,Modeling language
+112,Social network analysis,Modeling language
+113,Computational linguistics,Modeling language
+114,Network service,Modeling language
+115,Game theory,Modeling language
+116,Computer-aided software engineering,Modeling language
+117,Data warehouse,Modeling language
+118,Modeling language,Computer architecture
+119,Modeling language,Software development
+120,Modeling language,Programming language
+121,Modeling language,Theory of computation
+122,Modeling language,Computer network
+123,Software metric,Modeling language
+124,Analysis of algorithms,Modeling language
+125,Internet protocol suite,Modeling language
+126,Data mining,Modeling language
+127,Software analytics,Modeling language
+128,Discrete mathematics,Modeling language
+129,Test automation,Modeling language
+130,Computer security,Modeling language
+131,Modeling language,Software engineering
+132,Information retrieval,Modeling language
+133,Modeling language,Database
+134,Robotics,Modeling language
+135,Microarchitecture,Modeling language
+136,Mobile app development,Cloud computing
+137,Mobile app development,Computer graphics
+138,Mobile app development,Algorithm
+139,Mobile app development,Graphical model
+140,Mobile app development,Compiler
+141,Mobile app development,Distributed computing
+142,Mobile app development,Operating system
+143,Mobile app development,Computer architecture
+144,Mobile app development,Computer network
+145,Mobile app development,Database
+146,Data-intensive computing,Cloud computing
+147,Cloud computing,Parallel computing
+148,Cloud computing,Modeling language
+149,Mobile app development,Cloud computing
+150,Cloud computing,Wireless network
+151,Cloud computing,Data structure
+152,Assembly language,Cloud computing
+153,Cloud computing,Network security
+154,Parallel processing (DSP implementation),Cloud computing
+155,Knowledge management,Cloud computing
+156,Object-oriented analysis and design,Cloud computing
+157,Cloud computing,Computer graphics
+158,Cloud computing,Computational geometry
+159,Cloud computing,Algorithm
+160,Cloud computing,Object-oriented programming
+161,Cloud computing,Machine learning
+162,Cloud computing,Software project management
+163,Cloud computing,Graphical model
+164,Data integration,Cloud computing
+165,Cloud computing,Software architecture
+166,Compiler,Cloud computing
+167,Distributed object,Cloud computing
+168,Cloud computing,Information security
+169,Cloud computing,Distributed computing
+170,Cloud computing,Cryptography
+171,Cloud computing,Artificial intelligence
+172,Cloud computing,Natural language processing
+173,Cloud computing,Computer vision
+174,Cloud computing,Object-oriented design
+175,Cloud computing,Combinatorial optimization
+176,Cloud computing,Social network analysis
+177,Computational linguistics,Cloud computing
+178,Cloud computing,Network service
+179,Cloud computing,Operating system
+180,Computer-aided software engineering,Cloud computing
+181,Data warehouse,Cloud computing
+182,Systems programming,Cloud computing
+183,Cloud computing,Computer architecture
+184,Cloud computing,Software development
+185,Cloud computing,Programming language
+186,Cloud computing,Theory of computation
+187,Cloud computing,Computer network
+188,Cloud computing,Analysis of algorithms
+189,Cloud computing,Data mining
+190,Cloud computing,Discrete mathematics
+191,Test automation,Cloud computing
+192,Cloud computing,Computer security
+193,Cloud computing,Software engineering
+194,Cloud computing,Information retrieval
+195,Cloud computing,Database
+196,Cloud computing,Robotics
+197,Microarchitecture,Cloud computing
+198,Data-intensive computing,Software testing
+199,Software testing,Parallel computing
+200,Modeling language,Software testing
+201,Software testing,Wireless network
+202,Software testing,Data structure
+203,Assembly language,Software testing
+204,Software testing,Network security
+205,Software testing,Knowledge management
+206,Object-oriented analysis and design,Software testing
+207,Software testing,Computer graphics
+208,Software testing,Computational geometry
+209,Software testing,Algorithm
+210,Object-oriented programming,Software testing
+211,Software testing,Machine learning
+212,Software project management,Software testing
+213,Software testing,Graphical model
+214,Software testing,Data integration
+215,Software architecture,Software testing
+216,Software testing,Compiler
+217,Distributed object,Software testing
+218,Software testing,Information security
+219,Software testing,Distributed computing
+220,Software testing,Cryptography
+221,Software testing,Artificial intelligence
+222,Software testing,Natural language processing
+223,Software testing,Computer vision
+224,Object-oriented design,Software testing
+225,Combinatorial optimization,Software testing
+226,Software testing,Social network analysis
+227,Software testing,Network service
+228,Software testing,Operating system
+229,Software testing,Game theory
+230,Software testing,Information management
+231,Computer-aided software engineering,Software testing
+232,Software testing,Data warehouse
+233,Software testing,Computer architecture
+234,Software testing,Software development
+235,Software testing,Programming language
+236,Software testing,Theory of computation
+237,Software testing,Computer network
+238,Software metric,Software testing
+239,Software testing,Analysis of algorithms
+240,Software testing,Internet protocol suite
+241,Software testing,Data mining
+242,Software analytics,Software testing
+243,Software testing,Discrete mathematics
+244,Test automation,Software testing
+245,Software testing,Computer security
+246,Software testing,Software engineering
+247,Software testing,Information retrieval
+248,Software testing,Database
+249,Software testing,Robotics
+250,Software testing,Microarchitecture
+251,Wireless network,Parallel computing
+252,Wireless network,Modeling language
+253,Cloud computing,Wireless network
+254,Software testing,Wireless network
+255,Wireless network,Network security
+256,Wireless network,Computer graphics
+257,Wireless network,Computational geometry
+258,Wireless network,Algorithm
+259,Wireless network,Machine learning
+260,Wireless network,Compiler
+261,Distributed object,Wireless network
+262,Wireless network,Information security
+263,Wireless network,Distributed computing
+264,Wireless network,Cryptography
+265,Broadband networks,Wireless network
+266,Wireless network,Artificial intelligence
+267,Wireless network,Natural language processing
+268,Wireless network,Computer vision
+269,Wireless network,Combinatorial optimization
+270,Wireless network,Social network analysis
+271,Computational linguistics,Wireless network
+272,Wireless network,Network service
+273,Wireless network,Operating system
+274,Wireless network,Computer architecture
+275,Wireless network,Software development
+276,Wireless network,Programming language
+277,Wireless network,Theory of computation
+278,Wireless network,Computer network
+279,Wireless network,Analysis of algorithms
+280,Internet protocol suite,Wireless network
+281,Wireless network,Data mining
+282,Wireless network,Discrete mathematics
+283,Wireless network,Computer security
+284,Software engineering,Wireless network
+285,Wireless network,Information retrieval
+286,Wireless network,Database
+287,Data-intensive computing,Data structure
+288,Data structure,Parallel computing
+289,Modeling language,Data structure
+290,Cloud computing,Data structure
+291,Software testing,Data structure
+292,Data structure,Network security
+293,Knowledge management,Data structure
+294,Object-oriented analysis and design,Data structure
+295,Computer graphics,Data structure
+296,Data structure,Computational geometry
+297,Data structure,Algorithm
+298,Data structure,Object-oriented programming
+299,Data structure,Machine learning
+300,Software project management,Data structure
+301,Data integration,Data structure
+302,Software architecture,Data structure
+303,Data structure,Compiler
+304,Distributed object,Data structure
+305,Information security,Data structure
+306,Translator (computing),Data structure
+307,Distributed computing,Data structure
+308,Data structure,Cryptography
+309,Data structure,Artificial intelligence
+310,Data structure,Natural language processing
+311,Computer vision,Data structure
+312,Object-oriented design,Data structure
+313,Combinatorial optimization,Data structure
+314,Social network analysis,Data structure
+315,Computational linguistics,Data structure
+316,Network service,Data structure
+317,Data structure,Operating system
+318,Game theory,Data structure
+319,Information management,Data structure
+320,Computer-aided software engineering,Data structure
+321,Data warehouse,Data structure
+322,Data structure,Computer architecture
+323,Data structure,Software development
+324,Data structure,Programming language
+325,Theory of computation,Data structure
+326,Data structure,Computer network
+327,Software metric,Data structure
+328,Data structure,Analysis of algorithms
+329,Data mining,Data structure
+330,Software analytics,Data structure
+331,Discrete mathematics,Data structure
+332,Test automation,Data structure
+333,Computer security,Data structure
+334,Data structure,Software engineering
+335,Information retrieval,Data structure
+336,Data structure,Database
+337,Microarchitecture,Data structure
+338,Data-intensive computing,Assembly language
+339,Assembly language,Parallel computing
+340,Assembly language,Modeling language
+341,Assembly language,Cloud computing
+342,Assembly language,Software testing
+343,Assembly language,Network security
+344,Assembly language,Computer graphics
+345,Assembly language,Computational geometry
+346,Assembly language,Algorithm
+347,Assembly language,Object-oriented programming
+348,Assembly language,Machine learning
+349,Assembly language,Software architecture
+350,Assembly language,Compiler
+351,Distributed object,Assembly language
+352,Assembly language,Information security
+353,Translator (computing),Assembly language
+354,Assembly language,Distributed computing
+355,Assembly language,Cryptography
+356,Assembly language,Artificial intelligence
+357,Assembly language,Natural language processing
+358,Assembly language,Computer vision
+359,Object-oriented design,Assembly language
+360,Computational linguistics,Assembly language
+361,Assembly language,Network service
+362,Assembly language,Operating system
+363,Data warehouse,Assembly language
+364,Assembly language,Computer architecture
+365,Assembly language,Software development
+366,Assembly language,Programming language
+367,Assembly language,Theory of computation
+368,Assembly language,Computer network
+369,Assembly language,Analysis of algorithms
+370,Assembly language,Data mining
+371,Assembly language,Discrete mathematics
+372,Test automation,Assembly language
+373,Assembly language,Computer security
+374,Assembly language,Software engineering
+375,Assembly language,Information retrieval
+376,Assembly language,Database
+377,Microarchitecture,Assembly language
+378,Network security,Parallel computing
+379,Network security,Modeling language
+380,Cloud computing,Network security
+381,Software testing,Network security
+382,Wireless network,Network security
+383,Data structure,Network security
+384,Assembly language,Network security
+385,Knowledge management,Network security
+386,Object-oriented analysis and design,Network security
+387,Network security,Computer graphics
+388,Network security,Computational geometry
+389,Network security,Algorithm
+390,Object-oriented programming,Network security
+391,Network security,Machine learning
+392,Software project management,Network security
+393,Graphical model,Network security
+394,Data integration,Network security
+395,Software architecture,Network security
+396,Network security,Compiler
+397,Distributed object,Network security
+398,Network security,Information security
+399,Network security,Distributed computing
+400,Network security,Cryptography
+401,Broadband networks,Network security
+402,Network security,Artificial intelligence
+403,Network security,Natural language processing
+404,Network security,Computer vision
+405,Combinatorial optimization,Network security
+406,Social network analysis,Network security
+407,Computational linguistics,Network security
+408,Network security,Network service
+409,Network security,Operating system
+410,Game theory,Network security
+411,Computer-aided software engineering,Network security
+412,Data warehouse,Network security
+413,Network security,Computer architecture
+414,Network security,Software development
+415,Network security,Programming language
+416,Network security,Theory of computation
+417,Network security,Computer network
+418,Software metric,Network security
+419,Network security,Analysis of algorithms
+420,Internet protocol suite,Network security
+421,Network security,Data mining
+422,Software analytics,Network security
+423,Network security,Discrete mathematics
+424,Test automation,Network security
+425,Network security,Computer security
+426,Software engineering,Network security
+427,Network security,Information retrieval
+428,Network security,Database
+429,Robotics,Network security
+430,Microarchitecture,Network security
+431,Parallel processing (DSP implementation),Cloud computing
+432,Parallel processing (DSP implementation),Computer graphics
+433,Parallel processing (DSP implementation),Algorithm
+434,Parallel processing (DSP implementation),Graphical model
+435,Parallel processing (DSP implementation),Compiler
+436,Parallel processing (DSP implementation),Distributed computing
+437,Parallel processing (DSP implementation),Operating system
+438,Parallel processing (DSP implementation),Computer architecture
+439,Parallel processing (DSP implementation),Computer network
+440,Parallel processing (DSP implementation),Database
+441,Data-intensive computing,Knowledge management
+442,Knowledge management,Parallel computing
+443,Knowledge management,Cloud computing
+444,Software testing,Knowledge management
+445,Knowledge management,Data structure
+446,Knowledge management,Network security
+447,Object-oriented analysis and design,Knowledge management
+448,Knowledge management,Computer graphics
+449,Knowledge management,Computational geometry
+450,Knowledge management,Algorithm
+451,Knowledge management,Object-oriented programming
+452,Knowledge management,Machine learning
+453,Data integration,Knowledge management
+454,Software architecture,Knowledge management
+455,Knowledge management,Compiler
+456,Knowledge management,Information security
+457,Knowledge management,Distributed computing
+458,Knowledge management,Cryptography
+459,Knowledge management,Artificial intelligence
+460,Knowledge management,Natural language processing
+461,Knowledge management,Computer vision
+462,Knowledge management,Combinatorial optimization
+463,Knowledge management,Social network analysis
+464,Computational linguistics,Knowledge management
+465,Knowledge management,Network service
+466,Knowledge management,Operating system
+467,Information management,Knowledge management
+468,Computer-aided software engineering,Knowledge management
+469,Knowledge management,Data warehouse
+470,Knowledge management,Computer architecture
+471,Knowledge management,Software development
+472,Knowledge management,Programming language
+473,Knowledge management,Theory of computation
+474,Knowledge management,Computer network
+475,Knowledge management,Analysis of algorithms
+476,Knowledge management,Data mining
+477,Knowledge management,Discrete mathematics
+478,Knowledge management,Computer security
+479,Software engineering,Knowledge management
+480,Knowledge management,Information retrieval
+481,Knowledge management,Database
+482,Object-oriented analysis and design,Parallel computing
+483,Object-oriented analysis and design,Modeling language
+484,Object-oriented analysis and design,Cloud computing
+485,Object-oriented analysis and design,Software testing
+486,Object-oriented analysis and design,Data structure
+487,Object-oriented analysis and design,Network security
+488,Object-oriented analysis and design,Knowledge management
+489,Object-oriented analysis and design,Computer graphics
+490,Object-oriented analysis and design,Computational geometry
+491,Object-oriented analysis and design,Algorithm
+492,Object-oriented analysis and design,Object-oriented programming
+493,Object-oriented analysis and design,Machine learning
+494,Object-oriented analysis and design,Software project management
+495,Object-oriented analysis and design,Software architecture
+496,Object-oriented analysis and design,Compiler
+497,Distributed object,Object-oriented analysis and design
+498,Object-oriented analysis and design,Information security
+499,Object-oriented analysis and design,Distributed computing
+500,Object-oriented analysis and design,Cryptography
+501,Object-oriented analysis and design,Artificial intelligence
+502,Object-oriented analysis and design,Natural language processing
+503,Object-oriented analysis and design,Computer vision
+504,Object-oriented design,Object-oriented analysis and design
+505,Object-oriented analysis and design,Network service
+506,Object-oriented analysis and design,Operating system
+507,Object-oriented analysis and design,Computer-aided software engineering
+508,Object-oriented analysis and design,Computer architecture
+509,Object-oriented analysis and design,Software development
+510,Object-oriented analysis and design,Programming language
+511,Object-oriented analysis and design,Theory of computation
+512,Object-oriented analysis and design,Computer network
+513,Object-oriented analysis and design,Software metric
+514,Object-oriented analysis and design,Analysis of algorithms
+515,Object-oriented analysis and design,Data mining
+516,Object-oriented analysis and design,Discrete mathematics
+517,Object-oriented analysis and design,Test automation
+518,Object-oriented analysis and design,Computer security
+519,Object-oriented analysis and design,Software engineering
+520,Object-oriented analysis and design,Information retrieval
+521,Object-oriented analysis and design,Database
+522,Object-oriented analysis and design,Robotics
+523,Data-intensive computing,Computer graphics
+524,Parallel computing,Computer graphics
+525,Modeling language,Computer graphics
+526,Mobile app development,Computer graphics
+527,Cloud computing,Computer graphics
+528,Software testing,Computer graphics
+529,Wireless network,Computer graphics
+530,Computer graphics,Data structure
+531,Assembly language,Computer graphics
+532,Network security,Computer graphics
+533,Parallel processing (DSP implementation),Computer graphics
+534,Knowledge management,Computer graphics
+535,Object-oriented analysis and design,Computer graphics
+536,Computer graphics,Algorithm
+537,Object-oriented programming,Computer graphics
+538,Machine learning,Computer graphics
+539,Software project management,Computer graphics
+540,Graphical model,Computer graphics
+541,Data integration,Computer graphics
+542,Software architecture,Computer graphics
+543,Compiler,Computer graphics
+544,Distributed object,Computer graphics
+545,Information security,Computer graphics
+546,Distributed computing,Computer graphics
+547,Cryptography,Computer graphics
+548,Broadband networks,Computer graphics
+549,Natural language processing,Computer graphics
+550,Computer vision,Computer graphics
+551,Combinatorial optimization,Computer graphics
+552,Social network analysis,Computer graphics
+553,Computational linguistics,Computer graphics
+554,Network service,Computer graphics
+555,Operating system,Computer graphics
+556,Game theory,Computer graphics
+557,Computer-aided software engineering,Computer graphics
+558,Data warehouse,Computer graphics
+559,Systems programming,Computer graphics
+560,Computer architecture,Computer graphics
+561,Software development,Computer graphics
+562,Computer graphics,Programming language
+563,Computer graphics,Theory of computation
+564,Computer graphics,Computer network
+565,Software metric,Computer graphics
+566,Analysis of algorithms,Computer graphics
+567,Internet protocol suite,Computer graphics
+568,Data mining,Computer graphics
+569,Software analytics,Computer graphics
+570,Discrete mathematics,Computer graphics
+571,Test automation,Computer graphics
+572,Computer security,Computer graphics
+573,Software engineering,Computer graphics
+574,Information retrieval,Computer graphics
+575,Database,Computer graphics
+576,Robotics,Computer graphics
+577,Microarchitecture,Computer graphics
+578,Data-intensive computing,Computational geometry
+579,Computational geometry,Modeling language
+580,Cloud computing,Computational geometry
+581,Software testing,Computational geometry
+582,Wireless network,Computational geometry
+583,Data structure,Computational geometry
+584,Assembly language,Computational geometry
+585,Network security,Computational geometry
+586,Knowledge management,Computational geometry
+587,Object-oriented analysis and design,Computational geometry
+588,Computational geometry,Algorithm
+589,Object-oriented programming,Computational geometry
+590,Machine learning,Computational geometry
+591,Software project management,Computational geometry
+592,Graphical model,Computational geometry
+593,Data integration,Computational geometry
+594,Software architecture,Computational geometry
+595,Computational geometry,Compiler
+596,Distributed object,Computational geometry
+597,Information security,Computational geometry
+598,Distributed computing,Computational geometry
+599,Cryptography,Computational geometry
+600,Broadband networks,Computational geometry
+601,Natural language processing,Computational geometry
+602,Computer vision,Computational geometry
+603,Computational geometry,Object-oriented design
+604,Combinatorial optimization,Computational geometry
+605,Social network analysis,Computational geometry
+606,Computational linguistics,Computational geometry
+607,Network service,Computational geometry
+608,Game theory,Computational geometry
+609,Computational geometry,Information management
+610,Computer-aided software engineering,Computational geometry
+611,Data warehouse,Computational geometry
+612,Computer architecture,Computational geometry
+613,Computational geometry,Software development
+614,Computational geometry,Programming language
+615,Computational geometry,Theory of computation
+616,Computational geometry,Computer network
+617,Software metric,Computational geometry
+618,Analysis of algorithms,Computational geometry
+619,Internet protocol suite,Computational geometry
+620,Data mining,Computational geometry
+621,Software analytics,Computational geometry
+622,Discrete mathematics,Computational geometry
+623,Test automation,Computational geometry
+624,Computer security,Computational geometry
+625,Software engineering,Computational geometry
+626,Information retrieval,Computational geometry
+627,Computational geometry,Database
+628,Robotics,Computational geometry
+629,Microarchitecture,Computational geometry
+630,Data-intensive computing,Algorithm
+631,Parallel computing,Algorithm
+632,Modeling language,Algorithm
+633,Mobile app development,Algorithm
+634,Cloud computing,Algorithm
+635,Software testing,Algorithm
+636,Wireless network,Algorithm
+637,Data structure,Algorithm
+638,Assembly language,Algorithm
+639,Network security,Algorithm
+640,Parallel processing (DSP implementation),Algorithm
+641,Knowledge management,Algorithm
+642,Object-oriented analysis and design,Algorithm
+643,Computer graphics,Algorithm
+644,Computational geometry,Algorithm
+645,Object-oriented programming,Algorithm
+646,Machine learning,Algorithm
+647,Software project management,Algorithm
+648,Graphical model,Algorithm
+649,Data integration,Algorithm
+650,Software architecture,Algorithm
+651,Compiler,Algorithm
+652,Distributed object,Algorithm
+653,Information security,Algorithm
+654,Distributed computing,Algorithm
+655,Cryptography,Algorithm
+656,Broadband networks,Algorithm
+657,Artificial intelligence,Algorithm
+658,Natural language processing,Algorithm
+659,Computer vision,Algorithm
+660,Object-oriented design,Algorithm
+661,Combinatorial optimization,Algorithm
+662,Social network analysis,Algorithm
+663,Computational linguistics,Algorithm
+664,Network service,Algorithm
+665,Operating system,Algorithm
+666,Game theory,Algorithm
+667,Computer-aided software engineering,Algorithm
+668,Data warehouse,Algorithm
+669,Systems programming,Algorithm
+670,Computer architecture,Algorithm
+671,Software development,Algorithm
+672,Algorithm,Programming language
+673,Theory of computation,Algorithm
+674,Computer network,Algorithm
+675,Software metric,Algorithm
+676,Analysis of algorithms,Algorithm
+677,Internet protocol suite,Algorithm
+678,Data mining,Algorithm
+679,Software analytics,Algorithm
+680,Discrete mathematics,Algorithm
+681,Test automation,Algorithm
+682,Computer security,Algorithm
+683,Software engineering,Algorithm
+684,Information retrieval,Algorithm
+685,Database,Algorithm
+686,Robotics,Algorithm
+687,Microarchitecture,Algorithm
+688,Data-intensive computing,Object-oriented programming
+689,Object-oriented programming,Parallel computing
+690,Modeling language,Object-oriented programming
+691,Cloud computing,Object-oriented programming
+692,Object-oriented programming,Software testing
+693,Data structure,Object-oriented programming
+694,Assembly language,Object-oriented programming
+695,Object-oriented programming,Network security
+696,Knowledge management,Object-oriented programming
+697,Object-oriented analysis and design,Object-oriented programming
+698,Object-oriented programming,Computer graphics
+699,Object-oriented programming,Computational geometry
+700,Object-oriented programming,Algorithm
+701,Object-oriented programming,Machine learning
+702,Software project management,Object-oriented programming
+703,Object-oriented programming,Graphical model
+704,Data integration,Object-oriented programming
+705,Software architecture,Object-oriented programming
+706,Object-oriented programming,Compiler
+707,Distributed object,Object-oriented programming
+708,Object-oriented programming,Information security
+709,Translator (computing),Object-oriented programming
+710,Distributed computing,Object-oriented programming
+711,Object-oriented programming,Cryptography
+712,Object-oriented programming,Artificial intelligence
+713,Object-oriented programming,Natural language processing
+714,Object-oriented programming,Computer vision
+715,Object-oriented design,Object-oriented programming
+716,Combinatorial optimization,Object-oriented programming
+717,Computational linguistics,Object-oriented programming
+718,Object-oriented programming,Network service
+719,Object-oriented programming,Operating system
+720,Object-oriented programming,Game theory
+721,Object-oriented programming,Information management
+722,Computer-aided software engineering,Object-oriented programming
+723,Data warehouse,Object-oriented programming
+724,Object-oriented programming,Computer architecture
+725,Object-oriented programming,Software development
+726,Programming language,Object-oriented programming
+727,Object-oriented programming,Theory of computation
+728,Object-oriented programming,Computer network
+729,Software metric,Object-oriented programming
+730,Object-oriented programming,Analysis of algorithms
+731,Object-oriented programming,Data mining
+732,Software analytics,Object-oriented programming
+733,Test automation,Object-oriented programming
+734,Object-oriented programming,Computer security
+735,Object-oriented programming,Software engineering
+736,Object-oriented programming,Information retrieval
+737,Object-oriented programming,Database
+738,Object-oriented programming,Robotics
+739,Microarchitecture,Object-oriented programming
+740,Data-intensive computing,Machine learning
+741,Machine learning,Modeling language
+742,Cloud computing,Machine learning
+743,Software testing,Machine learning
+744,Wireless network,Machine learning
+745,Data structure,Machine learning
+746,Assembly language,Machine learning
+747,Network security,Machine learning
+748,Knowledge management,Machine learning
+749,Object-oriented analysis and design,Machine learning
+750,Machine learning,Computer graphics
+751,Machine learning,Computational geometry
+752,Machine learning,Algorithm
+753,Object-oriented programming,Machine learning
+754,Software project management,Machine learning
+755,Graphical model,Machine learning
+756,Data integration,Machine learning
+757,Software architecture,Machine learning
+758,Machine learning,Compiler
+759,Distributed object,Machine learning
+760,Information security,Machine learning
+761,Translator (computing),Machine learning
+762,Distributed computing,Machine learning
+763,Cryptography,Machine learning
+764,Broadband networks,Machine learning
+765,Natural language processing,Machine learning
+766,Computer vision,Machine learning
+767,Machine learning,Object-oriented design
+768,Combinatorial optimization,Machine learning
+769,Social network analysis,Machine learning
+770,Computational linguistics,Machine learning
+771,Network service,Machine learning
+772,Game theory,Machine learning
+773,Machine learning,Information management
+774,Computer-aided software engineering,Machine learning
+775,Data warehouse,Machine learning
+776,Computer architecture,Machine learning
+777,Machine learning,Software development
+778,Machine learning,Programming language
+779,Machine learning,Theory of computation
+780,Machine learning,Computer network
+781,Software metric,Machine learning
+782,Analysis of algorithms,Machine learning
+783,Internet protocol suite,Machine learning
+784,Data mining,Machine learning
+785,Software analytics,Machine learning
+786,Discrete mathematics,Machine learning
+787,Test automation,Machine learning
+788,Software engineering,Machine learning
+789,Information retrieval,Machine learning
+790,Machine learning,Database
+791,Robotics,Machine learning
+792,Microarchitecture,Machine learning
+793,Data-intensive computing,Software project management
+794,Software project management,Parallel computing
+795,Software project management,Modeling language
+796,Cloud computing,Software project management
+797,Software project management,Software testing
+798,Software project management,Data structure
+799,Software project management,Network security
+800,Object-oriented analysis and design,Software project management
+801,Software project management,Computer graphics
+802,Software project management,Computational geometry
+803,Software project management,Algorithm
+804,Software project management,Object-oriented programming
+805,Software project management,Machine learning
+806,Software project management,Software architecture
+807,Software project management,Compiler
+808,Software project management,Information security
+809,Software project management,Distributed computing
+810,Software project management,Cryptography
+811,Software project management,Artificial intelligence
+812,Software project management,Natural language processing
+813,Software project management,Computer vision
+814,Combinatorial optimization,Software project management
+815,Computational linguistics,Software project management
+816,Software project management,Network service
+817,Software project management,Operating system
+818,Software project management,Computer-aided software engineering
+819,Software project management,Computer architecture
+820,Software project management,Software development
+821,Software project management,Programming language
+822,Software project management,Theory of computation
+823,Software project management,Computer network
+824,Software metric,Software project management
+825,Software project management,Analysis of algorithms
+826,Software project management,Data mining
+827,Software analytics,Software project management
+828,Software project management,Discrete mathematics
+829,Test automation,Software project management
+830,Software project management,Computer security
+831,Software project management,Software engineering
+832,Software project management,Information retrieval
+833,Software project management,Database
+834,Software project management,Robotics
+835,Data-intensive computing,Graphical model
+836,Graphical model,Parallel computing
+837,Graphical model,Modeling language
+838,Mobile app development,Graphical model
+839,Cloud computing,Graphical model
+840,Software testing,Graphical model
+841,Graphical model,Network security
+842,Parallel processing (DSP implementation),Graphical model
+843,Graphical model,Computer graphics
+844,Graphical model,Computational geometry
+845,Graphical model,Algorithm
+846,Object-oriented programming,Graphical model
+847,Graphical model,Machine learning
+848,Data integration,Graphical model
+849,Compiler,Graphical model
+850,Graphical model,Information security
+851,Graphical model,Distributed computing
+852,Graphical model,Cryptography
+853,Graphical model,Artificial intelligence
+854,Graphical model,Natural language processing
+855,Graphical model,Computer vision
+856,Combinatorial optimization,Graphical model
+857,Social network analysis,Graphical model
+858,Graphical model,Computational linguistics
+859,Graphical model,Network service
+860,Graphical model,Operating system
+861,Graphical model,Game theory
+862,Graphical model,Data warehouse
+863,Systems programming,Graphical model
+864,Graphical model,Computer architecture
+865,Graphical model,Software development
+866,Graphical model,Programming language
+867,Graphical model,Theory of computation
+868,Graphical model,Computer network
+869,Graphical model,Analysis of algorithms
+870,Graphical model,Data mining
+871,Software analytics,Graphical model
+872,Graphical model,Discrete mathematics
+873,Graphical model,Computer security
+874,Graphical model,Software engineering
+875,Graphical model,Information retrieval
+876,Graphical model,Database
+877,Microarchitecture,Graphical model
+878,Data-intensive computing,Data integration
+879,Data integration,Parallel computing
+880,Data integration,Modeling language
+881,Data integration,Cloud computing
+882,Software testing,Data integration
+883,Data integration,Data structure
+884,Data integration,Network security
+885,Data integration,Knowledge management
+886,Data integration,Computer graphics
+887,Data integration,Computational geometry
+888,Data integration,Algorithm
+889,Data integration,Object-oriented programming
+890,Data integration,Machine learning
+891,Data integration,Graphical model
+892,Data integration,Compiler
+893,Data integration,Information security
+894,Data integration,Distributed computing
+895,Data integration,Cryptography
+896,Data integration,Artificial intelligence
+897,Data integration,Natural language processing
+898,Data integration,Computer vision
+899,Social network analysis,Data integration
+900,Computational linguistics,Data integration
+901,Data integration,Network service
+902,Data integration,Operating system
+903,Information management,Data integration
+904,Data integration,Data warehouse
+905,Data integration,Computer architecture
+906,Data integration,Software development
+907,Data integration,Programming language
+908,Data integration,Theory of computation
+909,Data integration,Computer network
+910,Data integration,Analysis of algorithms
+911,Data integration,Data mining
+912,Software analytics,Data integration
+913,Data integration,Discrete mathematics
+914,Data integration,Computer security
+915,Software engineering,Data integration
+916,Data integration,Information retrieval
+917,Data integration,Database
+918,Data-intensive computing,Software architecture
+919,Software architecture,Parallel computing
+920,Modeling language,Software architecture
+921,Cloud computing,Software architecture
+922,Software architecture,Software testing
+923,Software architecture,Data structure
+924,Assembly language,Software architecture
+925,Software architecture,Network security
+926,Software architecture,Knowledge management
+927,Object-oriented analysis and design,Software architecture
+928,Software architecture,Computer graphics
+929,Software architecture,Computational geometry
+930,Software architecture,Algorithm
+931,Software architecture,Object-oriented programming
+932,Software architecture,Machine learning
+933,Software project management,Software architecture
+934,Software architecture,Compiler
+935,Distributed object,Software architecture
+936,Software architecture,Information security
+937,Software architecture,Distributed computing
+938,Software architecture,Cryptography
+939,Software architecture,Artificial intelligence
+940,Software architecture,Natural language processing
+941,Software architecture,Computer vision
+942,Object-oriented design,Software architecture
+943,Combinatorial optimization,Software architecture
+944,Software architecture,Social network analysis
+945,Computational linguistics,Software architecture
+946,Software architecture,Network service
+947,Software architecture,Operating system
+948,Software architecture,Information management
+949,Computer-aided software engineering,Software architecture
+950,Software architecture,Data warehouse
+951,Software architecture,Computer architecture
+952,Software architecture,Software development
+953,Software architecture,Programming language
+954,Software architecture,Theory of computation
+955,Software architecture,Computer network
+956,Software metric,Software architecture
+957,Software architecture,Analysis of algorithms
+958,Software architecture,Data mining
+959,Software analytics,Software architecture
+960,Software architecture,Discrete mathematics
+961,Test automation,Software architecture
+962,Software architecture,Computer security
+963,Software architecture,Software engineering
+964,Software architecture,Information retrieval
+965,Software architecture,Database
+966,Software architecture,Robotics
+967,Microarchitecture,Software architecture
+968,Data-intensive computing,Compiler
+969,Parallel computing,Compiler
+970,Modeling language,Compiler
+971,Mobile app development,Compiler
+972,Compiler,Cloud computing
+973,Software testing,Compiler
+974,Wireless network,Compiler
+975,Data structure,Compiler
+976,Assembly language,Compiler
+977,Network security,Compiler
+978,Parallel processing (DSP implementation),Compiler
+979,Knowledge management,Compiler
+980,Object-oriented analysis and design,Compiler
+981,Compiler,Computer graphics
+982,Computational geometry,Compiler
+983,Compiler,Algorithm
+984,Object-oriented programming,Compiler
+985,Machine learning,Compiler
+986,Software project management,Compiler
+987,Compiler,Graphical model
+988,Data integration,Compiler
+989,Software architecture,Compiler
+990,Distributed object,Compiler
+991,Information security,Compiler
+992,Translator (computing),Compiler
+993,Compiler,Distributed computing
+994,Cryptography,Compiler
+995,Broadband networks,Compiler
+996,Artificial intelligence,Compiler
+997,Natural language processing,Compiler
+998,Computer vision,Compiler
+999,Object-oriented design,Compiler
+1000,Combinatorial optimization,Compiler
+1001,Social network analysis,Compiler
+1002,Computational linguistics,Compiler
+1003,Network service,Compiler
+1004,Compiler,Operating system
+1005,Game theory,Compiler
+1006,Computer-aided software engineering,Compiler
+1007,Data warehouse,Compiler
+1008,Systems programming,Compiler
+1009,Compiler,Computer architecture
+1010,Software development,Compiler
+1011,Programming language,Compiler
+1012,Theory of computation,Compiler
+1013,Compiler,Computer network
+1014,Software metric,Compiler
+1015,Analysis of algorithms,Compiler
+1016,Internet protocol suite,Compiler
+1017,Data mining,Compiler
+1018,Software analytics,Compiler
+1019,Discrete mathematics,Compiler
+1020,Test automation,Compiler
+1021,Computer security,Compiler
+1022,Software engineering,Compiler
+1023,Information retrieval,Compiler
+1024,Compiler,Database
+1025,Robotics,Compiler
+1026,Microarchitecture,Compiler
+1027,Distributed object,Parallel computing
+1028,Distributed object,Modeling language
+1029,Distributed object,Cloud computing
+1030,Distributed object,Software testing
+1031,Distributed object,Wireless network
+1032,Distributed object,Data structure
+1033,Distributed object,Assembly language
+1034,Distributed object,Network security
+1035,Distributed object,Object-oriented analysis and design
+1036,Distributed object,Computer graphics
+1037,Distributed object,Computational geometry
+1038,Distributed object,Algorithm
+1039,Distributed object,Object-oriented programming
+1040,Distributed object,Machine learning
+1041,Distributed object,Software architecture
+1042,Distributed object,Compiler
+1043,Distributed object,Information security
+1044,Distributed object,Distributed computing
+1045,Distributed object,Cryptography
+1046,Distributed object,Artificial intelligence
+1047,Distributed object,Natural language processing
+1048,Distributed object,Computer vision
+1049,Distributed object,Object-oriented design
+1050,Distributed object,Combinatorial optimization
+1051,Distributed object,Social network analysis
+1052,Distributed object,Network service
+1053,Distributed object,Operating system
+1054,Distributed object,Computer architecture
+1055,Distributed object,Software development
+1056,Distributed object,Programming language
+1057,Distributed object,Theory of computation
+1058,Distributed object,Computer network
+1059,Distributed object,Analysis of algorithms
+1060,Distributed object,Internet protocol suite
+1061,Distributed object,Data mining
+1062,Distributed object,Discrete mathematics
+1063,Distributed object,Computer security
+1064,Distributed object,Software engineering
+1065,Distributed object,Information retrieval
+1066,Distributed object,Database
+1067,Information security,Parallel computing
+1068,Information security,Modeling language
+1069,Cloud computing,Information security
+1070,Software testing,Information security
+1071,Wireless network,Information security
+1072,Information security,Data structure
+1073,Assembly language,Information security
+1074,Network security,Information security
+1075,Knowledge management,Information security
+1076,Object-oriented analysis and design,Information security
+1077,Information security,Computer graphics
+1078,Information security,Computational geometry
+1079,Information security,Algorithm
+1080,Object-oriented programming,Information security
+1081,Information security,Machine learning
+1082,Software project management,Information security
+1083,Graphical model,Information security
+1084,Data integration,Information security
+1085,Software architecture,Information security
+1086,Information security,Compiler
+1087,Distributed object,Information security
+1088,Cryptography,Information security
+1089,Broadband networks,Information security
+1090,Information security,Artificial intelligence
+1091,Natural language processing,Information security
+1092,Information security,Computer vision
+1093,Information security,Object-oriented design
+1094,Combinatorial optimization,Information security
+1095,Social network analysis,Information security
+1096,Computational linguistics,Information security
+1097,Network service,Information security
+1098,Information security,Operating system
+1099,Game theory,Information security
+1100,Information security,Information management
+1101,Computer-aided software engineering,Information security
+1102,Data warehouse,Information security
+1103,Information security,Software development
+1104,Information security,Programming language
+1105,Information security,Theory of computation
+1106,Information security,Computer network
+1107,Software metric,Information security
+1108,Internet protocol suite,Information security
+1109,Software analytics,Information security
+1110,Test automation,Information security
+1111,Information security,Computer security
+1112,Software engineering,Information security
+1113,Information retrieval,Information security
+1114,Information security,Database
+1115,Robotics,Information security
+1116,Microarchitecture,Information security
+1117,Translator (computing),Parallel computing
+1118,Translator (computing),Data structure
+1119,Translator (computing),Assembly language
+1120,Translator (computing),Object-oriented programming
+1121,Translator (computing),Machine learning
+1122,Translator (computing),Compiler
+1123,Translator (computing),Artificial intelligence
+1124,Translator (computing),Computational linguistics
+1125,Translator (computing),Operating system
+1126,Translator (computing),Computer architecture
+1127,Translator (computing),Programming language
+1128,Translator (computing),Information retrieval
+1129,Data-intensive computing,Distributed computing
+1130,Distributed computing,Parallel computing
+1131,Distributed computing,Modeling language
+1132,Mobile app development,Distributed computing
+1133,Cloud computing,Distributed computing
+1134,Software testing,Distributed computing
+1135,Wireless network,Distributed computing
+1136,Distributed computing,Data structure
+1137,Assembly language,Distributed computing
+1138,Network security,Distributed computing
+1139,Parallel processing (DSP implementation),Distributed computing
+1140,Knowledge management,Distributed computing
+1141,Object-oriented analysis and design,Distributed computing
+1142,Distributed computing,Computer graphics
+1143,Distributed computing,Computational geometry
+1144,Distributed computing,Algorithm
+1145,Distributed computing,Object-oriented programming
+1146,Distributed computing,Machine learning
+1147,Software project management,Distributed computing
+1148,Graphical model,Distributed computing
+1149,Data integration,Distributed computing
+1150,Software architecture,Distributed computing
+1151,Compiler,Distributed computing
+1152,Distributed object,Distributed computing
+1153,Broadband networks,Distributed computing
+1154,Distributed computing,Artificial intelligence
+1155,Natural language processing,Distributed computing
+1156,Distributed computing,Computer vision
+1157,Distributed computing,Object-oriented design
+1158,Combinatorial optimization,Distributed computing
+1159,Social network analysis,Distributed computing
+1160,Computational linguistics,Distributed computing
+1161,Distributed computing,Operating system
+1162,Game theory,Distributed computing
+1163,Computer-aided software engineering,Distributed computing
+1164,Data warehouse,Distributed computing
+1165,Systems programming,Distributed computing
+1166,Distributed computing,Computer architecture
+1167,Distributed computing,Software development
+1168,Distributed computing,Programming language
+1169,Distributed computing,Theory of computation
+1170,Distributed computing,Computer network
+1171,Software metric,Distributed computing
+1172,Distributed computing,Analysis of algorithms
+1173,Internet protocol suite,Distributed computing
+1174,Distributed computing,Data mining
+1175,Software analytics,Distributed computing
+1176,Distributed computing,Discrete mathematics
+1177,Test automation,Distributed computing
+1178,Distributed computing,Computer security
+1179,Information retrieval,Distributed computing
+1180,Distributed computing,Database
+1181,Robotics,Distributed computing
+1182,Microarchitecture,Distributed computing
+1183,Data-intensive computing,Cryptography
+1184,Cryptography,Parallel computing
+1185,Cryptography,Modeling language
+1186,Cloud computing,Cryptography
+1187,Software testing,Cryptography
+1188,Wireless network,Cryptography
+1189,Data structure,Cryptography
+1190,Assembly language,Cryptography
+1191,Network security,Cryptography
+1192,Knowledge management,Cryptography
+1193,Object-oriented analysis and design,Cryptography
+1194,Cryptography,Computer graphics
+1195,Cryptography,Computational geometry
+1196,Cryptography,Algorithm
+1197,Object-oriented programming,Cryptography
+1198,Cryptography,Machine learning
+1199,Software project management,Cryptography
+1200,Graphical model,Cryptography
+1201,Data integration,Cryptography
+1202,Software architecture,Cryptography
+1203,Cryptography,Compiler
+1204,Distributed object,Cryptography
+1205,Cryptography,Information security
+1206,Broadband networks,Cryptography
+1207,Cryptography,Artificial intelligence
+1208,Natural language processing,Cryptography
+1209,Computer vision,Cryptography
+1210,Combinatorial optimization,Cryptography
+1211,Social network analysis,Cryptography
+1212,Computational linguistics,Cryptography
+1213,Cryptography,Network service
+1214,Cryptography,Operating system
+1215,Game theory,Cryptography
+1216,Computer-aided software engineering,Cryptography
+1217,Data warehouse,Cryptography
+1218,Cryptography,Computer architecture
+1219,Cryptography,Software development
+1220,Cryptography,Programming language
+1221,Cryptography,Theory of computation
+1222,Cryptography,Computer network
+1223,Software metric,Cryptography
+1224,Cryptography,Analysis of algorithms
+1225,Internet protocol suite,Cryptography
+1226,Cryptography,Data mining
+1227,Software analytics,Cryptography
+1228,Test automation,Cryptography
+1229,Cryptography,Computer security
+1230,Software engineering,Cryptography
+1231,Information retrieval,Cryptography
+1232,Cryptography,Database
+1233,Robotics,Cryptography
+1234,Microarchitecture,Cryptography
+1235,Broadband networks,Parallel computing
+1236,Broadband networks,Modeling language
+1237,Broadband networks,Wireless network
+1238,Broadband networks,Network security
+1239,Broadband networks,Computer graphics
+1240,Broadband networks,Computational geometry
+1241,Broadband networks,Algorithm
+1242,Broadband networks,Machine learning
+1243,Broadband networks,Compiler
+1244,Broadband networks,Information security
+1245,Broadband networks,Distributed computing
+1246,Broadband networks,Cryptography
+1247,Broadband networks,Artificial intelligence
+1248,Broadband networks,Natural language processing
+1249,Broadband networks,Computer vision
+1250,Broadband networks,Combinatorial optimization
+1251,Broadband networks,Social network analysis
+1252,Broadband networks,Network service
+1253,Broadband networks,Operating system
+1254,Broadband networks,Computer architecture
+1255,Broadband networks,Software development
+1256,Broadband networks,Programming language
+1257,Broadband networks,Theory of computation
+1258,Broadband networks,Computer network
+1259,Broadband networks,Analysis of algorithms
+1260,Broadband networks,Data mining
+1261,Broadband networks,Discrete mathematics
+1262,Broadband networks,Computer security
+1263,Broadband networks,Information retrieval
+1264,Broadband networks,Database
+1265,Data-intensive computing,Artificial intelligence
+1266,Artificial intelligence,Parallel computing
+1267,Cloud computing,Artificial intelligence
+1268,Software testing,Artificial intelligence
+1269,Wireless network,Artificial intelligence
+1270,Data structure,Artificial intelligence
+1271,Assembly language,Artificial intelligence
+1272,Network security,Artificial intelligence
+1273,Knowledge management,Artificial intelligence
+1274,Object-oriented analysis and design,Artificial intelligence
+1275,Artificial intelligence,Algorithm
+1276,Object-oriented programming,Artificial intelligence
+1277,Software project management,Artificial intelligence
+1278,Graphical model,Artificial intelligence
+1279,Data integration,Artificial intelligence
+1280,Software architecture,Artificial intelligence
+1281,Artificial intelligence,Compiler
+1282,Distributed object,Artificial intelligence
+1283,Information security,Artificial intelligence
+1284,Translator (computing),Artificial intelligence
+1285,Distributed computing,Artificial intelligence
+1286,Cryptography,Artificial intelligence
+1287,Broadband networks,Artificial intelligence
+1288,Natural language processing,Artificial intelligence
+1289,Computer vision,Artificial intelligence
+1290,Object-oriented design,Artificial intelligence
+1291,Combinatorial optimization,Artificial intelligence
+1292,Social network analysis,Artificial intelligence
+1293,Computational linguistics,Artificial intelligence
+1294,Network service,Artificial intelligence
+1295,Game theory,Artificial intelligence
+1296,Artificial intelligence,Information management
+1297,Computer-aided software engineering,Artificial intelligence
+1298,Data warehouse,Artificial intelligence
+1299,Computer architecture,Artificial intelligence
+1300,Artificial intelligence,Software development
+1301,Artificial intelligence,Programming language
+1302,Artificial intelligence,Theory of computation
+1303,Artificial intelligence,Computer network
+1304,Software metric,Artificial intelligence
+1305,Analysis of algorithms,Artificial intelligence
+1306,Internet protocol suite,Artificial intelligence
+1307,Data mining,Artificial intelligence
+1308,Software analytics,Artificial intelligence
+1309,Discrete mathematics,Artificial intelligence
+1310,Test automation,Artificial intelligence
+1311,Software engineering,Artificial intelligence
+1312,Information retrieval,Artificial intelligence
+1313,Artificial intelligence,Database
+1314,Robotics,Artificial intelligence
+1315,Microarchitecture,Artificial intelligence
+1316,Natural language processing,Parallel computing
+1317,Natural language processing,Modeling language
+1318,Cloud computing,Natural language processing
+1319,Software testing,Natural language processing
+1320,Wireless network,Natural language processing
+1321,Data structure,Natural language processing
+1322,Assembly language,Natural language processing
+1323,Network security,Natural language processing
+1324,Knowledge management,Natural language processing
+1325,Object-oriented analysis and design,Natural language processing
+1326,Natural language processing,Computer graphics
+1327,Natural language processing,Computational geometry
+1328,Natural language processing,Algorithm
+1329,Object-oriented programming,Natural language processing
+1330,Natural language processing,Machine learning
+1331,Software project management,Natural language processing
+1332,Graphical model,Natural language processing
+1333,Data integration,Natural language processing
+1334,Software architecture,Natural language processing
+1335,Natural language processing,Compiler
+1336,Distributed object,Natural language processing
+1337,Natural language processing,Information security
+1338,Natural language processing,Distributed computing
+1339,Natural language processing,Cryptography
+1340,Broadband networks,Natural language processing
+1341,Natural language processing,Artificial intelligence
+1342,Natural language processing,Computer vision
+1343,Combinatorial optimization,Natural language processing
+1344,Social network analysis,Natural language processing
+1345,Natural language processing,Network service
+1346,Natural language processing,Operating system
+1347,Natural language processing,Game theory
+1348,Computer-aided software engineering,Natural language processing
+1349,Data warehouse,Natural language processing
+1350,Natural language processing,Computer architecture
+1351,Natural language processing,Software development
+1352,Natural language processing,Programming language
+1353,Natural language processing,Theory of computation
+1354,Natural language processing,Computer network
+1355,Software metric,Natural language processing
+1356,Natural language processing,Analysis of algorithms
+1357,Internet protocol suite,Natural language processing
+1358,Natural language processing,Data mining
+1359,Software analytics,Natural language processing
+1360,Natural language processing,Discrete mathematics
+1361,Test automation,Natural language processing
+1362,Natural language processing,Computer security
+1363,Natural language processing,Software engineering
+1364,Natural language processing,Information retrieval
+1365,Natural language processing,Database
+1366,Robotics,Natural language processing
+1367,Microarchitecture,Natural language processing
+1368,Computer vision,Parallel computing
+1369,Modeling language,Computer vision
+1370,Cloud computing,Computer vision
+1371,Software testing,Computer vision
+1372,Wireless network,Computer vision
+1373,Computer vision,Data structure
+1374,Assembly language,Computer vision
+1375,Network security,Computer vision
+1376,Knowledge management,Computer vision
+1377,Object-oriented analysis and design,Computer vision
+1378,Computer vision,Computer graphics
+1379,Computer vision,Computational geometry
+1380,Computer vision,Algorithm
+1381,Object-oriented programming,Computer vision
+1382,Computer vision,Machine learning
+1383,Software project management,Computer vision
+1384,Graphical model,Computer vision
+1385,Data integration,Computer vision
+1386,Software architecture,Computer vision
+1387,Computer vision,Compiler
+1388,Distributed object,Computer vision
+1389,Information security,Computer vision
+1390,Distributed computing,Computer vision
+1391,Computer vision,Cryptography
+1392,Broadband networks,Computer vision
+1393,Computer vision,Artificial intelligence
+1394,Natural language processing,Computer vision
+1395,Combinatorial optimization,Computer vision
+1396,Social network analysis,Computer vision
+1397,Computational linguistics,Computer vision
+1398,Network service,Computer vision
+1399,Operating system,Computer vision
+1400,Game theory,Computer vision
+1401,Computer-aided software engineering,Computer vision
+1402,Data warehouse,Computer vision
+1403,Computer architecture,Computer vision
+1404,Software development,Computer vision
+1405,Computer vision,Programming language
+1406,Computer vision,Theory of computation
+1407,Computer vision,Computer network
+1408,Software metric,Computer vision
+1409,Computer vision,Analysis of algorithms
+1410,Internet protocol suite,Computer vision
+1411,Data mining,Computer vision
+1412,Software analytics,Computer vision
+1413,Discrete mathematics,Computer vision
+1414,Test automation,Computer vision
+1415,Computer security,Computer vision
+1416,Software engineering,Computer vision
+1417,Information retrieval,Computer vision
+1418,Database,Computer vision
+1419,Robotics,Computer vision
+1420,Microarchitecture,Computer vision
+1421,Object-oriented design,Parallel computing
+1422,Object-oriented design,Modeling language
+1423,Cloud computing,Object-oriented design
+1424,Object-oriented design,Software testing
+1425,Object-oriented design,Data structure
+1426,Object-oriented design,Assembly language
+1427,Object-oriented design,Object-oriented analysis and design
+1428,Computational geometry,Object-oriented design
+1429,Object-oriented design,Algorithm
+1430,Object-oriented design,Object-oriented programming
+1431,Machine learning,Object-oriented design
+1432,Object-oriented design,Software architecture
+1433,Object-oriented design,Compiler
+1434,Distributed object,Object-oriented design
+1435,Information security,Object-oriented design
+1436,Distributed computing,Object-oriented design
+1437,Object-oriented design,Artificial intelligence
+1438,Computational linguistics,Object-oriented design
+1439,Network service,Object-oriented design
+1440,Operating system,Object-oriented design
+1441,Computer-aided software engineering,Object-oriented design
+1442,Computer architecture,Object-oriented design
+1443,Object-oriented design,Software development
+1444,Programming language,Object-oriented design
+1445,Computer network,Object-oriented design
+1446,Software metric,Object-oriented design
+1447,Analysis of algorithms,Object-oriented design
+1448,Data mining,Object-oriented design
+1449,Software analytics,Object-oriented design
+1450,Discrete mathematics,Object-oriented design
+1451,Test automation,Object-oriented design
+1452,Computer security,Object-oriented design
+1453,Object-oriented design,Software engineering
+1454,Database,Object-oriented design
+1455,Combinatorial optimization,Parallel computing
+1456,Combinatorial optimization,Modeling language
+1457,Cloud computing,Combinatorial optimization
+1458,Combinatorial optimization,Software testing
+1459,Wireless network,Combinatorial optimization
+1460,Combinatorial optimization,Data structure
+1461,Combinatorial optimization,Network security
+1462,Knowledge management,Combinatorial optimization
+1463,Combinatorial optimization,Computer graphics
+1464,Combinatorial optimization,Computational geometry
+1465,Combinatorial optimization,Algorithm
+1466,Combinatorial optimization,Object-oriented programming
+1467,Combinatorial optimization,Machine learning
+1468,Combinatorial optimization,Software project management
+1469,Combinatorial optimization,Graphical model
+1470,Combinatorial optimization,Software architecture
+1471,Combinatorial optimization,Compiler
+1472,Distributed object,Combinatorial optimization
+1473,Combinatorial optimization,Information security
+1474,Combinatorial optimization,Distributed computing
+1475,Combinatorial optimization,Cryptography
+1476,Broadband networks,Combinatorial optimization
+1477,Combinatorial optimization,Artificial intelligence
+1478,Combinatorial optimization,Natural language processing
+1479,Combinatorial optimization,Computer vision
+1480,Social network analysis,Combinatorial optimization
+1481,Combinatorial optimization,Computational linguistics
+1482,Combinatorial optimization,Network service
+1483,Combinatorial optimization,Operating system
+1484,Combinatorial optimization,Game theory
+1485,Combinatorial optimization,Computer architecture
+1486,Combinatorial optimization,Software development
+1487,Combinatorial optimization,Programming language
+1488,Combinatorial optimization,Theory of computation
+1489,Combinatorial optimization,Computer network
+1490,Combinatorial optimization,Analysis of algorithms
+1491,Internet protocol suite,Combinatorial optimization
+1492,Combinatorial optimization,Data mining
+1493,Combinatorial optimization,Discrete mathematics
+1494,Combinatorial optimization,Computer security
+1495,Combinatorial optimization,Software engineering
+1496,Combinatorial optimization,Information retrieval
+1497,Combinatorial optimization,Database
+1498,Combinatorial optimization,Robotics
+1499,Social network analysis,Parallel computing
+1500,Social network analysis,Modeling language
+1501,Cloud computing,Social network analysis
+1502,Software testing,Social network analysis
+1503,Wireless network,Social network analysis
+1504,Social network analysis,Data structure
+1505,Social network analysis,Network security
+1506,Knowledge management,Social network analysis
+1507,Social network analysis,Computer graphics
+1508,Social network analysis,Computational geometry
+1509,Social network analysis,Algorithm
+1510,Social network analysis,Machine learning
+1511,Social network analysis,Graphical model
+1512,Social network analysis,Data integration
+1513,Software architecture,Social network analysis
+1514,Social network analysis,Compiler
+1515,Distributed object,Social network analysis
+1516,Social network analysis,Information security
+1517,Social network analysis,Distributed computing
+1518,Social network analysis,Cryptography
+1519,Broadband networks,Social network analysis
+1520,Social network analysis,Artificial intelligence
+1521,Social network analysis,Natural language processing
+1522,Social network analysis,Computer vision
+1523,Social network analysis,Combinatorial optimization
+1524,Computational linguistics,Social network analysis
+1525,Social network analysis,Network service
+1526,Social network analysis,Operating system
+1527,Game theory,Social network analysis
+1528,Information management,Social network analysis
+1529,Social network analysis,Data warehouse
+1530,Social network analysis,Computer architecture
+1531,Social network analysis,Software development
+1532,Social network analysis,Programming language
+1533,Social network analysis,Theory of computation
+1534,Social network analysis,Computer network
+1535,Social network analysis,Analysis of algorithms
+1536,Internet protocol suite,Social network analysis
+1537,Social network analysis,Data mining
+1538,Social network analysis,Discrete mathematics
+1539,Social network analysis,Computer security
+1540,Social network analysis,Software engineering
+1541,Social network analysis,Information retrieval
+1542,Social network analysis,Database
+1543,Computational linguistics,Parallel computing
+1544,Computational linguistics,Modeling language
+1545,Computational linguistics,Cloud computing
+1546,Computational linguistics,Wireless network
+1547,Computational linguistics,Data structure
+1548,Computational linguistics,Assembly language
+1549,Computational linguistics,Network security
+1550,Computational linguistics,Knowledge management
+1551,Computational linguistics,Computer graphics
+1552,Computational linguistics,Computational geometry
+1553,Computational linguistics,Algorithm
+1554,Computational linguistics,Object-oriented programming
+1555,Computational linguistics,Machine learning
+1556,Computational linguistics,Software project management
+1557,Graphical model,Computational linguistics
+1558,Computational linguistics,Data integration
+1559,Computational linguistics,Software architecture
+1560,Computational linguistics,Compiler
+1561,Computational linguistics,Information security
+1562,Translator (computing),Computational linguistics
+1563,Computational linguistics,Distributed computing
+1564,Computational linguistics,Cryptography
+1565,Computational linguistics,Artificial intelligence
+1566,Computational linguistics,Computer vision
+1567,Computational linguistics,Object-oriented design
+1568,Combinatorial optimization,Computational linguistics
+1569,Computational linguistics,Social network analysis
+1570,Computational linguistics,Network service
+1571,Computational linguistics,Operating system
+1572,Computational linguistics,Game theory
+1573,Information management,Computational linguistics
+1574,Computational linguistics,Computer-aided software engineering
+1575,Computational linguistics,Data warehouse
+1576,Computational linguistics,Computer architecture
+1577,Computational linguistics,Software development
+1578,Computational linguistics,Programming language
+1579,Computational linguistics,Theory of computation
+1580,Computational linguistics,Computer network
+1581,Computational linguistics,Analysis of algorithms
+1582,Computational linguistics,Internet protocol suite
+1583,Computational linguistics,Data mining
+1584,Software analytics,Computational linguistics
+1585,Computational linguistics,Discrete mathematics
+1586,Computational linguistics,Computer security
+1587,Computational linguistics,Software engineering
+1588,Computational linguistics,Information retrieval
+1589,Computational linguistics,Database
+1590,Computational linguistics,Robotics
+1591,Computational linguistics,Microarchitecture
+1592,Network service,Parallel computing
+1593,Network service,Modeling language
+1594,Cloud computing,Network service
+1595,Software testing,Network service
+1596,Wireless network,Network service
+1597,Network service,Data structure
+1598,Assembly language,Network service
+1599,Network security,Network service
+1600,Knowledge management,Network service
+1601,Object-oriented analysis and design,Network service
+1602,Network service,Computer graphics
+1603,Network service,Computational geometry
+1604,Network service,Algorithm
+1605,Object-oriented programming,Network service
+1606,Network service,Machine learning
+1607,Software project management,Network service
+1608,Graphical model,Network service
+1609,Data integration,Network service
+1610,Software architecture,Network service
+1611,Network service,Compiler
+1612,Distributed object,Network service
+1613,Network service,Information security
+1614,Cryptography,Network service
+1615,Broadband networks,Network service
+1616,Network service,Artificial intelligence
+1617,Natural language processing,Network service
+1618,Network service,Computer vision
+1619,Network service,Object-oriented design
+1620,Combinatorial optimization,Network service
+1621,Social network analysis,Network service
+1622,Computational linguistics,Network service
+1623,Network service,Operating system
+1624,Game theory,Network service
+1625,Network service,Information management
+1626,Computer-aided software engineering,Network service
+1627,Data warehouse,Network service
+1628,Network service,Computer architecture
+1629,Network service,Software development
+1630,Network service,Programming language
+1631,Network service,Theory of computation
+1632,Network service,Computer network
+1633,Software metric,Network service
+1634,Network service,Analysis of algorithms
+1635,Internet protocol suite,Network service
+1636,Network service,Data mining
+1637,Software analytics,Network service
+1638,Network service,Discrete mathematics
+1639,Test automation,Network service
+1640,Network service,Computer security
+1641,Software engineering,Network service
+1642,Information retrieval,Network service
+1643,Network service,Database
+1644,Robotics,Network service
+1645,Microarchitecture,Network service
+1646,Data-intensive computing,Operating system
+1647,Mobile app development,Operating system
+1648,Cloud computing,Operating system
+1649,Software testing,Operating system
+1650,Wireless network,Operating system
+1651,Data structure,Operating system
+1652,Assembly language,Operating system
+1653,Network security,Operating system
+1654,Parallel processing (DSP implementation),Operating system
+1655,Knowledge management,Operating system
+1656,Object-oriented analysis and design,Operating system
+1657,Operating system,Computer graphics
+1658,Operating system,Algorithm
+1659,Object-oriented programming,Operating system
+1660,Software project management,Operating system
+1661,Graphical model,Operating system
+1662,Data integration,Operating system
+1663,Software architecture,Operating system
+1664,Compiler,Operating system
+1665,Distributed object,Operating system
+1666,Information security,Operating system
+1667,Translator (computing),Operating system
+1668,Distributed computing,Operating system
+1669,Cryptography,Operating system
+1670,Broadband networks,Operating system
+1671,Natural language processing,Operating system
+1672,Operating system,Computer vision
+1673,Operating system,Object-oriented design
+1674,Combinatorial optimization,Operating system
+1675,Social network analysis,Operating system
+1676,Computational linguistics,Operating system
+1677,Network service,Operating system
+1678,Game theory,Operating system
+1679,Operating system,Information management
+1680,Computer-aided software engineering,Operating system
+1681,Data warehouse,Operating system
+1682,Systems programming,Operating system
+1683,Operating system,Software development
+1684,Operating system,Programming language
+1685,Operating system,Theory of computation
+1686,Operating system,Computer network
+1687,Software metric,Operating system
+1688,Analysis of algorithms,Operating system
+1689,Internet protocol suite,Operating system
+1690,Data mining,Operating system
+1691,Software analytics,Operating system
+1692,Operating system,Discrete mathematics
+1693,Test automation,Operating system
+1694,Software engineering,Operating system
+1695,Information retrieval,Operating system
+1696,Operating system,Database
+1697,Robotics,Operating system
+1698,Microarchitecture,Operating system
+1699,Game theory,Parallel computing
+1700,Game theory,Modeling language
+1701,Software testing,Game theory
+1702,Game theory,Data structure
+1703,Game theory,Network security
+1704,Game theory,Computer graphics
+1705,Game theory,Computational geometry
+1706,Game theory,Algorithm
+1707,Object-oriented programming,Game theory
+1708,Game theory,Machine learning
+1709,Graphical model,Game theory
+1710,Game theory,Compiler
+1711,Game theory,Information security
+1712,Game theory,Distributed computing
+1713,Game theory,Cryptography
+1714,Game theory,Artificial intelligence
+1715,Natural language processing,Game theory
+1716,Game theory,Computer vision
+1717,Combinatorial optimization,Game theory
+1718,Game theory,Social network analysis
+1719,Computational linguistics,Game theory
+1720,Game theory,Network service
+1721,Game theory,Operating system
+1722,Game theory,Computer architecture
+1723,Game theory,Software development
+1724,Game theory,Programming language
+1725,Game theory,Theory of computation
+1726,Game theory,Computer network
+1727,Game theory,Analysis of algorithms
+1728,Game theory,Data mining
+1729,Software analytics,Game theory
+1730,Game theory,Discrete mathematics
+1731,Game theory,Computer security
+1732,Game theory,Software engineering
+1733,Game theory,Information retrieval
+1734,Game theory,Database
+1735,Robotics,Game theory
+1736,Software testing,Information management
+1737,Information management,Data structure
+1738,Information management,Knowledge management
+1739,Computational geometry,Information management
+1740,Object-oriented programming,Information management
+1741,Machine learning,Information management
+1742,Information management,Data integration
+1743,Software architecture,Information management
+1744,Information security,Information management
+1745,Artificial intelligence,Information management
+1746,Information management,Social network analysis
+1747,Information management,Computational linguistics
+1748,Network service,Information management
+1749,Operating system,Information management
+1750,Computer-aided software engineering,Information management
+1751,Information management,Data warehouse
+1752,Computer architecture,Information management
+1753,Software development,Information management
+1754,Programming language,Information management
+1755,Computer network,Information management
+1756,Analysis of algorithms,Information management
+1757,Information management,Data mining
+1758,Computer security,Information management
+1759,Software engineering,Information management
+1760,Information management,Information retrieval
+1761,Information management,Database
+1762,Computer-aided software engineering,Parallel computing
+1763,Computer-aided software engineering,Modeling language
+1764,Computer-aided software engineering,Cloud computing
+1765,Computer-aided software engineering,Software testing
+1766,Computer-aided software engineering,Data structure
+1767,Computer-aided software engineering,Network security
+1768,Computer-aided software engineering,Knowledge management
+1769,Object-oriented analysis and design,Computer-aided software engineering
+1770,Computer-aided software engineering,Computer graphics
+1771,Computer-aided software engineering,Computational geometry
+1772,Computer-aided software engineering,Algorithm
+1773,Computer-aided software engineering,Object-oriented programming
+1774,Computer-aided software engineering,Machine learning
+1775,Software project management,Computer-aided software engineering
+1776,Computer-aided software engineering,Software architecture
+1777,Computer-aided software engineering,Compiler
+1778,Computer-aided software engineering,Information security
+1779,Computer-aided software engineering,Distributed computing
+1780,Computer-aided software engineering,Cryptography
+1781,Computer-aided software engineering,Artificial intelligence
+1782,Computer-aided software engineering,Natural language processing
+1783,Computer-aided software engineering,Computer vision
+1784,Computer-aided software engineering,Object-oriented design
+1785,Computational linguistics,Computer-aided software engineering
+1786,Computer-aided software engineering,Network service
+1787,Computer-aided software engineering,Operating system
+1788,Computer-aided software engineering,Information management
+1789,Computer-aided software engineering,Data warehouse
+1790,Computer-aided software engineering,Computer architecture
+1791,Computer-aided software engineering,Software development
+1792,Computer-aided software engineering,Programming language
+1793,Computer-aided software engineering,Theory of computation
+1794,Computer-aided software engineering,Computer network
+1795,Software metric,Computer-aided software engineering
+1796,Computer-aided software engineering,Analysis of algorithms
+1797,Computer-aided software engineering,Data mining
+1798,Software analytics,Computer-aided software engineering
+1799,Computer-aided software engineering,Discrete mathematics
+1800,Test automation,Computer-aided software engineering
+1801,Computer-aided software engineering,Computer security
+1802,Computer-aided software engineering,Software engineering
+1803,Computer-aided software engineering,Information retrieval
+1804,Computer-aided software engineering,Database
+1805,Data-intensive computing,Data warehouse
+1806,Data warehouse,Parallel computing
+1807,Data warehouse,Modeling language
+1808,Data warehouse,Cloud computing
+1809,Software testing,Data warehouse
+1810,Data warehouse,Data structure
+1811,Data warehouse,Assembly language
+1812,Data warehouse,Network security
+1813,Knowledge management,Data warehouse
+1814,Data warehouse,Computer graphics
+1815,Data warehouse,Computational geometry
+1816,Data warehouse,Algorithm
+1817,Data warehouse,Object-oriented programming
+1818,Data warehouse,Machine learning
+1819,Graphical model,Data warehouse
+1820,Data integration,Data warehouse
+1821,Software architecture,Data warehouse
+1822,Data warehouse,Compiler
+1823,Data warehouse,Information security
+1824,Data warehouse,Distributed computing
+1825,Data warehouse,Cryptography
+1826,Data warehouse,Artificial intelligence
+1827,Data warehouse,Natural language processing
+1828,Data warehouse,Computer vision
+1829,Social network analysis,Data warehouse
+1830,Computational linguistics,Data warehouse
+1831,Data warehouse,Network service
+1832,Data warehouse,Operating system
+1833,Information management,Data warehouse
+1834,Computer-aided software engineering,Data warehouse
+1835,Data warehouse,Computer architecture
+1836,Data warehouse,Software development
+1837,Data warehouse,Programming language
+1838,Data warehouse,Theory of computation
+1839,Data warehouse,Computer network
+1840,Data warehouse,Analysis of algorithms
+1841,Data warehouse,Data mining
+1842,Software analytics,Data warehouse
+1843,Data warehouse,Discrete mathematics
+1844,Data warehouse,Computer security
+1845,Software engineering,Data warehouse
+1846,Information retrieval,Data warehouse
+1847,Data warehouse,Database
+1848,Systems programming,Cloud computing
+1849,Systems programming,Computer graphics
+1850,Systems programming,Algorithm
+1851,Systems programming,Graphical model
+1852,Systems programming,Compiler
+1853,Systems programming,Distributed computing
+1854,Systems programming,Operating system
+1855,Systems programming,Computer architecture
+1856,Systems programming,Computer network
+1857,Systems programming,Database
+1858,Data-intensive computing,Computer architecture
+1859,Computer architecture,Parallel computing
+1860,Modeling language,Computer architecture
+1861,Mobile app development,Computer architecture
+1862,Cloud computing,Computer architecture
+1863,Software testing,Computer architecture
+1864,Wireless network,Computer architecture
+1865,Data structure,Computer architecture
+1866,Assembly language,Computer architecture
+1867,Network security,Computer architecture
+1868,Parallel processing (DSP implementation),Computer architecture
+1869,Knowledge management,Computer architecture
+1870,Object-oriented analysis and design,Computer architecture
+1871,Computer architecture,Computer graphics
+1872,Computer architecture,Computational geometry
+1873,Computer architecture,Algorithm
+1874,Object-oriented programming,Computer architecture
+1875,Computer architecture,Machine learning
+1876,Software project management,Computer architecture
+1877,Graphical model,Computer architecture
+1878,Data integration,Computer architecture
+1879,Software architecture,Computer architecture
+1880,Compiler,Computer architecture
+1881,Distributed object,Computer architecture
+1882,Translator (computing),Computer architecture
+1883,Distributed computing,Computer architecture
+1884,Cryptography,Computer architecture
+1885,Broadband networks,Computer architecture
+1886,Computer architecture,Artificial intelligence
+1887,Natural language processing,Computer architecture
+1888,Computer architecture,Computer vision
+1889,Computer architecture,Object-oriented design
+1890,Combinatorial optimization,Computer architecture
+1891,Social network analysis,Computer architecture
+1892,Computational linguistics,Computer architecture
+1893,Network service,Computer architecture
+1894,Game theory,Computer architecture
+1895,Computer architecture,Information management
+1896,Computer-aided software engineering,Computer architecture
+1897,Data warehouse,Computer architecture
+1898,Systems programming,Computer architecture
+1899,Computer architecture,Software development
+1900,Computer architecture,Programming language
+1901,Computer architecture,Theory of computation
+1902,Computer architecture,Computer network
+1903,Software metric,Computer architecture
+1904,Internet protocol suite,Computer architecture
+1905,Software analytics,Computer architecture
+1906,Computer architecture,Discrete mathematics
+1907,Test automation,Computer architecture
+1908,Computer architecture,Computer security
+1909,Software engineering,Computer architecture
+1910,Information retrieval,Computer architecture
+1911,Computer architecture,Database
+1912,Robotics,Computer architecture
+1913,Microarchitecture,Computer architecture
+1914,Data-intensive computing,Software development
+1915,Parallel computing,Software development
+1916,Modeling language,Software development
+1917,Cloud computing,Software development
+1918,Software testing,Software development
+1919,Wireless network,Software development
+1920,Data structure,Software development
+1921,Assembly language,Software development
+1922,Network security,Software development
+1923,Knowledge management,Software development
+1924,Object-oriented analysis and design,Software development
+1925,Software development,Computer graphics
+1926,Computational geometry,Software development
+1927,Software development,Algorithm
+1928,Object-oriented programming,Software development
+1929,Machine learning,Software development
+1930,Software project management,Software development
+1931,Graphical model,Software development
+1932,Data integration,Software development
+1933,Software architecture,Software development
+1934,Software development,Compiler
+1935,Distributed object,Software development
+1936,Information security,Software development
+1937,Distributed computing,Software development
+1938,Cryptography,Software development
+1939,Broadband networks,Software development
+1940,Artificial intelligence,Software development
+1941,Natural language processing,Software development
+1942,Software development,Computer vision
+1943,Object-oriented design,Software development
+1944,Combinatorial optimization,Software development
+1945,Social network analysis,Software development
+1946,Computational linguistics,Software development
+1947,Network service,Software development
+1948,Operating system,Software development
+1949,Game theory,Software development
+1950,Software development,Information management
+1951,Computer-aided software engineering,Software development
+1952,Data warehouse,Software development
+1953,Computer architecture,Software development
+1954,Software development,Programming language
+1955,Software development,Theory of computation
+1956,Software development,Computer network
+1957,Software metric,Software development
+1958,Analysis of algorithms,Software development
+1959,Internet protocol suite,Software development
+1960,Data mining,Software development
+1961,Software analytics,Software development
+1962,Software development,Discrete mathematics
+1963,Test automation,Software development
+1964,Computer security,Software development
+1965,Software engineering,Software development
+1966,Information retrieval,Software development
+1967,Software development,Database
+1968,Robotics,Software development
+1969,Microarchitecture,Software development
+1970,Data-intensive computing,Programming language
+1971,Parallel computing,Programming language
+1972,Modeling language,Programming language
+1973,Cloud computing,Programming language
+1974,Software testing,Programming language
+1975,Wireless network,Programming language
+1976,Data structure,Programming language
+1977,Assembly language,Programming language
+1978,Network security,Programming language
+1979,Knowledge management,Programming language
+1980,Object-oriented analysis and design,Programming language
+1981,Computer graphics,Programming language
+1982,Computational geometry,Programming language
+1983,Algorithm,Programming language
+1984,Programming language,Object-oriented programming
+1985,Machine learning,Programming language
+1986,Software project management,Programming language
+1987,Graphical model,Programming language
+1988,Data integration,Programming language
+1989,Software architecture,Programming language
+1990,Programming language,Compiler
+1991,Distributed object,Programming language
+1992,Information security,Programming language
+1993,Translator (computing),Programming language
+1994,Distributed computing,Programming language
+1995,Cryptography,Programming language
+1996,Broadband networks,Programming language
+1997,Artificial intelligence,Programming language
+1998,Natural language processing,Programming language
+1999,Computer vision,Programming language
+2000,Programming language,Object-oriented design
+2001,Combinatorial optimization,Programming language
+2002,Social network analysis,Programming language
+2003,Computational linguistics,Programming language
+2004,Network service,Programming language
+2005,Operating system,Programming language
+2006,Game theory,Programming language
+2007,Programming language,Information management
+2008,Computer-aided software engineering,Programming language
+2009,Data warehouse,Programming language
+2010,Computer architecture,Programming language
+2011,Software development,Programming language
+2012,Theory of computation,Programming language
+2013,Computer network,Programming language
+2014,Software metric,Programming language
+2015,Analysis of algorithms,Programming language
+2016,Internet protocol suite,Programming language
+2017,Data mining,Programming language
+2018,Software analytics,Programming language
+2019,Discrete mathematics,Programming language
+2020,Test automation,Programming language
+2021,Computer security,Programming language
+2022,Software engineering,Programming language
+2023,Information retrieval,Programming language
+2024,Database,Programming language
+2025,Robotics,Programming language
+2026,Microarchitecture,Programming language
+2027,Data-intensive computing,Theory of computation
+2028,Parallel computing,Theory of computation
+2029,Modeling language,Theory of computation
+2030,Cloud computing,Theory of computation
+2031,Software testing,Theory of computation
+2032,Wireless network,Theory of computation
+2033,Theory of computation,Data structure
+2034,Assembly language,Theory of computation
+2035,Network security,Theory of computation
+2036,Knowledge management,Theory of computation
+2037,Object-oriented analysis and design,Theory of computation
+2038,Computer graphics,Theory of computation
+2039,Computational geometry,Theory of computation
+2040,Theory of computation,Algorithm
+2041,Object-oriented programming,Theory of computation
+2042,Machine learning,Theory of computation
+2043,Software project management,Theory of computation
+2044,Graphical model,Theory of computation
+2045,Data integration,Theory of computation
+2046,Software architecture,Theory of computation
+2047,Theory of computation,Compiler
+2048,Distributed object,Theory of computation
+2049,Information security,Theory of computation
+2050,Distributed computing,Theory of computation
+2051,Cryptography,Theory of computation
+2052,Broadband networks,Theory of computation
+2053,Artificial intelligence,Theory of computation
+2054,Natural language processing,Theory of computation
+2055,Computer vision,Theory of computation
+2056,Combinatorial optimization,Theory of computation
+2057,Social network analysis,Theory of computation
+2058,Computational linguistics,Theory of computation
+2059,Network service,Theory of computation
+2060,Operating system,Theory of computation
+2061,Game theory,Theory of computation
+2062,Computer-aided software engineering,Theory of computation
+2063,Data warehouse,Theory of computation
+2064,Computer architecture,Theory of computation
+2065,Software development,Theory of computation
+2066,Theory of computation,Programming language
+2067,Computer network,Theory of computation
+2068,Software metric,Theory of computation
+2069,Theory of computation,Analysis of algorithms
+2070,Internet protocol suite,Theory of computation
+2071,Data mining,Theory of computation
+2072,Software analytics,Theory of computation
+2073,Discrete mathematics,Theory of computation
+2074,Test automation,Theory of computation
+2075,Computer security,Theory of computation
+2076,Software engineering,Theory of computation
+2077,Information retrieval,Theory of computation
+2078,Database,Theory of computation
+2079,Robotics,Theory of computation
+2080,Microarchitecture,Theory of computation
+2081,Data-intensive computing,Computer network
+2082,Parallel computing,Computer network
+2083,Modeling language,Computer network
+2084,Mobile app development,Computer network
+2085,Cloud computing,Computer network
+2086,Software testing,Computer network
+2087,Wireless network,Computer network
+2088,Data structure,Computer network
+2089,Assembly language,Computer network
+2090,Network security,Computer network
+2091,Parallel processing (DSP implementation),Computer network
+2092,Knowledge management,Computer network
+2093,Object-oriented analysis and design,Computer network
+2094,Computer graphics,Computer network
+2095,Computational geometry,Computer network
+2096,Computer network,Algorithm
+2097,Object-oriented programming,Computer network
+2098,Machine learning,Computer network
+2099,Software project management,Computer network
+2100,Graphical model,Computer network
+2101,Data integration,Computer network
+2102,Software architecture,Computer network
+2103,Compiler,Computer network
+2104,Distributed object,Computer network
+2105,Information security,Computer network
+2106,Distributed computing,Computer network
+2107,Cryptography,Computer network
+2108,Broadband networks,Computer network
+2109,Artificial intelligence,Computer network
+2110,Natural language processing,Computer network
+2111,Computer vision,Computer network
+2112,Computer network,Object-oriented design
+2113,Combinatorial optimization,Computer network
+2114,Social network analysis,Computer network
+2115,Computational linguistics,Computer network
+2116,Network service,Computer network
+2117,Operating system,Computer network
+2118,Game theory,Computer network
+2119,Computer network,Information management
+2120,Computer-aided software engineering,Computer network
+2121,Data warehouse,Computer network
+2122,Systems programming,Computer network
+2123,Computer architecture,Computer network
+2124,Software development,Computer network
+2125,Computer network,Programming language
+2126,Computer network,Theory of computation
+2127,Software metric,Computer network
+2128,Analysis of algorithms,Computer network
+2129,Internet protocol suite,Computer network
+2130,Data mining,Computer network
+2131,Software analytics,Computer network
+2132,Discrete mathematics,Computer network
+2133,Test automation,Computer network
+2134,Computer security,Computer network
+2135,Software engineering,Computer network
+2136,Information retrieval,Computer network
+2137,Database,Computer network
+2138,Robotics,Computer network
+2139,Microarchitecture,Computer network
+2140,Software metric,Parallel computing
+2141,Software metric,Modeling language
+2142,Software metric,Software testing
+2143,Software metric,Data structure
+2144,Software metric,Network security
+2145,Object-oriented analysis and design,Software metric
+2146,Software metric,Computer graphics
+2147,Software metric,Computational geometry
+2148,Software metric,Algorithm
+2149,Software metric,Object-oriented programming
+2150,Software metric,Machine learning
+2151,Software metric,Software project management
+2152,Software metric,Software architecture
+2153,Software metric,Compiler
+2154,Software metric,Information security
+2155,Software metric,Distributed computing
+2156,Software metric,Cryptography
+2157,Software metric,Artificial intelligence
+2158,Software metric,Natural language processing
+2159,Software metric,Computer vision
+2160,Software metric,Object-oriented design
+2161,Software metric,Network service
+2162,Software metric,Operating system
+2163,Software metric,Computer-aided software engineering
+2164,Software metric,Computer architecture
+2165,Software metric,Software development
+2166,Software metric,Programming language
+2167,Software metric,Theory of computation
+2168,Software metric,Computer network
+2169,Software metric,Analysis of algorithms
+2170,Software metric,Data mining
+2171,Software metric,Discrete mathematics
+2172,Software metric,Test automation
+2173,Software metric,Computer security
+2174,Software metric,Software engineering
+2175,Software metric,Information retrieval
+2176,Software metric,Database
+2177,Software metric,Robotics
+2178,Data-intensive computing,Analysis of algorithms
+2179,Analysis of algorithms,Parallel computing
+2180,Analysis of algorithms,Modeling language
+2181,Cloud computing,Analysis of algorithms
+2182,Software testing,Analysis of algorithms
+2183,Wireless network,Analysis of algorithms
+2184,Data structure,Analysis of algorithms
+2185,Assembly language,Analysis of algorithms
+2186,Network security,Analysis of algorithms
+2187,Knowledge management,Analysis of algorithms
+2188,Object-oriented analysis and design,Analysis of algorithms
+2189,Analysis of algorithms,Computer graphics
+2190,Analysis of algorithms,Computational geometry
+2191,Analysis of algorithms,Algorithm
+2192,Object-oriented programming,Analysis of algorithms
+2193,Analysis of algorithms,Machine learning
+2194,Software project management,Analysis of algorithms
+2195,Graphical model,Analysis of algorithms
+2196,Data integration,Analysis of algorithms
+2197,Software architecture,Analysis of algorithms
+2198,Analysis of algorithms,Compiler
+2199,Distributed object,Analysis of algorithms
+2200,Distributed computing,Analysis of algorithms
+2201,Cryptography,Analysis of algorithms
+2202,Broadband networks,Analysis of algorithms
+2203,Analysis of algorithms,Artificial intelligence
+2204,Natural language processing,Analysis of algorithms
+2205,Computer vision,Analysis of algorithms
+2206,Analysis of algorithms,Object-oriented design
+2207,Combinatorial optimization,Analysis of algorithms
+2208,Social network analysis,Analysis of algorithms
+2209,Computational linguistics,Analysis of algorithms
+2210,Network service,Analysis of algorithms
+2211,Analysis of algorithms,Operating system
+2212,Game theory,Analysis of algorithms
+2213,Analysis of algorithms,Information management
+2214,Computer-aided software engineering,Analysis of algorithms
+2215,Data warehouse,Analysis of algorithms
+2216,Analysis of algorithms,Software development
+2217,Analysis of algorithms,Programming language
+2218,Theory of computation,Analysis of algorithms
+2219,Analysis of algorithms,Computer network
+2220,Software metric,Analysis of algorithms
+2221,Internet protocol suite,Analysis of algorithms
+2222,Software analytics,Analysis of algorithms
+2223,Test automation,Analysis of algorithms
+2224,Analysis of algorithms,Computer security
+2225,Software engineering,Analysis of algorithms
+2226,Information retrieval,Analysis of algorithms
+2227,Analysis of algorithms,Database
+2228,Robotics,Analysis of algorithms
+2229,Microarchitecture,Analysis of algorithms
+2230,Internet protocol suite,Parallel computing
+2231,Internet protocol suite,Modeling language
+2232,Software testing,Internet protocol suite
+2233,Internet protocol suite,Wireless network
+2234,Internet protocol suite,Network security
+2235,Internet protocol suite,Computer graphics
+2236,Internet protocol suite,Computational geometry
+2237,Internet protocol suite,Algorithm
+2238,Internet protocol suite,Machine learning
+2239,Internet protocol suite,Compiler
+2240,Distributed object,Internet protocol suite
+2241,Internet protocol suite,Information security
+2242,Internet protocol suite,Distributed computing
+2243,Internet protocol suite,Cryptography
+2244,Internet protocol suite,Artificial intelligence
+2245,Internet protocol suite,Natural language processing
+2246,Internet protocol suite,Computer vision
+2247,Internet protocol suite,Combinatorial optimization
+2248,Internet protocol suite,Social network analysis
+2249,Computational linguistics,Internet protocol suite
+2250,Internet protocol suite,Network service
+2251,Internet protocol suite,Operating system
+2252,Internet protocol suite,Computer architecture
+2253,Internet protocol suite,Software development
+2254,Internet protocol suite,Programming language
+2255,Internet protocol suite,Theory of computation
+2256,Internet protocol suite,Computer network
+2257,Internet protocol suite,Analysis of algorithms
+2258,Internet protocol suite,Data mining
+2259,Internet protocol suite,Discrete mathematics
+2260,Internet protocol suite,Computer security
+2261,Software engineering,Internet protocol suite
+2262,Internet protocol suite,Information retrieval
+2263,Internet protocol suite,Database
+2264,Data-intensive computing,Data mining
+2265,Data mining,Parallel computing
+2266,Data mining,Modeling language
+2267,Cloud computing,Data mining
+2268,Software testing,Data mining
+2269,Wireless network,Data mining
+2270,Data mining,Data structure
+2271,Assembly language,Data mining
+2272,Network security,Data mining
+2273,Knowledge management,Data mining
+2274,Object-oriented analysis and design,Data mining
+2275,Data mining,Computer graphics
+2276,Data mining,Computational geometry
+2277,Data mining,Algorithm
+2278,Object-oriented programming,Data mining
+2279,Data mining,Machine learning
+2280,Software project management,Data mining
+2281,Graphical model,Data mining
+2282,Data integration,Data mining
+2283,Software architecture,Data mining
+2284,Data mining,Compiler
+2285,Distributed object,Data mining
+2286,Distributed computing,Data mining
+2287,Cryptography,Data mining
+2288,Broadband networks,Data mining
+2289,Data mining,Artificial intelligence
+2290,Natural language processing,Data mining
+2291,Data mining,Computer vision
+2292,Data mining,Object-oriented design
+2293,Combinatorial optimization,Data mining
+2294,Social network analysis,Data mining
+2295,Computational linguistics,Data mining
+2296,Network service,Data mining
+2297,Data mining,Operating system
+2298,Game theory,Data mining
+2299,Information management,Data mining
+2300,Computer-aided software engineering,Data mining
+2301,Data warehouse,Data mining
+2302,Data mining,Software development
+2303,Data mining,Programming language
+2304,Data mining,Theory of computation
+2305,Data mining,Computer network
+2306,Software metric,Data mining
+2307,Internet protocol suite,Data mining
+2308,Software analytics,Data mining
+2309,Data mining,Discrete mathematics
+2310,Test automation,Data mining
+2311,Data mining,Computer security
+2312,Software engineering,Data mining
+2313,Information retrieval,Data mining
+2314,Data mining,Database
+2315,Robotics,Data mining
+2316,Microarchitecture,Data mining
+2317,Software analytics,Parallel computing
+2318,Software analytics,Modeling language
+2319,Software analytics,Software testing
+2320,Software analytics,Data structure
+2321,Software analytics,Network security
+2322,Software analytics,Computer graphics
+2323,Software analytics,Computational geometry
+2324,Software analytics,Algorithm
+2325,Software analytics,Object-oriented programming
+2326,Software analytics,Machine learning
+2327,Software analytics,Software project management
+2328,Software analytics,Graphical model
+2329,Software analytics,Data integration
+2330,Software analytics,Software architecture
+2331,Software analytics,Compiler
+2332,Software analytics,Information security
+2333,Software analytics,Distributed computing
+2334,Software analytics,Cryptography
+2335,Software analytics,Artificial intelligence
+2336,Software analytics,Natural language processing
+2337,Software analytics,Computer vision
+2338,Software analytics,Object-oriented design
+2339,Software analytics,Computational linguistics
+2340,Software analytics,Network service
+2341,Software analytics,Operating system
+2342,Software analytics,Game theory
+2343,Software analytics,Computer-aided software engineering
+2344,Software analytics,Data warehouse
+2345,Software analytics,Computer architecture
+2346,Software analytics,Software development
+2347,Software analytics,Programming language
+2348,Software analytics,Theory of computation
+2349,Software analytics,Computer network
+2350,Software analytics,Analysis of algorithms
+2351,Software analytics,Data mining
+2352,Software analytics,Discrete mathematics
+2353,Software analytics,Computer security
+2354,Software analytics,Software engineering
+2355,Software analytics,Information retrieval
+2356,Software analytics,Database
+2357,Software analytics,Robotics
+2358,Discrete mathematics,Parallel computing
+2359,Discrete mathematics,Modeling language
+2360,Cloud computing,Discrete mathematics
+2361,Software testing,Discrete mathematics
+2362,Wireless network,Discrete mathematics
+2363,Discrete mathematics,Data structure
+2364,Assembly language,Discrete mathematics
+2365,Network security,Discrete mathematics
+2366,Knowledge management,Discrete mathematics
+2367,Object-oriented analysis and design,Discrete mathematics
+2368,Discrete mathematics,Computer graphics
+2369,Discrete mathematics,Computational geometry
+2370,Discrete mathematics,Algorithm
+2371,Discrete mathematics,Machine learning
+2372,Software project management,Discrete mathematics
+2373,Graphical model,Discrete mathematics
+2374,Data integration,Discrete mathematics
+2375,Software architecture,Discrete mathematics
+2376,Discrete mathematics,Compiler
+2377,Distributed object,Discrete mathematics
+2378,Distributed computing,Discrete mathematics
+2379,Broadband networks,Discrete mathematics
+2380,Discrete mathematics,Artificial intelligence
+2381,Natural language processing,Discrete mathematics
+2382,Discrete mathematics,Computer vision
+2383,Discrete mathematics,Object-oriented design
+2384,Combinatorial optimization,Discrete mathematics
+2385,Social network analysis,Discrete mathematics
+2386,Computational linguistics,Discrete mathematics
+2387,Network service,Discrete mathematics
+2388,Operating system,Discrete mathematics
+2389,Game theory,Discrete mathematics
+2390,Computer-aided software engineering,Discrete mathematics
+2391,Data warehouse,Discrete mathematics
+2392,Computer architecture,Discrete mathematics
+2393,Software development,Discrete mathematics
+2394,Discrete mathematics,Programming language
+2395,Discrete mathematics,Theory of computation
+2396,Discrete mathematics,Computer network
+2397,Software metric,Discrete mathematics
+2398,Internet protocol suite,Discrete mathematics
+2399,Data mining,Discrete mathematics
+2400,Software analytics,Discrete mathematics
+2401,Test automation,Discrete mathematics
+2402,Software engineering,Discrete mathematics
+2403,Information retrieval,Discrete mathematics
+2404,Database,Discrete mathematics
+2405,Robotics,Discrete mathematics
+2406,Microarchitecture,Discrete mathematics
+2407,Test automation,Parallel computing
+2408,Test automation,Modeling language
+2409,Test automation,Cloud computing
+2410,Test automation,Software testing
+2411,Test automation,Data structure
+2412,Test automation,Assembly language
+2413,Test automation,Network security
+2414,Object-oriented analysis and design,Test automation
+2415,Test automation,Computer graphics
+2416,Test automation,Computational geometry
+2417,Test automation,Algorithm
+2418,Test automation,Object-oriented programming
+2419,Test automation,Machine learning
+2420,Test automation,Software project management
+2421,Test automation,Software architecture
+2422,Test automation,Compiler
+2423,Test automation,Information security
+2424,Test automation,Distributed computing
+2425,Test automation,Cryptography
+2426,Test automation,Artificial intelligence
+2427,Test automation,Natural language processing
+2428,Test automation,Computer vision
+2429,Test automation,Object-oriented design
+2430,Test automation,Network service
+2431,Test automation,Operating system
+2432,Test automation,Computer-aided software engineering
+2433,Test automation,Computer architecture
+2434,Test automation,Software development
+2435,Test automation,Programming language
+2436,Test automation,Theory of computation
+2437,Test automation,Computer network
+2438,Software metric,Test automation
+2439,Test automation,Analysis of algorithms
+2440,Test automation,Data mining
+2441,Test automation,Discrete mathematics
+2442,Test automation,Computer security
+2443,Test automation,Software engineering
+2444,Test automation,Information retrieval
+2445,Test automation,Database
+2446,Test automation,Robotics
+2447,Data-intensive computing,Computer security
+2448,Computer security,Parallel computing
+2449,Computer security,Modeling language
+2450,Cloud computing,Computer security
+2451,Software testing,Computer security
+2452,Wireless network,Computer security
+2453,Computer security,Data structure
+2454,Assembly language,Computer security
+2455,Network security,Computer security
+2456,Knowledge management,Computer security
+2457,Object-oriented analysis and design,Computer security
+2458,Computer security,Computer graphics
+2459,Computer security,Computational geometry
+2460,Computer security,Algorithm
+2461,Object-oriented programming,Computer security
+2462,Software project management,Computer security
+2463,Graphical model,Computer security
+2464,Data integration,Computer security
+2465,Software architecture,Computer security
+2466,Computer security,Compiler
+2467,Distributed object,Computer security
+2468,Information security,Computer security
+2469,Distributed computing,Computer security
+2470,Cryptography,Computer security
+2471,Broadband networks,Computer security
+2472,Natural language processing,Computer security
+2473,Computer security,Computer vision
+2474,Computer security,Object-oriented design
+2475,Combinatorial optimization,Computer security
+2476,Social network analysis,Computer security
+2477,Computational linguistics,Computer security
+2478,Network service,Computer security
+2479,Game theory,Computer security
+2480,Computer security,Information management
+2481,Computer-aided software engineering,Computer security
+2482,Data warehouse,Computer security
+2483,Computer architecture,Computer security
+2484,Computer security,Software development
+2485,Computer security,Programming language
+2486,Computer security,Theory of computation
+2487,Computer security,Computer network
+2488,Software metric,Computer security
+2489,Analysis of algorithms,Computer security
+2490,Internet protocol suite,Computer security
+2491,Data mining,Computer security
+2492,Software analytics,Computer security
+2493,Test automation,Computer security
+2494,Software engineering,Computer security
+2495,Information retrieval,Computer security
+2496,Computer security,Database
+2497,Robotics,Computer security
+2498,Microarchitecture,Computer security
+2499,Data-intensive computing,Software engineering
+2500,Software engineering,Parallel computing
+2501,Modeling language,Software engineering
+2502,Cloud computing,Software engineering
+2503,Software testing,Software engineering
+2504,Software engineering,Wireless network
+2505,Data structure,Software engineering
+2506,Assembly language,Software engineering
+2507,Software engineering,Network security
+2508,Software engineering,Knowledge management
+2509,Object-oriented analysis and design,Software engineering
+2510,Software engineering,Computer graphics
+2511,Software engineering,Computational geometry
+2512,Software engineering,Algorithm
+2513,Object-oriented programming,Software engineering
+2514,Software engineering,Machine learning
+2515,Software project management,Software engineering
+2516,Graphical model,Software engineering
+2517,Software engineering,Data integration
+2518,Software architecture,Software engineering
+2519,Software engineering,Compiler
+2520,Distributed object,Software engineering
+2521,Software engineering,Information security
+2522,Software engineering,Cryptography
+2523,Software engineering,Artificial intelligence
+2524,Natural language processing,Software engineering
+2525,Software engineering,Computer vision
+2526,Object-oriented design,Software engineering
+2527,Combinatorial optimization,Software engineering
+2528,Social network analysis,Software engineering
+2529,Computational linguistics,Software engineering
+2530,Software engineering,Network service
+2531,Software engineering,Operating system
+2532,Game theory,Software engineering
+2533,Software engineering,Information management
+2534,Computer-aided software engineering,Software engineering
+2535,Software engineering,Data warehouse
+2536,Software engineering,Computer architecture
+2537,Software engineering,Software development
+2538,Software engineering,Programming language
+2539,Software engineering,Theory of computation
+2540,Software engineering,Computer network
+2541,Software metric,Software engineering
+2542,Software engineering,Analysis of algorithms
+2543,Software engineering,Internet protocol suite
+2544,Software engineering,Data mining
+2545,Software analytics,Software engineering
+2546,Software engineering,Discrete mathematics
+2547,Test automation,Software engineering
+2548,Software engineering,Computer security
+2549,Software engineering,Information retrieval
+2550,Software engineering,Database
+2551,Robotics,Software engineering
+2552,Software engineering,Microarchitecture
+2553,Information retrieval,Parallel computing
+2554,Information retrieval,Modeling language
+2555,Cloud computing,Information retrieval
+2556,Software testing,Information retrieval
+2557,Wireless network,Information retrieval
+2558,Information retrieval,Data structure
+2559,Assembly language,Information retrieval
+2560,Network security,Information retrieval
+2561,Knowledge management,Information retrieval
+2562,Object-oriented analysis and design,Information retrieval
+2563,Information retrieval,Computer graphics
+2564,Information retrieval,Computational geometry
+2565,Information retrieval,Algorithm
+2566,Object-oriented programming,Information retrieval
+2567,Information retrieval,Machine learning
+2568,Software project management,Information retrieval
+2569,Graphical model,Information retrieval
+2570,Data integration,Information retrieval
+2571,Software architecture,Information retrieval
+2572,Information retrieval,Compiler
+2573,Distributed object,Information retrieval
+2574,Information retrieval,Information security
+2575,Translator (computing),Information retrieval
+2576,Information retrieval,Distributed computing
+2577,Information retrieval,Cryptography
+2578,Broadband networks,Information retrieval
+2579,Information retrieval,Artificial intelligence
+2580,Natural language processing,Information retrieval
+2581,Information retrieval,Computer vision
+2582,Combinatorial optimization,Information retrieval
+2583,Social network analysis,Information retrieval
+2584,Computational linguistics,Information retrieval
+2585,Information retrieval,Network service
+2586,Information retrieval,Operating system
+2587,Game theory,Information retrieval
+2588,Information management,Information retrieval
+2589,Computer-aided software engineering,Information retrieval
+2590,Information retrieval,Data warehouse
+2591,Information retrieval,Computer architecture
+2592,Information retrieval,Software development
+2593,Information retrieval,Programming language
+2594,Information retrieval,Theory of computation
+2595,Information retrieval,Computer network
+2596,Software metric,Information retrieval
+2597,Information retrieval,Analysis of algorithms
+2598,Internet protocol suite,Information retrieval
+2599,Information retrieval,Data mining
+2600,Software analytics,Information retrieval
+2601,Information retrieval,Discrete mathematics
+2602,Test automation,Information retrieval
+2603,Information retrieval,Computer security
+2604,Software engineering,Information retrieval
+2605,Information retrieval,Database
+2606,Robotics,Information retrieval
+2607,Microarchitecture,Information retrieval
+2608,Data-intensive computing,Database
+2609,Modeling language,Database
+2610,Mobile app development,Database
+2611,Cloud computing,Database
+2612,Software testing,Database
+2613,Wireless network,Database
+2614,Data structure,Database
+2615,Assembly language,Database
+2616,Network security,Database
+2617,Parallel processing (DSP implementation),Database
+2618,Knowledge management,Database
+2619,Object-oriented analysis and design,Database
+2620,Database,Computer graphics
+2621,Computational geometry,Database
+2622,Database,Algorithm
+2623,Object-oriented programming,Database
+2624,Machine learning,Database
+2625,Software project management,Database
+2626,Graphical model,Database
+2627,Data integration,Database
+2628,Software architecture,Database
+2629,Compiler,Database
+2630,Distributed object,Database
+2631,Information security,Database
+2632,Distributed computing,Database
+2633,Cryptography,Database
+2634,Broadband networks,Database
+2635,Artificial intelligence,Database
+2636,Natural language processing,Database
+2637,Database,Computer vision
+2638,Database,Object-oriented design
+2639,Combinatorial optimization,Database
+2640,Social network analysis,Database
+2641,Computational linguistics,Database
+2642,Network service,Database
+2643,Operating system,Database
+2644,Game theory,Database
+2645,Information management,Database
+2646,Computer-aided software engineering,Database
+2647,Data warehouse,Database
+2648,Systems programming,Database
+2649,Computer architecture,Database
+2650,Software development,Database
+2651,Database,Programming language
+2652,Database,Theory of computation
+2653,Database,Computer network
+2654,Software metric,Database
+2655,Analysis of algorithms,Database
+2656,Internet protocol suite,Database
+2657,Data mining,Database
+2658,Software analytics,Database
+2659,Database,Discrete mathematics
+2660,Test automation,Database
+2661,Computer security,Database
+2662,Software engineering,Database
+2663,Information retrieval,Database
+2664,Robotics,Database
+2665,Microarchitecture,Database
+2666,Robotics,Parallel computing
+2667,Robotics,Modeling language
+2668,Cloud computing,Robotics
+2669,Software testing,Robotics
+2670,Robotics,Network security
+2671,Object-oriented analysis and design,Robotics
+2672,Robotics,Computer graphics
+2673,Robotics,Computational geometry
+2674,Robotics,Algorithm
+2675,Object-oriented programming,Robotics
+2676,Robotics,Machine learning
+2677,Software project management,Robotics
+2678,Software architecture,Robotics
+2679,Robotics,Compiler
+2680,Robotics,Information security
+2681,Robotics,Distributed computing
+2682,Robotics,Cryptography
+2683,Robotics,Artificial intelligence
+2684,Robotics,Natural language processing
+2685,Robotics,Computer vision
+2686,Combinatorial optimization,Robotics
+2687,Computational linguistics,Robotics
+2688,Robotics,Network service
+2689,Robotics,Operating system
+2690,Robotics,Game theory
+2691,Robotics,Computer architecture
+2692,Robotics,Software development
+2693,Robotics,Programming language
+2694,Robotics,Theory of computation
+2695,Robotics,Computer network
+2696,Software metric,Robotics
+2697,Robotics,Analysis of algorithms
+2698,Robotics,Data mining
+2699,Software analytics,Robotics
+2700,Robotics,Discrete mathematics
+2701,Test automation,Robotics
+2702,Robotics,Computer security
+2703,Robotics,Software engineering
+2704,Robotics,Information retrieval
+2705,Robotics,Database
+2706,Microarchitecture,Parallel computing
+2707,Microarchitecture,Modeling language
+2708,Microarchitecture,Cloud computing
+2709,Software testing,Microarchitecture
+2710,Microarchitecture,Data structure
+2711,Microarchitecture,Assembly language
+2712,Microarchitecture,Network security
+2713,Microarchitecture,Computer graphics
+2714,Microarchitecture,Computational geometry
+2715,Microarchitecture,Algorithm
+2716,Microarchitecture,Object-oriented programming
+2717,Microarchitecture,Machine learning
+2718,Microarchitecture,Graphical model
+2719,Microarchitecture,Software architecture
+2720,Microarchitecture,Compiler
+2721,Microarchitecture,Information security
+2722,Microarchitecture,Distributed computing
+2723,Microarchitecture,Cryptography
+2724,Microarchitecture,Artificial intelligence
+2725,Microarchitecture,Natural language processing
+2726,Microarchitecture,Computer vision
+2727,Computational linguistics,Microarchitecture
+2728,Microarchitecture,Network service
+2729,Microarchitecture,Operating system
+2730,Microarchitecture,Computer architecture
+2731,Microarchitecture,Software development
+2732,Microarchitecture,Programming language
+2733,Microarchitecture,Theory of computation
+2734,Microarchitecture,Computer network
+2735,Microarchitecture,Analysis of algorithms
+2736,Microarchitecture,Data mining
+2737,Microarchitecture,Discrete mathematics
+2738,Microarchitecture,Computer security
+2739,Software engineering,Microarchitecture
+2740,Microarchitecture,Information retrieval
+2741,Microarchitecture,Database

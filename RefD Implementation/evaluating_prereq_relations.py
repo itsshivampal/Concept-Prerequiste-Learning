@@ -4,10 +4,17 @@ import random
 import os
 
 
+
 # Reading files from Course Dataset for CS
-file1 = "RefD Implementation/RefD_dataset/Course/CS.edges"
-file2 = "RefD Implementation/RefD_dataset/Course/CS.edges_neg"
-prereq_file = "RefD Implementation/output_data/prereq_CS_refd_equal.csv"
+file1 = "RefD Implementation/output_data/CS_edge.csv"
+file2 = "RefD Implementation/output_data/CS_edge_neg.csv"
+prereq_file = "RefD Implementation/output_data/calculated_prereq/CS/prereq_refd_equal_2.csv"
+
+
+# file1 = "RefD Implementation/output_data/MATH_edge.csv"
+# file2 = "RefD Implementation/output_data/MATH_edge_neg.csv"
+# prereq_file = "RefD Implementation/output_data/calculated_prereq/MATH/prereq_refd_equal_2.csv"
+
 
 def read_file(file_name):
     file = open(file_name)
@@ -25,11 +32,13 @@ def read_file(file_name):
         df = df.append(all_pairs[i], ignore_index=True)
     return df
 
-df_cs_edge = read_file(file1)
-df_cs_edge_neg = read_file(file2)
+# df_cs_edge = read_file(file1)
+# df_cs_edge_neg = read_file(file2)
 # df_cs_edge_neg = df_cs_edge_neg.drop_duplicates()
 
 # Reading calculated prerequisite relation file
+df_cs_edge = pd.read_csv(file1, encoding = "utf-8")
+df_cs_edge_neg = pd.read_csv(file2, encoding = "utf-8")
 df_prereq_match = pd.read_csv(prereq_file, encoding = "utf-8")
 
 def read_csv_file(df):
@@ -65,7 +74,9 @@ def match_two_tables(df1, df2):
     for i in range(len1):
         flag = False
         for j in range(len2):
-            if match_row(df1[i], df2[j]): flag = True
+            if match_row(df1[i], df2[j]):
+                flag = True
+                print(df1[i])
         if flag: count += 1
     return count
 
@@ -82,17 +93,17 @@ def check_similar_rows(df1, df2):
     return count
 
 # Output Presentation
-print("No of rows in cs edge dataset: ", df_cs_edge.shape[0])
-print("No of rows in cs edge negative dataset: ", df_cs_edge_neg.shape[0])
-print("No of rows in calculated prereq calculation dataset: ", df_prereq_match.shape[0])
+# print("No of rows in cs edge dataset: ", df_cs_edge.shape[0])
+# print("No of rows in cs edge negative dataset: ", df_cs_edge_neg.shape[0])
+# print("No of rows in calculated prereq calculation dataset: ", df_prereq_match.shape[0])
 print("\n")
 
 # matching of similar columns in calculated prerequistes file
-print("No of repeated rows in prereq calculated file: ", check_row_repetition(df_prereq_match))
+# print("No of repeated rows in prereq calculated file: ", check_row_repetition(df_prereq_match))
 print("No of repeated rows in cs edge file: ", check_row_repetition(df_cs_edge))
-print("No of repeated rows in cs edge negative file: ", check_row_repetition(df_cs_edge_neg))
+# print("No of repeated rows in cs edge negative file: ", check_row_repetition(df_cs_edge_neg))
 print("\n")
 
 # matching original dataset with out calculated dataset
-print("No of same rows in cs_edge and prereq_cal file: ", check_similar_rows(df_cs_edge, df_prereq_match))
-print("No of same rows in cs_edge_neg and prereq_cal file: ", check_similar_rows(df_cs_edge_neg, df_prereq_match))
+# print("No of same rows in cs_edge and prereq_cal file: ", check_similar_rows(df_cs_edge, df_prereq_match))
+# print("No of same rows in cs_edge_neg and prereq_cal file: ", check_similar_rows(df_cs_edge_neg, df_prereq_match))

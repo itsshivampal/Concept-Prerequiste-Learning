@@ -9,8 +9,8 @@ Use with following parameters:
 get_prereq_relations(theta, all_topics, all_keyword_data, method, w_type, data_name)
 
 theta: hyperparameter for tuning the prereq relations
-all_topics: list of concept space
-all_keyword_data: list of wikipedia data for those concepts
+prereq_data: file name of file containg prereq relations of a subject
+wiki_data: file name of file containing wikipedia data for prereq_data keywords
 method: Method you are going to use like "refd"
 w_type: tfidf or equal or any
 data_name: CS or MATH or any other
@@ -22,6 +22,31 @@ data_name: CS or MATH or any other
 
 from library.save_data import *
 import pandas as pd
+
+
+# Functions for reading data
+
+def get_all_topics(file_name):
+    df = pd.read_csv(file_name, encoding = "utf-8")
+    index_length = df.shape[0]
+    all_topics = []
+    for i in range(index_length):
+        all_topics.append(df[["topic_a"]].iloc[i].values[0])
+        all_topics.append(df[["topic_b"]].iloc[i].values[0])
+    all_topics = list(set(all_topics))
+    return all_topics
+
+def get_keyword_wiki_data(file_name):
+    df = pd.read_csv(file_name, encoding = 'utf-8')
+    index_length = df.shape[0]
+    all_keyword_data = {}
+    for i in range(index_length):
+        all_keyword_data[i] = {
+            'topic': df[["topic"]].iloc[i].values[0],
+            'wiki_links': df[["wiki_links"]].iloc[i].values[0]
+        }
+    return all_keyword_data
+
 
 # Useful functions of RefD calculation
 
@@ -134,10 +159,10 @@ def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type):
 #-------------------------------------------------------------------------------
 
 
-def save_prereq_relation(data, method, w_type, data_name):
+def save_prereq_relation(data, method, w_type, data_name, theta):
     column_name = ['topic_a', 'topic_b']
-    location = "RefD Implementation/output_data/prereq_"
-    location += data_name + "_" + method + "_" + w_type + ".csv"
+    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/prereq_"
+    location += method + "_" + w_type + "_" + str(int(theta*100)) + ".csv"
     save_csv_data(location, data, column_name)
 
 
@@ -153,7 +178,9 @@ def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
     return all_pairs_refd_value
 
 
-def get_prereq_relations(theta, all_topics, all_keyword_data, method, w_type, data_name):
+def get_prereq_relations(theta, prereq_data, wiki_data, method, w_type, data_name):
+    all_topics = get_all_topics(prereq_data)
+    all_keyword_data = get_keyword_wiki_data(wiki_data)
     prereq_results = {}
     count = 0
     theta_neg = -theta
@@ -174,5 +201,5 @@ def get_prereq_relations(theta, all_topics, all_keyword_data, method, w_type, da
                 continue
             prereq_results[count] = data
             count += 1
-    save_prereq_relation(prereq_results, method, w_type, data_name)
+    save_prereq_relation(prereq_results, method, w_type, data_name, theta)
     return prereq_results

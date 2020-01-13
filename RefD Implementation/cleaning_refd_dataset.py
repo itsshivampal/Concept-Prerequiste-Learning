@@ -10,6 +10,11 @@ replace_cs_strings = {
 }
 
 
+def remove_duplicates(df):
+    df = df.drop_duplicates(subset = ['topic_a', 'topic_b'], keep = "first")
+    return df
+
+
 def text_to_df(file_name):
     df = pd.DataFrame(columns = ['topic_a', 'topic_b'])
     file = open(file_name)
@@ -43,17 +48,21 @@ file4 = "RefD Implementation/RefD_dataset/Course/MATH.edges_neg"
 # Save CS.edges Dataset
 df_cs_edge = text_to_df(file1)
 df_cs_edge = replace_cs_keywords(df_cs_edge)
+df_cs_edge = remove_duplicates(df_cs_edge)
 df_cs_edge.to_csv("RefD Implementation/output_data/CS_edge.csv")
 
 # Save CS.edges_neg Dataset
 df_cs_edge_neg = text_to_df(file2)
 df_cs_edge_neg = replace_cs_keywords(df_cs_edge_neg)
+df_cs_edge_neg = remove_duplicates(df_cs_edge_neg)
 df_cs_edge_neg.to_csv("RefD Implementation/output_data/CS_edge_neg.csv")
 
-# Save MATH.edges Dataset
+# # Save MATH.edges Dataset
 df_math_edge = text_to_df(file3)
+df_math_edge = remove_duplicates(df_math_edge)
 df_math_edge.to_csv("RefD Implementation/output_data/MATH_edge.csv")
 
-# Save MATH.edges_neg Dataset
+# # Save MATH.edges_neg Dataset
 df_math_edge_neg = text_to_df(file4)
+df_math_edge_neg = remove_duplicates(df_math_edge_neg)
 df_math_edge_neg.to_csv("RefD Implementation/output_data/MATH_edge_neg.csv")
