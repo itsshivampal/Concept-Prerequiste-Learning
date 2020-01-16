@@ -12,6 +12,9 @@ replace_cs_strings = {
 
 def remove_duplicates(df):
     df = df.drop_duplicates(subset = ['topic_a', 'topic_b'], keep = "first")
+    indexNames = df[df['topic_a'] == df['topic_b']].index
+    if indexNames.size > 0:
+        df.drop(indexNames, inplace = True)
     return df
 
 

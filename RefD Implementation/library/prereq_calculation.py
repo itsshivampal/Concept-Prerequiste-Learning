@@ -48,6 +48,16 @@ def get_keyword_wiki_data(file_name):
     return all_keyword_data
 
 
+# remove duplicate rows and coulmns in calculated dataset
+def remove_duplicates(df):
+    df = df.drop_duplicates(subset = ['topic_a', 'topic_b'], keep = "first")
+    indexNames = df[df['topic_a'] == df['topic_b']].index
+    if indexNames.size > 0:
+        df.drop(indexNames, inplace = True)
+    return df
+
+
+
 # Useful functions of RefD calculation
 
 def get_id(topic, all_keyword_data):
@@ -163,7 +173,11 @@ def save_prereq_relation(data, method, w_type, data_name, theta):
     column_name = ['topic_a', 'topic_b']
     location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/prereq_"
     location += method + "_" + w_type + "_" + str(int(theta*100)) + ".csv"
-    save_csv_data(location, data, column_name)
+    df = pd.DataFrame(columns = column_name)
+    for i in range(len(data)):
+        df = df.append(data[i], ignore_index=True)
+    df = remove_duplicates(df)
+    df.to_csv(location)
 
 
 def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
