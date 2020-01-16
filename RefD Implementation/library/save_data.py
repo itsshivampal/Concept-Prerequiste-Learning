@@ -27,3 +27,26 @@ def save_csv_data(output_file, data, parameters):
         df = df.append(data[i], ignore_index=True)
     df.to_csv(output_file)
     return True
+
+
+def save_prereq_relation(df, method, w_type, data_name, theta):
+    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/"
+    location += method + "_" + w_type + "_" + str(int(theta*100)) + ".csv"
+    df.to_csv(location)
+    return True
+
+
+def save_evaluation_results(data, method, w_type, data_name, theta):
+    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/"
+    location += method + "_" + w_type + "_" + str(int(theta*100)) + ".txt"
+    file = open(location, "w+")
+    line = "Accuracy: " + str(data["accuracy"]) + "\n"
+    file.write(line)
+    line = "Precision: " + str(data["precision"]) + "\n"
+    file.write(line)
+    line = "Recall: " + str(data["recall"]) + "\n"
+    file.write(line)
+    line = "F1 Score: " + str(data["f1_score"]) + "\n"
+    file.write(line)
+    file.close()
+    return True

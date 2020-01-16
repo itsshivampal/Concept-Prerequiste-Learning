@@ -1,35 +1,39 @@
-from library.save_data import *
+from library.save_data import save_csv_data, save_evaluation_results, save_prereq_relation
+from library.data_reading import read_data, read_wiki_data
 from library.algorithm_evaluation import evaluate_prereq_estimation
 from library.prereq_calculation import get_prereq_relations
 import pandas as pd
 
 
-# file1 = "RefD Implementation/output_data/CS_edge.csv"
-# file2 = "RefD Implementation/output_data/final_CS_wiki_data.csv"
-# get_prereq_relations(0.02, file1, file2, "refd", "equal", "CS")
-#
-#
-# file1 = "RefD Implementation/output_data/MATH_edge.csv"
-# file2 = "RefD Implementation/output_data/final_MATH_wiki_data.csv"
-# get_prereq_relations(0.02, file1, file2, "refd", "equal", "MATH")
-
-#-------------------------------------------------------------------------------
-
-
-file1 = "RefD Implementation/output_data/CS_edge.csv"
-file2 = "RefD Implementation/output_data/CS_edge_neg.csv"
-prereq_file = "RefD Implementation/output_data/calculated_prereq/CS/prereq_refd_equal_2.csv"
-
-df_cs_edge = pd.read_csv(file1, encoding = "utf-8")
-df_cs_edge_neg = pd.read_csv(file2, encoding = "utf-8")
-df_prereq_match = pd.read_csv(prereq_file, encoding = "utf-8")
+# Define all required parameters here
+subject = "CS"
+theta = 0.02
+method = "refd"
+w_type = "equal"
 
 
 
-print(df_cs_edge.shape[0])
-print(df_cs_edge_neg.shape[0])
-print(df_prereq_match.shape[0])
+def main_function(subject, theta, method, w_type):
 
-print("#------------------------------------------------------------#")
+    # Data Reading
+    df_pos, df_neg = read_data(subject)
+    df_wiki = read_wiki_data(subject)
 
-print(evaluate_prereq_estimation(df_cs_edge, df_cs_edge_neg, df_prereq_match))
+    # get prerequisite relations for the given parameters
+    df_estimated = get_prereq_relations(df_pos, df_neg, df_wiki,
+                                                theta, method, w_type, subject)
+    # save calculated prerequisite data
+    save_prereq_relation(df_estimated, method, w_type, subject, theta)
+
+    # estimated result evaluation
+    estimated_results = evaluate_prereq_estimation(df_pos, df_neg, df_estimated)
+
+    # save evaluation results
+    save_evaluation_results(estimated_results, method, w_type, subject, theta)
+
+    return estimated_results
+
+
+estimated_results = main_function(subject, theta, method, w_type)
+
+print(estimated_results)

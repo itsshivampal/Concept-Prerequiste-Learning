@@ -89,7 +89,13 @@ def estimation_measures(TP, FN, FP, TN):
     recall = TP/(TP + FN)
     accuracy = (TP + TN)/(TP + TN + FN + FP)
     f1_score = 2*precision*recall/(precision + recall)
-    return (precision, recall, accuracy, f1_score)
+    data = {
+        "precision": precision,
+        "recall": recall,
+        "accuracy": accuracy,
+        "f1_score": f1_score
+    }
+    return data
 
 
 def evaluate_prereq_estimation(data_pos, data_neg, data_est):
@@ -98,5 +104,5 @@ def evaluate_prereq_estimation(data_pos, data_neg, data_est):
     # print(count1, count2, count3)
     # print(count4, count5, count6)
     TP, FN, FP, TN = confusion_matrix_formation(count1, count2, count3, count4, count5, count6)
-    precision, recall, accuracy, f1_score = estimation_measures(TP, FN, FP, TN)
-    return (precision, recall, accuracy, f1_score)
+    data = estimation_measures(TP, FN, FP, TN)
+    return data

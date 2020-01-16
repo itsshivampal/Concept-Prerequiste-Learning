@@ -26,21 +26,23 @@ import pandas as pd
 
 # Functions for reading data
 
-def get_all_topics(file_name):
-    df = pd.read_csv(file_name, encoding = "utf-8")
-    index_length = df.shape[0]
+def get_all_topics(df_pos, df_neg):
     all_topics = []
-    for i in range(index_length):
-        all_topics.append(df[["topic_a"]].iloc[i].values[0])
-        all_topics.append(df[["topic_b"]].iloc[i].values[0])
+
+    for i in range(df_pos.shape[0]):
+        all_topics.append(df_pos[["topic_a"]].iloc[i].values[0])
+        all_topics.append(df_pos[["topic_b"]].iloc[i].values[0])
+
+    for i in range(df_neg.shape[0]):
+        all_topics.append(df_neg[["topic_a"]].iloc[i].values[0])
+        all_topics.append(df_neg[["topic_b"]].iloc[i].values[0])
+
     all_topics = list(set(all_topics))
     return all_topics
 
-def get_keyword_wiki_data(file_name):
-    df = pd.read_csv(file_name, encoding = 'utf-8')
-    index_length = df.shape[0]
+def get_keyword_wiki_data(df):
     all_keyword_data = {}
-    for i in range(index_length):
+    for i in range(df.shape[0]):
         all_keyword_data[i] = {
             'topic': df[["topic"]].iloc[i].values[0],
             'wiki_links': df[["wiki_links"]].iloc[i].values[0]
@@ -169,15 +171,12 @@ def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type):
 #-------------------------------------------------------------------------------
 
 
-def save_prereq_relation(data, method, w_type, data_name, theta):
-    column_name = ['topic_a', 'topic_b']
-    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/prereq_"
-    location += method + "_" + w_type + "_" + str(int(theta*100)) + ".csv"
-    df = pd.DataFrame(columns = column_name)
+def dict_to_csv(data):
+    df = pd.DataFrame(columns = ["topic_a", "topic_b"])
     for i in range(len(data)):
         df = df.append(data[i], ignore_index=True)
     df = remove_duplicates(df)
-    df.to_csv(location)
+    return df
 
 
 def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
@@ -192,9 +191,9 @@ def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
     return all_pairs_refd_value
 
 
-def get_prereq_relations(theta, prereq_data, wiki_data, method, w_type, data_name):
-    all_topics = get_all_topics(prereq_data)
-    all_keyword_data = get_keyword_wiki_data(wiki_data)
+def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
+    all_topics = get_all_topics(df_pos, df_neg)
+    all_keyword_data = get_keyword_wiki_data(df_wiki)
     prereq_results = {}
     count = 0
     theta_neg = -theta
@@ -215,5 +214,5 @@ def get_prereq_relations(theta, prereq_data, wiki_data, method, w_type, data_nam
                 continue
             prereq_results[count] = data
             count += 1
-    save_prereq_relation(prereq_results, method, w_type, data_name, theta)
-    return prereq_results
+    df_estimated = dict_to_csv(prereq_results)
+    return df_estimated
