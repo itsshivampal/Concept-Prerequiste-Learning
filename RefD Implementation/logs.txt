@@ -39,5 +39,7 @@ No of same rows in cs_edge_neg and prereq_cal file:  183
 
 
 Next Task
-- Think which pair of calculated results you have to take in order to validate your results with exisitng data
-- Make your evaluation metrics for comparing your results
+- Once again look at your code and see the possible bugs
+- Implement TFIDF w_type
+- Make code for visualising optimised theta
+- Discuss accuracy measures with Prof
