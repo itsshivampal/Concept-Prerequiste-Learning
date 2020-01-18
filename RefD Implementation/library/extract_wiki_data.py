@@ -26,11 +26,13 @@ def wiki_section_extract(content):
     return sections.strip()
 
 
-def keyword_data(topic = "", wiki_title = "", wiki_summary = "",
-                 wiki_content = "", wiki_html = "", wiki_links = "", wiki_sections = ""):
+def keyword_data(topic = "", wiki_title = "", wiki_url = "",
+                wiki_summary = "", wiki_content = "",
+                wiki_html = "", wiki_links = "", wiki_sections = ""):
     data = {
         'topic': topic,
         "wiki_title": wiki_title,
+        "wiki_url": wiki_url,
         "wiki_summary": wiki_summary,
         "wiki_content": wiki_content,
         "wiki_html": wiki_html,
@@ -41,12 +43,13 @@ def keyword_data(topic = "", wiki_title = "", wiki_summary = "",
 
 
 def wiki_data_list():
-    wiki_list = ['topic', 'wiki_title', 'wiki_summary', 'wiki_content', 'wiki_html', 'wiki_links', 'wiki_sections']
+    wiki_list = ['topic', 'wiki_title', "wiki_url", 'wiki_summary', 'wiki_content', 'wiki_html', 'wiki_links', 'wiki_sections']
     return wiki_list
 
 
 def extract_wikipedia_data(topic):
     wiki_title = ""
+    wiki_url = ""
     wiki_summary = ""
     wiki_content = ""
     wiki_html = ""
@@ -57,6 +60,7 @@ def extract_wikipedia_data(topic):
         try:
             wiki_data = wikipedia.page(wiki)
             wiki_title = wiki_data.title
+            wiki_url = wiki_data.url.split("/")[-1]
             wiki_summary = wiki_data.summary
             wiki_content = wiki_data.content
             wiki_html = wiki_data.html()
@@ -72,7 +76,7 @@ def extract_wikipedia_data(topic):
         print("blank")
 
 
-    data = keyword_data(topic, wiki_title, wiki_summary,
+    data = keyword_data(topic, wiki_title, wiki_url, wiki_summary,
                         wiki_content, wiki_html, wiki_links, wiki_sections)
 
     return data

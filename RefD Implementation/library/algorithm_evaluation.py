@@ -31,18 +31,23 @@ def count_no_same_pairs(dataset1, dataset2):
             x1 = dataset1[i]
             x2 = dataset2[j]
             if x1["topic_a"] == x2["topic_a"] and x1["topic_b"] == x2["topic_b"]:
-                count += 1
+                flag = True
+        if flag:
+            count += 1
     return count
 
 
 def count_no_opp_pairs(dataset1, dataset2):
     count = 0
     for i in range(len(dataset1)):
+        flag = False
         for j in range(len(dataset2)):
             x1 = dataset1[i]
             x2 = dataset2[j]
             if x1["topic_a"] == x2["topic_b"] and x1["topic_b"] == x2["topic_a"]:
-                count += 1
+                flag = True
+        if flag:
+            count += 1
     return count
 
 
@@ -101,8 +106,10 @@ def estimation_measures(TP, FN, FP, TN):
 def evaluate_prereq_estimation(data_pos, data_neg, data_est):
     count1, count2, count3 = compare_datasets(data_pos, data_est)
     count4, count5, count6 = compare_datasets(data_neg, data_est)
-    # print(count1, count2, count3)
-    # print(count4, count5, count6)
+    print(count1, count2, count3)
+    if count3 < 0 or count4 < 0:
+        print("Bug....")
+    print(count4, count5, count6)
     TP, FN, FP, TN = confusion_matrix_formation(count1, count2, count3, count4, count5, count6)
     data = estimation_measures(TP, FN, FP, TN)
     return data

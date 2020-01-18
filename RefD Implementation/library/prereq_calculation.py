@@ -45,7 +45,9 @@ def get_keyword_wiki_data(df):
     for i in range(df.shape[0]):
         all_keyword_data[i] = {
             'topic': df[["topic"]].iloc[i].values[0],
-            'wiki_links': df[["wiki_links"]].iloc[i].values[0]
+            'wiki_links': df[["wiki_links"]].iloc[i].values[0],
+            'wiki_url': df[["wiki_url"]].iloc[i].values[0],
+            'wiki_html': df[["wiki_html"]].iloc[i].values[0]
         }
     return all_keyword_data
 
@@ -90,6 +92,11 @@ def get_w_value_equal(topic_a, topic_b, all_keyword_data):
         return 1
     else:
         return 0
+
+
+
+
+
 
 
 # Calculation of W by "tfidf" w_type
@@ -191,13 +198,10 @@ def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
     return all_pairs_refd_value
 
 
-def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
-    all_topics = get_all_topics(df_pos, df_neg)
-    all_keyword_data = get_keyword_wiki_data(df_wiki)
+def relation_extraction(all_pairs_refd_value, theta, all_topics):
     prereq_results = {}
     count = 0
     theta_neg = -theta
-    all_pairs_refd_value = score_calc_all_pairs(all_topics, all_keyword_data, method, w_type)
     for i in range(len(all_topics)):
         for j in range(len(all_topics)):
             if all_pairs_refd_value[i][j] > theta:
@@ -215,4 +219,12 @@ def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_na
             prereq_results[count] = data
             count += 1
     df_estimated = dict_to_csv(prereq_results)
+    return df_estimated
+
+
+def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
+    all_topics = get_all_topics(df_pos, df_neg)
+    all_keyword_data = get_keyword_wiki_data(df_wiki)
+    all_pairs_refd_value = score_calc_all_pairs(all_topics, all_keyword_data, method, w_type)
+    df_estimated = relation_extraction(all_pairs_refd_value, theta, all_topics)
     return df_estimated

@@ -77,5 +77,7 @@ def extract_math_data(all_math_keyword_data):
 #----------------------------------------------------------------------
 
 
-extract_cs_data(all_cs_keyword_data)
-extract_math_data(all_math_keyword_data)
+extract_cs_data(all_cs_topics)
+print("cs data extracted\n")
+extract_math_data(all_math_topics)
+print("math data extracted\n")

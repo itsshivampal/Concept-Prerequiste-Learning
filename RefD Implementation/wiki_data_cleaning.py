@@ -28,11 +28,11 @@ def scan_dataset(df):
 # Correction need to made in MATH dataset
 math_correction = {
     0: {
-        "index": 51,
+        "index": 9,
         "title": "C star algebra"
     },
     1: {
-        "index": 20,
+        "index": 0,
         "title": "K theory"
     }
 }
@@ -40,7 +40,7 @@ math_correction = {
 # Correction need to made in CS dataset
 cs_correction = {
     0: {
-        "index": 18,
+        "index": 41,
         "title": "Parallel processing (DSP implementation)"
     }
 }
@@ -58,6 +58,7 @@ def correct_dataset(df, correction):
         data = {
             "topic": df[["topic"]].iloc[index].values[0],
             "wiki_title": wiki.title,
+            "wiki_url": wiki.url,
             "wiki_summary": wiki.summary,
             "wiki_content": wiki.content,
             "wiki_html": wiki.html(),
@@ -83,10 +84,12 @@ def update_cs_dataset(df_cs):
     df_cs = correct_dataset(df_cs, cs_correction)
     print("\nCurrent Status of Math Dataset")
     scan_dataset(df_cs)
-    df_cs.to_csv("RefD Implementation/output_data/final_CS_wiki_data.csv")
+    # df_cs.to_csv("RefD Implementation/output_data/final_CS_wiki_data.csv")
     return True
 
 
 # Functions for updating both the datasets
 update_math_dataset(df_math)
 update_cs_dataset(df_cs)
+
+# scan_dataset(df_math)
