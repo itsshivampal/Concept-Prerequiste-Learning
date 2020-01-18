@@ -22,6 +22,8 @@ data_name: CS or MATH or any other
 
 from library.save_data import *
 import pandas as pd
+from bs4 import BeautifulSoup
+import math
 
 
 # Functions for reading data
@@ -39,6 +41,7 @@ def get_all_topics(df_pos, df_neg):
 
     all_topics = list(set(all_topics))
     return all_topics
+
 
 def get_keyword_wiki_data(df):
     all_keyword_data = {}
@@ -97,13 +100,39 @@ def get_w_value_equal(topic_a, topic_b, all_keyword_data):
 
 
 
+def get_term_frequency(topic_a, topic_b, all_keyword_data):
+    topic_a_id = get_id(topic_a, all_keyword_data)
+    topic_b_id = get_id(topic_b, all_keyword_data)
+    data_a = all_keyword_data[topic_a_id]
+    data_b = all_keyword_data[topic_b_id]
+    topic_a_url = data_a["wiki_url"]
+    b_html_content = data_b["wiki_html"]
+    b_soup = BeautifulSoup(b_html_content, 'html.parser').text
+    term_frequency = b_soup.lower().count(topic_a_url.lower())
+    return term_frequency
+
+
+def get_idf(topic_a, all_keyword_data):
+    n = len(all_keyword_data)
+    count = 1
+    for i in range(n):
+        topic = all_keyword_data[i]["topic"]
+        referred_links = all_keyword_data[i]["wiki_links"]
+        # print(i, topic)
+        if topic_a in referred_links:
+            count += 1
+    idf = math.log(n/count)
+    return idf
 
 
 # Calculation of W by "tfidf" w_type
 def get_w_value_tfidf(topic_a, topic_b, all_keyword_data):
     referred_link_b = get_all_referred_links(topic_b, all_keyword_data)
     if topic_a in referred_link_b:
-        pass
+        tf = get_term_frequency(topic_a, topic_b, all_keyword_data)
+        idf = get_idf(topic_a, all_keyword_data)
+        tfidf = tf*idf
+        return tfidf
     else:
         return 0
 

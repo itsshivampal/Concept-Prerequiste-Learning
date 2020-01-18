@@ -84,7 +84,7 @@ def update_cs_dataset(df_cs):
     df_cs = correct_dataset(df_cs, cs_correction)
     print("\nCurrent Status of Math Dataset")
     scan_dataset(df_cs)
-    # df_cs.to_csv("RefD Implementation/output_data/final_CS_wiki_data.csv")
+    df_cs.to_csv("RefD Implementation/output_data/final_CS_wiki_data.csv")
     return True
 
 
@@ -92,4 +92,4 @@ def update_cs_dataset(df_cs):
 update_math_dataset(df_math)
 update_cs_dataset(df_cs)
 
-# scan_dataset(df_math)
+# scan_dataset(df_cs)

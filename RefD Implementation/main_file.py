@@ -5,24 +5,32 @@ from library.prereq_calculation import get_prereq_relations
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from bs4 import BeautifulSoup
+import math
 
 
-def get_plotting(x_label, y_label):
-    plt.plot(x_label, y_label)
+def get_plotting(theta_values, precision_values, recall_values):
+    plt.plot(theta_values, precision_values)
     plt.xlabel('theta_values')
-    plt.ylabel('average_values')
-    plt.title('Accuracy measures')
+    plt.ylabel('precision_values')
+    plt.show()
+
+    plt.plot(theta_values, recall_values)
+    plt.xlabel('theta_values')
+    plt.ylabel('recall_values')
     plt.show()
 
 
 def optimize_theta(subject, method, w_type):
     theta_values = [float("{0:.2f}".format((0.0 + 0.01*i))) for i in range(100)]
-    average_values = []
+    precision_values = []
+    recall_values = []
     for theta in theta_values:
         estimated_results = main_function(subject, theta, method, w_type)
-        average_values.append(estimated_results["accuracy"])
-        print(theta, estimated_results["accuracy"])
-    get_plotting(average_values, theta_values)
+        precision_values.append(estimated_results["precision"])
+        recall_values.append(estimated_results["recall"])
+        print(theta, estimated_results["precision"], estimated_results["recall"])
+    get_plotting(theta_values, precision_values, recall_values)
 
 
 
@@ -52,7 +60,7 @@ def main_function(subject, theta, method, w_type):
 
 # Define all required parameters here
 subject = "CS"
-theta = 0.98
+theta = 0.02
 method = "refd"
 w_type = "equal"
 

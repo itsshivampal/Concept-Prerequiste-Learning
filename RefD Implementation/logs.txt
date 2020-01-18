@@ -39,7 +39,4 @@ No of same rows in cs_edge_neg and prereq_cal file:  183
 
 
 Next Task
-- Once again look at your code and see the possible bugs
 - Implement TFIDF w_type
-- Make code for visualising optimised theta
-- Discuss accuracy measures with Prof
