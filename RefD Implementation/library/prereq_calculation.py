@@ -83,110 +83,84 @@ def get_all_referred_links(topic, all_keyword_data):
 def get_r_value(topic_a, topic_b, all_keyword_data):
     referred_link_a = get_all_referred_links(topic_a, all_keyword_data)
     if topic_b in referred_link_a:
-        return 1
+        return 1.0
     else:
-        return 0
+        return 0.0
 
 
 # Calculation of W by "equal" w_type
 def get_w_value_equal(topic_a, topic_b, all_keyword_data):
     referred_link_b = get_all_referred_links(topic_b, all_keyword_data)
     if topic_a in referred_link_b:
-        return 1
+        return 1.0
     else:
-        return 0
+        return 0.0
+
+
+def read_tfidf_json_data(subject):
+    filename = "RefD Implementation/output_data/w_values/" + subject + "_tfidf.json"
+    with open(filename) as f:
+        data = json.load(f)
+    return data
+
+
+
+def get_w_value_tfidf(topic_a, topic_b, tfidf_values):
+    return tfidf_values[topic_a][topic_b]
 
 
 
 
-
-def get_term_frequency(topic_a, topic_b, all_keyword_data):
-    topic_a_id = get_id(topic_a, all_keyword_data)
-    topic_b_id = get_id(topic_b, all_keyword_data)
-    data_a = all_keyword_data[topic_a_id]
-    data_b = all_keyword_data[topic_b_id]
-    topic_a_url = data_a["wiki_url"]
-    b_html_content = data_b["wiki_html"]
-    b_soup = BeautifulSoup(b_html_content, 'html.parser').text
-    term_frequency = b_soup.lower().count(topic_a_url.lower())
-    return term_frequency
-
-
-def get_idf(topic_a, all_keyword_data):
-    n = len(all_keyword_data)
-    count = 1
-    for i in range(n):
-        topic = all_keyword_data[i]["topic"]
-        referred_links = all_keyword_data[i]["wiki_links"]
-        # print(i, topic)
-        if topic_a in referred_links:
-            count += 1
-    idf = math.log(n/count)
-    return idf
-
-
-# Calculation of W by "tfidf" w_type
-def get_w_value_tfidf(topic_a, topic_b, all_keyword_data):
-    referred_link_b = get_all_referred_links(topic_b, all_keyword_data)
-    if topic_a in referred_link_b:
-        tf = get_term_frequency(topic_a, topic_b, all_keyword_data)
-        idf = get_idf(topic_a, all_keyword_data)
-        tfidf = tf*idf
-        return tfidf
-    else:
-        return 0
-
-
-# Foloowing functions for RefD implementation
-def part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type):
+# Following functions for RefD implementation
+def part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
     part_a = 0.0
     if w_type == "equal":
         for topic in all_topics:
             part_a = part_a + get_r_value(topic, topic_b, all_keyword_data)*get_w_value_equal(topic, topic_a, all_keyword_data)
     elif w_type == "tfidf":
         for topic in all_topics:
-            part_a = part_a + get_r_value(topic, topic_b, all_keyword_data)*get_w_value_tfidf(topic, topic_a, all_keyword_data)
+            part_a = part_a + get_r_value(topic, topic_b, all_keyword_data)*get_w_value_tfidf(topic, topic_a, tfidf_values)
     return float(part_a)
 
 
-def part_b_calc(topic_a, all_keyword_data, all_topics, w_type):
+def part_b_calc(topic_a, all_keyword_data, all_topics, w_type, tfidf_values):
     part_b = 0.0
     if w_type == "equal":
         for topic in all_topics:
             part_b = part_b + get_w_value_equal(topic, topic_a, all_keyword_data)
     elif w_type == "tfidf":
         for topic in all_topics:
-            part_b = part_b + get_w_value_tfidf(topic, topic_a, all_keyword_data)
+            part_b = part_b + get_w_value_tfidf(topic, topic_a, tfidf_values)
     return float(part_b)
 
 
-def part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type):
+def part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
     part_c = 0.0
     if w_type == "equal":
         for topic in all_topics:
             part_c = part_c + get_r_value(topic, topic_a, all_keyword_data)*get_w_value_equal(topic, topic_b, all_keyword_data)
     elif w_type == "tfidf":
         for topic in all_topics:
-            part_c = part_c + get_r_value(topic, topic_a, all_keyword_data)*get_w_value_tfidf(topic, topic_b, all_keyword_data)
+            part_c = part_c + get_r_value(topic, topic_a, all_keyword_data)*get_w_value_tfidf(topic, topic_b, tfidf_values)
     return float(part_c)
 
 
-def part_d_calc(topic_b, all_keyword_data, all_topics, w_type):
+def part_d_calc(topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
     part_d = 0.0
     if w_type == "equal":
         for topic in all_topics:
             part_d = part_d + get_w_value_equal(topic, topic_b, all_keyword_data)
     elif w_type == "tfidf":
         for topic in all_topics:
-            part_d = part_d + get_w_value_tfidf(topic, topic_b, all_keyword_data)
+            part_d = part_d + get_w_value_tfidf(topic, topic_b, tfidf_values)
     return float(part_d)
 
 
-def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type):
-    part_a = part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type)
-    part_b = part_b_calc(topic_a, all_keyword_data, all_topics, w_type)
-    part_c = part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type)
-    part_d = part_d_calc(topic_b, all_keyword_data, all_topics, w_type)
+def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
+    part_a = part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
+    part_b = part_b_calc(topic_a, all_keyword_data, all_topics, w_type, tfidf_values)
+    part_c = part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
+    part_d = part_d_calc(topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
 
     if part_b == 0 or part_d == 0:
         return 0
@@ -215,13 +189,17 @@ def dict_to_csv(data):
     return df
 
 
-def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type):
+def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type, data_name):
     all_pairs_refd_value = []
+    if w_type == "tfidf":
+        tfidf_values = read_tfidf_json_data(data_name)
+    else:
+        tfidf_values = {}
     for topic_a in all_topics:
         temp_topic = []
         for topic_b in all_topics:
             if method == "refd":
-                refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type)
+                refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
             temp_topic.append(refd_score)
         all_pairs_refd_value.append(temp_topic)
     return all_pairs_refd_value
@@ -254,6 +232,6 @@ def relation_extraction(all_pairs_refd_value, theta, all_topics):
 def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
     all_topics = get_all_topics(df_pos, df_neg)
     all_keyword_data = get_keyword_wiki_data(df_wiki)
-    all_pairs_refd_value = score_calc_all_pairs(all_topics, all_keyword_data, method, w_type)
+    all_pairs_refd_value = score_calc_all_pairs(all_topics, all_keyword_data, method, w_type, data_name)
     df_estimated = relation_extraction(all_pairs_refd_value, theta, all_topics)
     return df_estimated

@@ -11,6 +11,8 @@ parameters: should be in array containing all the column names
 
 import json
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 
 # Saving data in JSON Format
@@ -50,3 +52,35 @@ def save_evaluation_results(data, method, w_type, data_name, theta):
     file.write(line)
     file.close()
     return True
+
+
+def save_plots(subject, w_type, theta_values, accuracy_values, precision_values, recall_values, f1_values):
+    location = "RefD Implementation/results/" + subject + "/" + w_type + "/"
+
+    plt.plot(theta_values, accuracy_values)
+    plt.xlabel('theta')
+    plt.ylabel('accuracy')
+    file_name = location + "theta_v_accuracy.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, precision_values)
+    plt.xlabel('theta')
+    plt.ylabel('precision')
+    file_name = location + "theta_v_precision.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, recall_values)
+    plt.xlabel('theta')
+    plt.ylabel('recall')
+    file_name = location + "theta_v_recall.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, f1_values)
+    plt.xlabel('theta')
+    plt.ylabel('f1_score')
+    file_name = location + "theta_v_f1Score.png"
+    plt.savefig(file_name)
+    plt.clf()
