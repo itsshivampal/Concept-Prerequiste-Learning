@@ -93,7 +93,10 @@ def estimation_measures(TP, FN, FP, TN):
     precision = TP/(TP + FP)
     recall = TP/(TP + FN)
     accuracy = (TP + TN)/(TP + TN + FN + FP)
-    f1_score = 2*precision*recall/(precision + recall)
+    if precision == 0 and recall == 0:
+        f1_score = 0
+    else:
+        f1_score = 2*precision*recall/(precision + recall)
     data = {
         "precision": precision,
         "recall": recall,

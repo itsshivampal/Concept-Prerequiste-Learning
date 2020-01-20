@@ -61,22 +61,22 @@ def main_function(subject, theta, method, w_type):
 
 
 
-subject = "CS"
-method = "refd"
-w_type = "tfidf"
-optimize_theta(subject, method, w_type)
-
-
-subject = "CS"
-method = "refd"
-w_type = "equal"
-optimize_theta(subject, method, w_type)
-
-
-subject = "MATH"
-method = "refd"
-w_type = "tfidf"
-optimize_theta(subject, method, w_type)
+# subject = "CS"
+# method = "refd"
+# w_type = "tfidf"
+# optimize_theta(subject, method, w_type)
+#
+#
+# subject = "CS"
+# method = "refd"
+# w_type = "equal"
+# optimize_theta(subject, method, w_type)
+#
+#
+# subject = "MATH"
+# method = "refd"
+# w_type = "tfidf"
+# optimize_theta(subject, method, w_type)
 
 
 subject = "MATH"
