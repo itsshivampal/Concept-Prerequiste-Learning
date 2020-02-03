@@ -84,3 +84,10 @@ def save_plots(subject, w_type, theta_values, accuracy_values, precision_values,
     file_name = location + "theta_v_f1Score.png"
     plt.savefig(file_name)
     plt.clf()
+
+    plt.plot(recall_values, precision_values)
+    plt.xlabel('recall')
+    plt.ylabel('precision')
+    file_name = location + "precision_v_recall.png"
+    plt.savefig(file_name)
+    plt.clf()

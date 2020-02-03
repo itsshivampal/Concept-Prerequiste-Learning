@@ -92,7 +92,7 @@ def confusion_matrix_formation(count1, count2, count3, count4, count5, count6):
 def estimation_measures(TP, FN, FP, TN):
     precision = TP/(TP + FP)
     recall = TP/(TP + FN)
-    accuracy = (TP + TN)/(TP + TN + FN + FP)
+    accuracy = (TP)/(TP + FN + FP)
     if precision == 0 and recall == 0:
         f1_score = 0
     else:
@@ -109,10 +109,10 @@ def estimation_measures(TP, FN, FP, TN):
 def evaluate_prereq_estimation(data_pos, data_neg, data_est):
     count1, count2, count3 = compare_datasets(data_pos, data_est)
     count4, count5, count6 = compare_datasets(data_neg, data_est)
-    # print(count1, count2, count3)
+    print(count1, count2, count3)
     if count3 < 0 or count4 < 0:
         print("Bug....")
-    # print(count4, count5, count6)
+    print(count4, count5, count6)
     TP, FN, FP, TN = confusion_matrix_formation(count1, count2, count3, count4, count5, count6)
     data = estimation_measures(TP, FN, FP, TN)
     return data

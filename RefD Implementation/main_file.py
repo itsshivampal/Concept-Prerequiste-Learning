@@ -77,23 +77,23 @@ def main_function(subject, theta, method, w_type):
 # method = "refd"
 # w_type = "tfidf"
 # optimize_theta(subject, method, w_type)
-
-
-subject = "MATH"
-method = "refd"
-w_type = "equal"
-optimize_theta(subject, method, w_type)
+#
+#
+# subject = "MATH"
+# method = "refd"
+# w_type = "equal"
+# optimize_theta(subject, method, w_type)
 
 
 #-----------------------------------------------------------------------------------
 # Following function is for getting value at particular instance
 
-# subject = "CS"
-# method = "refd"
-# w_type = "tfidf"
-# theta = 0.02
-# estimated_results = main_function(subject, theta, method, w_type)
-# print(estimated_results)
+subject = "CS"
+method = "refd"
+w_type = "equal"
+theta = 0.18
+estimated_results = main_function(subject, theta, method, w_type)
+print(estimated_results)
 
 
 
