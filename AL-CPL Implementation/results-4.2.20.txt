@@ -1,0 +1,129 @@
+data_mining with NB
+Accuracy: 70.7
+Precision: 72.1
+Recall: 31.2
+F1 Score: 40.2
+Area Under Curve: 61.9
+
+
+data_mining with LR
+Accuracy: 78.9
+Precision: 74.8
+Recall: 60.6
+F1 Score: 66.8
+Area Under Curve: 74.7
+
+
+data_mining with SVM
+Accuracy: 78.8
+Precision: 72.4
+Recall: 64.2
+F1 Score: 67.9
+Area Under Curve: 75.4
+
+
+data_mining with RF
+Accuracy: 82.0
+Precision: 79.0
+Recall: 66.6
+F1 Score: 72.1
+Area Under Curve: 78.4
+
+------------------------------------------------------------
+
+geometry with NB
+Accuracy: 80.3
+Precision: 84.6
+Recall: 44.7
+F1 Score: 58.4
+Area Under Curve: 70.5
+
+
+geometry with LR
+Accuracy: 84.5
+Precision: 84.2
+Recall: 62.0
+F1 Score: 71.4
+Area Under Curve: 78.3
+
+
+geometry with SVM
+Accuracy: 85.0
+Precision: 82.2
+Recall: 66.3
+F1 Score: 73.4
+Area Under Curve: 79.9
+
+
+geometry with RF
+Accuracy: 92.2
+Precision: 91.0
+Recall: 83.5
+F1 Score: 87.0
+Area Under Curve: 89.8
+
+------------------------------------------------------------
+
+physics with NB
+Accuracy: 77.6
+Precision: 54.0
+Recall: 72.4
+F1 Score: 61.6
+Area Under Curve: 75.8
+
+
+physics with LR
+Accuracy: 83.8
+Precision: 78.2
+Recall: 48.3
+F1 Score: 59.6
+Area Under Curve: 72.0
+
+
+physics with SVM
+Accuracy: 84.4
+Precision: 77.4
+Recall: 52.1
+F1 Score: 62.2
+Area Under Curve: 73.6
+
+
+physics with RF
+Accuracy: 86.5
+Precision: 82.5
+Recall: 58.9
+F1 Score: 68.5
+Area Under Curve: 77.3
+
+------------------------------------------------------------
+
+precalculus with NB
+Accuracy: 84.6
+Precision: 83.7
+Recall: 67.6
+F1 Score: 74.6
+Area Under Curve: 80.4
+
+
+precalculus with LR
+Accuracy: 87.6
+Precision: 86.6
+Recall: 75.2
+F1 Score: 80.3
+Area Under Curve: 84.7
+
+
+precalculus with SVM
+Accuracy: 88.8
+Precision: 87.2
+Recall: 78.5
+F1 Score: 82.6
+Area Under Curve: 86.3
+
+
+precalculus with RF
+Accuracy: 90.4
+Precision: 88.6
+Recall: 82.1
+F1 Score: 85.2
+Area Under Curve: 88.4
