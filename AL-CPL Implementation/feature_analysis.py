@@ -91,7 +91,7 @@ def k_fold_training(X, Y, model):
     elif model == "RF":
         result = random_forest(x_train, x_test, y_train, y_test)
     return result
-
+    
 
 def main_function(file_names, methods):
     for file_name in file_names:
