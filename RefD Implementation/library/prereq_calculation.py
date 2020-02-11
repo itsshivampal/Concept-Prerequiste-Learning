@@ -43,6 +43,17 @@ def get_all_topics(df_pos, df_neg):
     return all_topics
 
 
+def get_pairs(df):
+    all_pairs = {}
+    index = 0
+    for i in range(df.shape[0]):
+        all_pairs[i] = {
+            "topic_a": df[["topic_a"]].iloc[i].values[0],
+            "topic_b": df[["topic_b"]].iloc[i].values[0]
+        }
+    return all_pairs
+
+
 def get_keyword_wiki_data(df):
     all_keyword_data = {}
     for i in range(df.shape[0]):
@@ -98,7 +109,7 @@ def get_w_value_equal(topic_a, topic_b, all_keyword_data):
 
 
 def read_tfidf_json_data(subject):
-    filename = "RefD Implementation/output_data/w_values/" + subject + "_tfidf.json"
+    filename = "output_data/w_values/" + subject + "_tfidf.json"
     with open(filename) as f:
         data = json.load(f)
     return data
@@ -182,56 +193,70 @@ def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfid
 
 
 def dict_to_csv(data):
-    df = pd.DataFrame(columns = ["topic_a", "topic_b"])
+    df = pd.DataFrame(columns = ["topic_a", "topic_b", "ground_truth", "estimated"])
     for i in range(len(data)):
         df = df.append(data[i], ignore_index=True)
     df = remove_duplicates(df)
     return df
 
 
-def score_calc_all_pairs(all_topics, all_keyword_data, method, w_type, data_name):
+
+def score_calc_pairs(pairs, all_topics, all_keyword_data, method, w_type, data_name):
     all_pairs_refd_value = []
     if w_type == "tfidf":
         tfidf_values = read_tfidf_json_data(data_name)
     else:
         tfidf_values = {}
-    for topic_a in all_topics:
-        temp_topic = []
-        for topic_b in all_topics:
-            if method == "refd":
-                refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-            temp_topic.append(refd_score)
-        all_pairs_refd_value.append(temp_topic)
+
+    for i in range(len(pairs)):
+        pair = pairs[i]
+        topic_a = pair["topic_a"]
+        topic_b = pair["topic_b"]
+        if method == "refd":
+            refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
+            all_pairs_refd_value.append(refd_score)
     return all_pairs_refd_value
 
 
-def relation_extraction(all_pairs_refd_value, theta, all_topics):
-    prereq_results = {}
-    count = 0
-    theta_neg = -theta
-    for i in range(len(all_topics)):
-        for j in range(len(all_topics)):
-            if all_pairs_refd_value[i][j] > theta:
-                data = {
-                    "topic_a": all_topics[i],
-                    "topic_b": all_topics[j]
-                }
-            elif all_pairs_refd_value[i][j] < theta_neg:
-                data = {
-                    "topic_a": all_topics[j],
-                    "topic_b": all_topics[i]
-                }
-            else:
-                continue
-            prereq_results[count] = data
-            count += 1
-    df_estimated = dict_to_csv(prereq_results)
-    return df_estimated
+def merge_results(pos_pairs, neg_pairs, pos_refd_value, neg_refd_value):
+    all_data = {}
+    index = 0
+    for i in range(len(pos_pairs)):
+        all_data[index] = {
+            "topic_a": pos_pairs[i]["topic_a"],
+            "topic_b": pos_pairs[i]["topic_b"],
+            "ground_truth": 1,
+            "estimated": pos_refd_value[i]
+        }
+        index += 1
+
+    for i in range(len(neg_pairs)):
+        all_data[index] = {
+            "topic_a": neg_pairs[i]["topic_a"],
+            "topic_b": neg_pairs[i]["topic_b"],
+            "ground_truth": 0,
+            "estimated": neg_refd_value[i]
+        }
+        index += 1
+    return all_data
+
+
+
+
+
 
 
 def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
     all_topics = get_all_topics(df_pos, df_neg)
     all_keyword_data = get_keyword_wiki_data(df_wiki)
-    all_pairs_refd_value = score_calc_all_pairs(all_topics, all_keyword_data, method, w_type, data_name)
-    df_estimated = relation_extraction(all_pairs_refd_value, theta, all_topics)
-    return df_estimated
+    df_pos_pairs = get_pairs(df_pos)
+    df_neg_pairs = get_pairs(df_neg)
+
+    df_pos_pairs_refd = score_calc_pairs(df_pos_pairs, all_topics, all_keyword_data, method, w_type, data_name)
+    df_neg_pairs_refd = score_calc_pairs(df_neg_pairs, all_topics, all_keyword_data, method, w_type, data_name)
+
+    overall_results = merge_results(df_pos_pairs, df_neg_pairs, df_pos_pairs_refd, df_neg_pairs_refd)
+
+    df_results = dict_to_csv(overall_results)
+
+    return df_results

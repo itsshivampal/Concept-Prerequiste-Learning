@@ -32,14 +32,14 @@ def save_csv_data(output_file, data, parameters):
 
 
 def save_prereq_relation(df, method, w_type, data_name, theta):
-    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/"
+    location = "output_data/calculated_prereq/" + data_name + "/"
     location += method + "_" + w_type + "_" + str(int(theta*100)) + ".csv"
     df.to_csv(location)
     return True
 
 
 def save_evaluation_results(data, method, w_type, data_name, theta):
-    location = "RefD Implementation/output_data/calculated_prereq/" + data_name + "/"
+    location = "output_data/calculated_prereq/" + data_name + "/"
     location += method + "_" + w_type + "_" + str(int(theta*100)) + ".txt"
     file = open(location, "w+")
     line = "Accuracy: " + str(data["accuracy"]) + "\n"
@@ -55,7 +55,7 @@ def save_evaluation_results(data, method, w_type, data_name, theta):
 
 
 def save_plots(subject, w_type, theta_values, accuracy_values, precision_values, recall_values, f1_values):
-    location = "RefD Implementation/results/" + subject + "/" + w_type + "/"
+    location = "results/" + subject + "/" + w_type + "/"
 
     plt.plot(theta_values, accuracy_values)
     plt.xlabel('theta')

@@ -47,7 +47,7 @@ def get_all_tfidf_values(all_topics, all_keyword_data):
 
 
 def save_tfidf_data(data, subject):
-    file_name = "RefD Implementation/output_data/w_values/" + subject + "_tfidf.json"
+    file_name = "output_data/w_values/" + subject + "_tfidf.json"
     save_json_data(file_name, data)
 
 

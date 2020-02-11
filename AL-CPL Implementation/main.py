@@ -53,6 +53,7 @@ def naive_bayes(x_train, x_test, y_train, y_test):
     gaussian_nb = GaussianNB()
     gaussian_nb.fit(x_train, y_train)
     y_predict = gaussian_nb.predict(x_test)
+    # print(y_predict)
     return evaluation_results(y_test, y_predict)
 
 
@@ -60,6 +61,7 @@ def logisitc_regression(x_train, x_test, y_train, y_test):
     logistic_reg = LogisticRegression(solver='lbfgs') # C=1.0, default. solver="lbfgs", default
     logistic_reg.fit(x_train, y_train)
     y_predict = logistic_reg.predict(x_test)
+    # print(y_predict)
     return evaluation_results(y_test, y_predict)
 
 
@@ -67,6 +69,7 @@ def suppot_vaector_machine(x_train, x_test, y_train, y_test):
     support_vector = LinearSVC(random_state=0, tol=1e-5)
     support_vector.fit(x_train, y_train)
     y_predict = support_vector.predict(x_test)
+    # print(y_predict)
     return evaluation_results(y_test, y_predict)
 
 
@@ -74,6 +77,7 @@ def random_forest(x_train, x_test, y_train, y_test):
     rand_forest = RandomForestClassifier(max_depth = 200, random_state=0)
     rand_forest.fit(x_train, y_train)
     y_predict = rand_forest.predict(x_test)
+    # print(y_predict)
     return evaluation_results(y_test, y_predict)
 
 
