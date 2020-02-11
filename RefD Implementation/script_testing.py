@@ -1,32 +1,17 @@
-'''
-
-Following code is for getting prerequisite relations from the given concept space and datasets
-
-import function "get_prereq_relations" in the file for using it
-
-Use with following parameters:
-
-get_prereq_relations(theta, all_topics, all_keyword_data, method, w_type, data_name)
-
-theta: hyperparameter for tuning the prereq relations
-prereq_data: file name of file containg prereq relations of a subject
-wiki_data: file name of file containing wikipedia data for prereq_data keywords
-method: Method you are going to use like "refd"
-w_type: tfidf or equal or any
-data_name: CS or MATH or any other
-
-'''
-
-
-
-
-from library.save_data import *
+from library.save_data import save_csv_data, save_evaluation_results, save_prereq_relation, save_plots
+from library.data_reading import read_data, read_wiki_data
+from library.algorithm_evaluation import evaluate_prereq_estimation, check_opp_pairs
+from library.prereq_calculation import get_prereq_relations
+from library.save_tfidf_values import generate_tfidf_values
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 import math
 
 
-# Functions for reading data
+##################################################################################################
+
 
 def get_all_topics(df_pos, df_neg):
     all_topics = []
@@ -65,16 +50,12 @@ def get_keyword_wiki_data(df):
         }
     return all_keyword_data
 
-
-# remove duplicate rows and coulmns in calculated dataset
-def remove_duplicates(df):
-    df = df.drop_duplicates(subset = ['topic_a', 'topic_b'], keep = "first")
-    indexNames = df[df['topic_a'] == df['topic_b']].index
-    if indexNames.size > 0:
-        df.drop(indexNames, inplace = True)
-    return df
+#####################################################################################################
 
 
+
+
+#####################################################################################################
 
 # Useful functions of RefD calculation
 
@@ -122,6 +103,11 @@ def read_tfidf_json_data(subject):
 
 def get_w_value_tfidf(topic_a, topic_b, tfidf_values):
     return tfidf_values[topic_a][topic_b]
+
+
+##################################################################################################
+
+
 
 
 
@@ -189,78 +175,93 @@ def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfid
 #-------------------------------------------------------------------------------
 
 
+def get_common_links(referred_links, all_topics):
+    topics = [topic for topic in referred_links if topic in all_topics]
+    return topics
 
 
 
-
-#-------------------------------------------------------------------------------
-
-
-def dict_to_csv(data):
-    df = pd.DataFrame(columns = ["topic_a", "topic_b", "ground_truth", "estimated"])
-    for i in range(len(data)):
-        df = df.append(data[i], ignore_index=True)
-    df = remove_duplicates(df)
-    return df
-
-
-
-def score_calc_pairs(pairs, all_topics, all_keyword_data, method, w_type, data_name):
-    all_pairs_refd_value = []
+def score_calc_pairs(all_topics, all_keyword_data, method, w_type):
     if w_type == "tfidf":
         tfidf_values = read_tfidf_json_data(data_name)
     else:
         tfidf_values = {}
 
-    for i in range(len(pairs)):
-        pair = pairs[i]
-        topic_a = pair["topic_a"]
-        topic_b = pair["topic_b"]
-        if method == "refd":
-            refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-            all_pairs_refd_value.append(refd_score)
-    return all_pairs_refd_value
+    topic_a = "Algorithm"
+    topic_b = "Discrete mathematics"
+
+    # topic_a = "Computer architecture"
+    # topic_b = "Microarchitecture"
+
+    print("Referred links of topic - ", topic_a)
+    links_a = get_all_referred_links(topic_a, all_keyword_data)
+    links_a = get_common_links(links_a, all_topics)
+    for link in links_a: print(link)
+    print("\n")
 
 
-def merge_results(pos_pairs, neg_pairs, pos_refd_value, neg_refd_value):
-    all_data = {}
-    index = 0
-    for i in range(len(pos_pairs)):
-        all_data[index] = {
-            "topic_a": pos_pairs[i]["topic_a"],
-            "topic_b": pos_pairs[i]["topic_b"],
-            "ground_truth": 1,
-            "estimated": pos_refd_value[i]
-        }
-        index += 1
-
-    for i in range(len(neg_pairs)):
-        all_data[index] = {
-            "topic_a": neg_pairs[i]["topic_a"],
-            "topic_b": neg_pairs[i]["topic_b"],
-            "ground_truth": 0,
-            "estimated": neg_refd_value[i]
-        }
-        index += 1
-    return all_data
+    print("Referred links of topic - ", topic_b)
+    links_b = get_all_referred_links(topic_b, all_keyword_data)
+    links_b = get_common_links(links_b, all_topics)
+    for link in links_b: print(link)
+    print("\n")
 
 
 
 
+    count_a = 0
+    count_b = 0
+
+    for link in links_a:
+        referred_links = get_all_referred_links(link, all_keyword_data)
+        if topic_b in referred_links:
+            count_a += 1
+            print(link)
+    print("\n")
+
+    for link in links_b:
+        referred_links = get_all_referred_links(link, all_keyword_data)
+        if topic_a in referred_links:
+            count_b += 1
+            print(link)
+    print("\n")
+
+    print(len(links_a))
+    print(len(links_b))
+    print(count_a)
+    print(count_b)
 
 
 
-def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type, data_name):
+
+
+    # refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
+    # return refd_score
+    return 0
+
+
+
+def get_prereq_relations(df_pos, df_neg, df_wiki, theta, method, w_type):
     all_topics = get_all_topics(df_pos, df_neg)
+    print("Following is the list of all topics")
+    for topic in all_topics: print(topic)
+    print("\n")
+
     all_keyword_data = get_keyword_wiki_data(df_wiki)
-    df_pos_pairs = get_pairs(df_pos)
-    df_neg_pairs = get_pairs(df_neg)
+    refd_score = score_calc_pairs(all_topics, all_keyword_data, method, w_type)
+    return refd_score
 
-    df_pos_pairs_refd = score_calc_pairs(df_pos_pairs, all_topics, all_keyword_data, method, w_type, data_name)
-    df_neg_pairs_refd = score_calc_pairs(df_neg_pairs, all_topics, all_keyword_data, method, w_type, data_name)
 
-    overall_results = merge_results(df_pos_pairs, df_neg_pairs, df_pos_pairs_refd, df_neg_pairs_refd)
+def main_function(subject, method, w_type):
+    df_pos, df_neg = read_data(subject)
+    df_wiki = read_wiki_data(subject)
+    estimated = get_prereq_relations(df_pos, df_neg, df_wiki,
+                                             method, w_type, subject)
+    return estimated
 
-    df_results = dict_to_csv(overall_results)
 
-    return df_results
+
+subject = "CS"
+method = "refd"
+w_type = "equal"
+main_function(subject, method, w_type)

@@ -1,0 +1,116 @@
+[Command: python -u '/home/shivam/Documents/Personalise Learning Thesis/RefD Implementation/script_testing.py']
+Following is the list of all topics
+Data mining
+Machine learning
+Computational geometry
+Compiler
+Parallel processing (DSP implementation)
+Computer vision
+Software project management
+Computer network
+Programming language
+Software engineering
+Information retrieval
+Systems programming
+Object-oriented programming
+Information security
+Robotics
+Data warehouse
+Cryptography
+Mobile app development
+Software development
+Theory of computation
+Artificial intelligence
+Combinatorial optimization
+Computer-aided software engineering
+Wireless network
+Discrete mathematics
+Translator (computing)
+Operating system
+Modeling language
+Distributed computing
+Computer architecture
+Network service
+Computer security
+Algorithm
+Test automation
+Natural language processing
+Distributed object
+Computer graphics
+Microarchitecture
+Software metric
+Internet protocol suite
+Software analytics
+Software testing
+Data integration
+Graphical model
+Analysis of algorithms
+Software architecture
+Network security
+Information management
+Data-intensive computing
+Data structure
+Software quality management
+Social network analysis
+Knowledge management
+Database
+Object-oriented analysis and design
+Cloud computing
+Game theory
+Parallel computing
+Broadband networks
+Computational linguistics
+Assembly language
+Object-oriented design
+
+
+Referred links of topic -  Algorithm
+Algorithm
+Analysis of algorithms
+Artificial intelligence
+Computational geometry
+Computer network
+Cryptography
+Data structure
+Machine learning
+Programming language
+Theory of computation
+
+
+Referred links of topic -  Discrete mathematics
+Algorithm
+Analysis of algorithms
+Computational geometry
+Cryptography
+Game theory
+Programming language
+Software development
+Theory of computation
+
+
+Analysis of algorithms
+Artificial intelligence
+Computational geometry
+Computer network
+Machine learning
+Theory of computation
+
+
+Algorithm
+Analysis of algorithms
+Computational geometry
+Cryptography
+Programming language
+Software development
+Theory of computation
+
+
+10
+8
+6
+7
+[Finished in 1.404s]
+
+
+
+Refd score = (3/1) - (4/2)
