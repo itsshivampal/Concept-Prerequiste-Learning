@@ -114,157 +114,160 @@ def main_function(subject, method, w_type, theta):
 
 
 
-subject = "CS"
-method = "refd"
-w_type = "equal"
+# subject = "CS"
+# method = "refd"
+# w_type = "equal"
+# theta = 0.05
+# estimated_results = main_function(subject, method, w_type, theta)
+# estimated_results.to_csv("cs_equal_results.csv")
+# print(estimated_results)
+
+
+
+
+def check_state(val, theta):
+    if val >= theta: return 1
+    else: return 0
+
+
+def compare_result(result, truth):
+    if truth == 1:
+        if result == 1: return 1
+        elif result == 0: return 2
+    elif truth == 0:
+        if result == 1: return 3
+        elif result == 0: return 4
+
+
+def estimation_measures(TP, FN, FP, TN):
+    precision = TP/(TP + FP)
+    recall = TP/(TP + FN)
+    accuracy = (TP)/(TP + FN + FP)
+    if precision == 0 and recall == 0:
+        f1_score = 0
+    else:
+        f1_score = 2*precision*recall/(precision + recall)
+    data = {
+        "precision": precision,
+        "recall": recall,
+        "accuracy": accuracy,
+        "f1_score": f1_score
+    }
+    return data
+
+
+def estimation_measures(TP, FN, FP, TN):
+    precision = TP/(TP + FP)
+    recall = TP/(TP + FN)
+    accuracy = (TP + TN)/(TP + FN + FP + TN)
+    if precision == 0 and recall == 0:
+        f1_score = 0
+    else:
+        f1_score = 2*precision*recall/(precision + recall)
+    data = {
+        "precision": precision,
+        "recall": recall,
+        "accuracy": accuracy,
+        "f1_score": f1_score
+    }
+    return data
+
+
+
+def check_estimation(y_estimate, y_truth, theta):
+    TP = 0
+    TN = 0
+    FN = 0
+    FP = 0
+    for i in range(y_estimate.shape[0]):
+        estimated = y_estimate.iloc[i].values[0]
+        truth = y_truth.iloc[i].values[0]
+        result = check_state(estimated, theta)
+        score_state = compare_result(result, truth)
+        if score_state == 1: TP += 1
+        elif score_state == 2: FN += 1
+        elif score_state == 3: FP += 1
+        elif score_state == 4: TN += 1
+    print(TP, FN, FP, TN)
+    data = estimation_measures(TP, FN, FP, TN)
+    return data
+
+
+def check_accuracy_measures(file_name, theta):
+    df = pd.read_csv(file_name, encoding = "utf-8")
+    y_estimate = df[["estimated"]]
+    y_truth = df[["ground_truth"]]
+    data = check_estimation(y_estimate, y_truth, theta)
+    return data
+
+
+
+def plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values):
+    location = "results/"
+
+    plt.plot(theta_values, accuracy_values)
+    plt.xlabel('theta')
+    plt.ylabel('accuracy')
+    file_name = location + "theta_v_accuracy.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, precision_values)
+    plt.xlabel('theta')
+    plt.ylabel('precision')
+    file_name = location + "theta_v_precision.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, recall_values)
+    plt.xlabel('theta')
+    plt.ylabel('recall')
+    file_name = location + "theta_v_recall.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(theta_values, f1_values)
+    plt.xlabel('theta')
+    plt.ylabel('f1_score')
+    file_name = location + "theta_v_f1Score.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+    plt.plot(recall_values, precision_values)
+    plt.xlabel('recall')
+    plt.ylabel('precision')
+    file_name = location + "precision_v_recall.png"
+    plt.savefig(file_name)
+    plt.clf()
+
+
+
+def optimize_theta(file_name):
+
+    theta_values = [float("{0:.2f}".format((0.0 + 0.01*i))) for i in range(100)]
+    accuracy_values = []
+    precision_values = []
+    recall_values = []
+    f1_values = []
+    for theta in theta_values:
+        estimated_results = check_accuracy_measures(file_name, theta)
+        accuracy_values.append(estimated_results["accuracy"])
+        precision_values.append(estimated_results["precision"])
+        recall_values.append(estimated_results["recall"])
+        f1_values.append(estimated_results["f1_score"])
+        print(theta, estimated_results)
+    plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values)
+
+
+file_name = "cs_equal_results.csv"
 theta = 0.05
-estimated_results = main_function(subject, method, w_type, theta)
-estimated_results.to_csv("cs_equal_results.csv")
-print(estimated_results)
+data = check_accuracy_measures(file_name, theta)
+print(data)
 
 
-
-
-# def check_state(val, theta):
-#     if val >= theta: return 1
-#     else: return 0
-#
-#
-# def compare_result(result, truth):
-#     if truth == 1:
-#         if result == 1: return 1
-#         elif result == 0: return 2
-#     elif truth == 0:
-#         if result == 1: return 3
-#         elif result == 0: return 4
-#
-#
-# def estimation_measures(TP, FN, FP, TN):
-#     precision = TP/(TP + FP)
-#     recall = TP/(TP + FN)
-#     accuracy = (TP)/(TP + FN + FP)
-#     if precision == 0 and recall == 0:
-#         f1_score = 0
-#     else:
-#         f1_score = 2*precision*recall/(precision + recall)
-#     data = {
-#         "precision": precision,
-#         "recall": recall,
-#         "accuracy": accuracy,
-#         "f1_score": f1_score
-#     }
-#     return data
-#
-#
-# def estimation_measures(TP, FN, FP, TN):
-#     precision = TP/(TP + FP)
-#     recall = TP/(TP + FN)
-#     accuracy = (TP + TN)/(TP + FN + FP + TN)
-#     if precision == 0 and recall == 0:
-#         f1_score = 0
-#     else:
-#         f1_score = 2*precision*recall/(precision + recall)
-#     data = {
-#         "precision": precision,
-#         "recall": recall,
-#         "accuracy": accuracy,
-#         "f1_score": f1_score
-#     }
-#     return data
-#
-#
-#
-# def check_estimation(y_estimate, y_truth, theta):
-#     TP = 0
-#     TN = 0
-#     FN = 0
-#     FP = 0
-#     for i in range(y_estimate.shape[0]):
-#         estimated = y_estimate.iloc[i].values[0]
-#         truth = y_truth.iloc[i].values[0]
-#         result = check_state(estimated, theta)
-#         score_state = compare_result(result, truth)
-#         if score_state == 1: TP += 1
-#         elif score_state == 2: FN += 1
-#         elif score_state == 3: FP += 1
-#         elif score_state == 4: TN += 1
-#     print(TP, FN, FP, TN)
-#     data = estimation_measures(TP, FN, FP, TN)
-#     return data
-#
-#
-# def check_accuracy_measures(file_name, theta):
-#     df = pd.read_csv(file_name, encoding = "utf-8")
-#     y_estimate = df[["estimated"]]
-#     y_truth = df[["ground_truth"]]
-#     data = check_estimation(y_estimate, y_truth, theta)
-#     return data
-#
-#
-#
-# def plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values):
-#     location = "results/"
-#
-#     plt.plot(theta_values, accuracy_values)
-#     plt.xlabel('theta')
-#     plt.ylabel('accuracy')
-#     file_name = location + "theta_v_accuracy.png"
-#     plt.savefig(file_name)
-#     plt.clf()
-#
-#     plt.plot(theta_values, precision_values)
-#     plt.xlabel('theta')
-#     plt.ylabel('precision')
-#     file_name = location + "theta_v_precision.png"
-#     plt.savefig(file_name)
-#     plt.clf()
-#
-#     plt.plot(theta_values, recall_values)
-#     plt.xlabel('theta')
-#     plt.ylabel('recall')
-#     file_name = location + "theta_v_recall.png"
-#     plt.savefig(file_name)
-#     plt.clf()
-#
-#     plt.plot(theta_values, f1_values)
-#     plt.xlabel('theta')
-#     plt.ylabel('f1_score')
-#     file_name = location + "theta_v_f1Score.png"
-#     plt.savefig(file_name)
-#     plt.clf()
-#
-#     plt.plot(recall_values, precision_values)
-#     plt.xlabel('recall')
-#     plt.ylabel('precision')
-#     file_name = location + "precision_v_recall.png"
-#     plt.savefig(file_name)
-#     plt.clf()
-#
-#
-#
-# def optimize_theta(file_name):
-#
-#     theta_values = [float("{0:.2f}".format((0.0 + 0.01*i))) for i in range(100)]
-#     accuracy_values = []
-#     precision_values = []
-#     recall_values = []
-#     f1_values = []
-#     for theta in theta_values:
-#         estimated_results = check_accuracy_measures(file_name, theta)
-#         accuracy_values.append(estimated_results["accuracy"])
-#         precision_values.append(estimated_results["precision"])
-#         recall_values.append(estimated_results["recall"])
-#         f1_values.append(estimated_results["f1_score"])
-#         print(theta, estimated_results)
-#     plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values)
-#
-#
-# file_name = "cs_results.csv"
-# # theta =
-#
 # optimize_theta(file_name)
-#
-#
-#
-#
-# # print(estimation_measures(check_estimation(y_estimate, y_truth, 0.02)))
+
+
+
+
+# print(estimation_measures(check_estimation(y_estimate, y_truth, 0.02)))
