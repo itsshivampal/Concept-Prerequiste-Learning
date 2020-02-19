@@ -1,0 +1,659 @@
+,topic_a,topic_b,ground_truth,estimated
+0,Algebraic number theory,Abstract algebra,1,-0.472101575132336
+1,Analytical mechanics,Ordinary differential equation,1,-0.006949409182756798
+2,Mathematical model,Fourier series,1,0.0784799350409189
+3,Linear programming,Multivariable calculus,1,0.0
+4,Numerical analysis,Matrix (mathematics),1,-0.7295492065891417
+5,Vector calculus,Calculus,1,0.014770432784442344
+6,Mathematical statistics,Probability theory,1,0.18401798533515368
+7,Fourier series,Ordinary differential equation,1,-0.16742107273036555
+8,Analytical mechanics,Partial differential equation,1,0.6646108016861348
+9,Analytic geometry,Algebra,1,-0.39300000703294063
+10,Differentiable manifold,Topological space,1,-0.6049568249442596
+11,Fourier analysis,Fourier series,1,-0.8939128962968008
+12,Finite element method,Complex analysis,1,0.09122837901628969
+13,Real analysis,Mathematical analysis,1,-0.10159801083153108
+14,Wavelet,Partial differential equation,1,-0.010106960307299826
+15,Ordinary differential equation,Fourier series,1,0.16742107273036555
+16,Ordinary differential equation,Calculus,1,0.7361091387720314
+17,Mathematical analysis,Discrete mathematics,1,-0.1924512934532091
+18,Ordinary differential equation,Vector calculus,1,-0.02341848495485082
+19,Topological space,Topology,1,-0.5566370680329065
+20,Wavelet,Real analysis,1,-0.023055541603930366
+21,Von Neumann algebra,Functional analysis,1,-0.02451937000341589
+22,Linear programming,Matrix (mathematics),1,0.7020887841804189
+23,Linear programming,Vector calculus,1,-0.008523338559545172
+24,Differential equation,Calculus,1,-0.6605121501773772
+25,Numerical linear algebra,Matrix (mathematics),1,0.525040619862414
+26,Partial differential equation,Calculus,1,0.6745728228567964
+27,Commutative algebra,Abstract algebra,1,0.5900837989473992
+28,Approximation theory,Numerical analysis,1,-0.06333808706292553
+29,Fourier analysis,Partial differential equation,1,0.7036056914923606
+30,Complex analysis,Real analysis,1,0.2836844376990094
+31,Computability theory,Mathematical logic,1,0.11226975265732408
+32,Lie theory,Differentiable manifold,1,0.5382411112739952
+33,Numerical linear algebra,Numerical analysis,1,0.884476102554495
+34,Orthogonal polynomials,Partial differential equation,1,0.03530152809597574
+35,Orthogonal polynomials,Ordinary differential equation,1,0.0
+36,Numerical analysis,Vector calculus,1,-0.23248877119208317
+37,Statistics,Trigonometry,1,-0.6875585785301975
+38,Matrix (mathematics),Analytic geometry,1,-0.002003457963398958
+39,Numerical linear algebra,Linear algebra,1,0.3812448260113032
+40,Fourier series,Partial differential equation,1,0.947879682985999
+41,Complex analysis,Vector calculus,1,-0.2083571045115529
+42,Complex analysis,Mathematical analysis,1,0.2553448434378538
+43,Trigonometry,Algebra,1,0.6217062595220825
+44,Metric (mathematics),Topology,1,-0.27313629801900613
+45,Differential topology,Differentiable manifold,1,0.029917919538807958
+46,Analytic geometry,Trigonometry,1,-0.7408440243997744
+47,Number theory,Complex analysis,1,-0.38637754775895083
+48,Matrix (mathematics),Calculus,1,0.7281041994979673
+49,Multivariable calculus,Calculus,1,-0.4901089720908501
+50,C*-algebra,Functional analysis,1,0.33614002044525737
+51,Probability theory,Mathematical analysis,1,0.12978476129156435
+52,Differential geometry,Differentiable manifold,1,-0.1275608730025518
+53,Wavelet,Fourier series,1,-0.05292106315178461
+54,Fourier series,Vector calculus,1,-0.23109914144707583
+55,Discrete mathematics,Calculus,1,-0.19791564356301716
+56,Mathematical logic,Abstract algebra,1,0.19241830977820484
+57,Analytic number theory,Complex analysis,1,0.043558042710347133
+58,Mathematical statistics,Calculus,1,-0.00023425983842750853
+59,Probability theory,Calculus,1,-0.16353898207490858
+60,Stochastic process,Probability theory,1,0.8389591157572609
+61,Calculus,Analytic geometry,1,0.05592873153464151
+62,Differential topology,Multivariable calculus,1,-0.4193006126299343
+63,Von Neumann algebra,Group theory,1,0.0
+64,Numerical analysis,Calculus,1,-0.3387015737614998
+65,Von Neumann algebra,Linear algebra,1,0.0
+66,Algebraic geometry,Field (mathematics),1,-0.07746347916542295
+67,Lie theory,Algebra,1,0.6788019384093447
+68,Multiscale modeling,Linear algebra,1,1.0
+69,Commutative algebra,Linear algebra,1,-0.2284318389663294
+70,Ergodic theory,Partial differential equation,1,0.5896357036610891
+71,Finite element method,Matrix (mathematics),1,-0.18022361887294572
+72,Finite element method,Functional analysis,1,0.09547991921730159
+73,Ergodic theory,Vector calculus,1,0.0
+74,Complex analysis,Multivariable calculus,1,-0.6804626745886149
+75,Mathematical analysis,Vector calculus,0,-0.08272545487984403
+76,Numerical analysis,Ordinary differential equation,0,-0.6051356134411721
+77,Computability theory,K-theory,0,0.0
+78,Wavelet,Complex analysis,0,0.01540981971359474
+79,Mathematical model,Mathematical logic,0,0.34156666190623364
+80,Partial differential equation,General relativity,0,-0.7769048077834676
+81,Topological space,Calculus,0,0.8754481550696092
+82,Abstract algebra,Lie theory,0,-0.6819959480400717
+83,General relativity,Differential topology,0,-0.45215517796651455
+84,Linear programming,Trigonometry,0,-0.02551284503823485
+85,Coding theory,Mathematical optimization,0,0.9610181780418567
+86,Ergodic theory,Mathematical model,0,0.4991185400855255
+87,Multivariable calculus,Set theory,0,0.6555378302108515
+88,Numerical linear algebra,Commutative algebra,0,0.29226088726777144
+89,Primality test,Mathematical model,0,0.0
+90,Mathematical optimization,Fourier series,0,0.15360071845768258
+91,K-theory,Calculus,0,0.1296563593382906
+92,Orthogonal polynomials,Primality test,0,0.0
+93,Statistics,Commutative algebra,0,-0.28415497206946705
+94,Mathematical logic,Differentiable manifold,0,-0.5215966819913243
+95,Lie theory,Discrete mathematics,0,0.8743248956783684
+96,Orthogonal polynomials,Number theory,0,-0.08228609017339161
+97,Approximation theory,Functional analysis,0,-0.00967454996531706
+98,Discrete mathematics,Statistics,0,-0.21639538085143295
+99,Wavelet,Topology,0,-0.0004548270343512108
+100,Vector calculus,Algebraic topology,0,0.2403508114932228
+101,Analytical mechanics,Algebraic geometry,0,0.17247451883998632
+102,Combinatorics,Statistics,0,-0.19667800039293015
+103,Computability theory,Set theory,0,-0.2421207921376911
+104,Abstract algebra,Trigonometry,0,-0.7674867473345629
+105,Differential equation,Stochastic process,0,-0.9757402801645928
+106,Algebra,Vector calculus,0,-0.22762815541675915
+107,Fourier series,Analytical mechanics,0,-0.17514916205118464
+108,Differential geometry,Mathematical optimization,0,0.12921322698818027
+109,Abstract algebra,Differential equation,0,0.4302666163680283
+110,Special relativity,Fourier series,0,0.0
+111,K-theory,Ordinary differential equation,0,0.0
+112,Differential geometry,Discrete mathematics,0,-0.10851058707100569
+113,K-theory,Commutative algebra,0,-0.10248516354575686
+114,Differentiable manifold,Linear algebra,0,0.5269333126362556
+115,Discrete mathematics,Algebra,0,-0.05514875454134316
+116,Number theory,Numerical linear algebra,0,-0.914788357527397
+117,Discrete mathematics,Fourier series,0,0.19231213477862338
+118,Complex analysis,Mathematical statistics,0,-0.709654777667957
+119,Coding theory,Special relativity,0,0.0
+120,Calculus,Stochastic process,0,-0.8347457482680526
+121,Stochastic process,Fourier analysis,0,0.8231923171342888
+122,Analytic number theory,Statistics,0,0.01285353534773137
+123,Approximation theory,Multiscale modeling,0,0.0
+124,Von Neumann algebra,Analytic geometry,0,0.0
+125,Factorization,Set theory,0,0.028436023397968475
+126,Mathematical model,Stochastic process,0,0.3164667389369308
+127,Algebra,Wavelet,0,-0.0001085191313052649
+128,Approximation theory,Fourier series,0,0.0
+129,Topological space,Differential equation,0,0.9133795423820418
+130,Differential equation,Fourier analysis,0,0.22983344286979723
+131,Operations research,Lie theory,0,-0.08661584383682104
+132,Fourier series,Numerical linear algebra,0,0.0
+133,Differentiable manifold,Fourier analysis,0,0.0
+134,Trigonometry,Stochastic process,0,0.02036025235851289
+135,Linear algebra,Real analysis,0,0.5448420208464659
+136,Mathematical analysis,Analytic geometry,0,-0.433379191984955
+137,Commutative algebra,Fourier series,0,0.0
+138,Linear programming,C*-algebra,0,0.004127592628044915
+139,Probability theory,Numerical linear algebra,0,-0.9201070241274099
+140,Mathematical logic,Special relativity,0,0.009891410493400782
+141,Special relativity,Numerical linear algebra,0,-0.05074574960128634
+142,K-theory,Ergodic theory,0,-0.06603185024810551
+143,Abstract algebra,Factorization,0,-0.01325151605560642
+144,Algebraic geometry,C*-algebra,0,0.16723189281003845
+145,Lie theory,Mathematical logic,0,0.8910552070797791
+146,Vector calculus,Topological space,0,0.0
+147,Complex analysis,Stochastic process,0,-0.13392203691881982
+148,Mathematical model,Trigonometry,0,-0.21330969747961032
+149,Calculus,Mathematical statistics,0,0.00023425983842750853
+150,Differentiable manifold,Abstract algebra,0,0.2989357442541403
+151,Mathematical analysis,Analytic number theory,0,-0.3044188213588842
+152,Real analysis,Multivariable calculus,0,-0.5329510085443498
+153,Algebraic geometry,Algebraic number theory,0,0.5219259325713631
+154,Ergodic theory,Algebraic number theory,0,0.047969454305302056
+155,Coding theory,Vector calculus,0,0.0
+156,Analytical mechanics,Mathematical statistics,0,0.17514916205118464
+157,Stochastic process,Lie theory,0,-0.05522365849204863
+158,Numerical linear algebra,Mathematical logic,0,0.9208768000626172
+159,Dynamical system,C*-algebra,0,0.003809287209087697
+160,Numerical analysis,Number theory,0,0.07130555223186502
+161,Differential geometry,Fourier series,0,0.14651688133987373
+162,C*-algebra,Stochastic process,0,-0.0033975591154691187
+163,Algebra,Discrete mathematics,0,0.05514875454134316
+164,Discrete mathematics,Algebraic topology,0,0.25615746472996115
+165,Von Neumann algebra,Number theory,0,0.012889751749610144
+166,Differentiable manifold,Number theory,0,0.44440295332940555
+167,Partial differential equation,Topology,0,0.4740135223382579
+168,Fourier series,General relativity,0,-0.028454879862008498
+169,Ordinary differential equation,Operations research,0,-0.0791983471771578
+170,Lie theory,Mathematical analysis,0,0.824598735109926
+171,Commutative algebra,Mathematical statistics,0,0.2569399405742906
+172,Matrix (mathematics),Numerical analysis,0,0.7295492065891417
+173,Algebraic number theory,Algebraic topology,0,-0.06947727563963702
+174,Multivariable calculus,Abstract algebra,0,0.6601196281432363
+175,Functional analysis,K-theory,0,-0.12962324227620803
+176,Primality test,Field (mathematics),0,0.8775745776926183
+177,Dynamical system,Trigonometry,0,-0.02664272293478843
+178,Numerical linear algebra,Mathematical analysis,0,0.8879885256455083
+179,C*-algebra,Field (mathematics),0,-0.36204086608390595
+180,Linear algebra,Mathematical logic,0,0.0013291746761220358
+181,Algebraic number theory,Topology,0,-0.23952379104331778
+182,Number theory,Operations research,0,-0.28606174662345096
+183,Calculus,Discrete mathematics,0,0.19791564356301716
+184,Mathematical analysis,Stochastic process,0,-0.8090339516903291
+185,K-theory,Factorization,0,-0.033664265687327735
+186,Calculus,Algebraic number theory,0,0.4560992656460251
+187,K-theory,Real analysis,0,0.03640474059212093
+188,Multiscale modeling,Algebraic geometry,0,1.0
+189,Numerical analysis,Special relativity,0,-0.006428565568648101
+190,Trigonometry,Coding theory,0,0.02664272293478843
+191,Number theory,Field (mathematics),0,-0.07531613678177851
+192,Lie theory,Wavelet,0,0.03565655520052058
+193,Topological space,Mathematical logic,0,0.7966127250718967
+194,Matrix (mathematics),Algebraic geometry,0,0.3133699164179405
+195,Factorization,Complex analysis,0,0.033664265687327735
+196,Number theory,Probability theory,0,-0.20361384665203214
+197,Metric (mathematics),General relativity,0,0.35496615730116193
+198,Topology,Commutative algebra,0,-0.22773515729531002
+199,Trigonometry,Finite element method,0,0.04587309739674773
+200,Primality test,Fourier analysis,0,-0.010534457498900151
+201,Vector calculus,Operations research,0,-0.020649514977974737
+202,Metric (mathematics),Statistics,0,0.4094648335927318
+203,Algebraic topology,Statistics,0,-0.45225918284404365
+204,Numerical linear algebra,Complex analysis,0,0.9006346853671909
+205,Special relativity,K-theory,0,0.0046310404050314315
+206,Commutative algebra,Differentiable manifold,0,-0.1861217126934791
+207,Numerical analysis,Algebraic geometry,0,-0.29838585529541417
+208,Multiscale modeling,Matrix (mathematics),0,0.0
+209,Wavelet,Analytic number theory,0,0.01540981971359474
+210,Differential topology,Mathematical analysis,0,0.21680495391990084
+211,Algebraic number theory,Discrete mathematics,0,-0.33879580895706396
+212,Primality test,Von Neumann algebra,0,0.0
+213,Numerical analysis,Differential topology,0,-0.2863626646800562
+214,Matrix (mathematics),Statistics,0,0.6099768422850904
+215,Differential geometry,Combinatorics,0,-0.14410498214385892
+216,Topological space,Primality test,0,0.0
+217,Stochastic process,Real analysis,0,0.8727352028580024
+218,Differential equation,Finite element method,0,-0.24279572186929188
+219,Combinatorics,Topology,0,0.0892915868561649
+220,Analytic number theory,Stochastic process,0,-0.14819687114995408
+221,Primality test,Group theory,0,-0.049116146454945546
+222,Linear programming,Von Neumann algebra,0,0.0
+223,Field (mathematics),Graph theory,0,0.19344699201546112
+224,Algebra,Numerical analysis,0,0.27473048789939947
+225,Algebra,Statistics,0,-0.2222344365531833
+226,Mathematical logic,Functional analysis,0,0.015148422734043265
+227,Analytic geometry,Factorization,0,-0.033664265687327735
+228,Number theory,Von Neumann algebra,0,-0.012889751749610144
+229,Analytic number theory,Mathematical analysis,0,0.3044188213588842
+230,Finite element method,Analytical mechanics,0,-0.3084772085045896
+231,Partial differential equation,Abstract algebra,0,0.4367697363660706
+232,K-theory,Lie theory,0,-0.16753551405232656
+233,Algebraic topology,Mathematical model,0,-0.5112542749718537
+234,Orthogonal polynomials,Lie theory,0,-0.011019379137440723
+235,Calculus,General relativity,0,0.7356598721094151
+236,Numerical analysis,Graph theory,0,-0.2992675098065113
+237,Orthogonal polynomials,Special relativity,0,0.0
+238,Graph theory,Algebraic topology,0,0.15662412904910972
+239,Calculus,C*-algebra,0,-0.17317547028443692
+240,Mathematical statistics,Wavelet,0,0.6307245390496005
+241,Algebra,Coding theory,0,0.09628018202996702
+242,Von Neumann algebra,Calculus,0,0.0
+243,Operations research,Von Neumann algebra,0,0.0
+244,Analytic number theory,Matrix (mathematics),0,-0.6605143293376884
+245,Primality test,Matrix (mathematics),0,0.9293608237342706
+246,Mathematical analysis,Finite element method,0,0.12980524951759248
+247,Finite element method,Fourier series,0,0.07451340394098069
+248,Calculus,Mathematical model,0,0.2177245887835857
+249,Primality test,K-theory,0,0.0
+250,Fourier series,Functional analysis,0,-0.09730477404048544
+251,Topology,Metric (mathematics),0,0.27313629801900613
+252,Lie theory,Mathematical optimization,0,0.8754559238483232
+253,Approximation theory,Group theory,0,0.0
+254,Algebraic topology,Operations research,0,-0.45371763208875415
+255,Number theory,Statistics,0,-0.5161711527336921
+256,Approximation theory,Ordinary differential equation,0,0.0
+257,Algebraic topology,Metric (mathematics),0,-0.22354829573889423
+258,Analytical mechanics,K-theory,0,0.0
+259,Mathematical model,Topology,0,0.5034035432692765
+260,Fourier analysis,Combinatorics,0,0.05181960826966708
+261,Fourier analysis,Dynamical system,0,0.042479286895560756
+262,Numerical linear algebra,Computability theory,0,-0.015883184236843727
+263,Differential geometry,Coding theory,0,-0.9773777993990699
+264,Dynamical system,Set theory,0,-0.003637682680703573
+265,Coding theory,Orthogonal polynomials,0,0.0
+266,Field (mathematics),Ordinary differential equation,0,-0.041726150492110155
+267,Partial differential equation,Trigonometry,0,-0.16230598083256897
+268,Calculus,Primality test,0,-0.011777525327896422
+269,Algebraic topology,Primality test,0,-0.027550926422004594
+270,Special relativity,Differential geometry,0,0.5262554121272738
+271,Algebraic topology,Multivariable calculus,0,-0.6688122341178179
+272,Calculus,Algebraic geometry,0,0.05012523284228143
+273,Metric (mathematics),Complex analysis,0,0.36919851187362573
+274,Statistics,Primality test,0,-0.012574139084511885
+275,Mathematical optimization,Differential topology,0,-0.32734250799257475
+276,Mathematical logic,Algebraic number theory,0,0.3611424802571367
+277,Vector calculus,Fourier analysis,0,0.014895146395305647
+278,Analytic geometry,Discrete mathematics,0,0.26755823641924004
+279,Algebraic number theory,Complex analysis,0,0.23590096957964116
+280,Primality test,Algebraic topology,0,0.027550926422004594
+281,Linear programming,Commutative algebra,0,0.004127592628044915
+282,Coding theory,Probability theory,0,0.8569127376587682
+283,Fourier series,Mathematical statistics,0,-0.07612951871733872
+284,Linear algebra,Analytic number theory,0,-0.16149839706181457
+285,Algebraic number theory,Numerical linear algebra,0,-0.9521386719068862
+286,Group theory,Multivariable calculus,0,-0.06925361670156943
+287,Metric (mathematics),Real analysis,0,0.18413358227179394
+288,Finite element method,Primality test,0,0.0
+289,Functional analysis,Discrete mathematics,0,0.018223610934735568
+290,Dynamical system,Orthogonal polynomials,0,0.0
+291,Lie theory,Algebraic number theory,0,0.9155788220581477
+292,Primality test,Operations research,0,-0.013050062096010277
+293,Functional analysis,Combinatorics,0,-0.013162420366627514
+294,Mathematical model,Commutative algebra,0,0.0
+295,Topology,Number theory,0,0.2252493610353103
+296,Algebraic topology,Vector calculus,0,-0.2403508114932228
+297,Combinatorics,Fourier analysis,0,-0.05181960826966708
+298,Commutative algebra,Coding theory,0,-0.9927824131157077
+299,Computability theory,Mathematical analysis,0,0.751034449513686
+300,Statistics,Operations research,0,-0.2872355826786646
+301,Number theory,Trigonometry,0,-0.737754490303334
+302,General relativity,K-theory,0,0.0
+303,Differentiable manifold,Group theory,0,-0.06465606858736697
+304,Dynamical system,Topological space,0,0.003809287209087697
+305,Orthogonal polynomials,Complex analysis,0,0.0
+306,Partial differential equation,Factorization,0,0.0
+307,Finite element method,Computability theory,0,-0.053595926647248895
+308,Algebraic geometry,Statistics,0,-0.15059882370328082
+309,Lie theory,Stochastic process,0,0.05522365849204863
+310,Topology,Probability theory,0,-0.09278547517602964
+311,Algebraic number theory,Primality test,0,-0.7587401059382957
+312,Topological space,Mathematical optimization,0,0.8836312361433452
+313,Topological space,Number theory,0,0.6238323689707996
+314,Differential equation,Topological space,0,-0.9133795423820418
+315,Orthogonal polynomials,Statistics,0,-0.004270632526531362
+316,Special relativity,Ergodic theory,0,0.0
+317,Matrix (mathematics),K-theory,0,-0.6226662638235514
+318,Probability theory,Ergodic theory,0,-0.030037895086875488
+319,Field (mathematics),Probability theory,0,0.4763732161221987
+320,Statistics,Coding theory,0,-0.9563220973618591
+321,Field (mathematics),General relativity,0,0.006153525255873133
+322,Probability theory,Algebraic geometry,0,-0.1501035172184697
+323,Mathematical logic,Number theory,0,0.321843656443684
+324,Metric (mathematics),Finite element method,0,-0.042483706672226444
+325,Lie theory,Combinatorics,0,0.847124916970676
+326,Analytic geometry,Functional analysis,0,0.1943166364683102
+327,Analytic geometry,Coding theory,0,-1.0
+328,K-theory,Finite element method,0,-0.012531642400393395
+329,Group theory,Vector calculus,0,-0.014895146395305647
+330,Fourier series,Differential equation,0,-0.2619792062843359
+331,Field (mathematics),Analytical mechanics,0,0.0
+332,Algebraic number theory,Commutative algebra,0,-0.7743801230461882
+333,Stochastic process,Combinatorics,0,0.8942285488860094
+334,Mathematical model,Topological space,0,0.06330304215900852
+335,Operations research,Differentiable manifold,0,0.029751580921902863
+336,Primality test,Set theory,0,-0.004787996160710566
+337,Lie theory,Fourier analysis,0,-5.97816885926708e-05
+338,Abstract algebra,Mathematical statistics,0,-0.26826585834698047
+339,Finite element method,Fourier analysis,0,-0.014805294899000107
+340,Group theory,Analytical mechanics,0,-0.3125942446218111
+341,Probability theory,Graph theory,0,-0.07309133305816429
+342,Multivariable calculus,Field (mathematics),0,-0.006153525255873133
+343,Differentiable manifold,Analytic number theory,0,0.564054788059769
+344,Mathematical optimization,Coding theory,0,-0.9610181780418567
+345,Algebraic number theory,Special relativity,0,-0.006428565568648101
+346,Numerical analysis,Combinatorics,0,-0.26687071020458464
+347,Special relativity,Linear programming,0,-0.01117299939174233
+348,Primality test,Finite element method,0,0.0
+349,Approximation theory,Algebraic number theory,0,0.0
+350,Statistics,Fourier analysis,0,0.6421861041917598
+351,Statistics,Mathematical model,0,-0.4970825214596875
+352,Vector calculus,Commutative algebra,0,0.0
+353,Linear programming,Combinatorics,0,0.0052386176247364545
+354,Numerical analysis,Stochastic process,0,-0.7064390111524166
+355,Mathematical logic,Wavelet,0,0.020685021311570694
+356,Algebra,Stochastic process,0,-0.1804053181564673
+357,Linear programming,K-theory,0,-0.0025798394194673554
+358,C*-algebra,Mathematical optimization,0,0.1671821377490793
+359,Matrix (mathematics),General relativity,0,-0.9026045958734388
+360,Matrix (mathematics),Linear programming,0,-0.7020887841804189
+361,Mathematical model,K-theory,0,-0.00670743204751227
+362,Abstract algebra,Stochastic process,0,-0.17066913599906522
+363,Algebraic geometry,Numerical linear algebra,0,-0.9449186876274043
+364,Number theory,Coding theory,0,-0.9031587547312099
+365,Matrix (mathematics),Algebra,0,-0.23628145248747912
+366,Fourier analysis,Metric (mathematics),0,0.0
+367,Probability theory,Primality test,0,0.031102780058203383
+368,Factorization,Wavelet,0,0.0
+369,Complex analysis,Differential equation,0,-0.011923644254637822
+370,Computability theory,Differential equation,0,0.9085258373286618
+371,Trigonometry,Real analysis,0,0.8279043013219863
+372,Factorization,Fourier series,0,0.0
+373,Multivariable calculus,Wavelet,0,0.0
+374,Differential topology,Approximation theory,0,0.0
+375,Real analysis,Discrete mathematics,0,-0.49135679277169286
+376,Differentiable manifold,Factorization,0,0.0
+377,Ergodic theory,Analytic geometry,0,0.28922934836700637
+378,Multiscale modeling,Special relativity,0,0.0
+379,Partial differential equation,Linear algebra,0,0.6994529461648865
+380,Fourier analysis,Algebra,0,0.08975747305017144
+381,Abstract algebra,Graph theory,0,-0.2923068800201437
+382,Trigonometry,Topological space,0,0.1938461917342145
+383,Statistics,Ordinary differential equation,0,-0.7348245436135887
+384,Differential geometry,Set theory,0,-0.28473565811957435
+385,Coding theory,Fourier analysis,0,-0.037100501233990966
+386,Algebraic number theory,Stochastic process,0,-0.18401900602036722
+387,Algebra,Differential topology,0,-0.002638671772291601
+388,Discrete mathematics,Linear programming,0,0.11371300579436827
+389,Topology,Set theory,0,-0.08146906214737337
+390,C*-algebra,Trigonometry,0,-0.14249627166838003
+391,Field (mathematics),Matrix (mathematics),0,0.16437433665884593
+392,Primality test,Trigonometry,0,-0.11679253395344076
+393,Computability theory,Von Neumann algebra,0,0.0
+394,Dynamical system,Differential topology,0,0.050293965964152164
+395,Fourier analysis,Analytic number theory,0,0.07438733893677689
+396,Trigonometry,Analytic geometry,0,0.7408440243997744
+397,Numerical linear algebra,Special relativity,0,0.05074574960128634
+398,Mathematical logic,Multiscale modeling,0,-1.0
+399,Wavelet,Graph theory,0,-0.0825503334912982
+400,Vector calculus,Numerical linear algebra,0,0.0
+401,Group theory,Linear programming,0,0.030221248743441405
+402,Analytic number theory,Algebraic topology,0,0.4740350580694763
+403,Algebraic number theory,Probability theory,0,-0.23668989324857193
+404,Algebra,Mathematical logic,0,0.033941297840171525
+405,Vector calculus,Probability theory,0,0.1685707765956042
+406,Functional analysis,Algebra,0,-0.020165268876924825
+407,Mathematical logic,Finite element method,0,-0.10231837223780718
+408,Number theory,Wavelet,0,0.012753787114975067
+409,Finite element method,Operations research,0,-0.017633043696695765
+410,Multiscale modeling,Mathematical optimization,0,1.0
+411,Ergodic theory,Mathematical optimization,0,0.20732666303957115
+412,Orthogonal polynomials,Combinatorics,0,-0.48579240326038725
+413,Differential equation,Number theory,0,-0.30090112115932965
+414,Ergodic theory,Discrete mathematics,0,0.14534370636315466
+415,Algebra,Set theory,0,-0.16941666827972335
+416,Wavelet,Factorization,0,0.0
+417,Numerical analysis,Coding theory,0,-0.9383028059550824
+418,Von Neumann algebra,Matrix (mathematics),0,0.07089363462285579
+419,Finite element method,C*-algebra,0,0.012531642400393395
+420,Mathematical analysis,General relativity,0,0.15956442708574287
+421,Metric (mathematics),Orthogonal polynomials,0,0.0
+422,Orthogonal polynomials,Stochastic process,0,-0.005272359792039725
+423,Dynamical system,Mathematical model,0,0.8569554346805883
+424,Mathematical optimization,Dynamical system,0,0.5124426492995403
+425,Analytical mechanics,Operations research,0,0.0
+426,Ordinary differential equation,Linear algebra,0,0.6868228342521973
+427,Commutative algebra,Analytic number theory,0,0.2807577742123778
+428,Probability theory,Special relativity,0,0.03721479383259876
+429,Real analysis,Field (mathematics),0,-0.20150741614668105
+430,Analytical mechanics,Number theory,0,0.17514916205118464
+431,Analytical mechanics,Topology,0,0.11156764155554126
+432,Operations research,General relativity,0,0.25136057039086157
+433,Differential geometry,Approximation theory,0,0.01440629019273257
+434,Algebraic topology,Ergodic theory,0,-0.28922934836700637
+435,Approximation theory,Combinatorics,0,-0.022896833372290537
+436,Mathematical analysis,Lie theory,0,-0.824598735109926
+437,Ordinary differential equation,K-theory,0,0.0
+438,Lie theory,Differential topology,0,0.9035761675051005
+439,Factorization,Differential geometry,0,0.02544835527913023
+440,Vector calculus,Functional analysis,0,0.20182699064304893
+441,Set theory,Mathematical statistics,0,0.047496061857762895
+442,Analytic number theory,Multiscale modeling,0,-1.0
+443,Complex analysis,Computability theory,0,-0.8281054240492071
+444,Statistics,Computability theory,0,-0.8537330136861484
+445,Partial differential equation,Dynamical system,0,-0.9433714945195962
+446,Computability theory,Analytic number theory,0,-0.002780413319930286
+447,Set theory,Differential equation,0,0.7637260278804348
+448,Orthogonal polynomials,Factorization,0,0.0
+449,Mathematical logic,Trigonometry,0,-0.7105707689533007
+450,Graph theory,Set theory,0,-0.09578451790329978
+451,Ergodic theory,Group theory,0,-0.015746287007863694
+452,Analytic geometry,Primality test,0,-0.027550926422004594
+453,Commutative algebra,Functional analysis,0,0.22653139066988168
+454,Lie theory,Ergodic theory,0,0.049663513678957015
+455,Wavelet,Computability theory,0,-0.036323452436997375
+456,Complex analysis,C*-algebra,0,-0.16587290636732588
+457,Mathematical statistics,Lie theory,0,-0.8899583705794614
+458,Topology,Mathematical optimization,0,0.17325764419641154
+459,Matrix (mathematics),Primality test,0,-0.9293608237342706
+460,Computability theory,Dynamical system,0,0.06888660287140283
+461,Stochastic process,Trigonometry,0,-0.02036025235851289
+462,Multiscale modeling,Differentiable manifold,0,0.0
+463,Dynamical system,Multiscale modeling,0,-1.0
+464,Special relativity,Topological space,0,0.0046310404050314315
+465,Commutative algebra,Computability theory,0,0.0
+466,Metric (mathematics),Calculus,0,0.5331440224698575
+467,Fourier series,Multivariable calculus,0,-0.6533964710841234
+468,Fourier analysis,Complex analysis,0,0.026711780285824965
+469,Coding theory,Algebraic topology,0,0.9781017535693011
+470,Analytic number theory,Primality test,0,0.8500913779031173
+471,Stochastic process,Abstract algebra,0,0.17066913599906522
+472,Group theory,Primality test,0,0.049116146454945546
+473,Differentiable manifold,Set theory,0,0.673072528716057
+474,Number theory,Mathematical model,0,-0.48985301429905115
+475,Multivariable calculus,Topology,0,0.6617145887332347
+476,Analytical mechanics,Combinatorics,0,0.17514916205118464
+477,Commutative algebra,Differential equation,0,0.26299031732272315
+478,Real analysis,Operations research,0,-0.4379171544274072
+479,Ordinary differential equation,Numerical linear algebra,0,-0.09848404798568497
+480,Factorization,Abstract algebra,0,0.01325151605560642
+481,Matrix (mathematics),Numerical linear algebra,0,-0.525040619862414
+482,Multiscale modeling,Stochastic process,0,1.0
+483,Primality test,Combinatorics,0,0.01016992763431513
+484,Computability theory,Discrete mathematics,0,0.5362003003040546
+485,Commutative algebra,Calculus,0,0.2674553785965281
+486,Analytical mechanics,Finite element method,0,0.3084772085045896
+487,Differential geometry,Trigonometry,0,-0.7698641167071784
+488,Real analysis,Numerical analysis,0,-0.22188717778837835
+489,Field (mathematics),Factorization,0,-0.9846282967533511
+490,Numerical analysis,Finite element method,0,-0.5084871768080408
+491,Complex analysis,Coding theory,0,-0.9484960134603049
+492,General relativity,Trigonometry,0,-0.23882254251784515
+493,Algebraic geometry,Computability theory,0,-0.8873214935682424
+494,Wavelet,Primality test,0,0.0
+495,Fourier analysis,Linear programming,0,0.02301208584432744
+496,Numerical linear algebra,Mathematical model,0,0.5033440215138052
+497,Lie theory,Trigonometry,0,0.0
+498,Numerical analysis,Dynamical system,0,0.2225578315873037
+499,Set theory,Factorization,0,-0.028436023397968475
+500,Group theory,Probability theory,0,0.4742672605173548
+501,Functional analysis,Primality test,0,0.0014727234739465855
+502,Mathematical model,Differentiable manifold,0,-0.2279094056104135
+503,Commutative algebra,Matrix (mathematics),0,-0.03784080709998888
+504,Calculus,Mathematical optimization,0,0.47332802571817395
+505,Ergodic theory,Algebraic geometry,0,0.2583562788951892
+506,C*-algebra,Algebraic topology,0,-0.009755379707126033
+507,Mathematical analysis,Dynamical system,0,0.035230468460769535
+508,Mathematical statistics,Linear algebra,0,0.07821773896304896
+509,Multiscale modeling,Mathematical statistics,0,1.0
+510,Set theory,Differentiable manifold,0,-0.673072528716057
+511,Special relativity,Numerical analysis,0,0.006428565568648101
+512,Group theory,Computability theory,0,0.08359035599598166
+513,Von Neumann algebra,Ergodic theory,0,0.9162166136275341
+514,Vector calculus,Dynamical system,0,0.014895146395305647
+515,Operations research,Combinatorics,0,-0.18963067359093538
+516,C*-algebra,Multiscale modeling,0,0.0
+517,Topology,Algebraic number theory,0,0.23952379104331778
+518,Mathematical analysis,Number theory,0,-0.07218265429678006
+519,Calculus,Real analysis,0,0.3816370651118327
+520,Analytical mechanics,Set theory,0,0.17514916205118464
+521,Fourier series,Set theory,0,-0.10559546689035541
+522,Metric (mathematics),Topological space,0,-0.3461572880215967
+523,K-theory,Analytic number theory,0,0.112137278976518
+524,Multivariable calculus,Stochastic process,0,-0.005753004946877194
+525,Complex analysis,Graph theory,0,-0.6514661906509958
+526,Coding theory,Complex analysis,0,0.9484960134603049
+527,Ergodic theory,Mathematical logic,0,0.23588229462879065
+528,Approximation theory,Discrete mathematics,0,-0.03842640612111376
+529,Finite element method,Mathematical statistics,0,0.06051418869498851
+530,Field (mathematics),Numerical analysis,0,0.4801034012086791
+531,Operations research,Primality test,0,0.013050062096010277
+532,Primality test,Differential geometry,0,0.005941491132905739
+533,Von Neumann algebra,Numerical linear algebra,0,0.0
+534,Real analysis,Abstract algebra,0,-0.3507873012448306
+535,Mathematical analysis,Special relativity,0,0.06060740034240103
+536,Complex analysis,Functional analysis,0,-0.6295649319583848
+537,Differentiable manifold,Topology,0,0.11317921992641977
+538,Probability theory,Abstract algebra,0,0.055954860483817814
+539,Statistics,Lie theory,0,-0.8815374092302191
+540,Primality test,Statistics,0,0.012574139084511885
+541,Lie theory,Group theory,0,0.24537723551345295
+542,Differentiable manifold,Computability theory,0,0.0
+543,Operations research,Graph theory,0,0.11197794116397047
+544,Mathematical logic,Analytic number theory,0,-0.17384848706042144
+545,Von Neumann algebra,Stochastic process,0,0.012889751749610144
+546,Complex analysis,Linear programming,0,-0.035629956173243015
+547,Von Neumann algebra,Linear programming,0,0.0
+548,Differential geometry,Group theory,0,-0.5787064703097476
+549,Dynamical system,Combinatorics,0,-0.48435642650099386
+550,Topology,Topological space,0,0.5566370680329065
+551,Partial differential equation,Mathematical optimization,0,0.4001372043960293
+552,Special relativity,Statistics,0,0.002339044158568354
+553,Graph theory,Approximation theory,0,0.1272654678317571
+554,Operations research,Ergodic theory,0,-0.07136490971858434
+555,K-theory,Field (mathematics),0,-0.37449090623923253
+556,Real analysis,Matrix (mathematics),0,-0.7003796245074266
+557,Abstract algebra,Set theory,0,-0.34035622764007567
+558,Finite element method,Algebra,0,0.07055484070895215
+559,Mathematical optimization,Primality test,0,0.00463972110496437
+560,Matrix (mathematics),Mathematical logic,0,0.6142005239087449
+561,Topology,Complex analysis,0,0.48076509351408847
+562,Approximation theory,Linear programming,0,-0.005244166958145724
+563,Discrete mathematics,Vector calculus,0,-0.17088972899324156
+564,Statistics,Combinatorics,0,0.19667800039293015
+565,Partial differential equation,Computability theory,0,-0.15679121506452748
+566,Lie theory,Coding theory,0,0.011019379137440723
+567,Ergodic theory,Matrix (mathematics),0,0.04831267406044405
+568,Multiscale modeling,Combinatorics,0,1.0
+569,Number theory,Topology,0,-0.2252493610353103
+570,Special relativity,Metric (mathematics),0,-0.2145578283745421
+571,Analytic number theory,Differential topology,0,0.18506025704128515
+572,Trigonometry,Matrix (mathematics),0,0.11913776487769187
+573,Linear algebra,Multiscale modeling,0,-1.0
+574,Linear programming,Differentiable manifold,0,0.0
+575,Mathematical analysis,Mathematical model,0,-0.3698757167381911
+576,Analytic number theory,Analytical mechanics,0,-0.17514916205118464
+577,Multivariable calculus,Metric (mathematics),0,-0.06691821079310491
+578,Multivariable calculus,Algebraic number theory,0,0.6804626745886149
+579,Factorization,Topology,0,0.028761420855176644
+580,Ergodic theory,Operations research,0,0.07136490971858434
+581,Partial differential equation,Differential equation,0,0.033156596427197094
+582,C*-algebra,Coding theory,0,-1.0
+583,Real analysis,Metric (mathematics),0,-0.18413358227179394
+584,Commutative algebra,General relativity,0,0.0
+585,Partial differential equation,Primality test,0,0.0
+586,Real analysis,Number theory,0,-0.14469058826482417
+587,Linear algebra,Topological space,0,-0.31893152298947625
+588,Set theory,Metric (mathematics),0,-0.6589655262701792
+589,Mathematical statistics,Finite element method,0,-0.06051418869498851
+590,Field (mathematics),Discrete mathematics,0,0.4916545247177007
+591,Vector calculus,Coding theory,0,0.0
+592,General relativity,Metric (mathematics),0,-0.35496615730116193
+593,Wavelet,Discrete mathematics,0,-0.02406148230854219
+594,Partial differential equation,Set theory,0,0.4737390439309853
+595,Orthogonal polynomials,Set theory,0,-0.034272359841437804
+596,Discrete mathematics,Mathematical analysis,0,0.1924512934532091
+597,Primality test,Calculus,0,0.011777525327896422
+598,Operations research,Real analysis,0,0.4379171544274072
+599,Multiscale modeling,Calculus,0,1.0
+600,Partial differential equation,Commutative algebra,0,0.0
+601,Metric (mathematics),Probability theory,0,0.40668483051578747
+602,Mathematical analysis,Ordinary differential equation,0,-0.6332014358151933
+603,Linear algebra,Topology,0,0.12391477789752281
+604,Approximation theory,Commutative algebra,0,0.0
+605,Analytic geometry,Differentiable manifold,0,-0.3921654303957861
+606,Matrix (mathematics),Vector calculus,0,-0.024146816441452622
+607,Mathematical logic,Analytical mechanics,0,-0.17514916205118464
+608,Probability theory,Complex analysis,0,0.4908083798069265
+609,Discrete mathematics,K-theory,0,-0.09799800750416615
+610,Multiscale modeling,Differential geometry,0,1.0
+611,Numerical analysis,Linear programming,0,0.16742315590575144
+612,Vector calculus,Orthogonal polynomials,0,0.0
+613,Abstract algebra,Primality test,0,0.018396396438707184
+614,Mathematical optimization,Mathematical analysis,0,-0.03271706251623563
+615,Finite element method,Coding theory,0,0.0
+616,Coding theory,Linear programming,0,0.0
+617,Commutative algebra,Finite element method,0,-0.012531642400393395
+618,Numerical linear algebra,C*-algebra,0,0.307747791150682
+619,Topological space,Lie theory,0,-0.23261257131978558
+620,Combinatorics,Algebra,0,-0.0651454865651927
+621,Linear algebra,Differential geometry,0,0.20883386076545396
+622,Functional analysis,Fourier analysis,0,-0.05280903617081474
+623,Differentiable manifold,Graph theory,0,0.5228323699986362
+624,Differential equation,Mathematical optimization,0,-0.34089663957529004
+625,Differentiable manifold,Von Neumann algebra,0,0.14268700638589477
+626,Ordinary differential equation,Group theory,0,0.014100022465402262
+627,Analytic geometry,Vector calculus,0,-0.07168050946242846
+628,Commutative algebra,Analytical mechanics,0,0.0
+629,Group theory,Stochastic process,0,0.006787075731719359
+630,Operations research,Algebraic topology,0,0.45371763208875415
+631,Complex analysis,K-theory,0,-0.11841044514765249
+632,Functional analysis,Statistics,0,-0.17508849224509393
+633,Computability theory,Commutative algebra,0,0.0
+634,Stochastic process,General relativity,0,0.0653681743552722
+635,Trigonometry,Abstract algebra,0,0.7674867473345629
+636,Mathematical logic,Fourier analysis,0,-0.0026091726269399235
+637,Differentiable manifold,Partial differential equation,0,0.0717974372992222
+638,Discrete mathematics,Metric (mathematics),0,-0.35094351330133167
+639,Mathematical optimization,Fourier analysis,0,-0.030532907810742776
+640,Differential geometry,Primality test,0,-0.005941491132905739
+641,Topological space,Differential geometry,0,0.668500847314685
+642,Stochastic process,Algebra,0,0.1804053181564673
+643,Mathematical logic,Partial differential equation,0,-0.4257291089626485
+644,Von Neumann algebra,Graph theory,0,0.0
+645,Abstract algebra,Topological space,0,-0.18527110142772996
+646,Complex analysis,Algebraic topology,0,-0.33737195220094807
+647,Field (mathematics),Calculus,0,0.5410290226411892
+648,Mathematical model,General relativity,0,0.3482241056541102
+649,Graph theory,Abstract algebra,0,0.2923068800201437
+650,General relativity,Approximation theory,0,0.0
+651,Real analysis,Functional analysis,0,-0.1189488548161175
+652,Complex analysis,Set theory,0,-0.7555814668549016
+653,Differential equation,Wavelet,0,0.00537263840362176
+654,Partial differential equation,K-theory,0,-0.00670743204751227
+655,Fourier analysis,Differential equation,0,-0.22983344286979723
+656,Mathematical optimization,Metric (mathematics),0,-0.4104448276761926
+657,Approximation theory,Stochastic process,0,-0.836042392491763

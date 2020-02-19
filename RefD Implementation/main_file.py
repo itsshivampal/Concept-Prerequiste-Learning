@@ -114,12 +114,12 @@ def main_function(subject, method, w_type, theta):
 
 
 
-# subject = "CS"
+# subject = "MATH"
 # method = "refd"
 # w_type = "equal"
 # theta = 0.05
 # estimated_results = main_function(subject, method, w_type, theta)
-# estimated_results.to_csv("cs_equal_results.csv")
+# estimated_results.to_csv("math_equal_results.csv")
 # print(estimated_results)
 
 
@@ -139,26 +139,19 @@ def compare_result(result, truth):
         elif result == 0: return 4
 
 
+
+
 def estimation_measures(TP, FN, FP, TN):
-    precision = TP/(TP + FP)
-    recall = TP/(TP + FN)
-    accuracy = (TP)/(TP + FN + FP)
-    if precision == 0 and recall == 0:
-        f1_score = 0
+    if TP == 0 and FP == 0:
+        precision = 0
     else:
-        f1_score = 2*precision*recall/(precision + recall)
-    data = {
-        "precision": precision,
-        "recall": recall,
-        "accuracy": accuracy,
-        "f1_score": f1_score
-    }
-    return data
+        precision = TP/(TP + FP)
 
+    if TP == 0 and FN == 0:
+        recall = 0
+    else:
+        recall = TP/(TP + FN)
 
-def estimation_measures(TP, FN, FP, TN):
-    precision = TP/(TP + FP)
-    recall = TP/(TP + FN)
     accuracy = (TP + TN)/(TP + FN + FP + TN)
     if precision == 0 and recall == 0:
         f1_score = 0
@@ -259,15 +252,11 @@ def optimize_theta(file_name):
     plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values)
 
 
-file_name = "cs_equal_results.csv"
-theta = 0.05
-data = check_accuracy_measures(file_name, theta)
-print(data)
+# file_name = "cs_equal_results.csv"
+# theta = 0.05
+# data = check_accuracy_measures(file_name, theta)
+# print(data)
 
 
-# optimize_theta(file_name)
-
-
-
-
-# print(estimation_measures(check_estimation(y_estimate, y_truth, 0.02)))
+file_name = "math_equal_results.csv"
+optimize_theta(file_name)

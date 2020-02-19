@@ -1,5 +1,4 @@
-[Command: python -u '/home/shivam/Documents/Personalise Learning Thesis/RefD Implementation/script_testing.py']
-Following is the list of all topics
+Following is the list of all topics/courses
 Data mining
 Machine learning
 Computational geometry
@@ -64,7 +63,7 @@ Assembly language
 Object-oriented design
 
 
-Referred links of topic -  Algorithm
+1. Referred links of topic "Algorithm" from the set of given courses
 Algorithm
 Analysis of algorithms
 Artificial intelligence
@@ -77,7 +76,7 @@ Programming language
 Theory of computation
 
 
-Referred links of topic -  Discrete mathematics
+2. Referred links of topic "Discrete mathematics" from the set of given courses
 Algorithm
 Analysis of algorithms
 Computational geometry
@@ -88,6 +87,7 @@ Software development
 Theory of computation
 
 
+3. Referred links of topic "Algorithm" which contains the link for "Discrete mathematics"
 Analysis of algorithms
 Artificial intelligence
 Computational geometry
@@ -96,6 +96,7 @@ Machine learning
 Theory of computation
 
 
+4. Referred links of topic "Discrete mathematics" which contains the link for "Algorithm"
 Algorithm
 Analysis of algorithms
 Computational geometry
@@ -105,12 +106,9 @@ Software development
 Theory of computation
 
 
-10
-8
-6
-7
-[Finished in 1.404s]
+Count of 1st - 10
+Count of 2nd - 8
+Count of 3rd - 6
+Count of 4th - 7
 
-
-
-Refd score = (3/1) - (4/2)
+RefD Score - (3rd/1st) - (4th/2nd)

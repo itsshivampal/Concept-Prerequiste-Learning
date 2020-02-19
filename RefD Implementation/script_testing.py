@@ -76,100 +76,16 @@ def get_all_referred_links(topic, all_keyword_data):
     return links
 
 
-def get_r_value(topic_a, topic_b, all_keyword_data):
-    referred_link_a = get_all_referred_links(topic_a, all_keyword_data)
-    if topic_b in referred_link_a:
-        return 1.0
-    else:
-        return 0.0
-
-
-# Calculation of W by "equal" w_type
-def get_w_value_equal(topic_a, topic_b, all_keyword_data):
-    referred_link_b = get_all_referred_links(topic_b, all_keyword_data)
-    if topic_a in referred_link_b:
-        return 1.0
-    else:
-        return 0.0
-
-
 def read_tfidf_json_data(subject):
     filename = "output_data/w_values/" + subject + "_tfidf.json"
     with open(filename) as f:
         data = json.load(f)
     return data
 
-
-
-def get_w_value_tfidf(topic_a, topic_b, tfidf_values):
-    return tfidf_values[topic_a][topic_b]
-
-
 ##################################################################################################
 
 
 
-
-
-
-# Following functions for RefD implementation
-def part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
-    part_a = 0.0
-    if w_type == "equal":
-        for topic in all_topics:
-            part_a = part_a + get_r_value(topic, topic_b, all_keyword_data)*get_w_value_equal(topic, topic_a, all_keyword_data)
-    elif w_type == "tfidf":
-        for topic in all_topics:
-            part_a = part_a + get_r_value(topic, topic_b, all_keyword_data)*get_w_value_tfidf(topic, topic_a, tfidf_values)
-    return float(part_a)
-
-
-def part_b_calc(topic_a, all_keyword_data, all_topics, w_type, tfidf_values):
-    part_b = 0.0
-    if w_type == "equal":
-        for topic in all_topics:
-            part_b = part_b + get_w_value_equal(topic, topic_a, all_keyword_data)
-    elif w_type == "tfidf":
-        for topic in all_topics:
-            part_b = part_b + get_w_value_tfidf(topic, topic_a, tfidf_values)
-    return float(part_b)
-
-
-def part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
-    part_c = 0.0
-    if w_type == "equal":
-        for topic in all_topics:
-            part_c = part_c + get_r_value(topic, topic_a, all_keyword_data)*get_w_value_equal(topic, topic_b, all_keyword_data)
-    elif w_type == "tfidf":
-        for topic in all_topics:
-            part_c = part_c + get_r_value(topic, topic_a, all_keyword_data)*get_w_value_tfidf(topic, topic_b, tfidf_values)
-    return float(part_c)
-
-
-def part_d_calc(topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
-    part_d = 0.0
-    if w_type == "equal":
-        for topic in all_topics:
-            part_d = part_d + get_w_value_equal(topic, topic_b, all_keyword_data)
-    elif w_type == "tfidf":
-        for topic in all_topics:
-            part_d = part_d + get_w_value_tfidf(topic, topic_b, tfidf_values)
-    return float(part_d)
-
-
-def refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values):
-    part_a = part_a_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-    part_b = part_b_calc(topic_a, all_keyword_data, all_topics, w_type, tfidf_values)
-    part_c = part_c_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-    part_d = part_d_calc(topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-
-    if part_b == 0 or part_d == 0:
-        return 0
-    else:
-        RefD_a_b = (part_a/part_b) - (part_c/part_d)
-        return RefD_a_b
-
-# Ending of Refd Calculation method
 
 
 #-------------------------------------------------------------------------------
@@ -207,8 +123,6 @@ def score_calc_pairs(all_topics, all_keyword_data, method, w_type):
     print("\n")
 
 
-
-
     count_a = 0
     count_b = 0
 
@@ -231,12 +145,6 @@ def score_calc_pairs(all_topics, all_keyword_data, method, w_type):
     print(count_a)
     print(count_b)
 
-
-
-
-
-    # refd_score = refd_score_calc(topic_a, topic_b, all_keyword_data, all_topics, w_type, tfidf_values)
-    # return refd_score
     return 0
 
 
