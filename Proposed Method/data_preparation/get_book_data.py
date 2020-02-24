@@ -22,7 +22,16 @@ def save_toc_data(data, output_file):
     return True
 
 
-def get_toc_data(file_name, output_file):
+def export_txt_file(data, output_txt_file):
+    file = open(output_txt_file, "w+")
+    for i in range(len(data)):
+        line = "file_data: " + data[i]["index"] + "|" + data[i]["title"] + "|" + data[i]["page_no"] + "\n\n\n"
+        file.write(line)
+    return True
+
+
+
+def get_toc_data(file_name, output_file, output_txt_file):
     file = open(toc_file, "r")
     all_data = {}
     index = 0
@@ -30,11 +39,13 @@ def get_toc_data(file_name, output_file):
         data = extract_toc_data(line)
         all_data[index] = data
         index += 1
+    export_txt_file(all_data, output_txt_file)
     save_toc_data(all_data, output_file)
     return True
 
 
 toc_file = "dataset/physics-grade.toc"
 output_file = "output/physics_content.csv"
+output_txt_file = "output/physics_book_content.txt"
 
-get_toc_data(toc_file, output_file)
+get_toc_data(toc_file, output_file, output_txt_file)
