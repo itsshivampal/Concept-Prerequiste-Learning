@@ -3470,15 +3470,224 @@ file_data: 13|Geometrical Optics - Grade 11|327
 
 
 file_data: 13.1|Introduction|327
+In Grade 10, we studied how light is reflected and refracted. This chapter builds on what you
+have learnt in Grade 10. You will learn about lenses, how the human eye works as well as how
+telescopes and microscopes work.
 
 
 file_data: 13.2|Lenses|327
+In this section we will discuss properties of thin lenses. In Grade 10, you learnt about two kinds
+of mirrors: concave mirrors which were also known as converging mirrors and convex mirrors
+which were also known as diverging mirrors. Similarly, there are two types of lenses: converging
+and diverging lenses.
+We have learnt how light travels in different materials, and we are now ready to learn how we
+can control the direction of light rays. We use lenses to control the direction of light. When
+light enters a lens, the light rays bend or change direction as shown in Figure 13.1.
+Definition: Lens
+A lens is any transparent material (e.g. glass) of an appropriate shape that can take parallel
+rays of incident light and either converge the rays to a point or diverge the rays from a
+point.
+Some lenses will focus light rays to a single point. These lenses are called converging or concave
+lenses. Other lenses spread out the light rays so that it looks like they all come from the same
+point. These lenses are called diverging or convex lenses. Lenses change the direction of light
+rays by refraction. They are designed so that the image appears in a certain place or as a certain
+size. Lenses are used in eyeglasses, cameras, microscopes, and telescopes. You also have lenses
+in your eyes!
+Definition: Converging Lenses
+Converging lenses converge parallel rays of light and are thicker in the middle than at the
+edges.
+Definition: Diverging Lenses
+Diverging lenses diverge parallel rays of light and are thicker at the edges than in the middle.
+parallel rays of
+light enter the lens
+rays are focused
+at the same point
+(a) A converging lens will focus the rays that enter the lens
+parallel rays of
+light enter the lens
+rays are spread out
+as if they are coming
+from the same point
+(b) A diverging lens will spread out the rays that enter the lens
+Figure 13.1: The behaviour of parallel light rays entering either a converging or diverging lens.
+Examples of converging and diverging lenses are shown in Figure 13.2.
+converging lenses diverging lenses
+Figure 13.2: Types of lenses
+Before we study lenses in detail, there are a few important terms that must be defined. Figure 13.3
+shows important lens properties:
+• The principal axis is the line which runs horizontally straight through the optical centre
+of the lens. It is also sometimes called the optic axis.
+• The optical centre (O) of a convex lens is usually the centre point of the lens. The
+direction of all light rays which pass through the optical centre, remains unchanged.
+• The focus or focal point of the lens is the position on the principal axis where all light
+rays which run parallel to the principal axis through the lens converge (come together) at
+a point. Since light can pass through the lens either from right to left or left to right,
+there is a focal point on each side of the lens (F1 and F2), at the same distance from the
+optical centre in each direction. (Note: the plural form of the word focus is foci.)
+• The focal length (f) is the distance between the optical centre and the focal point.
+
 
 
 file_data: 13.2.1|Converging Lenses|329
+We will only discuss double convex converging lenses as shown in Figure 13.4. Converging lenses
+are thinner on the outside and thicker on the inside.
+Figure 13.5 shows a convex lens. Light rays traveling through a convex lens are bent towards
+the principal axis. For this reason, convex lenses are called converging lenses.
+Figure 13.5: Light rays bend towards each other or converge when they travel through a convex
+lens. F1 and F2 are the foci of the lens.
+The type of images created by a convex lens is dependent on the position of the object. We will examine the following cases:
+1. the object is placed at a distance greater than 2f from the lens
+2. the object is placed at a distance equal to 2f from the lens
+3. the object is placed at a distance between 2f and f from the lens
+4. the object is placed at a distance less than f from the lens
+We examine the properties of the image in each of these cases by drawing ray diagrams. We can
+find the image by tracing the path of three light rays through the lens. Any two of these rays
+will show us the location of the image. You can use the third ray to check the location.
+
+Drawing Ray Diagrams for Converging Lenses
+The three rays are labelled R1, R2 and R3. The ray diagrams that follow will use this naming
+convention.
+1. The first ray (R1) travels from the object to the lens parallel to the principal axis. This
+ray is bent by the lens and travels through the focal point.
+2. Any ray travelling parallel to the principal axis is bent through the focal point.
+3. If a light ray passes through a focal point before it enters the lens, then it will leave the
+lens parallel to the principal axis. The second ray (R2) is therefore drawn to pass through
+the focal point before it enters the lens.
+4. A ray that travels through the centre of the lens does not change direction. The third ray
+(R3) is drawn through the centre of the lens.
+5. The point where all three of the rays (R1, R2 and R3) intersect is the image of the point
+where they all started. The image will form at this point.
+CASE 1:
+Object placed at a distance greater than 2f from the lens
+Figure 13.7: An object is placed at a distance greater than 2f away from the converging lens.
+Three rays are drawn to locate the image, which is real, smaller than the object and inverted.
+We can locate the position of the image by drawing our three rays. R1 travels from the object
+to the lens parallel to the principal axis and is bent by the lens and then travels through the focal
+point. R2 passes through the focal point before it enters the lens and therefore must leave the
+lens parallel to the principal axis. R3 travels through the center of the lens and does not change
+direction. The point where R1, R2 and R3 intersect is the image of the point where they all
+started.
+The image of an object placed at a distance greater than 2f from the lens is upside down or
+inverted. This is because the rays which began at the top of the object, above the principal
+axis, after passing through the lens end up below the principal axis. The image is called a real
+image because it is on the opposite side of the lens to the object and you can trace all the light
+rays directly from the image back to the object.
+The image is also smaller than the object and is located closer to the lens than the object.
+Important: In reality, light rays come from all points along the length of the object. In ray
+diagrams we only draw three rays (all starting at the top of the object) to keep the diagram
+clear and simple.
+CASE 2:
+Object placed at a distance equal to 2f from the lens
+Figure 13.8: An object is placed at a distance equal to 2f away from the converging lens. Three
+rays are drawn to locate the image, which is real, the same size as the object and inverted.
+We can locate the position of the image by drawing our three rays. R1 travels from the object
+to the lens parallel to the principal axis and is bent by the lens and then travels through the focal
+point. R2 passes through the focal point before it enters the lens and therefore must leave the
+lens parallel to the principal axis. R3 travels through the center of the lens and does not change
+direction. The point where R1, R2 and R3 intersect is the image of the point where they all
+started.
+The image of an object placed at a distance equal to 2f from the lens is upside down or inverted.
+This is because the rays which began at the top of the object, above the principal axis, after
+passing through the lens end up below the principal axis. The image is called a real image
+because it is on the opposite side of the lens to the object and you can trace all the light rays
+directly from the image back to the object.
+The image is the same size as the object and is located at a distance 2f away from the lens.
+CASE 3:
+Object placed at a distance between 2f and f from the lens
+Figure 13.9: An object is placed at a distance between 2f and f away from the converging lens.
+Three rays are drawn to locate the image, which is real, larger than the object and inverted.
+We can locate the position of the image by drawing our three rays. R1 travels from the object
+to the lens parallel to the principal axis and is bent by the lens and then travels through the focal
+point. R2 passes through the focal point before it enters the lens and therefore must leave the
+lens parallel to the principal axis. R3 travels through the center of the lens and does not change
+direction. The point where R1, R2 and R3 intersect is the image of the point where they all
+started.
+The image of an object placed at a distance between 2f and f from the lens is upside down
+or inverted. This is because the rays which began at the top of the object, above the principal
+axis, after passing through the lens end up below the principal axis. The image is called a real
+image because it is on the opposite side of the lens to the object and you can trace all the light
+rays directly from the image back to the object.
+The image is larger than the object and is located at a distance greater than 2f away from the
+lens.
+CASE 4:
+Object placed at a distance less than f from the lens
+Figure 13.10: An object is placed at a distance less than f away from the converging lens. Three
+rays are drawn to locate the image, which is virtual, larger than the object and upright.
+We can locate the position of the image by drawing our three rays. R1 travels from the object
+to the lens parallel to the principal axis and is bent by the lens and then travels through the focal
+point. R2 passes through the focal point before it enters the lens and therefore must leave the
+lens parallel to the principal axis. R3 travels through the center of the lens and does not change
+direction. The point where R1, R2 and R3 intersect is the image of the point where they all
+started.
+The image of an object placed at a distance less than f from the lens is upright. The image is
+called a virtual image because it is on the same side of the lens as the object and you cannot
+trace all the light rays directly from the image back to the object.
+The image is larger than the object and is located further away from the lens than the object.
+Extension: The thin lens equation and magnification
+The Thin Lens Equation
+We can find the position of the image of a lens mathematically as there is
+mathematical relation between the object distance, image distance, and focal length.
+The equation is:
+where f is the focal length, do is the object distance and di is the image distance.
+The object distance do is the distance from the object to the lens. do is positive
+if the object is on the same side of the lens as the light rays enter the lens. This should make sense: we expect the light rays to travel from the object to the lens.
+The image distance di is the distance from the lens to the image. Unlike mirrors,
+which reflect light back, lenses refract light through them. We expect to find the
+image on the same side of the lens as the light leaves the lens. If this is the case,
+then di is positive and the image is real (see Figure 13.9). Sometimes the image will
+be on the same side of the lens as the light rays enter the lens. Then di is negative
+and the image is virtual (Figure 13.10). If we know any two of the three quantities
+above, then we can use the Thin Lens Equation to solve for the third quantity.
+Magnification
+It is possible to calculate the magnification of an image. The magnification is
+how much bigger or smaller the image is than the object.
+where m is the magnification, do is the object distance and di is the image distance.
+If di and do are both positive, the magnification is negative. This means the
+image is inverted, or upside down. If di is negative and do is positive, then the
+image is not inverted, or right side up. If the absolute value of the magnification is
+greater than one, the image is larger than the object. For example, a magnification
+of -2 means the image is inverted and twice as big as the object.
+
 
 
 file_data: 13.2.2|Diverging Lenses|340
+We will only discuss double concave diverging lenses as shown in Figure 13.11. Concave lenses
+are thicker on the outside and thinner on the inside.
+Figure 13.12 shows a concave lens with light rays travelling through it. You can see that concave
+lenses have the opposite curvature to convex lenses. This causes light rays passing through a
+concave lens to diverge or be spread out away from the principal axis. For this reason, concave
+lenses are called diverging lenses. Images formed by concave lenses are always virtual.
+Unlike converging lenses, the type of images created by a concave lens is not dependent on the
+position of the object. The image is always upright, smaller than the object, and located closer
+to the lens than the object.
+We examine the properties of the image by drawing ray diagrams. We can find the image by
+tracing the path of three light rays through the lens. Any two of these rays will show us the location of the image. You can use the third ray to check the location, but it is not necessary
+to show it on your diagram.
+Figure 13.12: Light rays bend away from each other or diverge when they travel through a
+concave lens. F1 and F2 are the foci of the lens.
+Drawing Ray Diagrams for Diverging Lenses
+Draw the three rays starting at the top of the object.
+1. Ray R1 travels parallel to the principal axis. The ray bends and lines up with a focal
+point. However, the concave lens is a diverging lens, so the ray must line up with the focal
+point on the same side of the lens where light rays enter it. This means that we must
+project an imaginary line backwards through that focal point (F1) (shown by the dashed
+line extending from R1).
+2. Ray R2 points towards the focal point F2 on the opposite side of the lens. When it hits
+the lens, it is bent parallel to the principal axis.
+3. Ray R3 passes through the optical center of the lens. Like for the convex lens, this ray
+passes through with its direction unchanged.
+4. We find the image by locating the point where the rays meet. Since the rays diverge,
+they will only meet if projected backward to a point on the same side of the lens as the
+object. This is why concave lenses always have virtual images. (Since the light rays do
+not actually meet at the image, the image cannot be real.)
+Figure 13.13 shows an object placed at an arbitrary distance from the diverging lens.
+We can locate the position of the image by drawing our three rays for a diverging lens.
+Figure 13.13 shows that the image of an object is upright. The image is called a virtual image
+because it is on the same side of the lens as the object.
+The image is smaller than the object and is closer to the lens than the object.
+Figure 13.13: Three rays are drawn to locate the image, which is virtual, smaller than the object
+and upright.
+
 
 
 file_data: 13.2.3|Summary of Image Properties|343
@@ -3488,27 +3697,116 @@ file_data: 13.3|The Human Eye|344
 
 
 file_data: 13.3.1|Structure of the Eye|345
+Eyesight begins with lenses. As light rays enter your eye, they pass first through the cornea and
+then through the crystalline lens. These form a double lens system and focus light rays onto
+the back wall of the eye, called the retina. Rods and cones are nerve cells on the retina that
+transform light into electrical signals. These signals are sent to the brain via the optic nerve.
+A cross-section of the eye is shown in Figure 13.14.
+For clear vision, the image must be formed right on the retina, not in front of or behind it. To
+accomplish this, you may need a long or short focal length, depending on the object distance.
+How do we get the exact right focal length we need? Remember that the lens system has two
+parts. The cornea is fixed in place but the crystalline lens is flexible – it can change shape.
+When the shape of the lens changes, its focal length also changes. You have muscles in your eye
+called ciliary muscles that control the shape of the crystalline lens. When you focus your gaze
+on something, you are squeezing (or relaxing) these muscles. This process of accommodation
+changes the focal length of the lens and allows you to see an image clearly.
+The lens in the eye creates a real image that is smaller than the object and is inverted
 
 
 file_data: 13.3.2|Defects of Vision|346
+In a normal eye the image is focused on the retina.
+If the muscles in the eye are unable to accommodate adequately, the image will not be in focus.
+This leads to problems with vision. There are three basic conditions that arise:
+1. short-sightedness
+2. long-sightedness
+3. astigmatism
+Short-sightedness
+Short-sightedness or myopia is a defect of vision which means that the image is focused in front
+of the retina. Close objects are seen clearly but distant objects appear blurry. This condition
+can be corrected by placing a diverging lens in front of the eye. The diverging lens spreads out
+light rays before they enter the eye. The situation for short-sightedness and how to correct it is
+shown in Figure 13.17.
+Long-sightedness
+Long-sightedness or hyperopia is a defect of vision which means that the image is focused in
+behind the retina. People with this condition can see distant objects clearly, but not close ones.
+A converging lens in front of the eye corrects long-sightedness by converging the light rays slightly
+before they enter the eye. Reading glasses are an example of a converging lens used to correct
+long-sightedness.
+Astigmatism
+Astigmatism is characterised by a cornea or lens that is not spherical, but is more curved in one
+plane compared to another. This means that horizontal lines may be focused at a different point
+to vertical lines. Astigmatism is corrected by a special lens, which has different focal lengths in
+the vertical and horizontal planes.
+
+
 
 
 file_data: 13.4|Gravitational Lenses|347
+Einstein’s Theory of General Relativity predicts that light that passes close to very heavy objects
+like galaxies, black holes and massive stars will be bent. These massive objects therefore act as
+a kind of lens that is known as a gravitational lens. Gravitational lenses distort and change the
+apparent position of the image of stars.
+If a heavy object is acting as a gravitational lens, then an observer from Earth will see many
+images of a distant star (Figure 13.19).
 
 
 file_data: 13.5|Telescopes|347
+We have seen how a simple lens can be used to correct eyesight. Lenses and mirrors are also
+combined to magnify (or make bigger) objects that are far away.
+Telescopes use combinations of lenses to gather and focus light. However, telescopes collect light
+from objects that are large but far away, like planets and galaxies. For this reason, telescopes
+are the tools of astronomers. Astronomy is the study of objects outside the Earth, like stars,
+planets, galaxies, comets, and asteroids.
+Usually the object viewed with a telescope is very far away. There are two types of objects: those
+with a detectable diameter, such as the moon, and objects that appear as points of light, like
+stars.
+There are many kinds of telescopes, but we will look at two basic types: reflecting and refracting.
+
 
 
 file_data: 13.5.1|Refracting Telescopes|347
+A refracting telescope like the one pictured in Figure 13.20 uses two convex lenses to enlarge
+an image. The refracting telescope has a large primary lens with a long focal length to gather a lot of light. The lenses of a refracting telescope share a focal point. This ensures that parallel
+rays entering the telescope are again parallel when they reach your eye.
 
 
 file_data: 13.5.2|Reflecting Telescopes|348
+Some telescopes use mirrors as well as lenses and are called reflecting telescopes. Specifically,
+a reflecting telescope uses a convex lens and two mirrors to make an object appear larger.
+(Figure 13.21.)
+Light is collected by the primary mirror, which is large and concave. Parallel rays traveling toward
+this mirror are reflected and focused to a point. The secondary plane mirror is placed within the
+focal length of the primary mirror. This changes the direction of the light. A final eyepiece lens
+diverges the rays so that they are parallel when they reach your eye.
 
 
 file_data: 13.5.3|Southern African Large Telescope|348
+The Southern African Large Telescope (SALT) is the largest single optical telescope in the
+southern hemisphere, with a hexagonal mirror array 11 metres across. SALT is located in
+Sutherland in the Northern Cape. SALT is able to record distant stars, galaxies and quasars a
+billion times too faint to be seen with the unaided eye. This is equivalent to a person being
+able to see a candle flame at on the moon.
+SALT was completed in 2005 and is a truly international initiative, because the money to build
+it came from South Africa, the United States, Germany, Poland, the United Kingdom and New
+Zealand.
 
 
 file_data: 13.6|Microscopes|349
+We have seen how lenses and mirrors are combined to magnify objects that are far away in a
+telescope. Lenses can also be used to make very small objects bigger.
+Figure 13.10 shows that when an object is placed at a distance less than f from the lens, the
+image formed is virtual, upright and is larger than the object. This set-up is a simple magnifier.
+If you want to look at something very small, two lenses may work better than one. Microscopes
+and telescopes often use two lenses to make an image large enough to see.
+A compound microscope uses two lenses to achieve high magnification (Figure 13.22). Both
+lenses are convex, or converging. Light from the object first passes through the objective lens.
+The lens that you look through is called the eyepiece. The focus of the system can be
+adjusted by changing the length of the tube between the lenses.
+Drawing a Ray Diagram for a Two-Lens System
+You already have all the tools to analyze a two-lens system. Just consider one lens at a time.
+1. Use ray tracing or the lens equation to find the image for the first lens.
+2. Use the image of the first lens as the object of the second lens.
+3. To find the magnification, multiply:
 
 
 file_data: 13.7|Summary|351
@@ -3517,37 +3815,151 @@ file_data: 13.7|Summary|351
 file_data: 13.8|Exercises|352
 
 
+
+
 file_data: 14|Longitudinal Waves - Grade 11|355
 
 
+
 file_data: 14.1|Introduction|355
+In Grade 10 we studied pulses and waves. We looked at transverse waves more closely. In this
+chapter we look at another type of wave called longitudinal waves. In transverse waves, the
+motion of the particles in the medium were perpendicular to the direction of the wave. In
+longitudinal waves, the particles in the medium move parallel (in the same direction as) to the
+motion of the wave. Examples of transverse waves are water waves or light waves. An example
+of a longitudinal wave is a sound wave.
+
+
 
 
 file_data: 14.2|What is a longitudinal wave?|355
+Definition: Longitudinal waves
+A longitudinal wave is a wave where the particles in the medium move parallel to the
+direction of propagation of the wave.
+When we studied transverse waves we looked at two different motions: the motion of the
+particles of the medium and the motion of the save itself. We will do the same for longitudinal
+waves.
+The question is how do we construct such a wave?
+To create a transverse wave, we flick the end of for example a rope up and down. The particles
+move up and down and return to their equilibrium position. The wave moves from left to right
+and will be displaced.
+A longitudinal wave is seen best in a spring that is hung from a ceiling. Do the following
+investigation to find out more about longitudinal waves.
+From the investigation you will have noticed that the disturbance moves in the same direction
+as the direction in which the spring was pulled. The spring was pulled up and down and the
+wave also moved up and down. The ribbon in the investigation represents one particle in the
+medium. The particles in the medium move in the same direction as the wave. The ribbon
+moves from rest upwards, then back to its original position, then down and then back to its
+original position.
+
 
 
 file_data: 14.3|Characteristics of Longitudinal Waves|356
+As for transverse waves the following can be defined for longitudinal waves: wavelength,
+amplitude, period, frequency and wave speed. However instead of peaks and troughs,
+longitudinal waves have compressions and rarefactions.
+Definition: Compression
+A compression is a region in a longitudinal wave where the particles are closer together.
+Definition: Rarefaction
+A rarefaction is a region in a longitudinal wave where the particles are further apart.
 
 
 file_data: 14.3.1|Compression and Rarefaction|356
+As seen in Figure 14.2, there are regions where the medium is compressed and other regions
+where the medium is spread out in a longitudinal wave.
+The region where the medium is compressed is known as a compression and the region where
+the medium is spread out is known as a rarefaction.
+
 
 
 file_data: 14.3.2|Wavelength and Amplitude|357
+Definition: Wavelength
+The wavelength in a longitudinal wave is the distance between two consecutive points that
+are in phase.
+The wavelength in a longitudinal wave refers to the distance between two consecutive
+compressions or between two consecutive rarefactions.
+Definition: Amplitude
+The amplitude is the maximum displacement from a position of rest.
+The amplitude is the distance from the equilibrium position of the medium to a compression or
+a rarefaction.
 
 
 file_data: 14.3.3|Period and Frequency|357
+Definition: Period
+The period of a wave is the time taken by the wave to move one wavelength.
+Definition: Frequency
+The frequency of a wave is the number of wavelengths per second.
+The period of a longitudinal wave is the time taken by the wave to move one wavelength. As
+for transverse waves, the symbol T is used to represent period and period is measured in
+seconds (s).
+The frequency f of a wave is the number of wavelengths per second. Using this definition and
+the fact that the period is the time taken for 1 wavelength, we can define:
 
 
 file_data: 14.3.4|Speed of a Longitudinal Wave|358
+The speed of a longitudinal wave is defined as:
+v = f · λ
+where
+v = speed in m.s−1
+f = frequency in Hz
+λ = wavelength in m
+
 
 
 file_data: 14.4|Graphs of Particle Position, Displacement, Velocity and Acceleration|359
+When a longitudinal wave moves through the medium, the particles in the medium only move
+back and forth relative to the direction of motion of the wave. We can see this in Figure 14.4
+which shows the motion of the particles in a medium as a longitudinal wave moves through the
+medium.
+Figure 14.4: Positions of particles in a medium at different times as a longitudinal wave moves
+through it. The wave moves to the right. The dashed line shows the equilibrium position of
+particle 0.
+Important: A particle in the medium only moves back and forth when a longitudinal wave
+moves through the medium.
+As in Chapter 6, we can draw a graph of the particle’s position as a function of time. For the
+wave shown in Figure 14.4, we can draw the graph shown in Figure 14.5 for particle 0. The
+graph for each of the other particles will be identical.
+Figure 14.5: Graph of particle displacement as a function of time for the longitudinal wave shown
+in Figure 14.4.
+The graph of the particle’s velocity as a function of time is obtained by taking the gradient of
+the position vs. time graph. The graph of velocity vs. time for the position vs. time graph
+shown in Figure 14.5 is shown is Figure 14.6.
+The graph of the particle’s acceleration as a function of time is obtained by taking the gradient
+of the velocity vs. time graph. The graph of acceleration vs. time for the position vs. time
+graph shown in Figure 14.5 is shown is Figure 14.7.
 
 
 file_data: 14.5|Sound Waves|360
+Sound waves coming from a tuning fork cause the tuning fork to vibrate and push against the
+air particles in front of it. As the air particles are pushed together a compression is formed.
+The particles behind the compression move further apart causing a rarefaction. As the particles
+continue to push against each other, the sound wave travels through the air. Due to this
+motion of the particles, there is a constant variation in the pressure in the air. Sound waves are
+therefore pressure waves. This means that in media where the particles are closer together,
+sound waves will travel quicker.
+Sound waves travel faster through liquids, like water, than through the air because water is
+denser than air (the particles are closer together). Sound waves travel faster in solids than in
+liquids.
+Figure 14.8: Sound waves are pressure waves and need a medium through which to travel.
+Important: A sound wave is different from a light wave.
+• A sound wave is produced by an oscillating object while a light wave is not.
+• A sound wave cannot be diffracted while a light wave can be diffracted.
+Also, because a sound wave is a mechanical wave (i.e. that it needs a medium) it is not
+capable of traveling through a vacuum, whereas a light wave can travel through a vacuum.
+Important: A sound wave is a pressure wave. This means that regions of high pressure
+(compressions) and low pressure (rarefactions) are created as the sound source vibrates.
+These compressions and rarefactions arise because sound vibrates longitudinally and the
+longitudinal motion of air produces pressure fluctuations.
+Sound will be studied in more detail in Chapter 15.
+
 
 
 file_data: 14.6|Seismic Waves|361
+Seismic waves are waves from vibrations in the Earth (core, mantle, oceans). Seismic waves
+also occur on other planets, for example the moon and can be natural (due to earthquakes,
+volcanic eruptions or meteor strikes) or man-made (due to explosions or anything that hits the
+earth hard). Seismic P-waves (P for pressure) are longitudinal waves which can travel through
+solid and liquid.
 
 
 file_data: 14.7|Summary - Longitudinal Waves|361
@@ -3556,40 +3968,188 @@ file_data: 14.7|Summary - Longitudinal Waves|361
 file_data: 14.8|Exercises - Longitudinal Waves|362
 
 
+
+
 file_data: 15|Sound - Grade 11|363
 
 
 file_data: 15.1|Introduction|363
+Now that we have studied the basics of longitudinal waves, we are ready to study sound waves
+in detail.
+Have you ever thought about how amazing your sense of hearing is? It is actually pretty
+remarkable. There are many types of sounds: a car horn, a laughing baby, a barking dog, and
+somehow your brain can sort it all out. Though it seems complicated, it is rather simple to
+understand once you learn a very simple fact. Sound is a wave. So you can use everything you
+know about waves to explain sound.
 
 
 file_data: 15.2|Characteristics of a Sound Wave|363
+Since sound is a wave, we can relate the properties of sound to the properties of a wave. The
+basic properties of sound are: pitch, loudness and tone.
+Figure 15.1: Pitch and loudness of sound. Sound B has a lower pitch (lower frequency) than
+Sound A and is softer (smaller amplitude) than Sound C.
 
 
 file_data: 15.2.1|Pitch|364
+The frequency of a sound wave is what your ear understands as pitch. A higher frequency
+sound has a higher pitch, and a lower frequency sound has a lower pitch. In Figure 15.1 sound
+A has a higher pitch than sound B. For instance, the chirp of a bird would have a high pitch,
+but the roar of a lion would have a low pitch.
+The human ear can detect a wide range of frequencies. Frequencies from 20 to 20 000 Hz are
+audible to the human ear. Any sound with a frequency below 20 Hz is known as an infrasound
+and any sound with a frequency above 20 000 Hz is known as an ultrasound.
+Table 15.1 lists the ranges of some common animals compared to humans.
+
+
 
 
 file_data: 15.2.2|Loudness|364
+The amplitude of a sound wave determines its loudness or volume. A larger amplitude means a
+louder sound, and a smaller amplitude means a softer sound. In Figure 15.1 sound C is louder
+than sound B. The vibration of a source sets the amplitude of a wave. It transmits energy into
+the medium through its vibration. More energetic vibration corresponds to larger amplitude.
+The molecules move back and forth more vigorously.
+The loudness of a sound is also determined by the sensitivity of the ear. The human ear is more
+sensitive to some frequencies than to others. Loudness thus depends on both the amplitude of
+a sound wave and its frequency whether it lies in a region where the ear is more or less sensitive.
+
+
 
 
 file_data: 15.2.3|Tone|364
+Tone is a measure of the quality of the sound wave. For example, the quality of the sound
+produced in a particular musical instruments depends on which harmonics are superposed and
+in which proportions. The harmonics are determined by the standing waves that are produced
+in the instrument. Chapter 16 will explain the physics of music in greater detail.
+The quality (timbre) of the sound heard depends on the pattern of the incoming vibrations, i.e.
+the shape of the sound wave. The more irregular the vibrations, the more jagged is the shape
+of the sound wave and the harsher is the sound heard.
+
 
 
 file_data: 15.3|Speed of Sound|365
+The speed of sound depends on the medium the sound is travelling in. Sound travels faster in
+solids than in liquids, and faster in liquids than in gases. This is because the density of solids is
+higher than that of liquids which means that the particles are closer together. Sound can be
+transmitted more easily.
+The speed of sound also depends on the temperature of the medium. The hotter the medium
+is, the faster its particles move and therefore the quicker the sound will travel through the
+medium. When we heat a substance, the particles in that substance have more kinetic energy
+and vibrate or move faster. Sound can therefore be transmitted more easily and quickly in
+hotter substances.
+Sound waves are pressure waves. The speed of sound will therefore be influenced by the
+pressure of the medium through which it is travelling. At sea level the air pressure is higher
+than high up on a mountain. Sound will travel faster at sea level where the air pressure is
+higher than it would at places high above sea level.
+Definition: Speed of sound
+The speed of sound in air, at sea level, at a temperature of 21◦C and under normal atmo-
+spheric conditions, is 344 m·s−1.
+
 
 
 file_data: 15.4|Physics of the Ear and Hearing|365
+The human ear is divided into three main sections: the outer, middle, and inner ear. Let’s
+follow the journey of a sound wave from the pinna to the auditory nerve which transmits a
+signal to the brain. The pinna is the part of the ear we typically think of when we refer to the
+ear. Its main function is to collect and focus an incident sound wave. The wave then travels
+through the ear canal until it meets the eardrum. The pressure fluctuations of the sound wave
+make the eardrum vibrate. The three very small bones of the middle ear, the malleus
+(hammer), the incus (anvil), and the stapes (stirrup), transmit the signal through to the elliptical window. The elliptical window is the beginning of the inner ear. From the elliptical
+window the sound waves are transmitted through the liquid in the inner ear and interpreted as
+sounds by the brain. The inner ear, made of the semicircular canals, the cochlea, and the
+auditory nerve, is filled with fluid. The fluid allows the body to detect quick movements and
+maintain balance. The snail-shaped cochlea is covered in nerve cells. There are more than 25
+000 hairlike nerve cells. Different nerve cells vibrate with different frequencies. When a nerve
+cell vibrates, it releases electrical impulses to the auditory nerve. The impulses are sent to the
+brain through the auditory nerve and understood as sound.
+
 
 
 file_data: 15.4.1|Intensity of Sound|366
+Intensity is one indicator of amplitude. Intensity is the energy transmitted over a unit of area
+each second.
+Extension: Intensity
+Intensity is defined as:
+Intensity =
+energy
+time × area
+=
+power
+area
+By the definition of intensity, we can see that the units of intensity are
+Joules
+s · m2 =
+Watts
+m2
+The unit of intensity is the decibel (symbol: dB). This reduces to an SI equivalent of W· m−2.
+The threshold of hearing is 10−12 W· m−2. Below this intensity, the sound is too soft for the
+ear to hear. The threshold of pain is 1.0 W· m−2. Above this intensity a sound is so loud it
+becomes uncomfortable for the ear.
+Notice that there is a factor of 1012 between the thresholds of hearing and pain. This is one
+reason we define the decibel (dB) scale.
+Extension: dB Scale
+The intensity in dB of a sound of intensity I, is given by:
+β = 10 log
+I
+Io
+Io = 10−12 W· m−2 (15.1)
+In this way we can compress the whole hearing intensity scale into a range from 0 dB to 120 dB.
+Notice that there are sounds which exceed the threshold of pain. Exposure to these sounds can
+cause immediate damage to hearing. In fact, exposure to sounds from 80 dB and above can
+damage hearing over time. Measures can be taken to avoid damage, such as wearing earplugs
+or ear muffs. Limiting exposure time and increasing distance between you and the source are
+also important steps to protecting your hearing.
 
 
 file_data: 15.5|Ultrasound|367
+Ultrasound is sound with a frequency that is higher than 20 kHz. Some animals, such as dogs,
+dolphins, and bats, have an upper limit that is greater than that of the human ear and can hear
+ultrasound.
+The most common use of ultrasound is to create images, and has industrial and medical
+applications. The use of ultrasound to create images is based on the reflection and
+transmission of a wave at a boundary. When an ultrasound wave travels inside an object that is
+made up of different materials such as the human body, each time it encounters a boundary,
+e.g. between bone and muscle, or muscle and fat, part of the wave is reflected and part of it is
+transmitted. The reflected rays are detected and used to construct an image of the object.
+Ultrasound in medicine can visualise muscle and soft tissue, making them useful for scanning
+the organs, and is commonly used during pregnancy. Ultrasound is a safe, non-invasive method
+of looking inside the human body.
+Ultrasound sources may be used to generate local heating in biological tissue, with applications
+in physical therapy and cancer treatment. Focussed ultrasound sources may be used to break
+up kidney stones.
+Ultrasonic cleaners, sometimes called supersonic cleaners, are used at frequencies from 20-40
+kHz for jewellery, lenses and other optical parts, watches, dental instruments, surgical
+instruments and industrial parts. These cleaners consist of containers with a fluid in which the
+object to be cleaned is placed. Ultrasonic waves are then sent into the fluid. The main
+mechanism for cleaning action in an ultrasonic cleaner is actually the energy released from the
+collapse of millions of microscopic bubbles occurring in the liquid of the cleaner.
+Ultrasound generator/speaker systems are sold with claims that they frighten
+away rodents and insects, but there is no scientific evidence that the devices
+work; controlled tests have shown that rodents quickly learn that the speakers
+are harmless.
+In echo-sounding the reflections from ultrasound pulses that are bounced off
+objects (for example the bottom of the sea, fish etc.) are picked up. The
+reflections are timed and since their speed is known, the distance to the object
+can be found. This information can be built into a picture of the object that
+reflects the ultrasound pulses.
+
 
 
 file_data: 15.6|SONAR|368
+Ships on the ocean make use of the reflecting properties of sound waves to determine the
+depth of the ocean. A sound wave is transmitted and bounces off the seabed. Because the
+speed of sound is known and the time lapse between sending and receiving the sound can be
+measured, the distance from the ship to the bottom of the ocean can be determined, This is
+called sonar, which stands from Sound Navigation And Ranging.
+
 
 
 file_data: 15.6.1|Echolocation|368
+Animals like dolphins and bats make use of sounds waves to find their way. Just like ships on
+the ocean, bats use sonar to navigate. Ultrasound waves that are sent out are reflected off the
+objects around the animal. Bats, or dolphins, then use the reflected sounds to form a “picture”
+of their surroundings. This is called echolocation.
+
 
 
 file_data: 15.7|Summary|369
@@ -3598,22 +4158,162 @@ file_data: 15.7|Summary|369
 file_data: 15.8|Exercises|369
 
 
+
+
+
 file_data: 16|The Physics of Music - Grade 11|373
 
 
 file_data: 16.1|Introduction|373
+What is your favorite musical instrument? How do you play it? Do you pluck a string, like a
+guitar? Do you blow through it, like a flute? Do you hit it, like a drum? All of these work by
+making standing waves. Each instrument has a unique sound because of the special waves
+made in it. These waves could be in the strings of a guitar or violin. They could also be in the
+skin of a drum or a tube of air in a trumpet. These waves are picked up by the air and later
+reach your ear as sound.
+In Grade 10, you learned about standing waves and boundary conditions. We saw a rope that
+was:
+• fixed at both ends
+• fixed at one end and free at the other
+We also saw a pipe:
+• closed at both ends
+• open at both ends
+• open at one end, closed at the other
+String and wind instruments are good examples of standing waves on strings and pipes.
+One way to describe standing waves is to count nodes. Recall that a node is a point on a string
+that does not move as the wave changes. The anti-nodes are the highest and lowest points on
+the wave. There is a node at each end of a fixed string. There is also a node at the closed end
+of a pipe. But an open end of a pipe has an anti-node.
+What causes a standing wave? There are incident and reflected waves traveling back and forth
+on our string or pipe. For some frequencies, these waves combine in just the right way so that
+the whole wave appears to be standing still. These special cases are called harmonic
+frequencies, or harmonics. They depend on the length and material of the medium.
+Definition: Harmonic
+A harmonic frequency is a frequency at which standing waves can be made.
+
 
 
 file_data: 16.2|Standing Waves in String Instruments|373
+Let us look at a basic ”instrument”: a string pulled tight and fixed at both ends. When you
+pluck the string, you hear a certain pitch. This pitch is made by a certain frequency. What
+causes the string to emit sounds at this pitch?
+You have learned that the frequency of a standing wave depends on the length of the wave.
+The wavelength depends on the nodes and anti-nodes. The longest wave that can ”fit” on the
+string is shown in Figure 16.1. This is called the fundamental or natural frequency of the
+string. The string has nodes at both ends. The wavelength of the fundamental is twice the
+length of the string.
+Now put your finger on the center of the string. Hold it down gently and pluck it. The
+standing wave now has a node in the middle of the string. There are three nodes. We can fit a
+whole wave between the ends of the string. This means the wavelength is equal to the length
+of the string. This wave is called the first harmonic. As we add more nodes, we find the second
+harmonic, third harmonic, and so on. We must keep the nodes equally spaced or we will lose
+our standing wave.
+You should have found this formula:
+λ =
+2L
+n − 1
+Here, n is the number of nodes. L is the length of the string. The frequency f is:
+f =
+v
+λ
+Here, v is the velocity of the wave. This may seem confusing. The wave is a standing wave, so
+how can it have a velocity? But one standing wave is made up of many waves that travel back
+and forth on the string. Each of these waves has the same velocity. This speed depends on the
+mass and tension of the string.
+Extension: Guitar
+Guitars use strings with high tension. The length, tension and mass of the
+strings affect the pitches you hear. High tension and short strings make high
+frequencies; Low tension and long strings make low frequencies. When a string is
+first plucked, it vibrates at many frequencies. All of these except the harmonics are
+quickly filtered out. The harmonics make up the tone we hear.
+The body of a guitar acts as a large wooden soundboard. Here is how a
+soundboard works: the body picks up the vibrations of the strings. It then passes
+these vibrations to the air. A sound hole allows the soundboard of the guitar to
+vibrate more freely. It also helps sound waves to get out of the body.
+The neck of the guitar has thin metal bumps on it called frets. Pressing a
+string against a fret shortens the length of that string. This raises the natural
+frequency and the pitch of that string.
+Most guitars use an ”equal tempered” tuning of 12 notes per octave. A 6
+string guitar has a range of 4 1
+2 octaves with pitches from 82.407 Hz (low E) to
+2093 kHz (high C). Harmonics may reach over 20 kHz, in the inaudible range.
+Extension: Piano
+Let us look at another stringed instrument: the piano. The piano has strings
+that you can not see. When a key is pressed, a felt-tipped hammer hits a string
+inside the piano. The pitch depends on the length, tension and mass of the string.
+But there are many more strings than keys on a piano. This is because the short
+and thin strings are not as loud as the long and heavy strings. To make up for this,
+the higher keys have groups of two to four strings each.
+The soundboard in a piano is a large cast iron plate. It picks up vibrations from
+the strings. This heavy plate can withstand over 200 tons of pressure from string
+tension! Its mass also allows the piano to sustain notes for long periods of time.
+The piano has a wide frequency range, from 27,5 Hz (low A) to 4186,0 Hz
+(upper C). But these are just the fundamental frequencies. A piano plays complex,
+rich tones with over 20 harmonics per note. Some of these are out of the range of
+human hearing. Very low piano notes can be heard mostly because of their higher
+harmonics.
+
 
 
 file_data: 16.3|Standing Waves in Wind Instruments|377
+A wind instrument is an instrument that is usually made with a a pipe or thin tube. Examples
+of wind instruments are recorders, clarinets, flutes, organs etc.
+When one plays a wind instrument, the air that is pushed through the pipe vibrates and
+standing waves are formed. Just like with strings, the wavelengths of the standing waves will
+depend on the length of the pipe and whether it is open or closed at each end. Let’s consider
+each of the following situations:
+• A pipe with both ends open, like a flute or organ pipe.
+• A pipe with one end open and one closed, like a clarinet.
+If you blow across a small hole in a pipe or reed, it makes a sound. If both ends are open,
+standing waves will form according to figure 16.2. You will notice that there is an anti-node at
+each end. In the next activity you will find how this affects the wavelengths.
+The formula is different because there are more anti-nodes than nodes. The right formula is:
+Here, n is still the number of nodes.
+A long wavelength has a low frequency and low pitch. If you took your pipe from the last
+example and covered one end, you should hear a much lower note! Also, the wavelengths of
+the harmonics for this tube are not integer multiples of each other.
+Extension: Musical Scale
+The 12 tone scale popular in Western music took centuries to develop. This
+scale is also called the 12-note Equal Tempered scale. It has an octave divided into
+12 steps. (An octave is the main interval of most scales. If you double a frequency,
+you have raised the note one octave.) All steps have equal ratios of frequencies.
+But this scale is not perfect. If the octaves are in tune, all the other intervals are
+slightly mistuned. No interval is badly out of tune. But none is perfect.
+For example, suppose the base note of a scale is a frequency of 110 Hz ( a low
+A). The first harmonic is 220 Hz. This note is also an A, but is one octave higher.
+The second harmonic is at 330 Hz (close to an E). The third is 440 Hz (also an A).
+But not all the notes have such simple ratios. Middle C has a frequency of about
+262 Hz. This is not a simple multiple of 110 Hz. So the interval between C and A
+is a little out of tune.
+Many other types of tuning exist. Just Tempered scales are tuned so that all
+intervals are simple ratios of frequencies. There are also equal tempered scales with
+more or less notes per octave. Some scales use as many as 31 or 53 notes.
 
 
 file_data: 16.4|Resonance|382
+Resonance is the tendency of a system to vibrate at a maximum amplitude at the natural
+frequency of the system.
+Resonance takes place when a system is made to vibrate at its natural frequency as a result of
+vibrations that are received from another source of the same frequency. In the following
+investigation you will measure the speed of sound using resonance.
+Interesting fact: Soldiers march out of time on bridges to avoid stimulating the bridge to
+vibrate at its natural frequency.
+From the investigation you will notice that the column of air will make a sound at a certain
+length. This is where resonance takes place.
+
 
 
 file_data: 16.5|Music and Sound Quality|384
+In the sound chapter, we referred to the quality of sound as its tone. What makes the tone of a
+note played on an instrument? When you pluck a string or vibrate air in a tube, you hear
+mostly the fundamental frequency. Higher harmonics are present, but are fainter. These are
+called overtones. The tone of a note depends on its mixture of overtones. Different
+instruments have different mixtures of overtones. This is why the same note sounds different
+on a flute and a piano.
+Let us see how overtones can change the shape of a wave:
+The resultant waveform is very different from the fundamental frequency. Even though the two
+waves have the same main frequency, they do not sound the same!
+
 
 
 file_data: 16.6|Summary - The Physics of Music|385
@@ -3622,61 +4322,407 @@ file_data: 16.6|Summary - The Physics of Music|385
 file_data: 16.7|End of Chapter Exercises|386
 
 
+
+
 file_data: 17|Electrostatics - Grade 11|387
 
 
 file_data: 17.1|Introduction|387
+In Grade 10, you learnt about the force between charges. In this chapter you will learn exactly
+how to determine this force and about a basic law of electrostatics.
+
 
 
 file_data: 17.2|Forces between charges - Coulomb's Law|387
+Like charges repel each other while opposite charges attract each other. If the charges are at
+rest then the force between them is known as the electrostatic force. The electrostatic force
+between charges increases when the magnitude of the charges increases or the distance
+between the charges decreases.
+The electrostatic force was first studied in detail by Charles Coulomb around 1784. Through
+his observations he was able to show that the electrostatic force between two point-like charges
+is inversely proportional to the square of the distance between the objects. He also discovered
+that the force is proportional to the product of the charges on the two objects.
+F ∝
+Q1Q2
+r2 ,
+where Q1 is the charge on the one point-like object, Q2 is the charge on the second, and r is
+the distance between the two. The magnitude of the electrostatic force between two point-like
+charges is given by Coulomb’s Law.
+Definition: Coulomb’s Law
+Coulomb’s Law states that the magnitude of the electrostatic force between two point
+charges is directly proportional to the magnitudes of each charge and inversely proportional
+to the square of the distance between the charges.
+F = k
+Q1Q2
+r2
+and the proportionality constant k is called the electrostatic constant and has the value:
+k = 8,99 × 109N · m2 · C−2.
+Extension: Similarity of Coulomb’s Law to the Newton’s Universal Law of
+Gravitation.
+Notice how similar Coulomb’s Law is to the form of Newton’s Universal Law of
+Gravitation between two point-like particles:
+where m1 and m2 are the masses of the two particles, r is the distance between
+them, and G is the gravitational constant.
+Both laws represent the force exerted by particles (masses or charges) on each
+other that interact by means of a field.
+It is very interesting that Coulomb’s Law has been shown to be correct no
+matter how small the distance, nor how large the charge. For example it still
+applies inside the atom (over distances smaller than 10−10m).
+Next is another example that demonstrates the difference in magnitude between the
+gravitational force and the electrostatic force.
+Important: We can apply Newton’s Third Law to charges because, two charges exert forces
+of equal magnitude on one another in opposite directions.
+Important: Coulomb’s Law
+When substituting into the Coulomb’s Law equation, it is not necessary to include the signs of
+the charges. Instead, select a positive direction. Then forces that tend to move the charge in
+this direction are added, while forces that act in the opposite direction are subtracted.
+We mentioned in Chapter 9 that charge placed on a spherical conductor spreads evenly along
+the surface. As a result, if we are far enough from the charged sphere, electrostatically, it
+behaves as a point-like charge. Thus we can treat spherical conductors (e.g. metallic balls) as
+point-like charges, with all the charge acting at the centre.
+
+
 
 
 file_data: 17.3|Electric field around charges|392
+We have learnt that objects that carry charge feel forces from all other charged objects. It is
+useful to determine what the effect of a charge would be at every point surrounding it. To do
+this we need some sort of reference. We know that the force that one charge feels due to
+another depends on both charges (Q1 and Q2). How then can we talk about forces if we only
+have one charge? The solution to this dilemma is to introduce a test charge. We then
+determine the force that would be exerted on it if we placed it at a certain location. If we do
+this for every point surrounding a charge we know what would happen if we put a test charge
+at any location.
+This map of what would happen at any point we call an electric field map. It is a map of the
+electric field due to a charge. It tells us how large the force on a test charge would be and in
+what direction the force would be. Our map consists of the lines that tell us how the test
+charge would move if it were placed there.
+Definition: Electric field
+An electric field as a region of space in which an electric charge experiences a force. The
+direction of the electric field at a point is the direction that a positive test charge would
+move if placed at that point.
+
 
 
 file_data: 17.3.1|Electric field lines|393
+The maps depend very much on the charge or charges that the map is being made for. We will
+start off with the simplest possible case. Take a single positive charge with no other charges
+around it. First, we will look at what effects it would have on a test charge at a number of
+points.
+Electric field lines, like the magnetic field lines that were studied in Grade 10, are a way of
+representing the electric field at a point.
+• Arrows on the field lines indicate the direction of the field, i.e. the direction a positive
+test charge would move.
+• Electric field lines therefore point away from positive charges and towards negative
+charges.
+• Field lines are drawn closer together where the field is stronger.
+
 
 
 file_data: 17.3.2|Positive charge acting on a test charge|393
+At each point we calculate the force on a test charge, q, and represent this force by a vector.
+We can see that at every point the positive test charge, q, would experience a force pushing it
+away from the charge, Q. This is because both charges are positive and so they repel. Also
+notice that at points further away the vectors are shorter. That is because the force is smaller
+if you are further away.
+Negative charge acting on a test charge
+If the charge were negative we would have the following result.
+Notice that it is almost identical to the positive charge case. This is important – the arrows
+are the same length because the magnitude of the charge is the same and so is the magnitude
+of the test charge. Thus the magnitude (size) of the force is the same. The arrows point in
+the opposite direction because the charges now have opposite sign and so the test charge is
+attracted to the charge. Now, to make things simpler, we draw continuous lines showing the
+path that the test charge would travel. This means we don’t have to work out the magnitude
+of the force at many different points.
+Some important points to remember about electric fields:
+• There is an electric field at every point in space surrounding a charge.
+• Field lines are merely a representation – they are not real. When we draw them, we just
+pick convenient places to indicate the field in space.
+• Field lines always start at a right-angle (90o) to the charged object causing the field.
+• Field lines never cross.
+
 
 
 file_data: 17.3.3|Combined charge distributions|394
+We will now look at the field of a positive charge and a negative charge placed next to each
+other. The net resulting field would be the addition of the fields from each of the charges. To
+start off with let us sketch the field maps for each of the charges separately.
+Notice that a test charge starting off directly between the two would be pushed away from the
+positive charge and pulled towards the negative charge in a straight line. The path it would
+follow would be a straight line between the charges.
+Now let’s consider a test charge starting off a bit higher than directly between the charges. If it
+starts closer to the positive charge the force it feels from the positive charge is greater, but the
+negative charge also attracts it, so it would move away from the positive charge with a tiny
+force attracting it towards the negative charge. As it gets further from the positive charge the
+force from the negative and positive charges change and they are equal in magnitude at equal
+distances from the charges. After that point the negative charge starts to exert a stronger force
+on the test charge. This means that the test charge moves towards the negative charge with
+only a small force away from the positive charge.
+Two like charges : both positive
+For the case of two positive charges things look a little different. We can’t just turn the arrows
+around the way we did before. In this case the test charge is repelled by both charges. This
+tells us that a test charge will never cross half way because the force of repulsion from both
+charges will be equal in magnitude.
+The field directly between the charges cancels out in the middle. The force has equal
+magnitude and opposite direction. Interesting things happen when we look at test charges that
+are not on a line directly between the two.
+We know that a charge the same distance below the middle will experience a force along a
+reflected line, because the problem is symmetric (i.e. if we flipped vertically it would look the
+same). This is also true in the horizontal direction. So we use this fact to easily draw in the
+next four lines.
+Two like charges : both negative
+We can use the fact that the direction of the force is reversed for a test charge if you change
+the sign of the charge that is influencing it. If we change to the case where both charges are
+negative we get the following result:
+
+
 
 
 file_data: 17.3.4|Parallel plates|397
+One very important example of electric fields which is used extensively is the electric field
+between two charged parallel plates. In this situation the electric field is constant. This is used
+for many practical purposes and later we will explain how Millikan used it to measure the
+charge on the electron.
+Field map for oppositely charged parallel plates
+This means that the force that a test charge would feel at any point between the plates would
+be identical in magnitude and direction. The fields on the edges exhibit fringe effects, i.e. they
+bulge outwards. This is because a test charge placed here would feel the effects of charges only
+on one side (either left or right depending on which side it is placed). Test charges placed in
+the middle experience the effects of charges on both sides so they balance the components in
+the horizontal direction. This is clearly not the case on the edges.
+Strength of an electric field
+When we started making field maps we drew arrows to indicate the strength of the field and
+the direction. When we moved to lines you might have asked “Did we forget about the field
+strength?”. We did not. Consider the case for a single positive charge again:
+Notice that as you move further away from the charge the field lines become more spread out.
+In field map diagrams the closer field lines are together the stronger the field. Therefore, the
+electric field is stronger closer to the charge (the electric field lines are closer together) and
+weaker further from the charge (the electric field lines are further apart).
+The magnitude of the electric field at a point as the force per unit charge. Therefore,
+E =
+F
+q
+E and F are vectors. From this we see that the force on a charge q is simply:
+F = E · q
+The force between two electric charges is given by:
+F = k
+Qq
+r2 .
+(if we make the one charge Q and the other q.) Therefore, the electric field can be written as:
+E = k
+Q
+r2
+The electric field is the force per unit of charge and hence has units of newtons per coulomb.
+As with Coulomb’s law calculations, do not substitute the sign of the charge into the equation
+for electric field. Instead, choose a positive direction, and then either add or subtract the
+contribution to the electric field due to each charge depending upon whether it points in the
+positive or negative direction, respectively.
+
+
 
 
 file_data: 17.4|Electrical potential energy and potential|400
+The electrical potential energy of a charge is the energy it has because of its position relative
+to other charges that it interacts with. The potential energy of a charge Q1 relative to a
+charge Q2 a distance r away is calculated by:
+
+
+
 
 
 file_data: 17.4.1|Electrical potential|400
+The electric potential at a point is the electrical potential energy per unit charge, i.e. the
+potential energy a positive test charge would have if it were placed at that point.
+Consider a positive test charge +Q placed at A in the electric field of another positive point
+charge.
+The test charge moves towards B under the influence of the electric field of the other charge.
+In the process the test charge loses electrical potential energy and gains kinetic energy. Thus,
+at A, the test charge has more potential energy than at B – A is said to have a higher
+electrical potential than B.
+The potential energy of a charge at a point in a field is defined as the work required to move
+that charge from infinity to that point.
+Definition: Potential difference
+The potential difference between two points in an electric field is defined as the work
+required to move a unit positive test charge from the point of lower potential to
+that of higher potential.
+If an amount of work W is required to move a charge Q from one point to another, then the
+potential difference between the two points is given by,
+V =
+W
+Q
+unit : J.C−1 or V (the volt)
+From this equation we can define the volt.
+Definition: The Volt
+One volt is the potential difference between two points in an electric field if one joule of
+work is done in moving one coulomb of charge from the one point to the other.
+
 
 
 file_data: 17.4.2|Real-world application: lightning|402
+Lightning is an atmospheric discharge of electricity, usually, but not always, during a rain
+storm. An understanding of lightning is important for power transmission lines as engineers
+who need to know about lightning in order to adequately protect lines and equipment.
+Extension: Formation of lightning
+1. Charge separation
+The first process in the generation of lightning is charge separation. The
+mechanism by which charge separation happens is still the subject of research.
+One theory is that opposite charges are driven apart and energy is stored in
+the electric field between them. Cloud electrification appears to require strong
+updrafts which carry water droplets upward, supercooling them to −10 to
+−20 oC. These collide with ice crystals to form a soft ice-water mixture called
+graupel. The collisions result in a slight positive charge being transferred to
+ice crystals, and a slight negative charge to the graupel. Updrafts drive lighter
+ice crystals upwards, causing the cloud top to accumulate increasing positive
+charge. The heavier negatively charged graupel falls towards the middle and
+lower portions of the cloud, building up an increasing negative charge. Charge
+separation and accumulation continue until the electrical potential becomes
+sufficient to initiate lightning discharges, which occurs when the gathering of
+positive and negative charges forms a sufficiently strong electric field.
+2. Leader formation
+As a thundercloud moves over the Earth’s surface, an equal but opposite
+charge is induced in the Earth below, and the induced ground charge follows
+the movement of the cloud. An initial bipolar discharge, or path of ionized
+air, starts from a negatively charged mixed water and ice region in the
+thundercloud. The discharge ionized channels are called leaders. The negative
+charged leaders, called a ”stepped leader”, proceed generally downward in a
+number of quick jumps, each up to 50 metres long. Along the way, the
+stepped leader may branch into a number of paths as it continues to descend.
+The progression of stepped leaders takes a comparatively long time (hundreds
+of milliseconds) to approach the ground. This initial phase involves a
+relatively small electric current (tens or hundreds of amperes), and the leader
+is almost invisible compared to the subsequent lightning channel. When a
+step leader approaches the ground, the presence of opposite charges on the
+ground enhances the electric field. The electric field is highest on trees and
+tall buildings. If the electric field is strong enough, a conductive discharge
+(called a positive streamer) can develop from these points. As the field
+increases, the positive streamer may evolve into a hotter, higher current
+leader which eventually connects to the descending stepped leader from the
+cloud. It is also possible for many streamers to develop from many different objects simultaneously, with only one connecting with the leader and forming
+the main discharge path. Photographs have been taken on which
+non-connected streamers are clearly visible. When the two leaders meet, the
+electric current greatly increases. The region of high current propagates back
+up the positive stepped leader into the cloud with a ”return stroke” that is
+the most luminous part of the lightning discharge.
+3. Discharge When the electric field becomes strong enough, an electrical
+discharge (the bolt of lightning) occurs within clouds or between clouds and
+the ground. During the strike, successive portions of air become a conductive
+discharge channel as the electrons and positive ions of air molecules are pulled
+away from each other and forced to flow in opposite directions. The electrical
+discharge rapidly superheats the discharge channel, causing the air to expand
+rapidly and produce a shock wave heard as thunder. The rolling and gradually
+dissipating rumble of thunder is caused by the time delay of sound coming
+from different portions of a long stroke.
+Important: Estimating distance of a lightning strike
+The flash of a lightning strike and resulting thunder occur at roughly the same time. But light
+travels at 300 000 kilometres in a second, almost a million times the speed of sound. Sound
+travels at the slower speed of 330 m/s in the same time, so the flash of lightning is seen before
+thunder is heard. By counting the seconds between the flash and the thunder and dividing by 3,
+you can estimate your distance from the strike and initially the actual storm cell (in kilometres).
+
+
 
 
 file_data: 17.5|Capacitance and the parallel plate capacitor|403
 
 
 file_data: 17.5.1|Capacitors and capacitance|403
+A parallel plate capacitor is a device that consists of two oppositely charged conducting plates
+separated by a small distance, which stores charge. When voltage is applied to the capacitor,
+electric charge of equal magnitude, but opposite polarity, build up on each plate.
+Figure 17.1: A capacitor (C) connected in series with a resistor (R) and an energy source (E).
+Definition: Capacitance
+Capacitance is the charge stored per volt and is measured in farad (F)
+Mathematically, capacitance is the ratio of the charge on a single plate to the voltage across
+the plates of the capacitor:
+Capacitance is measured in farads (F). Since capacitance is defined as C = Q
+V , the units are in
+terms of charge over potential difference. The unit of charge is the coulomb and the unit of the
+potential difference is the volt. One farad is therefore the capacitance if one coulomb of charge
+was stored on a capacitor for every volt applied.
+1 C of charge is a very large amount of charge. So, for a small amount of voltage applied, a
+1 F capacitor can store a enormous amount of charge. Therefore, capacitors are often denoted
+in terms of microfarads (1 × 10−6), nanofarads (1 × 10−9), or picofarads (1 × 10−12).
+Important: Q is the magnitude of the charge stored on either plate, not on both plates
+added together. Since one plate stores positive charge and the other stores negative charge,
+the total charge on the two plates is zero.
+
+
 
 
 file_data: 17.5.2|Dielectrics|404
+The electric field between the plates of a capacitor is affected by the substance between them.
+The substance between the plates is called a dielectric. Common substances used as dielectrics
+are mica, perspex, air, paper and glass.
+When a dielectric is inserted between the plates of a parallel plate capacitor the dielectric
+becomes polarised so an electric field is induced in the dielectric that opposes the field between
+the plates. When the two electric fields are superposed, the new field between the plates
+becomes smaller. Thus the voltage between the plates decreases so the capacitance increases.
+In every capacitor, the dielectric keeps the charge on one plate from travelling to the other
+plate. However, each capacitor is different in how much charge it allows to build up on the
+electrodes per voltage applied. When scientists started studying capacitors they discovered the
+property that the voltage applied to the capacitor was proportional to the maximum charge
+that would accumulate on the electrodes. The constant that made this relation into an
+equation was called the capacitance, C. The capacitance was different for different capacitors.
+But, it stayed constant no matter how much voltage was applied. So, it predicts how much
+charge will be stored on a capacitor when different voltages are applied.
+
 
 
 file_data: 17.5.3|Physical properties of the capacitor and capacitance|404
+The capacitance of a capacitor is proportional to the surface area of the conducting plate and
+inversely proportional to the distance between the plates. It is also proportional to the permittivity of the dielectric. The dielectric is the non-conducting substance that separates the
+plates. As mentioned before, dielectrics can be air, paper, mica, perspex or glass.
+The capacitance of a parallel-plate capacitor is given by:
+C = ǫ0
+A
+d
+where ǫ0 is the permittivity of air, A is the area of the plates and d is the distance between the
+plates.
+
 
 
 file_data: 17.5.4|Electric field in a capacitor|405
+The electric field strength between the plates of a capacitor can be calculated using the
+formula:
+E = V
+d where E is the electric field in J.C−1, V is the potential difference in V and d is the
+distance between the plates in m.
+
 
 
 file_data: 17.6|Capacitor as a circuit device|406
 
 
 file_data: 17.6.1|A capacitor in a circuit|406
+When a capacitor is connected in a DC circuit, current will flow until the capacitor is fully
+charged. After that, no further current will flow. If the charged capacitor is connected to
+another circuit with no source of emf in it, the capacitor will discharge through the circuit,
+creating a potential difference for a short time. This is useful, for example, in a camera flash.
+Initially, the electrodes have no net charge. A voltage source is applied to charge a capacitor.
+The voltage source creates an electric field, causing the electrons to move. The charges move
+around the circuit stopping at the left electrode. Here they are unable to travel across the
+dielectric, since electrons cannot travel through an insulator. The charge begins to accumulate,
+and an electric field forms pointing from the left electrode to the right electrode. This is the
+opposite direction of the electric field created by the voltage source. When this electric field is
+equal to the electric field created by the voltage source, the electrons stop moving. The
+capacitor is then fully charged, with a positive charge on the left electrode and a negative
+charge on the right electrode.
+If the voltage is removed, the capacitor will discharge. The electrons begin to move because in
+the absence of the voltage source, there is now a net electric field. This field is due to the
+imbalance of charge on the electrodes–the field across the dielectric. Just as the electrons
+flowed to the positive electrode when the capacitor was being charged, during discharge, the
+electrons flow to negative electrode. The charges cancel, and there is no longer an electric field
+across the dielectric.
+
 
 
 file_data: 17.6.2|Real-world applications: capacitors|407
+Capacitors are used in many different types of circuitry. In car speakers, capacitors are often
+used to aid the power supply when the speaker require more power than the car battery can
+provide. Capacitors are also used to in processing electronic signals in circuits, such as
+smoothing voltage spikes due to inconsistent voltage sources. This is important for protecting
+sensitive electronic compoments in a circuit.
+
 
 
 file_data: 17.7|Summary|407
@@ -3685,34 +4731,230 @@ file_data: 17.7|Summary|407
 file_data: 17.8|Exercises - Electrostatics|407
 
 
+
+
+
 file_data: 18|Electromagnetism - Grade 11|413
 
 
 file_data: 18.1|Introduction|413
+Electromagnetism is the science of the properties and relationship between electric currents and
+magnetism. An electric current creates a magnetic field and a moving magnetic field will create
+a flow of charge. This relationship between electricity and magnetism has resulted in the
+invention of many devices which are useful to humans.
+
 
 
 file_data: 18.2|Magnetic field associated with a current|413
+If you hold a compass near a wire through which current is flowing, the needle on the compass
+will be deflected.
+The discovery of the relationship between magnetism and electricity was, like
+so many other scientific discoveries, stumbled upon almost by accident. The
+Danish physicist Hans Christian Oersted was lecturing one day in 1820 on the
+possibility of electricity and magnetism being related to one another, and in the
+process demonstrated it conclusively by experiment in front of his whole class.
+By passing an electric current through a metal wire suspended above a
+magnetic compass, Oersted was able to produce a definite motion of the
+compass needle in response to the current. What began as a guess at the start
+of the class session was confirmed as fact at the end. Needless to say, Oersted
+had to revise his lecture notes for future classes. His discovery paved the way
+for a whole new branch of science - electromagnetism.
+The magnetic field produced by an electric current is always oriented perpendicular to the
+direction of the current flow. When we are drawing directions of magnetic fields and currents,
+we use the symbol ⊙ and ⊗. The symbol
+⊙
+for an arrow that is coming out of the page and the symbol
+⊗
+for an arrow that is going into the page.
+It is easy to remember the meanings of the symbols if you think of an arrow with a head and a
+tail.
+When the arrow is coming out of the page, you see the head of the arrow (⊙). When the arrow
+is going into the page, you see the tail of the arrow (⊗).
+The direction of the magnetic field around the current carrying conductor is shown in
+Figure 18.1.
+Figure 18.1: Magnetic field around a conductor when you look at the conductor from one end.
+(a) Current flows into the page and the magnetic field is counter clockwise. (b) Current flows
+out of the page and the magnetic field is clockwise.
+
 
 
 file_data: 18.2.1|Real-world applications|418
+Electromagnets
+An electromagnet is a piece of wire intended to generate a magnetic field with the passage of
+electric current through it. Though all current-carrying conductors produce magnetic fields, an
+electromagnet is usually constructed in such a way as to maximize the strength of the magnetic
+field it produces for a special purpose. Electromagnets find frequent application in research,
+industry, medical, and consumer products.
+As an electrically-controllable magnet, electromagnets find application in a wide variety of
+”electromechanical” devices: machines that effect mechanical force or motion through
+electrical power. Perhaps the most obvious example of such a machine is the electric motor
+which will be described in detail in Grade 12. Other examples of the use of electromagnets are
+electric bells, relays, loudspeakers and scrapyard cranes.
+
+
+
+
 
 
 file_data: 18.3|Current induced by a changing magnetic field|420
+While Oersted’s surprising discovery of electromagnetism paved the way for more practical
+applications of electricity, it was Michael Faraday who gave us the key to the practical
+generation of electricity: electromagnetic induction.
+Faraday discovered that a voltage was generated across a length of wire while moving a magnet
+nearby, such that the distance between the two changed. This meant that the wire was
+exposed to a magnetic field flux of changing intensity. Furthermore, the voltage also depended
+on the orientation of the magnet; this is easily understood again in terms of the magnetic flux.
+The flux will be at its maximum as the magnet is aligned perpendicular to the wire. The
+magnitude of the changing flux and the voltage are linked. In fact, if the lines of flux are
+parallel to the wire, there will be no induced voltage.
+Definition: Faraday’s Law
+The emf, ǫ, produced around a loop of conductor is proportional to the rate of change of
+the magnetic flux, φ, through the area, A, of the loop. This can be stated mathematically
+as:
+ǫ = −N
+φ
+t
+where φ = B · A and B is the strength of the magnetic field.
+Faraday’s Law relates induced emf to the rate of change of flux, which is the product of the
+magnetic field and the cross-sectional area the field lines pass through.
+
+When the north pole of a magnet is pushed into a solenoid, the flux in the solenoid increases so
+the induced current will have an associated magnetic field pointing out of the solenoid (opposite to the magnet’s field). When the north pole is pulled out, the flux decreases, so the
+induced current will have an associated magnetic field pointing into the solenoid (same
+direction as the magnet’s field) to try to oppose the change. The directions of currents and
+associated magnetic fields can all be found using only the Right Hand Rule. When the fingers
+of the right hand are pointed in the direction of the current, the thumb points in the direction
+of the magnetic field. When the thumb is pointed in the direction of the magnetic field, the
+fingers point in the direction of the current.
+Important: An easy way to create a magnetic field of changing intensity is to move a
+permanent magnet next to a wire or coil of wire. The magnetic field must increase or
+decrease in intensity perpendicular to the wire (so that the lines of flux ”cut across” the
+conductor), or else no voltage will be induced.
+Important: Finding the direction of the induced current
+The induced current generates a magnetic field. The induced magnetic field is in a direction
+that cancels out the magnetic field in which the conductor is moving. So, you can use the
+Right Hand Rule to find the direction of the induced current by remembering that the induced
+magnetic field is opposite in direction to the magnetic field causing the change.
+Electromganetic induction is put into practical use in the construction of electrical generators,
+which use mechanical power to move a magnetic field past coils of wire to generate voltage.
+However, this is by no means the only practical use for this principle.
+If we recall that the magnetic field produced by a current-carrying wire was always
+perpendicular to that wire, and that the flux intensity of that magnetic field varied with the
+amount of current through it, we can see that a wire is capable of inducing a voltage along its
+own length simply due to a change in current through it. This effect is called self-induction.
+Self-induction is when a changing magnetic field is produced by changes in current through a
+wire inducing voltage along the length of that same wire.
+If the magnetic field flux is enhanced by bending the wire into the shape of a coil, and/or
+wrapping that coil around a material of high permeability, this effect of self-induced voltage will
+be more intense. A device constructed to take advantage of this effect is called an inductor,
+and will be discussed in greater detail in the next chapter.
+Extension: Lenz’s Law
+The induced current will create a magnetic field that opposes the change in the
+magnetic flux.
+ 
+
 
 
 file_data: 18.3.1|Real-life applications|422
+The following devices use Faraday’s Law in their operation.
+• induction stoves
+• tape players
+• metal detectors
+• transformers
+
+
 
 
 file_data: 18.4|Transformers|423
+One of the real-world applications of Faraday’s Law is in a transformer.
+Eskom generates electricity at around 22 000 V. When you plug in a toaster, the mains voltage
+is 220 V. A transformer is used to step-down the high voltage to the lower voltage that is used
+as mains voltage.
+Definition: Transformer
+A transformer is an electrical device that uses the principle of induction between the primary
+coil and the secondary coil to either step-up or step-down voltage.
+The essential features of a transformer are two coils of wire, called the primary coil and the
+secondary coil, which are wound around different sections of the same iron core.
+When an alternating voltage is applied to the primary coil it creates an alternating current in
+that coil, which induces an alternating magnetic field in the iron core. This changing magnetic
+field induces an emf, which creates a current in the secondary coil.
+The circuit symbol for a transformer is:
+A very useful property of transformers is the ability to transform voltage and current levels
+according to a simple ratio, determined by the ratio of input and output coil turns. We can
+derive a mathematical relationship by using Faraday’s law.
+Assume that an alternating voltage Vp is applied to the primary coil (which has Np turns) of a
+transformer. The current that results from this voltage generates a magnetic flux φp. We can
+then describe the emf in the primary coil by:
+Vp = Np
+φp
+t
+Similarly, for the secondary coil,
+Vs = Ns
+φs
+t
+If we assume that the primary and secondary windings are perfectly coupled, then:
+φp = φs
+which means that:
+Vp
+Vs
+=
+Np
+Ns
+A transformer designed to output more voltage than it takes in across the input coil is called a
+step-up transformer. A step-up transformer has more windings on the secondary coil than on
+the primary coil. This means that:
+Similarly, a transformer designed to output less than it takes in across the input coil is called a
+step-down transformer. A step-down transformer has more windings on the primary coil than
+on the primary coil. This means that:
+Np > Ns
+We use a step-up transformer to increase the voltage from the primary coil to the secondary
+coil. It is used at power stations to increase the voltage for the transmission lines. A step-down
+transformer decreases the voltage from the primary coil to the secondary coil. It is particularly
+used to decrease the voltage from the transmission lines to a voltage which can be used in
+factories and in homes.
+Transformer technology has made long-range electric power distribution practical. Without the
+ability to efficiently step voltage up and down, it would be cost-prohibitive to construct power
+systems for anything but close-range (within a few kilometres) use.
+As useful as transformers are, they only work with AC, not DC. This is because the
+phenomenon of mutual inductance relies on changing magnetic fields, and direct current (DC)
+can only produce steady magnetic fields, transformers simply will not work with direct current.
+Of course, direct current may be interrupted (pulsed) through the primary winding of a
+transformer to create a changing magnetic field (as is done in automotive ignition systems to
+produce high-voltage spark plug power from a low-voltage DC battery), but pulsed DC is not
+that different from AC. Perhaps more than any other reason, this is why AC finds such
+widespread application in power systems.
+
+
 
 
 file_data: 18.4.1|Real-world applications|425
+Transformers are very important in the supply of electricity nationally. In order to reduce energy
+losses due to heating, electrical energy is transported from power stations along power lines at
+high voltage and low current. Transformers are used to step the voltage up from the power
+station to the power lines, and step it down from the power lines to buildings where it is needed.
+
 
 
 file_data: 18.5|Motion of a charged particle in a magnetic field|425
+When a charged particle moves through a magnetic field it experiences a force. For a particle
+that is moving at right angles to the magnetic field, the force is given by:
+F = qvB
+where q is the charge on the particle, v is the velocity of the particle and B is the magnetic
+field through which the particle is moving.
+Important: The direction of the force exerted on a charged particle moving through a
+magnetic field is determined by using the Right Hand Rule.
+Point your fingers in the direction of the velocity of the charge and turn them (as if turning
+a screwdriver) towards the direction of the magnetic field. Your thumb will point in the
+direction of the force. If the charge is negative, the direction of the force will be opposite
+to the direction of your thumb.
+
 
 
 file_data: 18.5.1|Real-world applications|426
+The following devices use the movement of charge in a magnetic field
+• televisions
+• oscilloscope
+
 
 
 file_data: 18.6|Summary|427
@@ -3721,40 +4963,218 @@ file_data: 18.6|Summary|427
 file_data: 18.7|End of chapter exercises|427
 
 
+
+
+
+
+
+
 file_data: 19|Electric Circuits - Grade 11|429
 
 
 file_data: 19.1|Introduction|429
+The study of electrical circuits is essential to understand the technology that uses electricity in
+the real-world. This includes electricity being used for the operation of electronic devices like
+computers.
+
 
 
 file_data: 19.2|Ohm's Law|429
 
 
 file_data: 19.2.1|Definition of Ohm's Law|429
+An important relationship between the current, voltage and resistance in a circuit was
+discovered by Georg Simon Ohm and is called Ohm’s Law.
+Definition: Ohm’s Law
+The amount of electric current through a metal conductor, at a constant temperature, in a
+circuit is proportional to the voltage across the conductor. Mathematically, Ohm’s Law is
+written:
+V = R · I.
+Ohm’s Law tells us that if a conductor is at a constant temperature, the voltage across the
+ends of the conductor is proportional to the current. This means that if we plot voltage on the
+y-axis of a graph and current on the x-axis of the graph, we will get a straight-line. The
+gradient of the straight-line graph is then the resistance of the conductor.
 
 
 file_data: 19.2.2|Ohmic and non-ohmic conductors|431
+As you have seen, there is a mention of constant temperature when we talk about Ohm’s Law.
+This is because the resistance of some conductors change as their temperature changes. These
+types of conductors are called non-ohmic conductors, because they do not obey Ohm’s Law.
+As can be expected, the conductors that obey Ohm’s Law are called ohmic conductors. A light
+bulb is a common example of a non-ohmic conductor. Nichrome wire is an ohmic conductor.
+In a light bulb, the resistance of the filament wire will increase dramatically as it warms from
+room temperature to operating temperature. If we increase the supply voltage in a real lamp
+circuit, the resulting increase in current causes the filament to increase in temperature, which
+increases its resistance. This effectively limits the increase in current. In this case, voltage and
+current do not obey Ohm’s Law.
+The phenomenon of resistance changing with variations in temperature is one shared by almost
+all metals, of which most wires are made. For most applications, these changes in resistance
+are small enough to be ignored. In the application of metal lamp filaments, which increase a lot
+in temperature (up to about 1000◦C, and starting from room temperature) the change is quite
+large.
+In general non-ohmic conductors have plots of voltage against current that are curved,
+indicating that the resistance is not constant over all values of voltage and current.
+
 
 
 file_data: 19.2.3|Using Ohm's Law|432
+We are now ready to see how Ohm’s Law is used to analyse circuits.
+Consider the circuit with an ohmic resistor, R. If the resistor has a resistance of 5 
+ and
+voltage across the resistor is 5V, then we can use Ohm’s law to calculate the current flowing
+through the resistor.
+
 
 
 file_data: 19.3|Resistance|433
+In Grade 10, you learnt about resistors and were introduced to circuits where resistors were
+connected in series and circuits where resistors were connected in parallel. In a series circuit
+there is one path for the current to flow through. In a parallel circuit there are multiple paths
+for the current to flow through.
+
 
 
 file_data: 19.3.1|Equivalent resistance|433
+When there is more than one resistor in a circuit, we are usually able to replace all resistors
+with a single resistor whose effect is the same as all the resistors put together. The resistance
+of the single resistor is known as equivalent resistance. We are able to calculate equivalent
+resistance for resistors connected in series and parallel.
+Equivalent Series Resistance
+Consider a circuit consisting of three resistors and a single battery connected in series.
+The first principle to understand about series circuits is that the amount of current is the same
+through any component in the circuit. This is because there is only one path for electrons to
+flow in a series circuit. From the way that the battery is connected, we can tell which direction
+the current will flow. We know that charge flows from positive to negative, by convention.
+Current in this circuit will flow in a clockwise direction, from point A to B to C to D and back
+to A.
+So, how do we use this knowledge to calculate the value of a single resistor that can replace
+the three resistors in the circuit and still have the same current?
+We know that in a series circuit the current has to be the same in all components. So we can
+write:
+I = I1 = I2 = I3
+We also know that total voltage of the circuit has to be equal to the sum of the voltages over
+all three resistors. So we can write:
+V = V1 + V2 + V3
+Finally, we know that Ohm’s Law has to apply for each resistor individually, which gives us:
+V1 = I1 · R1
+V2 = I2 · R2
+V3 = I3 · R3
+Therefore:
+V = I1 · R1 + I2 · R2 + I3 · R3
+However, because
+I = I1 = I2 = I3
+, we can further simplify this to:
+V = I · R1 + I · R2 + I · R3
+= I(R1 + R2 + R3)
+Further, we can write an Ohm’s Law relation for the entire circuit:
+V = I · R
+Definition: Equivalent resistance in a series circuit, Rs
+For n resistors in series the equivalent resistance is:
+Rs = R1 + R2 + R3 + · · · + Rn
+Let us apply this to the following circuit.
+Equivalent parallel resistance
+Consider a circuit consisting of a single battery and three resistors that are connected in parallel.
+The first principle to understand about parallel circuits is that the voltage is equal across all
+components in the circuit. This is because there are only two sets of electrically common
+points in a parallel circuit, and voltage measured between sets of common points must always
+be the same at any given time. So, for the circuit shown, the following is true:
+V = V1 = V2 = V3
+The second principle for a parallel circuit is that all the currents through each resistor must add
+up to the total current in the circuit.
+I = I1 + I2 + I3
+Also, from applying Ohm’s Law to the entire circuit, we can write:
+Definition: Equivalent resistance in a parallel circuit, Rp
+For n resistors in parallel, the equivalent resistance is:
+
 
 
 file_data: 19.3.2|Use of Ohm's Law in series and parallel Circuits|438
 
 
+
+
 file_data: 19.3.3|Batteries and internal resistance|440
+Real batteries are made from materials which have resistance. This means that real batteries
+are not just sources of potential difference (voltage), but they also possess internal resistances.
+If the pure voltage source is referred to as the emf, E, then a real battery can be represented as
+an emf connected in series with a resistor r. The internal resistance of the battery is
+represented by the symbol r.
+Definition: Load
+The external resistance in the circuit is referred to as the load.
+Suppose that the battery (or cell) with emf E and internal resistance r supplies a current I
+through an external load resistor R. Then the voltage drop across the load resistor is that
+supplied by the battery:
+V = I · R
+Similarly, from Ohm’s Law, the voltage drop across the internal resistance is:
+Vr = I · r
+The voltage V of the battery is related to its emf E and internal resistance r by:
+E = V + Ir; or
+V = E − Ir
+The emf of a battery is essentially constant because it only depends on the chemical reaction
+(that converts chemical energy into electrical energy) going on inside the battery. Therefore,
+we can see that the voltage across the terminals of the battery is dependent on the current
+drawn by the load. The higher the current, the lower the voltage across the terminals, because
+the emf is constant. By the same reasoning, the voltage only equals the emf when the current
+is very small.
+The maximum current that can be drawn from a battery is limited by a critical value Ic. At a
+current of Ic, V =0 V. Then, the equation becomes:
+
+
+
 
 
 file_data: 19.4|Series and parallel networks of resistors|442
+Now that you know how to handle simple series and parallel circuits, you are ready to tackle
+problems like this:
+It is relatively easy to work out these kind of circuits because you use everything you have
+already learnt about series and parallel circuits. The only difference is that you do it in stages.
+Figure 19.1: An example of a series-parallel network. The dashed boxes indicate parallel sections
+of the circuit.
+In Figure 19.1, the circuit consists of 2 parallel portions that are then in series with 1 resistor.
+So, in order to work out the equivalent resistance, you start by reducing the parallel portions to
+a single resistor and then add up all the resistances in series. If all the resistors in Figure 19.1
+had resistances of 10 
+, we can calculate the equivalent resistance of the entire circuit.
+We start by reducing Parallel Circuit 1 to a single resistor.
+
+
+
 
 
 file_data: 19.5|Wheatstone bridge|445
+Another method of finding an unknown resistance is to use a Wheatstone bridge. A
+Wheatstone bridge is a measuring instrument that is used to measure an unknown electrical
+resistance by balancing two legs of a bridge circuit, one leg of which includes the unknown
+component. Its operation is similar to the original potentiometer except that in potentiometer
+circuits the meter used is a sensitive galvanometer.
+The Wheatstone bridge was invented by Samuel Hunter Christie in 1833 and
+improved and popularized by Sir Charles Wheatstone in 1843.
+In the circuit of the Wheatstone bridge, Rx is the unknown resistance. R1, R2 and R3 are
+resistors of known resistance and the resistance of R2 is adjustable. If the ratio of R2:R1 is
+equal to the ratio of Rx:R3, then the voltage between the two midpoints will be zero and no
+current will flow between the midpoints. In order to determine the unknown resistance, R2 is
+varied until this condition is reached. That is when the voltmeter reads 0 V.
+Extension: Power in electric circuits
+In addition to voltage and current, there is another measure of free electron
+activity in a circuit: power. Power is a measure of how rapidly a standard amount
+of work is done. In electric circuits, power is a function of both voltage and
+current:
+Definition: Electrical Power
+Electrical power is calculated as:
+P = I · V
+Power (P) is exactly equal to current (I) multiplied by voltage (V ) and there is
+no extra constant of proportionality. The unit of measurement for power is the
+Watt (abbreviated W).
+It was James Prescott Joule, not Georg Simon Ohm, who first
+discovered the mathematical relationship between power dissipation
+and current through a resistance. This discovery, published in 1841,
+followed the form of the equation:
+P = I2R
+and is properly known as Joule’s Law. However, these power
+equations are so commonly associated with the Ohm’s Law equations
+relating voltage, current, and resistance that they are frequently
+credited to Ohm.
+
 
 
 file_data: 19.6|Summary|447
@@ -3763,55 +5183,271 @@ file_data: 19.6|Summary|447
 file_data: 19.7|End of chapter exercise|447
 
 
+
+
+
 file_data: 20|Electronic Properties of Matter - Grade 11|451
 
 
 file_data: 20.1|Introduction|451
+We can study many different features of solids. Just a few of the things we could study are
+how hard or soft they are, what are their magnetic properties or how well do they conduct heat.
+The thing that we are interested in, in this chapter are their electronic properties. Simply how
+well do they conduct electricity and how do they do it.
+We are only going to discuss materials that form a 3-dimensional lattice. This means that the
+atoms that make up the material have a regular pattern (carbon, silicon, etc.). We won’t
+discuss materials where the atoms are jumbled together in a irregular way (plastic, glass,
+rubber etc.).
+
 
 
 file_data: 20.2|Conduction|451
+We know that there are materials that do conduct electricity, called conductors, like the copper
+wires in the circuits you build. There are also materials that do not conduct electricity, called
+insulators, like the plastic covering on the copper wires.
+Conductors come in two major categories: metals (e.g. copper) and semi-conductors (e.g.
+silicon). Metals conduct very well and semi-conductors don’t. One very interesting difference is
+that metals conduct less as they become hotter but semi-conductors conduct more.
+What is different about these substances that makes them conduct differently? That is what
+we are about to find out.
+We have learnt that electrons in an atom have discrete energy levels. When an electron is given
+the right amount of energy, it can jump to a higher energy level, while if it loses the right
+amount of energy it can drop to a lower energy level. The lowest energy level is known as the
+ground state.
+When two atoms are far apart from each other they don’t influence each other. Look at the
+picture below. There are two atoms depicted by the black dots. When they are far apart their
+electron clouds (the gray clouds) are distinct. The dotted line depicts the distance of the
+outermost electron energy level that is occupied.
+b b
+In some lattice structures the atoms would be closer together. If they are close enough their
+electron clouds, and therefore electron energy levels start to overlap. Look at the picture
+below. In this picture the two atoms are closer together. The electron clouds now overlap. The
+overlapping area is coloured in solid gray to make it easier to see.
+b b
+When this happens we might find two electrons with the same energy and spin in the same
+space. We know that this is not allowed from the Pauli exclusion principle. Something must
+change to allow the overlapping to happen. The change is that the energies of the energy
+levels change a tiny bit so that the electrons are not in exactly the same spin and energy state
+at the same time.
+So if we have 2 atoms then in the overlapping area we will have twice the number of electrons
+and energy levels but the energy levels from the different atoms will be very very close in
+energy. If we had 3 atoms then there would be 3 energy levels very close in energy and so on.
+In a solid there may be very many energy levels that are very close in energy. These groups of
+energy levels are called bands. The spacing between these bands determines whether the solid
+is a conductor or an insulator.
+In a gas, the atoms are spaced far apart and they do not influence each other. However, the
+atoms in a solid greatly influence each other. The forces that bind these atoms together in a
+solid affect how the electrons of the atoms behave, by causing the individual energy levels of an
+atom to break up and form energy bands. The resulting energy levels are more closely spaced
+than those in the individual atoms. The energy bands still contain discrete energy levels, but
+there are now many more energy levels than in the single atom.
+In crystalline solids, atoms interact with their neighbors, and the energy levels of the electrons
+in isolated atoms turn into bands. Whether a material conducts or not is determined by its
+band structure.
+Electrons follow the Pauli exclusion principle, meaning that two electrons cannot occupy the
+same state. Thus electrons in a solid fill up the energy bands up to a certain level (this is called
+the Fermi energy). Bands which are completely full of electrons cannot conduct electricity,
+because there is no state of nearby energy to which the electrons can jump. Materials in which
+all bands are full are insulators.
 
 
 file_data: 20.2.1|Metals|453
+Metals are good conductors because they have unfilled space in the valence energy band. In
+the absence of an electric field, there are electrons traveling in all directions. When an electric
+field is applied the mobile electrons flow. Electrons in this band can be accelerated by the
+electric field because there are plenty of nearby unfilled states in the band.
+
 
 
 file_data: 20.2.2|Insulator|453
+The energy diagram for the insulator shows the insulator with a very wide energy gap. The
+wider this gap, the greater the amount of energy required to move the electron from the
+valence band to the conduction band. Therefore, an insulator requires a large amount of energy
+to obtain a small amount of current. The insulator “insulates” because of the wide forbidden
+band or energy gap.
+Breakdown
+A solid with filled bands is an insulator. If we raise the temperature the electrons gain thermal
+energy. If there is enough energy added then electrons can be thermally excited from the
+valence band to the conduction band. The fraction of electrons excited in this way depends on:
+• the temperature and
+• the band gap, the energy difference between the two bands.
+Exciting these electrons into the conduction band leaves behind positively charged holes in the
+valence band, which can also conduct electricity.
+
+
 
 
 file_data: 20.2.3|Semi-conductors|454
+A semi-conductor is very similar to an insulator. The main difference between semiconductors
+and insulators is the size of the band gap between the conduction and valence bands. The
+band gap in insulators is larger than the band gap in semiconductors.
+In semi-conductors at room temperature, just as in insulators, very few electrons gain enough
+thermal energy to leap the band gap, which is necessary for conduction. For this reason, pure
+semi-conductors and insulators, in the absence of applied fields, have roughly similar electrical
+properties. The smaller band gaps of semi-conductors, however, allow for many other means
+besides temperature to control their electrical properties. The most important one being that
+for a certain amount of applied voltage, more current will flow in the semiconductor than in the
+insulator.
+
 
 
 file_data: 20.3|Intrinsic Properties and Doping|454
+We have seen that the size of the energy gap between the valence band and the conduction
+band determines whether a solid is a conductor or an insulator. However, we have seen that
+there is a material known as a semi-conductor. A semi-conductor is a solid whose band gap is
+smaller than that of an insulator and whose electrical properties can be modified by a process
+known as doping.
+Definition: Doping
+Doping is the deliberate addition of impurities to a pure semiconductor material to change
+its electrical properties.
+Semiconductors are often the Group IV elements in the periodic table. The most common
+semiconductor elements are silicon (Si) and germanium (Ge). The most important property of
+Group IV elements is that they 4 valence electrons.
+Extension: Band Gaps of Si and Ge
+Si has a band gap of 1.744 × 10−19 J while Ge has a band gap of
+1.152 × 10−19 J.
+So, if we look at the arrangement of for example Si atoms in a crystal, they would look like
+that shown in Figure 20.1.
+The main aim of doping is to make sure there are either too many (surplus) or too few
+electrons (deficiency). Depending on what situation you want to create you use different
+elements for the doping.
+
+
 
 
 file_data: 20.3.1|Surplus|455
+A surplus of electrons is created by adding an element that has more valence electrons than Si
+to the Si crystal. This is known as n-type doping and elements used for n-type doping usually
+come from Group V in the periodic table. Elements from Group V have 5 valence electrons,
+one more than the Group IV elements.
+A common n-type dopant (substance used for doping) is arsenic (As). The combination of a
+semiconductor and an n-type dopant is known as an n-type semiconductor. A Si crystal doped
+with As is shown in Figure 20.2. When As is added to a Si crystal, the 4 of the 5 valence
+electrons in As bond with the 4 Si valence electrons. The fifth As valence electron is free to
+move around.
+It takes only a few As atoms to create enough free electrons to allow an electric current to flow
+through the silicon. Since n-type dopants ‘donate’ their free atoms to the semiconductor, they
+are known as donor atoms.
+Figure 20.2: Si crystal doped with As. For each As atom present in the Si crystal, there is one
+extra electron. This combination of Si and As is known as an n-type semiconductor, because of
+its overall surplus of electrons.
+
+
+
+
+
+
 
 
 file_data: 20.3.2|Deficiency|455
+A deficiency of electrons is created by adding an element that has less valence electrons than Si
+to the Si crystal. This is known as p-type doping and elements used for p-type doping usually
+come from Group III in the periodic table. Elements from Group III have 3 valence electrons,
+one less than the semiconductor elements that come from Group IV. A common p-type dopant
+is boron (B). The combination of a semiconductor and a p-type dopant is known as an p-type
+semiconductor. A Si crystal doped with B is shown in Figure 20.3. When B is mixed into the
+silicon crystal, there is a Si valence electron that is left unbonded.
+The lack of an electron is known as a hole and has the effect of a positive charge. Holes can
+conduct current. A hole happily accepts an electron from a neighbor, moving the hole over a
+space. Since p-type dopants ‘accept’ electrons, they are known as acceptor atoms.
+Figure 20.3: Si crystal doped with B. For each B atom present in the Si crystal, there is one
+less electron. This combination of Si and B is known as a p-type semiconductor, because of its
+overall deficiency of electrons.
+Donor (n-type) impurities have extra valence electrons with energies very close to the
+conduction band which can be easily thermally excited to the conduction band. Acceptor
+(p-type) impurities capture electrons from the valence band, allowing the easy formation of
+holes.
+The energy level of the donor atom is close to the conduction band and it is relatively easy for
+electrons to enter the conduction band. The energy level of the acceptor atom is close to the
+valence band and it is relatively easy for electrons to leave the valence band and enter the
+vacancies left by the holes.
+
+
+
+
 
 
 file_data: 20.4|The p-n junction|457
 
 
 file_data: 20.4.1|Differences between p- and n-type semi-conductors|457
+We have seen that the addition of specific elements to semiconductor materials turns them into
+p-type semiconductors or n-type semiconductors. The differences between n- and p-type
+semiconductors are summarised in Table ??.
+
+
 
 
 file_data: 20.4.2|The p-n Junction|457
+When p-type and n-type semiconductors are placed in contact with each other, a p-n junction
+is formed. Near the junction, electrons and holes combine to create a depletion region.
+bc
+depletion band
+Figure 20.4: The p-n junction forms between p- and n-type semiconductors. The free electrons
+from the n-type material combine with the holes in the p-type material near the junction. There
+is a small potential difference across the junction. The area near the junction is called the
+depletion region because there are few holes and few free electrons in this region.
+Electric current flows more easily across a p-n junction in one direction than in the other. If the
+positive pole of a battery is connected to the p-side of the junction, and the negative pole to
+the n-side, charge flows across the junction. If the battery is connected in the opposite
+direction, very little charge can flow.
+This might not sound very useful at first but the p-n junction forms the basis for computer
+chips, solar cells, and other electronic devices.
 
 
 file_data: 20.4.3|Unbiased|457
+In a p-n junction, without an external applied voltage (no bias), an equilibrium condition is
+reached in which a potential difference is formed across the junction.
+P-type is where you have more ”holes”; N-type is where you have more electrons in the
+material. Initially, when you put them together to form a junction, holes near the junction
+tends to ”move” across to the N-region, while the electrons in the N-region drift across to the
+p-region to ”fill” some holes. This current will quickly stop as the potential barrier is built up
+by the migrated charges. So in steady state no current flows.
+Then now when you put a potential different across the terminals you have two cases: forward
+biased and reverse biased.
+
 
 
 file_data: 20.4.4|Forward biased|457
+Forward-bias occurs when the p-type semiconductor material is connected to the positive
+terminal of a battery and the n-type semiconductor material is connected to the negative
+terminal.
+The electric field from the external potential different can easily overcome the small internal
+field (in the so-called depletion region, created by the initial drifting of charges): usually
+anything bigger than 0.6V would be enough. The external field then attracts more e- to flow
+from n-region to p-region and more holes from p-region to n-region and you have a forward
+biased situation. the diode is ON.
 
 
 file_data: 20.4.5|Reverse biased|458
+in this case the external field pushes e- back to the n-region while more holes into the p-region,
+as a result you get no current flow. Only the small number of thermally released minority
+carriers (holes in the n-type region and e- in the p-type region) will be able to cross the
+junction and form a very small current, but for all practical purposes, this can be ignored
+of course if the reverse biased potential is large enough you get avalanche break down and
+current flow in the opposite direction. In many cases, except for Zener diodes, you most likely
+will destroy the diode.
 
 
 file_data: 20.4.6|Real-World Applications of Semiconductors|458
+Semiconductors form the basis of modern electronics. Every electrical appliance usually has
+some semiconductor-based technology inside it. The fundamental uses of semiconductors are in
+microchips (also known as integrated circuits) and microprocessors.
+Integrated circuits are miniaturised circuits. The use of integrated circuits makes it possible for
+electronic devices (like a cellular telephone or a hi-fi) to get smaller.
+Microprocessors are a special type of integrated circuit. (NOTE TO SELF: more is needed but
+I’m not that knowledgable and I’m tired of Googling...)
+
 
 
 file_data: 20.5|End of Chapter Exercises|459
+
+
+
+
+
+
+
 
 
 file_data: 21|Motion in Two Dimensions - Grade 12|463
