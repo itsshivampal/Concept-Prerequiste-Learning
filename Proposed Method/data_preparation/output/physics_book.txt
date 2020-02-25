@@ -5454,45 +5454,292 @@ file_data: 21|Motion in Two Dimensions - Grade 12|463
 
 
 file_data: 21.1|Introduction|463
+In Chapter 3, we studied motion in one dimension and briefly looked at vertical motion. In this
+chapter we will discuss vertical motion and also look at motion in two dimensions. In
+Chapter 12, we studied the conservation of momentum and looked at applications in one
+dimension. In this chapter we will look at momentum in two dimensions.
 
 
 file_data: 21.2|Vertical Projectile Motion|463
+In Chapter 4, we studied the motion of objects in free fall and we saw that an object in free fall
+falls with gravitational acceleration g. Now we can consider the motion of objects that are
+thrown upwards and then fall back to the Earth. We call this projectile motion and we will only
+consider the situation where the object is thrown straight upwards and then falls straight
+downwards - this means that there is no horizontal displacement of the object, only a vertical
+displacement.
 
 
 file_data: 21.2.1|Motion in a Gravitational Field|463
+When an object is in a gravitational field, it always accelerates downwards with a constant
+acceleration g whether the object is moving upward or downward. This is shown in Figure 21.1.
+Important: Projectiles moving upwards or downwards always accelerate downwards with a
+constant acceleration g.
+object moving upwards b g g bobject moving downwards
+Figure 21.1: Objects moving upwards or downwards, always accelerate downwards.
+This means that if an object is moving upwards, it decreases until it stops (vf = 0 m·s−1).
+This is the maximum height that the object reaches, because after this, the object starts to fall.
+Important: Projectiles have zero velocity at their greatest height.
+Consider an object thrown upwards from a vertical height ho. We have seen that the object
+will travel upwards with decreasing velocity until it stops, at which point it starts falling. The
+time that it takes for the object to fall down to height ho is the same as the time taken for the
+object to reach its maximum height from height ho.
+Figure 21.2: (a) An object is thrown upwards from height h0. (b) After time tm, the object
+reaches its maximum height, and starts to fall. (c) After a time 2tm the object returns to height
+h0.
+Important: Projectiles take the same the time to reach their greatest height from the point
+of upward launch as the time they take to fall back to the point of launch.
+
+
+
 
 
 file_data: 21.2.2|Equations of Motion|464
+The equations of motion that were used in Chapter 4 to describe free fall can be used for
+projectile motion. These equations are the same as those equations that were derived in
+Chapter 3, but with a = g. We use g = 9,8m · s−2 for our calculations.
+vi = initial velocity (m·s−1) at t = 0 s
+vf = final velocity (m·s−1) at time t
+x = height above ground (m)
+t = time (s)
+t = time interval (s)
+g = acceleration due to gravity (m·s−2)
+
+
 
 
 file_data: 21.2.3|Graphs of Vertical Projectile Motion|467
+Vertical projectile motion is similar to motion at constant acceleration. In Chapter 3 you
+learned about the graphs for motion at constant acceleration. The graphs for vertical projectile
+motion are therefore identical to the graphs for motion under constant acceleration.
+When we draw the graphs for vertical projectile motion, we consider two main situations: an
+object moving upwards and an object moving downwards.
+If we take the upwards direction as positive then for an object moving upwards we get the
+graphs shown in Figure 21.9.
+Figure 21.3: Graphs for an object thrown upwards with an initial velocity vi. The object takes
+tm s to reach its maximum height of hm m after which it falls back to the ground. (a) position
+vs. time graph (b) velocity vs. time graph (c) acceleration vs. time graph.
+
+
+
 
 
 file_data: 21.3|Conservation of Momentum in Two Dimensions|475
+We have seen in Chapter ?? that the momentum of a system is conserved when there are no
+external forces acting on the system. Conversely, an external force causes a change in
+momentum p, with the impulse delivered by the force, F acting for a time t given by:
+p = F · t
+The same principles that were studied in applying the conservation of momentum to problems
+in one dimension, can be applied to solving problems in two dimensions.
+The calculation of momentum is the same in two dimensions as in one dimension. The
+calculation of momentum in two dimensions is broken down into determining the x and y
+components of momentum and applying the conservation of momentum to each set of
+components.
+Consider two objects moving towards each other as shown in Figure 21.4. We analyse this
+situation by calculating the x and y components of the momentum of each object.
+Before the collision
+Total momentum:
+pi1 = m1vi1
+pi2 = m2vi2
+y-component of momentum:
+pi1y = m1vi1y = m1vi1 cos θ1
+pi2y = m2vi2y = m2vi2 sin θ2
+After the collision
+Total momentum:
+pf1 = m1vf1
+pf2 = m2vf2
+x-component of momentum:
+pf1x = m1vf1x = m1vf1 cos φ1
+pf2x = m2vf2x = m2vf2 sin φ2
+y-component of momentum:
+pf1y = m1vf1y = m1vf1 cos φ1
+pf2y = m2vf2y = m2vf2 sin φ2
+Conservation of momentum
+The initial momentum is equal to the final momentum:
+pi = pf
+pi = pi1 + pi2
+pf = pf1 + pf2
+This forms the basis of analysing momentum conservation problems in two dimensions.
+
+
+
 
 
 file_data: 21.4|Types of Collisions|480
+Two types of collisions are of interest:
+• elastic collisions
+• inelastic collisions
+In both types of collision, total momentum is always conserved. Kinetic energy is conserved for
+elastic collisions, but not for inelastic collisions.
+
 
 
 file_data: 21.4.1|Elastic Collisions|480
+Definition: Elastic Collisions
+An elastic collision is a collision where total momentum and total kinetic energy are both
+conserved.
+This means that in an elastic collision the total momentum and the total kinetic energy before
+the collision is the same as after the collision. For these kinds of collisions, the kinetic energy is
+not changed into another type of energy.
+Before the Collision
+Figure 21.5 shows two balls rolling toward each other, about to collide:
+Before the balls collide, the total momentum of the system is equal to all the individual
+momenta added together. Ball 1 has a momentum which we call pi1 and ball 2 has a
+momentum which we call pi2, it means the total momentum before the collision is:
+pi = pi1 + pi2
+We calculate the total kinetic energy of the system in the same way. Ball 1 has a kinetic energy
+which we call KEi1 and the ball 2 has a kinetic energy which we call KEi2, it means that the
+total kinetic energy before the collision is:
+KEi = KEi1 + KEi2
+After the Collision
+Figure 21.6 shows two balls after they have collided:
+After the balls collide and bounce off each other, they have new momenta and new kinetic
+energies. Like before, the total momentum of the system is equal to all the individual momenta
+added together. Ball 1 now has a momentum which we call pf1 and ball 2 now has a
+momentum which we call pf2, it means the total momentum after the collision is
+pf = pf1 + pf2
+Ball 1 now has a kinetic energy which we call KEf1 and ball 2 now has a kinetic energy which
+we call KEf2, it means that the total kinetic energy after the collision is:
+KEf = KEf1 + KEf2
+Since this is an elastic collision, the total momentum before the collision equals the total
+momentum after the collision and the total kinetic energy before the collision equals the total
+kinetic energy after the collision. Therefore:
+Initial Final
+pi = pf (21.5)
+pi1 + pi2 = pf1 + pf2
+and
+KEi = KEf (21.6)
+KEi1 + KEi2 = KEf1 + KEf2
+
+
 
 
 file_data: 21.4.2|Inelastic Collisions|485
+Definition: Inelastic Collisions
+An inelastic collision is a collision in which total momentum is conserved but total kinetic
+energy is not conserved. The kinetic energy is transformed into other kinds of energy.
+So the total momentum before an inelastic collisions is the same as after the collision. But the
+total kinetic energy before and after the inelastic collision is different. Of course this does not
+mean that total energy has not been conserved, rather the energy has been transformed into
+another type of energy.
+As a rule of thumb, inelastic collisions happen when the colliding objects are distorted in some
+way. Usually they change their shape. The modification of the shape of an object requires
+energy and this is where the “missing” kinetic energy goes. A classic example of an inelastic
+collision is a motor car accident. The cars change shape and there is a noticeable change in the
+kinetic energy of the cars before and after the collision. This energy was used to bend the
+metal and deform the cars. Another example of an inelastic collision is shown in Figure 21.7.
+An asteroid is moving through space towards the Moon. Before the asteroid crashes into the
+Moon, the total momentum of the system is:
+pi = pim + pia
+The total kinetic energy of the system is:
+KEi = KEim + KEia
+When the asteroid collides inelastically with the Moon, its kinetic energy is transformed
+mostly into heat energy. If this heat energy is large enough, it can cause the asteroid and the
+area of the Moon’s surface that it hits, to melt into liquid rock! From the force of impact of
+the asteroid, the molten rock flows outwards to form a crater on the Moon.
+After the collision, the total momentum of the system will be the same as before. But since
+this collision is inelastic, (and you can see that a change in the shape of objects has taken
+place!), total kinetic energy is not the same as before the collision.
+Momentum is conserved:
+pi = pf
+But the total kinetic energy of the system is not conserved:
+Author: Thomas D. Gutierrez
+Tom Gutierrez received his Bachelor of Science and Master degrees in Physics
+from San Jose State University in his home town of San Jose, California. As a
+Master’s student he helped work on a laser spectrometer at NASA Ames Research
+Centre. The instrument measured the ratio of different isotopes of carbon in CO2
+gas and could be used for such diverse applications as medical diagnostics and
+space exploration. Later, he received his PhD in physics from the University of
+California, Davis where he performed calculations for various reactions in high
+energy physics collisions. He currently lives in Berkeley, California where he studies
+proton-proton collisions seen at the STAR experiment at Brookhaven National
+Laboratory on Long Island, New York.
+High Energy Collisions
+Take an orange and expand it to the size of the earth. The atoms of the
+earth-sized orange would themselves be about the size of regular oranges and would
+fill the entire “earth-orange”. Now, take an atom and expand it to the size of a
+football field. The nucleus of that atom would be about the size of a tiny seed in
+the middle of the field. From this analogy, you can see that atomic nuclei are very
+small objects by human standards. They are roughly 10−15 meters in diameter –
+one-hundred thousand times smaller than a typical atom. These nuclei cannot be
+seen or studied via any conventional means such as the naked eye or microscopes.
+So how do scientists study the structure of very small objects like atomic nuclei?
+The simplest nucleus, that of hydrogen, is called the proton. Faced with the
+inability to isolate a single proton, open it up, and directly examine what is inside,
+scientists must resort to a brute-force and somewhat indirect means of exploration:
+high energy collisions. By colliding protons with other particles (such as other
+protons or electrons) at very high energies, one hopes to learn about what they are
+made of and how they work. The American physicist Richard Feynman once
+compared this process to slamming delicate watches together and figuring out how
+they work by only examining the broken debris. While this analogy may seem
+pessimistic, with sufficient mathematical models and experimental precision,
+considerable information can be extracted from the debris of such high energy
+subatomic collisions. One can learn about both the nature of the forces at work
+and also about the sub-structure of such systems.
+The experiments are in the category of “high energy physics” (also known as
+“subatomic” physics). The primary tool of scientific exploration in these
+experiments is an extremely violent collision between two very, very small
+subatomic objects such as nuclei. As a general rule, the higher the energy of the
+collisions, the more detail of the original system you are able to resolve. These
+experiments are operated at laboratories such as CERN, SLAC, BNL, and Fermilab,
+just to name a few. The giant machines that perform the collisions are roughly the
+size of towns. For example, the RHIC collider at BNL is a ring about 1 km in
+diameter and can be seen from space. The newest machine currently being built,
+the LHC at CERN, is a ring 9 km in diameter!
+
+
+
 
 
 file_data: 21.5|Frames of Reference|490
 
 
 file_data: 21.5.1|Introduction|490
+Figure 21.8: Top view of a road with two people standing on opposite sides. A car drives past.
+Consider two people standing, facing each other on either side of a road. A car drives past
+them, heading West. For the person facing South, the car was moving toward the right.
+However, for the person facing North, the car was moving toward the left. This discrepancy is
+due to the fact that the two people used two different frames of reference from which to
+investigate this system. If each person were asked in what direction the car were moving, they
+would give a different answer. The answer would be relative to their frame of reference.
+
+
 
 
 file_data: 21.5.2|What is a frame of reference?|491
+Definition: Frame of Reference
+A frame of reference is the point of view from which a system is observed.
+In practical terms, a frame of reference is a set of axes (specifying directions) with an origin.
+An observer can then measure the position and motion of all points in a system, as well as the
+orientation of objects in the system relative to the frame of reference.
+There are two types of reference frames: inertial and non-inertial. An inertial frame of
+reference travels at a constant velocity, which means that Newton’s first law (inertia) holds
+true. A non-inertial frame of reference, such as a moving car or a rotating carousel, accelerates.
+Therefore, Newton’s first law does not hold true in a non-inertial reference frame, as objects
+appear to accelerate without the appropriate forces.
+
+
 
 
 file_data: 21.5.3|Why are frames of reference important?|491
+Frames of reference are important because (as we have seen in the introductory example) the
+velocity of a car can differ depending on which frame of reference is used.
+Extension: Frames of Reference and Special Relativity
+Frames of reference are especially important in special relativity, because when
+a frame of reference is moving at some significant fraction of the speed of light,
+then the flow of time in that frame does not necessarily apply in another reference
+frame. The speed of light is considered to be the only true constant between
+moving frames of reference.
+The next worked example will explain this.
+
+
 
 
 file_data: 21.5.4|Relative Velocity|491
+The velocity of an object is frame dependent. More specifically, the perceived velocity of an
+object depends on the velocity of the observer. For example, a person standing on shore would
+observe the velocity of a boat to be different than a passenger on the boat.
+
+
 
 
 file_data: 21.6|Summary|494
@@ -5501,43 +5748,212 @@ file_data: 21.6|Summary|494
 file_data: 21.7|End of chapter exercises|495
 
 
+
+
+
+
+
+
 file_data: 22|Mechanical Properties of Matter - Grade 12|503
 
 
 file_data: 22.1|Introduction|503
+In this chapter we will look at some mechanical (physical) properties of various materials that
+we use. The mechanical properties of a material are those properties that are affected by forces
+being applied to the material. These properties are important to consider when we are
+constructing buildings, structures or modes of transport like an aeroplane.
+
 
 
 file_data: 22.2|Deformation of materials|503
 
 
 file_data: 22.2.1|Hooke's Law|503
+Deformation (change of shape) of a solid is caused by a force that can either be compressive or
+tensile when applied in one direction (plane). Compressive forces try to compress the object
+(make it smaller or more compact) while tensile forces try to tear it apart. We can study these
+effects by looking at what happens when you compress or expand a spring.
+Hooke’s Law describes the relationship between the force applied to a spring and its extension.
+Historical Note: Hooke’s Law
+Hooke’s law is named after the seventeenth century physicist Robert Hooke who discovered
+it in 1660 (18 July 1635 - 3 March 1703).
+Definition: Hooke’s Law
+In an elastic spring, the extension varies linearly with the force applied.
+F = −kx where F is the force in newtons (N), k is the spring constant in N · m−1 and x
+is the extension in metres (m).
+
+
+
 
 
 file_data: 22.2.2|Deviation from Hooke's Law|506
+We know that if you have a small spring and you pull it apart too much it stops ’working’. It
+bends out of shape and loses its springiness. When this happens Hooke’s Law no longer
+applies, the spring’s behaviour deviates from Hooke’s Law.
+Depending on what type of material we are dealing the manner in which it deviates from
+Hooke’s Law is different. We give classify materials by this deviation. The following graphs
+show the relationship between force and extension for different materials and they all deviate
+from Hooke’s Law. Remember that a straight line show proportionality so as soon as the graph
+is no longer a straight line, Hooke’s Law no longer applies.
+Brittle material
+This graph shows the relationship between force and extension for a brittle, but strong material.
+Note that there is very little extension for a large force but then the material suddenly
+fractures. Brittleness is the property of a material that makes it break easily without bending.
+Have you ever dropped something made of glass and seen it shatter? Glass does this because
+of its brittleness.
+Plastic material
+Here the graph shows the relationship between force and extension for a plastic material. The
+material extends under a small force but it does not fracture.
+Ductile material
+In this graph the relationship between force and extension is for a material that is ductile. The
+material shows plastic behaviour over a range of forces before the material finally fractures.
+Ductility is the ability of a material to be stretched into a new shape without breaking.
+Ductility is one of the characteristic properties of metals.
+A good example of this is aluminium, many things are made of aluminium. Aluminium is used
+for making everything from cooldrink cans to aeroplane parts and even engine blocks for cars.
+Think about squashing and bending a cooldrink can.
+Brittleness is the opposite of ductility.
+When a material reaches a point where Hooke’s Law is no longer valid, we say it has reached
+its limit of proportionality. After this point, the material will not return to its original shape
+after the force has been removed. We say it has reached its elastic limit.
+Definition: Elastic limit
+The elastic limit is the point beyond which permanent deformation takes place.
+Definition: Limit of proportionality
+The limit of proportionality is the point beyond which Hooke’s Law is no longer obeyed.
+
+
 
 
 file_data: 22.3|Elasticity, plasticity, fracture, creep|508
 
 
 file_data: 22.3.1|Elasticity and plasticity|508
+Materials are classified as plastic or elastic depending on how they respond to an applied force.
+It is important to note that plastic substances are not necessarily a type of plastic (polymer)
+they only behave like plastic. Think of them as being like plastic which you will be familiar with.
+A rubber band is a material that has elasticity. It returns to its original shape after an applied
+force is removed, providing that the material is not stretched beyond its elastic limit.
+Plasticine is an example of a material that is plastic. If you flatten a ball of plasticine, it will
+stay flat. A plastic material does not return to its original shape after an applied force is
+removed.
+• Elastic materials return to their original shape.
+• Plastic materials deform easily and do not return to their original shape.
+
+
 
 
 file_data: 22.3.2|Fracture, creep and fatigue|508
+Some materials are neither plastic nor elastic. These substances will break or fracture when a
+large enough force is applied to them. The brittle glass we mentioned earlier is an example.
+Creep occurs when a material deforms over a long period of time because of an applied force.
+An example of creep is the bending of a shelf over time when a heavy object is put on it. Creep
+may eventually lead to the material fracturing. The application of heat may lead to an increase
+in creep in a material.
+Fatigue is similar to creep. The difference between the two is that fatigue results from the force
+being applied and then removed repeatedly over a period of time. With metals this results in
+failure because of metal fatigue.
+• Fracture is an abrupt breaking of the material.
+• Creep is a slow deformation process due to a continuous force over a long time.
+• Fatigue is weakening of the material due to short forces acting many many times.
+
 
 
 file_data: 22.4|Failure and strength of materials|509
 
 
 file_data: 22.4.1|The properties of matter|509
+The strength of a material is defined as the stress (the force per unit cross-sectional area) that
+it can withstand. Strength is measured in newtons per square metre (N ·m−2).
+Stiffness is a measure of how flexible a material is. In Science we measure the stiffness of a
+material by calculating its Young’s Modulus. The Young’s modulus is a ratio of how much it
+bends to the load applied to it. Stiffness is measure in newtons per metre (N ·m−1).
+Hardness of a material can be measured by determining what force will cause a permanent
+deformation in the material. Hardness can also be measured using a scale like Mohs hardness
+scale. On this scale, diamond is the hardest at 10 and talc is the softest at 1.
+Remembering that the Mohs scale is the hardness scale and that the softest
+substance is talc will often come in handy for general knowledge quizes.
+The toughness of a material is a measure of how it can resist breaking when it is stressed. It is
+scientifically defined as the amount of energy that a material can absorb before breaking.
+A ductile material is a substance that can undergo large plastic deformation without fracturing.
+Many metals are very ductile and they can be drawn into wires, e.g. copper, silver, aluminium
+and gold.
+A malleable material is a substance that can easily undergo plastic deformation by hammering
+or rolling. Again, metals are malleable substances, e.g. copper can be hammered into sheets
+and aluminium can be rolled into aluminium foil.
+A brittle material fractures with very little or no plastic deformation. Glassware and ceramics
+are brittle.
+
+
+
 
 
 file_data: 22.4.2|Structure and failure of materials|509
+Many substances fail because they have a weakness in their atomic structure. There are a
+number of problems that can cause these weaknesses in structure. These are vacancies,
+dislocations, grain boundaries and impurities.
+Vacancies occur when there are spaces in the structure of a crystalline solid. These vacancies
+cause weakness and the substance often fail at these places. Think about bricks in a wall, if
+you started removing bricks the wall would get weaker.
+Dislocations occur when there are no strong bonds between two rows in a crystal lattice. The
+crystal will fail along this boundary when sufficient force is applied. The two pieces of the
+crystal keep their shape and structure but move along the boundary.
+Impurities in a crystal structure can cause a weak spot in the crystal lattice around the
+impurity. Like vacancies, the substance often fail from these places in the lattice. This you can
+think of as bricks in a wall which don’t fit properly, they are the wrong kind of bricks (atoms)
+to make the structure strong.
+A difference in grain size in a crystal lattice will result in rusting or oxidation at the boundary
+which again will result in failure when sufficient force is applied.
+
 
 
 file_data: 22.4.3|Controlling the properties of materials|509
+There are a number of processes that can be used to ensure that materials are less likely to fail.
+We shall look at a few methods in this section.
+Cold working
+Cold working is a process in which a metal is strengthened by repeatedly being reshaped. This
+is carried out at a temperature below the melting point of the metal. The repeated shaping of
+the metal result in dislocations which then prevent further dislocations in the metal. Cold
+working increases the strength of the metal but in so doing, the metal loses its ductility. We
+say the metal is work-hardened.
+Annealing
+Annealing is a process in which a metal is heated strongly to a temperature that is about half
+of its melting point. When the metal cools, it recrystallises which removes vacancies and
+dislocations in the metal. Annealing is often used before cold working. In annealing the metal
+cools very very slowly.
+Alloying
+An alloy is a mixture of a metal with other substances. The other substances can be metal or
+non-metal. An alloy often has properties that are very different to the properties of the
+substances from which it is made. The added substances strengthen the metal by preventing
+dislocations from spreading. Ordinary steel is an alloy of iron and carbon. There are many
+types of steel that also include other metals with iron and carbon. Brass is an alloy of copper
+and Zinc. Bronze is an alloy of copper and tin. Gold and silver that is used in coins or jewellery
+are also alloyed.
+Tempering
+Tempering is a process in which a metal is melted then quickly cooled. The rapid cooling is
+called quenching. Usually tempering is done a number of times before a metal has the correct
+properties that are needed for a particular application.
+Sintering
+Sintering is used for making ceramic objects among other things. In this process the substance
+is heated so that its particles stick together. It is used with substances that have a very high
+melting point. The resulting product is often very pure and it is formed in the process into the
+shape that is wanted. Unfortunately, sintered products are brittle.
+
 
 
 file_data: 22.4.4|Steps of Roman Swordsmithing|510
+• Purifying the iron ore.
+• Heating the iron blocks in a furnace with charcoal.
+• Hammering and getting into the needed shape. The smith used a hammer to pound the
+metal into blade shape. He usually used tongs to hold the iron block in place.
+• Reheating. When the blade cooled, the smith reheated it to keep it workable. While
+reheated and hammered repeatedly.
+• Quenching which involved the process of white heating and cooling in water. Quenching
+made the blade harder and stronger. At the same time it made the blade quite brittle,
+which was a considerable problem for the sword smiths.
+• Tempering was then done to avoid brittleness the blade was tempered. In another words
+it was reheated a final time to a very specific temperature. How the Romans do balanced
+the temperature? The smith was guided only by the blade’s color and his own experience.
+
 
 
 file_data: 22.5|Summary|511
@@ -5546,49 +5962,319 @@ file_data: 22.5|Summary|511
 file_data: 22.6|End of chapter exercise|511
 
 
+
+
+
+
+
 file_data: 23|Work, Energy and Power - Grade 12|513
 
 
 file_data: 23.1|Introduction|513
+Imagine a vendor carrying a basket of vegetables on her head. Is she doing any work? One
+would definitely say yes! However, in Physics she is not doing any work! Again, imagine a boy
+pushing against a wall? Is he doing any work? We can see that his muscles are contracting and
+expanding. He may even be sweating. But in Physics, he is not doing any work!
+If the vendor is carrying a very heavy load for a long distance, we would say she has lot of
+energy. By this, we mean that she has a lot of stamina. If a car can travel very fast, we
+describe the car as powerful. So, there is a link between power and speed. However, power
+means something different in Physics. This chapter describes the links between work, energy
+and power and what these mean in Physics.
+You will learn that work and energy are closely related. You shall see that the energy of an
+object is its capacity to do work and doing work is the process of transferring energy from one
+object or form to another. In other words,
+• an object with lots of energy can do lots of work.
+• when work is done, energy is lost by the object doing work and gained by the object on
+which the work is done.
+Lifting objects or throwing them requires that you do work on them. Even making electricity
+flow requires that something do work. Something must have energy and transfer it through
+doing work to make things happen.
+
 
 
 file_data: 23.2|Work|513
+Definition: Work
+When a force exerted on an object causes it to move, work is done on the object (except if
+the force and displacement are at right angles to each other).
+This means that in order for work to be done, an object must be moved a distance d by a force
+F, such that there is some non-zero component of the force in the direction of the
+displacement. Work is calculated as:
+W = F · x cos θ.
+where F is the applied force, x is the displacement of the object and θ is the angle between
+the applied force and the direction of motion.
+Figure 23.1: The force F causes the object to be displaced by x at angle θ.
+It is very important to note that for work to be done there must be a component of the applied
+force in the direction of motion. Forces perpendicular to the direction of motion do no work.
+For example work is done on the object in Figure 23.2,
+Figure 23.2: (a) The force F causes the object to be displaced by x in the same direction as
+the force. θ = 180◦ and cos θ = 1. Work is done in this situation. (b) A force F is applied to
+the object. The object is displaced by y at right angles to the force. θ = 90◦ and cos θ = 0.
+Work is not done in this situation.
+Important: The Meaning of θ The angle θ is the angle between the force vector and the
+displacement vector. In the following situations, θ = 0◦.
+As with all physical quantities, work must have units. Following from the definition, work is
+measured in N·m. The name given to this combination of S.I. units is the joule (symbol J).
+Definition: Joule
+1 joule is the work done when an object is moved 1 m under the application of a force of
+1 N in the direction of motion.
+The work done by an object can be positive or negative. Since force (Fk) and displacement (s)
+are both vectors, the result of the above equation depends on their directions:
+• If Fk acts in the same direction as the motion then positive work is being done. In this
+case the object on which the force is applied gains energy.
+• If the direction of motion and Fk are opposite, then negative work is being done. This
+means that energy is transferred in the opposite direction. For example, if you try to push
+a car uphill by applying a force up the slope and instead the car rolls down the hill you
+are doing negative work on the car. Alternatively, the car is doing positive work on you!
+Important: The everyday use of the word ”work” differs from the physics use. In physics,
+only the component of the applied force that is parallel to the motion does work on an
+object. So, for example, a person holding up a heavy book does no work on the book.
+
+
+
+
 
 
 file_data: 23.3|Energy|519
 
 
 file_data: 23.3.1|External and Internal Forces|519
+In Grade 10, you saw that mechanical energy was conserved in the absence of external forces.
+It is important to know whether a force is an internal force or an external force, because this is
+related to whether the force can change an object’s total mechanical energy when it does work
+upon an object.
+When an external force (for example friction, air resistance, applied force) does work on an
+object, the total mechanical energy (KE + PE) of that object changes. If positive work is done,
+then the object will gain energy. If negative work is done, then the object will lose energy. The
+gain or loss in energy can be in the form of potential energy, kinetic energy, or both. However,
+the work which is done is equal to the change in mechanical energy of the object.
+When an internal force does work on an object by an (for example, gravitational and spring
+forces), the total mechanical energy (KE + PE) of that object remains constant but the
+object’s energy can change form. For example, as an object falls in a gravitational field from a
+high elevation to a lower elevation, some of the object’s potential energy is changed into
+kinetic energy. However, the sum of the kinetic and potential energies remain constant. When
+the only forces doing work are internal forces, energy changes forms - from kinetic to potential
+(or vice versa); yet the total amount of mechanical is conserved.
+
+
 
 
 file_data: 23.3.2|Capacity to do Work|520
+Energy is the capacity to do work. When positive work is done on an object, the system doing
+the work loses energy. In fact, the energy lost by a system is exactly equal to the work
+done by the system. An object with larger potential energy has a greater capacity to do work.
+This leads us to the work-energy theorem.
+Definition: Work-Energy Theorem
+The work-energy theorem states that the work done on an object is equal to the change in
+its kinetic energy:
+W = KE = KEf − KEi
+The work-energy theorem is another example of the conservation of energy which you saw in
+Grade 10.
+Important: A force only does work on an object for the time that it is in contact with the
+object. For example, a person pushing a trolley does work on the trolley, but the road does
+no work on the tyres of a car if they turn without slipping (the force is not applied over any
+distance because a different piece of tyre touches the road every instant.
+Important: Energy Conservation
+In the absence of friction, the work done on an object by a system is equal to the energy
+gained by the object.
+Work Done = Energy Transferred
+In the presence of friction, only some of the energy lost by the system is transferred to useful
+energy. The rest is lost to friction.
+Total Work Done = Useful Work Done + Work Done Against Friction
+In the example of a falling mass the potential energy is known as gravitational potential energy
+as it is the gravitational force exerted by the earth which causes the mass to accelerate towards
+the ground. The gravitational field of the earth is what does the work in this case.
+Another example is a rubber-band. In order to stretch a rubber-band we have to do work on it.
+This means we transfer energy to the rubber-band and it gains potential energy. This potential
+energy is called elastic potential energy. Once released, the rubber-band begins to move and
+elastic potential energy is transferred into kinetic energy.
+
+
 
 
 file_data: 23.4|Power|525
+Now that we understand the relationship between work and energy, we are ready to look at a
+quantity that defines how long it takes for a certain amount of work to be done. For example,
+a mother pushing a trolley full of groceries can take 30 s or 60 s to push the trolley down an
+aisle. She does the same amount of work, but takes a different length of time. We use the idea
+of power to describe the rate at which work is done.
+Definition: Power
+Power is defined as the rate at which work is done or the rate at which energy is expended.
+The mathematical definition for power is:
+P = F · v
+The unit watt is named after Scottish inventor and engineer James Watt (19
+January 1736 - 19 August 1819) whose improvements to the steam engine were
+fundamental to the Industrial Revolution. A key feature of it was that it
+brought the engine out of the remote coal fields into factories.
+Historically, the horsepower (symbol hp) was the unit used to describe the
+power delivered by a machine. One horsepower is equivalent to approximately
+750 W. The horsepower is sometimes used in the motor industry to describe
+the power output of an engine. Incidentally, the horsepower was derived by
+James Watt to give an indication of the power of his steam engine in terms of
+the power of a horse, which was what most people used to for example, turn a
+mill wheel.
+Machines are designed and built to do work on objects. All machines usually have a power
+rating. The power rating indicates the rate at which that machine can do work upon other
+objects.
+A car engine is an example of a machine which is given a power rating. The power rating
+relates to how rapidly the car can accelerate. Suppose that a 50 kW engine could accelerate
+the car from 0 km · hr−1 to 60km · hr−1 in 16 s. Then a car with four times the power rating
+(i.e. 200 kW) could do the same amount of work in a quarter of the time. That is, a 200 kW
+engine could accelerate the same car from 0 km · hr−1 to 60km· hr−1 in 4 s.
+
+
 
 
 file_data: 23.5|Important Equations and Quantities|529
+Momentum:
+~p = m~v (23.4)
+Kinetic energy:
+Ek =
+1
+2
+m~v2 (23.5)
+Principle of Conservation of Energy: Energy is never created nor destroyed, but is merely
+transformed from one form to another.
+Conservation of Mechanical Energy: In the absence of friction, the total mechanical energy
+of an object is conserved.
+When a force moves in the direction along which it acts, work is done.
+Work is the process of converting energy.
+Energy is the ability to do work.
+
 
 
 file_data: 23.6|End of Chapter Exercises|529
+
+
+
+
+
 
 
 file_data: 24|Doppler Effect - Grade 12|533
 
 
 file_data: 24.1|Introduction|533
+Have you noticed how the pitch of a car hooter changes as the car passes by or how the pitch
+of a radio box on the pavement changes as you drive by? This effect is known as the Doppler
+Effect and will be studied in this chapter.
+The Doppler Effect is named after Johann Christian Andreas Doppler (29
+November 1803 - 17 March 1853), an Austrian mathematician and physicist
+who first explained the phenomenon in 1842.
 
 
 file_data: 24.2|The Doppler Effect with Sound and Ultrasound|533
+As seen in the introduction, there are two situations which lead to the Doppler Effect:
+1. When the source moves relative to the observer, for example the pitch of a car hooter as
+it passes by.
+2. When the observer moves relative to the source, for example the pitch of a radio on the
+pavement as you drive by.
+Definition: Doppler Effect
+The Doppler effect is the apparent change in frequency and wavelength of a wave when the
+observer and the source of the wave move relative to each other.
+We experience the Doppler effect quite often in our lives, without realising that it is science
+taking place. The changing sound of a taxi hooter or ambulance as it drives past are examples
+of this as you have seen in the introduction.
+The question is how does the Doppler effect take place. Let us consider a source of sound
+waves with a constant frequency and amplitude. The sound waves can be drawn as concentric
+circles where each circle represents another wavefront, like in figure 24.1 below.
+The sound source is the dot in the middle and is stationary. For the Doppler effect to take
+place, the source must be moving. Let’s consider the following situation: The source (dot)
+emits one peak (represented by a circle) that moves away from the source at the same rate in
+all directions.
+As this peak moves away, the source also moves and then emits the second peak. Now the two
+circles are not concentric any more, but on the one side they are closer together and on the
+other side they are further apart. This is shown in the next diagram.
+If the source continues moving at the same speed in the same direction (i.e. with the same
+velocity which you will learn more about later). then the distance between peaks on the right
+of the source is the constant. The distance between peaks on the left is also constant but they
+are different on the left and right.
+This means that the time between peaks on the right is less so the frequency is higher. It is
+higher than on the left and higher than if the source were not moving at all.
+On the left hand side the peaks are further apart than on the right and further apart than if the
+source were at rest - this means the frequency is lower.
+When a car appoaches you, the sound waves that reach you have a shorter wavelength and a
+higher frequency. You hear a higher sound. When the car moves away from you, the sound
+waves that reach you have a longer wavelength and lower frequency. You hear a lower sound.
+This change in frequency can be calculated by using:
+where fL is the frequency perceived by the listener,
+fS is the frequency of the source,
+v is the speed of the waves,
+vL the speed of the listener and
+vS the speed of the source.
+Radar-based speed-traps use the Doppler Effect. The radar gun emits radio
+waves of a specific frequency. When the car is standing still, the waves reflected
+waves are the same frequency as the waves emitted by the radar gun. When
+the car is moving the Doppler frequency shift can be used to determine the
+speed of the car.
+
 
 
 file_data: 24.2.1|Ultrasound and the Doppler Effect|537
+Ultrasonic waves (ultrasound) are sound waves with a frequency greater than 20 000 Hz (the
+upper limit of hearing). These waves can be used in medicine to determine the direction of
+blood flow. The device, called a Doppler flow meter, sends out sound waves. The sound waves
+can travle through skin and tissue and will be reflected by moving objects in the body (like
+blood). The reflected waves return to the flow meter where its frequency (received frequency)
+is compared to the transmitted frequency. Because of the Doppler effect, blood that is moving
+towards the flow meter will change the sound to a higher frequency (blue shift) and blood that
+is moving away from the flow meter will cause a lower frequency (red shift).
+Ultrasound can be used to determine whether blood is flowing in the right direction in the
+circulation system of unborn babies, or identify areas in the body where blood flow is restricted
+due to narrow veins. The use of ultrasound equipment in medicine is called sonography or
+ultrasonography.
+
 
 
 file_data: 24.3|The Doppler Effect with Light|537
+Light is a wave and earlier you learnt how you can study the properties of one wave and apply
+the same ideas to another wave. The same applies to sound and light. We know the Doppler
+effect affects sound waves when the source is moving. Therefore, if we apply the Doppler effect
+to light, the frequency of the emitted light should change when the source of the light is
+moving relative to the observer.
+When the frequency of a sound wave changes, the sound you hear changes. When the
+frequency of light changes, the colour you would see changes.
+This means that the Doppler effect can be observed by a change in sound (for sound waves)
+and a change in colour (for light waves). Keep in mind that there are sounds that we cannot
+hear (for example ultrasound) and light that we cannot see (for example ultraviolet light).
+We can apply all the ideas that we learnt about the Doppler effect to light. When talking
+about light we use slightly different names to describe what happens. If you look at the colour
+spectrum (more details Chapter 30) then you will see that blue light has shorter wavelengths
+than red light. If you are in the middle of the visible colours then longer wavelengths are more
+red and shorter wavelengths are more blue. So we call shifts towards longer wavelengths
+”red-shifts” and shifts towards shorter wavelengths ”blue-shifts”.
+A shift in wavelength is the same as a shift in frequency. Longer wavelengths of light have
+lower frequencies and shorter wavelengths have higher frequencies. From the Doppler effect we
+know that when things move towards you any waves they emit that you measure are shifted to
+shorter wavelengths (blueshifted). If things move away from you, the shift is to longer
+wavelengths (redshifted).
+
 
 
 file_data: 24.3.1|The Expanding Universe|538
+Stars emit light, which is why we can see them at night. Galaxies are huge collections of stars.
+An example is our own Galaxy, the Milky Way, of which our sun is only one of the millions of
+stars! Using large telescopes like the Southern African Large Telescope (SALT) in the Karoo,
+astronomers can measure the light from distant galaxies. The spectrum of light (see
+Chapter ??) can tell us what elements are in the stars in the galaxies because each element
+emits/absorbs light at particular wavelengths (called spectral lines). If these lines are observed
+to be shifted from their usual wavelengths to shorter wavelengths, then the light from the
+galaxy is said to be blueshifted. If the spectral lines are shifted to longer wavelengths, then the
+light from the galaxy is said to be redshifted. If we think of the blueshift and redshift in
+Doppler effect terms, then a blueshifted galaxy would appear to be moving towards us (the
+observers) and a redshifted galaxy would appear to be moving away from us.
+Important:
+• If the light source is moving away from the observer (positive velocity) then the
+observed frequency is lower and the observed wavelength is greater (redshifted).
+• If the source is moving towards (negative velocity) the observer, the observed fre-
+quency is higher and the wavelength is shorter (blueshifted).
+Edwin Hubble (20 November 1889 - 28 September 1953) measured the Doppler shift of a large
+sample of galaxies. He found that the light from distant galaxies is redshifted and he
+discovered that there is a proportionality relationship between the redshift and the distance to
+the galaxy. Galaxies that are further away always appear more redshifted than nearby galaxies.
+Remember that a redshift in Doppler terms means a velocity of the light source away from the
+observer. So why do all distant galaxies appear to be moving away from our Galaxy?
+The reason is that the universe is expanding! The galaxies are not actually moving themselves,
+rather the space between them is expanding!
 
 
 file_data: 24.4|Summary|539
@@ -5597,142 +6283,866 @@ file_data: 24.4|Summary|539
 file_data: 24.5|End of Chapter Exercises|539
 
 
+
+
+
 file_data: 25|Colour - Grade 12|541
 
 
 file_data: 25.1|Introduction|541
+We call the light that we humans can see ’visible light’. Visible light is actually just a small
+part of the large spectrum of electromagnetic radiation which you will learn more about in
+Chapter 30. We can think of electromagnetic radiation and visible light as transverse waves.
+We know that transverse waves can be described by their amplitude, frequency (or wavelength)
+and velocity. The velocity of a wave is given by the product of its frequency and wavelength:
+v = f × λ (25.1)
+However, electromagnetic radiation, including visible light, is special because, no matter what
+the frequency, it all moves at a constant velocity (in vacuum) which is known as the speed of
+light. The speed of light has the symbol c and is:
+c = 3 × 108 m.s−1
+Since the speed of light is c, we can then say:
+c = f × λ
+
+
 
 
 file_data: 25.2|Colour and Light|541
+Our eyes are sensitive to visible light over a range of wavelengths from 390 nm to 780 nm (1
+nm = 1 × 10−9 m). The different colours of light we see are related to specific frequencies
+(and wavelengths) of visible light. The wavelengths and frequencies are listed in table 25.1.
+You can see from table 25.1 that violet light has the shortest wavelengths and highest
+frequencies while red light has the longest wavelengths and lowest frequencies.
+
 
 
 file_data: 25.2.1|Dispersion of white light|544
+White light, like the light which comes from the sun, is made up of all the visible wavelengths
+of light. In other words, white light is a combination of all the colours of visible light.
+In Chapter 7, you learnt that the speed of light is different in different substances. The speed
+of light in different substances depends on the frequency of the light. For example, when white
+light travels through glass, light of the different frequencies is slowed down by different
+amounts. The lower the frequency, the less the speed is reduced which means that red light
+(lowest frequency) is slowed down less than violet light (highest frequency). We can see this
+when white light is incident on a glass prism.
+Have a look at the picture below. When the white light hits the edge of the prism, the light
+which travels through the glass is refracted as it moves from the less dense medium (air) to the
+more dense medium (glass).
+• The red light which is slowed down the least, is refracted the least.
+• The violet light which is slowed down the most, is refracted the most.
+When the light hits the other side of the prism it is again refracted but the angle of the prism
+edge allows the light to remain separated into its different colours. White light is therefore
+separated into its different colours by the prism and we say that the white light has been
+dispersed by the prism.
+The dispersion effect is also responsible for why we see rainbows. When sunlight hits drops of
+water in the atmosphere, the white light is dispersed into its different colours by the water.
 
 
 file_data: 25.3|Addition and Subtraction of Light|544
 
 
 file_data: 25.3.1|Additive Primary Colours|544
+The primary colours of light are red, green and blue. When all the primary colours are
+superposed (added together), white light is produced. Red, green and blue are therefore called
+the additive primary colours. All the other colours can be produced by different combinations
+of red, green and blue.
+
 
 
 file_data: 25.3.2|Subtractive Primary Colours|545
+The subtractive primary colours are obtained by subtracting one of the three additive primary
+colours from white light. The subtractive primary colours are yellow, magenta and cyan.
+Magenta appears as a pinkish-purplish colour and cyan looks greenish-blue. You can see how
+the primary colours of light add up to the different subtractive colours in the illustration below.
+
 
 
 file_data: 25.3.3|Complementary Colours|546
+Complementary colours are two colours of light which add together to give white.
+You should have found that the complementary colours for red, green and blue are:
+• Red and Cyan
+• Green and Magenta
+• Blue and Yellow
+
 
 
 file_data: 25.3.4|Perception of Colour|546
+The light-sensitive lining on the back inside half of the human eye is called the retina. The
+retina contains two kinds of light sensitive cells or photoreceptors: the rod cells (sensitive to
+low light) and the cone cells (sensitive to normal daylight) which enable us to see. The rods
+are not very sensitive to colour but work well in dimly lit conditions. This is why it is possible
+to see in a dark room, but it is hard to see any colours. Only your rods are sensitive to the low
+light levels and so you can only see in black, white and grey. The cones enable us to see
+colours. Normally, there are three kinds of cones, each containing a different pigment. The
+cones are activated when the pigments absorb light. The three types of cones are sensitive to
+(i.e. absorb) red, blue and green light respectively. Therefore we can perceive all the different
+colours in the visible spectrum when the different types of cones are stimulated by different
+amounts since they are just combinations of the three primary colours of light.
+The rods and cones have different response times to light. The cones react quickly when bright
+light falls on them. The rods take a longer time to react. This is why it takes a while (about 10
+minutes) for your eyes to adjust when you enter a dark room after being outside on a sunny day.
+Color blindness in humans is the inability to perceive differences between some
+or all colors that other people can see. Most often it is a genetic problem, but
+may also occur because of eye, nerve, or brain damage, or due to exposure to
+certain chemicals. The most common forms of human color blindness result
+from problems with either the middle or long wavelength sensitive cone
+systems, and involve difficulties in discriminating reds, yellows, and greens from
+one another. This is called ”red-green color blindness”. Other forms of color
+blindness are much rarer. They include problems in discriminating blues from
+yellows, and the rarest forms of all, complete color blindness or monochromasy,
+where one cannot distinguish any color from grey, as in a black-and-white
+movie or photograph.
+
 
 
 file_data: 25.3.5|Colours on a Television Screen|547
+If you look very closely at a colour cathode-ray television screen or computer screen, you will
+see that there are very many small red, green and blue dots called phosphors on it. These dots
+are caused to fluoresce (glow brightly) when a beam of electrons from the cathode-ray tube
+behind the screen hits them. Since different combinations of the three primary colours of light
+can produce any other colour, only red, green and blue dots are needed to make pictures
+containing all the colours of the visible spectrum.
+
 
 
 file_data: 25.4|Pigments and Paints|548
+We have learnt that white light is a combination of all the colours of the visible spectrum and
+that each colour of light is related to a different frequency. But what gives everyday objects
+around us their different colours?
+Pigments are substances which give an object its colour by absorbing certain frequencies of
+light and reflecting other frequencies. For example, a red pigment absorbs all colours of light
+except red which it reflects. Paints and inks contain pigments which gives the paints and inks
+different colours.
+
 
 
 file_data: 25.4.1|Colour of opaque objects|548
+Objects which you cannot see through (i.e. they are not transparent) are called opaque.
+Examples of some opaque objects are metals, wood and bricks. The colour of an opaque object
+is determined by the colours (therefore frequencies) of light which it reflects. For example,
+when white light strikes a blue opaque object such as a ruler, the ruler will absorb all
+frequencies of light except blue, which will be reflected. The reflected blue light is the light
+which makes it into our eyes and therefore the object will appear blue.
+Opaque objects which appear white do not absorb any light. They reflect all the frequencies.
+Black opaque objects absorb all frequencies of light. They do not reflect at all and therefore
+appear to have no colour.
+
 
 
 file_data: 25.4.2|Colour of transparent objects|548
+If an object is transparent it means that you can see through it. For example, glass, clean
+water and some clear plastics are transparent. The colour of a transparent object is determined
+by the colours (frequencies) of light which it transmits (allows to pass through it). For
+example, a cup made of green glass will appear green because it absorbs all the other
+frequencies of light except green, which it transmits. This is the light which we receive in our
+eyes and the object appears green.
+
+
 
 
 file_data: 25.4.3|Pigment primary colours|549
+The primary pigments and paints are cyan, magenta and yellow. When pigments or paints of
+these three colours are mixed together in equal amounts they produce black. Any other colour
+of paint can be made by mixing the primary pigments together in different quantities. The
+primary pigments are related to the primary colours of light in the following way:
+Colour printers only use 4 colours of ink: cyan, magenta, yellow and black. All
+the other colours can be mixed from these!
 
 
 file_data: 25.5|End of Chapter Exercises|550
+
+
+
+
 
 
 file_data: 26|2D and 3D Wavefronts - Grade 12|553
 
 
 file_data: 26.1|Introduction|553
+You have learnt about the basic principles of reflection and refraction. In this chapter, you will
+learn about phenomena that arise with waves in two and three dimensions: interference and
+diffraction.
+
 
 
 file_data: 26.2|Wavefronts|553
+Consider three point sources of waves. If each source emits waves isotropically (i.e. the same in
+all directions) we will get the situation shown in as shown in Figure 26.1.
+We define a wavefront as the imaginary line that joins waves that are in phase. These are
+indicated by the grey, vertical lines in Figure 26.1. The points that are in phase can be peaks,
+troughs or anything in between, it doesn’t matter which points you choose as long as they are
+in phase.
+Figure 26.1: Wavefronts are imaginary lines joining waves that are in phase. In the example, the
+wavefronts (shown by the grey, vertical lines) join all waves at the crest of their cycle.
+
+
 
 
 file_data: 26.3|The Huygens Principle|554
+Christiaan Huygens described how to determine the path of waves through a medium.
+Definition: The Huygens Principle
+Each point on a wavefront acts like a point source of circular waves. The waves emitted
+from these point sources interfere to form another wavefront.
+A simple example of the Huygens Principle is to consider the single wavefront in Figure 26.2.
+Christiaan Huygens (14 April 1629 - 8 July 1695), was a Dutch mathematician,
+astronomer and physicist; born in The Hague as the son of Constantijn
+Huygens. He studied law at the University of Leiden and the College of Orange
+in Breda before turning to science. Historians commonly associate Huygens
+with the scientific revolution.
+Huygens generally receives minor credit for his role in the development of
+modern calculus. He also achieved note for his arguments that light consisted of
+waves; see: wave-particle duality. In 1655, he discovered Saturn’s moon Titan.
+He also examined Saturn’s planetary rings, and in 1656 he discovered that those
+rings consisted of rocks. In the same year he observed and sketched the Orion
+Nebula. He also discovered several interstellar nebulae and some double stars.
+
 
 
 file_data: 26.4|Interference|556
+Interference occurs when two identical waves pass through the same region of space at the
+same time resulting in a superposition of waves. There are two types of interference which is of
+interest: constructive interference and destructive interference.
+Constructive interference occurs when both waves have a displacement in the same direction,
+while destructive interference occurs when one wave has a displacement in the opposite
+direction to the other, thereby resulting in a cancellation. There is no displacement of the
+medium in destructive interference while for constructive interference the displacement of the
+medium is greater than the individual displacements.
+Constructive interference occurs when both waves have a displacement in the same direction,
+this means they both have a peak or they both have a trough at the same place at the same
+time. If they both have a peak then the peaks add together to form a bigger peak. If they both
+have a trough then the trough gets deeper.
+Destructive interference occurs when one wave has a displacement in the opposite direction to
+the other, this means that the one wave has a peak and the other wave has a trough. If the
+waves have identical magnitudes then the peak ”fills” up the trough and the medium will look
+like there are no waves at that point. There will be no displacement of the medium. A place
+where destructive interference takes places is called a node.
+Waves can interfere at places where there is never a trough and trough or peak and peak or
+trough and peak at the same time. At these places the waves will add together and the
+resultant displacement will be the sum of the two waves but they won’t be points of maximum
+interference.
+Consider the two identical waves shown in the picture below. The wavefronts of the peaks are
+shown as black lines while the wavefronts of the troughs are shown as grey lines. You can see
+that the black lines cross other black lines in many places. This means two peaks are in the
+same place at the same time so we will have constructive interference where the two peaks add
+together to form a bigger peak.
+Two points sources (A and B) radiate identical waves. The wavefronts of the peaks (black
+lines) and troughs (grey lines) are shown. Constructive interference occurs where two black
+lines intersect or where two gray lines intersect. Destructive interference occurs where a black
+line intersects with a grey line.
+You can see that the black lines cross other black lines in many places. This means two peaks
+are in the same place at the same time so we will have constructive interference where the two
+peaks add together to form a bigger peak.
+When the grey lines cross other grey lines there are two troughs are in the same place at the
+same time so we will have constructive interference where the two troughs add together to
+form a bigger trough.
+In the case where a grey line crosses a black line we are seeing a trough and peak in the same
+place. These will cancel each other out and the medium will have no displacement at that
+point.
+• black line + black line = peak + peak = constructive interference
+• grey line + grey line = trough + trough = constructive interference
+• black line + grey line = grey line + black line = peak + trough = trough + peak =
+destructive interference
+On half the picture below, we have marked the constructive interference with a solid black
+diamond and the destructive interference with a hollow diamond.
+To see if you understand it, cover up the half we have marked with diamonds and try to work
+out which points are constructive and destructive on the other half of the picture. The two
+halves are mirror images of each other so you can check yourself.
+
+
+
 
 
 file_data: 26.5|Diffraction|557
+One of the most interesting, and also very useful, properties of waves is diffraction.
+Definition: Diffraction
+Diffraction is the ability of a wave to spread out in wavefronts as the wave passes through
+a small aperture or around a sharp edge.
+Extension: Diffraction
+Diffraction refers to various phenomena associated with wave propagation, such
+as the bending, spreading and interference of waves emerging from an aperture. It
+occurs with any type of wave, including sound waves, water waves, electromagnetic
+waves such as light and radio waves. While diffraction always occurs, its effects are
+generally only noticeable for waves where the wavelength is on the order of the
+feature size of the diffracting objects or apertures.
+For example, if two rooms are connected by an open doorway and a sound is produced in a
+remote corner of one of them, a person in the other room will hear the sound as if it originated
+at the doorway.
+As far as the second room is concerned, the vibrating air in the doorway is the source of the
+sound. The same is true of light passing the edge of an obstacle, but this is not as easily
+observed because of the short wavelength of visible light.
+This means that when waves move through small holes they appear to bend around the sides
+because there are not enough points on the wavefront to form another straight wavefront. This
+is bending round the sides we call diffraction.
+Extension: Diffraction
+Diffraction effects are more clear for water waves with longer wavelengths.
+Diffraction can be demonstrated by placing small barriers and obstacles in a ripple
+tank and observing the path of the water waves as they encounter the obstacles.
+The waves are seen to pass around the barrier into the regions behind it;
+subsequently the water behind the barrier is disturbed. The amount of diffraction
+(the sharpness of the bending) increases with increasing wavelength and decreases
+with decreasing wavelength. In fact, when the wavelength of the waves are smaller
+than the obstacle, no noticeable diffraction occurs.
+
 
 
 file_data: 26.5.1|Diffraction through a Slit|558
+When a wave strikes a barrier with a hole only part of the wave can move through the hole. If
+the hole is similar in size to the wavelength of the wave diffractions occurs. The waves that
+comes through the hole no longer looks like a straight wave front. It bends around the edges of
+the hole. If the hole is small enough it acts like a point source of circular waves.
+Now if allow the wavefront to impinge on a barrier with a hole in it, then only the points on
+the wavefront that move into the hole can continue emitting forward moving waves - but
+because a lot of the wavefront have been removed the points on the edges of the hole emit
+waves that bend round the edges.
+If you employ Huygens’ principle you can see the effect is that the wavefronts are no longer
+straight lines.
+Each point of the slit acts like a point source. If we think about the two point sources on the
+edges of the slit and call them A and B then we can go back to the diagram we had earlier but
+with some parts block by the wall.
+If this diagram were showing sound waves then the sound would be louder (constructive
+interference) in some places and quieter (destructive interference) in others. You can start to
+see that there will be a pattern (interference pattern) to the louder and quieter places. If we
+were studying light waves then the light would be brighter in some places than others
+depending on the interferences.
+The intensity (how bright or loud) of the interference pattern for a single narrow slit looks like
+this:
+The picture above shows how the waves add together to form the interference pattern. The
+peaks correspond to places where the waves are adding most intensely and the zeroes are
+places where destructive interference is taking place. When looking at interference patterns
+from light the spectrum looks like:
+There is a formula we can use to determine where the peaks and minimums are in the
+interference spectrum. There will be more than one minimum. There are the same number of
+minima on either side of the central peak and the distances from the first one on each side are
+the same to the peak. The distances to the peak from the second minimum on each side is
+also the same, in fact the two sides are mirror images of each other. We label the first
+minimum that corresponds to a positive angle from the centre as m = 1 and the first on the
+other side (a negative angle from the centre as m = −1, the second set of minima are labelled
+m = 2 and m = −2 etc.
+The equation for the angle at which the minima occur is
+Definition: Interference Minima
+The angle at which the minima in the interference spectrum occur is:
+sin θ =
+mλ
+a
+where
+θ is the angle to the minimum
+λ is the wavelength of the impinging wavefronts
+m is the order of the mimimum, m = ±1,±2,±3, ...
+From the formula you can see that a smaller wavelength for the same slit results in a smaller
+angle to the interference minimum. This is something you just saw in the two worked
+examples. Do a sanity check, go back and see if the answer makes sense. Ask yourself which
+light had the longer wavelength, which light had the larger angle and what do you expect for
+longer wavelengths from the formula.
+
 
 
 file_data: 26.6|Shock Waves and Sonic Booms|562
+Now we know that the waves move away from the source at the speed of sound. What
+happens if the source moves at the same time as emitting sounds? Once a sound wave has
+been emitted it is no longer connected to the source so if the source moves it doesn’t change
+the way the sound wave is propagating through the medium. This means a source can actually
+catch up with a sound waves it has emitted.
+The speed of sound is very fast in air, about 340 m · s−1, so if we want to talk about a source
+catching up to sound waves then the source has to be able to move very fast. A good source of
+sound waves to discuss is a jet aircraft. Fighter jets can move very fast and they are very noisy
+so they are a good source of sound for our discussion. Here are the speeds for a selection of
+aircraft that can fly faster than the speed of sound.
+
+
 
 
 file_data: 26.6.1|Subsonic Flight|563
+Definition: Subsonic
+Subsonic refers to speeds slower than the speed of sound.
+When a source emits sound waves and is moving but slower than the speed of sound you get
+the situation in this picture. Notice that the source moving means that the wavefronts and
+therefore peaks in the wave are actually closer together in the one direction and further apart
+in the other.
+subsonic flight
+If you measure the waves on the side where the peaks are closer together you’ll measure a
+different wavelength than on the other side of the source. This means that the noise from the
+source will sound different on the different sides. This is called the Doppler Effect.
+Definition: Doppler Effect
+when the wavelength and frequency measured by an observer are different to those emitted
+by the source due to movement of the source or observer.
+
+
 
 
 file_data: 26.6.2|Supersonic Flight|563
+Definition: Supersonic
+Supersonic refers to speeds faster than the speed of sound.
+If a plane flies at exactly the speed of sound then the waves that it emits in the direction it is
+flying won’t be able to get away from the plane. It also means that the next sound wave
+emitted will be exactly on top of the previous one, look at this picture to see what the
+wavefronts would look like:
+Sometimes we use the speed of sound as a reference to describe the speed of the object
+(aircraft in our discussion).
+Definition: Mach Number
+The Mach Number is the ratio of the speed of an object to the speed of sound in the
+surrounding medium.
+Mach number is tells you how many times faster than sound the aircraft is moving.
+• Mach Number < 1 : aircraft moving slower than the speed of sound
+• Mach Number = 1 : aircraft moving at the speed of sound
+• Mach Number > 1 : aircraft moving faster than the speed of sound
+To work out the Mach Number divide the speed of the aircraft by the speed of sound.
+Mach Number =
+vaircraft
+vsound
+Remember: the units must be the same before you divide.
+If the aircraft is moving faster than the speed of sound then the wavefronts look like this:
+If the source moves faster than the speed of sound a cone of wave fronts is created. This is
+called a Mach cone. From constructive interference we know that two peaks that add together
+form a larger peak. In a Mach cone many, many peaks add together to form a very large peak,
+this is a sound wave so the large peak is a very very loud sound wave. This sounds like a huge
+”boom” and we call the noise a sonic boom.
+Definition: Sonic Boom
+A sonic boom is the sound heard by an observer as a shockwave passes.
+
+
 
 
 file_data: 26.6.3|Mach Cone|566
+You can see that the shape of the Mach Cone depends on the speed of the aircraft. When the
+Mach Number is 1 there is no cone but as the aircraft goes faster and faster the angle of the
+cone gets smaller and smaller.
+If we go back to the supersonic picture we can work out what the angle of the cone must be.
+We build a triangle between how far the plane has moved and how far a wavefront at right
+angles to the direction the plane is flying has moved:
+An aircraft emits a sound wavefront. The wavefront moves at the speed of sound 340 m · s−1
+and the aircraft moves at Mach 1.5, which is 1.5 × 340 = 510 m · s−1. The aircraft travels
+faster than the wavefront. If we let the wavefront travel for a time t then the following diagram
+will apply:
+We know how fast the wavefront and the aircraft are moving so we know the distances that
+they have traveled:
+The angle between the cone that forms at the direction of the plane can be found from the
+right-angle triangle we have drawn into the figure. We know that sin θ = opposite
+hypotenuse which in
+this figure means:
+sin θ =
+opposite
+hypotenuse
+sin θ =
+vsound × t
+vaircraft × t
+sin θ =
+vsound
+vaircraft
+In this case we have used sound and aircraft but a more general way of saying this is:
+• aircraft = source
+• sound = wavefront
+We often just write the equation as:
+
 
 
 file_data: 26.7|End of Chapter Exercises|568
+
+
+
+
 
 
 file_data: 27|Wave Nature of Matter - Grade 12|571
 
 
 file_data: 27.1|Introduction|571
+In chapters 30 and 31 the so called wave-particle duality if light is described. This duality
+states that light displays properties of both waves and of particles, depending on the
+experiment performed. For example, interference and diffraction of light are properties of its
+wave nature, while the photoelectric effect is a property of its particle nature. In fact we call a
+particle of light a photon.
+Hopefully you have realised that nature loves symmetry. So, if light which was originally
+believed to be a wave also has a particle nature then perhaps particles, also display a wave
+nature. In other words matter which which we originally thought of as particles may also
+display a wave-particle duality.
+
 
 
 file_data: 27.2|de Broglie Wavelength|571
+Einstein showed that for a photon, its momentum, p, is equal to its energy, E divided the
+speed of light, c:
+p =
+E
+c
+.
+The energy of the photon can also be expressed in terms of the wavelength of the light, λ:
+E =
+hc
+λ
+,
+where h is Planck’s constant. Combining these two equations we find that the the momentum
+of the photon is related to its wavelength
+p =
+hc
+cλ
+=
+h
+λ
+,
+or equivalently
+λ =
+h
+p
+.
+In 1923, Louis de Broglie proposed that this equation not only holds for photons, but also holds
+for particles of matter. This is known as the de Broglie hypothesis
+Definition: De Broglie Hypothesis
+A particle of mass m moving with velocity v has a wavelength λ related to is momentum
+p = mv by
+λ =
+h
+p
+=
+h
+mv
+(27.1)
+This wavelength, λ, is known as the de Broglie wavelength of the particle.
+Since the value of Planck’s constant is incredibly small h = 6.63 × 10−34 J · s, the wavelike
+nature of everyday objects is not really observable.
+The de Broglie hypothesis was proposed by French physicist Louis de Broglie
+(15 August 1892 – 19 March 1987) in 1923 in his PhD thesis. He was awarded
+the Nobel Prize for Physics in 1929 for this work, which made him the first
+person to receive a Nobel Prize on a PhD thesis.
+This wavelength is considerably smaller than the diameter of a proton which is approximately
+10−15 m. Hence the wave-like properties of this cricket ball are too small to be observed.
+Although the electron and cricket ball in the two previous examples are travelling at the same
+velocity the de Broglie wavelength of the electron is much larger than that of the cricket ball.
+This is because the wavelength is inversely proportional to the mass of the particle.
+Since the de Broglie wavelength of a particle is inversely proportional to its velocity, the
+wavelength decreases as the velocity increases. This is confirmed in the last two examples with
+the electrons. De Broglie’s hypothesis was confirmed by Davisson and Germer in 1927 when
+they observed a beam of electrons being diffracted off a nickel surface. The diffraction means
+that the moving electrons have a wave nature. They were also able to determine the wavelength
+of the electrons from the diffraction. To measure a wavelength one needs two or more
+diffacting centres such as pinholes, slits or atoms. For diffraction to occur the centres must be
+separated by a distance about the same size as the wavelength. Theoretically, all objects, not
+just sub-atomic particles, exhibit wave properties according to the de Broglie hypothesis.
+
 
 
 file_data: 27.3|The Electron Microscope|574
+We have seen that under certain circumstances particles behave like waves. This idea is used in
+the electron microscope which is a type of microscope that uses electrons to create an image of
+the target. It has much higher magnification or resolving power than a normal light
+microscope, up to two million times, allowing it to see smaller objects and details.
+Let’s first review how a regular optical microscope works. A beam of light is shone through a
+thin target and the image is then magnified and focused using objective and ocular lenses. The
+amount of light which passes through the target depends on the densities of the target since
+the less dens regions allow more light to pass through than the denser regions. This means that
+the beam of light which is partially transmitted through the target carries information about
+the inner structure of the target.
+The original form of the electron microscopy, the transmission electron microscopy, works in a
+similar manner using electrons. In the electron microscope, electrons which are emitted by a
+cathode are formed into a beam using magnetic lenses. This electron beam is then passed
+through a very thin target. Again, the regions in the target with higher densities stop the
+electrons more easily. So, the amount of electrons which pass through the different regions of
+the target depend their densities. This means that the partially transmitted beam of electrons
+carries information about the densities of the inner structure of the target. The spatial
+variation in this information (the ”image”) is then magnified by a series of magnetic lenses and
+it is recorded by hitting a fluorescent screen, photographic plate, or light sensitive sensor such
+as a CCD (charge-coupled device) camera. The image detected by the CCD may be displayed
+in real time on a monitor or computer. In figure ?? is an image of the polio virus obtained with
+a transmission electron microscope.
+The structure of an optical and electron microscope are compared in figure 27.3. While the
+optical microscope uses light and focuses using lenses, the electron microscope uses electrons
+and focuses using electromagnets.
+The first electron microscope prototype was built in 1931 by the German
+engineers Ernst Ruska and Maximillion Knoll. It was based on the ideas and
+discoveries of Louis de Broglie. Although it was primitive and was not ideal for
+practical use, the instrument was still capable of magnifying objects by four
+hundred times. The first practical electron microscope was built at the
+Electron microscopes are very useful as they are able to magnify objects to a much higher
+resolution. This is because their de Broglie wavelengths are so much smaller than that of
+visible light. You hopefully remember that light is diffracted by objects which are separated by
+a distance of about the same size as the wavelength of the light. This diffraction then prevents
+you from being able to focus the transmitted light into an image. So the sizes at which
+diffraction occurs for a beam of electrons is much smaller than those for visible light. This is
+why you can magnify targets to a much higher order of magnification using electrons rather
+than visible light.
+Extension: High-Resolution Transmission Electron Microscope (HRTEM)
+There are high-resolution TEM (HRTEM) which have been built. However
+their resolution is limited by spherical and chromatic aberration. Fortunately
+though, software correction of the spherical aberration has allowed the production
+of images with very high resolution. In fact the resolution is sufficient to show
+carbon atoms in diamond separated by only 89 picometers and atoms in silicon at
+78 picometers. This is at magnifications of 50 million times. The ability to
+determine the positions of atoms within materials has made the HRTEM a very
+useful tool for nano-technologies research. It is also very important for the
+development of semiconductor devices for electronics and photonics.
+Transmission electron microscopes produce two-dimensional images.
+Extension: Scanning Electron Microscope (SEM)
+The Scanning Electron Microscope (SEM) produces images by hitting the
+target with a primary electron beam which then excites the surface of the target.
+This causes secondary electrons to be emitted from the surface which are then
+detected. So the the electron beam in the SEM is moved across the sample, while
+detectors build an image from the secondary electrons.
+Generally, the transmission electron microscope’s resolution is about an order of
+magnitude better than the SEM resolution, however, because the SEM image relies
+on surface processes rather than transmission it is able to image bulk samples and
+has a much greater depth of view, and so can produce images that are a good
+representation of the 3D structure of the sample.
+
+
 
 
 file_data: 27.3.1|Disadvantages of an Electron Microscope|577
+Electron microscopes are expensive to buy and maintain. they are also very sensitive to
+vibration and external magnetic fields. This means that special facilities are required to house
+microscopes aimed at achieving high resolutions. Also the targets have to be viewed in
+vacuum, as the electrons would scatter with the molecules that make up air.
+Extension: Scanning Electron Microscope (SEM)
+Scanning electron microscopes usually image conductive or semi-conductive
+materials best. A common preparation technique is to coat the target with a
+several-nanometer layer of conductive material, such as gold, from a sputtering
+machine; however this process has the potential to disturb delicate samples.
+The targets have to be prepared in many ways to give proper detail, which may
+result in artifacts purely the result of treatment. This gives the problem of
+distinguishing artifacts from material, particularly in biological samples. Scientists
+maintain that the results from various preparation techniques have been compared,
+and as there is no reason that they should all produce similar artifacts, it is
+therefore reasonable to believe that electron microscopy features correlate with
+living cells.
+The first electron microscope prototype was built in 1931 by the German
+engineers Ernst Ruska and Maximillion Knoll. It was based on the ideas and
+discoveries of Louis de Broglie. Although it was primitive and was not ideal for
+practical use, the instrument was still capable of magnifying objects by four
+hundred times. The first practical electron microscope was built at the
+University of Toronto in 1938, by Eli Franklin Burton and students Cecil Hall,
+James Hillier and Albert Prebus.
+Although modern electron microscopes can magnify objects up to two million
+times, they are still based upon Ruska’s prototype and his correlation between
+wavelength and resolution. The electron microscope is an integral part of many
+laboratories. Researchers use it to examine biological materials (such as
+microorganisms and cells), a variety of large molecules, medical biopsy samples,
+metals and crystalline structures, and the characteristics of various surfaces.
+
 
 
 file_data: 27.3.2|Uses of Electron Microscopes|577
+Electron microscopes can be used to study:
+• the topography of an object − how its surface looks.
+• the morphology of particles making up an object − its shape and size.
+• the composition of an object − the elements and compounds that the object is
+composed of and the relative amounts of them.
+• the crystallographic information of the object − how the atoms are arranged in the
+object.
+
 
 
 file_data: 27.4|End of Chapter Exercises|578
+
+
+
+
 
 
 file_data: 28|Electrodynamics - Grade 12|579
 
 
 file_data: 28.1|Introduction|579
+In Grade 11 you learnt how a magnetic field is generated around a current carrying conductor.
+You also learnt how a current is generated in a conductor that moves in a magnetic field. This
+chapter describes how conductors moved in a magnetic field are applied in the real-world.
+
 
 
 file_data: 28.2|Electrical machines - generators and motors|579
+We have seen that when a conductor is moved in a magnetic field or when a magnet is moved
+near a conductor, such that the magnetic field is not parallel to the conductor, a current flows
+in the conductor. The amount of current depends on the speed at which the conductor
+experiences a changing magnetic field, the number of turns of the conductor and the
+orientation of the plane of the conductor with respect to the magnetic field. The effect of the
+orientation of the conductor with respect to the magnetic field is shown in Figure 28.1.
+Figure 28.1: Series of figures showing that the magnetic flux through a conductor is dependent
+on the angle that the plane of the conductor makes with the magnetic field. The greatest flux
+passes through the conductor when the plane of the conductor is perpendicular to the magnetic
+field lines as in (a). The number of field lines passing through the conductor decreases, as the
+conductor rotates until it is parallel to the magnetic field.
+If the current flowing in the conductor were plotted as a function of the angle between the
+plane of the conductor and the magnetic field, then the current would vary as shown in
+Figure 28.2. The current alternates about the zero value and is also known as an alternating
+current (abbreviated AC).
+Figure 28.2: Variation of current as angle of plane of conductor with the magnetic field changes.
 
 
 file_data: 28.2.1|Electrical generators|580
+AC generator
+The principle of rotating a conductor in a magnetic field is used in electricity generators. A
+generator converts mechanical energy into electrical energy.
+Definition: Generator
+A generator converts mechanical energy into electrical energy.
+The layout of an AC generator is shown in Figure 28.3. The conductor in the shape of a coil is
+connected to a ring. The conductor is then manually rotated in the magnetic field generating
+an alternating emf. The slip rings are connected to the load via brushes.
+If a machine is constructed to rotate a magnetic field around a set of stationary wire coils with
+the turning of a shaft, AC voltage will be produced across the wire coils as that shaft is
+rotated, in accordance with Faraday’s Law of electromagnetic induction. This is the basic
+operating principle of an AC generator.
+In an AC generator the two ends of the coil are each attached to a slip ring that makes contact
+with brushes as the coil turns. The direction of the current changes with every half turn of the
+coil. As one side of the loop moves to the other pole of the magnetic field, the current in it
+changes direction. The two slip rings of the AC generator allow the current to change
+directions and become alternating current.
+AC generators are also known as alternators. They are found in motor cars to
+charge the car battery.
+DC generator
+A DC generator is constructed the same way as an AC generator except that there is one slip
+ring which is split into two pieces, called a commutator, so the current in the external circuit
+does not change direction. The layout of a DC generator is shown in Figure 28.4. The
+split-ring commutator accommodates for the change in direction of the current in the loop,
+thus creating DC current going through the brushes and out to the circuit.
+The shape of the emf from a DC generator is shown in Figure 28.5. The emf is not steady but
+is more or less the positive halves of a sine wave.
+AC versus DC generators
+The problems involved with making and breaking electrical contact with a moving coil should
+be obvious (sparking and heat), especially if the shaft of the generator is revolving at high
+speed. If the atmosphere surrounding the machine contains flammable or explosive vapors, the
+practical problems of spark-producing brush contacts are even greater.
+An AC generator (alternator) does not require brushes and commutators to work, and so is
+immune to these problems experienced by DC generators. The benefits of AC over DC with
+regard to generator design is also reflected in electric motors. While DC motors require the use
+of brushes to make electrical contact with moving coils of wire, AC motors do not. In fact, AC
+and DC motor designs are very similar to their generator counterparts. The AC motor being
+dependent upon the reversing magnetic field produced by alternating current through its
+stationary coils of wire to rotate the rotating magnet around on its shaft, and the DC motor
+being dependent on the brush contacts making and breaking connections to reverse current
+through the rotating coil every 1/2 rotation (180 degrees).
 
 
 file_data: 28.2.2|Electric motors|582
+The basic principles of operation for a motor are the same as that of a generator, except that a
+motor converts electrical energy into mechanical energy.
+Definition: Motor
+An electric motor converts electrical energy into mechanical energy.
+Both motors and generators can be explained in terms of a coil that rotates in a magnetic field.
+In a generator the coil is attached to an external circuit and it is mechanically turned, resulting
+in a changing flux that induces an emf. In a motor, a current-carrying coil in a magnetic field
+experiences a force on both sides of the coil, creating a torque which makes it turn.
+Any coil carrying current can feel a force in a magnetic field, the force is the Lorentz force on
+the moving charges in the conductor. We know that if the coil is parallel to the magnetic field
+then the Lorentz force will be zero. The charge of opposite sides of the coil will be in opposite
+directions because the charges are moving in opposite directions. This means the coil will
+rotate.
+Instead of rotating the loops through a magnetic field to create electricity, a current is sent
+through the wires, creating electromagnets. The outer magnets will then repel the
+electromagnets and rotate the shaft as an electric motor. If the current is AC, the two slip
+rings are required to create an AC motor. An AC motor is shown in Figure 28.6
+If the current is DC, split-ring commutators are required to create a DC motor. This is shown
+in Figure 28.7.
+
 
 
 file_data: 28.2.3|Real-life applications|582
+Cars
+A car contains an alternator that charges up its battery power the car’s electric system when its
+engine is running. Alternators have the great advantage over direct-current generators of not
+using a commutator, which makes them simpler, lighter, less costly, and more rugged than a
+DC generator.
+A car also contains a DC electric motor, the starter motor, to turn over the engine to start it.
+A starter consists of the very powerful DC electric motor and starter solenoid that is attached
+to the motor. A starter motor requires very high current to crank the engine, that’s why it’s
+connected to the battery with large cables.
+Electricity Generation
+AC generators are mainly used in the real-world to generate electricity.
+
+
 
 
 file_data: 28.2.4|Exercise - generators and motors|584
 
 
 file_data: 28.3|Alternating Current|585
+Most students of electricity begin their study with what is known as direct current (DC), which
+is electricity flowing in a constant direction. DC is the kind of electricity made by a battery,
+with definite positive and negative terminals).
+However, we have seen that the electricity produced by a generator alternates and is therefore
+known as alternating current(AC). The main advantage to AC is that the voltage can be
+changed using transformers. That means that the voltage can be stepped up at power stations
+to a very high voltage so that electrical energy can be transmitted along power lines at low
+current and therefore experience low energy loss due to heating. The voltage can then be
+stepped down for use in buildings and street lights.
+In South Africa alternating current is generated at a frequency of 50 Hz.
+The circuit symbol for alternating current is:
+∼
+Graphs of voltage against time and current against time for an AC circuit are shown in
+Figure 28.9
+In a DC circuit the current and voltage are constant. In an AC circuit the current and voltage
+vary with time. The value of the current or voltage at any specific moment in time is called the
+instantaneous current or voltage and is calculated as follows:
+i = Imaxsin(2πft)
+v = Vmaxsin(2πft)
+i is the instantaneous current. Imax is the maximum current. v is the instantaneous voltage.
+Vmax is the maximum voltage. f is the frequency of the AC and t is the time at which the
+instantaneous current or voltage is being calculated.
+This average value we use for AC is known as the root mean square (rms) average. This is
+defined as:
+Since AC varies sinusoidally, with as much positive as negative, doing a straight average would
+get you zero for the average voltage. The rms value by-passes this problem.
 
 
 file_data: 28.3.1|Exercise - alternating current|586
 
 
 file_data: 28.4|Capacitance and inductance|586
+Capacitors and inductors are found in many circuits. Capacitors store an electric field, and are
+used as temporary power sources as well as minimize power fluctuations in major circuits.
+Inductors work in conjunction with capacitors for electrical signal processing. Here we explain
+the physics and applications of both.
 
 
 file_data: 28.4.1|Capacitance|586
+You have learnt about capacitance and capacitors in Grade 11. Please read through
+section 17.5 to recap what you learnt about capacitance in a DC circuit.
+In this section you will learn about capacitance in an AC circuit. A capacitor in an AC circuit
+has reactance. Reactance in an AC circuit plays a similar role to resistance in a DC circuit.
+The reactance of a capacitor XC is defined as:
+XC = 1
+2πfC
+where C is the capacitance and f is the AC frequency.
+If we examine the equation for the reactance of a capacitor, we see that the frequency is in the
+denominator. Therefore, when the frequency is low, the capacitive reactance is very high. This
+is why a capacitor blocks the flow of DC and low frequency AC because its reactance increases
+with decreasing frequency.
+When the frequency is high, the capacitive reactance is low. This is why a capacitor allows the
+flow of high frequency AC because its reactance decreases with increasing frequency.
+
 
 
 file_data: 28.4.2|Inductance|586
+An inductor is a passive electrical device used in electrical circuits for its property of
+inductance. An inductor is usually made as a coil (or solenoid) of conducting material, typically
+copper wire, wrapped around a core either of air or of ferromagnetic material.
+Electrical current through the conductor creates a magnetic flux proportional to the current. A
+change in this current creates a change in magnetic flux that, in turn, generates an emf that
+acts to oppose this change in current.
+Inductance (measured in henries, symbol H) is a measure of the generated emf for a unit
+change in current. For example, an inductor with an inductance of 1 H produces an emf of 1 V
+when the current through the inductor changes at the rate of 1 A·s−1.
+The inductance of an inductor is determined by several factors:
+• the shape of the coil; a short, fat coil has a higher inductance than one that is thin and
+tall.
+• the material that conductor is wrapped around.
+• how the conductor is wound; winding in opposite directions will cancel out the
+inductance effect, and you will have only a resistor.
+The inductance of a solenoid is defined by:
+L = μ0AN2
+l
+where μ0 is the permeability of the core material (in this case air), A is the cross-sectional area
+of the solenoid, N is the number of turns and l is the length of the solenoid.
+Definition: Permeability
+Permeability is the property of a material which describes the magnetisation developed in
+that material when excited by a source.
+The permeability of free space is 4πx10−7 henry per metre.
+An inductor in an AC circuit also has a reactance, XL that is defined by:
+XL = 2πfL
+where L is the inductance and f is the frequency of the AC.
+If we examine the equation for the reactance of an inductor, we see that inductive reactance
+increases with increasing frequency. Therefore, when the frequency is low, the inductive
+reactance is very low. This is why an inductor allows the flow of DC and low frequency AC
+because its reactance decreases with decreasing frequency.
+When the frequency is high, the inductive reactance is high. This is why an inductor blocks the
+flow of high frequency AC because its reactance increases with increasing frequency.
+
 
 
 file_data: 28.4.3|Exercise - capacitance and inductance|588
@@ -5744,91 +7154,948 @@ file_data: 28.5|Summary|588
 file_data: 28.6|End of chapter exercise|589
 
 
+
+
+
+
 file_data: 29|Electronics - Grade 12|591
 
 
 file_data: 29.1|Introduction|591
+Electronics and electrical devices surround us in daily life. From the street lights and water
+pumps to computers and digital phones, electronics have enabled the digital revolution to
+occur. All electronics are built on a backbone of simple circuits, and so an understanding of
+circuits is vital in understanding more complex devices.
+This chapter will explain the basic physics principles of many of the components of electronic
+devices. We will begin with an explanation of capacitors and inductors. We see how these are
+used in tuning a radio. Next, we look at active components such as transistors and operational
+amplifiers. Lastly, the chapter will finish with an explanation of digital electronics, including
+logic gates and counting circuits.
+Before studying this chapter, you will want to remind yourself of:
+• The meaning of voltage (V ), current (I) and resistance (R), as covered in Grade 10 (see
+chapter 10), and Grade 11 (see chapter 19).
+• Capacitors in electric circuits, as covered in Grade 11 (see section 17.6).
+• Semiconductors, as covered in Grade 11 (see chapter 20).
+• The meaning of an alternating current (see section 28.3).
+• Capacitance (C) and Inductance (L) (see section 28.4).
+
+
 
 
 file_data: 29.2|Capacitive and Inductive Circuits|591
+Earlier in Grade 12, you were shown alternating currents (a.c.) and you saw that the voltage
+and the current varied with time. If the a.c. supply is connected to a resistor, then the current
+and voltage will be proportional to each other. This means that the current and voltage will
+‘peak’ at the same time. We say that the current and voltage are in phase. This is shown in
+Figure 29.1.
+When a capacitor is connected to an alternating voltage, the maximum voltage is proportional
+to the maximum current, but the maximum voltage does not occur at the same time as the
+maximum current. The current has its maximum (it peaks) one quarter of a cycle before the
+voltage peaks. Engineers say that the ‘current leads the voltage by 90◦’. This is shown in
+Figure 29.2.
+For a circuit with a capacitor, the instantaneous value of V
+I is not constant. However the value
+of Vmax
+Imax
+is useful, and is called the capacitive reactance (XC) of the component. Because it
+is still a voltage divided by a current (like resistance), its unit is the ohm. The value of XC (C
+Inductors are very similar, but the current peaks 90◦ after the voltage. This is shown in
+Figure 29.3. Engineers say that the ‘current lags the voltage’. Again, the ratio of maximum
+voltage to maximum current is called the reactance — this time inductive reactance (XL).
+The value of the reactance depends on its inductance (L).
+Definition: Reactance
+The ratio of the maximum voltage to the maximum current when a capacitor or inductor is
+connected to an alternating voltage. The unit of reactance is the ohm.
+While inductive and capacitive reactances are similar, in one sense they are opposites. For an
+inductor, the current peaks 90◦ after the voltage. For a capacitor the current peaks 90◦ ahead
+of the voltage. When we work out the total reactance for an inductor and a capacitor in series,
+we use the formula
+to take this into account. This formula can also be used when there is more than one inductor
+or more than one capacitor in the circuit. The total reactance is the sum of all of the inductive
+reactances minus the sum of all the capacitive reactances. The magnitude (number) in the
+final result gives the ratio of maximum voltage to maximum current in the circuit as a whole.
+The sign of the final result tells you its phase. If it is positive, the current peaks 90◦ after the
+voltage, if it is negative, the current peaks 90◦ before the voltage.
+If a series circuit contains resistors as well, then the situation is more complicated. The
+maximum current is still proportional to the maximum voltage, but the phase difference
+between them won’t be 90◦. The ratio between the maximum voltage and maximum current is
+called the impedance (Z), and its unit is also the ohm. Impedances are calculated using this
+formula:
+Z =
+p
+X2 + R2 (29.4)
+where X is the total reactance of the inductors and capacitors in the circuit, and R is the total
+resistance of the resistors in the circuit.
+It is easier to understand this formula by thinking of a right angled triangle. Resistances are
+drawn horizontally, reactances are drawn vertically. The hypotenuse of the triangle gives the
+impedance. This is shown in Figure 29.4.
+Definition: Impedance
+The maximum voltage divided by the maximum current for any circuit. The unit of
+impedance is the ohm.
+It is important to remember that when resistors and inductances (or capacitors) are in a circuit,
+the current will not be in phase with the voltage, so the impedance is not a resistance.
+Similarly the current won’t be exactly 90◦ out of phase with the voltage so the impedance isn’t
+a reactance either.
+Most factories containing heavy duty electrical equipment (e.g. large motors)
+have to pay extra money to their electricity supply company because the
+inductance of the motor coils causes the current and voltage to get out of
+phase. As this makes the electricity distribution network less efficient, a
+financial penalty is incurred. The factory engineer can prevent this by
+connecting capacitors into the circuit to reduce the reactance to zero, as in the
+last question above. The current and voltage are then in phase again. We can’t
+calculate the capacitance needed in this chapter, because the capacitors are
+usually connected in parallel, and we have only covered the reactances and
+impedances of series circuits.
+
+
 
 
 file_data: 29.3|Filters and Signal Tuning|596
 
 
 file_data: 29.3.1|Capacitors and Inductors as Filters|596
+We have already seen how capacitors and inductors pass current more easily at certain
+frequencies than others. To recap: if we examine the equation for the reactance of a capacitor,
+we see that the frequency is in the denominator. Therefore, when the frequency is low, the
+capacitive reactance is very high. This is why a capacitor blocks the flow of DC and low
+frequency AC because its reactance increases with decreasing frequency.
+When the frequency is high, the capacitive reactance is low. This is why a capacitor allows the
+flow of high frequency AC because its reactance decreases with increasing frequency.
+Therefore putting a capacitor in a circuit blocks the low frequencies and allows the high
+frequencies to pass. This is called a high pass filter. A filter like this can be used in the ‘treble’
+setting of a sound mixer or music player which controls the amount of high frequency signal
+reaching the speaker. The more high frequency signal there is, the ‘tinnier’ the sound. A simple
+high pass filter circuit is shown in Figure 29.5.
+Similarly, if we examine the equation for the reactance of an inductor, we see that inductive
+reactance increases with increasing frequency. Therefore, when the frequency is low, the
+inductive reactance is very low. This is why an inductor allows the flow of DC and low
+frequency AC because its reactance decreases with decreasing frequency.
+When the frequency is high, the inductive reactance is high. This is why an inductor blocks the
+flow of high frequency AC because its reactance increases with increasing frequency.
+Therefore putting an inductor in a circuit blocks the high frequencies and allows the low
+frequencies to pass. This is called a low pass filter. A filter like this can be used in the ‘bass’
+setting of a sound mixer or music player which controls the amount of low frequency signal
+reaching the speaker. The more low frequency signal there is, the more the sound ‘booms’. A
+simple low pass filter circuit is shown in Figure 29.6.
+Figure 29.5: A high pass filter. High frequencies easily pass through the capacitor and into the
+next part of the circuit, while low frequencies pass through the inductor straight to ground.
 
 
 file_data: 29.3.2|LRC Circuits, Resonance and Signal Tuning|596
+A circuit containing a resistor, a capacitor and an inductor all in series is called an LRC circuit.
+Because the components are in series, the current through each component at a particular time
+will be the same as the current through the others. The voltage across the resistor will be in
+phase with the current. The voltage across the inductor will be 90◦ ahead of the current (the
+current always follows or lags the voltage in an inductor). The voltage across the capacitor will
+be 90◦ behind the current (the current leads the voltage for a capacitor). The phases of the
+three voltages are shown in Figure 29.7.
+Figure 29.6: A low pass filter. Low frequencies pass through the inductor and into the next part
+of the circuit, while high frequencies pass through the capacitor straight to ground.
+Figure 29.7: The voltages across the separate components of an LRC circuit. Looking at the
+peaks, you see that the voltage across the inductor VL ‘peaks’ first, followed 90◦ later by the
+current I, followed 90◦ later by the voltage across the capacitor VC. The voltage across the
+resistor is not shown — it is in phase with the current and peaks at the same time as the current.
+59
+The reactance of the inductor is 2πfL, and the reactance of the capacitor is 1/2πfC but with
+the opposite phase. So the total reactance of the LRC circuit is
+X = XL − XC = 2πfL −
+1
+2πfC
+The impedance of the circuit as a whole is given by
+Z =
+p
+X2 + R2 =
+s
+2πfL −
+1
+2πfC
+2
++ R2
+At different frequencies, the impedance will take different values. The impedance will have its
+smallest value when the positive inductive reactance cancels out the negative capacitive
+reactance. This occurs when
+2πfL =
+1
+2πfC
+so the frequency of minimum impedance must be
+f =
+1
+2π√LC
+This is called the resonant frequency of the circuit. This is the frequency at which you can
+get the largest current for a particular supply voltage. It is also called the natural frequency
+of the circuit. This means the frequency at which the circuit would oscillate by itself.
+Definition: Resonance
+Resonance occurs when a circuit is connected to an alternating voltage at its natural fre-
+quency. A very large current in the circuit can build up, even with minimal power input.
+An LRC circuit is very useful when we have a signal containing many different frequencies, and
+we only want one of them. If a signal like this is connected to an LRC circuit, then only the
+resonant frequency (and other frequencies close to it) will drive measureable currents. This
+means that an LRC circuit can select one frequency from a range. This process is called signal
+tuning.
+When you set up a radio antenna, and amplify the radio signal it receives, you
+find many different bands of frequencies — one from each radio station. When
+you listen to the radio, you only want to listen to one station. An LRC circuit
+in the radio (the tuning circuit) is set so that its resonant frequency is the
+frequency of the station you want to listen to. This means that of the many
+radio stations broadcasting, you only hear one. When you adjust the tuning
+dial on the radio, it changes the capacitance of the capacitor in the tuning
+circuit. This changes the resonant frequency, and this changes the radio station
+that you will hear.
 
 
 file_data: 29.4|Active Circuit Elements|599
+The components you have been learning about so far — resistors, capacitors and inductors —
+are called passive components. They do not change their behaviour or physics in response to
+changes in voltage or current. Active components are quite different. Their response to
+changes in input allows them to make amplifiers, calculators and computers.
+
 
 
 file_data: 29.4.1|The Diode|599
+A diode is an electronic device that allows current to flow in one direction only.
+A diode consists of two doped semi-conductors joined together so that the resistance is low
+when connected one way and very high the other way.
+Figure 29.9: Operation of a diode. (a) The diode is forward biased and current is permitted.
+The negative terminal of the battery is connected to the negative terminal of the diode. (b) The
+diode is reverse biased and current flow is not allowed. The negative terminal of the battery is
+connected to the positive terminal of the diode.
+A full explanation of diode operation is complex. Here is a simplified description. The diode
+consists of two semiconductor blocks attached together. Neither block is made of pure silicon
+— they are both doped. Doping was described in more detail in Section 10.3.
+In short, p-type semiconductor has fewer free electrons than normal semiconductor. ‘P’ stands
+for ‘positive’, meaning a lack of electrons, although the material is actually neutral. The
+locations where electrons are missing are called holes. This material can conduct electricity
+well, because electrons can move into the holes, making a new hole somewhere else in the
+material. Any extra electrons introduced into this region by the circuit will fill some or all of
+the holes.
+In n-type semiconductor, the situation is reversed. The material has an more free electrons
+than normal semiconductor. ‘N’ stands for ‘negative’, meaning an excess of electrons, although
+the material is actually neutral.
+When a p-type semiconductor is attached to an n-type semiconductor, some of the free
+electrons in the n-type move across to the p-type semiconductor. They fill the available holes
+near the junction. This means that the region of the n-type semiconductor nearest the junction
+has no free electrons (they’ve moved across to fill the holes). This makes this n-type
+semiconductor positively charged. It used to be electrically neutral, but has since lost electrons.
+The region of p-type semiconductor nearest the junction now has no holes (they’ve been filled
+in by the migrating electrons). This makes the p-type semiconductor negatively charged. It
+used to be electrically neutral, but has since gained electrons.
+Without free electrons or holes, the central region can not conduct electricity well. It has a
+high resistance, and is called the depletion band. This is shown in Figure 29.10.
+You can explain the high resistance in a different way. A free electron in the n-type
+semiconductor will be repelled from the p-type semiconductor because of its negative charge.
+The electron will not go into the depletion band, and certainly won’t cross the band to the
+p-type semiconductor. You may ask, “But won’t a free electron in the p-type semiconductor be
+attracted across the band, carrying a current?” But there are no free electrons in p-type
+semiconductor, so no current of this kind can flow.
+If the diode is reverse-biased, the + terminal of the battery is connected to the n-type
+semiconductor. This makes it even more negatively charged. It also removes even more of the
+free electrons near the depletion band. At the same time, the − terminal of the battery is
+connected to the p-type silicon. This will supply free electrons and fill in more of the holes next
+to the depletion band. Both processes cause the depletion band to get wider. The resistance of
+the diode (which was already high) increases. This is why a reverse-biased diode does not
+conduct.
+Another explanation for the increased resistance is that the battery has made the p-type
+semiconductor more negative than it used to be, making it repel any electrons from the n-type
+semiconductor which attempt to cross the depletion band.
+On the other hand, if the diode is forward biased, the depletion band is made narrower. The
+negative charge on the p-type silicon is cancelled out by the battery. The greater the voltage
+used, the narrower the depletion band becomes. Eventually, when the voltage is about 0,6 V
+(for silicon) the depletion band disappears. Once this has occurred, the diode conducts very
+well.
+Figure 29.10: A diode consists of two doped semi-conductors joined together so that the resis-
+tance is low when connected one way and very high the other way.
+
+
 
 
 file_data: 29.4.2|The Light Emitting Diode (LED)|601
+A light-emitting diode (LED) is a diode device that emits light when charge flows in the correct
+direction through it. If you apply a voltage to force current to flow in the direction the LED
+allows it will light up.
+Extension: Circuit Symbols
+This notation of having two small arrows pointing away from the device is
+common to the schematic symbols of all light-emitting semiconductor devices.
+Conversely, if a device is light-activated (meaning that incoming light stimulates
+it), then the symbol will have two small arrows pointing toward it. It is interesting
+to note, though, that LEDs are capable of acting as light-sensing devices: they will
+generate a small voltage when exposed to light, much like a solar cell on a small
+scale. This property can be gainfully applied in a variety of light-sensing circuits.
+The color depends on the semiconducting material used to construct the LED, and can be in
+the near-ultraviolet, visible or infrared part of the electromagnetic spectrum.
+Nick Holonyak Jr. (1928 ) of the University of Illinois at Urbana-Champaign
+developed the first practical visible-spectrum LED in 1962.
+Light emission
+The wavelength of the light emitted, and therefore its color, depends on the materials forming
+the p-n junction. A normal diode, typically made of silicon or germanium, emits invisible
+far-infrared light (so it can’t be seen), but the materials used for an LED have emit light
+corresponding to near-infrared, visible or near-ultraviolet frequencies.
+LED applications
+LEDs have many uses. Some of these are given here.
+• thin, lightweight message displays, e.g. in public information signs (at airports and
+railway stations, among other places)
+• status indicators, e.g. on/off lights on professional instruments and consumers
+audio/video equipment
+• infrared LEDs in remote controls (for TVs, VCRs, etc)
+• clusters of LEDs are used in traffic signals, replacing ordinary bulbs behind colored glass
+• car indicator lights and bicycle lighting
+• calculator and measurement instrument displays (seven segment displays), although now
+mostly replaced by LCDs
+• red or yellow LEDs are used in indicator and [alpha]numeric displays in environments
+where night vision must be retained: aircraft cockpits, submarine and ship bridges,
+astronomy observatories, and in the field, e.g. night time animal watching and military
+field use
+• red or yellow LEDs are also used in photographic darkrooms, for providing lighting which
+does not lead to unwanted exposure of the film
+• illumination, e.g. flashlights (a.k.a. torches, UK), and backlighting for LCD screens
+• signaling/emergency beacons and strobes
+• movement sensors, e.g. in mechanical and optical computer mice and trackballs
+• in LED printers, e.g. high-end color printers
+LEDs offer benefits in terms of maintenance and safety.
+• The typical working lifetime of a device, including the bulb, is ten years, which is much
+longer than the lifetimes of most other light sources.
+• LEDs fail by dimming over time, rather than the abrupt burn-out of incandescent bulbs.
+• LEDs give off less heat than incandescent light bulbs and are less fragile than fluorescent
+lamps.
+• Since an individual device is smaller than a centimetre in length, LED-based light sources
+used for illumination and outdoor signals are built using clusters of tens of devices.
+Because they are monochromatic, LED lights have great power advantages over white lights
+where a specific color is required. Unlike the white lights, the LED does not need a filter that
+absorbs most of the emitted white light. Colored fluorescent lights are made, but they are not
+widely available. LED lights are inherently colored, and are available in a wide range of colors.
+One of the most recently introduced colors is the emerald green (bluish green, about 500 nm)
+that meets the legal requirements for traffic signals and navigation lights.
+There are applications that specifically require light that does not contain any blue component.
+Examples are photographic darkroom safe lights, illumination in laboratories where certain
+photo-sensitive chemicals are used, and situations where dark adaptation (night vision) must be
+preserved, such as cockpit and bridge illumination, observatories, etc. Yellow LED lights are a
+good choice to meet these special requirements because the human eye is more sensitive to
+yellow light.
+
 
 
 file_data: 29.4.3|Transistor|603
+The diode is the simplest semiconductor device, made up of a p-type semiconductor and an
+n-type semiconductor in contact. It can conduct in only one direction, but it cannot control the
+size of an electric current. Transistors are more complicated electronic components which can
+control the size of the electric current flowing through them.
+This enables them to be used in amplifiers. A small signal from a microphone or a radio
+antenna can be used to control the transistor. In response, the transistor will then increase and
+decrease a much larger current which flows through the speakers.
+One of the earliest popular uses of transistors was in cheap and portable radios.
+Before that, radios were much more expensive and contained glass valves which
+were fragile and needed replacing. In some parts of the world you can still hear
+people talking about their ‘transistor’ — they mean their portable radio.
+You can also use a small current to turn the transistor on and off. The transistor then controls
+a more complicated or powerful current through other components. When a transistor is used
+in this way it is said to be in switching mode as it is acting as a remotely controlled switch. As
+we shall see in the final sections of this chapter, switching circuits can be used in a computer
+to process and store digital information. A computer would not work without the millions (or
+billions) of transistors in it.
+There are two main types of transistor - bipolar transistors (NPN or PNP), and field effect
+transistors (FETs). Both use doped semiconductors, but in different ways. You are mainly
+required to know about field effect transistors (FETs), however we have to give a brief
+description of bipolar transistors so that you see the difference.
+Bipolar Transistors
+Bipolar transistors are made of a doped semiconductor ‘sandwich’. In an NPN transistor, a
+very thin layer of p-type semiconductor is in between two thicker layers of n-type
+semiconductor. This is shown in Figure 29.11. Similarly an PNP transistor consists of a very
+thin n-type layer in between two thicker layers of p-type semiconductor.
+In an NPN transistor a small current of electrons flows from the emitter (E) to the base (B).
+Simultaneously, a much larger current of electrons flows from the emitter (E) to the collector
+(C). If you lower the number of electrons able to leave the transistor at the base (B), the
+transistor automatically reduces the number of electrons flowing from emitter (E) to collector
+(C). Similarly, if you increase the current of electrons flowing out of the base (B), the transistor
+automatically also increases the current of electrons flowing from emitter (E) to collector (C).
+The transistor is designed so that the current of electrons from emitter to collector (IEC) is
+proportional to the current of electrons from emitter to base (IEB). The constant of
+proportionality is known as the current gain β. So IEC = βIEB.
+How does it do it? The answer comes from our work with diodes. Electrons arriving at the
+emitter (n-type semiconductor) will naturally flow through into the central p-type since the
+base-emitter junction is forward biased. However if none of these electrons are removed from
+the base, the electrons flowing into the base from the emitter will fill all of the available ‘holes’.
+Accordingly, a large depletion band will be set up. This will act as an insulator preventing
+current flow into the collector as well. On the other hand, if the base is connected to a positive
+voltage, a small number of electrons will be removed by the base connection. This will prevent
+the ‘holes’ in the base becoming filled up, and no depletion band will form. While some
+electrons from the emitter leave via the base connection, the bulk of them flow straight on to
+the collector. You may wonder how the electrons get from the base into the collector (it seems
+to be reverse biased). The answer is complicated, but the important fact is that the p-type
+layer is extremely thin. As long as there is no depletion layer, the bulk of the electrons will have
+no difficulty passing straight from the n-type emitter into the n-type collector. A more
+satisfactory answer can be given to a university student once band theory has been explained.
+Summing up, in an NPN transistor, a small flow of electrons from emitter (E) to base (B)
+allows a much larger flow of electrons from emitter (E) to collector (C). Given that
+conventional current (flowing from + to −) is in the opposite direction to electron flow, we say
+that a small conventional current from base to emitter allows a large current to flow from
+collector to emitter.
+A PNP transistor works the other way. A small conventional current from emitter to base
+allows a much larger conventional current to flow from emitter to collector. The operation is
+more complicated to explain since the principal charge carrier in a PNP transistor is not the
+electron but the ‘hole’.
+The operation of NPN and PNP transistors (in terms of conventional currents) is summarized
+in Figure 29.12.
+The transistor is considered by many to be one of the greatest discoveries or
+inventions in modern history, ranking with banking and the printing press. Key
+to the importance of the transistor in modern society is its ability to be
+produced in huge numbers using simple techniques, resulting in vanishingly
+small prices. Computer “chips” consist of millions of transistors and sell for
+Rands, with per-transistor costs in the thousandths-of-cents. The low cost has
+meant that the transistor has become an almost universal tool for
+non-mechanical tasks. Whereas a common device, say a refrigerator, would
+have used a mechanical device for control, today it is often less expensive to
+simply use a few million transistors and the appropriate computer program to
+carry out the same task through ”brute force”. Today transistors have replaced
+almost all electromechanical devices, most simple feedback systems, and appear
+in huge numbers in everything from computers to cars.
+The transistor was invented at Bell Laboratories in December 1947 (first
+demonstrated on December 23) by John Bardeen, Walter Houser Brattain, and
+William Bradford Shockley, who were awarded the Nobel Prize in physics in
+1956.
+The Field Effect Transistor (FET)
+To control a bipolar transistors, you control the current flowing into or out of its base. The
+other type of transistor is the field effect transistor (FET). FETs work using control voltages
+instead. Accordingly they can be controlled with much smaller currents and are much more
+economic to use.
+No-one would build a computer with billions of bipolar transistors — the
+current in each transistor’s base might be small, but when you add up all of the
+base currents in the millions of transistors, the computer as a whole would be
+consuming a great deal of electricity and making a great deal of heat. Not only
+is this wasteful, it would prevent manufacturers making a computer of
+convenient size. If the transistors were too close together, they would overheat.
+Figure 29.13: A field effect transistor (FET). The diagram on the left shows the semiconductor
+structure. The diagram on the right shows its circuit symbol.
+The three terminals of the FET are called the source (S), drain (D) and gate (G), as shown in
+Figure 29.13. When the gate is not connected, a current of electrons can flow from source (S)
+to drain (D) easily along the channel. The source is, accordingly, the negative terminal of the
+transistor. The drain, where the electrons come out, is the positive terminal of the transistor.
+A few electrons will flow from the n-type channel into the p-type semiconductor of the gate
+when the device is manufactured. However, as these electrons are not removed (the gate is not
+connected), a depletion band is set up which prevents further flow into the gate.
+In operation, the gate is connected to negative voltages relative to the source. This makes the
+p-n junction between gate and channel reverse-biased. Accordingly no current flows from the
+source into the gate. When the voltage of the gate is lowered (made more negative), the
+depletion band becomes wider. This enlarged depletion band takes up some of the space of the
+channel. So the lower the voltage of the gate (the more negative it is relative to the source),
+the larger the depletion band. The larger the depletion band, the narrower the channel. The
+narrower the channel, the harder it is for electrons to flow from source to drain.
+The voltage of the gate is not the only factor affecting the current of electrons between the
+source and the drain. If the external circuit has a low resistance, electrons are able to leave the
+drain easily. If the external circuit has a high resistance, electrons leave the drain slowly. This
+creates a kind of ‘traffic jam’ which slows the passage of further electrons. In this way, the
+voltage of the drain regulates itself, and is more or less independent of the current demanded
+from the drain.
+Once these two factors have been taken into account, it is fair to say that the positive output
+voltage (the voltage of the drain relative to the source) is proportional to the negative input
+voltage (the voltage of the gate relative to the source).
+For this reason, the field effect transistor is known as a voltage amplifier. This contrasts with
+the bipolar transistor which is a current amplifier.
+
 
 
 file_data: 29.4.4|The Operational Amplifier|607
+The operational amplifier is a special kind of voltage amplifier which is made from a handful of
+bipolar or field effect transistors. Operational amplifiers are usually called op-amps for short.
+They are used extensively in all kinds of audio equipment (amplifiers, mixers and so on) and in
+instrumentation. They also have many other uses in other circuit - for example comparing
+voltages from sensors.
+Operational amplifiers are supplied on Integrated Circuits (I.C.s). The most famous operational
+amplifier I.C. is numbered 741 and contains a single operational amplifier on an integrated
+circuit (‘chip’) with eight terminals. Other varieties can be bought, and you can get a single
+integrated circuit with two or four ‘741’-type operational amplifiers on it.
+The symbol for an op-amp is shown in Figure 29.14. The operational amplifier has two input
+terminals and one output terminal. The voltage of the output terminal is proportional to the
+difference in voltage between the two input terminals. The output terminal is on the right (at
+the sharp point of the triangle). The two input terminals are drawn on the left. One input
+terminal (labelled with a + on diagrams) is called the non-inverting input. The other input
+terminal (labelled −) is called the inverting input. The labels + and − have nothing to do
+with the way in which the operational amplifier is connected to the power supply. Operational
+amplifiers must be connected to the power supply, but this is taken for granted when circuit
+diagrams are drawn, and these connections are not shown on circuit diagrams. Usually, when
+drawing electronic circuits, ‘0V’ is taken to mean the negative terminal of the power supply.
+This is not the case with op-amps. For an op-amp, ‘0V’ refers to the voltage midway between
+the + and − of the supply.
+The output voltage of the amplifier Vout is given by the formula
+here A is a constant called the open loop gain, and V+ and V− are the voltages of the two
+input terminals. That said, the output voltage can not be less than the voltage of the negative
+terminal of the battery supplying it or higher than the positive terminal of the battery supplying
+it. You will notice that Vout is positive if V+ > V− and negative if V+ < V−. This is why the − input is called the inverting input: raising its voltage causes the output voltage to drop.
+The input resistance of an operational amplifier is very high. This means that very little current
+flows into the input terminals during operation.
+If all of the transistors in the operational amplifier were identical then the output voltage would
+be zero if the two inputs were at equal voltages. In practice this is not quite the case, and for
+sensitive work a trimming potentiometer is connected. This is adjusted until the op-amp is
+zeroed correctly.
+Simple operational amplifiers require the trimming potentiometer to be built into the circuit
+containing them, and an example is shown in Figure 29.15. Other operational amplifier designs
+incorporate separate terminals for the trimming potentiometer. These special terminals are
+labelled offset on the manufacturer’s diagram. The exact method of connecting the
+potentiometer to the offset terminals can depend on the design of the operational amplifier,
+and you need to refer to the manufacturer’s data sheet for details of which potentiometer to
+use and how to connect it.
+For most commercially produced operational amplifiers (known as op-amps for short), the open
+loop gain A is very large and does not stay constant. Values of 100 000 are typical. Usually a
+designer would want an amplifier with a stable gain of smaller value, and builds the operational
+amplifier into a circuit like the one in Figure 29.15.
+
 
 
 file_data: 29.5|The Principles of Digital Electronics|609
+The circuits and components we have discussed are very useful. You can build a radio or
+television with them. You can make a telephone. Even if that was all there was to electronics,
+it would still be very useful. However, the great breakthrough in the last fifty years or so has
+been in digital electronics. This is the subject which gave us the computer. The computer has
+revolutionized the way business, engineering and science are done. Small computers
+programmed to do a specific job (called microprocessors) are now used in almost every
+electronic machine from cars to washing machines. Computers have also changed the way we
+communicate. We used to have telegraph or telephone wires passing up and down a country —
+each one carrying one telephone call or signal. We now have optic fibres each capable of
+carrying tens of thousands of telephone calls using digital signals.
+So, what is a digital signal? Look at Figure 29.16. A normal signal, called an analogue signal,
+carries a smooth wave. At any time, the voltage of the signal could take any value. It could be
+2,00 V or 3,53 V or anything else. A digital signal can only take certain voltages. The simplest
+case is shown in the figure — the voltage takes one of two values. It is either high, or it is low.
+It never has any other value.
+These two special voltages are given symbols. The low voltage level is written 0, while the high
+voltage level is written as 1. When you send a digital signal, you set the voltage you want (0 or
+1), then keep this fixed for a fixed amount of time (for example 0.01 μs), then you send the
+next 0 or 1. The digital signal in Figure 29.16 could be written 01100101.
+Why are digital signals so good?
+Figure 29.16: The difference between normal (analogue) signals and digital signals. The analogue
+signal is on the left.
+1. Using a computer, any information can be turned into a pattern of 0s and 1s. Pictures,
+recorded music, text and motion pictures can all be turned into a string of 0s and 1s and
+transmitted or stored in the same way. The computer receiving the signal at the other
+end converts it back again. A Compact Disc (CD) for example, can store music or text or
+pictures, and all can be read using a computer.
+2. The 0 and the 1 look very different. You can immediately tell if a 0 or a 1 is being sent.
+Even if there is interference, you can still tell whether the sender sent a 0 or a 1. This
+means that fewer mistakes are made when reading a digital signal. This is why the best
+music recording technologies, and the most modern cameras, for example, all use digital
+technology.
+3. Using the 0s and 1s you can count, and do all kinds of mathematics. This will be
+explained in more detail in the next section.
+The simplest digital circuits are called logic gates. Each logic gate makes a decision based on
+the information it receives. Different logic gates are set up to make the decisions in different
+ways. Each logic gate will be made of many microscopic transistors connected together within
+a thin wafer of silicon. This tiny circuit is called an Integrated Circuit or I.C. - all the parts are
+in one place (integrated) on the silicon wafer.
 
 
 file_data: 29.5.1|Logic Gates|610
+There are five main types of logic gate: NOT, AND, OR, NAND and NOR. Each one makes its
+decision in a different way.
+The NOT Gate
+Problem: You want an automatic circuit in your office to turn on the heating in the winter.
+You already have a digital electronic temperature sensor. When the temperature is high, it
+sends out a 1. When the office is cold, it sends out a 0. If this signal were sent straight to the
+heater, the heater would turn on (1) when it was already hot, and would stay off when it was
+cold. This is wrong! To make the heater work, we need a circuit which will change a 0 (from
+the sensor) into a 1 (to send to the heater). This will make the heater come on when it is cold.
+You also want it to change a 1 (from the sensor) into a 0 (to send to the heater). This will
+turn the heater off when the room is hot. This circuit is called an inverter or NOT gate. It
+changes 0 into 1 (1 is NOT 0). It changes 1 into 0 (0 is NOT 1). It changes a signal into what
+it is NOT.
+The symbol for the NOT gate is:
+The action of the NOT gate is written in a table called a truth table. The left column shows
+the possible inputs on different rows. The right column shows what the output (decision) of
+the circuit will be for that input. The truth table for the NOT gate is shown below.
+When you read the truth table, the top row says, “If the input is 0, the output will be 1.” For
+our heater, this means, “If the room is cold, the heater will turn on.” The bottom row says, “If
+the input is 1, the output will be 0.” For our heater, this means, “If the room is hot, the heater
+will switch off.”
+The AND Gate
+Problem: An airliner has two toilets. Passengers get annoyed if they get up from their seat
+only to find that both toilets are being used and they have to go back to their seat and wait.
+You want to fit an automatic circuit to light up a display if both toilets are in use. Then
+passengers know that if the light is off, there will be a free toilet for them to use. There is a
+sensor in each toilet. It gives out a 0 of the toilet is free, and a 1 if it is in use. You want to
+send a 1 to the display unit if both sensors are sending 1s. To do this, you use an AND gate.
+The symbol for the AND gate is:
+The truth table for the AND gate is shown below. An AND gate has two inputs (the NOT gate
+only had one). This means we need four rows in the truth table, one for each possible set of
+inputs. The first row, for example, tells us what the AND gate will do if both inputs are 0. In
+our airliner, this means that both toilets are free. The right column has a 0 showing that the
+output will be 0, so the display will not light up. The second row has inputs of 0 and 1 (the
+first toilet is free, the other is in use). Again the output is 0. The third row tells us what will
+happen if the inputs are 1 and 0 (the first toilet is in use, and the second is free). Finally, the
+last line tells us what will happen if both inputs are 1 (both toilets are in use). It is only in this
+case that the output is 1 and the display lights up.
+This device is called an AND gate, because the output is only 1 if one input AND the other
+input are both 1.
+Extension: Using 0 and 1 to mean True and False
+When we use logic gates we use the low voltage state 0 to represent ‘false’.
+The high voltage state 1 represents ‘true’. This is why the word AND is so
+appropriate. A AND B is true (1) if, and only if, A is true (1) AND B is true (1).
+Extension: AND and multiplication
+Sometimes, the AND operation is written as multiplication. A AND B is
+written AB. If either A or B are 0, then AB will also be 0. For AB to be 1, we need
+A and B to both be 1. Multiplication of the numbers 0 and 1 does exactly the
+same job as an AND gate.
+The NAND Gate
+Problem: You build the circuit for the airliner toilets using an AND gate. Your customer is
+pleased, but she says that it would be better if the display lit up when there was a free toilet.
+In other words, the display should light up unless both toilets are in use. To do this we want a
+circuit which does the opposite of an AND gate. We want a circuit which would give the
+output 0 if an AND gate would give 1. We want a circuit which would give the output 1 if an
+AND gate would give 0. This circuit is called a NAND gate.
+The symbol for the NAND gate is:
+You may have noticed that we could have done this job on the airliner by using our earlier
+circuit, with a NOT gate added between the original AND gate and the display. This is where
+the word NAND comes from — it is short for NotAND.
+The OR Gate
+Problem: A long, dark corridor has two light switches — one at each end of the corridor. The
+switches each send an output of 0 to the control unit if no-one has pressed the switch. If
+someone presses the switch, its output is 1. The lights in the corridor should come on if either
+switch is pressed. To do this job, the control unit needs an OR gate. The symbol for the OR
+gate is:
+The truth table for the OR gate is shown.
+You can see that the output is 1 (and the lights come on in the corridor) if either one switch
+OR the other is pressed. Pressing both switches also turns on the lights, as the last row in the
+table shows.
+Extension: OR and addition
+Sometimes you will see A OR B written mathematically as A+B. This makes
+sense, since if A=0 and B=0, then A OR B = A+B = 0. Similarly, if A=0 and
+B=1, then A OR B = A+B = 1. If A=1 and B=0, then A OR B = A+B = 1
+once again. The only case where the OR function differs from normal addition is
+when A=1 and B=1. Here A OR B = 1 in logic, but A+B=2 in arithmetic.
+However, there is no such thing as ‘2’ in logic, so we define + to mean ‘OR’, and
+write 1+1=1 with impunity!
+If you wish, you can prove that the normal rules of algebra still work using this
+notation: A+(B+C) = (A+B)+C, A(BC) = (AB)C, and A(B+C) = AB + AC.
+This special kind of algebra where variables can only be 0 (representing false) or 1
+(representing true) is called Boolean algebra.
+The NOR Gate
+The last gate you need to know is the NOR gate. This is opposite to the OR gate. The output
+is 1 if both inputs are 0. In other words, the output switches on if neither the first NOR the
+second input is 1. The symbol for the NOR gate is:
+The truth table for the NOR gate is shown below.
+The examples given were easy. Each job only needed one logic gate. However any ‘decision
+making’ circuit can be built with logic gates, no matter how complicated the decision. Here is
+an example.
+Each logic gate is manufactured from two or more transistors. Other circuits can be made
+using logic gates, as we shall see in the next section. We shall show you how to count and
+store numbers using logic gates. This means that if you have enough transistors, and you
+connect them correctly to make the right logic gates, you can make circuits which count and
+store numbers.
+In practice, the cheapest gate to manufacture is usually the NAND gate. Additionally, Charles
+Peirce showed that NAND gates alone (as well as NOR gates alone) can be used to reproduce
+all the other logic gates.
+
 
 
 file_data: 29.6|Using and Storing Binary Numbers|616
+In the previous section, we saw how the numbers 0 and 1 could represent ‘false’ and ‘true’ and
+could be used in decision making. Often we want to program a computer to count with
+numbers. To do this we need a way of writing any number using nothing other than 0 and 1.
+When written in this way, numbers are called binary numbers.
+Definition: Binary
+A way of writing any number using only the digits 0 and 1.
+
 
 
 file_data: 29.6.1|Binary numbers|616
+In normal (denary) numbers, we write 9+1 as 10. The fact that the ‘1’ in 10 is the second digit
+from the right tells us that it actually means 10 and not 1. Similarly, the ‘3’ in 365 represents
+300 because it is the third digit from the right. You could write 365 as 3 × 100 + 6 × 10 + 5.
+You will notice the pattern that the nth digit from the right represents 10n−1. In binary, we
+use the nth digit from the right to represent 2n−1. Thus 2 is written as 10 in binary. Similarly
+22 = 4 is written as 100 in binary, and 23 = 8 is written as 1000 in binary.
+How do you write numbers as a sum of powers of two? The first power of two
+(the largest) is the largest power of two which is not larger than the number
+you are working with. In our last example, where we wanted to know what
+twelve was in binary, the largest power of two which is not larger than 12 is 8.
+Thus 12 = 8 + something. By arithmetic, the ‘something’ must be 4, and the
+largest power of two not larger than this is 4 exactly. Thus 12 = 8 + 4, and we
+have finished.
+A more complicated example would be to write one hundred in binary. The
+largest power of two not larger than 100 is 64 (1000000 in binary). Subtracting
+64 from 100 leaves 36. The largest power of two not larger than 36 is 32
+(100000 in binary). Removing this leaves a remainder of 4, which is a power of
+two itself (100 in binary). Thus one hundred is 64 + 32 + 4, or in binary
+1000000 + 100000 + 100 = 1100100.
+Once a number is written in binary, it can be represented using the low and high voltage levels
+of digital electronics. We demonstrate how this is done by showing you how an electronic
+counter works.
+
 
 
 file_data: 29.6.2|Counting circuits|617
+To make a counter you need several ‘T flip flops’, sometimes called ‘divide by two’ circuits. A
+T flip flop is a digital circuit which swaps its output (from 0 to 1 or from 1 to 0) whenever the
+input changes from 1 to 0. When the input changes from 0 to 1 it doesn’t change its output.
+It is called a flip flop because it changes (flips or flops) each time it receives a pulse.
+If you put a series of pulses 10101010 into a T flip flop, the result is 01100110. Figure 29.18
+makes this clearer.
+As you can see from Figure 29.18, there are half as many pulses in the output. This is why it is
+called a ‘divide by two’ circuit.
+If we connect T flip flops in a chain, then we make a counter which can count pulses. As an
+example, we connect three T flip flops in a chain. This is shown in Figure 29.19.
+When this circuit is fed with a stream of pulses, the outputs of the different stages change.
+The table below shows how this happens. Each row shows a different stage, with the first stage
+at the top. We assume that all of the flip flops have 0 as their output to start with.
+Figure 29.18: The output of a T flip flop, or ‘divide by two’ circuit when a square wave is
+connected to the input. The output changes state when the input goes from 1 to 0.
+Figure 29.19: Three T flip flops connected together in a chain to make a counter. The input
+of each flip flop is labelled T, while each output is labelled Q. The pulses are connected to the
+input on the left. The outputs Q0, Q1 and Q2 give the three digits of the binary number as the
+pulses are counted. This is explained in the text and in the next table.
+The binary numbers in the right hand column count the pulses arriving at the input. You will
+notice that the output of the first flip flop gives the right most digit of the pulse count (in
+binary). The output of the second flip flop gives the second digit from the right (the ‘twos’
+digit) of the pulse count. The output of the third flip flop gives the third digit from the right
+(the ‘fours’ digit) of the pulse count. As there are only three flip flops, there is nothing to
+provide the next digit (the ‘eights’ digit), and so the eighth pulse is recorded as 000, not 1000.
+This device is called a modulo 8 counter because it can count in eight stages from 000 to 111
+before it goes back to 000. If you put four flip flops in the counter, it will count in sixteen
+stages from 0000 to 1111, and it is called a modulo 16 counter because it counts in sixteen
+stages before going back to 0000.
+Definition: Modulo
+The modulo of a counter tells you how many stages (or pulses) it receives before going back
+to 0 as its output. Thus a modulo 8 counter counts in eight stages 000, 001, 010, 011,
+100, 101, 110, 111, then returns to 000 again.
+
 
 
 file_data: 29.6.3|Storing binary numbers|619
+Counting is important. However, it is equally important to be able to remember the numbers.
+Computers can convert almost anything to a string of 0s and 1s, and therefore to a binary
+number. Unless this number can be stored in the computer’s memory, the computer would be
+useless.
+The memory in the computer contains many parts. Each part is able to store a single 0 or 1.
+Since 0 and 1 are the two binary digits, we say that each part of the memory stores one bit.
+Figure 29.20: A bistable circuit made from two NOR gates. This circuit is able to store one bit
+of digital information. With the two inputs set to 0, you can see that the output could be (and
+will remain) either 0 or 1. The circuit on the left shows an output of 0, the circuit on the right
+shows an output of 1. Wires carrying high logic levels (1) are drawn thicker. The output of the
+bistable is labelled Q.
+Definition: Bit
+One bit is a short way of saying one ‘binary digit’. It is a single 0 or 1.
+If you have eight bits, you can store a binary number from 00000000 to
+11111111 (0 to 255 in denary). This gives you enough permutations of 0s and
+1s to have one for each letter of the alphabet (in upper and lower case), each
+digit from 0 to 9, each punctuation mark and each control code used by a
+computer in storing a document. When you type text into a word processor,
+each character is stored as a set of eight bits. Each set of eight bits is called a
+byte. Computer memories are graded according to how many bytes they store.
+There are 1024 bytes in a kilobyte (kB), 1024 × 1024 bytes in a megabyte
+(MB), and 1024 × 1024 × 1024 bytes in a gigabyte (GB).
+To store a bit we need a circuit which can ‘remember’ a 0 or a 1. This is called a bistable
+circuit because it has two stable states. It can stay indefinitely either as a 0 or a 1. An example
+of a bistable circuit is shown in Figure 29.20. It is made from two NOR gates.
+To store the 0 or the 1 in the bistable circuit, you set one of the inputs to 1, then put it back
+to 0 again. If the input labelled ‘S’ (set) is raised, the output will immediately become 1. This
+is shown in Figure 29.21.
+To store a 0, you raise the ‘R’ (reset) input to 1. This is shown in Figure 29.22.
+Once you have used the S or R inputs to set or reset the bistable circuit, you then bring both
+inputs back to 0. The bistable ‘remembers’ the state. Because of the ease with which the
+circuit can be Reset and Set it is also called a RS flip flop circuit.
+A computer memory will be able to store millions or billions of bits. If it used our circuit above,
+it would need millions or billions of NOR gates, each of which is made from several transistors.
+The computer memory is made of many millions of transistors.
+The bistable circuits drawn here don’t remember 0s or 1s for ever — they lose
+the information if the power is turned off. The same is true for the RAM
+(Random Access Memory) used to store working and temporary data in a
+computer. Some modern circuits contain special memory which can remember
+its state even if the power is turned off. This is used in FLASH drives,
+commonly found in USB data sticks and on the memory cards used with digital
+cameras. These bistable circuits are much more complex.
+You can also make T flip flops out of logic gates, however these are more complicated to design.
+
+
+
+
+
+
+
 
 
 file_data: 30|EM Radiation|625
 
 
 file_data: 30.1|Introduction|625
+This chapter will focus on the electromagnetic (EM) radiation. Electromagnetic radiation is a
+self-propagating wave in space with electric and magnetic components. These components
+oscillate at right angles to each other and to the direction of propagation, and are in phase
+with each other. Electromagnetic radiation is classified into types according to the frequency of
+the wave: these types include, in order of increasing frequency, radio waves, microwaves,
+infrared radiation, visible light, ultraviolet radiation, X-rays and gamma rays.
 
 
 file_data: 30.2|Particle/wave nature of electromagnetic radiation|625
+If you watch a colony of ants walking up the wall, they look like a thin continuous black line.
+But as you look closer, you see that the line is made up of thousands of separated black ants.
+Light and all other types of electromagnetic radiation seems like a continuous wave at first, but
+when one performs experiments on the light, one can notice that the light can have both wave
+and particle like properties. Just like the individual ants, the light can also be made up of
+individual bundles of energy, or quanta of light.
+Light has both wave-like and particle-like properties (wave–particle duality), but only shows one
+or the other, depending on the kind of experiment we perform. A wave-type experiment shows
+the wave nature, and a particle-type experiment shows particle nature. One cannot test the
+wave and the particle nature at the same time. A particle of light is called a photon.
+Definition: Photon
+A photon is a quantum (energy packet) of light.
+The particle nature of light can be demonstrated by the interaction of photons with matter.
+One way in which light interacts with matter is via the photoelectric effect, which will be
+studied in detail in Chapter 31.
 
 
 file_data: 30.3|The wave nature of electromagnetic radiation|626
+Accelerating charges emit electromagnetic waves. We have seen that a changing electric field
+generates a magnetic field and a changing magnetic field generates an electric field. This is the
+principle behind the propagation of electromagnetic waves, because electromagnetic waves,
+unlike sound waves, do not need a medium to travel through. EM waves propagate when an
+electric field oscillating in one plane produces a magnetic field oscillating in a plane at right
+angles to it, which produces an oscillating electric field, and so on. The propagation of
+electromagnetic waves can be described as mutual induction.
+These mutually regenerating fields travel through space at a constant speed of 3 × 108m · s−1,
+represented by c.
 
 
 file_data: 30.4|Electromagnetic spectrum|626
+Observe the things around you, your friend sitting next to you, a large tree across the field.
+How is it that you are able to see these things? What is it that is leaving your friend’s arm and
+entering your eye so that you can see his arm? It is light. The light originally comes from the
+sun, or possibly a light bulb or burning fire. In physics, light is given the more technical term
+electromagnetic radiation, which includes all forms of light, not just the form which you can see
+with your eyes.
+Electromagnetic radiation allows us to observe the world around us. It is this radiation which
+reflects off of the objects around you and into your eye. The radiation your eye is sensitive to is
+only a small fraction of the total radiation emitted in the physical universe. All of the different
+fractions taped together make up the electromagnetic spectrum.
+When white light is split into its component colours by a prism, you are looking
+at a portion of the electromagnetic spectrum.
+The wavelength of a particular electromagnetic radiation will depend on how it was created.
+The radiation can take on any wavelength, which means that the spectrum is continuous.
+Physicists broke down this continuous band into sections. Each section is defined by how the
+radiation is created, not the radiations wavelength. But each category is continuous within the
+min and max wavelength of that category, meaning there are no wavelengths excluded within
+some range.
+The spectrum is in order of wavelength, with the shortest wavelength at one end and the
+longest wavelength at the other. The spectrum is then broken down into categories as detailed
+in Table 30.1.
+Since an electromagnetic wave is still a wave, the following equation that you learnt in Grade
+10 still applies:
+c = f · λ
+In theory the spectrum is infinite, although realistically we can only observe wavelengths from a
+few hundred kilometers to those of gamma rays due to experimental limitations.
+Humans experience electromagnetic waves differently depending on their wavelength. Our eyes
+are sensitive to visible light while our skin is sensitive to infrared, and many wavelengths we do
+not detect at all.
+
 
 
 file_data: 30.5|The particle nature of electromagnetic radiation|629
+When we talk of electromagnetic radiation as a particle, we refer to photons, which are packets
+of energy. The energy of the photon is related to the wavelength of electromagnetic radiation
+according to: h is called Planck’s constant.
+Definition: Planck’s constant
+Planck’s constant is a physical constant named after Max Planck.
+h = 6,626 × 10−34 J · s
+The energy of a photon can be calculated using the formula: E = hf or E = h c
+λ. Where E is
+the energy of the photon in joules (J), h is planck’s constant, c is the speed of light, f is the
+frequency in hertz (Hz) and λ is the wavelength in metres (m).
+
 
 
 file_data: 30.5.1|Exercise - particle nature of EM waves|630
 
 
 file_data: 30.6|Penetrating ability of electromagnetic radiation|631
+Different kinds of electromagnetic radiation have different penetrabilities. For example, if we
+take the human body as the object. Infrared light is emitted by the human body. Visible light
+is reflected off the surface of the human body, ultra-violet light (from sunlight) damages the
+skin, but X-rays are able to penetrate the skin and bone and allows for pictures of the inside of
+the human body to be taken.
+If we compare the energy of visible light to the energy of X-rays, we find that X-rays have a
+much higher energy. Usually, kinds of electromagnetic radiation with higher energy have higher
+penetrabilities than those with low energies.
+Certain kinds of electromagnetic radiation such as ultra-violet radiation, X-rays and gamma
+rays are very dangerous. Radiation such as these are called ionising radiation. Ionising radiation
+loses energy as it passes through matter, breaking molecular bonds and creating ions.
+Excessive exposure to radiation, including sunlight, X-rays and all nuclear radiations, can cause
+destruction of biological tissue.
+
 
 
 file_data: 30.6.1|Ultraviolet(UV) radiation and the skin|631
+UVA and UVB are different ranges of frequencies for ultraviolet (UV) light. UVA and UVB can
+damage collagen fibres which results in the speeding up skin aging. In general, UVA is the least
+harmful, but it can contribute to the aging of skin, DNA damage and possibly skin cancer. It
+penetrates deeply and does not cause sunburn. Because it does not cause reddening of the skin
+(erythema) it cannot be measured in the SPF testing. There is no good clinical measurement
+of the blocking of UVA radiation, but it is important that sunscreen block both UVA and UVB.
+UVB light can cause skin cancer. The radiation excites DNA molecules in skin cells, resulting
+in possible mutations, which can cause cancer. This cancer connection is one reason for
+concern about ozone depletion and the ozone hole.
+As a defense against UV radiation, the body tans when exposed to moderate (depending on
+skin type) levels of radiation by releasing the brown pigment melanin. This helps to block UV
+penetration and prevent damage to the vulnerable skin tissues deeper down. Suntan lotion,
+often referred to as sunblock or sunscreen, partly blocks UV and is widely available. Most of
+these products contain an SPF rating that describes the amount of protection given. This
+protection, however, applies only to UVB rays responsible for sunburn and not to UVA rays
+that penetrate more deeply into the skin and may also be responsible for causing cancer and
+wrinkles. Some sunscreen lotion now includes compounds such as titanium dioxide which helps
+protect against UVA rays. Other UVA blocking compounds found in sunscreen include zinc
+oxide and avobenzone.
+
+
 
 
 file_data: 30.6.2|Ultraviolet radiation and the eyes|632
+High intensities of UVB light are hazardous to the eyes, and exposure can cause welder’s flash
+(photo keratitis or arc eye) and may lead to cataracts, pterygium and pinguecula formation.
+Protective eyewear is beneficial to those who are working with or those who might be exposed
+to ultraviolet radiation, particularly short wave UV. Given that light may reach the eye from the
+sides, full coverage eye protection is usually warranted if there is an increased risk of exposure,
+as in high altitude mountaineering. Mountaineers are exposed to higher than ordinary levels of
+UV radiation, both because there is less atmospheric filtering and because of reflection from
+snow and ice.
+Ordinary, untreated eyeglasses give some protection. Most plastic lenses give more protection
+than glass lenses. Some plastic lens materials, such as polycarbonate, block most UV. There
+are protective treatments available for eyeglass lenses that need it which will give better
+protection. But even a treatment that completely blocks UV will not protect the eye from light
+that arrives around the lens. To convince yourself of the potential dangers of stray UV light,
+cover your lenses with something opaque, like aluminum foil, stand next to a bright light, and
+consider how much light you see, despite the complete blockage of the lenses. Most contact
+lenses help to protect the retina by absorbing UV radiation.
+
+
 
 
 file_data: 30.6.3|X-rays|632
+While x-rays are used significantly in medicine, prolonged exposure to X-rays can lead to cell
+damage and cancer.
+For example, a mammogram is an x-ray of the human breast to detect breast cancer, but if a
+woman starts having regular mammograms when she is too young, her chances of getting
+breast cancer increases.
+
+
 
 
 file_data: 30.6.4|Gamma-rays|632
+Due to the high energy of gamma-rays, they are able to cause serious damage when absorbed
+by living cells.
+Gamma-rays are not stopped by the skin and can induce DNA alteration by interfering with the
+genetic material of the cell. DNA double-strand breaks are generally accepted to be the most
+biologically significant lesion by which ionising radiation causes cancer and hereditary disease.
+A study done on Russian nuclear workers exposed to external whole-body gamma-radiation at
+high cumulative doses shows a link between radiation exposure and death from leukaemia,
+lung, liver, skeletal and other solid cancers.
+Extension: Cellphones and electromagnetic radiation
+Cellphone radiation and health concerns have been raised, especially following
+the enormous increase in the use of wireless mobile telephony throughout the
+world. This is because mobile phones use electromagnetic waves in the microwave
+range. These concerns have induced a large body of research. Concerns about
+effects on health have also been raised regarding other digital wireless systems,
+such as data communication networks.
+The World Health Organization has officially ruled out adverse health effects
+from cellular base stations and wireless data networks, and expects to make
+recommendations about mobile phones in 2007-08.
+Cellphone users are recommended to minimise radiation, by for example:
+1. Use hands-free to decrease the radiation to the head.
+2. Keep the mobile phone away from the body.
+3. Do not telephone in a car without an external antenna.
 
 
 file_data: 30.6.5|Exercise - Penetrating ability of EM radiation|633
@@ -5840,58 +8107,504 @@ file_data: 30.7|Summary|633
 file_data: 30.8|End of chapter exercise|633
 
 
+
+
+
+
 file_data: 31|Optical Phenomena and Properties of Matter - Grade 12|635
 
 
+
 file_data: 31.1|Introduction|635
+For centuries physicists argued about whether light was a particle or a wave. It was assumed
+that light could only be one or the other, but not both.
+In earlier chapters on waves (Chapters 6, 24, 25, 26) and optics (Chapters 7 and 13), you
+studied how light or other electromagnetic radiation propagates like a wave. The wave nature
+of light of was demonstrated by the propagation of light in examples such as diffraction,
+interference, and polarisation of light.
+You also saw in Chapter 30 on electromagnetic radiation how light sometimes behaves as a
+particle. This chapter looks at evidence supporting the particle model of light. The idea that
+light can have both wave and particle properties was one of the most important discoveries of
+the twentieth century.
 
 
 file_data: 31.2|The transmission and scattering of light|635
 
 
 file_data: 31.2.1|Energy levels of an electron|635
+We have seen that the electrons in an atom have different energy levels. When the electron
+receives enough energy, it can jump up to a higher energy level. This is called ’exciting’ the
+electron. When the electron in a high energy level sheds some energy, it drops to a lower
+energy level.
+We have also seen that the energy associated with light at a specific wavelength is given by:
+E =
+hc
+λ
+.
+In the particle model of light, this means that each packet of light (photon) at a wavelength λ
+has energy:
+E =
+hc
+λ
+.
+For the electron to receive energy, it absorbs a photon and gets its energy. When an electron
+loses energy to drop to a lower level, it emits (gives off) a photon with that energy.
+
 
 
 file_data: 31.2.2|Interaction of light with metals|636
+When light encounters or passes through a material, the photons of the light interact with the
+atoms or molecules of the material. Depending on the strength of the interactions and how
+often they happen, the light will pass through the material or be scattered in some other
+direction.
+Each wavelength of light relates to a particular energy, and the closer that energy is to the
+energy difference between two of the levels of the atom, the likelier the photon is to interact
+with the atom.
+When visible or ultraviolet (UV) radiation shines on a metal, the photons are absorbed by the
+electrons in the metal. The electrons are then excited up to a higher energy level. When an
+electron returns to a lower energy level, another photon is emitted. This is how light is
+reflected off a metal surface.
+In previous chapters, you have studied geometrical optics, which tells us what happens to rays
+of light when they are reflected off a surface or refracted through a lens. That tells us what
+happens to light rays, made up of many photons, on a large scale. If you look at a smaller
+level, i.e. on a microscopic scale, then reflection and refraction happen by all the photons
+interacting with the atoms of the lens or mirror. The photons get absorbed and re-emitted
+many times before emerging as the finals rays of light that we see.
+Scattering of light is responsible for many effects in everyday life. We see that certain materials
+are red or blue, for example, since they contain materials that have energy level differences that
+correspond to the energies of the photons that make up red or blue light. These materials then
+reflect the red or blue light and absorb the other wavelengths in the visible spectrum. White
+objects reflect photons of all wavelengths in the visual spectrum, while black objects absorb
+these photons.
+Because a truly black object absorbs all the visual wavelengths of light, and
+does not re-emit photons at visual wavelengths, we can say that ’black’ is not a
+colour itself, but rather a lack of colour! Also, since black objects absorb visual
+light, they heat up more than objects of other colours which reflect light at
+certain wavelengths.
+Metals generally reflect most wavelengths of visible light, but they will reflect the light in a
+certain direction, given by the laws of reflection in geometrical optics. This is different to most
+materials, like wood or fabric, which reflect light in all directions. Metals have this property
+since they have electrons that are not bound to atoms and can move freely through the metal.
+This is unlike most other materials that have their electrons bound closely to the atoms. These
+free electrons in metals can then absorb and reflect photons of a wide range of energies.
+Ultraviolet light (which has shorter wavelengths than visible light) will pass through some
+substances, such as many plastics, because they do not have the right energy levels to absorb it
+and re-emit it. X-rays (also short wavelengths) will also pass through most materials, since the
+energies of X-rays correspond to the energy levels of atomic nuclei. Such nuclei are much
+smaller than atoms, so it is much less likely for an X-ray to hit a nucleus instead of the whole
+atom.
+Most materials will absorb infrared radiation (longer wavelengths than visible light), since the
+energies of that radiation often correspond to rotational or vibrational energy levels of
+molecules.
+
+
 
 
 file_data: 31.2.3|Why is the sky blue?|637
+The sun emits light in many different wavelengths, including all of the visible wavelengths.
+Light which is made up of all the visible wavelengths appears white. So what causes the sky to
+look blue?
+The air is not just full of nitrogen and oxygen gases. It is also full of tiny dust grains. The light
+from the sun scatters off these many dust grains.
+The chance that the light will scatter off one of these dust grains is bigger for shorter
+wavelengths. The short wavelength blue light is therefore scattered much more than the other
+colors. At noon, when the light from the sun is coming straight down (see the picture below),
+the scattered blue light reaches your eyes from all directions and so the sky appears blue. The
+other wavelengths do not get scattered much and therefore miss your line of sight. At sunrise
+or sunset, the direction of the light coming from the sun is now straight towards your eyes (see
+picture below). Therefore the scattered blue light can’t be seen because it is scattered out of
+your line of sight. The redder colours (oranges and reds) can now be seen because they are not
+scattered as much and still fall in your line of sight.
+
 
 
 file_data: 31.3|The photoelectric effect|638
+Around the turn of the twentieth century, it was observed by a number of physicists (including
+Hertz, Thomson and Von Lenard) that when light was shone on a metal, electrons were
+emitted by the metal. This is called the photoelectric effect. (photo- for light, electric- for the
+electron.)
+Definition: The photoelectric effect
+The photoelectric effect is the process whereby an electron is emitted by a metal when light
+shines on it.
+At that time, light was thought to be purely a wave. Therefore, physicists thought that if a
+more intense (i.e. brighter) light was shone on a metal, then the electrons would be knocked
+out with greater kinetic energies than if a faint light was shone on them. However, Von Lenard
+observed that this did not happen at all. The intensity of the light made no difference to the
+kinetic energy of the emitted electrons! Also, it was observed that the electrons were emitted
+immediately when light was shone on the metal - there was no time delay.
+Einstein solved this problem by proposing that light is made up of packets of energy called
+quanta (now called photons) which interacted with the electrons in the metal like particles
+instead of waves. Each incident photon would transfer all its energy to one electron in the
+metal. For a specific colour of light (i.e. a certain wavelength or frequency), the energy of the
+photons is given by E = hf = hc/λ, where h is Planck’s constant. The energy needed to
+knock an electron out of the metal is called the work function (symbol φ) of the metal.
+Therefore, the amount of energy left over as the kinetic energy (Ek) of the emitted electron
+would be the difference between the incoming photon’s energy and the energy needed to knock
+out the electron (work function of the metal):
+Ek = hf − φ
+Increasing the intensity of the light (i.e. making it brighter) did not change the wavelength of
+the light and therefore the electrons would be emitted with the same kinetic energy as before!
+This solved the paradox and showed that light has both a wave nature and a particle nature.
+Einstein won the Nobel prize for this quantum theory and his explanation of the photoelectric
+effect.
+Increasing the intensity of the light actually means increasing the number of incident photons.
+Therefore, since each photon only gives energy to one electron, more incident photons
+meansmore electrons would be knocked out of the metal, but their kinetic energies would be
+the same as before.
+The photoelectric effect was first observed in the experiments of Heinrich Hertz
+in 1887. In 1899 J.J. Thomson proved that it was electrons that were emitted.
+The photoelectric effect was theoretically explained by Albert Einstein in 1905.
+The discovery and understanding of the photoelectric effect was one of the major
+breakthroughs in science in the twentieth century as it provided concrete evidence of the
+particle nature of light. It overturned previously held views that light was composed purely of a
+continuous transverse wave. On the one hand, the wave nature is a good description of
+phenomena such as diffraction and interference for light, and on the other hand, the
+photoelectric effect demonstrates the particle nature of light. This is now known as the
+‘dual-nature’ of light. (dual means two)
+While solving problems we need to decide for ourselves whether we should consider the wave
+property or the particle property of light. For example, when dealing with interference and
+diffraction, light should be treated as a wave, whereas when dealing with photoelectric effect
+we consider the particle nature.
+
 
 
 file_data: 31.3.1|Applications of the photoelectric effect|640
+We have learnt that a metal contains electrons that are free to move between the valence and
+conduction bands. When a photon strikes the surface of a metal, it gives all its energy to one
+electron in the metal.
+• If the photon energy is equal to the energy between two energy levels then the electron is
+excited to the higher energy level.
+• If the photon energy is greater than or equal to the work function (energy needed to
+escape from the metal), then the electron is emitted from the surface of the metal (the
+photoelectric effect).
+The work function is different for different elements. The smaller the work function, the easier
+it is for electrons to be emitted from the metal. Metals with low work functions make good
+conductors. This is because the electrons are attached less strongly to their surroundings and
+can move more easily through these materials. This reduces the resistance of the material to
+the flow of current i.e. it conducts well. Table 31.1 shows the work functions for a range of
+elements.
+The electron volt is the kinetic energy gained by an electron passing through
+a potential difference of one volt (1 V). A volt is not a measure of energy, but
+the electron volt is a unit of energy. When you connect a 1.5 Volt battery to
+a circuit, you can give 1.5 eV of energy to every electron.
+
+
 
 
 file_data: 31.3.2|Real-life applications|642
+Solar Cells
+The photo-electric effect may seem like a very easy way to produce electricity from the sun.
+This is why people choose to make solar panels out of materials like silicon, to generate
+electricity. In real-life however, the amount of electricity generated is less than expected. This
+is because not every photon knocks out an electron. Other processes such as reflection or
+scattering also happen. This means that only a fraction ≈ 10% (depends on the material) of
+the photons produce photoelectrons. This drop in efficiency results in a lower measured current.
+Much work is being done in industry to improve this efficiency so that the panels can generate
+as high a current as possible, and create as much electricity as possible form the sun. But even
+these smaller electrical currents are useful in applications like solar-powered calculators.
+
 
 
 file_data: 31.4|Emission and absorption spectra|643
 
 
 file_data: 31.4.1|Emission Spectra|643
+You have learnt previously about the structure of an atom. The electrons surrounding the
+atomic nucleus are arranged in a series of levels of increasing energy. Each element has its own
+distinct set of energy levels. This arrangement of energy levels serves as the atom’s unique
+fingerprint.
+In the early 1900s, scientists found that a liquid or solid heated to high temperatures would
+give off a broad range of colours of light. However, a gas heated to similar temperatures would
+emit light only at certain specific colours (wavelengths). The reason for this observation was
+not understood at the time.
+Scientists studied this effect using a discharge tube.
+Figure 31.3: Diagram of a discharge tube. The tube is filled with a gas. When a high enough
+voltage is applied to both ends of the tube, the gas ionises and acts like a conductor, allowing a
+current to flow through the circuit. The current excites the atoms of the ionised gas. When the
+atoms fall back to their ground state, they emit photons to carry off the excess energy.
+A discharge tube (Figure 31.3) is a glass gas-filled tube with a metal plate at both ends. If a
+large enough voltage difference is applied between the two metal plates, the gas atoms inside
+the tube will absorb enough energy to make some of their electrons come off i.e. the gas atoms
+are ionised. These electrons start moving through the gas and create a current, which raises
+some electrons in other atoms to higher energy levels. Then as the electrons in the atoms fall
+back down, they emit electromagnetic radiation. The amount of light emitted at different
+wavelengths, called the emission spectrum, is shown for a discharge tube filled with hydrogen
+gas in figure 31.4 below. Only certain wavelengths (i.e. colours) of light are seen as shown by
+the thick black lines in the picture.
+Figure 31.4: Diagram of the emission spectrum of hydrogen in the visible spectrum. Four lines
+are visible, and are labeled with their wavelengths. The three lines in the 400–500 nm range are
+in the blue part of the spectrum, while the higher line (656 nm) is in the red/orange part.
+Eventually, scientists realized that these lines come from photons of a specific energy, emitted
+by electrons making transitions between specific energy levels of the atom. Figure ?? shows an
+example of this happening. When an electron in an atom falls from a higher energy level to a
+lower energy level, it emits a photon to carry off the extra energy. This photon’s energy is
+equal to the energy difference between the two energy levels. As we previously discussed, the
+frequency of a photon is related to its energy through the equation E = hf. Since a specific
+photon frequency (or wavelength) gives us a specific colour, we can see how each coloured line
+is associated with a specific transition.
+Figure 31.5: In this diagram are shown some of the electron energy levels for the hydrogen atom.
+The arrows show the electron transitions from higher energy levels to lower energy levels. The
+energies of the emitted photons are the same as the energy difference between two energy levels.
+You can think of absorption as the opposite process. The arrows would point upwards and the
+electrons would jump up to higher levels when they absorp a photon of the right energy.
+Visible light is not the only kind of electromagnetic radiation emitted. More energetic or less
+energetic transitions can produce ultraviolet or infrared radiation. However, because each atom
+has its own distinct set of energy levels (its fingerprint!), each atom has its own distinct
+emission spectrum.
+
 
 
 file_data: 31.4.2|Absorption spectra|644
+As you know, atoms do not only emit photons; they also absorb photons. If a photon hits an
+atom and the energy of the photon is the same as the gap between two electron energy levels
+in the atom, then the electron can absorb the photon and jump up to the higher energy level.
+If the atom has no energy level differences that equal the incoming photon’s energy, it cannot
+absorb the photon, and can only scatter it.
+Using this effect, if we have a source of photons of various energies we can obtain the
+absorption spectra for different materials. To get an absorption spectrum, just shine white
+light on a sample of the material that you are interested in. White light is made up of all the
+different wavelengths of visible light put together. In the absorption spectrum, the energy levels
+corresponding to the absorbed photons show up as black lines because the photons of these
+wavelengths have been absorbed and don’t show up. Because of this, the absorption spectrum
+is the exact inverse of the emission spectrum. Look at the two figures below. In figure 31.6 you
+can see the emission lines of hyrodrogen. Figure 31.7 shows the absorption spectrum. It is the
+exact opposite of the emission spectrum! Both emission and absorption techniques can be used
+to get the same information about the energy levels of an atom.
 
 
 file_data: 31.4.3|Colours and energies of electromagnetic radiation|646
+We saw in the explanation of why the sky is blue that different wavelengths or frequencies of
+light correspond to different colours of light. The table below gives the wavelengths and
+colours for light in the visible spectrum:
+We also know that the energy of a photon of light can be found from:
+E = hf =
+hc
+λ
+Therefore if we know the frequency or wavelength of light, we can calculate the photon’s
+energy and vice versa.
+
+
 
 
 file_data: 31.4.4|Applications of emission and absorption spectra|648
+The study of spectra from stars and galaxies in astronomy is called spectroscopy. Spectroscopy
+is a tool widely used in astronomy to learn different things about astronomical objects.
+Identifying elements in astronomical objects using their spectra
+Measuring the spectrum of light from a star can tell astronomers what the star is made of!
+Since each element emits or absorbs light only at particular wavelengths, astronomers can
+identify what elements are in the stars from the lines in their spectra. From studying the
+spectra of many stars we know that there are many different types of stars which contain
+different elements and in different amounts.
+Determining velocities of galaxies using spectroscopy
+You have already learned in Chapter 24 about the Doppler effect and how the frequency (and
+wavelength) of sound waves changes depending on whether the object emitting the sound is
+moving towards or away from you. The same thing happens to electromagnetic radiation. If
+the object emitting the light is moving towards us, then the wavelength of the light appears
+shorter (called blue-shifted). If the object is moving away from us, then the wavelength of its
+light appears stretched out (called red-shifted).
+The Doppler effect affects the spectra of objects in space depending on their motion relative to
+us on the earth. For example, the light from a distant galaxy, which is moving away from us at
+some velocity, will appear red-shifted. This means that the emission and absorption lines in the
+galaxy’s spectrum will be shifted to a longer wavelength (lower frequency). Knowing where
+each line in the spectrum would normally be if the galaxy was not moving, and comparing to
+their red-shifted positions, allows astronomers to precisely measure the velocity of the galaxy
+relative to the earth!
+Global warming and greenhouse gases
+The sun emits radiation (light) over a range of wavelengths which are mainly in the visible part
+of the spectrum. Radiation at these wavelengths passes through the gases of the atmosphere
+to warm the land and the oceans below. The warm earth then radiates this heat at longer
+infrared wavelengths. Carbon-dioxide (one of the main greenhouse gases) in the atmosphere
+has energy levels which correspond to the infrared wavelengths which allow it to absorb the
+infrared radiation. It then also emits at infrared wavelengths in all directions. This effect stops
+a large amount of the infrared radiation getting out of the atmosphere, which causes the
+atmosphere and the earth to heat up. More radiation is coming in than is getting back out.
+Therefore increasing the amount of greenhouse gases in the atmosphere increases the amount
+of trapped infrared radiation and therefore the overall temperature of the earth. The earth is a
+very sensitive and complicated system upon which life depends and changing the delicate
+balances of temperature and atmospheric gas content may have disastrous consequences if we
+are not careful.
+
 
 
 file_data: 31.5|Lasers|650
+A laser is a device that produces a special type of light: all the laser photons are identical!
+They all have the same wavelength (and frequency), amplitude and phase. Since they all have
+the same wavelength, this means they all have the same colour and the light is called
+monochromatic. (Note: mono means ”one” or ”single” and chromatic means ”colour”.)
+This is very different to most other light sources which produce light with a range of
+wavelengths (e.g. white light from the sun consists of all the visible wavelengths.)
+Laser light is highly directional and can be focused very well. This focus allows laser beams to
+be used over long distances, and to pack a lot of energy into the beam while still requiring
+reasonably small amounts of energy to be generated. Each centimetre of a typical laser beam
+contains many billions of photons. These special properties of laser light come from the way in
+which the laser photons are created and the energy levels of the material that makes up the
+laser. These properties make laser light extremely useful in many applications from CD players
+to eye surgery.
+The term LASER stands for Light Amplification by the Stimulated Emission of Radiation.
+This stimulated emission is different to the spontaneous emission already discussed earlier.
+Let’s review the absorption and emission processes which can occur in atoms.
+• Absorption: As you can see in the picture above, absorption happens when an electron
+jumps up to a higher energy level by absorbing a photon which has an energy equal to
+the energy difference between the two energy levels.
+• Spontaneous emission: Spontaneous emission is when an electron in a higher energy
+level drops down to a lower energy level and a photon is emitted with an energy equal to
+the energy difference between the two levels. There is no interference in this process
+from outside factors. Usually spontaneous emission happens very quickly after an
+electron gets into an excited state. In other words, the lifetime of the excited state is
+very short. However, there are some excited states where an electron can remain in the
+higher energy level for a longer time than usual before dropping down to a lower level.
+These excited states are called metastable states.
+• Stimulated emission: As the picture above shows, stimulated emission happens when
+a photon with an energy equal to the energy difference between two levels interacts with
+an electron in the higher level. This stimulates the electron to emit an identical photon
+and drop down to the lower energy level. This process results in two photons at the end.
+Definition: Spontaneous Emission
+Spontaneous emission occurs when an atom is in an unstable excited state and randomly
+decays to a less energetic state, emitting a photon to carry off the excess energy. The
+unstable state decays in a characteristic time, called the lifetime.
+Definition: Meta-stable state
+A meta-stable state is an excited atomic state that has an unusually long lifetime, compared
+to the lifetimes of other excited states of that atom. While most excited states have lifetimes
+measured in microseconds and nanoseconds (10−6 s and 10−9 s), meta-stable states can
+have lifetimes of milliseconds (10−3 s) or even seconds.
+Definition: Stimulated emission
+Stimulated emission occurs when a photon interacts with an excited atom, causing the atom
+to decay and emit another identical photon.
+
 
 
 file_data: 31.5.1|How a laser works|652
+The important process involved in how a laser works is stimulated emission - as you can tell
+from what ‘laser’ stands for! You can imagine that stimulated emission can lead to more and
+more identical photons being released in the following way: Imagine we have an electron in an
+excited metastable state and it drops down to the ground state by emitting a photon. If this
+photon then travels through the material and meets another electron in the metastable excited
+state this will cause the electron to drop down to the lower energy level and another photon to
+be emitted. Now there are two photons of the same energy. If these photons then both move
+through the material and each interacts with another electron in a metastable state, this will
+result in them each causing an additional photon to be released. i.e. from 2 photons we then
+get 4, and so on! This is how laser light is produced.
+Figure 31.8: Spontaneous emission is a two step process, as shown here. First, energy from
+an external source is applied to an atom in the laser medium, raising its energy to an excited
+(metastable) state. After some time, it will decay back down to its ground state and emit the
+excess energy in the form of a photon. This is the first stage in the formation of a laser beam.
+Figure 31.9: Stimulated emission is also a two step process, as shown here. First, a laser photon
+encounters an atom that has been raised to an excited state, just like in the case of spontaneous
+emission. The photon then causes the atom to decay to its ground state and emit another
+photon identical to the incoming photon. This is the second step in the creation of a laser beam.
+It happens many, many times as the laser photons pass through the optical cavity until the laser
+beam builds up to full strength.
+This can only happen if there are many electrons in a metastable state. If most of the electrons
+are in the ground state, then they will just absorb the photons and no extra photons will be
+emitted. However, if more electrons are in the excited metastable state than in the ground
+state, then the process of stimulated emission will be able to continue. Usually in atoms, most
+of the electrons are in the lower energy levels and only a few are in excited states. When most
+of the electrons are in the excited metastable state and only a few are in the ground state, this
+is called population inversion (the populations are swapped around) and this is when
+stimulated emission can occur. To start off the process, the electrons first have to be excited
+up into the metastable state. This is done using an external energy source.
+Definition: Population inversion
+Population inversion is when more atoms are in an excited state than in their ground state.
+It is a necessary condition to sustain a laser beam, so that there are enough excited atoms
+that can be stimulated to emit more photons.
+Therefore, materials used to make laser light must must have metastable states which can
+allow population inversion to occur when an external energy source is applied. Some
+substances which are used to make lasers are listed in table 31.3. You can see that gases (such
+as Helium-Neon mixture), liquids (such as dyes), and solids (such as the precious stone ruby)
+are all used to make lasers.
+Material Type Wavelength Uses
+Helium–Neon gas 632,8 nm scientific research, holography
+Argon ion gas 488,0 nm medicine,
+Carbon dioxide gas 10,6 μm industry (cutting, welding), surgery
+Helium–Cadmium vapor 325 nm printing, scientific research
+Ruby solid–state 694,3 nm holography
+Neodymium YAG solid–state 1,064 μm industry, surgery, research
+(Yttrium Aluminium
+Garnet)
+Titanium–Sapphire solid–state 650–1100 nm research
+Laser diode semiconductor 375–1080 nm telecommunications, industry,
+printing, CD players, laser pointers
+Table 31.3: A selection of different lasers. The laser material and general type of each laser is
+given, along with typical wavelengths of the laser light they create. Examples of the real-world
+applications it is used for are also given. All these materials allow a population inversion to be
+set up.
+The first working laser, using synthetic ruby as the laser material, was made by
+Theodore H. Maiman at Hughes Research Laboratories in Malibu, California.
+Later in the same year the Iranian physicist Ali Javan, together with William
+Bennet and Donald Herriot, made the first gas laser using helium and neon.
+Javan received the Albert Einstein Award in 1993.
 
 
 file_data: 31.5.2|A simple laser|654
+A laser consists of a number of different parts that work together to create the laser beam.
+Figure 31.10 shows the different parts of the laser, while Figure 31.11 shows how they create
+the laser beam.
+The basis of the laser is the laser material. The laser material consists of the atoms that are
+used to create the laser beam. Many different materials can be used as laser material, and their
+energy levels determine the characteristics of the laser. Some examples of different lasers are
+shown in Table 31.3. The laser material is contained in the optical cavity.
+Before the laser is turned on, all the atoms in the laser material are in their ground state. The
+first step in creating a laser beam is to add energy to the laser material to raise most of the
+electrons into an excited metastable state. This is called pumping the laser.
+The creation of the laser beam starts through the process of spontaneous emission, shown in
+Figure 31.8. An electron drops down to the ground state and emits a photon with energy equal
+to the energy difference of the two energy levels. This laser photon is the beginning of the laser
+Figure 31.11: Diagram of a laser showing the process of creating a laser beam. (1) A source
+of external energy is applied to the laser medium, raising the atoms to an excited state. (2)
+An excited atom decays though spontaneous emission, emitting a photon. (3) The photon
+encounters another excited atom and causes it to decay through stimulated emission, creating
+another photon. (4) The photons bounce back and forth through the laser medium between
+the mirrors, building up more and more photons. (5) A small percentage of the photons pass
+through the partially-silvered mirror to become the laser beam we see.
+beam.
+Sometimes a laser photon runs into another excited electron. Then stimulated emission occurs
+and the electron drops down to the ground state and emits an additional identical photon as
+shown in Figure 31.9. Since the laser material typically has a large number of atoms, one laser
+photon passing through this material will rapidly cause a large number of photons just like it to
+be emitted.
+The optical cavity keeps the laser photons inside the laser cavity so they can build up the laser
+beam. At each end is a concave mirror; one is a full mirror and one is a partial mirror. The full
+mirror is totally reflective. The partial mirror transmits a small amount of the light that hits
+it(less than 1%). The mirrors are carefully aligned so that photons that reflect off one mirror
+become “trapped”, and bounce back and forth between the mirrors many times causing more
+and more stimulated emission. The photons that eventually escape through the
+partially-silvered mirror become the laser beam that we see.
+As the photons bounce between mirrors, they continually pass through the laser material,
+stimulating those atoms to emit more photons. This creates an ever increasing beam of
+photons, all with the same characteristics, all traveling in the same direction. In this way, the
+optical cavity helps to amplify the original laser photons into a concentrated, intense beam of
+photons.
+The laser cavity also helps to narrow the frequency range of laser light emitted. The distance
+between the two mirrors defines the cavity mode which only allows light of a narrow range of
+frequencies to continue being reflected back and forth. Light of other frequencies damped out.
+(This is just like in the chapter on the physics of music where a pipe of a certain length
+corresponds to a particular wavelength of sound.) Therefore only a narrow frequency of light
+can be emitted.
+In 1953, Charles H. Townes and graduate students James P. Gordon and
+Herbert J. Zeiger produced the first maser, a device operating on similar
+principles to the laser, but producing microwave rather than optical radiation.
+Townes’s maser was incapable of making a continuous beam. Nikolay Basov
+and Aleksandr Prokhorov of the former Soviet Union worked independently and
+developed a method of making a continuous beam using more than two energy
+levels. Townes, Basov and Prokhorov shared the Nobel Prize in Physics in 1964.
 
 
 file_data: 31.5.3|Laser applications and safety|655
+Although the first working laser was only produced in 1958, lasers are now found in many
+household items. For example, lasers are well-known through their use as cheap laser pointers.
+However, lasers can be very dangerous to the human eye since a large amount of energy is
+focused into a very narrow beam. NEVER POINT A LASER POINTER INTO
+SOMEBODY’S EYES - it can blind them.
+Other uses include:
+• Semiconductor lasers which are small, efficient and cheap to make are found in CD
+players.
+• He-Ne Lasers are used in most grocery shops to read in the price of items using their
+barcodes. This makes the cashiers’ job much quicker and easier.
+• High energy lasers are used in medicine as a cutting and welding tool. Eye surgery in
+particular make use of the precision of lasers to reattach the retinas of patients’ eyes.
+The heat from cutting lasers also helps to stop the bleeding on a wound by burning the
+edges (called cauterising).
+
 
 
 file_data: 31.6|Summary|656
