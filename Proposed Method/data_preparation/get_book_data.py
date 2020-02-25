@@ -45,7 +45,7 @@ def get_toc_data(file_name, output_file, output_txt_file):
 
 
 toc_file = "dataset/physics-grade.toc"
-output_file = "output/physics_content.csv"
-output_txt_file = "output/physics_book_content.txt"
+output_file = "output/physics_toc.csv"
+output_txt_file = "output/physics_toc.txt"
 
 get_toc_data(toc_file, output_file, output_txt_file)
