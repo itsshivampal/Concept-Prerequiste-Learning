@@ -140,26 +140,3 @@ output_file_csv = "output/physics-normalized-content.csv"
 output_file_txt = "output/physics-normalized-content.txt"
 
 main_function(book_data, keywords_data, output_file_csv, output_file_txt)
-
-
-
-
-# content = "I am interested inke kinetic energy ink.e. in.k.e. kinetics energies kinetics energy energy kinetic"
-# content1 = "Kinetic Energy is ke and k.e. kinetics energies inke abc.k.e. ke"
-# substitution = [['Kinetic Energy', 'k.e.'],
-#                 ['Kinetic Energy', 'ke'],
-#                 ['Kinetic Energy', 'kinetic energy']]
-#
-# for pair in substitution:
-#     content = correct_content(content, pair[1], "Kinetic Energy")
-# print(content)
-
-
-
-# text = ""
-# print(porter_stemming(text))
-# print(wordnet_lemmatization(text))
-
-# keyword1 = "kinetic's energies"
-# keyword2 = "kinetic energy"
-# print(match_text(keyword1, keyword2))
