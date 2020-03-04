@@ -11,8 +11,6 @@ import wikipedia
 import random
 import os
 
-import wikipedia
-
 def contain_section(line):
     line = line.strip()
     if len(line) > 4:

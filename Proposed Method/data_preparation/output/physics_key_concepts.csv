@@ -1,100 +1,100 @@
 ,concept,substitution,wiki_terms
 0,Sonic boom,,Sonic booms|Sonicboom|Sonic Boom|Sound boomCooper pair
-1,Absorption spectroscopy,,Absorption spectrum|Absorbtion spectroscopy|Absorption spectra|Crystal absorption spectra|Excitation wavelength|Dark-line spectrum|Absorption spectrometry|Absorption curve|Absorption Spectrum|Transmission spectroscopy|Absorption maxima|Absorption maximum
-2,Coulomb,,Petacoulomb|Zettacoulomb|Exacoulomb|Picocoulomb|Teracoulomb|Attocoulomb|Femtocoulomb|Gigacoulomb|Kilocoulomb|Megacoulomb|Nanocoulomb|Yoctocoulomb|Yottacoulomb|Zeptocoulomb|Millicoulomb|Coulomb (unit)|Columb|Picocoulombs|Q=it|Coloumb|Microcoulomb|Ampere-second
-3,Magnet,,Permanent magnet|Magnets|Magnetic material|10 uses of magnets|Bar magnet|Magnetic materials|Permanent magnets|Magnetic polarity|Magnetic Sweeper|MAGNETS|Horseshoe magnet|Ampere model|Ampère model|Horse shoe magnet|Magnetized material
-4,Gravity,,Gravity (old version)|Gravitational interaction|Gravitational force|Gravitational attraction|Gravitational|Gravitaiton|Gravitational theory|Theory of gravitation|Force of gravity|Theories of gravitation|Gravitational motion|Law of gravity|Fg (physics)|Gravitation (astronomy)|Gravitational pull|Laws of gravity|Gravitational physics|Theory of Gravitation|Acceleration of gravity|Vertical Circular Motion|Theory of gravity|Gravitate|Gravitates|Gravitated|Gravitating|Gravitationally|Gravity (astronomy)|Formulae of gravity|Gravity and motion|Apparent gravity|Law of Gravity|Laws of Gravity|Newtonian theory of gravitation|Physics/Gravity|Theory of Gravity|Gravitation
-5,Refraction,,Refracted|Refract|Refractive|Apparent depth|Refringence|Refracting|Refraction of waves|Light refraction|Refrection of light|Refractions|Light Refraction|Refraction of light|Optical surfaces|Refracts|Wave refraction
-6,Angle of incidence,,Glancing angle|Rigging angle|Incidence angle|Angle of Incidence|Grazing angle|Incident angle|Incident angles|Normal incidence|Grazing ange|Grazing incidence|Angles of incidence
+1,Absorption spectroscopy,,Absorption spectrum|Absorbtion spectroscopy|Absorption spectra|Crystal absorption spectra|Dark-line spectrum|Absorption spectrometry|Absorption Spectrum|Transmission spectroscopy
+2,Coulomb,,Petacoulomb|Zettacoulomb|Exacoulomb|Picocoulomb|Teracoulomb|Attocoulomb|Femtocoulomb|Gigacoulomb|Kilocoulomb|Megacoulomb|Nanocoulomb|Yoctocoulomb|Yottacoulomb|Zeptocoulomb|Millicoulomb|Coulomb (unit)|Columb|Picocoulombs|Coloumb|Microcoulomb|Ampere-second
+3,Magnet,,Magnet
+4,Gravity,,Gravity
+5,Refraction,,Refraction
+6,Angle of incidence,,Glancing angle|Rigging angle|Incidence angle|Angle of Incidence|Grazing angle|Incident angle|Incident angles|Grazing ange|Grazing incidence|Angles of incidence
 7,Electric potential energy,,Coulomb potential energy|Electric Potential Energy|Electrostatic energy|Electrical potential energy|Electrostatic potential energy|Coulomb energy
-8,Wavelength,,Wave length|Wavelengths|Subwavelength|Wavelenght|Vacuum wavelength|Wave lenght|Wavelength of light|Angular wavelength|Optical wavelength|Spatial period
-9,Emission spectrum,,Energy spectrum|Emission spectra|Emission coefficient|Line-emission spectrum|Atomic Emission Spectrum|Emission spectroscopy|Emission spectrometry|Molecular radiation|Atomic Spectra|Molecular emission|Spectral emissions|Atomic spectrum|Emission (electromagnetic radiation)|Molecular band emission|Molecular spectra|Molecular Spectra|Energy spectra|Bright-line spectrum|Flame emmission spectrometer|Line spectrum|Emission Spectroscopy|Emission (light)
-10,Motion (physics),,"Motion, local"
-11,Potential energy,,Potential Energy|Magnetic potential energy|Gravitation energy|-GMm/r|Potential gravitational energy|Nuclear potential energy|Potential energy function|Potential Energy Function|Magnetic Potential Energy
+8,Wavelength,,Wave length|Wavelengths
+9,Emission spectrum,,Energy spectrum|Emission spectra|Emission coefficient|Line-emission spectrum|Atomic Emission Spectrum|Emission spectroscopy|Emission spectrometry|Molecular radiation|Atomic Spectra|Molecular emission|Spectral emissions|Atomic spectrum|Emission (electromagnetic radiation)|Molecular band emission|Molecular spectra|Molecular Spectra|Energy spectra|Bright-line spectrum|Flame emmission spectrometer|Line spectrum|Emission Spectroscopy
+10,Motion (physics),,Motion
+11,Potential energy,,Potential Energy
 12,Energy level,,Quantum energy level|Energy state|Quantum level|Quantum levels|Energy levels|Molecular energy state|Electronic state|Energy Level|Energy level (quantum mechanics)|Quantized electronic structure|Atomic energy level|Quantum energy|Quantum Energy|Energy State
 13,Inertial frame of reference,,Inertial reference frame|Inertial reference frames|Inertial frame|Inertial frames|Inertial|Inertial frames of reference|Equivalence of inertial frames|Inertial Frame of Reference|Velocity Reference Frames|Inertial Reference Frame|Inertial space|Inertial system|Inertial observer
 14,Plasticity (physics),added,Plasticity
 15,Real image,,Real object
-16,Velocity,,Velocities|Transverse velocity|First temporal derivative of displacement|Formula for velocity|Time-average velocity|Velocity vector|Rate of speed|Instantaneous velocity|Average velocity
-17,Light,,Visible light|Light wave|Light waves|Wave theory of light|Exciting light|Visible Light|Light generation|Light source|Lightsource|Undulatory theory|Light Wave|Vislble light|Light reflection|Optic light|Electromagnetic theory of light|Undulatory theory of light|Light in space|Light wavelength|Properties of light
-18,Newton's laws of motion,added,Newton’s first law|Newton’s First Law of Motion|Newton’s second law|Newton’s second law of motion|Newton’s third law|Newton’s third law of motion|Inertia|Law of inertia
-19,Motion graphs and derivatives,,Position vs. time graph|Velocity vs. time graph|Displacement vs. time graph|D-t graph|V-t graph|Position vs. time curves
-20,Relative velocity,added,relative speed
-21,Frequency,,Wave period|Frequencies|Frequency range|Period (physics)|Frequency (wave motion)|Frequency band|Frequency dependence|Oscillation frequency|Frekvens|Periodic time|Waveband|Frequency measurement|Period (frequency)|Temporal frequency
-22,Electric potential,,Electrical potential|Electrostatic potential|Electric scalar potential|Electrical scalar potential|Electrical potential difference|Electric Scalar Potential|Coulomb potential|Coulomb Potential|Electric Potential|Electrical Potential|Potential electric|Scalar potential difference|Vector potential difference
-23,Hooke's law,,Hooke's Law|Spring equation|Hookes law|Spring constant|Spring Constant|Ceiiinosssttuv|Hooke law|Atomic Spring Constant|Force constant|Elasticity tensor|Stress-strain relationship|Stress-Strain Relationship|Hooke Law|Hook's law|Hooke’s Law|Hooke's constant|Linear spring|Hooke's law of elasticity|Stiffness tensor|Compliance tensor|Elastic compliance tensor|Hooke’s law|Spring physics|Physics spring|Hookean|Hookes Law|3D Hooke's law|3-D Hooke's law|Robert Hooke's law|Hookean solid
-24,Mass,,Inertial mass|Gravitational mass|Metric unit of weight|Metric mass|Metric weight|Mass (physics)|Inertial Mass|Gravitational Mass|Mass properties|Units of mass|Active gravitational mass|Mass Properties|Maſs|Massed|Massingly|Massedly|Massiveness|Massivenesses|Massives|Passive gravitational mass|Weight (mass)|Gravitic mass|Unit of mass
+16,Velocity,,velocity
+17,Light,,light
+18,Newton's laws of motion,added,Newton’s first law|Newton’s First Law of Motion|Newton’s second law|Newton’s second law of motion|Newton’s third law|Newton’s third law of motion|Inertia|Law of inertia|Newton's Laws
+19,Motion graphs and derivatives,,Position vs. time graph|Velocity vs. time graph|Displacement vs. time graph|D-t graph|V-t graph|Position vs. time curves|Motion graphs
+20,Relative velocity,added,relative velocity
+21,Frequency,,Wave period|Frequencies
+22,Electric potential,,Electrical potential|Electrostatic potential|Electric scalar potential|Electrical scalar potential|Electrical potential difference|Electric Scalar Potential|Coulomb potential|Coulomb Potential|Electric Potential|Electrical Potential
+23,Hooke's law,,Hooke's Law|Spring equation|Hookes law
+24,Mass,,mass
 25,Mechanical energy,,Conservation of mechanical energy|Mechanical Energy
-26,Resonance (particle physics),added,Resonance (quantum field theory)|Unstable particle|Resonance (particle)|Resonance
-27,Amplitude,,Pulse amplitude|Peak-to-peak|Amplitude (wave motion)|Peak amplitude|Peak to peak|Peak value|Wave amplitude|Semi-amplitude|Amplitudes
+26,Resonance (particle physics),added,Resonance
+27,Amplitude,,Amplitudes
 28,Work (physics),added,Work
-29,Speed,,Speeds|Average speed|Swiftness|Slowing|Slowness|Instantaneous speed|Promptness|Promptitude|Hastiness|Speedful|Speedfully|Speedfulness|Speedless|Tangential velocity|Constant Speed|Pokiness|Pokily|Instantaneous speeds|Slow|Tangential speed|Speeed
-30,Crystallinity,,Crystalline|Crystaline|Holocrystalline|Hypocrystalline|Hypohyaline|Holohyaline|Semi-crystalline|Crystalline powder|Semicrystalline|Crystallinely|Crystalinely|Crystallinities|Crystalinities|Crystallineness|Crystalineness
-31,Gravitational acceleration,,Acceleration of free fall|Gravitational Acceleration|Gravitational acceleration of a ball
-32,Diffraction,,Diffracted|Diffractive optics|Diffraction of light|Diffraction pattern|Light bend|Diffraction Pattern|Diffract|Defraction|Laser Light Diffraction|Single slit diffraction|Diffracts|Diffraction of Light|Difraction|Single slit|Single-slit|Singleslit|Single slits|Single-slits|Singleslits|Single slitted|Single-slitted|Singleslitted|Single-slit diffraction|Singleslit diffraction|Single slit diffractions|Single-slit diffractions|Singleslit diffractions|Wedge fringe|Wedge fringes|Diffractogram|Diffractive|Diffractions
-33,Transverse wave,,Tranverse wave|Tranverse waves|Transverse waves|Transverse Wave|Transverse vibration|Displacement wave|Transversal vibration|Rotational wave|Transversal wave
-34,Electroscope,,Leaf electroscope|Capacitance electroscope|Gold-leaf electroscope|Pith ball electroscope|Pith-ball electroscope|Gold leaf electroscope
+29,Speed,,Speed
+30,Crystallinity,,Crystalline|Crystaline
+31,Gravitational acceleration,,Acceleration of free fall|Gravitational Acceleration|Gravitational acceleration of a ball|acceleration due to gravity
+32,Diffraction,,Diffractions
+33,Transverse wave,,Tranverse wave
+34,Electroscope,,Electroscope
 35,Strength of materials,,Mechanical strength|Materials strength|Mechanics of materials|Strength (material)|Stress-strain relations|Strength of Materials|Material strength|Resistance of materials
-36,Torque,,Torque/Proofs|Principal of moments|Principle of moments|Torques|Torque curve|Moment arm|Moment of force|Lever arm|Rotation moment|Torqued|Rotational force|External torque|Force moment
-37,Photoelectric effect,,PhotoElectricEffect|Photo electric effect|Photoemission|Photoelectric Effect|Photoelectron|Photoelectric emission|Photoeffect|Hertz effect|Hertz Effect|Photoelectric|Photo-Electric Effect|Photo-electric effect|The Photoelectric effect|Photoelectricity|Photo-Eletric Effect|Photoelectron effect|Photoelectric effect equation|Threshold Frequency|Photoelectrons
-38,Sound,,Radiation of sound|Sounds|Sound wave|Sound waves|Frequency (sound)|Sound Wave|Auditory Range|Auditory range|Wave audio|DB (SPL)|Airborne sound|Acoustic Radiation|Sound propagation|Acoustic energy|Characteristics of sound|Sound production|Sonida
+36,Torque,,Torque
+37,Photoelectric effect,,PhotoElectricEffect|Photo electric effect
+38,Sound,,Sound
 39,Elasticity (physics),,Elasticity theory|Elastostatics|Elasticity (solid mechanics)|Elastic (solid mechanics)|Elasticity of materials|Elastic solid|Elastic body
 40,Laser,,
 41,Electric field,,Electrical field|Electric Field|Electric fields|Electrostatic field|Electric field strength|E-field|Electrostatic fields|E field|Electric field vector|Electric Field Strength|Electrical fields|Volts per metre
-42,Sound intensity,,Sound intensity level|Acoustic intensity|Intensity level|Sound Intensity|Acoustic intensity level
-43,Dielectric,,Dielectric level|Paraelectricity|Dielectric dispersion|Dipolar polarization|Ionic polarization|Dielectric media|Dielectric medium|Dielectric relaxation|Debye relaxation|Debye equation|Dielectrics|Dialectric|Dielectric materials|Relaxation time of electrons|Dielectric relaxation as a chemical rate process|Dielectric relaxation asa chemical rate process|Paraelectric|Dielectric polarization|Dielectric properties|Dielectric response|Dielectric material|Perfect dielectric
+42,Sound intensity,,Sound intensity level|Acoustic intensity
+43,Dielectric,,Dielectric
 44,Coulomb's law,added,coulomb law
 45,Doppler effect,,
 46,Standing wave,,Standing waves|Stationary wave|Standing Wave|Standing-wave|Stationary vibration|Standing Waves|Stationary Waves|Stationary waves
-47,Force,,Force (physics)|Forces|Force vector|Pull (physics)|Fource|Amain|Nonconservative Force|Attractive (force)|Forc|Physical force|Elastic force|Unit of force
-48,Refracting telescope,,Refractor|Refractor telescope|Refractive telescope|Galilean Telescope|Refracting Telescope|Galilean telescope|Keplerian telescope|Keplerian Telescope|Refractor Telescope|Kepler refractor|Galileo Telescope
-49,Telescope,,TeleScope|Telescopes|Perspicil|Telescopy|Astronomic telescope|Telescopic observational astronomy|Telescopically|Astronomical telescope|Ground telescope|🔭
+47,Force,,Force
+48,Refracting telescope,,Galilean Telescope|Refracting Telescope|Galilean telescope|Keplerian telescope|Keplerian Telescope|Refractor Telescope|Kepler refractor|Galileo Telescope
+49,Telescope,,TeleScope
 50,Le Sage's theory of gravitation,,Gravity (LeSage)|Kinetic theory of gravity|LeSage (gravity)|LeSage gravity|Le Sages theory of gravitation|LeSage's theory of gravitation|LeSage Gravity|Le Sage theory of gravitation|Pushing gravity|Shadow gravity|Push gravity|Mock gravity
-51,Hardness,,Hardness (materials science)|Indent test|Softness|Indent Test|Hardness tests|Dynamic hardness|Rebound hardness|Hardness tester|Hard matter|Absolute hardness|Softness (disambiguation)|Durezza|Hardness testing|Surface hardness
-52,Newton's law of universal gravitation,,Law of gravitation|Newtons Laws of Gravity|Law of universal gravitation|Newton's Law of Universal Gravitation|Universal gravitation|Newton Laws of Gravity|Newton's Law of Gravitation|Law of Universal Gravitation|Newton's law of gravitation|Newtonian gravity|Newton's law of gravity|Newton's gravitational law|Newton's theory of gravitation|Gravitational Force|Newton’s law of gravitation|Newtonian Gravitational field|Newton's Law of Gravity|Newton law of gravitation|Newton law of gravity|Newton theory of gravitation|Newtonian gravitation|Newton's Universal Law of Gravitation|Gravitation law|Newtons law of gravity|Newton’s law of universal gravitation|Law of gravitational attraction|Law of universal gravity|Universal gravity|Universal Gravitation|Gravity Inverse Square Law|Newtonian attraction|Law of Gravitation|Newton's theory of gravity|Classical gravitation|Newton's theory
-53,Intensity (physics),,Intensity|Specific intensity|Specific Intensity
-54,Wave,,Wave theory|Wave Motion|Undulatory Theory|Traveling Wave|Traveling wave|Waving|Wave (physics)|Wave (the earth sciences)|Billow|Wave motion|Wave motion in fluids|Wave motion in liquids|Travelling wave|Waves|Periodic wave|Progressive wave|Traveling waves
-55,Scattering,,Radiation scattering|Coherent Scattering|Multiple scattering|Scattered radiation|Deflection angle|Deflection Angle|Coherent scattering|Scattering: Optical Imaging|Scattering state|Scatterer
+51,Hardness,,Hardness|hard
+52,Newton's law of universal gravitation,,Law of gravitation|Newtons Laws of Gravity|Law of universal gravitation|Newton's Law of Universal Gravitation|Universal gravitation|Newton Laws of Gravity|Newton's Law of Gravitation|Law of Universal Gravitation|Newton's law of gravitation|Newtonian gravity|Newton's law of gravity|Newton's gravitational law|Newton's theory of gravitation|Gravitational Force|Newton’s law of gravitation|Newtonian Gravitational field|Newton's Law of Gravity|Newton law of gravitation|Newton law of gravity|Newton theory of gravitation|Newtonian gravitation|Newton's Universal Law of Gravitation|Gravitation law|Newtons law of gravity|Newton’s law of universal gravitation|Law of gravitational attraction|Law of universal gravity|Universal gravity|Universal Gravitation|Gravity Inverse Square Law|Newtonian attraction|Law of Gravitation|Newton's theory of gravity
+53,Intensity (physics),,Intensity
+54,Wave,,Wave
+55,Scattering,,Scatter
 56,Elastic collision,,Elastic interaction|Elastic interactions|Elastic Collisions|Elastic Collision|Why balls bounce?
-57,Position (vector),,Radius vector|Position Vector|Location vector|Position vector|Position function|Position (geometry)|Point vector
-58,Optical microscope,,Compound microscope|Light microscope|Optical microscopy|Optical Microscope|Binocular microscope|Optical Microscopy|Optical light microscope|Transmitted light microscope|Visible light microscope|Optic microscopy
+57,Position (vector),,Position
+58,Optical microscope,,Compound microscope|Light microscope|Optical microscopy|Optical Microscope|Binocular microscope|Optical Microscopy|Optical light microscope|Transmitted light microscope|Visible light microscope|Optic microscopy|microscope
 59,Virtual image,,Virtual object
 60,Geometrical optics,,Geometric optics|Ray optics|Geometric Optics|Optics
 61,Snell's law,,Angle of refraction|Snell's Law|Law of refraction|Snell's law of refraction|Law of Refraction|Angle of Refraction|Snel's law|Snell’s law|Laws of Refraction|Snell law|Snells law|Descartes law|Snells Law|Snells' Law|Snell Law
 62,Normal force,,Normal Force|Normal reaction
-63,Insulator (electricity),,Insulator|Electrical insulators|Glass insulators|Glass insulator|Nonconductor|Nonconductors|Non-conductor|Insulator (power engineering)|Insulator string|Telegraph insulators|Electrical insulator|Electric insulator|Weathershed|Insulator chain|Insulation (electric)|Insulation (electrical)|Electric insulation|Electrical insulation|Insulator (Electrical)|Creepage|Insulator (electric)|Non-conductors|Nonconducting|Non-conducting|Insulator (electrical)|Electrical Insulator|Electricity insulation|Creepage distance
+63,Insulator (electricity),,Insulator
 64,Creep (deformation),added,Creep
-65,Inelastic collision,,Inelastic interaction|Inelastic interactions|Inelastic Collision|Plastic Collision|Inelastic collisions|Perfectly inelastic collision|Perfectly Inelastic Collision
+65,Inelastic collision,,Inelastic interaction
 66,Contact force,added,
-67,Electromotive force,added,
-68,Rarefaction,,Rarefraction|Rarefied|Rarefied air|Rarefy|Rarify|Rarifies|Rarefies|Rarified|Rarifying|Rarefying|Rarifaction|Rarefactions|Rarifactions
-69,Electrical polarity,,Electrical Polarity|Negative (electricity)|Positive (electricity)
-70,Hertz,,Hz|MHz|Kilohertz|KHz|Mhz|1 E3 Hz|Gigahertz|GHz|Petahertz|Exahertz|KHZ|MHZ|THZ|Zettahertz|Yottahertz|EHz|Field rate|PHz|㎐|㎑|㎒|㎓|㎔|Gihz|Khz|DaHz|MegaHertz|Picohertz|Femtohertz|Attohertz|Yoctohertz|Zeptohertz|Nanohertz|Microhertz|Millihertz|Decahertz|Decihertz|Centihertz|Hectohertz|Tetrahertz|Reciprocal seconds|ZHz|Megacycles|Hertz (unit)|Hertez|Khertz|Megahertz|Hertz (frequency)
+67,Electromotive force,added,EMF|EM Force|Electromagnetic Force|electro motive force|electro magnetic force
+68,Rarefaction,,Rarefraction\
+69,Electrical polarity,,Electrical Polarity
+70,Hertz,,Hz
 71,Fracture,added,
 72,Huygens–Fresnel principle,,Huygens principle|Huygen's principle|Huygens's Principle|Huyghens principle|Diffraction losses|Huygens-fresnel principle|Huygens' wave theory|Huygens' Principle|Huygens Principle|Huygens-Fresnel Principle|Difraction losses|Huygens' principle|Huygens'-Fresnel principle|Huygens-Fresnel principle|Huygen principle|Huygens's principle|Huygen's Principle|Huygens Fresnel principle|Fresnel principle|Fresnel's principle|Huygens' construction|Huygens–Fresnel equation
-73,Color,,Colour|Color science|Colours|Colourful|Color list|Colors|Black (Colour)|Colo(u)r|Structural colour|Colur|COLORS|Colour science|Incomplete list of colors and shades|Shades of Color|Färg|List colors|Colorful|Talk:List of colors: N–Z|Talk:List of colors: G–M|Talk:List of colors: A–F|Colour or Color|User:OfficialMrCoda/sandbox|Wikipedia:Colour or Color
-74,Magnetic field,,Magnetic flux density|B-Field|B-field|Magnetic field density|Magnetic Field|Magnetic field strength|Magnetic force field|Nonlinear magnetic field|Magnetic fields|Magnetic Flux Density|H-field|Magnatic field|B-fields|Magnetic field lines|Magnetic field line|Magnetizing field|Auxiliary magnetic field|H field|Effective magnetic field|Magnetic field intensity|Strong magnetic field|Magnetic field energy density|Magnetic Field Energy Density|Magnetic field vector|Magnetic lines of force|Amperes per meter|Amperes per metre|Applied magnetic field
+73,Color,,Colour|Color
+74,Magnetic field,,Magnetic flux density|B-Field|B-field|Magnetic field density|Magnetic Field|Magnetic field strength|Magnetic force field|Nonlinear magnetic field|Magnetic fields|Magnetic Flux Density|
 75,Voltage,,Potential difference|Electric Potential Difference|Voltages|Potential Difference|Electric tension|Electric potential difference|Difference of electric potential|Difference of electrical potential|Difference in electrical potential|Difference in electric potential|Difference of potential|Voltage difference|Electrical tension|Electrical voltage|Terminal potential difference
 76,Lever,,Second-class lever|First-class lever|Fulcrum (mechanics)|Third-class lever|Levers
 77,Shock wave,added,
-78,Distance,,Distances|Distance formula|Equi-distant|Distance Formula|Distance in time|Time distance|Proximities|Algebraic distance|Directed distance|Proximity
-79,Electron,,Electrons|Beta minus particle|Mass of electron|Electron theory|Electron Mass|Mass of an electron|Electron lepton|Electron movement|Negative electron|Antipositron|Negaton|Mass of the electron
-80,Metre,,Meter|Meters|Metres|Terameter|Petameter|Exameter|Zettameter|Attometer|Meter (unit of length)|Measurement System in Meters|Meter (m)|Meter (unit)|Femtometres|Metrical form|Metre (unit)|Meter (distance)|Standard metre
+78,Distance,,Distance
+79,Electron,,Electron
+80,Metre,,Meter
 81,Stiffness,,Torsional rigidity|Flexibility|Compliance (mechanics)
 82,Non-inertial reference frame,,Accelerated reference frame|Accelerated frame|Non-inertial frame|Noninertial frame|Non inertial frame|Noninertial reference frames|Non-inertial frame of reference|Non-Inertial frames of reference
 83,Plane mirror,,Flat mirror
 84,Gravitational field,,Gravitational fields|Gravitational Field|Newtonian gravitational field|Gravitation field
-85,Collision,,Colliding|Collisions|Closing speed|Jostle|Collision of bodies|💥|Allision
-86,Magnetism,,Magnetic|Magnetic ordering|Nonmagnetic|Magnetically|Magneticism|Magnetics|Repulsive force (magnetism)|Magnetize|Magnetic Attraction|Magnetisim|Magneticist|Magnetician|Non-magnetic|Magnetic influence|Magnetic attraction|Magnetic properties|Magnetic property|Speed of magnetism
+85,Collision,,Colliding|Collisions
+86,Magnetism,,Magnetic
 87,Tangential and normal components,,Tangential component|Normal component|Tangent component|Perpendicular component|Paralel component|Parallel component
-88,Electromagnetic radiation,,Electromagnectic radiation|Electromagnetic wave|Electromagnetic waves|EM radiation|E.M. radiation|E. M. radiation|RF radiation|Electro-magnetic radiation|Magnetoelectric wave|Theory of radiation|Electromagnetic Radiation|Radiation emission|Radiation emissions|Em wave|EM wave|EM Waves|E-M Waves|Em waves|Electronic smog|Electromagnetic Wave|Electromagnetic wave theory|Electro magnetic waves|Emag waves|User:Jason Patton/Micrometeorology|Electrical smog|Electromagnetic resonance|Electromagnetic Waves|Electro magnetic energy|Electromagnetic emission|Electromagnetic emissions|Photon radiation
-89,Subtractive color,,
-90,Capacitance,,Electric capacitance|Elastance|Self-capacitance|Stray capacitance|Nominal capacity|Electrical capacitance|Electrical elastance|Capacatence|Capacitence|Transcapacitance|Self capacitance
+88,Electromagnetic radiation,,Electromagnectic radiation|EM radiation
+89,Subtractive color,,subtractive colour
+90,Capacitance,,capacitance
 91,Specular reflection,,Law of reflection|Specularly reflected|Specular|Law of Reflection|Specular Reflection|Regular reflection|The law of reflection|Specular refrector
-92,Deformation (engineering),added,Plastic deformation|Elastic deformation|Elastic Deformation|Plastic flow|Plastic deformation in solids|Deformation (geology)|Strain (engineering)|Deformation
-93,Joule,,Joules|List of converted amounts of joules|Megajoule|Kilojoule|Kilojoules|Terajoule|Petajoule|Terajoules|Gigajoule|Millijoule|Exajoule|Joule (unit)|Picojoule|Femtojoule|Attojoule|Nanojoule|Yottajoule|Yoctojoule|Zeptojoule|Joule (J)|Exajoules|Decajoule|Hectojoule|Decijoule|Centijoule|ΜJ|SI unit of energy|Petajoules|Zetajoule|Ocrajoule
-94,Electromagnetic spectrum,,Electromagentic spectra|Light spectrum|Spectrum of light|EM spectrum|EM Spectrum|Stellar Specta|Electromagnetic Spectrum|IR spectrum|Electrocmagnetic spectrum|Em spectrum|Solar Light|Radiation spectrum|Electomagnetic spectrum|Electro-magnetic spectrum|Electro magnetic spectrum|Electromagnetic frequency spectrum|Spectral range
-95,Displacement (vector),,Displacement (of location)|Displacement (distance)|Displacement vector|Pop (physics)|Displacement
+92,Deformation (engineering),added,Deformation
+93,Joule,,Joules
+94,Electromagnetic spectrum,,Electromagentic spectra|EM spectrum|EM Spectrum|Stellar Specta|Electromagnetic Spectrum|IR spectrum|Electrocmagnetic spectrum|Em spectrum|Electomagnetic spectrum|Electro-magnetic spectrum|Electro magnetic spectrum
+95,Displacement (vector),,Displacement
 96,Electric charge,,Electric Charge|Electrical charge|Positive charge|Negative charge|Positive static charge|Electric polarity|Electric charges|Electrically charged|Electrostatic charge|Negative Charge|Positive Charge|Q (electricity)|Electrically neutral|Positive electricity|Positively charged|Negatively charged|Electrification by friction|Specific charge|Elementary electrostatic charge|charge
 97,Mirror image,,Mirror images|Mirror Image|Mirror reflection|Mirror plane of symmetry
 98,Pigment,,Pigments
@@ -104,31 +104,31 @@
 102,Direction (geometry),,"Direction (geometry, geography)|Direction"
 103,Planet,,Planets|Major Planets|Planetary mass object
 104,Scalar (mathematics),,Scalar
-105,Temperature,,Absolute scale of temperature|Temperture|Temperature measure|Surface temperature|Temperatures|Air temperature|Temparature|Tempurature|Temporature|Static temperature|Hottest|Outside temperature
+105,Temperature,,Temperature
 106,Electrostatics,,Electrostatic|Coulombic attraction|Electrostatic repulsion|Static eliminator|Electrostatic interactions|Classical electrostatics|Charge-charge interaction
-107,Kilogram,,Kilograms|Milligram|Kg|International prototype of the kilogram|Kilogramme|Milligramme|Milligrams|Gram (unit)|Gigagrams|㎏|Kilogram prototype|Prototype kilogram|Micrograms|Yactogram|IPK|International Prototype Kilogram|Kilogrammes|International prototype kilogram|Avogadro project|Avogadro Project|Project Avogadro|Le Grand K|Kilogramme des Archives|Teragram|Killogram|Kilagram|Killagram|Standard kilogram
-108,Energy,,Effort|Energies|Energetic|Energy quality|Total energy|Energy (chemistry)|Energy (biology)|Energy (earth science)|Energy(Chemistry)|Energy(Biology)|Energy(Earth Sciences)|Energy (cosmology)|Energy (Earth science)|Energy (physics)|Energy (natural science)|Physical energy|Molar energy|Energy (physical)|Energy physics|Energetically|Energize|Energizes|Energized (physics)|Energizing|Energise|Energises|Energising|Energizer (physics)|Energizers|Energisers|Energization|Energisation|Energizations|Energisations|Energizational|Energisational|Reenergize|Reenergizes|Reenergized|Reenergizing|Reenergizer|Reenergizers|Reenergization|Reenergizations|Reenergizational|Reenergise|Reenergises|Reenergised|Reenergising|Reenergiser
+107,Kilogram,,Kilograms|Milligram|Kg
+108,Energy,,Energy
 109,Equations of motion,,Uniformly accelerated motion|SUVAT equations|Suvat equations|Uvast|Equations of Motion|SUVAT|DAVTU|DAVTU equations|DAVTU Equations|Equation of motion|Motion equation|Rotational form|Vusat equations|Vuxat|Vusat|Vuxat equations|Formulas for constant acceleration
-110,Dispersion (optics),,Disperion (optics)|Optical dispersion|Group velocity dispersion|Dispersion of light|Chromatic dispersion|Pulse dispersion|Chromatic dispertion|Dispersion (physics)|Dispersion (radiation)|Dispersive and nondispersive media|Anomalous dispersion|Anomalous Dispersion|Angular dispersion|Angular Dispersion|Material dispersion|Pulse dispersion in fibre optics|Dispersion measure|Normal dispersion
-111,Ray (optics),,Ray|Leaky ray|Refracted ray|Light ray|Incident ray|Incident light|Meridional ray|Reflected ray|Leaky rays|Tunneling rays|Tunneling ray|Marginal ray|Chief ray|Tangential ray|Sagittal ray|Transverse ray|Skew ray|Chief Ray|Light rays|Ray of light
+110,Dispersion (optics),,Disperion
+111,Ray (optics),,Ray
 112,Fatigue (material),,Fatigue
-113,Ohm,,Megaohm|Megohm|Kilohm|Megaohms|Gigaohm|Ohm (unit)|㏀|㏁|KΩ|ΚΩ|Teraohm|Gohm|Kiloohm|Milli-ohm|Milliohm|International ohm
-114,Friction,,Friction coefficient|Frictional coefficient|Coefficient of friction|Static friction|Kinetic friction|Coefficient of static friction|Sliding friction|Sliding Friction|Kinetic Friction|Static Friction|Frictional force|Force of friction|Frictional Force|Coulomb friction|Frictionless|Angle of friction|Friction coefficients|Coefficient of kinetic friction|Dynamic friction|Dry friction|Starting friction|Friction angle|Internal friction|Friction physics|Limiting friction|Starting Friction|Coefficient of sliding friction|Coulomb's law of friction|Contact friction
-115,Phase velocity,,Phase Velocity|Phase velocity vector|Propagation velocity|Propagation speed|Phase speed|Phase velocities
+113,Ohm,,Ohm
+114,Friction,,Friction
+115,Phase velocity,,Phase Velocity|Phase velocity vector
 116,Projectile motion,,Projectile Motion
 117,Power (physics),,Power
-118,Reflection (physics),,Reflection|Reflective|Angle of reflection|Reflection of light|Angle of Reflection|Reflection of sound|Reflection of electromagnetic radiation|Reflection of Light|Reflected light|Abnormal reflection|Reflection (optics)|Sound reflection|Laws of reflection|Reflection (physics
-119,Euclidean vector,,Vector (classical mechanics)|Three-vector|Vector sum|Vector addition|Spatial vector|Vector (physics)|Vector subtraction|Relative vector|Spacial vector|Physical vector|Vector methods (physics)|Vector component|Component (vector)|Bound vector|Vector (spatial)|Vector (geometry)|Free vector|Vector (geometric)|Triangle law|Euclidean vectors|Vector components|3d vector|Euclid vector|3D vector|Geometric vector|Magnitude of resultant vector|Euclidian vector
-120,Free fall,,Free-falling|Freefall (physics)|Free Fall|Freefalling|Freefall|Freeflight|Falling (physics)|Free-f+all|Free-fall|Highest sky dive|Free falling|Falling from a plane
-121,Electrical conductor,,Conductor current capacity|Conductor (science)|Printed Circuits/Conductor Current Capacity|Conductor (electrical)|Conductive|Transportation of electricity or heath|Transportation of electricity|Conductor (power engineering)|Conductor (electricity)|Conductor (material)|Conductor material|Conductor of electricity|Electrical conductors|Electricity conductor|Electrical Conductor
-122,Transmission medium,,Transmission media|Unguided transmission media
-123,Field (physics),,Field theory|Internal group|Physical field|Classical field|Field physics|Relativistic field theory|Internal symmetries|Static field|Field
-124,Interference (wave propagation),,Wave interference|Interference pattern|Constructive interference|Phase cancellation|Constructive Interference|Interference Pattern|Interference (wave motion)|Interference fringe|Destructive interference|Quantum Interference|Destructive Interference|Interference Fringe|Interference of waves|Quantum interference|Interferogram|Antisound|Optical interference|Interference (Physics)|Interference (physics)|Light interference|Interference (optics)|Interference pattern (disambiguation)|Interference (light)|Complete Destructive interference
-125,Field line,,Fieldline|Field Lines|Line of flux|Flux line
+118,Reflection (physics),,Reflection
+119,Euclidean vector,,Vector|Euclidian vector
+120,Free fall,,Free-falling|Freefall
+121,Electrical conductor,,Conductor
+122,Transmission medium,,Transmission media
+123,Field (physics),,Field
+124,Interference (wave propagation),,interference
+125,Field line,,Fieldline|Field Lines
 126,Crest (physics),,Crest (Physics)|Trough (physics)|Wave crest
 127,Electrical resistance and conductance,,Electric conductance|Electrical conductance|Electrical Resistance|Electric resistance|Resistance (electricity)|Electrical-resistance|Electrical resistence|Resistive|Resistance (physics)|Electrical Conductance|Electric resistnace|Resistance (electronics)|Resistance in Wires|Ac resistance|AC resistance|Electrical resistance|Electrical resistance & conductance
-128,Acceleration,,Accelerate|Centripetal acceleration|Deceleration|Accelerative|Accelerating|Accelerations|Centripetal Acceleration|Accelleration|Uniform acceleration|Constant acceleration|Tangental acceleration|Accelerated motion|Accelerated Motion|Radial acceleration|Tangential acceleration|Second temporal derivative of displacement|Uniform Acceleration|Exceleration|Sluther|Sluthers|Sluthered|Sluthering|Accelerates|Accelerated|Decelerating|Constant acceleration formulae|Instantaneous acceleration|Aceleration
-129,Gravitational constant,,Newton's constant|Universal gravitational constant|Gravitation constant|Gravitational field strength|Universal Gravitational Constant|Gravitational Constant|Newtonian constant|Gravity constant|Newton constant|Newtonian constant of gravitation|Gravity's constant|Constant of gravitation|Newtonian gravitational constant|Constant of gravity|Newton's Universal Gravitation Constant|Grav const
+128,Acceleration,,
+129,Gravitational constant,,Newton's constant|Universal gravitational constant|Gravitation constant|Universal Gravitational Constant|Gravitational Constant|Newtonian constant|Gravity constant|Newton constant|Newtonian constant of gravitation|Gravity's constant|Constant of gravitation|Newtonian gravitational constant|Constant of gravity|Newton's Universal Gravitation Constant|Grav const
 130,Length,,Width|Lengths|Breadth|Legnth|Lenght|Length dimension
 131,Gravity of Earth,,Little g|Gravity (earth)|Gravity (Earth)|Earth’s gravity|Earths Gravity|Earth's Gravity|Gravity earth|Earths gravitation force|Earth's gravity|Gravity on Earth|Earth gravity|Earth's gravitation
 132,Ohmmeter,added,Resistance measurment|measure resistance
@@ -137,13 +137,13 @@
 135,Ohm's law,,ohm’s law
 136,Pitch (music),,pitch
 137,Compass,,magnetic compass
-138,Capacitor,,capacitor
+138,Capacitor,,capacitor|capacitance
 139,Resultant force,,Net Force|Total Force
 140,Motion,,
 141,Voltmeter,,voltage measurment|measure voltage
 142,Series and parallel circuits,,circuit in series|circuit in parallel|series circuit|parallel circuit
 143,Kinetic energy,,KE|K.E.
-144,Curved mirror,,concave mirror|convex mirror
+144,Curved mirror,,spherical mirror|concave mirror|convex mirror|
 145,Physics,,
 146,Free body diagram,,FBD
 147,Electric current,,current
