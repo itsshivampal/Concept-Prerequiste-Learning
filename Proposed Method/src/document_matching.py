@@ -60,7 +60,6 @@ def tfidf_document_similarity(documents):
 
 
 def compare_sections(section, concept):
-	# print(section)
 	wiki_summary, wiki_content = get_wiki_data(concept)
 	wiki_content = clean_text(wiki_content)
 	documents = [wiki_content]
@@ -69,15 +68,12 @@ def compare_sections(section, concept):
 		content = clean_text(content)
 		documents.append(content)
 	score = tfidf_document_similarity(documents)[0]
-	# print(score)
 	max_score = score[1]
 	index = 1
 	for i in range(1, len(score)):
-		# print(max, index)
 		if score[i] > max_score:
 			max_score = score[i]
 			index = i
-			# print(max, index)
 	best_section = section[index-1]
 	return best_section
 
@@ -101,14 +97,12 @@ def get_final_section_list(documents, section_combination, concept):
 			content += documents[section]["content"] + "\n"
 		all_documents.append(content)
 	score = tfidf_document_similarity(all_documents)[0]
-	print(score)
 	max_score = score[1]
 	index = 1
 	for i in range(1, len(score)):
 		if score[i] > max_score:
 			max_score = score[i]
 			index = i
-	print(max_score)
 	best_section = section_combination[index-1]
 	return best_section, max_score
 
@@ -116,10 +110,6 @@ def get_final_section_list(documents, section_combination, concept):
 
 def resolve_multi_sections(sections, concept):
 	resulted_section = []
-	# if len(sections) == 1:
-	#     resulted_section.append(sections[0])
-	#     max_score = 0
-	# else:
 	documents = {}
 	for section in sections:
 		documents[section] = {
@@ -153,14 +143,10 @@ def sort_sections(file_name):
 		sections = title_match_data[i]["index"]
 		if func_type == 1 or func_type == 2:
 			print(i, title_match_data[i]["index"])
-			# if len(sections) > 1:
 			hr_index = resolve_sections(sections, concept)
 			mc_index, max_score = resolve_multi_sections(hr_index, concept)
 			hr_index = "|".join(hr_index)
 			mc_index = "|".join(mc_index)
-			# else:
-			#     hr_index = title_match_data[i]["index"][0]
-			#     mc_index = title_match_data[i]["index"][0]
 		else:
 			hr_index = ""
 			mc_index = ""
@@ -181,26 +167,3 @@ output_file = "../required_data/resolve_concept_title_match.csv"
 title_match_data = sort_sections(file_name)
 save_concept_resolve_data(title_match_data, output_file)
 
-
-
-# print(get_section_combination[31.1])
-
-
-# def get_matched_sections(concept):
-#     file_name = "../required_data/concept_title_match.csv"
-#     matched_data = read_concept_match(file_name)
-#     for i in range(len(matched_data)):
-#         if matched_data[i]["concept"] == concept:
-#             data = matched_data[i]
-#             break
-#     return data
-#
-#
-#
-# concept = "Geometrical optics"
-# index_list = get_matched_sections(concept)["index"]
-# print(index_list)
-# resulted_section = resolve_sections(index_list, concept)
-# print(resulted_section)
-# resulted_section = resolve_multi_sections(resulted_section, concept)
-# print(resulted_section)
