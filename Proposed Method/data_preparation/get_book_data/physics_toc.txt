@@ -1,0 +1,1272 @@
+file_data: 1|What is Physics?|3
+
+
+file_data: 2|Units|9
+
+
+file_data: 2.1|Introduction|9
+
+
+file_data: 2.2|Unit Systems|9
+
+
+file_data: 2.2.1|SI Units|9
+
+
+file_data: 2.2.2|The Other Systems of Units|10
+
+
+file_data: 2.3|Writing Units as Words or Symbols|10
+
+
+file_data: 2.4|Combinations of SI Base Units|12
+
+
+file_data: 2.5|Rounding, Scientific Notation and Significant Figures|12
+
+
+file_data: 2.5.1|Rounding Off|12
+
+
+file_data: 2.5.2|Error Margins|13
+
+
+file_data: 2.5.3|Scientific Notation|13
+
+
+file_data: 2.5.4|Significant Figures|15
+
+
+file_data: 2.6|Prefixes of Base Units|15
+
+
+file_data: 2.7|The Importance of Units|17
+
+
+file_data: 2.8|How to Change Units|17
+
+
+file_data: 2.8.1|Two other useful conversions|19
+
+
+file_data: 2.9|A sanity test|19
+
+
+file_data: 3|Motion in One Dimension|23
+
+
+file_data: 3.1|Introduction|23
+
+
+file_data: 3.2|Reference Point, Frame of Reference and Position|23
+
+
+file_data: 3.2.1|Frames of Reference|23
+
+
+file_data: 3.2.2|Position|25
+
+
+file_data: 3.3|Displacement and Distance|28
+
+
+file_data: 3.3.1|Interpreting Direction|29
+
+
+file_data: 3.3.2|Differences between Distance and Displacement|29
+
+
+file_data: 3.4|Speed, Average Velocity and Instantaneous Velocity|31
+
+
+file_data: 3.4.1|Differences between Speed and Velocity|35
+
+
+file_data: 3.5|Acceleration|38
+
+
+file_data: 3.6|Description of Motion|39
+
+
+file_data: 3.6.1|Stationary Object|40
+
+
+file_data: 3.6.2|Motion at Constant Velocity|41
+
+
+file_data: 3.6.3|Motion at Constant Acceleration|46
+
+
+file_data: 3.8|Worked Examples|49
+
+
+file_data: 3.9|Equations of Motion|54
+
+
+file_data: 3.9.1|Finding the Equations of Motion|54
+
+
+file_data: 3.10|Applications in the Real-World|59
+
+
+file_data: 4|Gravity and Mechanical Energy|67
+
+
+file_data: 4.1|Weight|67
+
+
+file_data: 4.1.1|Differences between Mass and Weight|68
+
+
+file_data: 4.2|Acceleration due to Gravity|69
+
+
+file_data: 4.2.1|Gravitational Fields|69
+
+
+file_data: 4.2.2|Free fall|69
+
+
+file_data: 4.3|Potential Energy|73
+
+
+file_data: 4.4|Kinetic Energy|75
+
+
+file_data: 4.4.1|Checking units|77
+
+
+file_data: 4.5|Mechanical Energy|78
+
+
+file_data: 4.5.1|Conservation of Mechanical Energy|78
+
+
+file_data: 4.5.2|Using the Law of Conservation of Energy|79
+
+
+file_data: 4.6|Energy graphs|82
+
+
+file_data: 5|Transverse Pulses|87
+
+
+file_data: 5.1|Introduction|87
+
+
+file_data: 5.2|What is a medium?|87
+
+
+file_data: 5.3|What is a pulse?|87
+
+
+file_data: 5.3.1|Pulse Length and Amplitude|88
+
+
+file_data: 5.3.2|Pulse Speed|89
+
+
+file_data: 5.4|Graphs of Position and Velocity|90
+
+
+file_data: 5.4.1|Motion of a Particle of the Medium|90
+
+
+file_data: 5.4.2|Motion of the Pulse|92
+
+
+file_data: 5.5|Transmission and Reflection of a Pulse at a Boundary|96
+
+
+file_data: 5.6|Reflection of a Pulse from Fixed and Free Ends|97
+
+
+file_data: 5.6.1|Reflection of a Pulse from a Fixed End|97
+
+
+file_data: 5.6.2|Reflection of a Pulse from a Free End|98
+
+
+file_data: 5.7|Superposition of Pulses|99
+
+
+file_data: 6|Transverse Waves|105
+
+
+file_data: 6.1|Introduction|105
+
+
+file_data: 6.2|What is a transverse wave?|105
+
+
+file_data: 6.2.1|Peaks and Troughs|106
+
+
+file_data: 6.2.2|Amplitude and Wavelength|107
+
+
+file_data: 6.2.3|Points in Phase|109
+
+
+file_data: 6.2.4|Period and Frequency|110
+
+
+file_data: 6.2.5|Speed of a Transverse Wave|111
+
+
+file_data: 6.3|Graphs of Particle Motion|115
+
+
+file_data: 6.4|Standing Waves and Boundary Conditions|118
+
+
+file_data: 6.4.1|Reflection of a Transverse Wave from a Fixed End|118
+
+
+file_data: 6.4.2|Reflection of a Transverse Wave from a Free End|118
+
+
+file_data: 6.4.3|Standing Waves|118
+
+
+file_data: 6.4.4|Nodes and anti-nodes|122
+
+
+file_data: 6.4.5|Wavelengths of Standing Waves with Fixed and Free Ends|122
+
+
+file_data: 6.4.6|Superposition and Interference|125
+
+
+file_data: 7|Geometrical Optics|129
+
+
+file_data: 7.1|Introduction|129
+
+
+file_data: 7.2|Light Rays|129
+
+
+file_data: 7.2.1|Shadows|132
+
+
+file_data: 7.2.2|Ray Diagrams|132
+
+
+file_data: 7.3|Reflection|132
+
+
+file_data: 7.3.1|Terminology|133
+
+
+file_data: 7.3.2|Law of Reflection|133
+
+
+file_data: 7.3.3|Types of Reflection|135
+
+
+file_data: 7.4|Refraction|137
+
+
+file_data: 7.4.1|Refractive Index|139
+
+
+file_data: 7.4.2|Snell's Law|139
+
+
+file_data: 7.4.3|Apparent Depth|143
+
+
+file_data: 7.5|Mirrors|146
+
+
+file_data: 7.5.1|Image Formation|146
+
+
+file_data: 7.5.2|Plane Mirrors|147
+
+
+file_data: 7.5.3|Ray Diagrams|148
+
+
+file_data: 7.5.4|Spherical Mirrors|150
+
+
+file_data: 7.5.5|Concave Mirrors|150
+
+
+file_data: 7.5.6|Convex Mirrors|153
+
+
+file_data: 7.5.8|Magnification|154
+
+
+file_data: 7.6|Total Internal Reflection and Fibre Optics|156
+
+
+file_data: 7.6.1|Total Internal Reflection|156
+
+
+file_data: 7.6.2|Fibre Optics|161
+
+
+file_data: 8|Magnetism|167
+
+
+file_data: 8.1|Introduction|167
+
+
+file_data: 8.2|Magnetic fields|167
+
+
+file_data: 8.3|Permanent magnets|169
+
+
+file_data: 8.3.1|The poles of permanent magnets|169
+
+
+file_data: 8.3.2|Magnetic attraction and repulsion|169
+
+
+file_data: 8.3.3|Representing magnetic fields|170
+
+
+file_data: 8.4|The compass and the earth's magnetic field|173
+
+
+file_data: 8.4.1|The earth's magnetic field|175
+
+
+file_data: 9|Electrostatics|177
+
+
+file_data: 9.1|Introduction|177
+
+
+file_data: 9.2|Two kinds of charge|177
+
+
+file_data: 9.3|Unit of charge|177
+
+
+file_data: 9.4|Conservation of charge|177
+
+
+file_data: 9.5|Force between Charges|178
+
+
+file_data: 9.6|Conductors and insulators|181
+
+
+file_data: 9.6.1|The electroscope|182
+
+
+file_data: 9.7|Attraction between charged and uncharged objects|183
+
+
+file_data: 9.7.1|Polarisation of Insulators|183
+
+
+file_data: 10|Electric Circuits|187
+
+
+file_data: 10.1|Electric Circuits|187
+
+
+file_data: 10.1.1|Closed circuits|187
+
+
+file_data: 10.1.2|Representing electric circuits|188
+
+
+file_data: 10.2|Potential Difference|192
+
+
+file_data: 10.2.1|Potential Difference|192
+
+
+file_data: 10.2.2|Potential Difference and Parallel Resistors|193
+
+
+file_data: 10.2.3|Potential Difference and Series Resistors|194
+
+
+file_data: 10.2.4|Ohm's Law|194
+
+
+file_data: 10.2.5|EMF|195
+
+
+file_data: 10.3|Current|198
+
+
+file_data: 10.3.1|Flow of Charge|198
+
+
+file_data: 10.3.2|Current|198
+
+
+file_data: 10.3.3|Series Circuits|199
+
+
+file_data: 10.3.4|Parallel Circuits|200
+
+
+file_data: 10.4|Resistance|202
+
+
+file_data: 10.4.1|What causes resistance?|202
+
+
+file_data: 10.4.2|Resistors in electric circuits|202
+
+
+file_data: 10.5|Instruments to Measure voltage, current and resistance|204
+
+
+file_data: 10.5.1|Voltmeter|204
+
+
+file_data: 10.5.2|Ammeter|204
+
+
+file_data: 10.5.3|Ohmmeter|204
+
+
+file_data: 10.5.4|Meters Impact on Circuit|205
+
+
+file_data: 11|Vectors|211
+
+
+file_data: 11.1|Introduction|211
+
+
+file_data: 11.2|Scalars and Vectors|211
+
+
+file_data: 11.3|Notation|211
+
+
+file_data: 11.3.1|Mathematical Representation|212
+
+
+file_data: 11.3.2|Graphical Representation|212
+
+
+file_data: 11.4|Directions|212
+
+
+file_data: 11.4.1|Relative Directions|212
+
+
+file_data: 11.4.2|Compass Directions|213
+
+
+file_data: 11.4.3|Bearing|213
+
+
+file_data: 11.5|Drawing Vectors|214
+
+
+file_data: 11.6|Mathematical Properties of Vectors|215
+
+
+file_data: 11.6.1|Adding Vectors|215
+
+
+file_data: 11.6.2|Subtracting Vectors|217
+
+
+file_data: 11.6.3|Scalar Multiplication|218
+
+
+file_data: 11.7|Techniques of Vector Addition|218
+
+
+file_data: 11.7.1|Graphical Techniques|218
+
+
+file_data: 11.7.2|Algebraic Addition and Subtraction of Vectors|223
+
+
+file_data: 11.8|Components of Vectors|228
+
+
+file_data: 11.8.1|Vector addition using components|231
+
+
+file_data: 12|Force, Momentum and Impulse|239
+
+
+file_data: 12.1|Introduction|239
+
+
+file_data: 12.2|Force|239
+
+
+file_data: 12.2.1|What is a force?|239
+
+
+file_data: 12.2.2|Examples of Forces in Physics|240
+
+
+file_data: 12.2.3|Systems and External Forces|241
+
+
+file_data: 12.2.4|Force Diagrams|242
+
+
+file_data: 12.2.5|Free Body Diagrams|243
+
+
+file_data: 12.2.6|Finding the Resultant Force|244
+
+
+file_data: 12.3|Newton's Laws|246
+
+
+file_data: 12.3.1|Newton's First Law|247
+
+
+file_data: 12.3.2|Newton's Second Law of Motion|249
+
+
+file_data: 12.3.4|Newton's Third Law of Motion|263
+
+
+file_data: 12.3.6|Different types of forces|268
+
+
+file_data: 12.3.8|Forces in equilibrium|276
+
+
+file_data: 12.4|Forces between Masses|282
+
+
+file_data: 12.4.1|Newton's Law of Universal Gravitation|282
+
+
+file_data: 12.4.2|Comparative Problems|284
+
+
+file_data: 12.5|Momentum and Impulse|287
+
+
+file_data: 12.5.1|Vector Nature of Momentum|290
+
+
+file_data: 12.5.3|Change in Momentum|291
+
+
+file_data: 12.5.5|Newton's Second Law revisited|293
+
+
+file_data: 12.5.6|Impulse|294
+
+
+file_data: 12.5.8|Conservation of Momentum|297
+
+
+file_data: 12.5.9|Physics in Action: Impulse|300
+
+
+file_data: 12.6|Torque and Levers|302
+
+
+file_data: 12.6.1|Torque|302
+
+
+file_data: 12.6.2|Mechanical Advantage and Levers|305
+
+
+file_data: 12.6.3|Classes of levers|307
+
+
+file_data: 13|Geometrical Optics|327
+
+
+file_data: 13.1|Introduction|327
+
+
+file_data: 13.2|Lenses|327
+
+
+file_data: 13.2.1|Converging Lenses|329
+
+
+file_data: 13.2.2|Diverging Lenses|340
+
+
+file_data: 13.3|The Human Eye|344
+
+
+file_data: 13.3.1|Structure of the Eye|345
+
+
+file_data: 13.3.2|Defects of Vision|346
+
+
+file_data: 13.4|Gravitational Lenses|347
+
+
+file_data: 13.5|Telescopes|347
+
+
+file_data: 13.5.1|Refracting Telescopes|347
+
+
+file_data: 13.5.2|Reflecting Telescopes|348
+
+
+file_data: 13.5.3|Southern African Large Telescope|348
+
+
+file_data: 13.6|Microscopes|349
+
+
+file_data: 14|Longitudinal Waves|355
+
+
+file_data: 14.1|Introduction|355
+
+
+file_data: 14.2|What is a longitudinal wave?|355
+
+
+file_data: 14.3|Characteristics of Longitudinal Waves|356
+
+
+file_data: 14.3.1|Compression and Rarefaction|356
+
+
+file_data: 14.3.2|Wavelength and Amplitude|357
+
+
+file_data: 14.3.3|Period and Frequency|357
+
+
+file_data: 14.3.4|Speed of a Longitudinal Wave|358
+
+
+file_data: 14.4|Graphs of Particle Position, Displacement, Velocity and Acceleration|359
+
+
+file_data: 14.5|Sound Waves|360
+
+
+file_data: 14.6|Seismic Waves|361
+
+
+file_data: 15|Sound|363
+
+
+file_data: 15.1|Introduction|363
+
+
+file_data: 15.2|Characteristics of a Sound Wave|363
+
+
+file_data: 15.2.1|Pitch|364
+
+
+file_data: 15.2.2|Loudness|364
+
+
+file_data: 15.2.3|Tone|364
+
+
+file_data: 15.3|Speed of Sound|365
+
+
+file_data: 15.4|Physics of the Ear and Hearing|365
+
+
+file_data: 15.4.1|Intensity of Sound|366
+
+
+file_data: 15.5|Ultrasound|367
+
+
+file_data: 15.6|SONAR|368
+
+
+file_data: 15.6.1|Echolocation|368
+
+
+file_data: 16|The Physics of Music|373
+
+
+file_data: 16.1|Introduction|373
+
+
+file_data: 16.2|Standing Waves in String Instruments|373
+
+
+file_data: 16.3|Standing Waves in Wind Instruments|377
+
+
+file_data: 16.4|Resonance|382
+
+
+file_data: 16.5|Music and Sound Quality|384
+
+
+file_data: 17|Electrostatics|387
+
+
+file_data: 17.1|Introduction|387
+
+
+file_data: 17.2|Forces between charges Coulomb's Law|387
+
+
+file_data: 17.3|Electric field around charges|392
+
+
+file_data: 17.3.1|Electric field lines|393
+
+
+file_data: 17.3.2|Positive charge acting on a test charge|393
+
+
+file_data: 17.3.3|Combined charge distributions|394
+
+
+file_data: 17.3.4|Parallel plates|397
+
+
+file_data: 17.4|Electrical potential energy and potential|400
+
+
+file_data: 17.4.1|Electrical potential|400
+
+
+file_data: 17.4.2|Real-world application: lightning|402
+
+
+file_data: 17.5|Capacitance and the parallel plate capacitor|403
+
+
+file_data: 17.5.1|Capacitors and capacitance|403
+
+
+file_data: 17.5.2|Dielectrics|404
+
+
+file_data: 17.5.3|Physical properties of the capacitor and capacitance|404
+
+
+file_data: 17.5.4|Electric field in a capacitor|405
+
+
+file_data: 17.6|Capacitor as a circuit device|406
+
+
+file_data: 17.6.1|A capacitor in a circuit|406
+
+
+file_data: 17.6.2|Real-world applications: capacitors|407
+
+
+file_data: 18|Electromagnetism|413
+
+
+file_data: 18.1|Introduction|413
+
+
+file_data: 18.2|Magnetic field associated with a current|413
+
+
+file_data: 18.2.1|Real-world applications|418
+
+
+file_data: 18.3|Current induced by a changing magnetic field|420
+
+
+file_data: 18.3.1|Real-life applications|422
+
+
+file_data: 18.4|Transformers|423
+
+
+file_data: 18.4.1|Real-world applications|425
+
+
+file_data: 18.5|Motion of a charged particle in a magnetic field|425
+
+
+file_data: 18.5.1|Real-world applications|426
+
+
+file_data: 19|Electric Circuits|429
+
+
+file_data: 19.1|Introduction|429
+
+
+file_data: 19.2|Ohm's Law|429
+
+
+file_data: 19.2.1|Definition of Ohm's Law|429
+
+
+file_data: 19.2.2|Ohmic and non-ohmic conductors|431
+
+
+file_data: 19.2.3|Using Ohm's Law|432
+
+
+file_data: 19.3|Resistance|433
+
+
+file_data: 19.3.1|Equivalent resistance|433
+
+
+file_data: 19.3.2|Use of Ohm's Law in series and parallel Circuits|438
+
+
+file_data: 19.3.3|Batteries and internal resistance|440
+
+
+file_data: 19.4|Series and parallel networks of resistors|442
+
+
+file_data: 19.5|Wheatstone bridge|445
+
+
+file_data: 20|Electronic Properties of Matter|451
+
+
+file_data: 20.1|Introduction|451
+
+
+file_data: 20.2|Conduction|451
+
+
+file_data: 20.2.1|Metals|453
+
+
+file_data: 20.2.2|Insulator|453
+
+
+file_data: 20.2.3|Semi-conductors|454
+
+
+file_data: 20.3|Intrinsic Properties and Doping|454
+
+
+file_data: 20.3.1|Surplus|455
+
+
+file_data: 20.3.2|Deficiency|455
+
+
+file_data: 20.4|The p-n junction|457
+
+
+file_data: 20.4.1|Differences between p- and n-type semi-conductors|457
+
+
+file_data: 20.4.2|The p-n Junction|457
+
+
+file_data: 20.4.3|Unbiased|457
+
+
+file_data: 20.4.4|Forward biased|457
+
+
+file_data: 20.4.5|Reverse biased|458
+
+
+file_data: 20.4.6|Real-World Applications of Semiconductors|458
+
+
+file_data: 21|Motion in Two Dimensions|463
+
+
+file_data: 21.1|Introduction|463
+
+
+file_data: 21.2|Vertical Projectile Motion|463
+
+
+file_data: 21.2.1|Motion in a Gravitational Field|463
+
+
+file_data: 21.2.2|Equations of Motion|464
+
+
+file_data: 21.2.3|Graphs of Vertical Projectile Motion|467
+
+
+file_data: 21.3|Conservation of Momentum in Two Dimensions|475
+
+
+file_data: 21.4|Types of Collisions|480
+
+
+file_data: 21.4.1|Elastic Collisions|480
+
+
+file_data: 21.4.2|Inelastic Collisions|485
+
+
+file_data: 21.5|Frames of Reference|490
+
+
+file_data: 21.5.1|Introduction|490
+
+
+file_data: 21.5.2|What is a frame of reference?|491
+
+
+file_data: 21.5.3|Why are frames of reference important?|491
+
+
+file_data: 21.5.4|Relative Velocity|491
+
+
+file_data: 22|Mechanical Properties of Matter|503
+
+
+file_data: 22.1|Introduction|503
+
+
+file_data: 22.2|Deformation of materials|503
+
+
+file_data: 22.2.1|Hooke's Law|503
+
+
+file_data: 22.2.2|Deviation from Hooke's Law|506
+
+
+file_data: 22.3|Elasticity, plasticity, fracture, creep|508
+
+
+file_data: 22.3.1|Elasticity and plasticity|508
+
+
+file_data: 22.3.2|Fracture, creep and fatigue|508
+
+
+file_data: 22.4|Failure and strength of materials|509
+
+
+file_data: 22.4.1|The properties of matter|509
+
+
+file_data: 22.4.2|Structure and failure of materials|509
+
+
+file_data: 22.4.3|Controlling the properties of materials|509
+
+
+file_data: 22.4.4|Steps of Roman Swordsmithing|510
+
+
+file_data: 23|Work, Energy and Power|513
+
+
+file_data: 23.1|Introduction|513
+
+
+file_data: 23.2|Work|513
+
+
+file_data: 23.3|Energy|519
+
+
+file_data: 23.3.1|External and Internal Forces|519
+
+
+file_data: 23.3.2|Capacity to do Work|520
+
+
+file_data: 23.4|Power|525
+
+
+file_data: 23.5|Important Equations and Quantities|529
+
+
+file_data: 24|Doppler Effect|533
+
+
+file_data: 24.1|Introduction|533
+
+
+file_data: 24.2|The Doppler Effect with Sound and Ultrasound|533
+
+
+file_data: 24.2.1|Ultrasound and the Doppler Effect|537
+
+
+file_data: 24.3|The Doppler Effect with Light|537
+
+
+file_data: 24.3.1|The Expanding Universe|538
+
+
+file_data: 25|Colour|541
+
+
+file_data: 25.1|Introduction|541
+
+
+file_data: 25.2|Colour and Light|541
+
+
+file_data: 25.2.1|Dispersion of white light|544
+
+
+file_data: 25.3|Addition and Subtraction of Light|544
+
+
+file_data: 25.3.1|Additive Primary Colours|544
+
+
+file_data: 25.3.2|Subtractive Primary Colours|545
+
+
+file_data: 25.3.3|Complementary Colours|546
+
+
+file_data: 25.3.4|Perception of Colour|546
+
+
+file_data: 25.3.5|Colours on a Television Screen|547
+
+
+file_data: 25.4|Pigments and Paints|548
+
+
+file_data: 25.4.1|Colour of opaque objects|548
+
+
+file_data: 25.4.2|Colour of transparent objects|548
+
+
+file_data: 25.4.3|Pigment primary colours|549
+
+
+file_data: 26|2D and 3D Wavefronts|553
+
+
+file_data: 26.1|Introduction|553
+
+
+file_data: 26.2|Wavefronts|553
+
+
+file_data: 26.3|The Huygens Principle|554
+
+
+file_data: 26.4|Interference|556
+
+
+file_data: 26.5|Diffraction|557
+
+
+file_data: 26.5.1|Diffraction through a Slit|558
+
+
+file_data: 26.6|Shock Waves and Sonic Booms|562
+
+
+file_data: 26.6.1|Subsonic Flight|563
+
+
+file_data: 26.6.2|Supersonic Flight|563
+
+
+file_data: 26.6.3|Mach Cone|566
+
+
+file_data: 27|Wave Nature of Matter|571
+
+
+file_data: 27.1|Introduction|571
+
+
+file_data: 27.2|de Broglie Wavelength|571
+
+
+file_data: 27.3|The Electron Microscope|574
+
+
+file_data: 27.3.1|Disadvantages of an Electron Microscope|577
+
+
+file_data: 27.3.2|Uses of Electron Microscopes|577
+
+
+file_data: 28|Electrodynamics|579
+
+
+file_data: 28.1|Introduction|579
+
+
+file_data: 28.2|Electrical machines generators and motors|579
+
+
+file_data: 28.2.1|Electrical generators|580
+
+
+file_data: 28.2.2|Electric motors|582
+
+
+file_data: 28.2.3|Real-life applications|582
+
+
+file_data: 28.3|Alternating Current|585
+
+
+file_data: 28.4|Capacitance and inductance|586
+
+
+file_data: 28.4.1|Capacitance|586
+
+
+file_data: 28.4.2|Inductance|586
+
+
+file_data: 29|Electronics|591
+
+
+file_data: 29.1|Introduction|591
+
+
+file_data: 29.2|Capacitive and Inductive Circuits|591
+
+
+file_data: 29.3|Filters and Signal Tuning|596
+
+
+file_data: 29.3.1|Capacitors and Inductors as Filters|596
+
+
+file_data: 29.3.2|LRC Circuits, Resonance and Signal Tuning|596
+
+
+file_data: 29.4|Active Circuit Elements|599
+
+
+file_data: 29.4.1|The Diode|599
+
+
+file_data: 29.4.2|The Light Emitting Diode (LED)|601
+
+
+file_data: 29.4.3|Transistor|603
+
+
+file_data: 29.4.4|The Operational Amplifier|607
+
+
+file_data: 29.5|The Principles of Digital Electronics|609
+
+
+file_data: 29.5.1|Logic Gates|610
+
+
+file_data: 29.6|Using and Storing Binary Numbers|616
+
+
+file_data: 29.6.1|Binary numbers|616
+
+
+file_data: 29.6.2|Counting circuits|617
+
+
+file_data: 29.6.3|Storing binary numbers|619
+
+
+file_data: 30|EM Radiation|625
+
+
+file_data: 30.1|Introduction|625
+
+
+file_data: 30.2|Particle/wave nature of electromagnetic radiation|625
+
+
+file_data: 30.3|The wave nature of electromagnetic radiation|626
+
+
+file_data: 30.4|Electromagnetic spectrum|626
+
+
+file_data: 30.5|The particle nature of electromagnetic radiation|629
+
+
+file_data: 30.6|Penetrating ability of electromagnetic radiation|631
+
+
+file_data: 30.6.1|Ultraviolet(UV) radiation and the skin|631
+
+
+file_data: 30.6.2|Ultraviolet radiation and the eyes|632
+
+
+file_data: 30.6.3|X-rays|632
+
+
+file_data: 30.6.4|Gamma-rays|632
+
+
+file_data: 31|Optical Phenomena and Properties of Matter|635
+
+
+file_data: 31.1|Introduction|635
+
+
+file_data: 31.2|The transmission and scattering of light|635
+
+
+file_data: 31.2.1|Energy levels of an electron|635
+
+
+file_data: 31.2.2|Interaction of light with metals|636
+
+
+file_data: 31.2.3|Why is the sky blue?|637
+
+
+file_data: 31.3|The photoelectric effect|638
+
+
+file_data: 31.3.1|Applications of the photoelectric effect|640
+
+
+file_data: 31.3.2|Real-life applications|642
+
+
+file_data: 31.4|Emission and absorption spectra|643
+
+
+file_data: 31.4.1|Emission Spectra|643
+
+
+file_data: 31.4.2|Absorption spectra|644
+
+
+file_data: 31.4.3|Colours and energies of electromagnetic radiation|646
+
+
+file_data: 31.4.4|Applications of emission and absorption spectra|648
+
+
+file_data: 31.5|Lasers|650
+
+
+file_data: 31.5.1|How a laser works|652
+
+
+file_data: 31.5.2|A simple laser|654
+
+
+file_data: 31.5.3|Laser applications and safety|655
+
+

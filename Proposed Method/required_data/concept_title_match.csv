@@ -2,7 +2,7 @@
 0,Sonic boom,26.6,2
 1,Absorption spectroscopy,31.4.2,1
 2,Coulomb,17.2,2
-3,Magnet,8|8.2|8.3|8.3.1|8.3.2|8.3.3|8.4|8.4.1|18.2|18.3|18.5,2
+3,Magnet,8.3|8.3.1,2
 4,Gravity,4|4.2|4.8,2
 5,Refraction,7.4,1
 6,Angle of incidence,,0
@@ -59,7 +59,7 @@
 57,Position (vector),3.2.2,1
 58,Optical microscope,13.6,1
 59,Virtual image,,0
-60,Geometrical optics,7|7.6|7.6.2|13|31,2
+60,Geometrical optics,7|7.6|7.6.2|13,2
 61,Snell's law,7.4.2,1
 62,Normal force,12.2|12.2.1,3
 63,Insulator (electricity),20.2.2,1
@@ -78,14 +78,14 @@
 76,Lever,12.6|12.6.2|12.6.3,2
 77,Shock wave,26.6,2
 78,Distance,3.3|3.3.2,2
-79,Electron,20|27.3|27.3.1|27.3.2|29|29.5|31.2.1,2
+79,Electron,27.3|27.3.1|27.3.2|31.2.1,2
 80,Metre,10.5.4,2
 81,Stiffness,,0
-82,Non-inertial reference frame,3.2.1|3.5|21.5|21.5.2,3
+82,Non-inertial reference frame,3.2.1|21.5|21.5.2,3
 83,Plane mirror,7.5.2,1
 84,Gravitational field,4.2.1,1
 85,Collision,21.4|21.4.1|21.4.2,2
-86,Magnetism,8|8.2|8.3|8.3.1|8.3.2|8.3.3|8.4|8.4.1|18.2|18.3|18.5,2
+86,Magnetism,8|8.2|8.3.2|8.3.3|8.4|8.4.1|18.2|18.3|18.5,2
 87,Tangential and normal components,,0
 88,Electromagnetic radiation,30,1
 89,Subtractive color,25.3.2,2
@@ -95,12 +95,12 @@
 93,Joule,,0
 94,Electromagnetic spectrum,30.4,1
 95,Displacement (vector),3.3|3.3.2|14.4,2
-96,Electric charge,9.2|9.3|9.4|9.5|9.7|10.3.1|17.2|17.3|17.3.2|17.3.3|18.5,2
+96,Electric charge,9.2|9.3|9.4|9.5|10.3.1|17.2|17.3|17.3.2|17.3.3,2
 97,Mirror image,7.3|7.5|7.5.2,3
 98,Pigment,25.4|25.4.3,2
 99,Tension (physics),1|12.2|12.2.1,3
-100,Refractive index,7.4|7.4.1,1
-101,Physical quantity,1,3
+100,Refractive index,7.4.1,1
+101,Physical quantity,,0
 102,Direction (geometry),11.4,1
 103,Planet,,0
 104,Scalar (mathematics),11.2|11.6.3,2
