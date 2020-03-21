@@ -1,10 +1,10 @@
 import pandas as pd
 
 
-book_content_file = "../required_data/physics_book_content.csv"
-labeled_pairs_file = "../required_data/physics_labeled_pairs.csv"
-wikipedia_data_file = "../required_data/physics_correct_wikipedia_data.csv"
-concepts_file = "../required_data/physics_concepts_ambiguity.csv"
+book_content_file = "../output_files/physics_normalized_content.csv"
+labeled_pairs_file = "../output_files/physics_labeled_pairs.csv"
+wikipedia_data_file = "../output_files/physics_correct_wikipedia_data.csv"
+concepts_file = "../output_files/physics_concepts_ambiguity.csv"
 
 
 

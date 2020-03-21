@@ -57,22 +57,24 @@ def correct_content(content, keyword, concept):
         return content
     else:
         i = 0
-        new_content = []
+        tagged_content = []
         while i < words_len - keyword_len + 1:
             matching_word = " ".join(words[i:i+keyword_len])
             if match_text(matching_word, keyword):
-                print(keyword, concept)
-                new_content.append(concept)
+                mod_concept = "<b>" + concept + "</b>"
+                print(keyword, mod_concept)
+                tagged_content.append(mod_concept)
                 i += keyword_len
             else:
-                new_content.append(words[i])
+                tagged_content.append(words[i])
                 i += 1
         if i < words_len:
             while i < words_len:
-                new_content.append(words[i])
+                tagged_content.append(words[i])
                 i += 1
-        new_content = " ".join(new_content)
-        return new_content
+        tagged_content = " ".join(tagged_content)
+        return tagged_content
+
 
 def read_keyword_file(file_name):
     df_keywords = pd.read_csv(file_name, encoding = "utf-8")
@@ -87,9 +89,9 @@ def read_keyword_file(file_name):
             "concept": concept,
             "keywords": keywords
         }
-    # print(df_keywords[["key_terms"]].iloc[1].values[0])
-    # print(all_data[1]["keywords"])
     return all_data
+
+
 
 def remove_ambiguity(content, data):
     for i in range(len(data)):
@@ -100,13 +102,20 @@ def remove_ambiguity(content, data):
     return content
 
 
+def normalise_content(content):
+    content = content.replace("<b>", "")
+    content = content.replace("</b>", "")
+    return content
+
+
+
 def save_text_file(df, output_file):
     file = open(output_file, "w+")
     for i in range(df.shape[0]):
         section = str(df[["section"]].iloc[i].values[0])
         title = str(df[["title"]].iloc[i].values[0])
         page_no = str(df[["page_no"]].iloc[i].values[0])
-        content = str(df[["content"]].iloc[i].values[0])
+        content = str(df[["norm_content"]].iloc[i].values[0])
         line = section + "|" + title + "|" + page_no + "\n"
         file.write(line)
         file.write(content)
@@ -121,13 +130,16 @@ def main_function(book_data, keywords_data, output_file_csv, output_file_txt):
     df_book = pd.read_csv(book_data, encoding = "utf-8")
 
     for i in range(df_book.shape[0]):
+    # for i in range(1):
         content = df_book[["content"]].iloc[i]
         if content.isna().values[0] == True:
-            new_content = ""
+            tagged_content = ""
         else:
             content = content.values[0]
-            new_content = remove_ambiguity(content, concept_data)
-        df_book.at[i, "content"] = new_content
+            tagged_content = remove_ambiguity(content, concept_data)
+        norm_content= normalise_content(tagged_content)
+        df_book.at[i, "norm_content"] = norm_content
+        df_book.at[i, "tagged_content"] = tagged_content
 
     df_book.to_csv(output_file_csv)
     save_text_file(df_book, output_file_txt)

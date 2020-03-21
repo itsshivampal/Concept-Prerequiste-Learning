@@ -18,7 +18,17 @@ def save_concept_resolve_data(data, output_file):
 	columns = ["concept", "type", "index", "hr_index", "mc_index", "score"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(data)):
-		df = df.append(data[i], ignore_index = True)
+		if int(data[i]["type"]) == 1:
+			df = df.append(data[i], ignore_index = True)
+	for i in range(len(data)):
+		if int(data[i]["type"]) == 2:
+			df = df.append(data[i], ignore_index = True)
+	for i in range(len(data)):
+		if int(data[i]["type"]) == 3:
+			df = df.append(data[i], ignore_index = True)
+	for i in range(len(data)):
+		if int(data[i]["type"]) == 0:
+			df = df.append(data[i], ignore_index = True)
 	df.to_csv(output_file)
 	return True
 
@@ -162,8 +172,8 @@ def sort_sections(file_name):
 	return all_data
 
 
-file_name = "../required_data/concept_title_match.csv"
-output_file = "../required_data/resolve_concept_title_match.csv"
+file_name = "data/concept_title_match.csv"
+output_file = "data/resolve_concept_title_match.csv"
 title_match_data = sort_sections(file_name)
 save_concept_resolve_data(title_match_data, output_file)
 

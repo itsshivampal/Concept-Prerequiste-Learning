@@ -36,10 +36,12 @@ def remove_stopwords(text):
 
 def remove_punctuations(text):
     new_text = ""
-    punctuations = "!\"#$%&()*+-.,:;<=>?@[\]^_'{|}~"
+    punctuations = "!\"#$%&()*+-.,:;<=>?@[\]^_{|}~"
     for ch in text:
         if ch not in punctuations:
             new_text += ch
+        else:
+            new_text += " "
     return new_text
 
 
@@ -52,3 +54,4 @@ def clean_text(content):
     content = wordnet_lemmatization(content)
     content = content.strip()
     return content
+

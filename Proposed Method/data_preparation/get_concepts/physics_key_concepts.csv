@@ -1,5 +1,5 @@
 ,concept,substitution,wiki_terms
-0,Sonic boom,,Sonic booms|Sonicboom|Sonic Boom|Sound boomCooper pair
+0,Sonic boom,,Sonic booms|Sonicboom|Sonic Boom
 1,Absorption spectroscopy,,Absorption spectrum|Absorbtion spectroscopy|Absorption spectra|Crystal absorption spectra|Dark-line spectrum|Absorption spectrometry|Absorption Spectrum|Transmission spectroscopy
 2,Coulomb,,Petacoulomb|Zettacoulomb|Exacoulomb|Picocoulomb|Teracoulomb|Attocoulomb|Femtocoulomb|Gigacoulomb|Kilocoulomb|Megacoulomb|Nanocoulomb|Yoctocoulomb|Yottacoulomb|Zeptocoulomb|Millicoulomb|Coulomb (unit)|Columb|Picocoulombs|Coloumb|Microcoulomb|Ampere-second
 3,Magnet,,Magnet
@@ -72,7 +72,7 @@
 71,Fracture,added,
 72,Huygens–Fresnel principle,,Huygens principle|Huygen's principle|Huygens's Principle|Huyghens principle|Diffraction losses|Huygens-fresnel principle|Huygens' wave theory|Huygens' Principle|Huygens Principle|Huygens-Fresnel Principle|Difraction losses|Huygens' principle|Huygens'-Fresnel principle|Huygens-Fresnel principle|Huygen principle|Huygens's principle|Huygen's Principle|Huygens Fresnel principle|Fresnel principle|Fresnel's principle|Huygens' construction|Huygens–Fresnel equation
 73,Color,,Colour|Color
-74,Magnetic field,,Magnetic flux density|B-Field|B-field|Magnetic field density|Magnetic Field|Magnetic field strength|Magnetic force field|Nonlinear magnetic field|Magnetic fields|Magnetic Flux Density|
+74,Magnetic field,,Magnetic flux density|B-Field|B-field|Magnetic field density|Magnetic Field|Magnetic field strength|Magnetic force field|Nonlinear magnetic field|Magnetic fields|Magnetic Flux Density
 75,Voltage,,Potential difference|Electric Potential Difference|Voltages|Potential Difference|Electric tension|Electric potential difference|Difference of electric potential|Difference of electrical potential|Difference in electrical potential|Difference in electric potential|Difference of potential|Voltage difference|Electrical tension|Electrical voltage|Terminal potential difference
 76,Lever,,Second-class lever|First-class lever|Fulcrum (mechanics)|Third-class lever|Levers
 77,Shock wave,added,
@@ -125,10 +125,10 @@
 124,Interference (wave propagation),,interference
 125,Field line,,Fieldline|Field Lines
 126,Crest (physics),,Crest (Physics)|Trough (physics)|Wave crest
-127,Electrical resistance and conductance,,Electric conductance|Electrical conductance|Electrical Resistance|Electric resistance|Resistance (electricity)|Electrical-resistance|Electrical resistence|Resistive|Resistance (physics)|Electrical Conductance|Electric resistnace|Resistance (electronics)|Resistance in Wires|Ac resistance|AC resistance|Electrical resistance|Electrical resistance & conductance
+127,Electrical resistance and conductance,,Electric conductance|Electrical conductance|Electrical Resistance|Electric resistance|Resistance|Electrical-resistance|Electrical resistence|Resistive|Electrical Conductance|Electric resistnace|Resistance (electronics)|Resistance in Wires|Ac resistance|AC resistance|Electrical resistance|Electrical resistance & conductance
 128,Acceleration,,
 129,Gravitational constant,,Newton's constant|Universal gravitational constant|Gravitation constant|Universal Gravitational Constant|Gravitational Constant|Newtonian constant|Gravity constant|Newton constant|Newtonian constant of gravitation|Gravity's constant|Constant of gravitation|Newtonian gravitational constant|Constant of gravity|Newton's Universal Gravitation Constant|Grav const
-130,Length,,Width|Lengths|Breadth|Legnth|Lenght|Length dimension
+130,Length,,Length
 131,Gravity of Earth,,Little g|Gravity (earth)|Gravity (Earth)|Earth’s gravity|Earths Gravity|Earth's Gravity|Gravity earth|Earths gravitation force|Earth's gravity|Gravity on Earth|Earth gravity|Earth's gravitation
 132,Ohmmeter,added,Resistance measurment|measure resistance
 133,Musical tone,added,tone
@@ -142,7 +142,7 @@
 141,Voltmeter,,voltage measurment|measure voltage
 142,Series and parallel circuits,,circuit in series|circuit in parallel|series circuit|parallel circuit
 143,Kinetic energy,,KE|K.E.
-144,Curved mirror,,spherical mirror|concave mirror|convex mirror|
+144,Curved mirror,,spherical mirror|concave mirror|convex mirror
 145,Physics,,
 146,Free body diagram,,FBD
 147,Electric current,,current
