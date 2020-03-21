@@ -18,43 +18,33 @@ def save_concept_resolve_data(data, output_file):
 	columns = ["concept", "type", "index", "hr_index", "mc_index", "score"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(data)):
-		if int(data[i]["type"]) == 1:
-			df = df.append(data[i], ignore_index = True)
-	for i in range(len(data)):
-		if int(data[i]["type"]) == 2:
-			df = df.append(data[i], ignore_index = True)
-	for i in range(len(data)):
-		if int(data[i]["type"]) == 3:
-			df = df.append(data[i], ignore_index = True)
-	for i in range(len(data)):
-		if int(data[i]["type"]) == 0:
-			df = df.append(data[i], ignore_index = True)
+		df = df.append(data[i], ignore_index = True)
 	df.to_csv(output_file)
 	return True
 
 
-# Get data from csv files
 
-def is_subsection(s1, s2):
-	x1 = s1.split(".")
-	x2 = s2.split(".")
-	if all(x in x2 for x in x1): return True
-	else: return False
+def read_hr_index(file_name):
+    df = pd.read_csv(file_name, encoding = "utf-8")
+    data = {}
+    for i in range(df.shape[0]):
+        concept = df[["concept"]].iloc[i].values[0]
+        if df[["index"]].iloc[i].isna().values[0]:
+            index = []
+            hr_index = []
+        else:
+            index = df[["index"]].iloc[i].values[0].split("|")
+            hr_index = df[["hr_index"]].iloc[i].values[0].split("|")
+        data[i] = {
+            "concept" : concept,
+            "type" : df[["type"]].iloc[i].values[0],
+            "index" : index,
+            "hr_index": hr_index
+        }
+    return data
 
 
-def merge_section(arr):
-	all_data = []
-	current_arr = [arr[0]]
-	i = 1
-	while i < len(arr):
-		if is_subsection(current_arr[0], arr[i]):
-			current_arr.append(arr[i])
-		else:
-			all_data.append(current_arr)
-			current_arr = [arr[i]]
-		i += 1
-	all_data.append(current_arr)
-	return all_data
+#--------------------------------------------------------------
 
 
 def text_cleaning(text):
@@ -69,23 +59,7 @@ def tfidf_document_similarity(documents):
 	return doc_similarity
 
 
-def compare_sections(section, concept):
-	wiki_summary, wiki_content = get_wiki_data(concept)
-	wiki_content = clean_text(wiki_content)
-	documents = [wiki_content]
-	for index in section:
-		content = get_book_data(index)
-		content = clean_text(content)
-		documents.append(content)
-	score = tfidf_document_similarity(documents)[0]
-	max_score = score[1]
-	index = 1
-	for i in range(1, len(score)):
-		if score[i] > max_score:
-			max_score = score[i]
-			index = i
-	best_section = section[index-1]
-	return best_section
+
 
 
 def get_section_combination(arr):
@@ -126,54 +100,45 @@ def resolve_multi_sections(sections, concept):
 			"content": clean_text(get_book_data(section))
 		}
 	section_combination = get_section_combination(sections)
-	# print(section_combination)
 	resulted_section, max_score = get_final_section_list(documents, section_combination, concept)
 	return resulted_section, max_score
 
 
 
-def resolve_sections(sections, concept):
-	section_list = merge_section(sections)
-	resulted_section = []
-	for section in section_list:
-		if len(section) == 1:
-			resulted_section.append(section[0])
-		else:
-			resulted_section.append(compare_sections(section, concept))
-	return resulted_section
+
+
+
 
 
 def sort_sections(file_name):
-	title_match_data = read_concept_match(file_name)
+	title_match_data = read_hr_index(file_name)
 	all_data = {}
 	for i in range(len(title_match_data)):
 	# for i in range(10):
 		func_type = int(title_match_data[i]["type"])
 		concept = title_match_data[i]["concept"]
 		sections = title_match_data[i]["index"]
-		if func_type == 1 or func_type == 2 or func_type == 3:
-			print(i, title_match_data[i]["index"])
-			hr_index = resolve_sections(sections, concept)
+		hr_index = title_match_data[i]["hr_index"]
+		if func_type != 0:
+			print(i, hr_index)
 			mc_index, max_score = resolve_multi_sections(hr_index, concept)
-			hr_index = "|".join(hr_index)
 			mc_index = "|".join(mc_index)
 		else:
-			hr_index = ""
 			mc_index = ""
 			max_score = 0
 		all_data[i] = {
 			"concept": concept,
 			"type": func_type,
 			"index" : "|".join(sections),
-			"hr_index": hr_index,
+			"hr_index": "|".join(hr_index),
 			"mc_index": mc_index,
 			"score": max_score
 		}
 	return all_data
 
 
-file_name = "data/concept_title_match.csv"
-output_file = "data/resolve_concept_title_match.csv"
+file_name = "data/resolve_hr_index.csv"
+output_file = "data/resolve_mc_index.csv"
 title_match_data = sort_sections(file_name)
 save_concept_resolve_data(title_match_data, output_file)
 
