@@ -1,16 +1,17 @@
 ,Unnamed: 0,concept,type,index,hr_index,mc_index,score
-6,6,Angle of incidence,0,,,,0.0
-15,15,Real image,0,,,,0.0
-30,30,Crystallinity,0,,,,0.0
-51,51,Hardness,0,,,,0.0
-59,59,Virtual image,0,,,,0.0
-69,69,Electrical polarity,0,,,,0.0
-70,70,Hertz,0,,,,0.0
-81,81,Stiffness,0,,,,0.0
-87,87,Tangential and normal components,0,,,,0.0
-93,93,Joule,0,,,,0.0
-103,103,Planet,0,,,,0.0
-105,105,Temperature,0,,,,0.0
-107,107,Kilogram,0,,,,0.0
-114,114,Friction,0,,,,0.0
-129,129,Gravitational constant,0,,,,0.0
+136,136,Angle of incidence,0,,,,0.0
+137,137,Real image,0,,,,0.0
+138,138,Crystallinity,0,,,,0.0
+139,139,Hardness,0,,,,0.0
+140,140,Virtual image,0,,,,0.0
+141,141,Electrical polarity,0,,,,0.0
+142,142,Hertz,0,,,,0.0
+143,143,Stiffness,0,,,,0.0
+144,144,Tangential and normal components,0,,,,0.0
+145,145,Joule,0,,,,0.0
+146,146,Physical quantity,0,,,,0.0
+147,147,Planet,0,,,,0.0
+148,148,Temperature,0,,,,0.0
+149,149,Kilogram,0,,,,0.0
+150,150,Friction,0,,,,0.0
+151,151,Gravitational constant,0,,,,0.0

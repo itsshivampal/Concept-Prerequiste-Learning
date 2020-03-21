@@ -121,6 +121,8 @@ def match_title_concept():
         else:
             concept_type = 1
 
+        print(i)
+
         matching_data[index] = {
             "concept": concept,
             "index": "|".join(matched_index),

@@ -151,7 +151,7 @@ def sort_sections(file_name):
 		func_type = int(title_match_data[i]["type"])
 		concept = title_match_data[i]["concept"]
 		sections = title_match_data[i]["index"]
-		if func_type == 1 or func_type == 2:
+		if func_type == 1 or func_type == 2 or func_type == 3:
 			print(i, title_match_data[i]["index"])
 			hr_index = resolve_sections(sections, concept)
 			mc_index, max_score = resolve_multi_sections(hr_index, concept)

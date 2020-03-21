@@ -100,6 +100,7 @@ def get_section_data(book_data):
     section_data = {}
     for i in range(len(section_list)):
         current_collection = [section_list[i]]
+        flag = 0
         for j in range(i+1, len(section_list)):
             x1 = len(section_list[i].split("."))
             x2 = len(section_list[j].split("."))
@@ -108,9 +109,15 @@ def get_section_data(book_data):
             else:
                 section = section_list[i]
                 section_data[section] = "|".join(current_collection)
+                flag = 1
                 break
-        if section_list[i] == '31':
-            section_data['31'] = "|".join(current_collection)
+        if flag == 0:
+            section = section_list[i]
+            section_data[section] = "|".join(current_collection)
+            
+        # if section_list[i] == '31':
+            # section_data['31'] = "|".join(current_collection)
+
     return section_data
 
 
@@ -136,8 +143,10 @@ def get_section_content(section, section_data, book_data):
 def get_book_data(section):
     book_data = read_book_data()
     section_data = get_section_data(book_data)
+    # print(section_data)
     content = get_section_content(section, section_data, book_data)
     return content
 
+# get_book_data('1')
 
 # Get matched section data
