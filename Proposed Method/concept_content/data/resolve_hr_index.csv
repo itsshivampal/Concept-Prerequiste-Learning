@@ -1,7 +1,7 @@
 ,concept,type,index,hr_index
 0,Sonic boom,2,26.6,26.6
 1,Absorption spectroscopy,1,31.4.2,31.4.2
-2,Coulomb,2,17.2,17.2
+2,Coulomb,0,,
 3,Magnet,2,8.3|8.3.1,8.3
 4,Gravity,2,4|4.2,4.2
 5,Refraction,1,7.4,7.4
@@ -111,7 +111,7 @@
 109,Dispersion (optics),2,25.2.1,25.2.1
 110,Ray (optics),2,7.2|7.2.2|7.5.3|30.6.3|30.6.4,7.2.2|7.5.3|30.6.3|30.6.4
 111,Fatigue (material),2,22.3.2,22.3.2
-112,Ohm,2,10.2.4|19.2|19.2.1|19.2.3|19.3.2,10.2.4|19.2
+112,Ohm,0,,
 113,Friction,0,,
 114,Phase velocity,3,11,11
 115,Projectile motion,2,21.2|21.2.3,21.2.3

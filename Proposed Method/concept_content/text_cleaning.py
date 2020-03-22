@@ -50,8 +50,10 @@ def clean_text(content):
     content = re.sub(r'\d+', '', content)
     content = remove_punctuations(content)
     content = remove_stopwords(content)
+    content = content.replace(" \'", "\'")
     # content = porter_stemming(content)
     content = wordnet_lemmatization(content)
     content = content.strip()
     return content
+
 

@@ -30,6 +30,83 @@ def tfidf_document_similarity(documents):
 
 
 
+# def compare_sections(section, concept):
+# 	wiki_summary, wiki_content = get_wiki_data(concept)
+# 	wiki_content = clean_text(wiki_content)
+# 	documents = [wiki_content]
+# 	for index in section:
+# 		content = get_book_data(index)
+# 		content = clean_text(content)
+# 		documents.append(content)
+# 	score = tfidf_document_similarity(documents)[0]
+# 	max_score = score[1]
+# 	index = 1
+# 	for i in range(1, len(score)):
+# 		if score[i] > max_score:
+# 			max_score = score[i]
+# 			index = i
+# 	best_section = section[index-1]
+# 	return best_section
+
+
+
+# def resolve_sections(sections, concept):
+# 	section_list = merge_section(sections)
+# 	resulted_section = []
+# 	for section in section_list:
+# 		if len(section) == 1:
+# 			resulted_section.append(section[0])
+# 		else:
+# 			resulted_section.append(compare_sections(section, concept))
+# 	return resulted_section
+
+
+
+
+# def get_section_combination(arr):
+# 	subsets = []
+# 	for l in range(0, len(arr) + 1):
+# 		for subset in itertools.combinations(arr, l):
+# 			subsets.append(subset)
+# 	subsets = [subsets[i] for i in range(1, len(subsets))]
+# 	return subsets
+
+
+# def get_final_section_list(documents, section_combination, concept):
+# 	wiki_summary, wiki_content = get_wiki_data(concept)
+# 	wiki_content = clean_text(wiki_content)
+# 	all_documents = [wiki_content]
+# 	for sections in section_combination:
+# 		content = ""
+# 		for section in sections:
+# 			content += documents[section]["content"] + "\n"
+# 		all_documents.append(content)
+# 	score = tfidf_document_similarity(all_documents)[0]
+# 	max_score = score[1]
+# 	index = 1
+# 	for i in range(1, len(score)):
+# 		if score[i] > max_score:
+# 			max_score = score[i]
+# 			index = i
+# 	best_section = section_combination[index-1]
+# 	return best_section, max_score
+
+
+
+# def resolve_multi_sections(sections, concept):
+# 	resulted_section = []
+# 	documents = {}
+# 	for section in sections:
+# 		documents[section] = {
+# 			"content": clean_text(get_book_data(section))
+# 		}
+# 	section_combination = get_section_combination(sections)
+# 	resulted_section, max_score = get_final_section_list(documents, section_combination, concept)
+# 	return resulted_section, max_score
+
+
+
+
 def get_chapter_clusters(sections):
 	chapters = [int(x.split(".")[0]) for x in sections]
 	chapt_list = list(set(chapters))
