@@ -122,6 +122,7 @@ file_name = "data/resolve_mc_index.csv"
 output_file = "data/resolve_single_index.csv"
 
 final_df = sort_sections(file_name)
+final_df = final_df.sort_values(by = ['single_score'])
 final_df.to_csv(output_file)
 
 output_df = final_df[['concept', 'type', 'index', 'single_index', 'single_score', 'first_index', 'first_score']]
