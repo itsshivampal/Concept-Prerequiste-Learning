@@ -9,13 +9,13 @@ from load_data import *
 
 import pandas as pd
 
-file_name = "data/resolve_concept_title_match.csv"
+file_name = "data/resolve_single_index.csv"
 df = pd.read_csv(file_name, encoding = "utf-8")
 
 df0 = df[df['type'] == 0]
-df1 = df[df['type'] == 1].sort_values(by = ['score'])
-df2 = df[df['type'] == 2].sort_values(by = ['score'])
-df3 = df[df['type'] == 3].sort_values(by = ['score'])
+df1 = df[df['type'] == 1].sort_values(by = ['single_score'])
+df2 = df[df['type'] == 2].sort_values(by = ['single_score'])
+df3 = df[df['type'] == 3].sort_values(by = ['single_score'])
 
 df0.to_csv("data/sort_0_score.csv")
 df1.to_csv("data/sort_1_score.csv")
