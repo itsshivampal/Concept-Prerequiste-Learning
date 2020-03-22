@@ -75,12 +75,26 @@ def get_concept_content_matching(concept_data, book_data):
 	return concept_data
 
 
+def get_single_content_match(sections, frequency):
+	index = 0
+	for i in range(len(frequency)):
+		if frequency[i] > 1:
+			index = i
+			break
+	if len(sections) > 0: section = sections[index]
+	else: section = ""
+	return section
+
+
+
 def sort_concept_data(concept_data):
 	for i in range(len(concept_data)):
 		index = concept_data[i]["content_match_index"]
-		concept_data[i]["content_match_index"] = "|".join(index)
-
 		freq = concept_data[i]["freq_content_match"]
+
+		concept_data[i]["single_title_match"] = concept_data[i]["title_match_index"].split("|")[0]
+		concept_data[i]["single_content_match"] = get_single_content_match(index, freq)
+		concept_data[i]["content_match_index"] = "|".join(index)
 		freq = [str(f) for f in freq]
 		concept_data[i]["freq_content_match"] = "|".join(freq)
 	return concept_data
@@ -88,7 +102,7 @@ def sort_concept_data(concept_data):
 
 
 def save_concept_data(concept_data, output_file):
-	columns = ["concept", "type", "title_match_index", "content_match_index", "freq_content_match"]
+	columns = ["concept", "type", "single_title_match", "single_content_match", "title_match_index", "content_match_index", "freq_content_match"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(concept_data)):
 		df = df.append(concept_data[i], ignore_index = True)
