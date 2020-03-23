@@ -46,7 +46,7 @@ book_file = "../output_files/physics_normalized_content.csv"
 theta = 0.12
 df = main_function(concept_index_file, book_file, theta)
 
-local_output_file = "data/concept_ranking.csv"
+local_output_file = "data/concept_content_ranking.csv"
 df = df.sort_values(by = ["rank"])
 df.to_csv(local_output_file)
 
