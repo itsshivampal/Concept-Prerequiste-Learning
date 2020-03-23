@@ -15,6 +15,7 @@ def read_concept_data(file_name):
 			"concept": concept,
 			"type": func_type,
 			"title_match_index": title_match_index,
+			"content_concept_score": df[["single_score"]].iloc[i].values[0],
 			"content_match_index": [],
 			"freq_content_match": []
 		}
@@ -102,7 +103,7 @@ def sort_concept_data(concept_data):
 
 
 def save_concept_data(concept_data, output_file):
-	columns = ["concept", "type", "single_title_match", "single_content_match", "title_match_index", "content_match_index", "freq_content_match"]
+	columns = ["concept", "type", "content_concept_score", "single_title_match", "single_content_match", "title_match_index", "content_match_index", "freq_content_match"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(concept_data)):
 		df = df.append(concept_data[i], ignore_index = True)
