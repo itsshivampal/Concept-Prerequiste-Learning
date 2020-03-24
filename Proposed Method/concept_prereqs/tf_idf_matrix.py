@@ -86,20 +86,20 @@ def main_function(concept_prereq_file):
 	concept_list, match_data, first_data = read_data(df)
 
 	df_match = get_tf_matrix(concept_list, match_data)
+	df_match.to_csv("data/tf_match_matrix.csv")
 	match_idf_data = get_term_idf(concept_list, df_match)
-	df_math_tfidf =get_tf_idf_matrix(concept_list, df_match, match_idf_data)
+	df_math_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
 	df_math_tfidf.to_csv("data/match_tfidf_matrix.csv")
 
 	df_first = get_tf_matrix(concept_list, first_data)
+	df_first.to_csv("data/tf_first_matrix.csv")
 	first_idf_data = get_term_idf(concept_list, df_first)
-	df_first_tfidf =get_tf_idf_matrix(concept_list, df_first, first_idf_data)
-	df_first_tfidf.to_csv("data/tf_first_matrix.csv")
+	df_first_tfidf = get_tf_idf_matrix(concept_list, df_first, first_idf_data)
+	df_first_tfidf.to_csv("data/first_tfidf_matrix.csv")
 
 
 
 concept_prereq_file = "data/req_theta_rank_filter.csv"
-output_file1 = "data/match_tfidf_matrix.csv"
-output_file2 = "data/first_tfidf_matrix.csv"
 main_function(concept_prereq_file)
 
 
