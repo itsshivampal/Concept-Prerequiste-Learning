@@ -1,0 +1,3343 @@
+,topic_a,topic_b,score
+0,Coulomb's law,Voltage,7.748257521292721e-06
+1,Coulomb's law,Series and parallel circuits,2.8367037362968423e-05
+2,Newton's law of universal gravitation,Voltage,7.067074974208116e-05
+3,Electric potential,Angle of incidence,8.729263572555265e-05
+4,Scattering,Crest (physics),9.23607661608134e-05
+5,Coulomb's law,Electric current,9.460356638485521e-05
+6,Interference (wave propagation),Reflection (physics),0.00010431745706564485
+7,Coulomb's law,Electrical resistance and conductance,0.00010480271172214139
+8,Electron,Voltage,0.00010574697129003222
+9,Electric potential,Crest (physics),0.00012388745213203766
+10,Dispersion (optics),Electrical polarity,0.0001333071711098508
+11,Coulomb's law,Gravitational field,0.00013860572199775418
+12,Coulomb's law,Free fall,0.00013971379875072425
+13,Diffraction,Electrical polarity,0.00016665974550901917
+14,Electromagnetic spectrum,Planet,0.00017433374195721925
+15,Interference (wave propagation),Electrical polarity,0.0002006719384700435
+16,Photoelectric effect,Crest (physics),0.00020982931341388675
+17,Electromagnetic radiation,Planet,0.00021191277668667006
+18,Electric potential,Planet,0.00023088961847848643
+19,Sonic boom,Electrical polarity,0.0002369379514465574
+20,Shock wave,Electrical polarity,0.0002369379514465574
+21,Newton's law of universal gravitation,Series and parallel circuits,0.00025873169456403655
+22,Energy level,Crest (physics),0.00026249901961494337
+23,Electromagnetic spectrum,Telescope,0.0002648909708583376
+24,Electron,Crest (physics),0.0002700633193436645
+25,Coulomb's law,Free body diagram,0.0002794275975014485
+26,Electromagnetic spectrum,Magnification,0.00028584013333151536
+27,Electromagnetic spectrum,Optical microscope,0.0003276924082403537
+28,Electric potential,Refraction,0.0003325354975829636
+29,Electric potential energy,Angle of incidence,0.00033258304686485034
+30,Dispersion (optics),Potential energy,0.00033506398730813306
+31,Electromagnetic spectrum,Electrical polarity,0.00038125906653246476
+32,Electron,Series and parallel circuits,0.00038714875923543367
+33,Electromagnetic spectrum,Standing wave,0.00039796795338089793
+34,Diffraction,Potential energy,0.0004188947855475438
+35,Electric potential energy,Crest (physics),0.00047200850284711155
+36,Electron,Electrical polarity,0.00047315306739125694
+37,Color,Electrical polarity,0.00047761992506152227
+38,Interference (wave propagation),Potential energy,0.0005043835172919405
+39,Photoelectric effect,Fracture,0.0005177948650302409
+40,Electromagnetic spectrum,Plane mirror,0.0005198840564505326
+41,Electromagnetic spectrum,Voltage,0.000558118590681455
+42,Newton's law of universal gravitation,Electrical conductor,0.0005792913747023652
+43,Shock wave,Potential energy,0.0005955371649953033
+44,Sonic boom,Potential energy,0.0005955371649953033
+45,Coulomb's law,Tension (physics),0.000607658788165007
+46,Interference (wave propagation),Planet,0.0006341965815507636
+47,Electromagnetic radiation,Telescope,0.0006748353365684445
+48,Electromagnetic radiation,Magnification,0.0007282053516452304
+49,Electric potential,Telescope,0.0007352670085884925
+50,Electromagnetic spectrum,Virtual image,0.0007504930721178743
+51,Newton's laws of motion,Voltage,0.000750647576911489
+52,Dispersion (optics),Tension (physics),0.0007911292099577533
+53,Electric potential,Magnification,0.0007934163217726149
+54,Scattering,Standing wave,0.0008235429082599676
+55,Electromagnetic radiation,Optical microscope,0.0008348280648798216
+56,Photoelectric effect,Deformation (engineering),0.0008527191441158533
+57,Newton's law of universal gravitation,Electric current,0.0008628656115674663
+58,Electron,Electrical conductor,0.0008668127703863574
+59,Electric potential energy,Planet,0.0008796844334551306
+60,Resonance (particle physics),Compass,0.0008818631306391896
+61,Electric potential,Optical microscope,0.0009095871254626426
+62,Photoelectric effect,Hardness,0.0009456154086631155
+63,Newton's law of universal gravitation,Electrical resistance and conductance,0.0009558905588841644
+64,Electric potential,Compression (physics),0.0009608962621272662
+65,Diffraction,Angle of incidence,0.0009695641366229535
+66,Electromagnetic radiation,Electrical polarity,0.0009712943013856168
+67,Subtractive color,Electrical polarity,0.0009748086887407842
+68,Electromagnetic radiation,Standing wave,0.001013861804700317
+69,Electric potential,Geometrical optics,0.0010417497782676587
+70,Electric potential,Standing wave,0.001104653381156375
+71,Pigment,Electrical polarity,0.0011140670728466103
+72,Photoelectric effect,Plasticity (physics),0.0011405018056878183
+73,Electromagnetic spectrum,Mirror image,0.0011443452755449876
+74,Color,Potential energy,0.0012004848289598098
+75,Laser,Standing wave,0.0012065413193611163
+76,Dispersion (optics),Joule,0.0012099284145406014
+77,Scattering,Voltage,0.0012208898930156787
+78,Newton's law of universal gravitation,Wave,0.0012357917546470974
+79,Newton's law of universal gravitation,Gravitational field,0.0012642029856655432
+80,Electric potential energy,Refraction,0.0012669530259639887
+81,Scattering,Electrical polarity,0.0012683904852652402
+82,Electromagnetic spectrum,Series and parallel circuits,0.0012738625007035443
+83,Newton's law of universal gravitation,Free fall,0.001274309595401857
+84,Electromagnetic radiation,Geometrical optics,0.001288435711190444
+85,Electron,Electric current,0.0012911342441758267
+86,Energy,Wave,0.001317312010982182
+87,Electromagnetic radiation,Plane mirror,0.001324454854291688
+88,Resonance (particle physics),Direction (geometry),0.0013479789076475453
+89,Diffraction,Crest (physics),0.001376024787961071
+90,Electromagnetic spectrum,Geometrical optics,0.0013768093493256323
+91,Photoelectric effect,Strength of materials,0.0013850890592005671
+92,Photoelectric effect,Specular reflection,0.0013850890592005671
+93,Resonance (particle physics),Magnet,0.0014016439513864385
+94,Electromagnetic radiation,Voltage,0.0014218610236777375
+95,Newton's law of universal gravitation,Temperature,0.00142643335037435
+96,Electron,Electrical resistance and conductance,0.0014303305378200427
+97,Electric potential,Plane mirror,0.0014430601154905402
+98,Power (physics),Voltage,0.0014650678716188145
+99,Emission spectrum,Compression (physics),0.0015084218980063082
+100,Pitch (music),Compass,0.001543260478618582
+101,Newton's law of universal gravitation,Reflection (physics),0.0015755765535781226
+102,Work (physics),Wave,0.001579067242049069
+103,Dispersion (optics),Compression (physics),0.0015822584199155067
+104,Emission spectrum,Standing wave,0.0015983658923599973
+105,Sound,Compass,0.001613865466007531
+106,Photoelectric effect,Compression (physics),0.0016274788081786192
+107,Energy,Reflection (physics),0.0016795110587568822
+108,Electric potential,Temperature,0.0017324117370757573
+109,Resultant force,Wave,0.0017452848464752867
+110,Lever,Wave,0.0017507049857500548
+111,Dispersion (optics),Coulomb,0.0017587828323513202
+112,Doppler effect,Crest (physics),0.001797813271916504
+113,Photoelectric effect,Standing wave,0.0018709615585711886
+114,Collision,Wavelength,0.0019004915175010726
+115,Electromagnetic radiation,Virtual image,0.0019119535983950296
+116,Color,Planet,0.0019218833079230723
+117,Inelastic collision,Wavelength,0.0019365934065348844
+118,Photoelectric effect,Electrical polarity,0.0019506121637477094
+119,Laser,Electrical polarity,0.0019821552487691964
+120,Electron,Tension (physics),0.0019953202610533682
+121,Absorption spectroscopy,Standing wave,0.001997957365449997
+122,Work (physics),Reflection (physics),0.002013236707349823
+123,Scattering,Hertz,0.0020343504290056247
+124,Energy level,Compression (physics),0.00203599575598054
+125,Capacitor,Reflection (physics),0.002065098890762573
+126,Capacitance,Reflection (physics),0.002065098890762573
+127,Electromagnetic radiation,Angle of incidence,0.002082238872657633
+128,Electric potential,Virtual image,0.002083169518064109
+129,Electron,Compression (physics),0.0020946660023198685
+130,Resonance (particle physics),Angle of incidence,0.0021186771874353427
+131,Newton's law of universal gravitation,Ray (optics),0.0021416681468273938
+132,Musical tone,Compass,0.0021645731388416473
+133,Voltage,Light,0.002175434009930656
+134,Diffraction,Coulomb,0.002198818689234362
+135,Electromagnetic spectrum,Amplitude,0.0022072139948839872
+136,Electromagnetic spectrum,Angle of incidence,0.0022250593665674515
+137,Resultant force,Reflection (physics),0.002225156360755068
+138,Lever,Reflection (physics),0.002232066784235674
+139,Energy,Ray (optics),0.002282945458039032
+140,Electron,Free fall,0.0022938347871005625
+141,Absorption spectroscopy,Compression (physics),0.002306851843106362
+142,Energy level,Standing wave,0.0023405956340020137
+143,Pitch (music),Direction (geometry),0.0023589630883832048
+144,Torque,Wave,0.0023686008630736037
+145,Dielectric,Wave,0.0023719205446747346
+146,Field line,Wave,0.002377974819166914
+147,Normal force,Wave,0.0023933020338964012
+148,Force,Wave,0.0023933020338964012
+149,Insulator (electricity),Light,0.002395630614075318
+150,Electron,Standing wave,0.0024080433789318745
+151,Capacitor,Magnet,0.0024088033484860956
+152,Capacitance,Magnet,0.0024088033484860956
+153,Subtractive color,Potential energy,0.0024501554071907233
+154,Pitch (music),Magnet,0.0024528769149262677
+155,Sound,Direction (geometry),0.0024668869038465416
+156,Newton's law of universal gravitation,Free body diagram,0.002548619190803714
+157,Electric charge,Light,0.002549127108953811
+158,Diffraction,Planet,0.002564503772106482
+159,Sound,Magnet,0.0025650973378843135
+160,Newton's laws of motion,Wave,0.002580958181831927
+161,Voltage,Wave,0.0026157723010836057
+162,Emission spectrum,Electrical polarity,0.0026258606250407143
+163,Intensity (physics),Compass,0.002645589391917569
+164,Sound intensity,Compass,0.002645589391917569
+165,Interference (wave propagation),Coulomb,0.0026475571972413747
+166,Dispersion (optics),Electric charge,0.002654994919748293
+167,Absorption spectroscopy,Fracture,0.0026666435549057405
+168,Power (physics),Wave,0.002672806978804427
+169,Electric potential,Hertz,0.002728761376387927
+170,Work (physics),Ray (optics),0.0027365759653905585
+171,Newton's laws of motion,Series and parallel circuits,0.0027481853567919725
+172,Electromotive force,Light,0.002761685054712733
+173,Resonance (particle physics),Euclidean vector,0.0027621561196665583
+174,Pigment,Potential energy,0.0028001776082179687
+175,Electric potential energy,Telescope,0.002801351339010869
+176,Capacitance,Ray (optics),0.0028070718013356697
+177,Capacitor,Ray (optics),0.0028070718013356697
+178,Color,Tension (physics),0.0028344992308225593
+179,Electromagnetic spectrum,Electrical conductor,0.0028521343720867877
+180,Emission spectrum,Deformation (engineering),0.0028715499018448923
+181,Insulator (electricity),Wave,0.0028805397797958825
+182,Electromagnetic radiation,Mirror image,0.002915330132509136
+183,Electron,Elasticity (physics),0.002990393109470559
+184,Resonance (particle physics),Crest (physics),0.0030068689811001176
+185,Dispersion (optics),Deformation (engineering),0.003012110879858512
+186,Dispersion (optics),Electrostatics,0.003016602903540035
+187,Torque,Reflection (physics),0.0030198550610247357
+188,Electric potential energy,Magnification,0.0030228989597365966
+189,Resultant force,Ray (optics),0.003024636593326407
+190,Newton's law of universal gravitation,Electrical polarity,0.003030882942396787
+191,Lever,Ray (optics),0.0030340298746721413
+192,Electromagnetic radiation,Hardness,0.003038221673018545
+193,Normal force,Reflection (physics),0.003051347895839321
+194,Force,Reflection (physics),0.003051347895839321
+195,Electric charge,Wave,0.0030651061135866194
+196,Dielectric,Light,0.003079057937216433
+197,Energy,Voltage,0.003109825675776169
+198,Sonic boom,Coulomb,0.0031260313895139125
+199,Shock wave,Coulomb,0.0031260313895139125
+200,Optical microscope,Mass,0.003128893418084195
+201,Energy,Electrical polarity,0.0032308182093677006
+202,Electromagnetic radiation,Series and parallel circuits,0.003245287774885811
+203,Electromagnetic spectrum,Hardness,0.0032466129030766975
+204,Deformation (engineering),Reflection (physics),0.003252151604180484
+205,Electric field,Wave,0.003269715376354507
+206,Absorption spectroscopy,Electrical polarity,0.0032823257813008933
+207,Newton's laws of motion,Reflection (physics),0.0032906006871855744
+208,Musical tone,Direction (geometry),0.00330867550058943
+209,Diffraction,Electric charge,0.0033192571259978666
+210,Electromotive force,Wave,0.0033206887625446286
+211,Voltage,Reflection (physics),0.0033349870571545838
+212,Power (physics),Reflection (physics),0.003407703597477732
+213,Electric charge,Length,0.0034358350854737187
+214,Musical tone,Magnet,0.003440398789766713
+215,Electric potential energy,Optical microscope,0.00346550719955926
+216,Electron,Gravitational field,0.0035340861909667555
+217,Laser,Interference (wave propagation),0.003594417852673358
+218,Laser,Pigment,0.003594417852673358
+219,Electric potential energy,Compression (physics),0.003660993896255833
+220,Insulator (electricity),Reflection (physics),0.0036725531802820088
+221,Diffraction,Refraction,0.0036934901773865427
+222,Energy level,Voltage,0.0037012240967212165
+223,Pitch (music),Angle of incidence,0.00370768507801185
+224,Absorption spectroscopy,Interference (wave propagation),0.0037381945667802926
+225,Absorption spectroscopy,Pigment,0.0037381945667802926
+226,Diffraction,Electrostatics,0.003771337040761791
+227,Creep (deformation),Reflection (physics),0.00377481882628092
+228,Electron,Temperature,0.003776499202566234
+229,Energy level,Electrical polarity,0.003845225892172519
+230,Telescope,Mass,0.003870704297609808
+231,Work (physics),Electrical polarity,0.003872794870840339
+232,Sound,Angle of incidence,0.0038773136415642256
+233,Voltage,Magnet,0.0038900451820325695
+234,Sonic boom,Angle of incidence,0.0039055133696097293
+235,Shock wave,Angle of incidence,0.0039055133696097293
+236,Electric charge,Reflection (physics),0.003907866603443342
+237,Subtractive color,Planet,0.003922509194037433
+238,Electric potential energy,Geometrical optics,0.003969044037303832
+239,Capacitance,Electrical polarity,0.003972560386330007
+240,Capacitor,Electrical polarity,0.003972560386330007
+241,Series and parallel circuits,Light,0.00399271769012553
+242,Interference (wave propagation),Electric charge,0.003996656539466819
+243,Sound intensity,Direction (geometry),0.004043936722942637
+244,Intensity (physics),Direction (geometry),0.004043936722942637
+245,Ohm's law,Light,0.004050471413578675
+246,Torque,Ray (optics),0.004104863948085839
+247,Normal force,Ray (optics),0.004147671897355281
+248,Force,Ray (optics),0.004147671897355281
+249,Voltage,Displacement (vector),0.0041524149041195545
+250,Intensity (physics),Magnet,0.004204931854159316
+251,Sound intensity,Magnet,0.004204931854159316
+252,Electric potential energy,Standing wave,0.00420870539858155
+253,Interference (wave propagation),Mass,0.004217296992353184
+254,Electromotive force,Reflection (physics),0.004233722499216511
+255,Electromagnetic spectrum,Electric current,0.004248308842001491
+256,Resultant force,Electrical polarity,0.0042804574888235325
+257,Insulator (electricity),Magnet,0.004283794077720828
+258,Strength of materials,Reflection (physics),0.004291806293500345
+259,Lever,Electrical polarity,0.004293750835062116
+260,Color,Joule,0.004334994988427785
+261,Field line,Light,0.004340264531216492
+262,Absorption spectroscopy,Deformation (engineering),0.004391503592196645
+263,Voltmeter,Light,0.004418696087540373
+264,Deformation (engineering),Ray (optics),0.00442062271332321
+265,Electric field,Light,0.004445667971856833
+266,Scattering,Mirror image,0.004465587436379492
+267,Scattering,Series and parallel circuits,0.004469782930687634
+268,Newton's laws of motion,Ray (optics),0.004472886233086638
+269,Electric potential,Light,0.004481904498258948
+270,Pigment,Planet,0.004482867650328494
+271,Scattering,Hardness,0.004509184587606524
+272,Electromagnetic spectrum,Compression (physics),0.004525265694018925
+273,Voltage,Ray (optics),0.00453322025779654
+274,Interference (wave propagation),Electrostatics,0.004540997661325421
+275,Electric charge,Magnet,0.004558271858998137
+276,Electric current,Light,0.004561393891790086
+277,Scattering,Amplitude,0.004567542228102705
+278,Insulator (electricity),Displacement (vector),0.004572720763416088
+279,Power (physics),Ray (optics),0.004632063248195137
+280,Insulator (electricity),Length,0.004635345713910991
+281,Electromagnetic spectrum,Electrical resistance and conductance,0.004706316092393983
+282,Sonic boom,Electric charge,0.004718943865876485
+283,Shock wave,Electric charge,0.004718943865876485
+284,Elasticity (physics),Wave,0.0047372017261472065
+285,Free body diagram,Wave,0.0047372017261472065
+286,Emission spectrum,Pigment,0.004761705883098255
+287,Emission spectrum,Interference (wave propagation),0.004761705883098255
+288,Plane mirror,Length,0.004782767789175225
+289,Ohmmeter,Wave,0.004798019100916567
+290,Series and parallel circuits,Wave,0.004800899632993138
+291,Pitch (music),Euclidean vector,0.0048337732094164785
+292,Electric charge,Displacement (vector),0.004865711095530957
+293,Ohm's law,Wave,0.004870343518398788
+294,Scattering,Huygens–Fresnel principle,0.0049268654397054785
+295,Electromotive force,Magnet,0.0049383615372084145
+296,Electrical resistance and conductance,Wave,0.004950927746524173
+297,Insulator (electricity),Ray (optics),0.004992071090343011
+298,Interference (wave propagation),Geometrical optics,0.005008598868965474
+299,Electromagnetic spectrum,Coulomb,0.005030126251370418
+300,Sound,Euclidean vector,0.005054920903678297
+301,Newton's law of universal gravitation,Light,0.005065532046412885
+302,Field line,Reflection (physics),0.005114653900382967
+303,Creep (deformation),Ray (optics),0.005131079935107299
+304,Laser,Crest (physics),0.005182917873161435
+305,Musical tone,Angle of incidence,0.005200389460068569
+306,Electroscope,Wave,0.005231544602167211
+307,Pitch (music),Crest (physics),0.005262020716925207
+308,Electromotive force,Displacement (vector),0.005271436471676253
+309,Electric charge,Ray (optics),0.005311930675560273
+310,Voltmeter,Wave,0.005313102020071406
+311,Sonic boom,Electrostatics,0.005361659889275799
+312,Shock wave,Electrostatics,0.005361659889275799
+313,Power (physics),Series and parallel circuits,0.005363739516825161
+314,Laser,Hertz,0.005365185384131647
+315,Absorption spectroscopy,Crest (physics),0.0053902345880878924
+316,Collision,Electrical polarity,0.00543443495646731
+317,Fatigue (material),Reflection (physics),0.005449244581505099
+318,Electric current,Wave,0.005484683857110787
+319,Electric potential energy,Plane mirror,0.005498027709094566
+320,Sound,Crest (physics),0.005502760962338253
+321,Inelastic collision,Electrical polarity,0.005537667918021289
+322,Newton's law of universal gravitation,Tension (physics),0.0055423689815385455
+323,Sonic boom,Crest (physics),0.0055427825796182904
+324,Shock wave,Crest (physics),0.0055427825796182904
+325,Absorption spectroscopy,Hertz,0.005579792799496913
+326,Reflection (physics),Length,0.005589656850214262
+327,Resonance (particle physics),Planet,0.0056039156501586085
+328,Electromagnetic radiation,Amplitude,0.005623090867497695
+329,Color,Compression (physics),0.005668998461645119
+330,Electric potential,Reflection (physics),0.0057020495293088605
+331,Dispersion (optics),Gravity,0.005718730020919211
+332,Electromotive force,Ray (optics),0.005754863893148739
+333,Dispersion (optics),Compass,0.00576513474730309
+334,Field line,Voltage,0.005768231652874456
+335,Energy level,Hertz,0.005781838061384408
+336,Subtractive color,Tension (physics),0.005785132347816072
+337,Torque,Electrical polarity,0.0058091923062605095
+338,Fracture,Reflection (physics),0.005809390253085704
+339,Dielectric,Electrical polarity,0.005817334103858057
+340,Field line,Electrical polarity,0.005832182719911638
+341,Strength of materials,Ray (optics),0.005833816713170121
+342,Dispersion (optics),Work (physics),0.005856578077344493
+343,Electroscope,Length,0.005864307410327701
+344,Force,Electrical polarity,0.005869773999755807
+345,Normal force,Electrical polarity,0.005869773999755807
+346,Absorption spectroscopy,Plasticity (physics),0.005873584299292265
+347,Refractive index,Mass,0.005913576010237206
+348,Electron,Hertz,0.005948450325854556
+349,Dispersion (optics),Planet,0.005962766160479275
+350,Voltage,Speed,0.006008859587990516
+351,Free body diagram,Reflection (physics),0.00603971012204947
+352,Elasticity (physics),Reflection (physics),0.00603971012204947
+353,Doppler effect,Angle of incidence,0.006040039436361675
+354,Ohmmeter,Reflection (physics),0.00611724942377765
+355,Series and parallel circuits,Reflection (physics),0.006120921967136681
+356,Electric potential,Amplitude,0.006126640051468269
+357,Laser,Hardness,0.00612683965895514
+358,Newton's laws of motion,Electrical conductor,0.006153092592523135
+359,Electric charge,Gravity,0.006202202184399561
+360,Ohm's law,Reflection (physics),0.006209459665517549
+361,Electron,Coulomb,0.006242526077733384
+362,Deformation (engineering),Electrical polarity,0.006256053252895933
+363,Dispersion (optics),Amplitude,0.006277133973849929
+364,Color,Coulomb,0.006301459385818854
+365,Electron,Kinetic energy,0.006311266959440142
+366,Electrical resistance and conductance,Reflection (physics),0.006312200778609702
+367,Newton's laws of motion,Electrical polarity,0.006330016444063177
+368,Intensity (physics),Angle of incidence,0.006356031562306029
+369,Sound intensity,Angle of incidence,0.006356031562306029
+370,Absorption spectroscopy,Hardness,0.006371913245313346
+371,Voltage,Electrical polarity,0.006415400991902802
+372,Total internal reflection,Mass,0.006420106207700733
+373,Laser,Mirror image,0.006542361913595562
+374,Power (physics),Electrical polarity,0.006555283323354755
+375,Electromagnetic spectrum,Tension (physics),0.006565341091288867
+376,Electric potential energy,Temperature,0.006600451105091611
+377,Pigment,Tension (physics),0.006611579826075509
+378,Insulator (electricity),Speed,0.0066170740730163245
+379,Coulomb's law,Wave,0.006634596777510277
+380,Electroscope,Reflection (physics),0.0066699741143091676
+381,Dispersion (optics),Friction,0.006703039014307415
+382,Electric potential energy,Electrical polarity,0.006713791735712234
+383,Voltmeter,Reflection (physics),0.006773955998746417
+384,Musical tone,Euclidean vector,0.006779837748272463
+385,Electric potential,Electrical polarity,0.006804213173230245
+386,Emission spectrum,Crest (physics),0.006866071653269926
+387,Insulator (electricity),Frame of reference,0.006918278926126426
+388,Field line,Ray (optics),0.006952306643317639
+389,Electric potential,Wavelength,0.006960176984487979
+390,Laser,Series and parallel circuits,0.006985075810521182
+391,Specular reflection,Length,0.006991082568839991
+392,Electric current,Reflection (physics),0.006992714797259612
+393,Electromagnetic spectrum,Temperature,0.007023028074919804
+394,Electric charge,Speed,0.0070410533253233015
+395,Insulator (electricity),Electrical polarity,0.007064765443407503
+396,Emission spectrum,Hertz,0.007107530580656186
+397,Emission spectrum,Plasticity (physics),0.007107530580656186
+398,Absorption spectroscopy,Specular reflection,0.007133208654882921
+399,Absorption spectroscopy,Strength of materials,0.007133208654882921
+400,Ohmmeter,Magnet,0.007135373013579508
+401,Series and parallel circuits,Magnet,0.007139656796201379
+402,Diffraction,Gravity,0.0071495185291705204
+403,Lever,Light,0.0071761703990849204
+404,Laser,Huygens–Fresnel principle,0.007218162731188798
+405,Ohm's law,Magnet,0.007242930254572341
+406,Refracting telescope,Mass,0.00725757055801839
+407,Creep (deformation),Electrical polarity,0.007261490382825638
+408,Electromagnetic radiation,Electrical conductor,0.007266087827338394
+409,Electric charge,Frame of reference,0.007361557434721559
+410,Electrical resistance and conductance,Magnet,0.0073627710710826725
+411,Fatigue (material),Ray (optics),0.007407112982214468
+412,Dispersion (optics),Plasticity (physics),0.0074554407629019775
+413,Electric charge,Electrical polarity,0.007517429859336385
+414,Dielectric,Speed,0.0075432666967928386
+415,Electromagnetic spectrum,Free fall,0.007547564207276082
+416,Ohmmeter,Displacement (vector),0.007616628563825237
+417,Newton's law of universal gravitation,Potential energy,0.007618042715097643
+418,Series and parallel circuits,Displacement (vector),0.007621201272360147
+419,Electromotive force,Speed,0.007628168744382959
+420,Optical microscope,Wavelength,0.007644017452608784
+421,Energy,Light,0.007721436099109827
+422,Series and parallel circuits,Length,0.007725576189851652
+423,Ohm's law,Displacement (vector),0.007731440158458503
+424,Photoelectric effect,Series and parallel circuits,0.007737609256987107
+425,Electric potential,Ray (optics),0.007750748651863213
+426,Electroscope,Magnet,0.007780090364065139
+427,Electrical resistance and conductance,Displacement (vector),0.0078593638121214
+428,Fracture,Ray (optics),0.007896656007775681
+429,Voltmeter,Magnet,0.007901378459533464
+430,Mirror image,Planet,0.00791681756707446
+431,Electromagnetic radiation,Refraction,0.007932150677438047
+432,Electric potential energy,Virtual image,0.007936830635197973
+433,Electric field,Electrical polarity,0.008019251239878502
+434,Dielectric,Reflection (physics),0.008037313272030378
+435,Resonance (particle physics),Refraction,0.008070960017252075
+436,Electromagnetic spectrum,Sound,0.008110894437602536
+437,Emission spectrum,Hardness,0.008116532257691742
+438,Electromotive force,Electrical polarity,0.00814426774540128
+439,Electric current,Magnet,0.00815654634942313
+440,Diffraction,Telescope,0.008166651361184227
+441,Elasticity (physics),Ray (optics),0.008209727896171677
+442,Free body diagram,Ray (optics),0.008209727896171677
+443,Electric potential,Frequency,0.008236293764557243
+444,Strength of materials,Electrical polarity,0.008256001561777745
+445,Sound intensity,Euclidean vector,0.008286468358999677
+446,Intensity (physics),Euclidean vector,0.008286468358999677
+447,Electroscope,Displacement (vector),0.008304829808239109
+448,Ohmmeter,Ray (optics),0.00831512642616462
+449,Series and parallel circuits,Ray (optics),0.008320118483905018
+450,Work (physics),Light,0.00837594909533007
+451,Diffraction,Friction,0.008380095136374473
+452,Voltmeter,Displacement (vector),0.008434298354682004
+453,Ohm's law,Ray (optics),0.008440467043284817
+454,Coulomb's law,Reflection (physics),0.008458799863149511
+455,Electromagnetic spectrum,Refraction,0.008476215862463088
+456,Refraction,Mass,0.008558488313940507
+457,Electrical resistance and conductance,Ray (optics),0.00858012218652705
+458,Interference (wave propagation),Gravity,0.008608603943286953
+459,Electromagnetic spectrum,Deformation (engineering),0.008614649705534678
+460,Electromagnetic spectrum,Electrostatics,0.008627496912038282
+461,Emission spectrum,Mirror image,0.008666995460796512
+462,Electric current,Displacement (vector),0.008706676411863583
+463,Euclidean vector,Light,0.008751594854204403
+464,Dispersion (optics),Direction (geometry),0.008812342606360888
+465,Diffraction,Magnification,0.00881251900126601
+466,Electric current,Length,0.008825917276871216
+467,Subtractive color,Joule,0.00884760153132815
+468,Emission spectrum,Amplitude,0.008864873507002224
+469,Diffraction,Joule,0.008890413450843421
+470,Electric charge,Physics,0.009016468121139168
+471,Intensity (physics),Crest (physics),0.009020606943300353
+472,Sound intensity,Crest (physics),0.009020606943300353
+473,Electroscope,Ray (optics),0.00906644051559308
+474,Dispersion (optics),Magnet,0.009163175062810657
+475,Newton's laws of motion,Electric current,0.00916514941311976
+476,Voltmeter,Ray (optics),0.009207782229037982
+477,Optical microscope,Kilogram,0.00921283574186442
+478,Emission spectrum,Series and parallel circuits,0.009253480798318468
+479,Insulator (electricity),Physics,0.009270691427821982
+480,Plasticity (physics),Reflection (physics),0.009295024404937124
+481,Diffraction,Compass,0.009326963892013183
+482,Electron,Electric charge,0.009423491472577499
+483,Telescope,Wavelength,0.009456292449531122
+484,Electric current,Ray (optics),0.009505139250218553
+485,Color,Electric charge,0.009512455061880738
+486,Emission spectrum,Huygens–Fresnel principle,0.009562262750475411
+487,Torque,Light,0.009708936422291365
+488,Work (physics),Potential energy,0.009734165691513655
+489,Laser,Compression (physics),0.009764741759482729
+490,Pitch (music),Planet,0.009806852387777567
+491,Normal force,Light,0.009810186954119464
+492,Force,Light,0.009810186954119464
+493,Dispersion (optics),Hardness,0.009989578163312914
+494,Scattering,Electrical conductor,0.010007690410338763
+495,Resultant force,Light,0.010051138914396086
+496,Interference (wave propagation),Friction,0.010090318633593753
+497,Diffraction,Optical microscope,0.010102834547867673
+498,Pigment,Joule,0.010111544607232167
+499,Photoelectric effect,Mirror image,0.010145120971968942
+500,Newton's laws of motion,Electrical resistance and conductance,0.01015323785919462
+501,Sonic boom,Gravity,0.010164375740266523
+502,Shock wave,Gravity,0.010164375740266523
+503,Sound,Planet,0.010255521098444038
+504,Coulomb's law,Newton's laws of motion,0.010322097558980519
+505,Shock wave,Planet,0.010330109571979124
+506,Sonic boom,Planet,0.010330109571979124
+507,Strength of materials,Voltage,0.010366085585920561
+508,Photoelectric effect,Amplitude,0.010376746421126534
+509,Electric potential energy,Hertz,0.010396521598677778
+510,Deformation (engineering),Light,0.010455777685544544
+511,Fatigue (material),Electrical polarity,0.010482526167023849
+512,Electron,Mechanical energy,0.010518778265733568
+513,Newton's laws of motion,Light,0.010579392791186453
+514,Electroscope,Gravity,0.010585962168003832
+515,Electric charge,Mass,0.010634459520606793
+516,Diffraction,Compression (physics),0.010672727968745818
+517,Interference (wave propagation),Joule,0.010704783542852283
+518,Electron,Electrostatics,0.010706962761479432
+519,Laser,Electric field,0.010730370768263294
+520,Resultant force,Potential energy,0.010758814711672986
+521,Color,Deformation (engineering),0.010791948855695947
+522,Lever,Potential energy,0.010792227179721661
+523,Color,Electrostatics,0.010808043113763847
+524,Electromagnetic radiation,Electric current,0.010822977159051539
+525,Absorption spectroscopy,Mirror image,0.010833744325995641
+526,Electric field,Speed,0.01089127253884115
+527,Dielectric,Ray (optics),0.010925053296642007
+528,Ohmmeter,Speed,0.0110218397319831
+529,Series and parallel circuits,Speed,0.01102845678836054
+530,Absorption spectroscopy,Amplitude,0.01108109188375278
+531,Absorption spectroscopy,Electric field,0.011159585598993826
+532,Fracture,Electrical polarity,0.011175326126691164
+533,Ohm's law,Speed,0.011187980825095006
+534,Photoelectric effect,Huygens–Fresnel principle,0.011193072940690118
+535,Electric charge,Motion,0.011195004068246688
+536,Laser,Fracture,0.011287714794540006
+537,Electrical resistance and conductance,Speed,0.011373096062996807
+538,Energy,Series and parallel circuits,0.01138533933528103
+539,Telescope,Kilogram,0.011397052610709375
+540,Sonic boom,Pitch (music),0.011457942541181751
+541,Shock wave,Pitch (music),0.011457942541181751
+542,Dispersion (optics),Elasticity (physics),0.01147381288842745
+543,Coulomb's law,Ray (optics),0.011497976525579831
+544,Doppler effect,Magnification,0.011513792308180882
+545,Electromagnetic radiation,Compression (physics),0.01152855149342957
+546,Series and parallel circuits,Frame of reference,0.011530464876877377
+547,Absorption spectroscopy,Series and parallel circuits,0.011566850997898087
+548,Subtractive color,Compression (physics),0.011570264695632144
+549,Diffraction,Geometrical optics,0.011570772447733203
+550,Electric field,Reflection (physics),0.01160459690003348
+551,Elasticity (physics),Electrical polarity,0.011618384612521017
+552,Free body diagram,Electrical polarity,0.011618384612521017
+553,Electromagnetic spectrum,Gravitational field,0.011628449699328747
+554,Scattering,Compression (physics),0.01175385582159958
+555,Ohmmeter,Electrical polarity,0.011767544325795238
+556,Series and parallel circuits,Electrical polarity,0.011774609072345838
+557,Electrical resistance and conductance,Frame of reference,0.011890791904279795
+558,Sonic boom,Friction,0.01191387019388178
+559,Shock wave,Friction,0.01191387019388178
+560,Ohm's law,Electrical polarity,0.011944926026588544
+561,Absorption spectroscopy,Huygens–Fresnel principle,0.011952828438094264
+562,Ammeter,Light,0.01197815307037659
+563,Electromagnetic radiation,Electrical resistance and conductance,0.011989794872648502
+564,Power (physics),Electrical conductor,0.012009228492406515
+565,Electroscope,Speed,0.012017719175981031
+566,Creep (deformation),Light,0.012136170527864207
+567,Electrical resistance and conductance,Electrical polarity,0.012142565605856645
+568,Voltmeter,Speed,0.012205069991012734
+569,Diffraction,Standing wave,0.012269446246712314
+570,Electric potential,Speed,0.012379660653406606
+571,Interference (wave propagation),Kilogram,0.012417573651006106
+572,Electroscope,Frame of reference,0.012564757836751194
+573,Refractive index,Wave,0.012578213445606466
+574,Electric current,Speed,0.012599221716754308
+575,Plasticity (physics),Ray (optics),0.012634649612441089
+576,Shock wave,Joule,0.012639382978307516
+577,Sonic boom,Joule,0.012639382978307516
+578,Energy level,Mirror image,0.012691669556025924
+579,Reflection (physics),Frame of reference,0.012812980817898768
+580,Electromagnetic radiation,Coulomb,0.01281473253250557
+581,Electroscope,Electrical polarity,0.012830801983805604
+582,Field line,Coulomb,0.012843618810731894
+583,Subtractive color,Coulomb,0.01286109946156903
+584,Refractive index,Velocity,0.01291798455235105
+585,Energy level,Amplitude,0.012981435806186636
+586,Electric charge,Metre,0.013027985062290795
+587,Voltmeter,Electrical polarity,0.013030828392642049
+588,Electron,Mirror image,0.013057398893683991
+589,Electric field,Voltage,0.013087494180712762
+590,Electric current,Frame of reference,0.013172729990142382
+591,Doppler effect,Optical microscope,0.013199624158694244
+592,Electron,Potential energy,0.013219333056068339
+593,Pigment,Compression (physics),0.013223159652151017
+594,Electron,Amplitude,0.013355515189382772
+595,Newton's laws of motion,Gravitational field,0.01342805773785419
+596,Electric current,Electrical polarity,0.013451647241086521
+597,Newton's laws of motion,Free fall,0.013535407697166092
+598,Energy level,Series and parallel circuits,0.013550499831979356
+599,Scattering,Fracture,0.013587064104538894
+600,Contact force,Light,0.013640831383823257
+601,Field line,Speed,0.01372017449698171
+602,Musical tone,Planet,0.013755065686752948
+603,Electric potential,Wave,0.013914009358343898
+604,Laser,Plasticity (physics),0.013941694600517907
+605,Doppler effect,Compression (physics),0.013944205189934803
+606,Energy level,Huygens–Fresnel principle,0.014002670197057678
+607,Total internal reflection,Velocity,0.014024480732463682
+608,Pitch (music),Refraction,0.014124180030191133
+609,Power (physics),Light,0.014177543932238171
+610,Refractive index,Planet,0.014211259349142275
+611,Emission spectrum,Electric field,0.014215061161312373
+612,Diffraction,Direction (geometry),0.01425680489636893
+613,Insulator (electricity),Gravity,0.014271581775866123
+614,Electromagnetic spectrum,Interference (wave propagation),0.014285117649294767
+615,Electromagnetic spectrum,Pigment,0.014285117649294767
+616,Ammeter,Wave,0.014402698898979414
+617,Electron,Huygens–Fresnel principle,0.014406177968356589
+618,Refractive index,Wavelength,0.014447113464561435
+619,Torque,Potential energy,0.014601248537270486
+620,Field line,Potential energy,0.01465903432331393
+621,Pigment,Coulomb,0.014698399384650318
+622,Force,Potential energy,0.014753518993626404
+623,Normal force,Potential energy,0.014753518993626404
+624,Sound,Refraction,0.014770368775854826
+625,Diffraction,Magnet,0.014824389488382848
+626,Sonic boom,Refraction,0.014877793766741781
+627,Shock wave,Refraction,0.014877793766741781
+628,Scattering,Electric current,0.014906646781564043
+629,Field line,Mass,0.014977575429187352
+630,Electrostatics,Light,0.01498502509547819
+631,Doppler effect,Geometrical optics,0.015117524375185222
+632,Newton's laws of motion,Temperature,0.015151229355738127
+633,Color,Geometrical optics,0.015178168477050715
+634,Coulomb's law,Speed,0.015240760995320056
+635,Scalar (mathematics),Light,0.015371120940229095
+636,Series and parallel circuits,Physics,0.015451152379703305
+637,Electric charge,Physical quantity,0.015553634884313576
+638,Total internal reflection,Wavelength,0.015684587917128547
+639,Deformation (engineering),Potential energy,0.015724421501675905
+640,Electric field,Ray (optics),0.01577403235731847
+641,Newton's laws of motion,Potential energy,0.015910325992336116
+642,Doppler effect,Planet,0.01597594561631883
+643,Insulator (electricity),Physical quantity,0.015992176499289943
+644,Newton's law of universal gravitation,Speed,0.016012845092038236
+645,Specular reflection,Frame of reference,0.01602542146168769
+646,Diffraction,Plane mirror,0.016028148575665514
+647,Doppler effect,Standing wave,0.01603036042256935
+648,Electric potential energy,Frame of reference,0.016228071032387603
+649,Coulomb's law,Electrical polarity,0.016271905138563567
+650,Electromagnetic spectrum,Gravity,0.016355591761302666
+651,Scattering,Electrical resistance and conductance,0.01651372210468949
+652,Electromagnetic radiation,Tension (physics),0.016725840638018512
+653,Scattering,Coulomb,0.016734459156469317
+654,Scattering,Sound,0.01678444090029437
+655,Sound intensity,Planet,0.01681174695047583
+656,Intensity (physics),Planet,0.01681174695047583
+657,Electric potential,Frame of reference,0.01691653465194344
+658,Electric potential energy,Light,0.017075958829730963
+659,Snell's law,Mass,0.017295278467754773
+660,Refractive index,Kilogram,0.01741216371080599
+661,Laser,Specular reflection,0.017435169233498228
+662,Energy level,Frequency,0.017451477137109053
+663,Fatigue (material),Light,0.017519506109473962
+664,Electric current,Physics,0.017651834553742432
+665,Refracting telescope,Wavelength,0.017730548342870852
+666,Ohmmeter,Frame of reference,0.017748835397377295
+667,Resonance (particle physics),Telescope,0.0178456455670322
+668,Reflection (physics),Distance,0.017876876185472044
+669,Plasticity (physics),Electrical polarity,0.01788052180270586
+670,Power (physics),Electric current,0.017887976137876852
+671,Electromagnetic radiation,Temperature,0.01789184244110284
+672,Electron,Frequency,0.017954367410633342
+673,Electrostatics,Wave,0.01801820390637545
+674,Dispersion (optics),Euclidean vector,0.018057453214336574
+675,Electroscope,Mass,0.018150970061162272
+676,Refraction,Wave,0.018203958585822626
+677,Creep (deformation),Potential energy,0.018251560671588108
+678,Dispersion (optics),Frame of reference,0.01833998797546284
+679,Ammeter,Reflection (physics),0.018362765901410043
+680,Laser,Deformation (engineering),0.018588926134023874
+681,Fracture,Light,0.018677386655884358
+682,Refraction,Velocity,0.0186956960795919
+683,Electric charge,Potential energy,0.018894857658503995
+684,Total internal reflection,Kilogram,0.018903610968342473
+685,Total internal reflection,Planet,0.019000362160978706
+686,Electroscope,Motion,0.01910771142469317
+687,Electromagnetic radiation,Free fall,0.01922814890815212
+688,Diffraction,Temperature,0.019241993052131475
+689,Resonance (particle physics),Magnification,0.019256985965729428
+690,Electromagnetic spectrum,Joule,0.01928325481588529
+691,Subtractive color,Electric charge,0.019414650350659396
+692,Free body diagram,Light,0.019417872844582726
+693,Elasticity (physics),Light,0.019417872844582726
+694,Collision,Wave,0.019452462820245684
+695,Musical tone,Refraction,0.019810538224164183
+696,Power (physics),Electrical resistance and conductance,0.01981646652562739
+697,Inelastic collision,Wave,0.01982198336148665
+698,Electric field,Potential energy,0.020156172194556655
+699,Electrostatics,Length,0.02019753146043728
+700,Electromagnetic spectrum,Compass,0.020230130171413892
+701,Electron,Gravity,0.020297742637946068
+702,Refractive index,Field (physics),0.020408385243020005
+703,Color,Gravity,0.02048936588555868
+704,Refraction,Planet,0.020567402339203754
+705,Electromagnetic spectrum,Crest (physics),0.02059821495980978
+706,Color,Compass,0.0206556271733307
+707,Electromagnetic radiation,Sound,0.020663287087266717
+708,Electric potential,Velocity,0.02069278574155897
+709,Electromagnetic spectrum,Kinetic energy,0.0207664008208043
+710,Wave,Length,0.02080210891437454
+711,Refraction,Wavelength,0.02090874481744624
+712,Laser,Amplitude,0.020933041752709467
+713,Doppler effect,Plane mirror,0.020941205773101445
+714,Color,Work (physics),0.020983255132713027
+715,Dispersion (optics),Length,0.021250570473849484
+716,Electromagnetic spectrum,Plasticity (physics),0.02132259174196856
+717,Electromagnetic spectrum,Hertz,0.02132259174196856
+718,Refracting telescope,Kilogram,0.02136947364508008
+719,Magnetism,Position (vector),0.021401362799198544
+720,Ammeter,Magnet,0.021418970388604137
+721,Electric potential energy,Reflection (physics),0.02172468490691596
+722,Photoelectric effect,Frequency,0.0218572019282184
+723,Electromagnetic radiation,Deformation (engineering),0.021946652294776634
+724,Electromagnetic radiation,Electrostatics,0.021979381794376904
+725,Color,Frame of reference,0.02198076961119784
+726,Subtractive color,Deformation (engineering),0.02202606080896537
+727,Subtractive color,Electrostatics,0.02205890873213651
+728,Resonance (particle physics),Optical microscope,0.022076564382377505
+729,Energy,Speed,0.022088462737372833
+730,Doppler effect,Frame of reference,0.022141800890400753
+731,Curved mirror,Planet,0.02216708918780849
+732,Pigment,Electric charge,0.022188171829325018
+733,Scalar multiplication,Light,0.022189408644474506
+734,Electroscope,Metre,0.022236256235184458
+735,Curved mirror,Motion,0.022290170717308464
+736,Specular reflection,Distance,0.022358924856142767
+737,Scattering,Crystallinity,0.022373813555512382
+738,Scattering,Deformation (engineering),0.022375559235399103
+739,Color,Amplitude,0.022490044858282897
+740,Snell's law,Wave,0.022512143382761574
+741,Electric potential,Sound,0.022513689578730123
+742,Lever,Speed,0.022684863880387502
+743,Dispersion (optics),Force,0.02271078428494805
+744,Voltage,Frame of reference,0.022719302352423545
+745,Mirror image,Motion,0.02278247079748347
+746,Energy,Distance,0.022804520017207053
+747,Ammeter,Displacement (vector),0.02286360381708044
+748,Electrostatics,Reflection (physics),0.02297236529190301
+749,Doppler effect,Refraction,0.02300912903702492
+750,Scattering,Tension (physics),0.023036748100974575
+751,Diffraction,Virtual image,0.023137879139899172
+752,Ammeter,Length,0.023176728569554956
+753,Resonance (particle physics),Compression (physics),0.02332188704281493
+754,Electric potential energy,Amplitude,0.023342365577868344
+755,Optical microscope,Velocity,0.023665721654113365
+756,Electric potential energy,Velocity,0.023711359825307324
+757,Series and parallel circuits,Gravity,0.02378596962644354
+758,Electron,Friction,0.0237913942967803
+759,Collision,Angle of incidence,0.023860391640395235
+760,Telescope,Frame of reference,0.023933786847741906
+761,Color,Friction,0.024015999777384747
+762,Coulomb's law,Light,0.024032783174035413
+763,Capacitance,Voltage,0.024187533033814646
+764,Capacitor,Voltage,0.024187533033814646
+765,Intensity (physics),Refraction,0.024212880051756227
+766,Sound intensity,Refraction,0.024212880051756227
+767,Inelastic collision,Angle of incidence,0.02431364555043504
+768,Insulator (electricity),Mass,0.024470430691896396
+769,Crest (physics),Length,0.02448802048665295
+770,Color,Angle of incidence,0.024529413570399103
+771,Laser,Sound,0.02459024449784611
+772,Resultant force,Distance,0.024640895755715948
+773,Scattering,Temperature,0.024642699658463406
+774,Photoelectric effect,Voltage,0.024650231757847342
+775,Scattering,Power (physics),0.024684942425053032
+776,Curved mirror,Frame of reference,0.024698185846248024
+777,Magnetism,Light,0.02489038066706547
+778,Ammeter,Ray (optics),0.024960355451715054
+779,Electromagnetic radiation,Frame of reference,0.02496156635282585
+780,Total internal reflection,Frame of reference,0.025011867273093468
+781,Doppler effect,Temperature,0.025140179733612333
+782,Pigment,Deformation (engineering),0.025172640924531847
+783,Refraction,Kilogram,0.025199946594306893
+784,Pigment,Electrostatics,0.025210181408156004
+785,Electron,Joule,0.025240206516548465
+786,Mirror image,Frame of reference,0.025243669280470612
+787,Direction (geometry),Light,0.025282385134368274
+788,Resonance (particle physics),Geometrical optics,0.025284280533935517
+789,Snell's law,Planet,0.02543492440329441
+790,Energy,Electrical conductor,0.02549138359759585
+791,Photoelectric effect,Coulomb,0.02573532359596835
+792,Strength of materials,Light,0.02573812033036608
+793,Insulator (electricity),Motion,0.025760272124473477
+794,Laser,Electrical resistance and conductance,0.025806533024947155
+795,Curved mirror,Metre,0.025939786119835415
+796,Laser,Coulomb,0.026151486027091227
+797,Fatigue (material),Potential energy,0.026347547437568467
+798,Photoelectric effect,Color,0.02642034395973039
+799,Work (physics),Speed,0.02647752973101733
+800,Scattering,Free fall,0.026483214352663226
+801,Mirror image,Metre,0.02651269150259237
+802,Electric potential energy,Wavelength,0.026518123195379814
+803,Electroscope,Physical quantity,0.026547053057127654
+804,Plane mirror,Motion,0.026579549263730712
+805,Series and parallel circuits,Physical quantity,0.02665362749881657
+806,Scattering,Electric charge,0.02667387096456107
+807,Color,Plasticity (physics),0.026711744228249762
+808,Electrostatics,Magnet,0.026795767837223525
+809,Resonance (particle physics),Standing wave,0.02681101216874172
+810,Capacitor,Coulomb,0.02692813612153504
+811,Capacitance,Coulomb,0.02692813612153504
+812,Newton's laws of motion,Free body diagram,0.027070815394332183
+813,Reflection (physics),Physical quantity,0.027071503168792265
+814,Electric current,Gravity,0.02717376608736716
+815,Electrical resistance and conductance,Length,0.02719939746101947
+816,Work (physics),Distance,0.02733587049204473
+817,Capacitor,Gravity,0.02739739759892634
+818,Capacitance,Gravity,0.02739739759892634
+819,Distance,Length,0.027625747702766226
+820,Displacement (vector),Length,0.027625747702766226
+821,Power (physics),Tension (physics),0.02764409772116949
+822,Fracture,Potential energy,0.02808888149304668
+823,Diffraction,Force,0.028392872624389377
+824,Photoelectric effect,Electrical resistance and conductance,0.02858678620549942
+825,Electrostatics,Displacement (vector),0.02860304714416625
+826,Scattering,Electrostatics,0.028702360036735756
+827,Color,Length,0.028767301186913605
+828,Electromotive force,Frame of reference,0.028841857520738104
+829,Electric field,Coulomb,0.029140782922784093
+830,Elasticity (physics),Potential energy,0.029202497074540965
+831,Free body diagram,Potential energy,0.029202497074540965
+832,Diffraction,Euclidean vector,0.02921375154164809
+833,Telescope,Velocity,0.029276487969571725
+834,Huygens–Fresnel principle,Length,0.02938562458398355
+835,Plane mirror,Frame of reference,0.029450947493882374
+836,Electric potential energy,Ray (optics),0.029530184083623953
+837,Refraction,Field (physics),0.029536261359693998
+838,Power (physics),Temperature,0.029571239590156086
+839,Electromagnetic spectrum,Friction,0.029591836321838493
+840,Electromagnetic radiation,Gravitational field,0.02962459891021515
+841,Plasticity (physics),Light,0.02988381864941497
+842,Dielectric,Frame of reference,0.02990601661682858
+843,Scattering,Plasticity (physics),0.029927046774242787
+844,Euclidean vector,Distance,0.02996431957781827
+845,Insulator (electricity),Metre,0.029978054352842003
+846,Laser,Strength of materials,0.03019437101675513
+847,Doppler effect,Virtual image,0.030230259342455677
+848,Diffraction,Hertz,0.03030850364360301
+849,Energy level,Electrical conductor,0.03033910355976383
+850,Electric current,Physical quantity,0.03044985974536251
+851,Mechanical energy,Frame of reference,0.030511964418791133
+852,Electric potential energy,Friction,0.030557314553791685
+853,Field line,Gravity,0.030573140837452807
+854,Torque,Speed,0.030691286426406627
+855,Electromagnetic spectrum,Direction (geometry),0.03092292649797542
+856,Plane mirror,Metre,0.030931473419691092
+857,Subtractive color,Geometrical optics,0.030978210359826727
+858,Force,Speed,0.031011353315095636
+859,Normal force,Speed,0.031011353315095636
+860,Reflection (physics),Motion,0.031063720039655195
+861,Electrostatics,Ray (optics),0.03122614568693656
+862,Pitch (music),Telescope,0.031229879742306354
+863,Electric charge,Kilogram,0.031312517134842295
+864,Photoelectric effect,Electrical conductor,0.03137981603512836
+865,Electric potential energy,Frequency,0.03138010042110083
+866,Electromagnetic radiation,Distance,0.031384207478645704
+867,Color,Direction (geometry),0.03157332332705636
+868,Electroscope,Light,0.03164316451247996
+869,Resultant force,Speed,0.0317730356772208
+870,Power (physics),Free fall,0.03177985722319587
+871,Electric potential,Friction,0.03185368547425557
+872,Electric potential,Electric current,0.032057623297593055
+873,Refractive index,Reflection (physics),0.03207326495952873
+874,Electroscope,Potential energy,0.032249875511290646
+875,Emission spectrum,Sound,0.032575932095688646
+876,Sound,Telescope,0.03265866334424093
+877,Laser,Crystallinity,0.03277902129403809
+878,Electromagnetic spectrum,Elasticity (physics),0.032815152815786945
+879,Color,Magnet,0.032830304254366026
+880,Electric potential energy,Coulomb,0.03286809236639601
+881,Sonic boom,Telescope,0.03289619002115575
+882,Shock wave,Telescope,0.03289619002115575
+883,Ammeter,Speed,0.03308537036508162
+884,Collision,Voltage,0.03308837682669041
+885,Contact force,Distance,0.03312778074093652
+886,Equations of motion,Frame of reference,0.033132315930617676
+887,Laser,Curved mirror,0.03331333338681793
+888,Newton's laws of motion,Speed,0.03344291900256722
+889,Collision,Potential energy,0.033444635184451885
+890,Electric potential energy,Compass,0.03350614037632538
+891,Field line,Distance,0.0335735623598329
+892,Pitch (music),Magnification,0.0336997254400265
+893,Inelastic collision,Voltage,0.033716926282189606
+894,Normal force,Distance,0.03378996044587455
+895,Force,Distance,0.03378996044587455
+896,Electric potential energy,Physics,0.03379943713670104
+897,Specular reflection,Physical quantity,0.03385880725547321
+898,Electric field,Mass,0.0339824998486312
+899,Electron,Energy,0.03400414760021533
+900,Inelastic collision,Potential energy,0.03407995215223978
+901,Emission spectrum,Electrical resistance and conductance,0.034187210603760385
+902,Interference (wave propagation),Force,0.03418733642528517
+903,Collision,Speed,0.0342088473150193
+904,Doppler effect,Compass,0.034556749523410306
+905,Ammeter,Frame of reference,0.034591394630632134
+906,Electromagnetic spectrum,Mechanical energy,0.034610668034673824
+907,Emission spectrum,Coulomb,0.03464418717327085
+908,Electromagnetic spectrum,Magnet,0.03464771923472587
+909,Inelastic collision,Speed,0.03485868131762791
+910,Electric potential,Compass,0.034927612998351294
+911,Interference (wave propagation),Light,0.03501204938432925
+912,Resonance (particle physics),Plane mirror,0.0350244728134913
+913,Sound,Magnification,0.035241505795753594
+914,Ammeter,Electrical polarity,0.035323827217037515
+915,Pigment,Geometrical optics,0.035403668982659106
+916,Photoelectric effect,Tension (physics),0.03542738737081916
+917,Electromagnetic spectrum,Frequency,0.03544215747782113
+918,Shock wave,Magnification,0.035497817503091604
+919,Sonic boom,Magnification,0.035497817503091604
+920,Strength of materials,Potential energy,0.03577093005176572
+921,Color,Hardness,0.035791184630465545
+922,Field line,Friction,0.035835396158537515
+923,Laser,Tension (physics),0.036000278852116936
+924,Reflection (physics),Metre,0.03614984668060001
+925,Laser,Power (physics),0.036164968094746744
+926,Scattering,Specular reflection,0.03634507622387191
+927,Scattering,Strength of materials,0.03634507622387191
+928,Dispersion (optics),Reflection (physics),0.036350930746483205
+929,Electromagnetic radiation,Interference (wave propagation),0.036392717145263286
+930,Electromagnetic radiation,Pigment,0.036392717145263286
+931,Newton's laws of motion,Distance,0.03643939362495532
+932,Electrostatics,Gravity,0.03645960025061312
+933,Snell's law,Field (physics),0.03652637131563239
+934,Dielectric,Velocity,0.03658188907882746
+935,Compression (physics),Length,0.03673203072997944
+936,Rarefaction,Length,0.03673203072997944
+937,Collision,Coulomb,0.036837502774016595
+938,Refracting telescope,Frame of reference,0.0375178009096402
+939,Inelastic collision,Coulomb,0.037537270926193855
+940,Collision,Mass,0.0375647006873758
+941,Snell's law,Velocity,0.03778088582750863
+942,Strength of materials,Series and parallel circuits,0.03795113111760342
+943,Energy,Electric current,0.03796990471149615
+944,Photoelectric effect,Scattering,0.038109400312409385
+945,Photoelectric effect,Sound,0.038131642433678475
+946,Inelastic collision,Mass,0.03827828274934006
+947,Pitch (music),Optical microscope,0.03863398766916064
+948,Compass,Light,0.03864559103570691
+949,Specular reflection,Motion,0.03885194342193554
+950,Euclidean vector,Speed,0.03900285090946702
+951,Dispersion (optics),Distance,0.03905441589189877
+952,Optical microscope,Compass,0.03994566887151752
+953,Electric potential energy,Length,0.039947763021422694
+954,Diffraction,Frame of reference,0.03995912661853175
+955,Newton's law of universal gravitation,Coulomb,0.03998783292431604
+956,Musical tone,Crest (physics),0.040020079726096384
+957,Collision,Frame of reference,0.04017236582977612
+958,Sonic boom,Force,0.0403657707190114
+959,Shock wave,Force,0.0403657707190114
+960,Sound,Optical microscope,0.040401513145227774
+961,Laser,Electrical conductor,0.040663275918177214
+962,Insulator (electricity),Distance,0.04066905214784284
+963,Sonic boom,Optical microscope,0.04069535362052722
+964,Shock wave,Optical microscope,0.04069535362052722
+965,Absorption spectroscopy,Sound,0.04071991511961081
+966,Photoelectric effect,Free fall,0.04072758401419277
+967,Series and parallel circuits,Mass,0.04078405115316066
+968,Scattering,Gravitational field,0.04080239896198615
+969,Pitch (music),Compression (physics),0.04081330232492614
+970,Coulomb's law,Potential energy,0.04089899569119219
+971,Inelastic collision,Frame of reference,0.04093548330757431
+972,Electric potential,Distance,0.04110221789662616
+973,Color,Elasticity (physics),0.041108978656705514
+974,Laser,Free fall,0.04138618425731398
+975,Electrostatics,Speed,0.04139078055698541
+976,Power (physics),Elasticity (physics),0.04143030116843231
+977,Electron,Mass,0.04150866832261146
+978,Electric potential energy,Gravity,0.04154698633209402
+979,Electric potential,Length,0.041642516604149714
+980,Electromagnetic radiation,Gravity,0.041667449952144546
+981,Subtractive color,Gravity,0.041818213277971736
+982,Resonance (particle physics),Temperature,0.04204731815095396
+983,Energy,Electrical resistance and conductance,0.042063413988092005
+984,Subtractive color,Compass,0.04215754783965385
+985,Snell's law,Wavelength,0.04225308848525594
+986,Absorption spectroscopy,Electrical conductor,0.04228980695490431
+987,Ohm's law,Frame of reference,0.042301391030415886
+988,Mechanical energy,Distance,0.04257078175972082
+989,Refracting telescope,Velocity,0.04259829897740406
+990,Energy,Coulomb,0.042625670875586136
+991,Electromagnetic spectrum,Electric field,0.04264518348393712
+992,Sound,Compression (physics),0.0426805326051522
+993,Absorption spectroscopy,Electrical resistance and conductance,0.04273401325470049
+994,Subtractive color,Work (physics),0.042826227190581614
+995,Series and parallel circuits,Motion,0.042933786874122463
+996,Sonic boom,Compression (physics),0.042990948404225134
+997,Shock wave,Compression (physics),0.042990948404225134
+998,Refractive index,Length,0.04299706832794586
+999,Insulator (electricity),Voltage,0.04301488987469754
+1000,Diffraction,Work (physics),0.043033455441665695
+1001,Le Sage's theory of gravitation,Frame of reference,0.04307571447358748
+1002,Contact force,Speed,0.043120548419085365
+1003,Coulomb's law,Frame of reference,0.043126591971266025
+1004,Electric field,Frame of reference,0.04317951235417354
+1005,Electric charge,Distance,0.04327486162366391
+1006,Electrostatics,Frame of reference,0.04327486162366391
+1007,Absorption spectroscopy,Coulomb,0.043305233966588565
+1008,Emission spectrum,Crystallinity,0.0434240160536528
+1009,Insulator (electricity),Potential energy,0.04347802573978745
+1010,Electromagnetic spectrum,Potential energy,0.043496491368569014
+1011,Musical tone,Telescope,0.04380294820998813
+1012,Field line,Kilogram,0.04410055690710476
+1013,Photoelectric effect,Electrostatics,0.04414032844484412
+1014,Electrostatics,Electrical polarity,0.04419115653353399
+1015,Refraction,Frame of reference,0.0442428575902918
+1016,Pitch (music),Geometrical optics,0.04424749093438716
+1017,Power (physics),Speed,0.04481717077148111
+1018,Laser,Electrostatics,0.04485411571577808
+1019,Subtractive color,Frame of reference,0.044862125882719456
+1020,Plasticity (physics),Potential energy,0.04494221038887468
+1021,Magnet,Position (vector),0.04509572875545407
+1022,Energy level,Electric current,0.045190676558846794
+1023,Specular reflection,Metre,0.045213251862731695
+1024,Electromagnetic spectrum,Electric charge,0.04549193633029761
+1025,Collision,Velocity,0.045797144184421046
+1026,Subtractive color,Amplitude,0.045901542183777615
+1027,Scattering,Angle of incidence,0.04596898804189125
+1028,Scattering,Elasticity (physics),0.04605728164316081
+1029,Voltmeter,Frame of reference,0.046146972033180966
+1030,Electric field,Distance,0.04616364824477023
+1031,Power (physics),Distance,0.04627004061462301
+1032,Sound,Geometrical optics,0.04627183716932186
+1033,Ammeter,Physics,0.04635345713910991
+1034,Refraction,Reflection (physics),0.04641838760013392
+1035,Electric potential energy,Physical quantity,0.04655592833865196
+1036,Electric current,Mass,0.046592856357603546
+1037,Shock wave,Geometrical optics,0.046608372550507655
+1038,Sonic boom,Geometrical optics,0.046608372550507655
+1039,Inelastic collision,Velocity,0.046667110402205295
+1040,Color,Distance,0.0467702021739767
+1041,Pitch (music),Standing wave,0.046919271295298014
+1042,Dispersion (optics),Geometrical optics,0.0470912406595676
+1043,Doppler effect,Distance,0.04711284101774209
+1044,Electric potential energy,Speed,0.047166238309122914
+1045,Musical tone,Magnification,0.04726714737042678
+1046,Standing wave,Mass,0.047438478082984514
+1047,Strength of materials,Distance,0.04752652593185941
+1048,Wave,Frame of reference,0.04768396873620338
+1049,Emission spectrum,Tension (physics),0.0476913777500317
+1050,Energy level,Sound,0.04770314782188927
+1051,Pigment,Gravity,0.0477922437462534
+1052,Insulator (electricity),Coulomb,0.04788875360622158
+1053,Emission spectrum,Power (physics),0.0479095498623614
+1054,Pigment,Compass,0.0481800546738901
+1055,Telescope,Motion,0.04851090647416145
+1056,Sound,Frame of reference,0.04862526512569256
+1057,Pigment,Work (physics),0.048944259646378975
+1058,Power (physics),Gravitational field,0.04896287875438338
+1059,Subtractive color,Friction,0.049015972792122976
+1060,Electric current,Motion,0.049048775395107505
+1061,Sound,Standing wave,0.049065852902227085
+1062,Electron,Sound,0.049077784986849254
+1063,Electromagnetic radiation,Joule,0.049125954394165915
+1064,Scattering,Frequency,0.04922521871919601
+1065,Pitch (music),Frame of reference,0.049253205980647016
+1066,Magnetism,Physics,0.04926697616536083
+1067,Curved mirror,Displacement (vector),0.04930415491079707
+1068,Telescope,Compass,0.049416151818476736
+1069,Sonic boom,Standing wave,0.049422709178523906
+1070,Shock wave,Standing wave,0.049422709178523906
+1071,Electromagnetic spectrum,Frame of reference,0.049506229725932646
+1072,Creep (deformation),Distance,0.04986381597879413
+1073,Series and parallel circuits,Metre,0.049963423921403335
+1074,Energy level,Electrical resistance and conductance,0.0500626522752692
+1075,Subtractive color,Angle of incidence,0.05006383574776766
+1076,Resonance (particle physics),Virtual image,0.050560550713113
+1077,Telescope,Physical quantity,0.050567748106259816
+1078,Energy level,Coulomb,0.0507318340743491
+1079,Photoelectric effect,Crystallinity,0.05082982885427085
+1080,Doppler effect,Telescope,0.05087533090526414
+1081,Snell's law,Kilogram,0.05092489207599518
+1082,Work (physics),Coulomb,0.05109556429218161
+1083,Electric potential energy,Direction (geometry),0.051216077568893965
+1084,Pigment,Frame of reference,0.05127100100882222
+1085,Speed,Length,0.05128350193864468
+1086,Electromagnetic radiation,Compass,0.051538210829959026
+1087,Interference (wave propagation),Work (physics),0.05181579328690359
+1088,Curved mirror,Physical quantity,0.052182784466992746
+1089,Pigment,Amplitude,0.05245890535288869
+1090,Electromagnetic radiation,Crest (physics),0.052475942385164454
+1091,Scalar (mathematics),Distance,0.052628713713940574
+1092,Coulomb's law,Velocity,0.05275367241496601
+1093,Electric field,Velocity,0.05281840613067063
+1094,Doppler effect,Direction (geometry),0.05282199454313642
+1095,Total internal reflection,Physical quantity,0.052845536395019925
+1096,Electromagnetic radiation,Kinetic energy,0.052904412112699965
+1097,Electrostatics,Physics,0.0530032420091052
+1098,Electric potential energy,Wave,0.05301207356200216
+1099,Resonance (particle physics),Light,0.05301821886259197
+1100,Photoelectric effect,Elasticity (physics),0.05309514324498121
+1101,Electric potential energy,Magnet,0.05325506573649508
+1102,Mirror image,Physical quantity,0.053335291969185517
+1103,Electric potential,Direction (geometry),0.05338888085969552
+1104,Electroscope,Kilogram,0.053444423757769255
+1105,Intensity (physics),Telescope,0.053536936701096605
+1106,Sound intensity,Telescope,0.053536936701096605
+1107,Emission spectrum,Electrical conductor,0.053868684193637016
+1108,Diffraction,Length,0.05387727998339746
+1109,Laser,Elasticity (physics),0.05395373761280608
+1110,Musical tone,Optical microscope,0.05418793075674479
+1111,Absorption spectroscopy,Crystallinity,0.05428002006706601
+1112,Electromagnetic radiation,Plasticity (physics),0.05432136221207095
+1113,Electromagnetic radiation,Hertz,0.05432136221207095
+1114,Electric potential energy,Distance,0.05435388202487965
+1115,Field line,Frame of reference,0.05439497010850433
+1116,Scattering,Gravity,0.05441254724666951
+1117,Subtractive color,Plasticity (physics),0.05451791057872072
+1118,Snell's law,Frame of reference,0.05471345965989196
+1119,Coulomb's law,Gravitational constant,0.05481940937071305
+1120,Emission spectrum,Free fall,0.054826357183394764
+1121,Doppler effect,Magnet,0.054924916652266446
+1122,Field line,Motion,0.055184662782401396
+1123,Electric potential,Magnet,0.055514371555619106
+1124,Diffraction,Distance,0.05575161386655688
+1125,Electron,Compass,0.05594733615492774
+1126,Pigment,Friction,0.05601825461956911
+1127,Photoelectric effect,Power (physics),0.056080354635557376
+1128,Frequency,Frame of reference,0.056257079234014365
+1129,Resonance (particle physics),Frame of reference,0.0562893782635966
+1130,Dielectric,Friction,0.056312765391987527
+1131,Resultant force,Coulomb,0.0564740447439902
+1132,Lever,Coulomb,0.05664942997611439
+1133,Electromagnetic radiation,Reflection (physics),0.056755255427054514
+1134,Electric current,Metre,0.05707963206405475
+1135,Pigment,Angle of incidence,0.057215812283163026
+1136,Musical tone,Compression (physics),0.05724463183236393
+1137,Snell's law,Reflection (physics),0.057403854899156524
+1138,Total internal reflection,Length,0.057486803246654304
+1139,Standing wave,Frame of reference,0.05773686050187853
+1140,Intensity (physics),Magnification,0.05777095789718829
+1141,Sound intensity,Magnification,0.05777095789718829
+1142,Wave,Physics,0.05840353591096264
+1143,Sound,Distance,0.05843042317674563
+1144,Energy,Tension (physics),0.058678731915654106
+1145,Subtractive color,Length,0.05871324389369703
+1146,Newton's laws of motion,Tension (physics),0.05886970014503753
+1147,Emission spectrum,Electrostatics,0.05942050018645943
+1148,Sonic boom,Compass,0.05953753231141775
+1149,Shock wave,Compass,0.05953753231141775
+1150,Absorption spectroscopy,Tension (physics),0.059614222187539624
+1151,Interference (wave propagation),Velocity,0.05974793463177902
+1152,Absorption spectroscopy,Power (physics),0.05988693732795176
+1153,Capacitor,Light,0.060055614104187534
+1154,Capacitance,Light,0.060055614104187534
+1155,Newton's law of universal gravitation,Electric charge,0.060364185567962976
+1156,Total internal reflection,Motion,0.06063863309270181
+1157,Motion graphs and derivatives,Frame of reference,0.061023928837582266
+1158,Optical microscope,Direction (geometry),0.06105927010651903
+1159,Shock wave,Work (physics),0.061180093278512676
+1160,Sonic boom,Work (physics),0.061180093278512676
+1161,Pitch (music),Plane mirror,0.061292827423609794
+1162,Free body diagram,Speed,0.06138257285281324
+1163,Elasticity (physics),Speed,0.06138257285281324
+1164,Direction (geometry),Distance,0.06140016599959735
+1165,Electromagnetic radiation,Length,0.06144653516219514
+1166,Deformation (engineering),Distance,0.061710332233786705
+1167,Dielectric,Compass,0.06174703012208532
+1168,Musical tone,Geometrical optics,0.062061415856023545
+1169,Plane mirror,Physical quantity,0.06222450729738309
+1170,Refraction,Length,0.062227982895862906
+1171,Pigment,Plasticity (physics),0.06230618351853795
+1172,Electrostatics,Mass,0.06251459263580694
+1173,Mirror image,Geometrical optics,0.06252345828685489
+1174,Electroscope,Physics,0.06263315345336344
+1175,Photoelectric effect,Gravitational field,0.06274854364639423
+1176,Photoelectric effect,Hertz,0.06275963207025673
+1177,Energy,Temperature,0.06276937875948653
+1178,Collision,Planet,0.06311089906734793
+1179,Diffraction,Reflection (physics),0.06333297972863636
+1180,Electromagnetic spectrum,Euclidean vector,0.06336445635743958
+1181,Newton's law of universal gravitation,Frame of reference,0.0634844863179506
+1182,Optical microscope,Magnet,0.06349013039842798
+1183,Energy level,Crystallinity,0.0635887332630352
+1184,Laser,Gravitational field,0.06376324184422044
+1185,Laser,Voltage,0.06388559922048383
+1186,Sound,Plane mirror,0.06409700686527524
+1187,Field line,Metre,0.06422016088729107
+1188,Inelastic collision,Planet,0.06430975875915511
+1189,Standing wave,Frequency,0.06432262281732844
+1190,Fracture,Distance,0.06433191939014216
+1191,Subtractive color,Direction (geometry),0.064440255309014
+1192,Shock wave,Plane mirror,0.06456318482486953
+1193,Sonic boom,Plane mirror,0.06456318482486953
+1194,Color,Euclidean vector,0.06469719055043438
+1195,Electromagnetic spectrum,Length,0.06479120823999347
+1196,Electromagnetic spectrum,Force,0.06495293797483954
+1197,Musical tone,Frame of reference,0.06521791622476943
+1198,Doppler effect,Hertz,0.06525619766006689
+1199,Electron,Crystallinity,0.06542113720296944
+1200,Electrostatics,Motion,0.06580974966584012
+1201,Scattering,Speed,0.06590613083184738
+1202,Sonic boom,Frame of reference,0.06606814945377579
+1203,Shock wave,Frame of reference,0.06606814945377579
+1204,Resonance (particle physics),Hertz,0.06622969314713249
+1205,Intensity (physics),Optical microscope,0.06622969314713252
+1206,Sound intensity,Optical microscope,0.06622969314713252
+1207,Photoelectric effect,Energy level,0.06629985647402283
+1208,Electric potential,Physics,0.06632810559588066
+1209,Absorption spectroscopy,Voltage,0.06644102318930317
+1210,Wave,Distance,0.0665294373919793
+1211,Diffraction,Mirror image,0.06652997003691807
+1212,Field line,Velocity,0.06653747265811756
+1213,Wavelength,Frame of reference,0.06657155873190793
+1214,Electromagnetic radiation,Physical quantity,0.06659881216323121
+1215,Free body diagram,Distance,0.06688243133694328
+1216,Elasticity (physics),Distance,0.06688243133694328
+1217,Subtractive color,Magnet,0.06700571764680294
+1218,Pigment,Length,0.06710085016422516
+1219,Scattering,Diffraction,0.06712144066653716
+1220,Laser,Angle of incidence,0.06734741192653278
+1221,Huygens–Fresnel principle,Frame of reference,0.06735967058552496
+1222,Energy,Free fall,0.06745750001055861
+1223,Scattering,Joule,0.06766190477900168
+1224,Series and parallel circuits,Distance,0.06778175357973806
+1225,Energy,Electric charge,0.06794313661900975
+1226,Diffraction,Amplitude,0.0680489301592094
+1227,Absorption spectroscopy,Free fall,0.06853294647924346
+1228,Newton's law of universal gravitation,Electrostatics,0.06858573479734194
+1229,Electric field,Gravity,0.06936715216644991
+1230,Absorption spectroscopy,Frequency,0.06955998741377356
+1231,Energy level,Tension (physics),0.06983772055874399
+1232,Electrical resistance and conductance,Distance,0.06989993337910487
+1233,Reflection (physics),Position (vector),0.07007837693195765
+1234,Energy level,Power (physics),0.07015720478699283
+1235,Doppler effect,Length,0.07039211056105892
+1236,Total internal reflection,Metre,0.07056712095087052
+1237,Standing wave,Physics,0.0707163622298815
+1238,Scattering,Compass,0.07098434130515191
+1239,Electric potential energy,Mass,0.07123755905010558
+1240,Curved mirror,Speed,0.07134685497578659
+1241,Ammeter,Gravity,0.07135790887933062
+1242,Emission spectrum,Elasticity (physics),0.07147522640278436
+1243,Compass,Position (vector),0.07167569801634786
+1244,Series and parallel circuits,Voltage,0.07169148312449589
+1245,Refracting telescope,Compass,0.07190220396873154
+1246,Fatigue (material),Distance,0.07198229677775535
+1247,Insulator (electricity),Kilogram,0.07205168996621056
+1248,Electron,Power (physics),0.07217888900477218
+1249,Collision,Reflection (physics),0.07239303969510417
+1250,Series and parallel circuits,Potential energy,0.07246337623297909
+1251,Scattering,Kinetic energy,0.07286603057189
+1252,Subtractive color,Hardness,0.07304879031922569
+1253,Energy,Electrostatics,0.0731100623473393
+1254,Kinetic energy,Frame of reference,0.07322871460509872
+1255,Dielectric,Coulomb,0.07323271003105727
+1256,Dispersion (optics),Physical quantity,0.07331553991938697
+1257,Diffraction,Huygens–Fresnel principle,0.07340226000485307
+1258,Pitch (music),Temperature,0.07358280676416944
+1259,Frequency,Length,0.07362637299999258
+1260,Pigment,Direction (geometry),0.07364600606744455
+1261,Inelastic collision,Reflection (physics),0.07376822367347281
+1262,Electroscope,Distance,0.07386183719163238
+1263,Electrical resistance and conductance,Voltage,0.07393184197213638
+1264,Absorption spectroscopy,Electrostatics,0.0742756252330743
+1265,Coulomb's law,Physics,0.07431367602384573
+1266,Electric field,Physics,0.0744048658909483
+1267,Velocity,Frame of reference,0.07445177369696959
+1268,Energy level,Temperature,0.07470628949092066
+1269,Electric potential energy,Motion,0.07499250543316664
+1270,Electromagnetic spectrum,Reflection (physics),0.07504305995354985
+1271,Reflection (physics),Displacement (vector),0.07532101417370815
+1272,Electromagnetic radiation,Friction,0.07538806158329138
+1273,Telescope,Direction (geometry),0.07553545219668507
+1274,Electromagnetic radiation,Frequency,0.07567367390273934
+1275,Sound intensity,Geometrical optics,0.07585284160180655
+1276,Intensity (physics),Geometrical optics,0.07585284160180655
+1277,Scalar multiplication,Distance,0.07597364171244897
+1278,Dispersion (optics),Angle of incidence,0.076104078000469
+1279,Compass,Physics,0.07649346299358654
+1280,Pigment,Magnet,0.07657796302491762
+1281,Electrostatics,Metre,0.07658491505433986
+1282,Torque,Coulomb,0.07664334643827243
+1283,Collision,Gravity,0.07667935908997883
+1284,Sound,Temperature,0.07694925929477409
+1285,Snell's law,Length,0.07695498024603944
+1286,Work (physics),Electric charge,0.07713201489239713
+1287,Photoelectric effect,Temperature,0.07726891522270087
+1288,Collision,Compass,0.07730157497791992
+1289,Scattering,Frame of reference,0.0773953350085443
+1290,Electric current,Distance,0.07743579705574362
+1291,Force,Coulomb,0.07744262858931662
+1292,Normal force,Coulomb,0.07744262858931662
+1293,Sonic boom,Temperature,0.07750891177224045
+1294,Shock wave,Temperature,0.07750891177224045
+1295,Newton's law of universal gravitation,Velocity,0.07765602709532263
+1296,Inelastic collision,Gravity,0.07813596633476684
+1297,Optical microscope,Wave,0.07824026780698197
+1298,Crest (physics),Distance,0.07831774328873464
+1299,Musical tone,Distance,0.07836893914857697
+1300,Telescope,Magnet,0.07854263081274102
+1301,Inelastic collision,Compass,0.07877000188553446
+1302,Electromagnetic radiation,Direction (geometry),0.07877914238950241
+1303,Photoelectric effect,Wavelength,0.07878984737082576
+1304,Refracting telescope,Physical quantity,0.07926830459252988
+1305,Refractive index,Frame of reference,0.07947328122700564
+1306,Sound intensity,Frame of reference,0.07971078649694041
+1307,Intensity (physics),Frame of reference,0.07971078649694041
+1308,Ohmmeter,Coulomb,0.07976670071816194
+1309,Series and parallel circuits,Coulomb,0.07981458934370263
+1310,Direction (geometry),Speed,0.07992110463511443
+1311,Ammeter,Physical quantity,0.07996088249644971
+1312,Interference (wave propagation),Mirror image,0.08010751494241156
+1313,Energy level,Free fall,0.08028595509017906
+1314,Intensity (physics),Standing wave,0.08043303650622517
+1315,Sound intensity,Standing wave,0.08043303650622517
+1316,Standing wave,Distance,0.08055539309698423
+1317,Electron,Force,0.0806083960661758
+1318,Voltage,Coulomb,0.08076159838600162
+1319,Energy level,Electric charge,0.08086394566098515
+1320,Electric field,Friction,0.08130664073705912
+1321,Color,Force,0.08136938919307492
+1322,Work (physics),Mass,0.08139018482264755
+1323,Coulomb's law,Electrical conductor,0.08182584940805622
+1324,Electric current,Voltage,0.08190238293736374
+1325,Electrical resistance and conductance,Coulomb,0.08230879526069333
+1326,Deformation (engineering),Coulomb,0.08253898847198568
+1327,Doppler effect,Reflection (physics),0.08274623575268224
+1328,Electric current,Potential energy,0.08278421550941303
+1329,Capacitor,Potential energy,0.08346550345412003
+1330,Capacitance,Potential energy,0.08346550345412003
+1331,Pigment,Hardness,0.08348433179340077
+1332,Newton's laws of motion,Coulomb,0.08351481887756582
+1333,Electromagnetic radiation,Elasticity (physics),0.08359977172203979
+1334,Photoelectric effect,Gravity,0.08367910178516942
+1335,Electrical resistance and conductance,Gravity,0.08374314432562702
+1336,Subtractive color,Elasticity (physics),0.08390225674662574
+1337,Ohmmeter,Length,0.0841856724870793
+1338,Compression (physics),Frame of reference,0.08419958823190618
+1339,Rarefaction,Frame of reference,0.08419958823190618
+1340,Emission spectrum,Gravitational field,0.08447036940605604
+1341,Emission spectrum,Voltage,0.0846324623686092
+1342,Electromagnetic radiation,Color,0.08488742980673523
+1343,Strength of materials,Electrical conductor,0.08497127865865281
+1344,Laser,Gravity,0.08503226520288337
+1345,Motion graphs and derivatives,Distance,0.08514156351944165
+1346,Resultant force,Electric charge,0.08525117435475472
+1347,Telescope,Metre,0.08534035051800448
+1348,Lever,Electric charge,0.08551592955461422
+1349,Electron,Direction (geometry),0.08551874600001344
+1350,Electric potential,Coulomb,0.08565624071242597
+1351,Electric potential energy,Sound,0.08577666849016534
+1352,Collision,Physical quantity,0.08592389152637941
+1353,Musical tone,Plane mirror,0.08596916054220594
+1354,Diffraction,Ray (optics),0.08608799427768338
+1355,Power (physics),Coulomb,0.08648686844321825
+1356,Laser,Frequency,0.08658814610024983
+1357,Energy level,Electrostatics,0.08701347042715685
+1358,Telescope,Distance,0.08711286308607148
+1359,Wavelength,Length,0.0871254334765188
+1360,Electric potential energy,Metre,0.08727118227122449
+1361,Power (physics),Kinetic energy,0.087439236686268
+1362,Inelastic collision,Physical quantity,0.08755610864951471
+1363,Energy,Frame of reference,0.0875718651105002
+1364,Work (physics),Electrostatics,0.08763732779660359
+1365,Specular reflection,Position (vector),0.08764826402587271
+1366,Energy,Elasticity (physics),0.08794201062259895
+1367,Electromagnetic radiation,Mechanical energy,0.08817402018783325
+1368,Electromagnetic radiation,Magnet,0.08826841169908926
+1369,Coulomb's law,Gravity,0.08832685667326674
+1370,Pitch (music),Virtual image,0.08848096374794777
+1371,Capacitance,Series and parallel circuits,0.088552639274408
+1372,Capacitor,Series and parallel circuits,0.088552639274408
+1373,Emission spectrum,Frequency,0.08860539369455281
+1374,Doppler effect,Amplitude,0.08890775140847755
+1375,Coulomb's law,Compass,0.08904358636697103
+1376,Electric field,Compass,0.08915285121890132
+1377,Laser,Wave,0.08918931086701669
+1378,Emission spectrum,Angle of incidence,0.0892184995529943
+1379,Absorption spectroscopy,Elasticity (physics),0.08934403300348047
+1380,Collision,Friction,0.08987742622786024
+1381,Capacitance,Electrostatics,0.08989491785116491
+1382,Capacitor,Electrostatics,0.08989491785116491
+1383,Lever,Frame of reference,0.0899363556170967
+1384,Resultant force,Mass,0.08995757269871571
+1385,Interference (wave propagation),Ray (optics),0.09054918916264867
+1386,Electron,Velocity,0.09067412598602072
+1387,Electromagnetic radiation,Mass,0.09069120809982335
+1388,Electromagnetic spectrum,Color,0.09070984759507436
+1389,Collision,Refraction,0.09089457708218354
+1390,Refracting telescope,Motion,0.09095794963905271
+1391,Sonic boom,Direction (geometry),0.09100656891166876
+1392,Shock wave,Direction (geometry),0.09100656891166876
+1393,Electric current,Coulomb,0.091182449790647
+1394,Coulomb's law,Mass,0.09121940322837181
+1395,Electric field,Physical quantity,0.09123047338758214
+1396,Electrostatics,Physical quantity,0.09143192909003232
+1397,Diffraction,Frequency,0.09148097071914141
+1398,Inelastic collision,Friction,0.091584745012734
+1399,Le Sage's theory of gravitation,Distance,0.09165556576744413
+1400,Sonic boom,Distance,0.09217934096479061
+1401,Shock wave,Distance,0.09217934096479061
+1402,Sound,Virtual image,0.09252901488133645
+1403,Inelastic collision,Refraction,0.09262121774612662
+1404,Pitch (music),Light,0.09278188300953595
+1405,Voltage,Field (physics),0.093137323613853
+1406,Sonic boom,Virtual image,0.09320197902537701
+1407,Shock wave,Virtual image,0.09320197902537701
+1408,Electromagnetic spectrum,Work (physics),0.09333931334891524
+1409,Color,Refraction,0.09344317168628287
+1410,Refraction,Physical quantity,0.09347712889563403
+1411,Field line,Physics,0.09373080508340241
+1412,Electrical resistance and conductance,Physical quantity,0.09383929305759536
+1413,Huygens–Fresnel principle,Distance,0.09398129194648161
+1414,Newton's law of universal gravitation,Newton's laws of motion,0.09414637696274633
+1415,Specular reflection,Displacement (vector),0.09420532303999597
+1416,Mirror image,Length,0.09425514681537396
+1417,Dielectric,Direction (geometry),0.09438391437696173
+1418,Sonic boom,Doppler effect,0.09458477667899197
+1419,Shock wave,Doppler effect,0.09458477667899197
+1420,Shock wave,Magnet,0.09462967567800122
+1421,Sonic boom,Magnet,0.09462967567800122
+1422,Mechanical energy,Length,0.09476758043048983
+1423,Acceleration,Frame of reference,0.09519732898662833
+1424,Electric potential energy,Displacement (vector),0.09539659706154623
+1425,Subtractive color,Distance,0.09545665300182544
+1426,Le Sage's theory of gravitation,Length,0.095528091846495
+1427,Creep (deformation),Coulomb,0.09580418304784055
+1428,Kinetic energy,Length,0.0958379768241707
+1429,Pigment,Elasticity (physics),0.09588829342471511
+1430,Optical microscope,Angle of incidence,0.09596951548885772
+1431,Laser,Speed,0.09655655977398313
+1432,Telescope,Wave,0.09678979127133636
+1433,Resultant force,Electrostatics,0.09686230966993029
+1434,Sound,Light,0.0970267034857754
+1435,Lever,Electrostatics,0.09716312429623443
+1436,Velocity,Length,0.09743865368342489
+1437,Dielectric,Length,0.09771551270821703
+1438,Sonic boom,Light,0.09773237934911534
+1439,Shock wave,Light,0.09773237934911534
+1440,Dielectric,Magnet,0.09814147828582662
+1441,Laser,Diffraction,0.09833706388211427
+1442,Laser,Electromagnetic radiation,0.09876750445222506
+1443,Coulomb's law,Physical quantity,0.09897562188481679
+1444,Laser,Electric current,0.09911246608010527
+1445,Color,Physical quantity,0.09924863999004617
+1446,Electric potential,Displacement (vector),0.09944372542173302
+1447,Dispersion (optics),Mass,0.099837739920697
+1448,Doppler effect,Physical quantity,0.0999757362537095
+1449,Electric field,Kilogram,0.10005939716382735
+1450,Laser,Temperature,0.10012828679688837
+1451,Le Sage's theory of gravitation,Tension (physics),0.10042478260035813
+1452,Wave,Physical quantity,0.10074757225418333
+1453,Interference (wave propagation),Compass,0.1008492894254627
+1454,Transverse wave,Frame of reference,0.10097467712188245
+1455,Electron,Wavelength,0.10140741236461426
+1456,Newton's law of universal gravitation,Distance,0.10161812726390544
+1457,Photoelectric effect,Electric current,0.10198000963292836
+1458,Electromagnetic spectrum,Ray (optics),0.10200540924399278
+1459,Electric potential,Gravity,0.10210748469192511
+1460,Kinetic energy,Distance,0.10216987622332999
+1461,Electromotive force,Coulomb,0.10252579404348018
+1462,Insulator (electricity),Field (physics),0.10256464813175303
+1463,Absorption spectroscopy,Electromagnetic radiation,0.10271820463031406
+1464,Sound,Physical quantity,0.10273636069872955
+1465,Plasticity (physics),Distance,0.10293107102422744
+1466,Absorption spectroscopy,Electric current,0.10307696472330947
+1467,Rarefaction,Physics,0.1031280282519105
+1468,Compression (physics),Physics,0.1031280282519105
+1469,Musical tone,Temperature,0.10320705364325064
+1470,Coulomb's law,Friction,0.10352969350297823
+1471,Electric potential energy,Force,0.10353223033271743
+1472,Standing wave,Velocity,0.10362757255545224
+1473,Scattering,Friction,0.10383309407883884
+1474,Velocity,Distance,0.10387630786977001
+1475,Energy,Gravitational field,0.10393103313503957
+1476,Photoelectric effect,Joule,0.1040548127863482
+1477,Absorption spectroscopy,Temperature,0.1041334182687639
+1478,Electric potential energy,Field (physics),0.1041516979388755
+1479,Ohmmeter,Distance,0.10433639927605101
+1480,Photoelectric effect,Angle of incidence,0.10443440001750051
+1481,Energy level,Elasticity (physics),0.1046660240044606
+1482,Pitch (music),Distance,0.10479989746391075
+1483,Electric potential energy,Euclidean vector,0.10494734100040293
+1484,Work (physics),Frame of reference,0.10497274933220134
+1485,Telescope,Geometrical optics,0.10503940992191624
+1486,Intensity (physics),Plane mirror,0.10507341844047392
+1487,Sound intensity,Plane mirror,0.10507341844047392
+1488,Electromagnetic spectrum,Distance,0.10533827587063391
+1489,Absorption spectroscopy,Gravitational field,0.10558796175757007
+1490,Laser,Joule,0.10573746906606124
+1491,Plasticity (physics),Tension (physics),0.10611434455953102
+1492,Coulomb's law,Length,0.10616239431977961
+1493,Electric field,Length,0.10629266555849758
+1494,Potential energy,Length,0.10661352798430106
+1495,Refraction,Motion,0.10726213997130929
+1496,Electromagnetic radiation,Motion,0.10727767571647946
+1497,Electroscope,Electrical conductor,0.10773736838727403
+1498,Voltage,Length,0.1077614223217533
+1499,Dispersion (optics),Displacement (vector),0.10781148538954971
+1500,Electric potential,Force,0.10792450677107514
+1501,Doppler effect,Euclidean vector,0.10823804041188069
+1502,Electromagnetic radiation,Speed,0.10834099229837335
+1503,Scattering,Direction (geometry),0.10850367991146746
+1504,Scattering,Wave,0.10852338454129992
+1505,Electric potential,Field (physics),0.10857025482113083
+1506,Electromagnetic radiation,Electric field,0.1086427244241419
+1507,Strength of materials,Coulomb,0.10892522652629737
+1508,Reflection (physics),Speed,0.10899522534365337
+1509,Collision,Length,0.10908808129672459
+1510,Pigment,Distance,0.1090933177163719
+1511,Electric charge,Field (physics),0.10913632654251118
+1512,Photoelectric effect,Compass,0.10916426857025303
+1513,Emission spectrum,Wave,0.10916786931300365
+1514,Electric potential,Euclidean vector,0.10939965243678365
+1515,Coulomb's law,Newton's law of universal gravitation,0.1096388187414261
+1516,Refracting telescope,Direction (geometry),0.10990668619173426
+1517,Lever,Velocity,0.11001270505170706
+1518,Photoelectric effect,Velocity,0.11021721338538991
+1519,Collision,Kilogram,0.11060696894462968
+1520,Electromagnetic radiation,Potential energy,0.11081151349606602
+1521,Refractive index,Distance,0.11088239565329884
+1522,Laser,Compass,0.11092954916719353
+1523,Electrostatics,Potential energy,0.1110732827694788
+1524,Inelastic collision,Length,0.11116032722343316
+1525,Newton's law of universal gravitation,Physics,0.11124889876622718
+1526,Absorption spectroscopy,Angle of incidence,0.11152312444124289
+1527,Electromagnetic spectrum,Energy,0.11188621289100129
+1528,Photoelectric effect,Kinetic energy,0.11205805089890658
+1529,Standing wave,Crest (physics),0.11215052091937618
+1530,Refractive index,Geometrical optics,0.11223412357196946
+1531,Field line,Compass,0.11230943595108349
+1532,Doppler effect,Ray (optics),0.11247627224391965
+1533,Capacitance,Frame of reference,0.1125787565271932
+1534,Capacitor,Frame of reference,0.1125787565271932
+1535,Emission spectrum,Gravity,0.11264651302813786
+1536,Inelastic collision,Kilogram,0.1127080677827112
+1537,Scattering,Magnet,0.1128233726716766
+1538,Interference (wave propagation),Distance,0.11292911623364875
+1539,Laser,Frame of reference,0.11338895481585175
+1540,Diffraction,Physical quantity,0.11366081502173356
+1541,Optical microscope,Displacement (vector),0.11373082172074468
+1542,Laser,Kinetic energy,0.11387012645781994
+1543,Laser,Velocity,0.11407700840174612
+1544,Refracting telescope,Magnet,0.11428223471717036
+1545,Electric potential,Physical quantity,0.11441765480075612
+1546,Field line,Physical quantity,0.11492670024149959
+1547,Snell's law,Physical quantity,0.11559961086410607
+1548,Wave,Motion,0.11560475085796666
+1549,Torque,Electric charge,0.11569802233859572
+1550,Standing wave,Wavelength,0.11589418555955915
+1551,Electromagnetic radiation,Electric charge,0.11589510229484044
+1552,Electromagnetic radiation,Ray (optics),0.11676455393667562
+1553,Force,Electric charge,0.11690458975069105
+1554,Normal force,Electric charge,0.11690458975069105
+1555,Rarefaction,Distance,0.11747661493310199
+1556,Compression (physics),Distance,0.11747661493310199
+1557,Speed,Frame of reference,0.11755543215310987
+1558,Electric potential energy,Voltage,0.11809180795619888
+1559,Dispersion (optics),Motion,0.11809701195831362
+1560,Collision,Direction (geometry),0.11815993772485392
+1561,Electromotive force,Field (physics),0.11823661553793588
+1562,Telescope,Angle of incidence,0.11872236168073168
+1563,Dispersion (optics),Position (vector),0.11933143332649289
+1564,Frequency,Distance,0.11970258621662944
+1565,Resonance (particle physics),Distance,0.11977131138732658
+1566,Series and parallel circuits,Kilogram,0.12008614994368426
+1567,Interference (wave propagation),Length,0.12023776745392728
+1568,Inelastic collision,Direction (geometry),0.12040451336263094
+1569,Dielectric,Distance,0.12110474915970204
+1570,Doppler effect,Pitch (music),0.1211393941338834
+1571,Sound,Hertz,0.1212045394356833
+1572,Field line,Force,0.1214150701174595
+1573,Scattering,Mechanical energy,0.12144338428648332
+1574,Scattering,Planet,0.12158828774747915
+1575,Torque,Frame of reference,0.12167859877607203
+1576,Standing wave,Physical quantity,0.12198750815651699
+1577,Torque,Mass,0.12208527723397135
+1578,Sonic boom,Hertz,0.12208606086158164
+1579,Shock wave,Hertz,0.12208606086158164
+1580,Electric potential energy,Electric current,0.12213884874641423
+1581,Electron,Work (physics),0.12217354215008805
+1582,Electron,Kilogram,0.12221974098238843
+1583,Ammeter,Mass,0.12235215345948199
+1584,Collision,Magnet,0.12286406046016833
+1585,Normal force,Frame of reference,0.12294753517675634
+1586,Force,Frame of reference,0.12294753517675634
+1587,Collision,Electrostatics,0.12297562188361029
+1588,Normal force,Mass,0.12335845471816413
+1589,Force,Mass,0.12335845471816413
+1590,Transverse wave,Physics,0.12367423135457879
+1591,Energy level,Gravitational field,0.12369569369528434
+1592,Musical tone,Virtual image,0.12410316993218647
+1593,Refracting telescope,Metre,0.12417315116419664
+1594,Total internal reflection,Distance,0.1244469472658164
+1595,Dispersion (optics),Ray (optics),0.12458789286214801
+1596,Acceleration,Length,0.12458936987142188
+1597,Deformation (engineering),Electric charge,0.12459787021079537
+1598,Refraction,Metre,0.12482439030631082
+1599,Electromagnetic radiation,Metre,0.12484246975092508
+1600,Optical microscope,Euclidean vector,0.12511711839870493
+1601,Inelastic collision,Magnet,0.12519799599007214
+1602,Electric field,Motion,0.12520803540706785
+1603,Inelastic collision,Electrostatics,0.12531167664324622
+1604,Resultant force,Frame of reference,0.12596729919864164
+1605,Scattering,Color,0.12598589943760327
+1606,Newton's laws of motion,Electric charge,0.12607094847929742
+1607,Sound intensity,Temperature,0.1261419544528619
+1608,Intensity (physics),Temperature,0.1261419544528619
+1609,Sound,Mass,0.12654433534948348
+1610,Strength of materials,Electric current,0.12656634903832045
+1611,Electric potential energy,Potential energy,0.12657188036522002
+1612,Geometrical optics,Planet,0.12662155587671506
+1613,Refracting telescope,Distance,0.12675221803841327
+1614,Optical microscope,Field (physics),0.12694628961632756
+1615,Geometrical optics,Motion,0.12732461502141973
+1616,Sonic boom,Mass,0.12746469314677397
+1617,Shock wave,Mass,0.12746469314677397
+1618,Laser,Wavelength,0.12758054303276017
+1619,Photoelectric effect,Wave,0.1277860644374602
+1620,Emission spectrum,Speed,0.1279133249311973
+1621,Collision,Ray (optics),0.12794946886188982
+1622,Work (physics),Velocity,0.12840564898934967
+1623,Ammeter,Motion,0.1288013606223674
+1624,Transverse wave,Motion,0.1289289068555768
+1625,Color,Displacement (vector),0.12921379364911548
+1626,Musical tone,Light,0.1301356281172712
+1627,Doppler effect,Displacement (vector),0.13016041484801008
+1628,Color,Reflection (physics),0.13024002140698734
+1629,Emission spectrum,Diffraction,0.13027204816095841
+1630,Inelastic collision,Ray (optics),0.13038000721696802
+1631,Power (physics),Electric charge,0.1305574469559161
+1632,Energy level,Angle of incidence,0.13064870285590147
+1633,Emission spectrum,Electromagnetic radiation,0.13084227440593887
+1634,Telescope,Position (vector),0.1309016972679932
+1635,Deformation (engineering),Frame of reference,0.131038490989616
+1636,Newton's law of universal gravitation,Compass,0.131076583658212
+1637,Electron,Magnet,0.13129926240239528
+1638,Emission spectrum,Electric current,0.13129926240239528
+1639,Torque,Electrostatics,0.13145599169490543
+1640,Deformation (engineering),Mass,0.13147645240581526
+1641,Dielectric,Electrostatics,0.1316402321229958
+1642,Curved mirror,Length,0.13195720554152354
+1643,Field line,Electrostatics,0.13197624089077525
+1644,Subtractive color,Euclidean vector,0.13204512662983622
+1645,Newton's laws of motion,Frame of reference,0.13258771452840953
+1646,Emission spectrum,Temperature,0.13264497113230314
+1647,Snell's law,Motion,0.1326470098902852
+1648,Acceleration,Distance,0.13282083909032896
+1649,Force,Electrostatics,0.13282689253225566
+1650,Normal force,Electrostatics,0.13282689253225566
+1651,Newton's laws of motion,Mass,0.1330308538135688
+1652,Voltage,Distance,0.13355525297541854
+1653,Field line,Length,0.1339011501191463
+1654,Electron,Angle of incidence,0.1344135395742265
+1655,Equations of motion,Displacement (vector),0.13452327002111672
+1656,Wave,Metre,0.13453295399680165
+1657,Refraction,Distance,0.13471061301969817
+1658,Curved mirror,Position (vector),0.1350824450506553
+1659,Color,Mass,0.13515224627281133
+1660,Crest (physics),Motion,0.1360886782689656
+1661,Coulomb's law,Direction (geometry),0.13610828269571779
+1662,Doppler effect,Mass,0.13614237261913228
+1663,Electric field,Direction (geometry),0.1362753003548442
+1664,Specular reflection,Speed,0.13632225383524094
+1665,Absorption spectroscopy,Wave,0.13645983664125458
+1666,Total internal reflection,Position (vector),0.13679807122534854
+1667,Electromotive force,Length,0.13680171779150385
+1668,Electromagnetic spectrum,Speed,0.13711284376649227
+1669,Electric current,Kilogram,0.13718982241003078
+1670,Dispersion (optics),Metre,0.13743327812251976
+1671,Optical microscope,Speed,0.1375923141469581
+1672,Power (physics),Mass,0.13776503508353735
+1673,Musical tone,Physical quantity,0.13779362123718614
+1674,Coulomb's law,Distance,0.13806344716868166
+1675,Mirror image,Position (vector),0.13806587211238863
+1676,Fatigue (material),Coulomb,0.1383007898880592
+1677,Scattering,Mass,0.13836222774203819
+1678,Resonance (particle physics),Reflection (physics),0.1383942890366498
+1679,Collision,Motion,0.13840660324200094
+1680,Energy,Gravity,0.13859852348691995
+1681,Electromagnetic radiation,Position (vector),0.13863644973555572
+1682,Euclidean vector,Motion,0.1395544858064243
+1683,Shock wave,Physical quantity,0.13959000974977212
+1684,Sonic boom,Physical quantity,0.13959000974977212
+1685,Standing wave,Kilogram,0.13967970397987248
+1686,Emission spectrum,Joule,0.14007573664294787
+1687,Strength of materials,Electrical resistance and conductance,0.14021137996030664
+1688,Telescope,Displacement (vector),0.14069459121260983
+1689,Absorption spectroscopy,Gravity,0.14080814128517236
+1690,Refracting telescope,Wave,0.14083248205256754
+1691,Inelastic collision,Motion,0.14103578615903897
+1692,Geometrical optics,Frame of reference,0.14107953880133978
+1693,Photoelectric effect,Mass,0.14126528168562907
+1694,Coulomb's law,Magnet,0.1415269557199407
+1695,Deformation (engineering),Electrostatics,0.14156799105605197
+1696,Wavelength,Distance,0.14164951073150453
+1697,Electric field,Magnet,0.14170062260030594
+1698,Huygens–Fresnel principle,Physical quantity,0.14231875951593648
+1699,Newton's laws of motion,Electrostatics,0.14324170129513833
+1700,Laser,Mass,0.14354966341645603
+1701,Electrical resistance and conductance,Mass,0.1435882049603691
+1702,Speed,Physics,0.14398241348711888
+1703,Creep (deformation),Electric charge,0.14462252792324468
+1704,Scalar (mathematics),Speed,0.14486773194944896
+1705,Transverse wave,Speed,0.14486773194944896
+1706,Voltage,Electrostatics,0.14517386497985277
+1707,Curved mirror,Distance,0.14518810514345246
+1708,Telescope,Plane mirror,0.14550344638905546
+1709,Electric field,Metre,0.1457086040360439
+1710,Power (physics),Mechanical energy,0.14573206114377998
+1711,Optical microscope,Motion,0.14582483167746488
+1712,Electromagnetic radiation,Displacement (vector),0.14673638552808513
+1713,Emission spectrum,Compass,0.14695394595984493
+1714,Total internal reflection,Displacement (vector),0.14703207912056557
+1715,Capacitance,Length,0.1473372886186898
+1716,Capacitor,Length,0.1473372886186898
+1717,Fracture,Coulomb,0.14744121845744557
+1718,Free fall,Length,0.14763432376276497
+1719,Geometrical optics,Metre,0.14817173557497187
+1720,Power (physics),Electrostatics,0.14833925693663047
+1721,Mirror image,Distance,0.14839472552824284
+1722,Torque,Velocity,0.1488407185993684
+1723,Crest (physics),Frame of reference,0.14890354739393918
+1724,Sound,Motion,0.14968796265716255
+1725,Photoelectric effect,Speed,0.14972849140439115
+1726,Ammeter,Metre,0.14989027176421002
+1727,Transverse wave,Metre,0.15003870140397377
+1728,Total internal reflection,Geometrical optics,0.15005629988845176
+1729,Emission spectrum,Frame of reference,0.15021204416270992
+1730,Ohm's law,Coulomb,0.15037116459710426
+1731,Force,Velocity,0.1503929176519095
+1732,Normal force,Velocity,0.1503929176519095
+1733,Emission spectrum,Kinetic energy,0.15084947640688706
+1734,Energy,Physics,0.15089964022572377
+1735,Pigment,Euclidean vector,0.15090871614838422
+1736,Emission spectrum,Velocity,0.15112354331003452
+1737,Electrical resistance and conductance,Motion,0.15115676876372652
+1738,Sound intensity,Virtual image,0.15168165213933904
+1739,Intensity (physics),Virtual image,0.15168165213933904
+1740,Electric potential energy,Electrostatics,0.15192613776961336
+1741,Plasticity (physics),Speed,0.15200971922376214
+1742,Frequency,Physics,0.15206180405490274
+1743,Creep (deformation),Frame of reference,0.15209824847009004
+1744,Resonance (particle physics),Physics,0.15214910771116022
+1745,Newton's law of universal gravitation,Friction,0.15240085316898036
+1746,Photoelectric effect,Diffraction,0.15248948656281258
+1747,Creep (deformation),Mass,0.1526065965424642
+1748,Scattering,Potential energy,0.15262233919018353
+1749,Refracting telescope,Geometrical optics,0.15283596150311557
+1750,Free body diagram,Coulomb,0.1532866928765448
+1751,Elasticity (physics),Coulomb,0.1532866928765448
+1752,Laser,Motion,0.15348363800085763
+1753,Distance,Motion,0.15352614937211806
+1754,Displacement (vector),Motion,0.15352614937211806
+1755,Electric potential,Electrostatics,0.1539722810392378
+1756,Resultant force,Velocity,0.1540867787872196
+1757,Interference (wave propagation),Direction (geometry),0.15415398407486747
+1758,Snell's law,Metre,0.15436557708002926
+1759,Euclidean vector,Frame of reference,0.1546306069090907
+1760,Standing wave,Motion,0.1547146882266922
+1761,Diffraction,Mass,0.15477808527075457
+1762,Telescope,Euclidean vector,0.15478039778898936
+1763,Lever,Physics,0.15497401692550436
+1764,Total internal reflection,Wave,0.15555502168607627
+1765,Dispersion (optics),Speed,0.15601140363786808
+1766,Newton's law of universal gravitation,Length,0.1562763195887439
+1767,Telescope,Field (physics),0.15704323641819753
+1768,Telescope,Length,0.15834864664982828
+1769,Crest (physics),Metre,0.15837075688643812
+1770,Photoelectric effect,Motion,0.1586871490005301
+1771,Sound intensity,Light,0.15905465658777593
+1772,Intensity (physics),Light,0.15905465658777593
+1773,Fracture,Tension (physics),0.15917151683929653
+1774,Electron,Displacement (vector),0.15928977267729838
+1775,Coulomb's law,Motion,0.15943039107622892
+1776,Photoelectric effect,Friction,0.15968118545716575
+1777,Energy level,Wave,0.1598619186687255
+1778,Insulator (electricity),Electrostatics,0.15986830844869337
+1779,Color,Motion,0.15987016990720476
+1780,Absorption spectroscopy,Speed,0.15989165616399664
+1781,Shock wave,Motion,0.16017525721284542
+1782,Sonic boom,Motion,0.16017525721284542
+1783,Deformation (engineering),Velocity,0.16029000464547363
+1784,Interference (wave propagation),Magnet,0.16029108329130815
+1785,Doppler effect,Motion,0.16104137994315496
+1786,Plane mirror,Position (vector),0.16107685079778672
+1787,Amplitude,Motion,0.16126296137631255
+1788,Electromagnetic radiation,Euclidean vector,0.16142707353855934
+1789,Color,Position (vector),0.16154122957751685
+1790,Optical microscope,Frame of reference,0.161578340491183
+1791,Strength of materials,Tension (physics),0.16169804885261868
+1792,Newton's laws of motion,Velocity,0.16218505888758764
+1793,Laser,Friction,0.1622633682728055
+1794,Gravitational acceleration,Length,0.1623977561390415
+1795,Frame of reference,Length,0.1623977561390415
+1796,Non-inertial reference frame,Length,0.1623977561390415
+1797,Motion graphs and derivatives,Length,0.1623977561390415
+1798,Inertial frame of reference,Length,0.1623977561390415
+1799,Euclidean vector,Metre,0.16240402820563812
+1800,Refraction,Geometrical optics,0.16243207719883954
+1801,Musical tone,Hertz,0.16256379227023432
+1802,Doppler effect,Position (vector),0.16272468180885394
+1803,Absorption spectroscopy,Diffraction,0.16284006020119804
+1804,Color,Speed,0.16324871554319348
+1805,Huygens–Fresnel principle,Motion,0.16330641392275877
+1806,Scattering,Physical quantity,0.16352229716965613
+1807,Scattering,Motion,0.16366722320847507
+1808,Speed,Distance,0.1640152229522684
+1809,Voltmeter,Coulomb,0.1640412704695683
+1810,Collision,Metre,0.16411605868847015
+1811,Creep (deformation),Electrostatics,0.16431998961863178
+1812,Doppler effect,Speed,0.16444467682922417
+1813,Electron,Wave,0.1644685776566048
+1814,Energy level,Gravity,0.16495593270569286
+1815,Electromagnetic radiation,Force,0.1654738839052448
+1816,Subtractive color,Force,0.16607261008368263
+1817,Work (physics),Gravity,0.16613861136162075
+1818,Magnification,Planet,0.16625316890856368
+1819,Ohmmeter,Light,0.1663078544423655
+1820,Snell's law,Distance,0.16659149278888072
+1821,Photoelectric effect,Direction (geometry),0.16686391163083927
+1822,Magnification,Motion,0.1671762803798135
+1823,Inelastic collision,Metre,0.16723362047965787
+1824,Refractive index,Physical quantity,0.16791262042363891
+1825,Intensity (physics),Physical quantity,0.16841442595656086
+1826,Sound intensity,Physical quantity,0.16841442595656086
+1827,Emission spectrum,Wavelength,0.16901235394102376
+1828,Electromotive force,Distance,0.16954664882358286
+1829,Laser,Direction (geometry),0.16956224533828262
+1830,Optical microscope,Metre,0.16970103067614348
+1831,Musical tone,Mass,0.16972571440399312
+1832,Distance,Frame of reference,0.17011163429569587
+1833,Electric charge,Electrostatics,0.17011163429569587
+1834,Displacement (vector),Frame of reference,0.17011163429569587
+1835,Telescope,Speed,0.17021326409156018
+1836,Ohmmeter,Field (physics),0.17083851584573806
+1837,Series and parallel circuits,Field (physics),0.1709410802195884
+1838,Contact force,Frame of reference,0.1709556203410136
+1839,Laser,Color,0.17118292457243672
+1840,Newton's law of universal gravitation,Gravity,0.17125990748138514
+1841,Field line,Direction (geometry),0.17167148226519335
+1842,Energy,Joule,0.17234701503992178
+1843,Geometrical optics,Physics,0.17279484340468368
+1844,Strength of materials,Frame of reference,0.17292915237933393
+1845,Plane mirror,Distance,0.17312717978294995
+1846,Intensity (physics),Distance,0.17312717978294995
+1847,Sound intensity,Distance,0.17312717978294995
+1848,Torque,Distance,0.17312717978294995
+1849,Ohm's law,Field (physics),0.1734137027889726
+1850,Photoelectric effect,Magnet,0.17350701195333565
+1851,Strength of materials,Mass,0.17350712222549308
+1852,Sound,Metre,0.17419668002029384
+1853,Curved mirror,Geometrical optics,0.1750656832031937
+1854,Electric potential,Mass,0.17507618752554063
+1855,Absorption spectroscopy,Joule,0.17509467080368485
+1856,Scattering,Refraction,0.17511580656076964
+1857,Electron,Euclidean vector,0.17523725799418097
+1858,Dielectric,Displacement (vector),0.17580230029913516
+1859,Photoelectric effect,Frame of reference,0.17583017856310063
+1860,Curved mirror,Wave,0.17589161707246861
+1861,Electrical resistance and conductance,Metre,0.1759059767654369
+1862,Electrical resistance and conductance,Field (physics),0.17628298897645053
+1863,Laser,Magnet,0.17631277033605433
+1864,Color,Ray (optics),0.17703418133254945
+1865,Laser,Electric charge,0.17735129636732286
+1866,Power (physics),Frame of reference,0.17768204515173955
+1867,Compression (physics),Physical quantity,0.17789844939492058
+1868,Rarefaction,Physical quantity,0.17789844939492058
+1869,Absorption spectroscopy,Color,0.1780302415553342
+1870,Laser,Planet,0.17813436512696357
+1871,Field line,Magnet,0.17850597911986593
+1872,Laser,Metre,0.17861382907870504
+1873,Distance,Metre,0.1786633009240373
+1874,Displacement (vector),Metre,0.1786633009240373
+1875,Amplitude,Frame of reference,0.17868425687272704
+1876,Mechanical energy,Displacement (vector),0.1793643600281556
+1877,Fatigue (material),Plasticity (physics),0.17956228064545673
+1878,Motion,Length,0.1799416439202594
+1879,Wavelength,Physics,0.1799416439202594
+1880,Standing wave,Metre,0.18004644168476855
+1881,Energy,Compass,0.1808098571637413
+1882,Work (physics),Physics,0.18088400981007483
+1883,Equations of motion,Position (vector),0.18121145714751008
+1884,Refractive index,Angle of incidence,0.18138138590111783
+1885,Electric field,Electrostatics,0.18146733122481595
+1886,Crest (physics),Physics,0.1823777237503506
+1887,Photoelectric effect,Electric charge,0.18248246287539766
+1888,Energy,Velocity,0.18255386006981744
+1889,Diffraction,Motion,0.1830853683349043
+1890,Power (physics),Potential energy,0.18314680702822025
+1891,Electrical resistance and conductance,Light,0.18356655741960784
+1892,Resultant force,Gravity,0.18362688624179138
+1893,Pitch (music),Physics,0.18364857010228394
+1894,Absorption spectroscopy,Compass,0.18369243244980618
+1895,Electrostatics,Kilogram,0.18407040332358127
+1896,Lever,Gravity,0.1841971560748404
+1897,Electromotive force,Electrostatics,0.18429632497219414
+1898,Electric potential,Motion,0.1843044893634343
+1899,Wavelength,Speed,0.18437711339020774
+1900,Absorption spectroscopy,Electric charge,0.18444534822201578
+1901,Photoelectric effect,Metre,0.18466932161465513
+1902,Standing wave,Length,0.18467719205775693
+1903,Energy,Physical quantity,0.185023458438669
+1904,Magnification,Frame of reference,0.1852363938468602
+1905,Absorption spectroscopy,Velocity,0.18546423925858288
+1906,Coulomb's law,Metre,0.185534256240926
+1907,Energy,Kinetic energy,0.1856028574408428
+1908,Lever,Compass,0.18569182684913368
+1909,Color,Metre,0.1860460409625516
+1910,Creep (deformation),Velocity,0.1860508982492105
+1911,Electroscope,Field (physics),0.186274647227706
+1912,Shock wave,Metre,0.18640108083894208
+1913,Sonic boom,Metre,0.18640108083894208
+1914,Sonic boom,Euclidean vector,0.186482406974686
+1915,Shock wave,Euclidean vector,0.186482406974686
+1916,Photoelectric effect,Mechanical energy,0.18676341816484426
+1917,Strength of materials,Electrostatics,0.1868247452522037
+1918,Strength of materials,Crystallinity,0.18691753486562696
+1919,Energy level,Speed,0.18731216131156625
+1920,Doppler effect,Metre,0.18740901562161788
+1921,Amplitude,Metre,0.1876668770376263
+1922,Absorption spectroscopy,Frame of reference,0.18776505520338743
+1923,Resonance (particle physics),Ray (optics),0.1881182097179007
+1924,Absorption spectroscopy,Kinetic energy,0.18856184550860886
+1925,Euclidean vector,Velocity,0.18914855102959535
+1926,Voltmeter,Field (physics),0.18917858486069739
+1927,Mechanical energy,Physics,0.18953516086097966
+1928,Mechanical energy,Tension (physics),0.18969125602289866
+1929,Laser,Mechanical energy,0.18978354409636652
+1930,Pigment,Force,0.1897972686670658
+1931,Huygens–Fresnel principle,Metre,0.19004490826372583
+1932,Emission spectrum,Mass,0.19016744986911505
+1933,Scattering,Metre,0.19046479359436005
+1934,Subtractive color,Refraction,0.19071485690541945
+1935,Energy level,Diffraction,0.1907661997891056
+1936,Dielectric,Force,0.19079511018457923
+1937,Le Sage's theory of gravitation,Physics,0.19105618369299
+1938,Kinetic energy,Physics,0.1916759536483414
+1939,Newton's law of universal gravitation,Physical quantity,0.19190715582247803
+1940,Sound,Physics,0.19205058982333387
+1941,Refractive index,Motion,0.1926745847632778
+1942,Electron,Speed,0.19270983987460874
+1943,Dielectric,Euclidean vector,0.1934029569864568
+1944,Shock wave,Physics,0.19344737504750048
+1945,Sonic boom,Physics,0.19344737504750048
+1946,Magnification,Metre,0.1945483958987656
+1947,Work (physics),Friction,0.19473442349369713
+1948,Equations of motion,Distance,0.19476807725581874
+1949,Velocity,Physics,0.19487730736684977
+1950,Electric current,Field (physics),0.1952879366096918
+1951,Dielectric,Physics,0.19543102541643406
+1952,Lever,Mass,0.19576450422665176
+1953,Interference (wave propagation),Motion,0.19623106490263562
+1954,Electron,Diffraction,0.19626341160890834
+1955,Absorption spectroscopy,Scattering,0.19626341160890834
+1956,Electromagnetic radiation,Velocity,0.19811153576777638
+1957,Capacitance,Electrical conductor,0.19826631687018992
+1958,Capacitor,Electrical conductor,0.19826631687018992
+1959,Intensity (physics),Hertz,0.19868907944139752
+1960,Sound intensity,Hertz,0.19868907944139752
+1961,Diffraction,Light,0.19912304533652372
+1962,Newton's law of universal gravitation,Direction (geometry),0.20035815527257833
+1963,Ohm's law,Length,0.20064251942753897
+1964,Musical tone,Motion,0.20076676154250991
+1965,Snell's law,Geometrical optics,0.20087357343846807
+1966,Collision,Telescope,0.20097638981071342
+1967,Coulomb's law,Temperature,0.20148603209970095
+1968,Scattering,Displacement (vector),0.20210219766020984
+1969,Subtractive color,Physical quantity,0.20256365266909854
+1970,Absorption spectroscopy,Wavelength,0.2028148247292285
+1971,Emission spectrum,Motion,0.20332748500134437
+1972,Ammeter,Distance,0.2033452607392142
+1973,Compression (physics),Motion,0.20413301740344844
+1974,Rarefaction,Motion,0.20413301740344844
+1975,Electron,Motion,0.20424018693581444
+1976,Laser,Reflection (physics),0.20433377366304034
+1977,Inelastic collision,Telescope,0.2047941534032091
+1978,Energy level,Joule,0.2051224060668683
+1979,Refracting telescope,Position (vector),0.2051971068380228
+1980,Pitch (music),Length,0.2060307095661403
+1981,Lever,Physical quantity,0.20640413073184619
+1982,Work (physics),Joule,0.20659306485148246
+1983,Intensity (physics),Mass,0.2074425398271027
+1984,Sound intensity,Mass,0.2074425398271027
+1985,Newton's law of universal gravitation,Magnet,0.208334711215068
+1986,Distance,Physics,0.20835348243398452
+1987,Displacement (vector),Physics,0.20835348243398452
+1988,Scattering,Reflection (physics),0.20845294431541625
+1989,Fatigue (material),Electric charge,0.20877386781122886
+1990,Contact force,Velocity,0.20911777121122657
+1991,Scalar multiplication,Speed,0.20912783889504732
+1992,Torque,Physics,0.20967072878156476
+1993,Electric potential energy,Kilogram,0.20975464564780189
+1994,Telescope,Virtual image,0.2100455421345491
+1995,Scattering,Length,0.21016707438080123
+1996,Strength of materials,Velocity,0.21153185166347652
+1997,Refracting telescope,Plane mirror,0.21171252911092733
+1998,Normal force,Physics,0.21185729916111498
+1999,Force,Physics,0.21185729916111498
+2000,Creep (deformation),Tension (physics),0.21222868911906204
+2001,Plasticity (physics),Compression (physics),0.21222868911906204
+2002,Total internal reflection,Speed,0.21276658011445024
+2003,Diffraction,Metre,0.21306231147843666
+2004,Potential energy,Physics,0.2132270559686021
+2005,Transverse wave,Physical quantity,0.21334116787674207
+2006,Energy level,Wavelength,0.2134892891886616
+2007,Electric potential,Metre,0.21448104169523607
+2008,Interference (wave propagation),Frame of reference,0.2147092766610853
+2009,Emission spectrum,Friction,0.2149584347132306
+2010,Ammeter,Voltage,0.21507444937348769
+2011,Energy level,Compass,0.21519463469351321
+2012,Resultant force,Friction,0.21523278386145472
+2013,Sound,Length,0.21545672406738306
+2014,Voltage,Physics,0.2155228446435066
+2015,Energy,Length,0.21557091460817682
+2016,Lever,Friction,0.21590120865605553
+2017,Scattering,Force,0.2160884704109575
+2018,Mechanical energy,Gravitational field,0.21634093022098416
+2019,Work (physics),Compass,0.21673750797577515
+2020,Collision,Magnification,0.21687080489694519
+2021,Shock wave,Length,0.21702374226244042
+2022,Sonic boom,Length,0.21702374226244042
+2023,Resultant force,Physics,0.2170608117720898
+2024,Energy level,Velocity,0.21727029624296962
+2025,Power (physics),Velocity,0.21734572512015957
+2026,Ammeter,Potential energy,0.21739012869893728
+2027,Pigment,Refraction,0.21795983646333647
+2028,Mechanical energy,Free fall,0.21807045734323147
+2029,Dispersion (optics),Velocity,0.21809179078861166
+2030,Diffraction,Position (vector),0.21854951449966453
+2031,Amplitude,Physics,0.21885326850042078
+2032,Voltmeter,Length,0.21888274846640615
+2033,Fatigue (material),Frame of reference,0.2195656518828578
+2034,Energy level,Frame of reference,0.21996568897165222
+2035,Collision,Displacement (vector),0.2200882321140765
+2036,Fatigue (material),Mass,0.22029949186469147
+2037,Refracting telescope,Displacement (vector),0.22054811868084834
+2038,Scattering,Field (physics),0.22065029248274856
+2039,Energy level,Kinetic energy,0.22089912426004554
+2040,Inelastic collision,Magnification,0.22099050007104298
+2041,Lever,Length,0.22139145275072053
+2042,Electromagnetic radiation,Wavelength,0.22156241356974546
+2043,Work (physics),Physical quantity,0.22178836888710446
+2044,Scattering,Euclidean vector,0.2223358998968584
+2045,Pitch (music),Physical quantity,0.22239047108880716
+2046,Fracture,Electric charge,0.22257192802062914
+2047,Refracting telescope,Angle of incidence,0.22260442815137188
+2048,Electromagnetic spectrum,Physical quantity,0.22353293620940937
+2049,Refractive index,Metre,0.22422158999466946
+2050,Inelastic collision,Displacement (vector),0.22426904579320187
+2051,Emission spectrum,Direction (geometry),0.22462762379675472
+2052,Kinetic energy,Mass,0.22512917986064954
+2053,Refracting telescope,Euclidean vector,0.22521081311766888
+2054,Deformation (engineering),Physics,0.22579924638014662
+2055,Electron,Frame of reference,0.2263043275077388
+2056,Euclidean vector,Compass,0.22645778262566346
+2057,Strength of materials,Electric charge,0.22647712206336576
+2058,Emission spectrum,Color,0.22677461898768586
+2059,Fracture,Speed,0.2280145788356432
+2060,Interference (wave propagation),Metre,0.22836037992698469
+2061,Newton's laws of motion,Physics,0.22846879412060161
+2062,Refracting telescope,Field (physics),0.22850332130938963
+2063,Refracting telescope,Length,0.2304027381859277
+2064,Elasticity (physics),Electric charge,0.2313960446771914
+2065,Free body diagram,Electric charge,0.2313960446771914
+2066,Pigment,Physical quantity,0.23150131733611257
+2067,Strength of materials,Speed,0.23163385786478038
+2068,Standing wave,Amplitude,0.2332538938159055
+2069,Emission spectrum,Magnet,0.23357038335154165
+2070,Musical tone,Metre,0.23363871548730564
+2071,Energy,Mass,0.23397908251761454
+2072,Fracture,Frame of reference,0.23407695119611863
+2073,Photoelectric effect,Potential energy,0.23471241289053468
+2074,Fracture,Mass,0.23485929134878097
+2075,Diffraction,Displacement (vector),0.23489943403325933
+2076,Emission spectrum,Electric charge,0.2349461709520745
+2077,Plasticity (physics),Coulomb,0.2359059495319129
+2078,Emission spectrum,Planet,0.23598354147283307
+2079,Collision,Distance,0.23615295917942133
+2080,Doppler effect,Light,0.23619752842802685
+2081,Emission spectrum,Metre,0.23661871145398672
+2082,Fatigue (material),Electrostatics,0.2372086858389708
+2083,Rarefaction,Metre,0.23755613532965725
+2084,Compression (physics),Metre,0.23755613532965725
+2085,Electron,Metre,0.23768085194952496
+2086,Absorption spectroscopy,Mass,0.23770931233639384
+2087,Electromagnetic radiation,Work (physics),0.23779091727731536
+2088,Laser,Potential energy,0.23850791551940173
+2089,Free fall,Gravity,0.2387259316407187
+2090,Electromagnetic spectrum,Wave,0.23875144599085982
+2091,Resonance (particle physics),Length,0.23939636007487003
+2092,Ammeter,Coulomb,0.2394437680311079
+2093,Capacitance,Distance,0.23954262277465316
+2094,Capacitor,Distance,0.23954262277465316
+2095,Laser,Physical quantity,0.23957028370130398
+2096,Work (physics),Kilogram,0.23964843271336425
+2097,Inelastic collision,Distance,0.24063893970014047
+2098,Refraction,Position (vector),0.24197863829065236
+2099,Collision,Euclidean vector,0.24212262761270287
+2100,Pitch (music),Reflection (physics),0.24219000581413722
+2101,Curved mirror,Plane mirror,0.24250574398175906
+2102,Elasticity (physics),Frame of reference,0.243357197552144
+2103,Free body diagram,Frame of reference,0.243357197552144
+2104,Acceleration,Speed,0.2433777896750742
+2105,Equations of motion,Length,0.24359663420856226
+2106,Dispersion (optics),Wavelength,0.24390777326320828
+2107,Elasticity (physics),Mass,0.24417055446794264
+2108,Free body diagram,Mass,0.24417055446794264
+2109,Scalar (mathematics),Motion,0.24511062438539286
+2110,Ohmmeter,Series and parallel circuits,0.24522269337528374
+2111,Sound intensity,Motion,0.24538159744084545
+2112,Intensity (physics),Motion,0.24538159744084545
+2113,Inelastic collision,Euclidean vector,0.24672200843295627
+2114,Speed,Physical quantity,0.24837329418273088
+2115,Collision,Optical microscope,0.24862469627832476
+2116,Ohm's law,Distance,0.2486684182745882
+2117,Acceleration,Physics,0.24917873974284377
+2118,Torque,Gravity,0.2492079170424312
+2119,Diffraction,Sound,0.2500607962764142
+2120,Energy,Motion,0.2501709857495182
+2121,Sound,Speed,0.25068901829040274
+2122,Curved mirror,Light,0.2507692753025085
+2123,Torque,Compass,0.25123011867823974
+2124,Emission spectrum,Mechanical energy,0.2514157940114784
+2125,Force,Gravity,0.2518068046073334
+2126,Normal force,Gravity,0.2518068046073334
+2127,Total internal reflection,Field (physics),0.25239091567210314
+2128,Fracture,Electrostatics,0.25288602976957364
+2129,Le Sage's theory of gravitation,Displacement (vector),0.25322027298092553
+2130,Sound,Reflection (physics),0.25327032734323074
+2131,Inelastic collision,Optical microscope,0.25334759091555387
+2132,Coulomb's law,Displacement (vector),0.2535193559795058
+2133,Electric field,Displacement (vector),0.2538304480639868
+2134,Optical microscope,Planet,0.2538400247926214
+2135,Force,Compass,0.2538500949579284
+2136,Normal force,Compass,0.2538500949579284
+2137,Frequency,Physical quantity,0.2540147002379652
+2138,Absorption spectroscopy,Motion,0.2541593562516805
+2139,Resonance (particle physics),Physical quantity,0.2541605383872082
+2140,Electrostatics,Distance,0.2543909580484163
+2141,Shock wave,Reflection (physics),0.2551123641278003
+2142,Sonic boom,Reflection (physics),0.2551123641278003
+2143,Electrical resistance and conductance,Potential energy,0.25512144636114664
+2144,Laser,Refraction,0.2565554923364368
+2145,Musical tone,Physics,0.25758500741619045
+2146,Work (physics),Length,0.2584057283001069
+2147,Ohmmeter,Gravity,0.2591959226795022
+2148,Refraction,Displacement (vector),0.2600813152696354
+2149,Resultant force,Compass,0.26008500957093017
+2150,Pitch (music),Amplitude,0.26022414959031004
+2151,Wave,Position (vector),0.26079919904659193
+2152,Creep (deformation),Physics,0.26208841097695595
+2153,Electric potential,Electric potential energy,0.26246868729008066
+2154,Refraction,Angle of incidence,0.2625062177122134
+2155,Gravitational acceleration,Gravity,0.26259852480479057
+2156,Deformation (engineering),Tension (physics),0.26264943141632124
+2157,Free body diagram,Electrostatics,0.2629119833898108
+2158,Elasticity (physics),Electrostatics,0.2629119833898108
+2159,Interference (wave propagation),Physics,0.262976872148896
+2160,Subtractive color,Displacement (vector),0.2637216794045847
+2161,Energy,Friction,0.264481525982711
+2162,Resultant force,Kilogram,0.2648745835252973
+2163,Electroscope,Temperature,0.2652899422646063
+2164,Subtractive color,Reflection (physics),0.2658161810836585
+2165,Sound,Position (vector),0.2659474564368759
+2166,Resultant force,Physical quantity,0.26614604266452535
+2167,Ohmmeter,Electrostatics,0.26628731286689816
+2168,Series and parallel circuits,Electrostatics,0.2664471807478223
+2169,Euclidean vector,Physics,0.2664520496511533
+2170,Electron,Field (physics),0.2668533260071185
+2171,Electromagnetic radiation,Kilogram,0.26703472819681506
+2172,Electromagnetic radiation,Wave,0.26709337555333024
+2173,Deformation (engineering),Gravity,0.26837775681492587
+2174,Fatigue (material),Velocity,0.26857894267935856
+2175,Coulomb's law,Kilogram,0.26858996652191897
+2176,Absorption spectroscopy,Friction,0.2686980433915383
+2177,Reflection (physics),Wave,0.26870625825594696
+2178,Ohm's law,Electrostatics,0.2703012766258847
+2179,Deformation (engineering),Compass,0.2705555124227197
+2180,Electrical resistance and conductance,Series and parallel circuits,0.2706708337678957
+2181,Emission spectrum,Reflection (physics),0.2706912140009854
+2182,Lever,Distance,0.2709816727037478
+2183,Voltmeter,Distance,0.2712746381177326
+2184,Newton's laws of motion,Gravity,0.2715506958117526
+2185,Scalar (mathematics),Frame of reference,0.2715900129584705
+2186,Sound,Amplitude,0.27212954278522306
+2187,Electromotive force,Physics,0.2736034355830077
+2188,Newton's laws of motion,Compass,0.27375419828387504
+2189,Sonic boom,Amplitude,0.2741087427698275
+2190,Shock wave,Amplitude,0.2741087427698275
+2191,Electrical resistance and conductance,Electrostatics,0.27477365514619173
+2192,Electric field,Force,0.275477671362459
+2193,Subtractive color,Mass,0.27584189238462015
+2194,Photoelectric effect,Planet,0.27622970226126337
+2195,Energy,Direction (geometry),0.2763783463481806
+2196,Sound,Velocity,0.27643134482456533
+2197,Coulomb's law,Field (physics),0.2767863026455817
+2198,Electric field,Field (physics),0.27712594546107056
+2199,Shock wave,Velocity,0.2784418318441712
+2200,Sonic boom,Velocity,0.2784418318441712
+2201,Energy level,Mass,0.2784751007391349
+2202,Coulomb's law,Euclidean vector,0.27890074826273364
+2203,Dispersion (optics),Color,0.27910722336945953
+2204,Electric field,Euclidean vector,0.2792429857017849
+2205,Torque,Physical quantity,0.27925264746073314
+2206,Wave,Displacement (vector),0.28030986201282926
+2207,Absorption spectroscopy,Direction (geometry),0.2807845297459434
+2208,Power (physics),Gravity,0.28121439548070715
+2209,Force,Physical quantity,0.28216485924583523
+2210,Normal force,Physical quantity,0.28216485924583523
+2211,Scattering,Ray (optics),0.28334835901109107
+2212,Lever,Direction (geometry),0.283840719969486
+2213,Collision,Geometrical optics,0.2847497671958268
+2214,Speed,Motion,0.2850007414702225
+2215,Electromagnetic radiation,Energy,0.2850409354800057
+2216,Scalar (mathematics),Metre,0.2852430900100413
+2217,Curved mirror,Field (physics),0.28538741990314637
+2218,Sound intensity,Metre,0.2855584300400403
+2219,Intensity (physics),Metre,0.2855584300400403
+2220,Sound,Displacement (vector),0.2858432659648069
+2221,Direction (geometry),Motion,0.28596239511629173
+2222,Fracture,Velocity,0.2863295762280825
+2223,Mechanical energy,Position (vector),0.28634386778172355
+2224,Energy,Magnet,0.2873813790819361
+2225,Dispersion (optics),Frequency,0.28862715366749936
+2226,Musical tone,Length,0.28897813809276823
+2227,Pitch (music),Displacement (vector),0.28953461169524025
+2228,Dielectric,Field (physics),0.2897354638988979
+2229,Dispersion (optics),Refraction,0.28991343010359555
+2230,Inelastic collision,Geometrical optics,0.29015889657264426
+2231,Electroscope,Electrostatics,0.29034772995970554
+2232,Ohmmeter,Physical quantity,0.2904448160326886
+2233,Electromagnetic spectrum,Displacement (vector),0.29102200993424493
+2234,Energy,Metre,0.29113199472679885
+2235,Optical microscope,Reflection (physics),0.29117396935525364
+2236,Mechanical energy,Gravity,0.29177613867198954
+2237,Absorption spectroscopy,Magnet,0.2919629791894271
+2238,Torque,Friction,0.2921016352405458
+2239,Huygens–Fresnel principle,Light,0.2937064918713725
+2240,Electrical conductor,Light,0.2937064918713725
+2241,Dispersion (optics),Kilogram,0.2939661330143816
+2242,Contact force,Physics,0.29458253026212183
+2243,Voltmeter,Electrostatics,0.2948741199555106
+2244,Absorption spectroscopy,Planet,0.2949794268410414
+2245,Lever,Magnet,0.295140840888013
+2246,Force,Friction,0.2951478438703663
+2247,Normal force,Friction,0.2951478438703663
+2248,Color,Velocity,0.2952350027369801
+2249,Free fall,Physics,0.29526864752552995
+2250,Capacitor,Electric current,0.2953214810894145
+2251,Capacitance,Electric current,0.2953214810894145
+2252,Absorption spectroscopy,Metre,0.2957733893174834
+2253,Refractive index,Ray (optics),0.29693447798811945
+2254,Dispersion (optics),Wave,0.2972977028900555
+2255,Doppler effect,Velocity,0.297397896529925
+2256,Elasticity (physics),Velocity,0.29768143719873674
+2257,Free body diagram,Velocity,0.29768143719873674
+2258,Energy level,Motion,0.29774623316321913
+2259,Strength of materials,Physics,0.297983226069853
+2260,Geometrical optics,Physical quantity,0.2980754623761739
+2261,Snell's law,Position (vector),0.29924578080544995
+2262,Torque,Length,0.2995296125450925
+2263,Work (physics),Motion,0.299880973691002
+2264,Wavelength,Physical quantity,0.3005871397147722
+2265,Deformation (engineering),Physical quantity,0.3007336203423279
+2266,Dielectric,Gravity,0.3008524102529936
+2267,Pigment,Displacement (vector),0.301396205033811
+2268,Scattering,Velocity,0.30224708662006905
+2269,Resonance (particle physics),Amplitude,0.3023661586502478
+2270,Normal force,Length,0.3026532845158786
+2271,Force,Length,0.3026532845158786
+2272,Pitch (music),Mass,0.30284114442611426
+2273,Pigment,Reflection (physics),0.30378992123846676
+2274,Creep (deformation),Speed,0.30401943844752427
+2275,Newton's laws of motion,Physical quantity,0.30428909171583335
+2276,Capacitance,Physics,0.30429821542232044
+2277,Capacitor,Physics,0.30429821542232044
+2278,Electric current,Electrostatics,0.30439681366743326
+2279,Electromagnetic spectrum,Mass,0.304396901032484
+2280,Collision,Force,0.3045166281727467
+2281,Refracting telescope,Virtual image,0.3056235027923445
+2282,Power (physics),Physics,0.30617318306668595
+2283,Fatigue (material),Tension (physics),0.3063686199110616
+2284,Equations of motion,Velocity,0.3073663954230925
+2285,Electric potential,Voltage,0.3077544086131244
+2286,Laser,Length,0.3079077685769248
+2287,Newton's law of universal gravitation,Motion,0.309124937236671
+2288,Sound,Wavelength,0.30915310261111656
+2289,Energy,Mechanical energy,0.3093380957347379
+2290,Resultant force,Free body diagram,0.30988959727722365
+2291,Resultant force,Length,0.3100868739601283
+2292,Inelastic collision,Force,0.3103012504233624
+2293,Photoelectric effect,Displacement (vector),0.31080570979977906
+2294,Electric potential,Potential energy,0.3110679613080975
+2295,Shock wave,Wavelength,0.31140157519393813
+2296,Sonic boom,Wavelength,0.31140157519393813
+2297,Creep (deformation),Gravity,0.31150989630303905
+2298,Collision,Field (physics),0.31202280727573617
+2299,Telescope,Planet,0.3140214585742533
+2300,Creep (deformation),Compass,0.31403764834779974
+2301,Absorption spectroscopy,Mechanical energy,0.314269742514348
+2302,Deformation (engineering),Friction,0.31457099179751075
+2303,Crest (physics),Physical quantity,0.3146061726314591
+2304,Energy level,Friction,0.31477822204953254
+2305,Sound intensity,Physics,0.3148261201753439
+2306,Intensity (physics),Physics,0.3148261201753439
+2307,Pigment,Mass,0.3152478770109944
+2308,Standing wave,Position (vector),0.31578174748114796
+2309,Laser,Displacement (vector),0.3158317068234734
+2310,Interference (wave propagation),Euclidean vector,0.31587836283467213
+2311,Emission spectrum,Potential energy,0.31596341634280317
+2312,Le Sage's theory of gravitation,Position (vector),0.31657234956179303
+2313,Direction (geometry),Frame of reference,0.3168550151182157
+2314,Photoelectric effect,Reflection (physics),0.31685664594045493
+2315,Emission spectrum,Physical quantity,0.3173707888379119
+2316,Inelastic collision,Field (physics),0.31795001750559226
+2317,Fracture,Compression (physics),0.31834303367859307
+2318,Refracting telescope,Speed,0.31914987017167534
+2319,Field line,Displacement (vector),0.31976043457411324
+2320,Wavelength,Wave,0.3210516332408717
+2321,Snell's law,Displacement (vector),0.32163267307623716
+2322,Collision,Light,0.32180695770692774
+2323,Coulomb's law,Coulomb,0.3220240948302596
+2324,Deformation (engineering),Length,0.3225703519716381
+2325,Strength of materials,Compression (physics),0.32339609770523736
+2326,Gravity,Length,0.324795512278083
+2327,Frame of reference,Physics,0.324795512278083
+2328,Gravitational acceleration,Physics,0.324795512278083
+2329,Motion graphs and derivatives,Physics,0.324795512278083
+2330,Non-inertial reference frame,Physics,0.324795512278083
+2331,Gravity of Earth,Length,0.324795512278083
+2332,Inertial frame of reference,Physics,0.324795512278083
+2333,Subtractive color,Motion,0.3262904718138267
+2334,Newton's laws of motion,Length,0.32638399160085946
+2335,Euclidean vector,Physical quantity,0.32670641004036144
+2336,Doppler effect,Sound,0.3267111335965738
+2337,Mechanical energy,Physical quantity,0.3269529321419996
+2338,Capacitor,Electrical resistance and conductance,0.3271598865740489
+2339,Capacitance,Electrical resistance and conductance,0.3271598865740489
+2340,Scattering,Work (physics),0.3275129531944506
+2341,Inelastic collision,Light,0.327920028441766
+2342,Potential energy,Gravity,0.3282481560059882
+2343,Energy level,Direction (geometry),0.3289374717316067
+2344,Ohmmeter,Physics,0.3291827959773151
+2345,Pitch (music),Ray (optics),0.3292068670063263
+2346,Le Sage's theory of gravitation,Physical quantity,0.32957673488404315
+2347,Power (physics),Friction,0.3296170753640626
+2348,Subtractive color,Position (vector),0.3297010570941931
+2349,Color,Wavelength,0.33018258892986385
+2350,Kinetic energy,Physical quantity,0.33064585368624944
+2351,Frequency,Displacement (vector),0.3307068294707329
+2352,Resonance (particle physics),Displacement (vector),0.33089669908027464
+2353,Work (physics),Direction (geometry),0.331295842967917
+2354,Resultant force,Motion,0.33144739197426537
+2355,Speed,Metre,0.3316644978403631
+2356,Voltage,Gravity,0.3317823622805794
+2357,Photoelectric effect,Force,0.33231469624364723
+2358,Lever,Motion,0.33247673170089354
+2359,Doppler effect,Wavelength,0.332601508995284
+2360,Direction (geometry),Metre,0.3327836050117149
+2361,Ohmmeter,Ohm,0.3331333338681793
+2362,Ohmmeter,Ammeter,0.3331333338681793
+2363,Subtractive color,Speed,0.3331859874078314
+2364,Specular reflection,Wave,0.33607566413658463
+2365,Velocity,Physical quantity,0.336168269581724
+2366,Musical tone,Speed,0.33623293057778086
+2367,Dielectric,Physical quantity,0.33712344718079923
+2368,Laser,Force,0.3376885121729827
+2369,Scattering,Wavelength,0.3380247078820475
+2370,Diffraction,Velocity,0.3381069104563484
+2371,Absorption spectroscopy,Reflection (physics),0.3383640175012318
+2372,Photoelectric effect,Field (physics),0.33933015853657644
+2373,Standing wave,Displacement (vector),0.3394057128480564
+2374,Musical tone,Reflection (physics),0.33969507308995867
+2375,Emission spectrum,Refraction,0.33987194791250575
+2376,Diffraction,Speed,0.33991731293613936
+2377,Optical microscope,Physical quantity,0.3413857102248115
+2378,Photoelectric effect,Euclidean vector,0.34192239362779
+2379,Scattering,Electron,0.3419967079767737
+2380,Energy level,Magnet,0.34203296136255645
+2381,Electromagnetic spectrum,Light,0.3426575738499346
+2382,Sound,Ray (optics),0.3442682561984756
+2383,Work (physics),Magnet,0.3444852228628992
+2384,Laser,Field (physics),0.3448174205561617
+2385,Energy level,Planet,0.3455667125454671
+2386,Frequency,Mass,0.3459055693550955
+2387,Resonance (particle physics),Mass,0.34610416505841635
+2388,Energy level,Metre,0.3464968350486083
+2389,Sonic boom,Ray (optics),0.34677212152817855
+2390,Shock wave,Ray (optics),0.34677212152817855
+2391,Newton's law of universal gravitation,Position (vector),0.34721739029736853
+2392,Laser,Euclidean vector,0.3474515743298266
+2393,Work (physics),Metre,0.3489811010245989
+2394,Creep (deformation),Physical quantity,0.3490658093259164
+2395,Power (physics),Joule,0.3496895957331746
+2396,Curved mirror,Virtual image,0.3500759035575817
+2397,Coulomb's law,Force,0.3507723185281006
+2398,Scalar (mathematics),Velocity,0.35127588048353425
+2399,Field line,Euclidean vector,0.3517736313386122
+2400,Telescope,Light,0.35244779024564704
+2401,Contact force,Compass,0.35297251298911947
+2402,Intensity (physics),Length,0.3531955021133834
+2403,Sound intensity,Length,0.3531955021133834
+2404,Scalar multiplication,Motion,0.35383625102807353
+2405,Strength of materials,Gravity,0.3541733245932287
+2406,Electron,Planet,0.3555247314127266
+2407,Plasticity (physics),Electric charge,0.3561150848330066
+2408,Musical tone,Position (vector),0.3566980846121125
+2409,Musical tone,Standing wave,0.35684256656165153
+2410,Strength of materials,Compass,0.3570472697104307
+2411,Pitch (music),Motion,0.35822760294021805
+2412,Motion graphs and derivatives,Displacement (vector),0.3587287200563112
+2413,Transverse wave,Length,0.35909454011230507
+2414,Displacement (vector),Physical quantity,0.359415011411808
+2415,Distance,Physical quantity,0.359415011411808
+2416,Torque,Kilogram,0.35947264907004645
+2417,Newton's law of universal gravitation,Metre,0.35973859769500416
+2418,Motion,Physics,0.3598832878405188
+2419,Euclidean vector,Magnet,0.359934745238277
+2420,Electromagnetic spectrum,Motion,0.3600678910586451
+2421,Telescope,Reflection (physics),0.36020668777703924
+2422,Ammeter,Kilogram,0.3602584498310528
+2423,Laser,Ray (optics),0.36114518634447845
+2424,Subtractive color,Ray (optics),0.3613217311753722
+2425,Sonic boom,Position (vector),0.36134828783563955
+2426,Shock wave,Position (vector),0.36134828783563955
+2427,Pitch (music),Position (vector),0.36197201442369514
+2428,Force,Kilogram,0.36322144248190075
+2429,Normal force,Kilogram,0.36322144248190075
+2430,Electrical resistance and conductance,Physics,0.36334394921953617
+2431,Electromagnetic spectrum,Position (vector),0.36383153834613896
+2432,Musical tone,Amplitude,0.3649897163084868
+2433,Creep (deformation),Friction,0.36512704405068225
+2434,Optical microscope,Refraction,0.36558949469939594
+2435,Pitch (music),Speed,0.3657980477912298
+2436,Sound,Frequency,0.3658349172735555
+2437,Power (physics),Compass,0.36686057975251857
+2438,Potential energy,Physical quantity,0.36782204865974955
+2439,Energy level,Mechanical energy,0.36816520710007583
+2440,Coulomb's law,Electrostatics,0.36821632233625307
+2441,Huygens–Fresnel principle,Position (vector),0.368412038728006
+2442,Shock wave,Frequency,0.36849563707348937
+2443,Sonic boom,Frequency,0.36849563707348937
+2444,Musical tone,Velocity,0.370759444541169
+2445,Total internal reflection,Snell's law,0.3712057148816855
+2446,Photoelectric effect,Physical quantity,0.37149725764756836
+2447,Voltage,Physical quantity,0.37178234201866345
+2448,Sound,Kilogram,0.3726020735957287
+2449,Pigment,Motion,0.372903396358659
+2450,Newton's law of universal gravitation,Displacement (vector),0.37319308923691225
+2451,Strength of materials,Fracture,0.3738350697312539
+2452,Creep (deformation),Length,0.37441201568136573
+2453,Plasticity (physics),Frame of reference,0.3745231219137897
+2454,Plasticity (physics),Wave,0.37475001994234247
+2455,Contact force,Gravity,0.3751407497211294
+2456,Shock wave,Kilogram,0.37531201096885064
+2457,Sonic boom,Kilogram,0.37531201096885064
+2458,Power (physics),Physical quantity,0.3754099156726617
+2459,Plasticity (physics),Mass,0.3757748661580495
+2460,Electric potential energy,Electric field,0.3758280292579328
+2461,Deformation (engineering),Speed,0.3762475892359431
+2462,Refraction,Speed,0.3763574067140323
+2463,Total internal reflection,Light,0.3765888333959892
+2464,Pigment,Position (vector),0.37680120810764917
+2465,Amplitude,Physical quantity,0.37752740715775107
+2466,Diffraction,Wavelength,0.3781293342409345
+2467,Fatigue (material),Physics,0.3783450065068564
+2468,Intensity (physics),Compression (physics),0.3793825120457973
+2469,Sound intensity,Compression (physics),0.3793825120457973
+2470,Subtractive color,Metre,0.3797146804810504
+2471,Euclidean vector,Length,0.3806457852159334
+2472,Pigment,Speed,0.38078398560895005
+2473,Electromagnetic radiation,Light,0.38255887596691385
+2474,Reflection (physics),Light,0.3830954241800512
+2475,Geometrical optics,Length,0.38310156447539095
+2476,Musical tone,Displacement (vector),0.38338304428611064
+2477,Torque,Direction (geometry),0.3840197976057752
+2478,Creep (deformation),Elasticity (physics),0.3847462964738704
+2479,Resultant force,Metre,0.3857159537640304
+2480,Lever,Metre,0.38691382939683794
+2481,Deformation (engineering),Kilogram,0.3871243913062038
+2482,Scattering,Telescope,0.38719738548927374
+2483,Electromagnetic spectrum,Field (physics),0.3873786613798888
+2484,Direction (geometry),Velocity,0.387586055529784
+2485,Normal force,Direction (geometry),0.3880245832021493
+2486,Force,Direction (geometry),0.3880245832021493
+2487,Shock wave,Displacement (vector),0.3883811341141611
+2488,Sonic boom,Displacement (vector),0.3883811341141611
+2489,Energy,Potential energy,0.3887564896931758
+2490,Color,Frequency,0.390720064220962
+2491,Wavelength,Displacement (vector),0.3913404218796122
+2492,Magnification,Physical quantity,0.3913708835024456
+2493,Newton's laws of motion,Kilogram,0.3917012314004644
+2494,Electric potential,Electric field,0.3917722486809966
+2495,Scalar multiplication,Frame of reference,0.39206130800268163
+2496,Electromagnetic spectrum,Electromagnetic radiation,0.3925268232178167
+2497,Scattering,Energy,0.3925911032652857
+2498,Doppler effect,Frequency,0.3935824822738628
+2499,Diffraction,Physics,0.3941358093228866
+2500,Collision,Plane mirror,0.39444311917092456
+2501,Absorption spectroscopy,Potential energy,0.394954270428504
+2502,Huygens–Fresnel principle,Displacement (vector),0.3959733316560658
+2503,Energy level,Reflection (physics),0.3963915125327958
+2504,Absorption spectroscopy,Physical quantity,0.39671348604739
+2505,Strength of materials,Physical quantity,0.39687277886837313
+2506,Resultant force,Direction (geometry),0.3975550115615004
+2507,Scalar (mathematics),Compass,0.39774578492089363
+2508,Photoelectric effect,Refraction,0.39783591005068053
+2509,Color,Kilogram,0.3979475420475679
+2510,Torque,Magnet,0.39930819649554705
+2511,Doppler effect,Kilogram,0.4008629086559749
+2512,Ohm's law,Physics,0.40128503885507794
+2513,Inelastic collision,Plane mirror,0.40193599224471943
+2514,Color,Wave,0.40245755151562895
+2515,Fracture,Physics,0.40335018188842187
+2516,Force,Magnet,0.403472418558601
+2517,Normal force,Magnet,0.403472418558601
+2518,Collision,Electric current,0.4039977304689086
+2519,Plasticity (physics),Deformation (engineering),0.4040151314522777
+2520,Plasticity (physics),Electrostatics,0.40461764763131775
+2521,Doppler effect,Wave,0.4054059584864394
+2522,Wave,Speed,0.405629649458457
+2523,Power (physics),Kilogram,0.40564073926619953
+2524,Scattering,Kilogram,0.40739913660796145
+2525,Newton's law of universal gravitation,Field (physics),0.40744319085094943
+2526,Electron,Reflection (physics),0.40781412361575353
+2527,Emission spectrum,Length,0.4079008877595947
+2528,Frequency,Motion,0.40916805802118766
+2529,Wavelength,Mass,0.40932578156481736
+2530,Resonance (particle physics),Motion,0.4094029747888207
+2531,Mechanical energy,Velocity,0.4098218605641233
+2532,Newton's law of universal gravitation,Euclidean vector,0.41055575986501786
+2533,Intensity (physics),Speed,0.4109513595950655
+2534,Sound intensity,Speed,0.4109513595950655
+2535,Inelastic collision,Electric current,0.4116721037039326
+2536,Scalar multiplication,Metre,0.4117705866642602
+2537,Pigment,Ray (optics),0.41293912134328237
+2538,Resultant force,Magnet,0.413382267435479
+2539,Frequency,Position (vector),0.4134449299387943
+2540,Deformation (engineering),Direction (geometry),0.4135597820369886
+2541,Resonance (particle physics),Position (vector),0.41368230219850877
+2542,Musical tone,Wavelength,0.414647017236848
+2543,Strength of materials,Friction,0.41513371043765074
+2544,Intensity (physics),Reflection (physics),0.41518286710994945
+2545,Sound intensity,Reflection (physics),0.41518286710994945
+2546,Photoelectric effect,Kilogram,0.4159470017980933
+2547,Pitch (music),Metre,0.41688094363831
+2548,Frequency,Speed,0.4178150304840046
+2549,Scattering,Magnification,0.4178192708314601
+2550,Resonance (particle physics),Speed,0.4180549117614056
+2551,Emission spectrum,Displacement (vector),0.4183981267875599
+2552,Newton's laws of motion,Direction (geometry),0.41844915877043093
+2553,Electromagnetic spectrum,Metre,0.41902254590759214
+2554,Elasticity (physics),Physics,0.4193414575631294
+2555,Free body diagram,Physics,0.4193414575631294
+2556,Contact force,Physical quantity,0.4203680556111423
+2557,Contact force,Length,0.4208321860887455
+2558,Electromotive force,Gravity,0.421193374354191
+2559,Laser,Kilogram,0.4226732244096359
+2560,Electrical resistance and conductance,Kilogram,0.4227867076338508
+2561,Scattering,Position (vector),0.42330036519896685
+2562,Creep (deformation),Compression (physics),0.4244573782381241
+2563,Newton's laws of motion,Friction,0.4245476374884087
+2564,Absorption spectroscopy,Refraction,0.4248399348906322
+2565,Strength of materials,Length,0.42569032295693293
+2566,Refraction,Ray (optics),0.42974170881848656
+2567,Acceleration,Physical quantity,0.42983960979212416
+2568,Deformation (engineering),Magnet,0.43002421161058907
+2569,Kinetic energy,Displacement (vector),0.43047446406757345
+2570,Electromagnetic radiation,Field (physics),0.4333639691934934
+2571,Pigment,Metre,0.43395963483548605
+2572,Refractive index,Position (vector),0.43466533174432
+2573,Newton's laws of motion,Magnet,0.43510824169859613
+2574,Sound intensity,Position (vector),0.4359643256370264
+2575,Intensity (physics),Position (vector),0.4359643256370264
+2576,Reflection (physics),Field (physics),0.4359809013746135
+2577,Mirror image,Light,0.4370632319514473
+2578,Power (physics),Length,0.43739026152383703
+2579,Velocity,Displacement (vector),0.4376642080079843
+2580,Voltmeter,Physics,0.4377654969328123
+2581,Optical microscope,Length,0.4387660716319393
+2582,Fatigue (material),Speed,0.4388757060599405
+2583,Field line,Electric field,0.44074377976612106
+2584,Ohmmeter,Mass,0.4444241683340647
+2585,Intensity (physics),Amplitude,0.4460985421548172
+2586,Sound intensity,Amplitude,0.4460985421548172
+2587,Emission spectrum,Force,0.44735293473819515
+2588,Motion graphs and derivatives,Position (vector),0.4484774952125401
+2589,Creep (deformation),Kilogram,0.4493408113375581
+2590,Fatigue (material),Gravity,0.44968876458290297
+2591,Torque,Motion,0.44982146053650307
+2592,Telescope,Refraction,0.4522649509616091
+2593,Intensity (physics),Velocity,0.45315043221698437
+2594,Sound intensity,Velocity,0.45315043221698437
+2595,Fatigue (material),Compass,0.4533377712683103
+2596,Transverse wave,Amplitude,0.4535492379753717
+2597,Interference (wave propagation),Physical quantity,0.45364173615089143
+2598,Normal force,Motion,0.4545124647954706
+2599,Force,Motion,0.4545124647954706
+2600,Scattering,Distance,0.45496791168329004
+2601,Diffraction,Kilogram,0.4557346273919568
+2602,Emission spectrum,Field (physics),0.4567969577704658
+2603,Refracting telescope,Planet,0.4569120446267185
+2604,Plasticity (physics),Velocity,0.45812732196493194
+2605,Emission spectrum,Euclidean vector,0.4602865535924197
+2606,Compression (physics),Position (vector),0.4605150484100074
+2607,Rarefaction,Position (vector),0.4605150484100074
+2608,Field line,Field (physics),0.4609427834755193
+2609,Strength of materials,Plasticity (physics),0.4617315788026031
+2610,Musical tone,Ray (optics),0.46174469658030176
+2611,Energy level,Potential energy,0.46268667038708283
+2612,Electrostatics,Position (vector),0.4638417814846705
+2613,Energy level,Physical quantity,0.4647475814295491
+2614,Snell's law,Speed,0.46542689400035986
+2615,Refractive index,Displacement (vector),0.46718310335471547
+2616,Doppler effect,Physics,0.46751948710765484
+2617,Ohmmeter,Motion,0.46784985761487163
+2618,Scalar (mathematics),Physics,0.4679908917392563
+2619,Intensity (physics),Displacement (vector),0.4685792763496908
+2620,Sound intensity,Displacement (vector),0.4685792763496908
+2621,Power (physics),Energy,0.4711093239183428
+2622,Electromotive force,Physical quantity,0.47197282605311897
+2623,Potential energy,Position (vector),0.4735051519322678
+2624,Deformation (engineering),Elasticity (physics),0.4735339033524559
+2625,Frequency,Metre,0.47616198398590015
+2626,Transverse wave,Displacement (vector),0.47640544327467815
+2627,Resonance (particle physics),Metre,0.4764353641580687
+2628,Photoelectric effect,Length,0.47746694568065523
+2629,Crest (physics),Speed,0.4775028919817194
+2630,Electron,Physical quantity,0.4781399743203422
+2631,Emission spectrum,Ray (optics),0.478427169281421
+2632,Energy,Position (vector),0.4789591320760746
+2633,Scattering,Optical microscope,0.4789957290888725
+2634,Specular reflection,Light,0.47914421474456986
+2635,Fracture,Gravity,0.4794091156702146
+2636,Creep (deformation),Direction (geometry),0.4800247470072191
+2637,Dispersion (optics),Field (physics),0.4823710520323909
+2638,Fracture,Compass,0.4832992886207183
+2639,Wavelength,Motion,0.48418715967232234
+2640,Deformation (engineering),Motion,0.4844231113470032
+2641,Mechanical energy,Mass,0.4870465619094019
+2642,Equations of motion,Physics,0.4871932684171245
+2643,Capacitor,Temperature,0.48820627924045074
+2644,Capacitance,Temperature,0.48820627924045074
+2645,Wavelength,Position (vector),0.4892481765954983
+2646,Telescope,Ray (optics),0.4896259643711653
+2647,Newton's laws of motion,Motion,0.4901502811363275
+2648,Musical tone,Frequency,0.49067066112994023
+2649,Standing wave,Speed,0.4911458317526259
+2650,Lever,Position (vector),0.49189130292127214
+2651,Compression (physics),Displacement (vector),0.49496666457008215
+2652,Rarefaction,Displacement (vector),0.49496666457008215
+2653,Curved mirror,Physics,0.49636219206888027
+2654,Energy level,Refraction,0.49769755548850325
+2655,Elasticity (physics),Gravity,0.4984158340848623
+2656,Free body diagram,Gravity,0.4984158340848623
+2657,Creep (deformation),Magnet,0.4991352456194339
+2658,Musical tone,Kilogram,0.49974700925798815
+2659,Laser,Electron,0.5010463390806092
+2660,Free body diagram,Compass,0.5024602373564794
+2661,Elasticity (physics),Compass,0.5024602373564794
+2662,Magnification,Length,0.5030095284082251
+2663,Photoelectric effect,Work (physics),0.5036704056893299
+2664,Fatigue (material),Physical quantity,0.5039036461339258
+2665,Intensity (physics),Wavelength,0.5067907988450364
+2666,Sound intensity,Wavelength,0.5067907988450364
+2667,Scalar multiplication,Velocity,0.5070940557494927
+2668,Power (physics),Motion,0.5075933044193123
+2669,Capacitance,Physical quantity,0.5083210767744164
+2670,Capacitor,Physical quantity,0.5083210767744164
+2671,Free fall,Physical quantity,0.5093458630026121
+2672,Absorption spectroscopy,Length,0.5098761096994935
+2673,Strength of materials,Kilogram,0.5108811338437376
+2674,Laser,Work (physics),0.5118151915800018
+2675,Electron,Refraction,0.5120394508963005
+2676,Ammeter,Field (physics),0.5128232406587652
+2677,Optical microscope,Ray (optics),0.5146289599431259
+2678,Energy,Displacement (vector),0.5147905695754987
+2679,Laser,Energy level,0.515484734669072
+2680,Electric potential,Kilogram,0.5155011508740552
+2681,Dielectric,Mass,0.5158494811020392
+2682,Newton's law of universal gravitation,Force,0.5163542825537878
+2683,Wavelength,Field (physics),0.5209122457982396
+2684,Absorption spectroscopy,Displacement (vector),0.5229976584844499
+2685,Curved mirror,Specular reflection,0.5233690976237555
+2686,Torque,Metre,0.5234716515368985
+2687,Refracting telescope,Reflection (physics),0.5241131448394566
+2688,Insulator (electricity),Electric current,0.5251970496095811
+2689,Deformation (engineering),Compression (physics),0.5252988628326425
+2690,Mechanical energy,Motion,0.5266573004772914
+2691,Fatigue (material),Friction,0.5270892877034952
+2692,Capacitance,Electric charge,0.5284466181478535
+2693,Capacitor,Electric charge,0.5284466181478535
+2694,Lever,Displacement (vector),0.5286902097522924
+2695,Force,Metre,0.5289307235515586
+2696,Normal force,Metre,0.5289307235515586
+2697,Snell's law,Angle of incidence,0.530481314960098
+2698,Le Sage's theory of gravitation,Motion,0.5308837341111987
+2699,Kinetic energy,Motion,0.5326058756395546
+2700,Fracture,Physical quantity,0.537207109455202
+2701,Kinetic energy,Position (vector),0.5381729942550482
+2702,Pitch (music),Hertz,0.5386868419363702
+2703,Contact force,Direction (geometry),0.5395389442620362
+2704,Fatigue (material),Length,0.5404928664383664
+2705,Velocity,Motion,0.5415014087934227
+2706,Dielectric,Motion,0.5430400133029759
+2707,Ohmmeter,Metre,0.5444518750725224
+2708,Specular reflection,Field (physics),0.5452890153409637
+2709,Strength of materials,Direction (geometry),0.5457674460819745
+2710,Direction (geometry),Physics,0.5459893736957991
+2711,Resonance (particle physics),Sound,0.546429147418831
+2712,Velocity,Position (vector),0.5471615088995094
+2713,Scattering,Geometrical optics,0.5485936207767734
+2714,Ohmmeter,Electrical conductor,0.5490451851789876
+2715,Energy,Force,0.5504161164470912
+2716,Transverse wave,Position (vector),0.5522634884495545
+2717,Elasticity (physics),Physical quantity,0.5585052949214661
+2718,Free body diagram,Physical quantity,0.5585052949214661
+2719,Absorption spectroscopy,Force,0.559191168422744
+2720,Acceleration,Displacement (vector),0.5596168032878454
+2721,Emission spectrum,Kilogram,0.5599364519633023
+2722,Photoelectric effect,Ray (optics),0.5600212358009723
+2723,Motion graphs and derivatives,Physical quantity,0.5602804493028734
+2724,Inertial frame of reference,Physical quantity,0.5602804493028734
+2725,Gravitational acceleration,Physical quantity,0.5602804493028734
+2726,Non-inertial reference frame,Physical quantity,0.5602804493028734
+2727,Frame of reference,Physical quantity,0.5602804493028734
+2728,Power (physics),Direction (geometry),0.560767659257178
+2729,Fracture,Friction,0.5619251117638068
+2730,Shock wave,Speed,0.5620169841894285
+2731,Sonic boom,Speed,0.5620169841894285
+2732,Energy,Field (physics),0.5620358959934161
+2733,Fracture,Wave,0.5621250299135137
+2734,Creep (deformation),Motion,0.5622768256706289
+2735,Potential energy,Mass,0.5628229496516238
+2736,Wavelength,Metre,0.5634641171284498
+2737,Deformation (engineering),Metre,0.5637387016551213
+2738,Intensity (physics),Ray (optics),0.5643546291537022
+2739,Sound intensity,Ray (optics),0.5643546291537022
+2740,Refracting telescope,Light,0.5648832500939838
+2741,Total internal reflection,Refraction,0.5653311887020114
+2742,Energy,Euclidean vector,0.5663294406002352
+2743,Laser,Telescope,0.5672681285404642
+2744,Strength of materials,Magnet,0.5674952592540414
+2745,Voltage,Mass,0.5688827929858431
+2746,Collision,Virtual image,0.5694093223466858
+2747,Newton's laws of motion,Metre,0.5704035927091722
+2748,Absorption spectroscopy,Field (physics),0.5709961972130823
+2749,Strength of materials,Wave,0.5710476494359503
+2750,Huygens–Fresnel principle,Speed,0.5730034703780635
+2751,Scalar (mathematics),Physical quantity,0.5738204092327126
+2752,Work (physics),Position (vector),0.5741302511754087
+2753,Scalar multiplication,Compass,0.5741769772384234
+2754,Absorption spectroscopy,Euclidean vector,0.5753581919905247
+2755,Fracture,Length,0.5762145455548884
+2756,Lever,Kilogram,0.5764166369821467
+2757,Lever,Field (physics),0.5772111870388451
+2758,Le Sage's theory of gravitation,Velocity,0.5785720384434682
+2759,Total internal reflection,Reflection (physics),0.5789036053559559
+2760,Snell's law,Ray (optics),0.5789575799360166
+2761,Inelastic collision,Virtual image,0.5802258674250915
+2762,Huygens–Fresnel principle,Physics,0.5813503187512578
+2763,Electrical conductor,Physics,0.5813503187512578
+2764,Lever,Euclidean vector,0.5816206598087753
+2765,Power (physics),Magnet,0.5830926532097254
+2766,Free body diagram,Friction,0.5842032704810914
+2767,Elasticity (physics),Friction,0.5842032704810914
+2768,Strength of materials,Temperature,0.5862800708173262
+2769,Power (physics),Metre,0.5907025979964035
+2770,Potential energy,Motion,0.5924894630369528
+2771,Transverse wave,Distance,0.5935789021129714
+2772,Energy level,Length,0.597316948240172
+2773,Absorption spectroscopy,Ray (optics),0.5980339616017764
+2774,Voltage,Motion,0.598868721959145
+2775,Elasticity (physics),Length,0.5990592250901849
+2776,Free body diagram,Length,0.5990592250901849
+2777,Sound intensity,Frequency,0.5997085858254826
+2778,Intensity (physics),Frequency,0.5997085858254826
+2779,Subtractive color,Velocity,0.6025662473175636
+2780,Photoelectric effect,Energy,0.6037517549244782
+2781,Mechanical energy,Potential energy,0.6047323173004956
+2782,Fracture,Deformation (engineering),0.6060226971784165
+2783,Electrical resistance and conductance,Electrical conductor,0.6060226971784165
+2784,Sound intensity,Kilogram,0.6108019002042078
+2785,Intensity (physics),Kilogram,0.6108019002042078
+2786,Laser,Magnification,0.612131085371881
+2787,Energy level,Displacement (vector),0.6126887676435837
+2788,Fatigue (material),Compression (physics),0.6127372398221232
+2789,Mechanical energy,Metre,0.6128879812581554
+2790,Laser,Energy,0.613514942754121
+2791,Electron,Length,0.6145295246382152
+2792,Strength of materials,Deformation (engineering),0.6156421050701374
+2793,Work (physics),Displacement (vector),0.6170815404061835
+2794,Ohm's law,Gravity,0.6177502823861468
+2795,Le Sage's theory of gravitation,Metre,0.6178064175457744
+2796,Sound,Wave,0.6180243939886779
+2797,Kinetic energy,Metre,0.6198105288412948
+2798,Scattering,Light,0.6199873167874843
+2799,Refractive index,Light,0.6200470383951198
+2800,Laser,Position (vector),0.6201612277765883
+2801,Motion,Physical quantity,0.620807746984032
+2802,Sonic boom,Wave,0.6225192895393347
+2803,Shock wave,Wave,0.6225192895393347
+2804,Fatigue (material),Elasticity (physics),0.6292635062487858
+2805,Velocity,Metre,0.6301625458966899
+2806,Frame of reference,Position (vector),0.631340202576357
+2807,Inertial frame of reference,Position (vector),0.631340202576357
+2808,Non-inertial reference frame,Position (vector),0.631340202576357
+2809,Dielectric,Metre,0.6319530692806061
+2810,Scalar (mathematics),Magnet,0.6321819727509617
+2811,Strength of materials,Motion,0.6392845140809451
+2812,Electrostatics,Field (physics),0.6415570986332739
+2813,Speed,Position (vector),0.642949053144356
+2814,Plasticity (physics),Physics,0.6453602910214749
+2815,Fatigue (material),Kilogram,0.6486584109369576
+2816,Gravity,Physics,0.649591024556166
+2817,Gravity of Earth,Physics,0.649591024556166
+2818,Color,Field (physics),0.6529948621727739
+2819,Direction (geometry),Compass,0.6542113720296944
+2820,Fatigue (material),Fracture,0.6542113720296944
+2821,Creep (deformation),Metre,0.6543395644211232
+2822,Curved mirror,Reflection (physics),0.6545869761802461
+2823,Energy level,Force,0.6550892576669028
+2824,Doppler effect,Field (physics),0.6577787073168967
+2825,Work (physics),Force,0.6597860277076177
+2826,Pitch (music),Velocity,0.6615450987254554
+2827,Capacitor,Displacement (vector),0.6617933981605493
+2828,Capacitance,Displacement (vector),0.6617933981605493
+2829,Emission spectrum,Electron,0.6637612537814735
+2830,Electromagnetic spectrum,Velocity,0.664943590564152
+2831,Torque,Position (vector),0.6654999980699565
+2832,Refraction,Light,0.6661384351721852
+2833,Laser,Distance,0.6665561428841125
+2834,Scalar (mathematics),Length,0.6685584167703663
+2835,Energy level,Field (physics),0.6689187814213853
+2836,Direction (geometry),Physical quantity,0.6694571441048316
+2837,Force,Position (vector),0.6724402256917458
+2838,Normal force,Position (vector),0.6724402256917458
+2839,Work (physics),Field (physics),0.6737147045043569
+2840,Subtractive color,Wavelength,0.6738932772084383
+2841,Voltmeter,Gravity,0.6739093989667055
+2842,Energy level,Euclidean vector,0.6740288333715287
+2843,Scalar multiplication,Physics,0.6755812526018427
+2844,Refractive index,Speed,0.676049415764095
+2845,Contact force,Motion,0.6771308148993745
+2846,Emission spectrum,Work (physics),0.6780272936250149
+2847,Electromagnetic spectrum,Physics,0.6782420385431341
+2848,Work (physics),Euclidean vector,0.6788613938113568
+2849,Emission spectrum,Energy level,0.6828885216824352
+2850,Interference (wave propagation),Speed,0.6885282609804658
+2851,Pigment,Velocity,0.6886471397915012
+2852,Energy,Kilogram,0.6889371308744653
+2853,Resultant force,Position (vector),0.6889563014104906
+2854,Potential energy,Metre,0.6894989789154247
+2855,Refractive index,Refraction,0.6909603417469028
+2856,Speed,Displacement (vector),0.6910487494862909
+2857,Fracture,Kilogram,0.6915288520667583
+2858,Capacitor,Mass,0.6922083301168327
+2859,Capacitance,Mass,0.6922083301168327
+2860,Ohm's law,Physical quantity,0.6922268115445744
+2861,Acceleration,Motion,0.6923876383314209
+2862,Dielectric,Electric field,0.6925973682039046
+2863,Fatigue (material),Direction (geometry),0.6929530586755583
+2864,Voltage,Metre,0.6969227269944928
+2865,Telescope,Physics,0.6976203825015094
+2866,Acceleration,Position (vector),0.6996248925315626
+2867,Absorption spectroscopy,Kilogram,0.699920564954128
+2868,Energy level,Ray (optics),0.7005933678643742
+2869,Laser,Optical microscope,0.7017583821640943
+2870,Euclidean vector,Field (physics),0.7039295575983708
+2871,Strength of materials,Elasticity (physics),0.7105980596373384
+2872,Refracting telescope,Ray (optics),0.7124226525756941
+2873,Torque,Displacement (vector),0.7152867543707486
+2874,Compression (physics),Speed,0.7162543379725793
+2875,Rarefaction,Speed,0.7162543379725793
+2876,Deformation (engineering),Position (vector),0.7166923056137992
+2877,Free body diagram,Kilogram,0.7189452981400928
+2878,Elasticity (physics),Kilogram,0.7189452981400928
+2879,Fatigue (material),Magnet,0.7205405498386964
+2880,Electron,Ray (optics),0.7207820079219793
+2881,Electromotive force,Mass,0.722189273542855
+2882,Normal force,Displacement (vector),0.7227461877360092
+2883,Force,Displacement (vector),0.7227461877360092
+2884,Collision,Electric charge,0.7229112952371524
+2885,Newton's laws of motion,Position (vector),0.7251655151382975
+2886,Coulomb's law,Electric charge,0.7291738810082661
+2887,Resultant force,Force,0.7292371885189459
+2888,Lever,Force,0.7315019002845328
+2889,Inelastic collision,Electric charge,0.736643776083085
+2890,Fracture,Direction (geometry),0.7387509745073364
+2891,Pitch (music),Wavelength,0.7398535788983985
+2892,Resultant force,Displacement (vector),0.7404978484874202
+2893,Electromagnetic spectrum,Wavelength,0.7436543573405046
+2894,Strength of materials,Metre,0.7439558797145458
+2895,Total internal reflection,Physics,0.7454041513961567
+2896,Creep (deformation),Wave,0.7495000398846849
+2897,Contact force,Magnet,0.7502814994422587
+2898,Emission spectrum,Telescope,0.7514885847109476
+2899,Laser,Emission spectrum,0.7548592754188782
+2900,Voltmeter,Physical quantity,0.7551565216849903
+2901,Frequency,Velocity,0.7556177165501726
+2902,Resonance (particle physics),Velocity,0.7560515414005207
+2903,Electromagnetic radiation,Physics,0.7572210034155039
+2904,Reflection (physics),Physics,0.7582830244581625
+2905,Scattering,Plane mirror,0.7599267984217448
+2906,Electromotive force,Motion,0.7602560186241664
+2907,Collision,Physics,0.7612915704318668
+2908,Plasticity (physics),Gravity,0.7670545850723433
+2909,Elasticity (physics),Direction (geometry),0.7680395952115503
+2910,Free body diagram,Direction (geometry),0.7680395952115503
+2911,Fracture,Magnet,0.7681617487666111
+2912,Pigment,Wavelength,0.7701637453810722
+2913,Deformation (engineering),Displacement (vector),0.7703088123992676
+2914,Geometrical optics,Position (vector),0.7716100755958494
+2915,Plasticity (physics),Compass,0.7732788617931492
+2916,Dielectric,Electric charge,0.7738461432577428
+2917,Inelastic collision,Physics,0.775753126058406
+2918,Field line,Electric charge,0.7758213683454953
+2919,Color,Light,0.7767444413127208
+2920,Photoelectric effect,Electron,0.7769633948210198
+2921,Le Sage's theory of gravitation,Kilogram,0.779410318014646
+2922,Newton's laws of motion,Displacement (vector),0.7794159116591606
+2923,Direction (geometry),Length,0.7799848195654274
+2924,Torque,Field (physics),0.78093278246432
+2925,Ohmmeter,Voltage,0.7812227295563927
+2926,Absorption spectroscopy,Emission spectrum,0.7850536464356334
+2927,Torque,Euclidean vector,0.7868985397412843
+2928,Total internal reflection,Ray (optics),0.7868988713108013
+2929,Contact force,Metre,0.7879988330461997
+2930,Force,Field (physics),0.7890768114400344
+2931,Normal force,Field (physics),0.7890768114400344
+2932,Ohmmeter,Potential energy,0.7896340556282475
+2933,Amplitude,Length,0.7917432332491414
+2934,Force,Euclidean vector,0.7951047831626165
+2935,Normal force,Euclidean vector,0.7951047831626165
+2936,Subtractive color,Frequency,0.7974485432509755
+2937,Free body diagram,Magnet,0.798616392991094
+2938,Elasticity (physics),Magnet,0.798616392991094
+2939,Ammeter,Electrostatics,0.7993415422434669
+2940,Laser,Geometrical optics,0.8037236000290564
+2941,Acceleration,Metre,0.8057536874936833
+2942,Creep (deformation),Deformation (engineering),0.8080302629045554
+2943,Optical microscope,Telescope,0.8083524799391968
+2944,Resultant force,Field (physics),0.8084576454052285
+2945,Emission spectrum,Magnification,0.8109207971673977
+2946,Fatigue (material),Motion,0.8116903318007193
+2947,Subtractive color,Kilogram,0.8121996200243099
+2948,Emission spectrum,Energy,0.8127540625551378
+2949,Crest (physics),Position (vector),0.814402133982851
+2950,Resultant force,Euclidean vector,0.8146336725736283
+2951,Plane mirror,Light,0.8158513663093682
+2952,Capacitor,Motion,0.8188059495776414
+2953,Capacitance,Motion,0.8188059495776414
+2954,Motion graphs and derivatives,Velocity,0.8196437211282466
+2955,Energy level,Kilogram,0.81995294134361
+2956,Free fall,Motion,0.8204566799900344
+2957,Subtractive color,Wave,0.8214044211330636
+2958,Emission spectrum,Position (vector),0.8215587301784896
+2959,Snell's law,Light,0.8237880730537263
+2960,Capacitor,Position (vector),0.8273646043970175
+2961,Capacitance,Position (vector),0.8273646043970175
+2962,Scalar multiplication,Physical quantity,0.8283543925336183
+2963,Dispersion (optics),Light,0.8284029257910508
+2964,Musical tone,Wave,0.8289160593331246
+2965,Geometrical optics,Distance,0.8293350386376798
+2966,Absorption spectroscopy,Electron,0.8297015672268421
+2967,Total internal reflection,Angle of incidence,0.8314482650803167
+2968,Creep (deformation),Position (vector),0.8318749975874458
+2969,Newton's law of universal gravitation,Mass,0.8319991429632699
+2970,Energy,Work (physics),0.8342342719191479
+2971,Capacitor,Speed,0.8361098235228112
+2972,Capacitance,Speed,0.8361098235228112
+2973,Diffraction,Wave,0.8379991782897329
+2974,Equations of motion,Physical quantity,0.8404206739543101
+2975,Frequency,Wavelength,0.8450617697051188
+2976,Resonance (particle physics),Wavelength,0.8455469473124556
+2977,Euclidean vector,Position (vector),0.8457252929821916
+2978,Deformation (engineering),Euclidean vector,0.8474291966444599
+2979,Absorption spectroscopy,Work (physics),0.8475341170312688
+2980,Refracting telescope,Refraction,0.8479967830530171
+2981,Newton's laws of motion,Field (physics),0.8509474457197418
+2982,Voltage,Electric charge,0.8534035051800448
+2983,Absorption spectroscopy,Energy level,0.8536106521030441
+2984,Mechanical energy,Friction,0.8549917699419342
+2985,Newton's laws of motion,Euclidean vector,0.8574480639939512
+2986,Plasticity (physics),Physical quantity,0.8595313751283231
+2987,Collision,Position (vector),0.8647635099405986
+2988,Mirror image,Physics,0.8651046409988957
+2989,Fracture,Motion,0.8653357050794338
+2990,Coulomb's law,Position (vector),0.8722549624720682
+2991,Optical microscope,Magnification,0.8722818293729259
+2992,Ohmmeter,Electric current,0.8748032203708566
+2993,Series and parallel circuits,Electric current,0.8753284160159686
+2994,Crest (physics),Displacement (vector),0.8753284160159686
+2995,Pitch (music),Frequency,0.8755023661247482
+2996,Photoelectric effect,Telescope,0.879652312664952
+2997,Inelastic collision,Position (vector),0.8811906268147719
+2998,Emission spectrum,Distance,0.8830204047161433
+2999,Kinetic energy,Kilogram,0.883331693749932
+3000,Optical microscope,Position (vector),0.8837247171371502
+3001,Electromotive force,Metre,0.8847342969928487
+3002,Curved mirror,Ray (optics),0.8897746498128398
+3003,Pitch (music),Kilogram,0.8916972701436243
+3004,Electric potential energy,Electric charge,0.8930966914674887
+3005,Creep (deformation),Displacement (vector),0.8941084429634358
+3006,Wavelength,Velocity,0.8941567866853599
+3007,Electromagnetic spectrum,Kilogram,0.8962781005375151
+3008,Plasticity (physics),Friction,0.8990801788220908
+3009,Free body diagram,Motion,0.8996429210730059
+3010,Elasticity (physics),Motion,0.8996429210730059
+3011,Gravitational acceleration,Mass,0.9005167194425981
+3012,Pitch (music),Wave,0.9018030320998353
+3013,Frame of reference,Motion,0.9025023479890378
+3014,Motion graphs and derivatives,Motion,0.9025023479890378
+3015,Inertial frame of reference,Motion,0.9025023479890378
+3016,Gravitational acceleration,Motion,0.9025023479890378
+3017,Non-inertial reference frame,Motion,0.9025023479890378
+3018,Electrical resistance and conductance,Electric current,0.9026824290164676
+3019,Electric potential,Electric charge,0.9051249297364112
+3020,Ohmmeter,Electrical resistance and conductance,0.9059812243589048
+3021,Dielectric,Voltage,0.9067763825208128
+3022,Laser,Light,0.9083197823467819
+3023,Euclidean vector,Displacement (vector),0.9089948935550444
+3024,Pigment,Frequency,0.9113697637154002
+3025,Scalar multiplication,Magnet,0.9126038488401915
+3026,Dielectric,Potential energy,0.9165395288542157
+3027,Plasticity (physics),Length,0.9219432728878214
+3028,Dielectric,Position (vector),0.9256929742369439
+3029,Deformation (engineering),Wave,0.9275643181859587
+3030,Field line,Position (vector),0.9280557849871165
+3031,Pigment,Kilogram,0.9282281371706397
+3032,Emission spectrum,Optical microscope,0.9296545793580959
+3033,Displacement (vector),Position (vector),0.9303960880072628
+3034,Distance,Position (vector),0.9303960880072628
+3035,Contact force,Position (vector),0.9350121233428085
+3036,Pigment,Wave,0.9387479098663581
+3037,Absorption spectroscopy,Telescope,0.9393607308886847
+3038,Insulator (electricity),Electric charge,0.939784683808298
+3039,Fatigue (material),Metre,0.9445900558356646
+3040,Strength of materials,Position (vector),0.9458060146343266
+3041,Specular reflection,Physics,0.9483979744362167
+3042,Photoelectric effect,Magnification,0.9492204793646764
+3043,Optical microscope,Distance,0.9498370946828957
+3044,Capacitance,Metre,0.9528707283161374
+3045,Capacitor,Metre,0.9528707283161374
+3046,Free fall,Metre,0.9547917362071058
+3047,Pitch (music),Sound,0.9562510079829544
+3048,Photoelectric effect,Position (vector),0.961672674335517
+3049,Fracture,Elasticity (physics),0.961865741184676
+3050,Scalar multiplication,Length,0.9651160751454898
+3051,Power (physics),Position (vector),0.9718011375456587
+3052,Energy level,Electron,0.9719906437234621
+3053,Amplitude,Position (vector),0.9772825607794214
+3054,Kinetic energy,Velocity,0.983572465353896
+3055,Creep (deformation),Euclidean vector,0.9836231746766055
+3056,Torque,Force,0.9896790415614268
+3057,Free fall,Gravitational field,0.9920689526526506
+3058,Energy level,Work (physics),0.9928813738947557
+3059,Resonance (particle physics),Frequency,1.000574132713998
+3060,Sound,Field (physics),1.002756073161611
+3061,Contact force,Displacement (vector),1.0049613658043557
+3062,Fracture,Metre,1.0070188961894104
+3063,Sonic boom,Sound,1.007273006687725
+3064,Shock wave,Sound,1.007273006687725
+3065,Sonic boom,Field (physics),1.0100491247878722
+3066,Shock wave,Field (physics),1.0100491247878722
+3067,Voltage,Potential energy,1.010766873202257
+3068,Magnification,Position (vector),1.013118337879915
+3069,Intensity (physics),Wave,1.013119628073819
+3070,Sound intensity,Wave,1.013119628073819
+3071,Absorption spectroscopy,Magnification,1.0136509964592473
+3072,Absorption spectroscopy,Energy,1.0159425781939224
+3073,Strength of materials,Displacement (vector),1.0165627594802866
+3074,Frequency,Kilogram,1.0184978415199035
+3075,Inelastic collision,Collision,1.018996080067372
+3076,Resonance (particle physics),Kilogram,1.0190825944498565
+3077,Voltage,Position (vector),1.0208613634858281
+3078,Absorption spectroscopy,Position (vector),1.026948412723112
+3079,Frequency,Wave,1.0300406566477966
+3080,Resonance (particle physics),Wave,1.0306320366855262
+3081,Photoelectric effect,Distance,1.0336164207173775
+3082,Direction (geometry),Magnet,1.0398114862439112
+3083,Power (physics),Displacement (vector),1.0445026049357944
+3084,Elasticity (physics),Metre,1.0469433030737967
+3085,Free body diagram,Metre,1.0469433030737967
+3086,Gravitational acceleration,Metre,1.0502709098278165
+3087,Motion graphs and derivatives,Metre,1.0502709098278165
+3088,Frame of reference,Metre,1.0502709098278165
+3089,Non-inertial reference frame,Metre,1.0502709098278165
+3090,Inertial frame of reference,Metre,1.0502709098278165
+3091,Amplitude,Displacement (vector),1.0503940992191625
+3092,Ohm's law,Mass,1.0592109345295206
+3093,Emission spectrum,Geometrical optics,1.0647330253484173
+3094,Deformation (engineering),Force,1.0658081986046133
+3095,Electric field,Electric charge,1.066754381475056
+3096,Electric potential energy,Position (vector),1.0683432873688898
+3097,Newton's laws of motion,Force,1.0784088866669341
+3098,Fatigue (material),Wave,1.08196160375818
+3099,Electric potential,Position (vector),1.082731749151636
+3100,Electromotive force,Electric charge,1.08338460056084
+3101,Photoelectric effect,Optical microscope,1.0882038893863706
+3102,Magnification,Distance,1.0889107885758935
+3103,Scattering,Virtual image,1.0970134407007002
+3104,Energy level,Telescope,1.1004557271800413
+3105,Absorption spectroscopy,Distance,1.1037755058951793
+3106,Contact force,Euclidean vector,1.1055742699213524
+3107,Plasticity (physics),Kilogram,1.106446163306813
+3108,Strength of materials,Field (physics),1.1098586398526666
+3109,Laser,Plane mirror,1.1133397820435225
+3110,Ohm's law,Motion,1.1150421606487773
+3111,Power (physics),Force,1.1167863232259823
+3112,Refracting telescope,Physics,1.118106227094235
+3113,Strength of materials,Euclidean vector,1.118337150943223
+3114,Gravity of Earth,Physical quantity,1.120560898605747
+3115,Gravity,Physical quantity,1.120560898605747
+3116,Insulator (electricity),Position (vector),1.1241925629227782
+3117,Mirror image,Ray (optics),1.1303457513036514
+3118,Electron,Telescope,1.1321669959336855
+3119,Power (physics),Field (physics),1.1403626875228732
+3120,Optical microscope,Geometrical optics,1.1452996080367719
+3121,Power (physics),Euclidean vector,1.149074227304825
+3122,Voltmeter,Mass,1.1555028376685679
+3123,Absorption spectroscopy,Optical microscope,1.1620682241976201
+3124,Motion,Metre,1.1637320525182429
+3125,Fatigue (material),Deformation (engineering),1.1664545331736957
+3126,Interference (wave propagation),Position (vector),1.1743151601089359
+3127,Crest (physics),Wave,1.177189321883196
+3128,Plasticity (physics),Direction (geometry),1.182001559211738
+3129,Energy level,Magnification,1.1874863486788867
+3130,Energy level,Energy,1.190170923583182
+3131,Electric charge,Position (vector),1.1962235417236238
+3132,Fatigue (material),Position (vector),1.2008762623341875
+3133,Energy level,Position (vector),1.2030641958286428
+3134,Emission spectrum,Light,1.2032968421070895
+3135,Wavelength,Kilogram,1.2052347864172162
+3136,Standing wave,Wave,1.2108233025084305
+3137,Creep (deformation),Field (physics),1.216077753790097
+3138,Voltmeter,Motion,1.2164096297986662
+3139,Electron,Magnification,1.2217055342527912
+3140,Scattering,Physics,1.227176906916956
+3141,Refractive index,Physics,1.2272951173637665
+3142,Plasticity (physics),Magnet,1.2290587980265777
+3143,Insulator (electricity),Temperature,1.2311881487163854
+3144,Scalar (mathematics),Field (physics),1.236367375718762
+3145,Snell's law,Refraction,1.2366619752856498
+3146,Creep (deformation),Force,1.2370988019517837
+3147,Electron,Position (vector),1.2377322802408812
+3148,Photoelectric effect,Geometrical optics,1.2463194879783008
+3149,Specular reflection,Reflection (physics),1.2507176658924974
+3150,Interference (wave propagation),Displacement (vector),1.2621669149792996
+3151,Transmission medium,Position (vector),1.262680405152714
+3152,Electromotive force,Voltage,1.269486935529138
+3153,Electric field,Position (vector),1.2760767043572852
+3154,Acceleration,Velocity,1.2786442049600646
+3155,Fracture,Position (vector),1.280243297803918
+3156,Electromotive force,Potential energy,1.2831553403959022
+3157,Fatigue (material),Displacement (vector),1.2907150812577504
+3158,Energy level,Distance,1.293066696363035
+3159,Optical microscope,Light,1.2943483190691505
+3160,Electromotive force,Position (vector),1.2959701639317214
+3161,Ohm's law,Metre,1.297610302256178
+3162,Ohmmeter,Kilogram,1.3085798445264476
+3163,Magnification,Geometrical optics,1.312992624023953
+3164,Refraction,Physics,1.3185264961368734
+3165,Electron,Distance,1.3303283367107401
+3166,Absorption spectroscopy,Geometrical optics,1.3309162816855218
+3167,Elasticity (physics),Position (vector),1.3309999961399126
+3168,Free body diagram,Position (vector),1.3309999961399126
+3169,Subtractive color,Field (physics),1.3327439496313256
+3170,Musical tone,Sound,1.3412351800280398
+3171,Musical tone,Field (physics),1.3449317223111235
+3172,Ohmmeter,Temperature,1.3519558502043254
+3173,Equations of motion,Motion,1.3537535219835568
+3174,Reflection (physics),Ray (optics),1.3592917094149957
+3175,Diffraction,Field (physics),1.3596692517445574
+3176,Energy level,Optical microscope,1.3613562826736378
+3177,Fracture,Displacement (vector),1.3760196483048026
+3178,Plasticity (physics),Motion,1.384537128127094
+3179,Electron,Optical microscope,1.4005857890345628
+3180,Strength of materials,Force,1.406528013194581
+3181,Photoelectric effect,Light,1.4085148750317606
+3182,Huygens–Fresnel principle,Wave,1.4126271862598356
+3183,Voltmeter,Metre,1.415574875188558
+3184,Fatigue (material),Euclidean vector,1.419936558950087
+3185,Free body diagram,Displacement (vector),1.430573508741497
+3186,Elasticity (physics),Displacement (vector),1.430573508741497
+3187,Mechanical energy,Kilogram,1.4340788815550436
+3188,Interference (wave propagation),Crest (physics),1.4419352689634082
+3189,Scalar multiplication,Scalar (mathematics),1.4435777800954437
+3190,Fatigue (material),Creep (deformation),1.4435777800954437
+3191,Plane mirror,Virtual image,1.4435777800954437
+3192,Refracting telescope,Telescope,1.4550344638905544
+3193,Pitch (music),Field (physics),1.4631921911649193
+3194,Contact force,Field (physics),1.4673363184957289
+3195,Emission spectrum,Plane mirror,1.4748971342052069
+3196,Magnification,Light,1.4838648192404096
+3197,Scalar (mathematics),Position (vector),1.4854144846975714
+3198,Electrical resistance and conductance,Temperature,1.4922559252384104
+3199,Fracture,Field (physics),1.5023049792409087
+3200,Absorption spectroscopy,Light,1.5041210526338622
+3201,Deformation (engineering),Field (physics),1.5049903569437724
+3202,Capacitor,Velocity,1.5121030828010413
+3203,Capacitance,Velocity,1.5121030828010413
+3204,Fracture,Euclidean vector,1.5137814943307792
+3205,Dielectric,Kilogram,1.5188873195396266
+3206,Pigment,Field (physics),1.5231359424358002
+3207,Color,Physics,1.5374553884330786
+3208,Plasticity (physics),Elasticity (physics),1.5389851858954815
+3209,Energy level,Geometrical optics,1.5591608169445141
+3210,Elasticity (physics),Field (physics),1.5618655649286395
+3211,Free body diagram,Field (physics),1.5618655649286395
+3212,Ohmmeter,Electric charge,1.5653680241765553
+3213,Series and parallel circuits,Electric charge,1.5663078063471634
+3214,Free body diagram,Euclidean vector,1.5737970794825684
+3215,Elasticity (physics),Euclidean vector,1.5737970794825684
+3216,Equations of motion,Metre,1.5754063647417247
+3217,Subtractive color,Light,1.585313322565457
+3218,Optical microscope,Plane mirror,1.586500154953884
+3219,Ohm's law,Electric charge,1.5889640808225651
+3220,Compass,Magnet,1.5894121238184693
+3221,Scalar (mathematics),Displacement (vector),1.5965399079429234
+3222,Electron,Geometrical optics,1.6040903552031576
+3223,Laser,Virtual image,1.607192571054333
+3224,Plasticity (physics),Metre,1.6112302339030564
+3225,Plane mirror,Physics,1.6148619965312718
+3226,Electrical resistance and conductance,Electric charge,1.6152549252955122
+3227,Wave,Field (physics),1.622518597833828
+3228,Snell's law,Physics,1.6305715811790926
+3229,Sound intensity,Sound,1.6392874422564931
+3230,Intensity (physics),Sound,1.6392874422564931
+3231,Dispersion (optics),Physics,1.6397060272471375
+3232,Intensity (physics),Field (physics),1.643805438380262
+3233,Sound intensity,Field (physics),1.643805438380262
+3234,Potential energy,Kilogram,1.6571978313236722
+3235,Frequency,Field (physics),1.6712601219360184
+3236,Resonance (particle physics),Field (physics),1.6722196470456223
+3237,Voltage,Kilogram,1.6750406702445895
+3238,Capacitor,Wavelength,1.6910938946249112
+3239,Capacitance,Wavelength,1.6910938946249112
+3240,Power (physics),Work (physics),1.6926492473721841
+3241,Interference (wave propagation),Wave,1.6974308014704982
+3242,Specular reflection,Ray (optics),1.7000901540665463
+3243,Electroscope,Electric charge,1.7068070103600896
+3244,Photoelectric effect,Plane mirror,1.726435639132896
+3245,Direction (geometry),Position (vector),1.7329835654805004
+3246,Voltmeter,Electric charge,1.733415360897344
+3247,Fatigue (material),Field (physics),1.755502824239762
+3248,Scalar (mathematics),Euclidean vector,1.756379402417671
+3249,Energy level,Light,1.7620692161328504
+3250,Compression (physics),Wave,1.7657839828247943
+3251,Rarefaction,Wave,1.7657839828247943
+3252,Scalar multiplication,Field (physics),1.7847924716225199
+3253,Fatigue (material),Force,1.7858483422802889
+3254,Electric current,Electric charge,1.7893944463452554
+3255,Laser,Physics,1.7978901032484933
+3256,Gravity of Earth,Motion,1.805004695978076
+3257,Gravity,Motion,1.805004695978076
+3258,Pigment,Light,1.8117866543605217
+3259,Electron,Light,1.8128458617490262
+3260,Magnification,Plane mirror,1.8187930798631928
+3261,Absorption spectroscopy,Plane mirror,1.8436214177565087
+3262,Ohm's law,Voltage,1.8619141721094024
+3263,Direction (geometry),Displacement (vector),1.8626298926000777
+3264,Ohmmeter,Position (vector),1.8725300819813901
+3265,Series and parallel circuits,Position (vector),1.8736542715379636
+3266,Ohm's law,Potential energy,1.8819611659139897
+3267,Ohm's law,Position (vector),1.9007562404331912
+3268,Fracture,Force,1.903876729692843
+3269,Crest (physics),Field (physics),1.9100115679268777
+3270,Magnetism,Field (physics),1.925022065226576
+3271,Electrical resistance and conductance,Position (vector),1.932205967523525
+3272,Magnet,Field (physics),1.9557143813175608
+3273,Standing wave,Field (physics),1.9645833270105035
+3274,Light,Physics,1.9793580831228532
+3275,Free body diagram,Force,1.9793580831228532
+3276,Elasticity (physics),Force,1.9793580831228532
+3277,Capacitor,Frequency,2.001148265427996
+3278,Capacitance,Frequency,2.001148265427996
+3279,Magnetic field,Field (physics),2.028148247292285
+3280,Voltmeter,Voltage,2.031179096846621
+3281,Direction (geometry),Field (physics),2.0335742775064043
+3282,Capacitor,Kilogram,2.038165188899713
+3283,Capacitance,Kilogram,2.038165188899713
+3284,Subtractive color,Color,2.040971570889173
+3285,Electroscope,Position (vector),2.0417227269716562
+3286,Plasticity (physics),Position (vector),2.0483892764862683
+3287,Direction (geometry),Euclidean vector,2.0491093028206167
+3288,Voltmeter,Potential energy,2.053048544633443
+3289,Capacitance,Wave,2.0612640733710523
+3290,Capacitor,Wave,2.0612640733710523
+3291,Voltmeter,Position (vector),2.0735522622907543
+3292,Gravity of Earth,Metre,2.1005418196556334
+3293,Gravity,Metre,2.1005418196556334
+3294,Electromotive force,Kilogram,2.1264422473554774
+3295,Emission spectrum,Virtual image,2.129128730865084
+3296,Electric current,Position (vector),2.1405157621477042
+3297,Scalar multiplication,Position (vector),2.1443113443413377
+3298,Energy level,Plane mirror,2.1597919534091696
+3299,Plasticity (physics),Displacement (vector),2.201631437287684
+3300,Electron,Plane mirror,2.2220295713295415
+3301,Free fall,Mass,2.2334366967590484
+3302,Gravitational field,Mass,2.2512917986064958
+3303,Optical microscope,Virtual image,2.290236371809405
+3304,Huygens–Fresnel principle,Field (physics),2.292013881512254
+3305,Scalar multiplication,Displacement (vector),2.3047295361420295
+3306,Pigment,Color,2.3325389381590544
+3307,Emission spectrum,Physics,2.381755330820871
+3308,Plasticity (physics),Field (physics),2.4036879667854536
+3309,Plasticity (physics),Euclidean vector,2.4220503909292463
+3310,Newton's law of universal gravitation,Kilogram,2.4497707071741237
+3311,Electrical conductor,Temperature,2.4623762974327708
+3312,Photoelectric effect,Virtual image,2.4922441274171248
+3313,Scalar multiplication,Euclidean vector,2.5354702787474634
+3314,Optical microscope,Physics,2.561978807726001
+3315,Magnification,Virtual image,2.625569276681863
+3316,Ammeter,Electric current,2.625985248047906
+3317,Gravitational acceleration,Kilogram,2.6515165301178754
+3318,Absorption spectroscopy,Virtual image,2.6614109135813555
+3319,Interference (wave propagation),Field (physics),2.7541130439218633
+3320,Photoelectric effect,Physics,2.7879553030928905
+3321,Rarefaction,Field (physics),2.8650173518903173
+3322,Compression (physics),Field (physics),2.8650173518903173
+3323,Magnification,Physics,2.9370998242251365
+3324,Mass,Kilogram,2.9444389791664403
+3325,Absorption spectroscopy,Physics,2.9771941635260895
+3326,Plasticity (physics),Force,3.0462027675085483
+3327,Compass,Field (physics),3.108436148392268
+3328,Energy level,Virtual image,3.117827673570411
+3329,Ohm's law,Kilogram,3.118781962788033
+3330,Subtractive color,Physics,3.1379027393022842
+3331,Electron,Virtual image,3.20767251588633
+3332,Capacitor,Field (physics),3.3444392940912446
+3333,Capacitance,Field (physics),3.3444392940912446
+3334,Voltmeter,Kilogram,3.4023075957687636
+3335,Energy level,Physics,3.487765945974507
+3336,Pigment,Physics,3.5861745592026097
+3337,Electron,Physics,3.5882711099087494
+3338,Ammeter,Electric charge,4.69892341904149
+3339,Ammeter,Position (vector),5.6209628146138915
+3340,Free fall,Kilogram,6.576218067438078
+3341,Gravitational field,Kilogram,6.6287913252946895
