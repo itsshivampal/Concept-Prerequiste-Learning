@@ -47,19 +47,19 @@ def get_term_frequency(topic_a, topic_b, all_keyword_data):
 
 def get_tf_matrix(concept_list, wiki_data):
     df = get_null_matrix(concept_list)
-    for concept1 in concept_list:
-        print(concept1)
-        freq_sum = 0.0
-        for concept2 in concept_list:
-            freq = float(get_term_frequency(concept2, concept1, wiki_data))
-            df.at[concept1, concept2] = freq
-            freq_sum += freq
-        for concept2 in concept_list:
-            freq = df.at[concept1, concept2]
-            if freq_sum != 0.0:
-                df.at[concept1, concept2] = float(freq)/freq_sum
-            else:
-                df.at[concept1, concept2] = float(freq)
+    # for concept1 in concept_list:
+    #     print(concept1)
+    #     freq_sum = 0.0
+    #     for concept2 in concept_list:
+    #         freq = float(get_term_frequency(concept2, concept1, wiki_data))
+    #         df.at[concept1, concept2] = freq
+    #         freq_sum += freq
+    #     for concept2 in concept_list:
+    #         freq = df.at[concept1, concept2]
+    #         if freq_sum != 0.0:
+    #             df.at[concept1, concept2] = float(freq)/freq_sum
+    #         else:
+    #             df.at[concept1, concept2] = float(freq)
     return df
 
 
@@ -102,7 +102,7 @@ def generate_tfidf_values(prereq_file, wiki_data_file):
     df_prereq = pd.read_csv(prereq_file)
     df_wiki = pd.read_csv(wiki_data_file)
 
-    concept_list = get_all_topics(df_prereq)[:3]
+    concept_list = get_all_topics(df_prereq)
     all_keyword_data = get_keyword_wiki_data(df_wiki)
 
     df_term = get_tf_matrix(concept_list, all_keyword_data)

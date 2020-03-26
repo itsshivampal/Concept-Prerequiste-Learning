@@ -153,7 +153,8 @@ def get_prereq_relations(df_prereq, df_wiki, tfidf_values):
     all_topics = get_all_topics(df_prereq)
     all_keyword_data = get_keyword_wiki_data(df_wiki)
 
-    for i in range(df_prereq.shape[0]):
+    # for i in range(df_prereq.shape[0]):
+    for i in range(10):
         print(i)
         topic_a = df_prereq[["topic_a"]].iloc[i].values[0]
         topic_b = df_prereq[["topic_b"]].iloc[i].values[0]
