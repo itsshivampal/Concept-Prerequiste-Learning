@@ -56,7 +56,10 @@ def get_tf_matrix(concept_list, wiki_data):
             freq_sum += freq
         for concept2 in concept_list:
             freq = df.at[concept1, concept2]
-            df.at[concept1, concept2] = float(freq)/freq_sum
+            if freq_sum != 0.0:
+                df.at[concept1, concept2] = float(freq)/freq_sum
+            else:
+                df.at[concept1, concept2] = float(freq)
     return df
 
 
