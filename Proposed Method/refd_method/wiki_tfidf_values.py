@@ -47,33 +47,32 @@ def get_term_frequency(topic_a, topic_b, all_keyword_data):
 
 def get_tf_matrix(concept_list, wiki_data):
     df = get_null_matrix(concept_list)
-    # for concept1 in concept_list:
-    #     print(concept1)
-    #     freq_sum = 0.0
-    #     for concept2 in concept_list:
-    #         freq = float(get_term_frequency(concept2, concept1, wiki_data))
-    #         df.at[concept1, concept2] = freq
-    #         freq_sum += freq
-    #     for concept2 in concept_list:
-    #         freq = df.at[concept1, concept2]
-    #         if freq_sum != 0.0:
-    #             df.at[concept1, concept2] = float(freq)/freq_sum
-    #         else:
-    #             df.at[concept1, concept2] = float(freq)
+    for concept1 in concept_list:
+        print(concept1)
+        freq_sum = 0.0
+        for concept2 in concept_list:
+            freq = float(get_term_frequency(concept2, concept1, wiki_data))
+            df.at[concept1, concept2] = freq
+            freq_sum += freq
+        for concept2 in concept_list:
+            freq = df.at[concept1, concept2]
+            if freq_sum != 0.0:
+                df.at[concept1, concept2] = float(freq)/freq_sum
+            else:
+                df.at[concept1, concept2] = float(freq)
     return df
 
 
 
 
 def get_idf(topic_a, all_keyword_data):
-    # n = len(all_keyword_data)
-    # count = 1
-    # for i in range(n):
-    #     topic = all_keyword_data[i]["topic"]
-    #     referred_links = all_keyword_data[i]["wiki_links"]
-    #     if topic_a in referred_links: count += 1
-    # idf = math.log(n/count)
-    idf = 0.0
+    n = len(all_keyword_data)
+    count = 1
+    for i in range(n):
+        topic = all_keyword_data[i]["topic"]
+        referred_links = all_keyword_data[i]["wiki_links"]
+        if topic_a in referred_links: count += 1
+    idf = math.log(n/count)
     return idf
 
 
