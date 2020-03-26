@@ -173,7 +173,7 @@ def main_function(prereq_file, wiki_data_file, tfidf_file):
     df_tfidf = pd.read_csv(tfidf_file)
     df_tfidf.set_index("concept", inplace = True)
 
-    df_estimated = get_prereq_relations(df_prereq, df_wiki, tfidf_values)
+    df_estimated = get_prereq_relations(df_prereq, df_wiki, df_tfidf)
     return df_estimated
 
 
