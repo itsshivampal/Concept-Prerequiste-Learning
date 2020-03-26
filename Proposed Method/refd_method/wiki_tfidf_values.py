@@ -66,13 +66,14 @@ def get_tf_matrix(concept_list, wiki_data):
 
 
 def get_idf(topic_a, all_keyword_data):
-    n = len(all_keyword_data)
-    count = 1
-    for i in range(n):
-        topic = all_keyword_data[i]["topic"]
-        referred_links = all_keyword_data[i]["wiki_links"]
-        if topic_a in referred_links: count += 1
-    idf = math.log(n/count)
+    # n = len(all_keyword_data)
+    # count = 1
+    # for i in range(n):
+    #     topic = all_keyword_data[i]["topic"]
+    #     referred_links = all_keyword_data[i]["wiki_links"]
+    #     if topic_a in referred_links: count += 1
+    # idf = math.log(n/count)
+    idf = 0.0
     return idf
 
 
