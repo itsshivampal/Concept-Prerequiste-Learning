@@ -98,7 +98,7 @@ def generate_tfidf_values(prereq_file, wiki_data_file):
     df_prereq = pd.read_csv(prereq_file)
     df_wiki = pd.read_csv(wiki_data_file)
 
-    concept_list = get_all_topics(df_prereq)
+    concept_list = get_all_topics(df_prereq)[:3]
     all_keyword_data = get_keyword_wiki_data(df_wiki)
 
     df_term = get_tf_matrix(concept_list, all_keyword_data)
