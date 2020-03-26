@@ -1,0 +1,2 @@
+python wiki_tfidf_values.py
+python refd_calculation.py

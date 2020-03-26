@@ -99,14 +99,15 @@ def get_prereq_matrix(df, concept_list):
 
 
 
-def main_function(match_prereq_file):
-	df_match = pd.read_csv(match_prereq_file)
+def main_function(first_prereq_file):
+	df_match = pd.read_csv(first_prereq_file)
 	match_prereq_pairs, concept_list = get_prereq_pairs(df_match)
 	df_match_all_pairs = get_all_pairs(match_prereq_pairs)
 	df_prereq_matrix = get_prereq_matrix(df_match_all_pairs, concept_list)
 
 
-	df_prereq_matrix.to_csv("data/match_prereq_pairs_matrix.csv")
+	df_prereq_matrix.to_csv("data/match_prereq_pairs_matrix.csv") # final output file
+
 	df_match_all_pairs.to_csv("data/match_all_prereq_pairs.csv")
 	df_match_pairs = pd.DataFrame(match_prereq_pairs)
 	df_match_pairs.to_csv("data/match_prereq_pairs.csv")
@@ -116,3 +117,22 @@ def main_function(match_prereq_file):
 first_prereq_file = "data/first_tfidf_matrix.csv"
 
 main_function(first_prereq_file)
+
+
+
+
+
+# def book_name_correction(concept_list, df):
+# 	for concept in concept_list:
+# 		df.at["Physics", concept] = 1.0
+# 	for concept in concept_list:
+# 		df.at[concept, "Physics"] = 0.0
+# 	return df
+
+
+# df = pd.read_csv("data/match_prereq_pairs_matrix.csv")
+# concept_list = list(df["concept"])
+# df.set_index("concept", inplace = True)
+
+# df = book_name_correction(concept_list, df)
+# df.to_csv("data/match_prereq_pairs_matrix.csv")

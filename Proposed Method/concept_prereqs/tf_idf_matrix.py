@@ -81,6 +81,14 @@ def get_tf_idf_matrix(concept_list, df, idf_data):
 
 
 
+def book_name_correction(concept_list, df):
+	for concept in concept_list:
+		df.at["Physics", concept] = 1.0
+	for concept in concept_list:
+		df.at[concept, "Physics"] = 0.0
+	return df
+
+
 def main_function(concept_prereq_file):
 	df = pd.read_csv(concept_prereq_file)
 	concept_list, match_data, first_data = read_data(df)
@@ -88,13 +96,15 @@ def main_function(concept_prereq_file):
 	df_match = get_tf_matrix(concept_list, match_data)
 	df_match.to_csv("data/tf_match_matrix.csv")
 	match_idf_data = get_term_idf(concept_list, df_match)
-	df_math_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
-	df_math_tfidf.to_csv("data/match_tfidf_matrix.csv")
+	df_match_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
+	df_match_tfidf = book_name_correction(concept_list, df_match_tfidf)
+	df_match_tfidf.to_csv("data/match_tfidf_matrix.csv")
 
 	df_first = get_tf_matrix(concept_list, first_data)
 	df_first.to_csv("data/tf_first_matrix.csv")
 	first_idf_data = get_term_idf(concept_list, df_first)
 	df_first_tfidf = get_tf_idf_matrix(concept_list, df_first, first_idf_data)
+	df_first_tfidf = book_name_correction(concept_list, df_first_tfidf)
 	df_first_tfidf.to_csv("data/first_tfidf_matrix.csv")
 
 
