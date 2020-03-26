@@ -109,6 +109,8 @@ def generate_tfidf_values(prereq_file, wiki_data_file):
     idf_data = get_term_idf(concept_list, all_keyword_data)
     df_tfidf_matrix = get_tf_idf_matrix(concept_list, df_term, idf_data)
 
+    return df_tfidf_matrix
+
 
 
 prereq_file = "../output_files/physics_labeled_pairs.csv"
