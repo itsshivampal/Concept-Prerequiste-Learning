@@ -48,7 +48,6 @@ def get_term_frequency(topic_a, topic_b, all_keyword_data):
 def get_tf_matrix(concept_list, wiki_data):
     df = get_null_matrix(concept_list)
     for concept1 in concept_list:
-        print(concept1)
         freq_sum = 0.0
         for concept2 in concept_list:
             freq = float(get_term_frequency(concept2, concept1, wiki_data))
@@ -108,6 +107,8 @@ def generate_tfidf_values(prereq_file, wiki_data_file):
     idf_data = get_term_idf(concept_list, all_keyword_data)
     df_tfidf_matrix = get_tf_idf_matrix(concept_list, df_term, idf_data)
 
+    print("tf-idf matrix done!")
+    
     return df_tfidf_matrix
 
 
