@@ -104,7 +104,7 @@ def plots_checking(theta_values, accuracy_values, precision_values, recall_value
 
 def check_accuracy_measures(file_name, theta):
     df = pd.read_csv(file_name, encoding = "utf-8")
-    y_tfidf = df[["refd_equal"]]
+    y_tfidf = df[["tfidf_score"]]
     y_truth = df[["relation"]]
     data = check_estimation(y_tfidf, y_truth, theta)
     return data
@@ -128,7 +128,7 @@ def main_function(prereq_file):
     plots_checking(theta_values, accuracy_values, precision_values, recall_values, f1_values)
 
 
-prereq_file = "../output_files/refd_estimated_results.csv"
+prereq_file = "../output_files/proposed_estimated_results.csv"
 
 # output_file = ""
 main_function(prereq_file)
