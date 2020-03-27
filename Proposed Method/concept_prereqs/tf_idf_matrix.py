@@ -83,9 +83,9 @@ def get_tf_idf_matrix(concept_list, df, idf_data):
 
 def book_name_correction(concept_list, df):
 	for concept in concept_list:
-		df.at["Physics", concept] = 1.0
+		df.at[concept, "Physics"] = 1.0
 	for concept in concept_list:
-		df.at[concept, "Physics"] = 0.0
+		df.at["Physics", concept] = 0.0
 	return df
 
 
