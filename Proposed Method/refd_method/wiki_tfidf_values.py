@@ -1,5 +1,6 @@
 import pandas as pd
 from bs4 import BeautifulSoup
+import math
 
 def get_all_topics(df):
     all_topics = []
