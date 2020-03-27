@@ -33,5 +33,5 @@ tfidf_score_file = "../concept_prereqs/data/match_prereq_pairs_matrix.csv"
 wiki_tfidf_score_file = "../output_files/wiki_tfidf_matrix.csv"
 
 
-df_estimated = main_function(groud_truth_file, tfidf_score_file)
+df_estimated = main_function(groud_truth_file, tfidf_score_file, wiki_tfidf_score_file)
 df_estimated.to_csv("../output_files/proposed_estimated_results.csv")
