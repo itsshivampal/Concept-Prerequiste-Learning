@@ -48,6 +48,7 @@ def get_term_frequency(topic_a, topic_b, all_keyword_data):
 def get_tf_matrix(concept_list, wiki_data):
     df = get_null_matrix(concept_list)
     for concept1 in concept_list:
+        print(concept1)
         freq_sum = 0.0
         for concept2 in concept_list:
             freq = float(get_term_frequency(concept2, concept1, wiki_data))
@@ -55,10 +56,13 @@ def get_tf_matrix(concept_list, wiki_data):
             freq_sum += freq
         for concept2 in concept_list:
             freq = df.at[concept1, concept2]
-            if freq_sum != 0.0:
-                df.at[concept1, concept2] = float(freq)/freq_sum
-            else:
-                df.at[concept1, concept2] = float(freq)
+            df.at[concept1, concept2] = float(freq)/float(freq_sum)
+            # if freq_sum != 0.0:
+                
+            # else:
+            #     df.at[concept1, concept2] = float(freq)
+        output_file = "../output_files/wiki_tfidf_matrix.csv"
+        df.to_csv(output_file)
     return df
 
 
