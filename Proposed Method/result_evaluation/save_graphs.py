@@ -18,8 +18,8 @@ rd_equal = df2["refd_equal"].to_numpy().ravel()
 
 precision, recall, _ = precision_recall_curve(ground_truth, pr_tfidf)
 average_precision = average_precision_score(ground_truth, pr_tfidf)
-
+print(average_precision)
 plt.xlabel("Recall")
 plt.ylabel("Precision")
-plt.plot(recall, precision, label='Precision-recall curve of (area = {1:0.2f})'.format(average_precision))
+plt.plot(recall, precision)
 plt.savefig("curve.png")
