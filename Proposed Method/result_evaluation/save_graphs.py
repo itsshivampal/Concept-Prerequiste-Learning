@@ -10,14 +10,6 @@ file2 = "../output_files/refd_estimated_results.csv"
 df1 = pd.read_csv(file1)
 df2 = pd.read_csv(file2)
 
-ground_truth = df1["relation"].to_numpy().ravel()
-pr_tfidf = df1["tfidf_score"].to_numpy().ravel()
-pr_wiki_tfidf = df1["wiki_tfidf_score"].to_numpy().ravel()
-rd_tfidf = df2["refd_tfidf"].to_numpy().ravel()
-rd_equal = df2["refd_equal"].to_numpy().ravel()
-
-
-
 
 
 def check_state(val, theta):
@@ -76,7 +68,6 @@ def check_estimation(y_estimate, y_truth, theta):
         elif score_state == 2: FN += 1
         elif score_state == 3: FP += 1
         elif score_state == 4: TN += 1
-    print(TP, FN, FP, TN)
     data = estimation_measures(TP, FN, FP, TN)
     return data
 
@@ -93,13 +84,22 @@ def get_pr_area(precision, recall):
 def get_precision_recall(ground_val, est_val):
 	precision = []
 	recall = []
-	theta_values = [float("{0:.2f}".format((0.0 + 0.01*i))) for i in range(100)]
+	theta_values = [float("{0:.2f}".format((0.0 + 0.02*i))) for i in range(50)]
 	for theta in theta_values:
 		data = check_estimation(est_val, ground_val, theta)
 		precision.append(data["precision"])
 		recall.append(data["recall"])
 	area = get_pr_area(precision, recall)
 	return precision, recall, area
+
+
+
+ground_truth = df1["relation"].to_numpy().ravel()
+pr_tfidf = df1["tfidf_score"].to_numpy().ravel()
+pr_wiki_tfidf = df1["wiki_tfidf_score"].to_numpy().ravel()
+rd_tfidf = df2["refd_tfidf"].to_numpy().ravel()
+rd_equal = df2["refd_equal"].to_numpy().ravel()
+
 
 
 
