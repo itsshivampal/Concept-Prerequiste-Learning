@@ -102,14 +102,42 @@ rd_equal = df2["refd_equal"].to_numpy().ravel()
 
 
 
+precision1, recall1, area1 = get_precision_recall(ground_truth, pr_tfidf)
+label1 = "Proposed Method (area = {0:2f})".format((area1))
+
+precision2, recall2, area2 = get_precision_recall(ground_truth, pr_wiki_tfidf)
+label2 = "Proposed Method with Wikipedia (area = {0:2f})".format((area2))
+
+precision3, recall3, area3 = get_precision_recall(ground_truth, rd_tfidf)
+label3 = "RefD with TFIDF (area = {0:2f})".format((area3))
+
+precision4, recall4, area4 = get_precision_recall(ground_truth, rd_equal)
+label4 = "RefD with Equal (area = {0:2f})".format((area4))
 
 
-precision, recall, area = get_precision_recall(ground_truth,rd_tfidf)
-label = "Proposed Method (area = {0:2f})".format((area))
-print(area)
 plt.xlabel("Recall")
 plt.ylabel("Precision")
-plt.plot(recall, precision, label = label)
+plt.plot(recall1, precision1, label = label1)
+plt.plot(recall2, precision2, label = label2)
 plt.legend(loc="lower right")
-plt.show()
-plt.savefig("curve.png")
+plt.savefig("graph/curve1.png")
+plt.clf()
+
+
+plt.xlabel("Recall")
+plt.ylabel("Precision")
+plt.plot(recall3, precision3, label = label3)
+plt.plot(recall4, precision4, label = label4)
+plt.legend(loc="lower right")
+plt.savefig("graph/curve2.png")
+plt.clf()
+
+
+plt.xlabel("Recall")
+plt.ylabel("Precision")
+plt.plot(recall1, precision1, label = label1)
+plt.plot(recall3, precision3, label = label3)
+plt.plot(recall4, precision4, label = label4)
+plt.legend(loc="lower right")
+plt.savefig("graph/curve3.png")
+plt.clf()
