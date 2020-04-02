@@ -104,10 +104,12 @@ rd_equal = df2["refd_equal"].to_numpy().ravel()
 
 
 
-precision, recall, area = get_precision_recall(ground_truth, pr_tfidf)
+precision, recall, area = get_precision_recall(ground_truth,rd_tfidf)
 label = "Proposed Method (area = {0:2f})".format((area))
 print(area)
 plt.xlabel("Recall")
 plt.ylabel("Precision")
 plt.plot(recall, precision, label = label)
+plt.legend(loc="lower right")
+plt.show()
 plt.savefig("curve.png")
