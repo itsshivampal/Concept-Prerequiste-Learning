@@ -93,12 +93,23 @@ def get_precision_recall(ground_val, est_val):
 	return precision, recall, area
 
 
+def array_normalization(a):
+	a = (a - a.min())/(a.max() - a.min())
+	return a
+
 
 ground_truth = df1["relation"].to_numpy().ravel()
 pr_tfidf = df1["tfidf_score"].to_numpy().ravel()
+pr_tfidf = array_normalization(pr_tfidf)
+
 pr_wiki_tfidf = df1["wiki_tfidf_score"].to_numpy().ravel()
+pr_wiki_tfidf = array_normalization(pr_wiki_tfidf)
+
 rd_tfidf = df2["refd_tfidf"].to_numpy().ravel()
+rd_tfidf = array_normalization(rd_tfidf)
+
 rd_equal = df2["refd_equal"].to_numpy().ravel()
+rd_equal = array_normalization(rd_equal)
 
 
 
