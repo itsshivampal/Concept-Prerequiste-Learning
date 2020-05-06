@@ -4,12 +4,6 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import average_precision_score
 
-file1 = "../output_files/proposed_estimated_results.csv"
-file2 = "../output_files/refd_estimated_results.csv"
-
-df1 = pd.read_csv(file1)
-df2 = pd.read_csv(file2)
-
 
 
 def check_state(val, theta):
@@ -96,6 +90,18 @@ def get_precision_recall(ground_val, est_val):
 def array_normalization(a):
 	a = (a - a.min())/(a.max() - a.min())
 	return a
+
+
+
+#---------------------------------------------------------------------
+#---------------------------------------------------------------------
+
+
+file1 = "proposed_estimated_results.csv"
+file2 = "refd_estimated_results.csv"
+
+df1 = pd.read_csv(file1)
+df2 = pd.read_csv(file2)
 
 
 ground_truth = df1["relation"].to_numpy().ravel()
