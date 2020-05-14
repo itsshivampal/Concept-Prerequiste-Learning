@@ -119,4 +119,3 @@ file_name = "data/concept_title_match.csv"
 output_file = "data/resolve_hr_index.csv"
 title_match_data = sort_sections(file_name)
 save_concept_resolve_data(title_match_data, output_file)
-

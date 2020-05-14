@@ -14,13 +14,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 
-def save_concept_resolve_data(data, output_file):
+def save_concept_resolve_data(data):
 	columns = ["concept", "type", "index", "hr_index"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(data)):
 		df = df.append(data[i], ignore_index = True)
-	df.to_csv(output_file)
-	return True
+	return df
 
 
 # Get data from csv files
@@ -92,8 +91,8 @@ def resolve_sections(sections, concept):
 	return resulted_section
 
 
-def sort_sections(file_name):
-	title_match_data = read_concept_match(file_name)
+def sort_hr_sections(df_file):
+	title_match_data = read_concept_match(df_file)
 	all_data = {}
 	for i in range(len(title_match_data)):
 	# for i in range(10):
@@ -101,7 +100,6 @@ def sort_sections(file_name):
 		concept = title_match_data[i]["concept"]
 		sections = title_match_data[i]["index"]
 		if func_type != 0:
-			print(i, title_match_data[i]["index"])
 			hr_index = resolve_sections(sections, concept)
 			hr_index = "|".join(hr_index)
 		else:
@@ -112,11 +110,5 @@ def sort_sections(file_name):
 			"index" : "|".join(sections),
 			"hr_index": hr_index,
 		}
-	return all_data
-
-
-file_name = "data/concept_title_match.csv"
-output_file = "data/resolve_hr_index.csv"
-title_match_data = sort_sections(file_name)
-save_concept_resolve_data(title_match_data, output_file)
-
+	df = save_concept_resolve_data(all_data)
+	return df

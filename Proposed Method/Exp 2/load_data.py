@@ -55,8 +55,7 @@ def read_wikipedia_data(wikipedia_data_file):
     return all_data
 
 
-def read_concept_match(file_name):
-    df = pd.read_csv(file_name, encoding = "utf-8")
+def read_concept_match(df):
     data = {}
     for i in range(df.shape[0]):
         concept = df[["concept"]].iloc[i].values[0]
