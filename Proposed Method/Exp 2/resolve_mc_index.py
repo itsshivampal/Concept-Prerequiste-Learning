@@ -14,18 +14,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 
-def save_concept_resolve_data(data, output_file):
+def save_concept_resolve_data(data):
 	columns = ["concept", "type", "index", "hr_index", "mc_index", "score"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(data)):
 		df = df.append(data[i], ignore_index = True)
-	df.to_csv(output_file)
-	return True
+	return df
 
 
 
-def read_hr_index(file_name):
-    df = pd.read_csv(file_name, encoding = "utf-8")
+def read_hr_index(df):
     data = {}
     for i in range(df.shape[0]):
         concept = df[["concept"]].iloc[i].values[0]
@@ -71,8 +69,8 @@ def get_section_combination(arr):
 	return subsets
 
 
-def get_final_section_list(documents, section_combination, concept):
-	wiki_summary, wiki_content = get_wiki_data(concept)
+def get_final_section_list(documents, section_combination, concept, wikipedia_data_file):
+	wiki_summary, wiki_content = get_wiki_data(concept, wikipedia_data_file)
 	wiki_content = clean_text(wiki_content)
 	all_documents = [wiki_content]
 	for sections in section_combination:
@@ -92,15 +90,15 @@ def get_final_section_list(documents, section_combination, concept):
 
 
 
-def resolve_multi_sections(sections, concept):
+def resolve_multi_sections(sections, concept, wikipedia_data_file, book_content_file):
 	resulted_section = []
 	documents = {}
 	for section in sections:
 		documents[section] = {
-			"content": clean_text(get_book_data(section))
+			"content": clean_text(get_book_data(section, book_content_file))
 		}
 	section_combination = get_section_combination(sections)
-	resulted_section, max_score = get_final_section_list(documents, section_combination, concept)
+	resulted_section, max_score = get_final_section_list(documents, section_combination, concept, wikipedia_data_file)
 	return resulted_section, max_score
 
 
@@ -110,8 +108,8 @@ def resolve_multi_sections(sections, concept):
 
 
 
-def sort_sections(file_name):
-	title_match_data = read_hr_index(file_name)
+def sort_mc_sections(df, wikipedia_data_file, book_content_file):
+	title_match_data = read_hr_index(df)
 	all_data = {}
 	for i in range(len(title_match_data)):
 	# for i in range(10):
@@ -120,8 +118,7 @@ def sort_sections(file_name):
 		sections = title_match_data[i]["index"]
 		hr_index = title_match_data[i]["hr_index"]
 		if func_type != 0:
-			print(i, hr_index)
-			mc_index, max_score = resolve_multi_sections(hr_index, concept)
+			mc_index, max_score = resolve_multi_sections(hr_index, concept, wikipedia_data_file, book_content_file)
 			mc_index = "|".join(mc_index)
 		else:
 			mc_index = ""
@@ -134,11 +131,5 @@ def sort_sections(file_name):
 			"mc_index": mc_index,
 			"score": max_score
 		}
-	return all_data
-
-
-file_name = "data/resolve_hr_index.csv"
-output_file = "data/resolve_mc_index.csv"
-title_match_data = sort_sections(file_name)
-save_concept_resolve_data(title_match_data, output_file)
-
+	df = save_concept_resolve_data(title_match_data)
+	return df
