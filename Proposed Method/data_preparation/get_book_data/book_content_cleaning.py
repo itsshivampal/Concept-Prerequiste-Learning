@@ -91,6 +91,5 @@ def main_function(input_file, output_csv_file, output_txt_file):
 
 input_file = "physics_book.txt"
 output_csv_file = "physics_book_content.csv"
-output_txt_file = "physics_book_content.txt"
 
 main_function(input_file, output_csv_file, output_txt_file)
