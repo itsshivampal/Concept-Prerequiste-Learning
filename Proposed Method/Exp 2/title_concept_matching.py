@@ -10,7 +10,7 @@ import re
 
 
 
-def save_match_data_df(matching_data, output_file):
+def save_match_data_df(matching_data):
     df_match_data = pd.DataFrame(columns = ["concept", "index", "type"])
     for i in range(len(matching_data)):
         df_match_data = df_match_data.append(matching_data[i], ignore_index = True)
