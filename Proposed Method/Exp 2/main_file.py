@@ -17,7 +17,7 @@ concepts_file = "../output_files/physics_concepts_ambiguity.csv"
 
 # Step 2: Resolving Hierarchical ambiguity
 df_match_data = pd.read_csv("data/title_concept_match.csv", encoding = "utf-8")
-resolve_hr_data = sort_hr_sections(df_match_data, wikipedia_data_file)
+resolve_hr_data = sort_hr_sections(df_match_data, wikipedia_data_file, book_content_file)
 resolve_hr_data.to_csv("data/resolve_hr_index.csv")
 
 # Step 3: Resolve Multi Chapter Ambiguity
