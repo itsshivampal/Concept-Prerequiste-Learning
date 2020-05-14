@@ -15,7 +15,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def save_concept_resolve_data(data):
-	columns = ["concept", "type", "index", "hr_index", "mc_index", "score"]
+	columns = ["concept", "type", "index", "hr_index", "book1", "book2", "book3"]
 	df = pd.DataFrame(columns = columns)
 	for i in range(len(data)):
 		df = df.append(data[i], ignore_index = True)
@@ -57,10 +57,7 @@ def tfidf_document_similarity(documents):
 	return doc_similarity
 
 
-
-
-
-def get_section_combination(arr):
+def get_subsets(arr):
 	subsets = []
 	for l in range(0, len(arr) + 1):
 		for subset in itertools.combinations(arr, l):
@@ -69,46 +66,87 @@ def get_section_combination(arr):
 	return subsets
 
 
-def get_final_section_list(documents, section_combination, concept, wikipedia_data_file):
+def get_section_combination(arr, chapter_distribution):
+	book1 = []
+	book2 = []
+	book3 = []
+	for section in arr:
+		chpt_num = int(section.split(".")[0])
+		if chpt_num in chapter_distribution[0]:
+			book1.append(section)
+		elif chpt_num in chapter_distribution[1]:
+			book2.append(section)
+		elif chpt_num in chapter_distribution[2]:
+			book3.append(section)
+
+	final_book_sections = []
+	if len(book1) > 0:
+		subset1 = get_subsets(book1)
+		final_book_sections.append(subset1)
+	else: final_book_sections.append([])
+
+	if len(book2) > 0:
+		subset2 = get_subsets(book2)
+		final_book_sections.append(subset2)
+	else: final_book_sections.append([])
+
+	if len(book3) > 0:
+		subset3 = get_subsets(book3)
+		final_book_sections.append(subset3)
+	else: final_book_sections.append([])
+
+	return final_book_sections
+
+def get_final_section_list(documents, final_book_sections, concept, wikipedia_data_file):
 	wiki_summary, wiki_content = get_wiki_data(concept, wikipedia_data_file)
 	wiki_content = clean_text(wiki_content)
-	all_documents = [wiki_content]
-	for sections in section_combination:
-		content = ""
-		for section in sections:
-			content += documents[section]["content"] + "\n"
-		all_documents.append(content)
-	score = tfidf_document_similarity(all_documents)[0]
-	max_score = score[1]
-	index = 1
-	for i in range(1, len(score)):
-		if score[i] > max_score:
-			max_score = score[i]
-			index = i
-	best_section = section_combination[index-1]
-	return best_section, max_score
+	final_section = []
+	for section_combination in final_book_sections:
+		if len(section_combination) == 0:
+			final_section.append([])
+		elif len(section_combination) == 1:
+			final_section.append(section_combination[0])
+		else:
+			all_documents = [wiki_content]
+			for sections in section_combination:
+				content = ""
+				for section in sections:
+					content += documents[section]["content"] + "\n"
+				all_documents.append(content)
+			score = tfidf_document_similarity(all_documents)[0]
+			max_score = score[1]
+			index = 1
+			for i in range(1, len(score)):
+				if score[i] > max_score:
+					max_score = score[i]
+					index = i
+			best_section = section_combination[index-1]
+			final_section.append(best_section)
+	return final_section
 
 
 
-def resolve_multi_sections(sections, concept, wikipedia_data_file, book_content_file):
-	resulted_section = []
+def resolve_multi_sections(sections, concept, chapter_distribution, wikipedia_data_file, book_content_file):
+	resulted_sections = []
 	documents = {}
 	for section in sections:
 		documents[section] = {
 			"content": clean_text(get_book_data(section, book_content_file))
 		}
-	section_combination = get_section_combination(sections)
-	resulted_section, max_score = get_final_section_list(documents, section_combination, concept, wikipedia_data_file)
-	return resulted_section, max_score
+	section_combination = get_section_combination(sections, chapter_distribution)
+	resulted_sections = get_final_section_list(documents, section_combination, concept, wikipedia_data_file)
+	return resulted_sections
+
+
+
+def best_section_for_concept(sections):
+	pass
 
 
 
 
 
-
-
-
-def sort_mc_sections(df, wikipedia_data_file, book_content_file):
+def sort_mc_sections(df, chapter_distribution, wikipedia_data_file, book_content_file):
 	title_match_data = read_hr_index(df)
 	all_data = {}
 	for i in range(len(title_match_data)):
@@ -118,18 +156,22 @@ def sort_mc_sections(df, wikipedia_data_file, book_content_file):
 		sections = title_match_data[i]["index"]
 		hr_index = title_match_data[i]["hr_index"]
 		if func_type != 0:
-			mc_index, max_score = resolve_multi_sections(hr_index, concept, wikipedia_data_file, book_content_file)
-			mc_index = "|".join(mc_index)
+			mc_index = resolve_multi_sections(hr_index, concept, chapter_distribution, wikipedia_data_file, book_content_file)
+			book1 = "|".join(mc_index[0])
+			book2 = "|".join(mc_index[1])
+			book3 = "|".join(mc_index[2])
 		else:
-			mc_index = ""
-			max_score = 0
+			book1 = ""
+			book2 = ""
+			book3 = ""
 		all_data[i] = {
 			"concept": concept,
 			"type": func_type,
 			"index" : "|".join(sections),
 			"hr_index": "|".join(hr_index),
-			"mc_index": mc_index,
-			"score": max_score
+			"book1": book1,
+			"book2": book2,
+			"book3": book3,
 		}
-	df = save_concept_resolve_data(title_match_data)
+	df = save_concept_resolve_data(all_data)
 	return df
