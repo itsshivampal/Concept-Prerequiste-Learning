@@ -10,4 +10,4 @@ concepts_file = "../output_files/physics_concepts_ambiguity.csv"
 
 
 df_match_data = match_title_concept(book_content_file, concepts_file)
-print(df_match_data)
+df_match_data.to_csv("data/title_concept_match.csv")
