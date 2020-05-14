@@ -58,12 +58,12 @@ def tfidf_document_similarity(documents):
 	return doc_similarity
 
 
-def compare_sections(section, concept):
-	wiki_summary, wiki_content = get_wiki_data(concept)
+def compare_sections(section, concept, wikipedia_data_file, book_content_file):
+	wiki_summary, wiki_content = get_wiki_data(concept, wikipedia_data_file)
 	wiki_content = clean_text(wiki_content)
 	documents = [wiki_content]
 	for index in section:
-		content = get_book_data(index)
+		content = get_book_data(index, book_content_file)
 		content = clean_text(content)
 		documents.append(content)
 	score = tfidf_document_similarity(documents)[0]
@@ -80,18 +80,18 @@ def compare_sections(section, concept):
 
 
 
-def resolve_sections(sections, concept):
+def resolve_sections(sections, concept, wikipedia_data_file, book_content_file):
 	section_list = merge_section(sections)
 	resulted_section = []
 	for section in section_list:
 		if len(section) == 1:
 			resulted_section.append(section[0])
 		else:
-			resulted_section.append(compare_sections(section, concept))
+			resulted_section.append(compare_sections(section, concept, wikipedia_data_file, book_content_file))
 	return resulted_section
 
 
-def sort_hr_sections(df_file):
+def sort_hr_sections(df_file, wikipedia_data_file, book_content_file):
 	title_match_data = read_concept_match(df_file)
 	all_data = {}
 	for i in range(len(title_match_data)):
@@ -100,7 +100,7 @@ def sort_hr_sections(df_file):
 		concept = title_match_data[i]["concept"]
 		sections = title_match_data[i]["index"]
 		if func_type != 0:
-			hr_index = resolve_sections(sections, concept)
+			hr_index = resolve_sections(sections, concept, wikipedia_data_file, book_content_file)
 			hr_index = "|".join(hr_index)
 		else:
 			hr_index = ""

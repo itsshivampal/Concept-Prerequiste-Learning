@@ -75,8 +75,8 @@ def read_concept_match(df):
 
 # API for getting data from Wikipedia
 
-def get_wiki_data(concept):
-    wiki_data = read_wikipedia_data()
+def get_wiki_data(concept, wikipedia_data_file):
+    wiki_data = read_wikipedia_data(wikipedia_data_file)
     for i in range(len(wiki_data)):
         title = wiki_data[i]["topic"]
         if title == concept:
@@ -129,8 +129,8 @@ def get_section_content(section, section_data, book_data):
     return content
 
 
-def get_book_data(section):
-    book_data = read_book_data()
+def get_book_data(section, book_content_file):
+    book_data = read_book_data(book_content_file)
     section_data = get_section_data(book_data)
     content = get_section_content(section, section_data, book_data)
     return content
