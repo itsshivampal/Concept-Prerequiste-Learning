@@ -149,8 +149,8 @@ def best_section_for_concept(sections):
 def sort_mc_sections(df, chapter_distribution, wikipedia_data_file, book_content_file):
 	title_match_data = read_hr_index(df)
 	all_data = {}
-	# for i in range(len(title_match_data)):
-	for i in range(10):
+	for i in range(len(title_match_data)):
+	# for i in range(10):
 		func_type = int(title_match_data[i]["type"])
 		concept = title_match_data[i]["concept"]
 		sections = title_match_data[i]["index"]
