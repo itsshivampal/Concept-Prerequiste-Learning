@@ -26,9 +26,9 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 # resolve_hr_data.to_csv("data/resolve_hr_index.csv")
 
 # Step 3: Resolve Multi Chapter Ambiguity
-# resolve_hr_data = pd.read_csv("data/resolve_hr_index.csv", encoding = "utf-8")
-# resolve_mc_data = sort_mc_sections(resolve_hr_data, chapter_distribution, wikipedia_data_file, book_content_file)
-# resolve_mc_data.to_csv("data/resolve_mc_index.csv")
+resolve_hr_data = pd.read_csv("data/resolve_hr_index.csv", encoding = "utf-8")
+resolve_mc_data = sort_mc_sections(resolve_hr_data, chapter_distribution, wikipedia_data_file, book_content_file)
+resolve_mc_data.to_csv("data/resolve_mc_index.csv")
 
 # Step 4: Get index of  content through content
 resolve_mc_data = pd.read_csv("data/resolve_mc_index.csv", encoding = "utf-8")
