@@ -78,25 +78,25 @@ def get_section_order(concept, title_section, content_section, wikipedia_data_fi
 
 
 def sort_book_section_ambiguity(df, wikipedia_data_file, book_content_file):
-    for i in range(df.shape[0]):
-    # for i in range(30):
-        concept = df[["concept"]].iloc[i].values[0]
+	for i in range(df.shape[0]):
+	# for i in range(30):
+		concept = df[["concept"]].iloc[i].values[0]
 
-        title_section = df[["book1_title"]].iloc[i]
-        content_section = df[["book1_content"]].iloc[i]
-        book1_final_section, book1_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
-        df.at[i, "book1_fs"] = book1_final_section
-        df.at[i, "book1_fo"] = book1_final_order
+		title_section = df[["book1_title"]].iloc[i]
+		content_section = df[["book1_content"]].iloc[i]
+		book1_final_section, book1_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		df.at[i, "book1_fs"] = book1_final_section
+		df.at[i, "book1_fo"] = book1_final_order
 
 		title_section = df[["book2_title"]].iloc[i]
-        content_section = df[["book2_content"]].iloc[i]
-        book2_final_section, book2_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
-        df.at[i, "book2_fs"] = book2_final_section
-        df.at[i, "book2_fo"] = book2_final_order
+		content_section = df[["book2_content"]].iloc[i]
+		book2_final_section, book2_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		df.at[i, "book2_fs"] = book2_final_section
+		df.at[i, "book2_fo"] = book2_final_order
 
 		title_section = df[["book3_title"]].iloc[i]
-        content_section = df[["book3_content"]].iloc[i]
-        book3_final_section, book3_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
-        df.at[i, "book3_fs"] = book3_final_section
-        df.at[i, "book3_fo"] = book3_final_order
-    return df
+		content_section = df[["book3_content"]].iloc[i]
+		book3_final_section, book3_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		df.at[i, "book3_fs"] = book3_final_section
+		df.at[i, "book3_fo"] = book3_final_order
+	return df
