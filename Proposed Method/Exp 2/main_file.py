@@ -4,6 +4,7 @@ from title_concept_matching import match_title_concept
 from resolve_hr_index import sort_hr_sections
 from resolve_mc_index import sort_mc_sections
 from concept_match_index import get_index_from_content
+from sort_book_section import sort_book_section_ambiguity
 
 
 # Required Files
@@ -26,11 +27,16 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 # resolve_hr_data.to_csv("data/resolve_hr_index.csv")
 
 # Step 3: Resolve Multi Chapter Ambiguity
-resolve_hr_data = pd.read_csv("data/resolve_hr_index.csv", encoding = "utf-8")
-resolve_mc_data = sort_mc_sections(resolve_hr_data, chapter_distribution, wikipedia_data_file, book_content_file)
-resolve_mc_data.to_csv("data/resolve_mc_index.csv")
+# resolve_hr_data = pd.read_csv("data/resolve_hr_index.csv", encoding = "utf-8")
+# resolve_mc_data = sort_mc_sections(resolve_hr_data, chapter_distribution, wikipedia_data_file, book_content_file)
+# resolve_mc_data.to_csv("data/resolve_mc_index.csv")
 
 # Step 4: Get index of  content through content
-resolve_mc_data = pd.read_csv("data/resolve_mc_index.csv", encoding = "utf-8")
-final_indexing_file = get_index_from_content(book_content_file, resolve_mc_data, chapter_distribution)
-final_indexing_file.to_csv("data/final_index_file.csv")
+# resolve_mc_data = pd.read_csv("data/resolve_mc_index.csv", encoding = "utf-8")
+# final_indexing_file = get_index_from_content(book_content_file, resolve_mc_data, chapter_distribution)
+# final_indexing_file.to_csv("data/final_index_file.csv")
+
+# Step 5: Get final sections of each concept from each book
+final_indexing_file = pd.read_csv("data/final_index_file.csv")
+sorted_concept_sections = sort_book_section_ambiguity(final_indexing_file, wikipedia_data_file, book_content_file)
+sorted_concept_sections.to_csv("data/sorted_final_concepts.csv")

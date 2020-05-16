@@ -1,0 +1,2 @@
+1. Frequency of occurence in "concept_match_index.py"
+2. whether content_section or title_section in "sort_book_section.py" at last step
