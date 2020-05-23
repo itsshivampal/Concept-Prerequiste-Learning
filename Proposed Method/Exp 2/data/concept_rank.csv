@@ -1,0 +1,153 @@
+,concept,type,rank
+0,Hardness,0,33.0
+1,Hertz,0,3.0
+2,Electrical polarity,0,48.0
+3,Stiffness,0,71.0
+4,Tangential and normal components,0,69.0
+5,Friction,0,17.0
+6,Virtual image,0,40.0
+7,Ohm,0,58.0
+8,Joule,0,4.0
+9,Real image,0,40.0
+10,Crystallinity,0,71.0
+11,Gravitational constant,0,67.0
+12,Angle of incidence,0,35.0
+13,Kilogram,0,4.0
+14,Coulomb,0,49.0
+15,Physical quantity,0,1.0
+16,Temperature,0,1.0
+17,Planet,0,15.0
+18,Interference (wave propagation),1,32.0
+19,Electromotive force,1,56.0
+20,Inelastic collision,1,87.0
+21,Optical microscope,1,33.0
+22,Insulator (electricity),1,50.0
+23,Position (vector),1,7.0
+24,Snell's law,1,38.0
+25,Geometrical optics,1,33.0
+26,Huygens–Fresnel principle,1,97.0
+27,Elastic collision,1,86.0
+28,Electrical resistance and conductance,1,20.0
+29,Acceleration,1,11.0
+30,Total internal reflection,1,42.0
+31,Magnetic field,1,46.0
+32,Direction (geometry),1,8.0
+33,Refractive index,1,37.0
+34,Energy,1,18.0
+35,Equations of motion,1,12.0
+36,Electromagnetic spectrum,1,100.0
+37,Specular reflection,1,35.0
+38,Capacitance,1,81.0
+39,Color,1,83.0
+40,Electromagnetic radiation,1,93.0
+41,Gravitational field,1,17.0
+42,Plane mirror,1,39.0
+43,Power (physics),1,52.0
+44,Newton's law of universal gravitation,1,79.0
+45,Euclidean vector,1,9.0
+46,Free fall,1,17.0
+47,Voltage,1,54.0
+48,Magnetism,1,44.0
+49,Reflection (physics),1,25.0
+50,Electrostatics,1,50.0
+51,Telescope,1,33.0
+52,Ohmmeter,1,61.0
+53,Mechanical energy,1,19.0
+54,Hooke's law,1,89.0
+55,Electric potential,1,54.0
+56,Relative velocity,1,88.0
+57,Voltmeter,1,60.0
+58,Newton's laws of motion,1,12.0
+59,Series and parallel circuits,1,53.0
+60,Kinetic energy,1,21.0
+61,Capacitor,1,81.0
+62,Curved mirror,1,39.0
+63,Free body diagram,1,66.0
+64,Potential energy,1,18.0
+65,Emission spectrum,1,103.0
+66,Electric current,1,57.0
+67,Ammeter,1,59.0
+68,Refraction,1,36.0
+69,Magnification,1,41.0
+70,Scalar multiplication,1,63.0
+71,Absorption spectroscopy,1,104.0
+72,Physics,1,2.0
+73,Work (physics),1,5.0
+74,Resonance (particle physics),1,78.0
+75,Ohm's law,1,55.0
+76,Frame of reference,1,8.0
+77,Laser,1,43.0
+78,Dielectric,1,82.0
+79,Sound,1,23.0
+80,Photoelectric effect,1,102.0
+81,Musical tone,1,77.0
+82,Torque,1,69.0
+83,Doppler effect,1,92.0
+84,Standing wave,1,31.0
+85,Force,1,12.0
+86,Pitch (music),1,75.0
+87,Electroscope,1,51.0
+88,Transverse wave,1,26.0
+89,Diffraction,1,74.0
+90,Gravitational acceleration,1,16.0
+91,Refracting telescope,1,72.0
+92,Sound intensity,1,76.0
+93,Length,2,1.0
+94,Dispersion (optics),2,94.0
+95,Field (physics),2,45.0
+96,Fatigue (material),2,91.0
+97,Compass,2,48.0
+98,Crest (physics),2,27.0
+99,Field line,2,80.0
+100,Projectile motion,2,84.0
+101,Motion,2,7.0
+102,Resultant force,2,66.0
+103,Electrical conductor,2,50.0
+104,Ray (optics),2,33.0
+105,Gravity of Earth,2,16.0
+106,Sonic boom,2,99.0
+107,Wave,2,22.0
+108,Le Sage's theory of gravitation,2,13.0
+109,Coulomb's law,2,79.0
+110,Electric field,2,46.0
+111,Elasticity (physics),2,85.0
+112,Strength of materials,2,48.0
+113,Speed,2,5.0
+114,Amplitude,2,24.0
+115,Mass,2,6.0
+116,Intensity (physics),2,76.0
+117,Frequency,2,29.0
+118,Light,2,5.0
+119,Velocity,2,7.0
+120,Plasticity (physics),2,46.0
+121,Energy level,2,20.0
+122,Wavelength,2,28.0
+123,Electric potential energy,2,18.0
+124,Gravity,2,14.0
+125,Magnet,2,45.0
+126,Motion graphs and derivatives,2,30.0
+127,Scalar (mathematics),2,10.0
+128,Lever,2,70.0
+129,Distance,2,1.0
+130,Subtractive color,2,95.0
+131,Electric charge,2,47.0
+132,Collision,2,58.0
+133,Scattering,2,101.0
+134,Metre,2,1.0
+135,Electron,2,46.0
+136,Displacement (vector),2,7.0
+137,Deformation (engineering),2,91.0
+138,Compression (physics),2,68.0
+139,Fracture,2,90.0
+140,Rarefaction,2,73.0
+141,Pigment,2,96.0
+142,Creep (deformation),2,91.0
+143,Shock wave,2,98.0
+144,Mirror image,3,34.0
+145,Normal force,3,64.0
+146,Non-inertial reference frame,3,8.0
+147,Phase velocity,3,62.0
+148,Transmission medium,3,23.0
+149,Contact force,3,65.0
+150,Inertial frame of reference,3,8.0
+151,Tension (physics),3,20.0

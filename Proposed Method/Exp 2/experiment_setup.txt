@@ -1,0 +1,11 @@
+Step 4:
+- Frequency of occurence in "concept_match_index.py"
+
+Step 5:
+- whether content_section or title_section in "sort_book_section.py" at last step
+
+Step 7:
+Improving the Uniiversal Rankking of Concepts
+
+Step 9:
+- We used TF-IDF score for finding the association of concept in another concept
