@@ -9,3 +9,8 @@ Improving the Uniiversal Rankking of Concepts
 
 Step 9:
 - We used TF-IDF score for finding the association of concept in another concept
+
+Iteration 1: Step 5
+if section == 1:
+    final_section = title_section
+    final_order = content_section ----> title_section

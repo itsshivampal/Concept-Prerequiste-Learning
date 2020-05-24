@@ -65,7 +65,7 @@ def get_all_pairs(prereq_pairs):
 	}
 	for i in range(1, len(prereq_pairs["topic_a"])):
 	# for i in range(1, 31):
-		# print(i)
+		print(i)
 		pair = {
 			"topic_a": prereq_pairs["topic_a"][i],
 			"topic_b": prereq_pairs["topic_b"][i],

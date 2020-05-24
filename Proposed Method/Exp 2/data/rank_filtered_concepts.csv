@@ -1,95 +1,95 @@
 ,concept,type,rank,filter_concept_list,filter_freq_list
 0,Length,2,1.0,,
 1,Temperature,0,1.0,,
-2,Metre,2,1.0,,
-3,Distance,2,1.0,,
-4,Physical quantity,0,1.0,,
+2,Physical quantity,0,1.0,,
+3,Metre,2,1.0,,
+4,Distance,2,1.0,,
 5,Physics,1,2.0,,
 6,Hertz,0,3.0,,
-7,Kilogram,0,4.0,,
-8,Joule,0,4.0,,
-9,Light,2,5.0,Physics|Distance,1|1
-10,Speed,2,5.0,Distance|Hertz,2|1
-11,Work (physics),1,5.0,Distance|Physical quantity|Joule|Physics,1|1|3|2
+7,Joule,0,4.0,,
+8,Kilogram,0,4.0,,
+9,Speed,2,5.0,Distance|Hertz,2|1
+10,Work (physics),1,5.0,Distance|Physical quantity|Joule|Physics,1|1|3|2
+11,Light,2,5.0,Physics|Distance,1|1
 12,Mass,2,6.0,Kilogram|Distance|Metre|Length,10|3|1|1
-13,Displacement (vector),2,7.0,Physics|Distance|Physical quantity,2|10|2
-14,Motion,2,7.0,Speed|Length|Physics|Distance|Physical quantity|Work (physics)|Metre|Light,17|1|7|17|2|8|7|2
-15,Velocity,2,7.0,Speed|Distance,7|2
+13,Motion,2,7.0,Speed|Length|Physics|Distance|Physical quantity|Work (physics)|Metre|Light,17|1|7|17|2|8|7|2
+14,Velocity,2,7.0,Speed|Distance,7|2
+15,Displacement (vector),2,7.0,Physics|Distance|Physical quantity,2|10|2
 16,Position (vector),1,7.0,Length,1
-17,Frame of reference,1,8.0,Position (vector)|Motion|Velocity|Speed|Light|Work (physics),3|1|6|2|2|1
-18,Non-inertial reference frame,3,8.0,Position (vector)|Motion|Velocity,3|1|1
-19,Direction (geometry),1,8.0,,
-20,Inertial frame of reference,3,8.0,Position (vector)|Motion|Velocity,3|1|1
-21,Euclidean vector,1,9.0,Physics|Direction (geometry)|Velocity|Speed|Length|Displacement (vector)|Distance|Work (physics)|Position (vector)|Motion,7|54|4|1|10|18|1|2|7|1
-22,Scalar (mathematics),2,10.0,Euclidean vector|Direction (geometry)|Physics|Velocity|Speed,8|6|1|2|1
+17,Direction (geometry),1,8.0,,
+18,Frame of reference,1,8.0,Position (vector)|Motion|Velocity|Speed|Light|Work (physics),3|1|6|2|2|1
+19,Inertial frame of reference,3,8.0,Position (vector)|Motion|Velocity,3|1|1
+20,Non-inertial reference frame,3,8.0,Position (vector)|Motion|Velocity,3|1|1
+21,Scalar (mathematics),2,9.0,Direction (geometry)|Physics|Velocity|Speed,6|1|2|1
+22,Euclidean vector,1,10.0,Physics|Scalar (mathematics)|Direction (geometry)|Velocity|Speed|Length|Displacement (vector)|Distance|Work (physics)|Position (vector)|Motion,7|9|54|4|1|10|18|1|2|7|1
 23,Acceleration,1,11.0,Velocity|Euclidean vector|Motion|Direction (geometry)|Position (vector)|Speed|Work (physics),13|2|3|4|6|3|1
-24,Force,1,12.0,Direction (geometry)|Euclidean vector|Physics|Mass|Work (physics)|Displacement (vector)|Motion|Length|Frame of reference|Position (vector),15|8|3|4|2|1|3|4|1|3
+24,Newton's laws of motion,1,12.0,Motion|Speed|Direction (geometry)|Velocity|Distance|Kilogram|Mass|Work (physics)|Position (vector)|Physics|Euclidean vector,13|1|22|9|2|5|6|3|4|1|2
 25,Equations of motion,1,12.0,Motion|Work (physics)|Distance|Velocity,6|1|1|3
-26,Newton's laws of motion,1,12.0,Motion|Speed|Direction (geometry)|Velocity|Distance|Kilogram|Mass|Work (physics)|Position (vector)|Physics|Euclidean vector,13|1|22|9|2|5|6|3|4|1|2
-27,Le Sage's theory of gravitation,2,13.0,Force|Mass|Kilogram|Work (physics)|Scalar (mathematics)|Euclidean vector|Motion|Position (vector)|Joule|Velocity|Distance|Metre,18|13|9|3|1|1|10|3|2|8|2|1
-28,Gravity,2,14.0,Force|Mass|Kilogram|Work (physics)|Scalar (mathematics)|Euclidean vector,3|5|4|1|1|1
-29,Planet,0,15.0,,
-30,Gravity of Earth,2,16.0,Mass|Force|Motion|Gravity,4|4|5|1
-31,Gravitational acceleration,1,16.0,Mass|Force|Motion|Gravity,4|4|5|1
-32,Gravitational field,1,17.0,Mass|Force,2|2
-33,Friction,0,17.0,,
-34,Free fall,1,17.0,Motion|Force|Gravity|Mass,5|2|1|2
-35,Potential energy,1,18.0,Position (vector)|Joule|Mass|Kilogram|Force|Gravity,3|1|2|2|1|1
-36,Energy,1,18.0,Force|Work (physics)|Friction|Position (vector)|Gravitational field|Distance|Mass,14|23|5|2|2|1|2
-37,Electric potential energy,2,18.0,Position (vector)|Work (physics)|Joule,4|4|1
-38,Mechanical energy,1,19.0,Energy|Potential energy|Force|Gravitational field|Gravity|Velocity|Free fall|Mass|Friction|Work (physics),11|4|10|1|2|3|1|1|5|2
-39,Electrical resistance and conductance,1,20.0,Energy|Light|Temperature|Potential energy|Direction (geometry)|Position (vector),12|4|1|3|2|1
-40,Energy level,2,20.0,Energy|Light,8|3
-41,Tension (physics),3,20.0,Force|Direction (geometry)|Gravity|Euclidean vector|Physics|Mass|Work (physics)|Friction|Displacement (vector)|Motion|Length|Frame of reference|Position (vector),109|15|7|8|3|4|2|7|1|3|4|1|3
-42,Kinetic energy,1,21.0,Energy|Motion|Velocity|Mass|Kilogram|Joule,15|2|4|1|3|1
+26,Force,1,12.0,Direction (geometry)|Euclidean vector|Physics|Mass|Work (physics)|Displacement (vector)|Motion|Length|Frame of reference|Position (vector),15|8|3|4|2|1|3|4|1|3
+27,Planet,0,13.0,,
+28,Gravity,2,14.0,Force|Mass|Kilogram|Work (physics)|Planet|Scalar (mathematics)|Euclidean vector,3|5|4|1|3|1|1
+29,Free fall,1,15.0,Motion|Force|Gravity|Mass,5|2|1|2
+30,Friction,0,15.0,,
+31,Gravitational field,1,15.0,Mass|Force,2|2
+32,Gravitational acceleration,1,16.0,Mass|Force|Gravitational field|Free fall|Motion|Friction|Gravity,4|4|4|3|5|3|1
+33,Gravity of Earth,2,16.0,Mass|Force|Gravitational field|Free fall|Motion|Friction|Gravity,4|4|4|3|5|3|1
+34,Electric potential energy,2,17.0,Position (vector)|Work (physics)|Joule,4|4|1
+35,Potential energy,1,17.0,Position (vector)|Joule|Mass|Kilogram|Force|Gravity,3|1|2|2|1|1
+36,Energy,1,17.0,Force|Work (physics)|Friction|Position (vector)|Gravitational field|Distance|Mass,14|23|5|2|2|1|2
+37,Tension (physics),3,18.0,Force|Direction (geometry)|Gravity|Euclidean vector|Physics|Mass|Work (physics)|Friction|Displacement (vector)|Motion|Length|Frame of reference|Position (vector),109|15|7|8|3|4|2|7|1|3|4|1|3
+38,Electrical resistance and conductance,1,18.0,Energy|Light|Temperature|Potential energy|Direction (geometry)|Position (vector),12|4|1|3|2|1
+39,Energy level,2,18.0,Energy|Light,8|3
+40,Kinetic energy,1,19.0,Energy|Motion|Velocity|Mass|Kilogram|Joule,15|2|4|1|3|1
+41,Mechanical energy,1,20.0,Energy level|Energy|Potential energy|Force|Gravitational field|Gravity|Electrical resistance and conductance|Velocity|Free fall|Mass|Friction|Work (physics)|Tension (physics),1|11|4|10|1|2|2|3|1|1|5|2|1
+42,Le Sage's theory of gravitation,2,21.0,Force|Mass|Kilogram|Gravity|Work (physics)|Planet|Scalar (mathematics)|Euclidean vector|Gravitational field|Free fall|Motion|Friction|Electrical resistance and conductance|Potential energy|Energy|Position (vector)|Electric potential energy|Joule|Kinetic energy|Velocity|Mechanical energy|Energy level|Tension (physics)|Distance|Metre,18|13|9|6|3|3|1|1|5|4|10|9|3|39|42|3|1|2|4|8|21|1|1|2|1
 43,Wave,2,22.0,Direction (geometry)|Position (vector)|Motion|Light|Speed,3|1|5|1|1
-44,Sound,1,23.0,Wave|Hertz|Energy|Physics|Speed|Temperature|Joule|Distance|Work (physics),28|3|5|2|7|2|1|3|1
-45,Transmission medium,3,23.0,Wave|Position (vector),10|1
+44,Transmission medium,3,23.0,Wave|Position (vector),10|1
+45,Sound,1,23.0,Wave|Hertz|Energy|Physics|Speed|Temperature|Joule|Distance|Work (physics),28|3|5|2|7|2|1|3|1
 46,Amplitude,2,24.0,Displacement (vector)|Position (vector)|Length|Wave|Distance,3|3|2|2|3
 47,Reflection (physics),1,25.0,Light|Wave|Sound,12|7|1
-48,Transverse wave,1,26.0,Wave|Direction (geometry)|Displacement (vector)|Position (vector)|Motion|Amplitude|Length|Distance|Metre|Speed,33|2|5|5|3|7|1|16|2|3
-49,Crest (physics),2,27.0,Wave|Displacement (vector),4|2
-50,Wavelength,2,28.0,Wave|Amplitude|Length|Displacement (vector)|Position (vector)|Distance|Crest (physics)|Metre|Energy|Speed|Light|Mass|Velocity|Physics|Work (physics),9|10|1|2|6|13|4|2|2|1|2|2|4|1|1
-51,Frequency,2,29.0,Wave|Crest (physics)|Wavelength,10|3|5
+48,Crest (physics),2,26.0,Wave|Displacement (vector),4|2
+49,Wavelength,2,27.0,Wave|Amplitude|Length|Displacement (vector)|Position (vector)|Distance|Crest (physics)|Metre|Energy|Speed|Light|Mass|Velocity|Physics|Work (physics),9|10|1|2|6|13|4|2|2|1|2|2|4|1|1
+50,Frequency,2,28.0,Wave|Crest (physics)|Wavelength,10|3|5
+51,Transverse wave,1,29.0,Wave|Direction (geometry)|Displacement (vector)|Position (vector)|Motion|Crest (physics)|Amplitude|Wavelength|Length|Distance|Metre|Frequency|Speed,33|2|5|5|3|14|7|12|1|16|2|4|3
 52,Motion graphs and derivatives,2,30.0,Motion|Wave|Position (vector)|Velocity|Work (physics)|Direction (geometry)|Displacement (vector),12|13|5|8|1|2|1
 53,Standing wave,1,31.0,Reflection (physics)|Wave|Direction (geometry)|Frequency|Wavelength|Amplitude|Position (vector)|Crest (physics)|Motion,5|24|1|1|2|3|1|1|3
 54,Interference (wave propagation),1,32.0,Wave|Displacement (vector)|Direction (geometry)|Crest (physics)|Work (physics),15|10|4|18|1
 55,Ray (optics),2,33.0,Light,2
 56,Hardness,0,33.0,,
-57,Optical microscope,1,33.0,Distance|Work (physics)|Light|Length,1|1|1|1
-58,Geometrical optics,1,33.0,Light|Wave|Crest (physics)|Work (physics)|Distance|Reflection (physics)|Physics|Direction (geometry)|Sound|Speed|Wavelength|Length|Position (vector),165|10|1|3|42|72|2|14|1|19|1|9|16
+57,Geometrical optics,1,33.0,Light|Wave|Crest (physics)|Work (physics)|Distance|Reflection (physics)|Physics|Direction (geometry)|Sound|Speed|Wavelength|Length|Position (vector),165|10|1|3|42|72|2|14|1|19|1|9|16
+58,Optical microscope,1,33.0,Distance|Work (physics)|Light|Length,1|1|1|1
 59,Telescope,1,33.0,Light|Planet|Reflection (physics)|Length|Direction (geometry)|Metre,6|2|4|2|1|1
-60,Mirror image,3,34.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Distance|Length|Position (vector)|Direction (geometry)|Geometrical optics,16|25|1|41|2|8|4|3|1|2
-61,Specular reflection,1,35.0,Reflection (physics)|Ray (optics)|Wave|Light,10|4|2|2
-62,Angle of incidence,0,35.0,,
-63,Refraction,1,36.0,Light|Reflection (physics)|Wave|Speed|Ray (optics)|Geometrical optics|Angle of incidence|Wavelength,44|2|1|18|18|6|7|1
-64,Refractive index,1,37.0,Light|Speed|Refraction,19|15|11
-65,Snell's law,1,38.0,Refraction|Angle of incidence|Light|Wavelength|Ray (optics),21|7|7|1|12
-66,Curved mirror,1,39.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Distance|Specular reflection|Length|Position (vector)|Angle of incidence|Direction (geometry)|Geometrical optics,16|25|1|41|2|8|6|4|3|2|1|2
-67,Plane mirror,1,39.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Distance|Specular reflection|Length|Position (vector)|Angle of incidence|Direction (geometry)|Geometrical optics,16|25|1|41|2|8|6|4|3|2|1|2
-68,Real image,0,40.0,,
-69,Virtual image,0,40.0,,
-70,Magnification,1,41.0,Geometrical optics|Plane mirror,1|1
+60,Specular reflection,1,34.0,Reflection (physics)|Ray (optics)|Wave|Light,10|4|2|2
+61,Angle of incidence,0,34.0,,
+62,Mirror image,3,35.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Distance|Specular reflection|Length|Position (vector)|Angle of incidence|Direction (geometry)|Geometrical optics,16|25|1|41|2|8|6|4|3|2|1|2
+63,Refractive index,1,36.0,Light|Speed,19|15
+64,Snell's law,1,37.0,Angle of incidence|Light|Wavelength|Ray (optics),7|7|1|12
+65,Refraction,1,38.0,Light|Reflection (physics)|Wave|Speed|Ray (optics)|Geometrical optics|Angle of incidence|Snell's law|Wavelength,44|2|1|18|18|6|7|5|1
+66,Virtual image,0,39.0,,
+67,Real image,0,39.0,,
+68,Magnification,1,40.0,Geometrical optics,1
+69,Plane mirror,1,41.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Real image|Virtual image|Distance|Specular reflection|Length|Position (vector)|Angle of incidence|Direction (geometry)|Geometrical optics|Magnification,16|25|1|41|2|5|7|8|6|4|3|2|1|2|4
+70,Curved mirror,1,41.0,Reflection (physics)|Light|Physics|Ray (optics)|Work (physics)|Real image|Virtual image|Distance|Specular reflection|Length|Position (vector)|Angle of incidence|Direction (geometry)|Geometrical optics|Magnification,16|25|1|41|2|5|7|8|6|4|3|2|1|2|4
 71,Total internal reflection,1,42.0,Angle of incidence|Refraction|Ray (optics)|Reflection (physics)|Light|Geometrical optics|Snell's law,8|7|3|9|3|2|3
 72,Laser,1,43.0,Light|Wavelength|Frequency|Amplitude|Direction (geometry)|Distance|Energy|Energy level|Work (physics)|Geometrical optics|Curved mirror|Reflection (physics)|Physics|Length|Sound,17|7|5|1|2|2|19|12|4|5|1|3|2|1|1
-73,Magnetism,1,44.0,Force|Physics|Direction (geometry)|Position (vector)|Work (physics)|Light,4|1|20|1|1|1
-74,Field (physics),2,45.0,Mass|Force|Gravitational field|Position (vector)|Direction (geometry)|Velocity,2|2|2|3|2|2
-75,Magnet,2,45.0,Direction (geometry)|Position (vector),4|1
-76,Electric field,2,46.0,Force|Direction (geometry)|Position (vector)|Magnet|Field (physics)|Euclidean vector|Length|Work (physics)|Distance|Reflection (physics),27|14|20|1|24|3|1|1|2|1
-77,Magnetic field,1,46.0,Magnet|Field (physics)|Force|Direction (geometry),19|13|1|5
-78,Electron,2,46.0,Wave|Optical microscope|Magnification|Light|Work (physics)|Magnet|Geometrical optics|Wavelength|Distance|Position (vector)|Field (physics),1|26|3|13|2|3|1|3|1|1|1
-79,Plasticity (physics),2,46.0,Force,3
-80,Electric charge,2,47.0,Position (vector)|Force|Distance|Mass|Field (physics)|Direction (geometry),9|14|7|2|1|4
-81,Strength of materials,2,48.0,Force|Metre|Hardness|Electrical resistance and conductance|Energy|Plasticity (physics),2|2|4|1|1|3
-82,Compass,2,48.0,Direction (geometry)|Magnet|Field (physics)|Work (physics)|Electric charge|Electron|Light|Euclidean vector,14|23|14|1|3|1|1|6
-83,Electrical polarity,0,48.0,,
+73,Field (physics),2,44.0,Mass|Force|Gravitational field|Position (vector)|Direction (geometry)|Velocity,2|2|2|3|2|2
+74,Magnet,2,44.0,Direction (geometry)|Position (vector),4|1
+75,Electric field,2,45.0,Force|Direction (geometry)|Position (vector)|Magnet|Field (physics)|Euclidean vector|Length|Work (physics)|Distance|Reflection (physics),27|14|20|1|24|3|1|1|2|1
+76,Magnetic field,1,45.0,Magnet|Field (physics)|Force|Direction (geometry),19|13|1|5
+77,Electron,2,45.0,Wave|Optical microscope|Magnification|Light|Work (physics)|Magnet|Geometrical optics|Wavelength|Distance|Position (vector)|Field (physics),1|26|3|13|2|3|1|3|1|1|1
+78,Plasticity (physics),2,45.0,Force,3
+79,Electric charge,2,46.0,Position (vector)|Force|Distance|Mass|Field (physics)|Direction (geometry),9|14|7|2|1|4
+80,Strength of materials,2,47.0,Force|Metre|Hardness|Electrical resistance and conductance|Energy|Plasticity (physics),2|2|4|1|1|3
+81,Electrical polarity,0,47.0,,
+82,Compass,2,47.0,Direction (geometry)|Magnet|Field (physics)|Work (physics)|Electric charge|Electron|Light|Euclidean vector,14|23|14|1|3|1|1|6
+83,Magnetism,1,48.0,Magnet|Force|Field (physics)|Physics|Electron|Direction (geometry)|Plasticity (physics)|Electric field|Position (vector)|Electric charge|Strength of materials|Compass|Electrical polarity|Work (physics)|Light,87|4|56|1|5|20|2|2|1|6|1|10|1|1|1
 84,Coulomb,0,49.0,,
-85,Electrical conductor,2,50.0,Electric charge|Position (vector)|Electron|Plasticity (physics)|Force|Temperature|Electrical resistance and conductance|Light,43|7|10|1|1|8|6|2
-86,Insulator (electricity),1,50.0,Plasticity (physics)|Electron|Energy level|Energy|Distance|Force|Electric field|Direction (geometry)|Temperature|Position (vector)|Electric charge|Field (physics),1|26|18|22|1|1|3|1|4|1|1|1
-87,Electrostatics,1,50.0,Electric charge|Position (vector)|Coulomb|Work (physics)|Energy|Plasticity (physics)|Force|Distance|Electron|Optical microscope|Light|Mass|Field (physics)|Direction (geometry)|Electric field|Magnet|Euclidean vector|Length|Reflection (physics)|Strength of materials|Electric potential energy|Potential energy|Joule|Metre|Wave|Sound|Speed|Electrical polarity,319|65|18|6|5|2|60|18|23|1|2|2|31|20|44|1|3|1|1|4|3|4|1|1|1|3|2|1
+85,Insulator (electricity),1,50.0,Plasticity (physics)|Electron|Energy level|Energy|Distance|Force|Electric field|Direction (geometry)|Temperature|Position (vector)|Electric charge|Field (physics),1|26|18|22|1|1|3|1|4|1|1|1
+86,Electrostatics,1,50.0,Electric charge|Position (vector)|Coulomb|Work (physics)|Energy|Plasticity (physics)|Force|Distance|Electron|Optical microscope|Light|Mass|Field (physics)|Direction (geometry)|Electric field|Magnet|Euclidean vector|Length|Reflection (physics)|Strength of materials|Electric potential energy|Potential energy|Joule|Metre|Wave|Sound|Speed|Electrical polarity,319|65|18|6|5|2|60|18|23|1|2|2|31|20|44|1|3|1|1|4|3|4|1|1|1|3|2|1
+87,Electrical conductor,2,50.0,Electric charge|Position (vector)|Electron|Plasticity (physics)|Force|Temperature|Electrical resistance and conductance|Light,43|7|10|1|1|8|6|2
 88,Electroscope,1,51.0,Electric charge|Position (vector)|Electrical conductor|Force,24|5|1|1
-89,Power (physics),1,52.0,Work (physics)|Energy|Length|Field (physics),8|2|1|1
-90,Series and parallel circuits,1,53.0,Light|Physics|Work (physics)|Plasticity (physics)|Electric charge,3|6|2|2|2
+89,Series and parallel circuits,1,52.0,Light|Physics|Work (physics)|Plasticity (physics)|Electric charge,3|6|2|2|2
+90,Power (physics),1,53.0,Work (physics)|Energy|Length|Field (physics),8|2|1|1
 91,Voltage,1,54.0,Electric charge|Force|Work (physics)|Position (vector)|Potential energy|Gravity|Electric potential energy|Joule|Coulomb|Distance|Electrical resistance and conductance,14|6|8|2|13|2|1|1|1|3|10
 92,Electric potential,1,54.0,Electric potential energy|Electric charge|Potential energy|Position (vector)|Electric field|Energy|Field (physics)|Work (physics)|Joule|Coulomb,2|14|3|4|4|1|1|4|1|1
 93,Ohm's law,1,55.0,Voltage|Potential energy|Work (physics)|Electric charge|Electrical resistance and conductance|Electrical conductor|Temperature|Light,20|2|3|2|19|13|10|2
@@ -98,14 +98,14 @@
 96,Ohm,0,58.0,,
 97,Collision,2,58.0,Energy|Force|Physics|Work (physics)|Laser|Electric current|Field (physics)|Metre|Optical microscope|Electron,39|2|5|4|1|2|2|1|1|1
 98,Ammeter,1,59.0,Electric current,2
-99,Voltmeter,1,60.0,Light|Metre|Electric current|Ammeter|Voltage|Electrical resistance and conductance|Work (physics)|Ohm|Power (physics)|Electric charge,1|3|6|6|9|6|1|1|1|2
-100,Ohmmeter,1,61.0,Electrical resistance and conductance|Ammeter|Work (physics)|Voltage|Electric current|Ohm|Power (physics),4|1|1|4|3|1|1
-101,Phase velocity,3,62.0,Euclidean vector|Physics|Scalar (mathematics)|Direction (geometry)|Velocity|Speed|Force|Compass|Length|Displacement (vector)|Distance|Work (physics)|Position (vector)|Motion,137|7|9|54|4|1|6|3|10|18|1|2|7|1
-102,Scalar multiplication,1,63.0,Euclidean vector|Scalar (mathematics)|Work (physics),2|1|1
-103,Normal force,3,64.0,Force|Direction (geometry)|Gravity|Electron|Magnet|Euclidean vector|Physics|Mass|Work (physics)|Electrostatics|Electric charge|Coulomb|Power (physics)|Friction|Displacement (vector)|Motion|Length|Frame of reference|Position (vector),109|15|7|1|8|8|3|4|2|3|4|2|1|7|1|3|4|1|3
-104,Contact force,3,65.0,Force|Direction (geometry)|Gravity|Electron|Magnet|Euclidean vector,27|2|1|1|2|2
-105,Free body diagram,1,66.0,Force|Length|Euclidean vector|Direction (geometry)|Motion|Frame of reference|Position (vector)|Work (physics),14|2|6|8|1|1|3|1
-106,Resultant force,2,66.0,Force|Length|Euclidean vector|Direction (geometry)|Motion|Frame of reference|Position (vector)|Work (physics),14|2|6|8|1|1|3|1
+99,Ohmmeter,1,60.0,Electrical resistance and conductance|Ammeter|Work (physics)|Voltage|Electric current|Ohm|Power (physics),4|1|1|4|3|1|1
+100,Voltmeter,1,61.0,Light|Metre|Electric current|Ammeter|Voltage|Ohmmeter|Electrical resistance and conductance|Work (physics)|Ohm|Power (physics)|Electric charge,1|3|6|6|9|8|6|1|1|1|2
+101,Scalar multiplication,1,62.0,Euclidean vector|Scalar (mathematics)|Work (physics),2|1|1
+102,Phase velocity,3,63.0,Euclidean vector|Physics|Scalar (mathematics)|Direction (geometry)|Velocity|Speed|Force|Compass|Length|Displacement (vector)|Distance|Work (physics)|Position (vector)|Motion,137|7|9|54|4|1|6|3|10|18|1|2|7|1
+103,Contact force,3,64.0,Force|Direction (geometry)|Gravity|Electron|Magnet|Euclidean vector,27|2|1|1|2|2
+104,Resultant force,2,65.0,Force|Length|Euclidean vector|Direction (geometry)|Motion|Frame of reference|Position (vector)|Work (physics),14|2|6|8|1|1|3|1
+105,Free body diagram,1,65.0,Force|Length|Euclidean vector|Direction (geometry)|Motion|Frame of reference|Position (vector)|Work (physics),14|2|6|8|1|1|3|1
+106,Normal force,3,66.0,Force|Direction (geometry)|Gravity|Electron|Magnet|Euclidean vector|Physics|Mass|Work (physics)|Electrostatics|Electric charge|Coulomb|Power (physics)|Friction|Displacement (vector)|Motion|Length|Free body diagram|Frame of reference|Position (vector),109|15|7|1|8|8|3|4|2|3|4|2|1|7|1|3|4|4|1|3
 107,Gravitational constant,0,67.0,,
 108,Compression (physics),2,68.0,Wave,1
 109,Tangential and normal components,0,69.0,,
@@ -129,9 +129,9 @@
 127,Dielectric,1,82.0,Electric field|Capacitor|Field (physics)|Voltage|Capacitance|Electric charge,3|8|2|5|3|4
 128,Color,1,83.0,Light|Wave|Amplitude|Frequency|Wavelength|Velocity|Speed|Refraction|Work (physics)|Hardness|Electron|Reflection (physics)|Plasticity (physics),64|3|1|21|9|3|6|4|1|1|1|7|1
 129,Projectile motion,2,84.0,Motion|Direction (geometry)|Position (vector)|Velocity|Motion graphs and derivatives,3|1|1|2|1
-130,Elasticity (physics),2,85.0,Plasticity (physics)|Force,8|3
-131,Elastic collision,1,86.0,Elasticity (physics)|Energy|Collision,4|14|4
-132,Inelastic collision,1,87.0,Energy|Collision|Force|Physics|Work (physics)|Laser|Electric current|Field (physics)|Metre|Optical microscope|Electron,24|4|2|5|4|1|2|2|1|1|1
+130,Elastic collision,1,85.0,Energy|Collision,14|4
+131,Inelastic collision,1,86.0,Energy|Collision|Force|Physics|Work (physics)|Laser|Electric current|Field (physics)|Metre|Optical microscope|Electron,24|4|2|5|4|1|2|2|1|1|1
+132,Elasticity (physics),2,87.0,Plasticity (physics)|Force,8|3
 133,Relative velocity,1,88.0,Velocity,4
 134,Hooke's law,1,89.0,Force|Compression (physics)|Tension (physics)|Direction (geometry)|Elasticity (physics)|Metre,6|4|2|1|1|1
 135,Fracture,2,90.0,Plasticity (physics)|Elasticity (physics)|Force,9|5|8
@@ -144,8 +144,8 @@
 142,Subtractive color,2,95.0,Color|Light,6|2
 143,Pigment,2,96.0,Color|Light,6|1
 144,Huygens–Fresnel principle,1,97.0,Wave|Light,4|1
-145,Shock wave,2,98.0,Wave|Speed|Sound|Direction (geometry)|Wavelength|Doppler effect|Frequency|Work (physics)|Distance,14|23|34|4|2|2|1|2|1
-146,Sonic boom,2,99.0,Speed|Sound|Wave|Direction (geometry)|Work (physics),14|16|5|1|1
+145,Sonic boom,2,98.0,Speed|Sound|Wave|Direction (geometry)|Work (physics),14|16|5|1|1
+146,Shock wave,2,99.0,Wave|Speed|Sound|Direction (geometry)|Wavelength|Doppler effect|Frequency|Work (physics)|Sonic boom|Distance,14|23|34|4|2|2|1|2|3|1
 147,Electromagnetic spectrum,1,100.0,Field (physics)|Light|Physics|Electromagnetic radiation|Reflection (physics)|Color|Wavelength|Wave|Ray (optics),1|7|2|3|1|1|11|3|1
 148,Scattering,2,101.0,Electron|Energy level|Energy|Light|Wavelength|Strength of materials|Direction (geometry)|Reflection (physics)|Geometrical optics|Ray (optics)|Refraction|Optical microscope|Color|Specular reflection|Plasticity (physics),12|10|15|32|18|1|5|10|2|3|2|1|5|1|1
 149,Photoelectric effect,1,102.0,Hertz|Light|Electron|Wave|Energy|Color|Wavelength|Frequency|Work (physics)|Diffraction|Energy level|Electrical conductor|Electrical resistance and conductance|Electric current|Voltage|Reflection (physics)|Scattering,2|21|26|7|22|1|2|1|8|2|2|1|1|4|1|1|1

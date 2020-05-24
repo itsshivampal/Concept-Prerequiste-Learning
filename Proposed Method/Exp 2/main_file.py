@@ -78,9 +78,9 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 
 
 # Step 10: Get in-depth prereq pairs
-# tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
-# all_prereq_pairs = get_all_prereq_pairs(tfidf_score)
-# all_prereq_pairs.to_csv("data/all_prereq_pairs.csv")
+tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
+all_prereq_pairs = get_all_prereq_pairs(tfidf_score)
+all_prereq_pairs.to_csv("data/all_prereq_pairs.csv")
 
 
 # Step 11: Result Prediction for labeled pairs
