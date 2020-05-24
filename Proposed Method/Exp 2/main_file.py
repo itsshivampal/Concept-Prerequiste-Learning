@@ -20,6 +20,7 @@ labeled_pairs_file = "../output_files/physics_labeled_pairs.csv"
 wikipedia_data_file = "../output_files/physics_correct_wikipedia_data.csv"
 concepts_file = "../output_files/physics_concepts_ambiguity.csv"
 wiki_tfidf_matrix = "../output_files/wiki_tfidf_matrix.csv"
+testing_data = "../output_files/testing_data.csv"
 
 chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
                         [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
@@ -84,12 +85,23 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 
 
 # Step 11: Result Prediction for labeled pairs
-df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
-df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
-df_labeled_pairs = pd.read_csv(labeled_pairs_file)
-labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, df_prereq_pairs, df_wiki_tfidf)
-labeled_prereq_val.to_csv("data/predicted_prereq.csv")
+# df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
+# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+# df_labeled_pairs = pd.read_csv(labeled_pairs_file)
+# labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, df_prereq_pairs, df_wiki_tfidf)
+# labeled_prereq_val.to_csv("data/predicted_prereq.csv")
 
 # Step 12: Graph plotting of predicted results
-df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
-graph_plotting(df_labeled_prereq)
+# df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
+# graph_plotting(df_labeled_prereq, file_name = "data/curve_all.png")
+
+
+#---------------------------------
+# Comparing results with testing data
+df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
+df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+df_testing_data = pd.read_csv(testing_data)
+df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
+df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
+df_labeled_prereq.to_csv("test_data_pred.csv")
+graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")

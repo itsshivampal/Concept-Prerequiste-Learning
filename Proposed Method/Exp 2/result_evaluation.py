@@ -96,7 +96,7 @@ def array_normalization(a):
 #---------------------------------------------------------------------
 #---------------------------------------------------------------------
 
-def graph_plotting(df):
+def graph_plotting(df, file_name):
     ground_truth = df["relation"].to_numpy().ravel()
     pr_tfidf = df["tfidf_score"].to_numpy().ravel()
     pr_tfidf = array_normalization(pr_tfidf)
@@ -113,4 +113,4 @@ def graph_plotting(df):
     plt.plot(recall1, precision1, label = label1)
     plt.plot(recall2, precision2, label = label2)
     plt.legend(loc="lower right")
-    plt.savefig("data/curve.png")
+    plt.savefig(file_name)
