@@ -92,17 +92,17 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 # labeled_prereq_val.to_csv("data/predicted_prereq.csv")
 
 # Step 12: Graph plotting of predicted results
-# df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
-# graph_plotting(df_labeled_prereq, file_name = "data/curve_all.png")
+df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
+graph_plotting(df_labeled_prereq, file_name = "data/curve_all.png")
 
 
 #---------------------------------
 # Comparing results with testing data
-df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
-df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
-df_testing_data = pd.read_csv(testing_data)
-df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
-df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
-
-df_labeled_prereq.to_csv("data/test_data_pred.csv")
-graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")
+# df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
+# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+# df_testing_data = pd.read_csv(testing_data)
+# df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
+# df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
+#
+# df_labeled_prereq.to_csv("data/test_data_pred.csv")
+# graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")

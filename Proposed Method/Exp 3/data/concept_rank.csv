@@ -1,0 +1,153 @@
+,concept,type,rank,concept_pos
+0,Hardness,0,33.0,7.1
+1,Hertz,0,3.0,2.3
+2,Electrical polarity,0,47.0,8.3.3
+3,Stiffness,0,71.0,13.3.1
+4,Tangential and normal components,0,69.0,12.6.1
+5,Friction,0,15.0,4.2.2
+6,Virtual image,0,39.0,7.5.1
+7,Ohm,0,58.0,10.4.1
+8,Joule,0,4.0,2.4
+9,Real image,0,39.0,7.5.1
+10,Crystallinity,0,71.0,13.3.1
+11,Gravitational constant,0,67.0,12.4.1
+12,Angle of incidence,0,34.0,7.3.2
+13,Kilogram,0,4.0,2.4
+14,Coulomb,0,49.0,9.3
+15,Physical quantity,0,1.0,2.1
+16,Temperature,0,1.0,2.1
+17,Planet,0,13.0,4.1.1
+18,Interference (wave propagation),1,32.0,6.4.6
+19,Electromotive force,1,56.0,10.2.5
+20,Inelastic collision,1,86.0,21.4.2
+21,Optical microscope,1,33.0,7.1
+22,Insulator (electricity),1,50.0,9.5
+23,Position (vector),1,7.0,3.1
+24,Snell's law,1,37.0,7.4.2
+25,Geometrical optics,1,33.0,7.1
+26,Huygens–Fresnel principle,1,97.0,26.3
+27,Elastic collision,1,85.0,21.4.1
+28,Electrical resistance and conductance,1,18.0,4.5.1
+29,Acceleration,1,11.0,3.5
+30,Total internal reflection,1,42.0,7.6.1
+31,Magnetic field,1,45.0,8.2
+32,Direction (geometry),1,8.0,3.2.1
+33,Refractive index,1,36.0,7.4.1
+34,Energy,1,17.0,4.3
+35,Equations of motion,1,12.0,3.9
+36,Electromagnetic spectrum,1,100.0,30.4
+37,Specular reflection,1,34.0,7.3.2
+38,Capacitance,1,81.0,17.5.1
+39,Color,1,83.0,20.2
+40,Electromagnetic radiation,1,93.0,25.1
+41,Gravitational field,1,15.0,4.2.2
+42,Plane mirror,1,41.0,7.5
+43,Power (physics),1,53.0,10.1
+44,Newton's law of universal gravitation,1,79.0,17.2
+45,Euclidean vector,1,10.0,3.3
+46,Free fall,1,15.0,4.2.2
+47,Voltage,1,54.0,10.2.1
+48,Magnetism,1,48.0,8
+49,Reflection (physics),1,25.0,5.5
+50,Electrostatics,1,50.0,9.5
+51,Telescope,1,33.0,7.1
+52,Ohmmeter,1,60.0,10.5.3
+53,Mechanical energy,1,20.0,4.5
+54,Hooke's law,1,89.0,22.2.1
+55,Electric potential,1,54.0,10.2.1
+56,Relative velocity,1,88.0,21.5.4
+57,Voltmeter,1,61.0,10.5
+58,Newton's laws of motion,1,12.0,3.9
+59,Series and parallel circuits,1,52.0,10.1.2
+60,Kinetic energy,1,19.0,4.5.2
+61,Capacitor,1,81.0,17.5.1
+62,Curved mirror,1,41.0,7.5
+63,Free body diagram,1,65.0,12.2.6
+64,Potential energy,1,17.0,4.3
+65,Emission spectrum,1,103.0,31.4.1
+66,Electric current,1,57.0,10.3.1
+67,Ammeter,1,59.0,10.4.2
+68,Refraction,1,38.0,7.4
+69,Magnification,1,40.0,7.5.8
+70,Scalar multiplication,1,62.0,11.6.3
+71,Absorption spectroscopy,1,104.0,31.4.2
+72,Physics,1,2.0,2.2.2
+73,Work (physics),1,5.0,2.5.3
+74,Resonance (particle physics),1,78.0,16.4
+75,Ohm's law,1,55.0,10.2.4
+76,Frame of reference,1,8.0,3.2.1
+77,Laser,1,43.0,7.6.2
+78,Dielectric,1,82.0,17.5.2
+79,Sound,1,23.0,5.2
+80,Photoelectric effect,1,102.0,31.3
+81,Musical tone,1,77.0,16.2
+82,Torque,1,69.0,12.6.1
+83,Doppler effect,1,92.0,24.1
+84,Standing wave,1,31.0,6.4.3
+85,Force,1,12.0,3.9
+86,Pitch (music),1,75.0,15.2
+87,Electroscope,1,51.0,9.6.1
+88,Transverse wave,1,29.0,6.2
+89,Diffraction,1,74.0,14.5
+90,Gravitational acceleration,1,16.0,4.2
+91,Refracting telescope,1,72.0,13.5.1
+92,Sound intensity,1,76.0,15.4.1
+93,Length,2,1.0,2.1
+94,Dispersion (optics),2,94.0,25.2.1
+95,Field (physics),2,44.0,8.1
+96,Fatigue (material),2,91.0,22.3.2
+97,Compass,2,47.0,8.3.3
+98,Crest (physics),2,26.0,6.2.1
+99,Field line,2,80.0,17.3.1
+100,Projectile motion,2,84.0,21.2.3
+101,Motion,2,7.0,3.1
+102,Resultant force,2,65.0,12.2.6
+103,Electrical conductor,2,50.0,9.5
+104,Ray (optics),2,33.0,7.1
+105,Gravity of Earth,2,16.0,4.2
+106,Sonic boom,2,98.0,26.6.2
+107,Wave,2,22.0,5.1
+108,Le Sage's theory of gravitation,2,21.0,4
+109,Coulomb's law,2,79.0,17.2
+110,Electric field,2,45.0,8.2
+111,Elasticity (physics),2,87.0,21.4
+112,Strength of materials,2,47.0,8.3.3
+113,Speed,2,5.0,2.5.3
+114,Amplitude,2,24.0,5.3.1
+115,Mass,2,6.0,2.9
+116,Intensity (physics),2,76.0,15.4.1
+117,Frequency,2,28.0,6.2.4
+118,Light,2,5.0,2.5.3
+119,Velocity,2,7.0,3.1
+120,Plasticity (physics),2,45.0,8.2
+121,Energy level,2,18.0,4.5.1
+122,Wavelength,2,27.0,6.2.2
+123,Electric potential energy,2,17.0,4.3
+124,Gravity,2,14.0,4.1
+125,Magnet,2,44.0,8.1
+126,Motion graphs and derivatives,2,30.0,6.3
+127,Scalar (mathematics),2,9.0,3.3.2
+128,Lever,2,70.0,12.6.2
+129,Distance,2,1.0,2.1
+130,Subtractive color,2,95.0,25.3.2
+131,Electric charge,2,46.0,8.3.1
+132,Collision,2,58.0,10.4.1
+133,Scattering,2,101.0,31.2.2
+134,Metre,2,1.0,2.1
+135,Electron,2,45.0,8.2
+136,Displacement (vector),2,7.0,3.1
+137,Deformation (engineering),2,91.0,22.3.2
+138,Compression (physics),2,68.0,12.5.9
+139,Fracture,2,90.0,22.2.2
+140,Rarefaction,2,73.0,14.3
+141,Pigment,2,96.0,25.3.4
+142,Creep (deformation),2,91.0,22.3.2
+143,Shock wave,2,99.0,26.6
+144,Mirror image,3,35.0,7.3
+145,Normal force,3,66.0,12.2
+146,Non-inertial reference frame,3,8.0,3.2.1
+147,Phase velocity,3,63.0,11
+148,Transmission medium,3,23.0,5.2
+149,Contact force,3,64.0,12.2.1
+150,Inertial frame of reference,3,8.0,3.2.1
+151,Tension (physics),3,18.0,4.5.1
