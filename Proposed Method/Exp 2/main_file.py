@@ -103,5 +103,6 @@ df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
 df_testing_data = pd.read_csv(testing_data)
 df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
 df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
-df_labeled_prereq.to_csv("test_data_pred.csv")
+
+df_labeled_prereq.to_csv("data/test_data_pred.csv")
 graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")
