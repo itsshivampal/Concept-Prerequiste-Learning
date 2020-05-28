@@ -79,17 +79,17 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 
 
 # Step 10: Get in-depth prereq pairs
-# tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
-# all_prereq_pairs = get_all_prereq_pairs(tfidf_score)
-# all_prereq_pairs.to_csv("data/all_prereq_pairs.csv")
+tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
+all_prereq_pairs = get_all_prereq_pairs(tfidf_score)
+all_prereq_pairs.to_csv("data/all_prereq_pairs.csv")
 
 
 # Step 11: Result Prediction for labeled pairs
-# df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
-# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
-# df_labeled_pairs = pd.read_csv(labeled_pairs_file)
-# labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, df_prereq_pairs, df_wiki_tfidf)
-# labeled_prereq_val.to_csv("data/predicted_prereq.csv")
+df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
+df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+df_labeled_pairs = pd.read_csv(labeled_pairs_file)
+labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, df_prereq_pairs, df_wiki_tfidf)
+labeled_prereq_val.to_csv("data/predicted_prereq.csv")
 
 # Step 12: Graph plotting of predicted results
 df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")

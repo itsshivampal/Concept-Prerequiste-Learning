@@ -46,7 +46,7 @@ def check_relevant_pairs(all_pairs, pair):
 			new_pairs[index] = {
 				"topic_a": pair["topic_a"],
 				"topic_b": all_pairs[i]["topic_b"],
-				"score": float(pair["score"])*float(all_pairs[i]["score"])
+				"score": min(float(pair["score"]), float(all_pairs[i]["score"]))
 			}
 			index += 1
 	pairs_len = len(all_pairs)
