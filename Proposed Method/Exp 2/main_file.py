@@ -9,6 +9,8 @@ from content_processing import get_concept_content
 from concept_tfidf_score import get_tfidf_score
 from concept_ranking import get_concept_ranking
 from rank_filter import apply_rank_filter
+from first_prereq_pairs import get_first_prereq_pairs
+from rank_first_prereq import apply_rank_first_prereq
 from find_hidden_pairs import get_all_prereq_pairs
 from calculate_prereq_val import get_labeled_prereq_val
 from result_evaluation import graph_plotting
@@ -57,6 +59,10 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 # sorted_concept_sections = pd.read_csv("data/sorted_final_concepts.csv")
 # concept_content = get_concept_content(sorted_concept_sections, book_content_file)
 # concept_content.to_csv("data/concept_content.csv")
+# print("Step 6 done!!")
+
+
+#---------------------------------------------------------------------------------------------------
 
 
 # Step 7: Finding the universal ranking of concepts in book
@@ -77,6 +83,19 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 # tfidf_score = get_tfidf_score(rank_filtered_concepts)
 # tfidf_score.to_csv("data/content_tfidf_score.csv")
 
+#----------------------------------------------------------------------------------
+# Step 10: Find 1st pass of TFIDF Score between concepts
+# tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
+# first_prereq_pairs = get_first_prereq_pairs(tfidf_score)
+# first_prereq_pairs.to_csv("data/first_prereq_pairs.csv")
+
+# Step 10.1: Apply rank filter to make entries 0
+# rank_filtered_concepts = pd.read_csv("data/rank_filtered_concepts.csv")
+# first_prereq_pairs = pd.read_csv("data/first_prereq_pairs.csv")
+# first_rank_filter = apply_rank_first_prereq(first_prereq_pairs, rank_filtered_concepts)
+# first_rank_filter.to_csv("data/first_rank_filter.csv")
+
+#----------------------------------------------------------------------------------
 
 # Step 10: Get in-depth prereq pairs
 # tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
@@ -85,24 +104,34 @@ chapter_distribution = [[2, 3, 4, 5, 6, 7, 8, 9, 10],
 
 
 # Step 11: Result Prediction for labeled pairs
+first_prereq_pairs = pd.read_csv("data/first_rank_filter.csv")
 # df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
-# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
-# df_labeled_pairs = pd.read_csv(labeled_pairs_file)
+
+df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+df_labeled_pairs = pd.read_csv(labeled_pairs_file)
+
 # labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, df_prereq_pairs, df_wiki_tfidf)
-# labeled_prereq_val.to_csv("data/predicted_prereq.csv")
+labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, first_prereq_pairs, df_wiki_tfidf)
+
+labeled_prereq_val.to_csv("data/predicted_prereq.csv")
 
 # Step 12: Graph plotting of predicted results
-# df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
-# graph_plotting(df_labeled_prereq, file_name = "data/curve_all.png")
+df_labeled_prereq = pd.read_csv("data/predicted_prereq.csv")
+graph_plotting(df_labeled_prereq, file_name = "data/curve_all.png")
 
 
 #---------------------------------
 # Comparing results with testing data
-df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
-df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
-df_testing_data = pd.read_csv(testing_data)
-df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
-df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
+# df_prereq_pairs = pd.read_csv("data/all_prereq_pairs.csv")
+# df_first_prereq = pd.read_csv("data/first_rank_filter.csv")
 
-df_labeled_prereq.to_csv("data/test_data_pred.csv")
-graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")
+# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+# df_testing_data = pd.read_csv(testing_data)
+
+# df_testing = df_testing_data[["topic_a", "topic_b", "relation"]]
+# df_labeled_prereq = get_labeled_prereq_val(df_testing, df_prereq_pairs, df_wiki_tfidf)
+
+# df_labeled_prereq = get_labeled_prereq_val(df_testing, df_first_prereq, df_wiki_tfidf)
+
+# df_labeled_prereq.to_csv("data/test_data_pred.csv")
+# graph_plotting(df_labeled_prereq, file_name = "data/curve_test.png")

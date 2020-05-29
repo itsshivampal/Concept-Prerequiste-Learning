@@ -2,17 +2,18 @@ import pandas as pd
 
 
 def remove_concepts(i, concept_list, concept_collections, frequency_collections):
-	concepts = concept_collections.split("|")
-	frequency = frequency_collections.split("|")
-	final_concepts = []
-	final_frequency = []
-	for j in range(len(concepts)):
-		if concepts[j] in concept_list:
-			final_concepts.append(concepts[j])
-			final_frequency.append(frequency[j])
-	final_concepts = "|".join(final_concepts)
-	final_frequency = "|".join(final_frequency)
-	return final_concepts, final_frequency
+	# concepts = concept_collections.split("|")
+	# frequency = frequency_collections.split("|")
+	# final_concepts = []
+	# final_frequency = []
+	# for j in range(len(concepts)):
+	# 	if concepts[j] in concept_list:
+	# 		final_concepts.append(concepts[j])
+	# 		final_frequency.append(frequency[j])
+	# final_concepts = "|".join(final_concepts)
+	# final_frequency = "|".join(final_frequency)
+	# return final_concepts, final_frequency
+	return concept_collections, frequency_collections
 
 
 
