@@ -50,30 +50,32 @@ def get_best_section(concept, title_section, content_section, wikipedia_data_fil
 
 
 
-def get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file):
-    final_section = ""
-    final_order = ""
-    if title_section.isna().values[0]: title_section = ""
-    else: title_section = title_section.values[0]
+def get_section_order(concept, type, title_section, content_section, wikipedia_data_file, book_content_file):
+	final_section = ""
+	final_order = ""
+	if title_section.isna().values[0]: title_section = ""
+	else: title_section = title_section.values[0]
 
-    if content_section.isna().values[0]: content_section = ""
-    else: content_section = content_section.values[0]
+	if content_section.isna().values[0]: content_section = ""
+	else: content_section = content_section.values[0]
 
-    if title_section == "":
-        final_order = content_section
-    else:
-        if content_section == "":
-            final_section = title_section
-            final_order = title_section
-        else:
-            section = get_best_section(concept, title_section, content_section, wikipedia_data_file, book_content_file)
-            if section == 1:
-                final_section = title_section
-                final_order = content_section
-            elif section == 2:
-                final_section = content_section
-                final_order = content_section
-    return final_section, final_order
+	if title_section == "":
+		# if type == 0:
+		# 	final_section = content_section
+		final_order = content_section
+	else:
+		if content_section == "":
+			final_section = title_section
+			final_order = title_section
+		else:
+			section = get_best_section(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+			if section == 1:
+				final_section = title_section
+				final_order = title_section
+			elif section == 2:
+				final_section = content_section
+				final_order = content_section
+	return final_section, final_order
 
 
 
@@ -81,22 +83,23 @@ def sort_book_section_ambiguity(df, wikipedia_data_file, book_content_file):
 	for i in range(df.shape[0]):
 	# for i in range(30):
 		concept = df[["concept"]].iloc[i].values[0]
+		type = df[["type"]].iloc[i].values[0]
 
 		title_section = df[["book1_title"]].iloc[i]
 		content_section = df[["book1_content"]].iloc[i]
-		book1_final_section, book1_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		book1_final_section, book1_final_order = get_section_order(concept, type, title_section, content_section, wikipedia_data_file, book_content_file)
 		df.at[i, "book1_fs"] = book1_final_section
 		df.at[i, "book1_fo"] = book1_final_order
 
 		title_section = df[["book2_title"]].iloc[i]
 		content_section = df[["book2_content"]].iloc[i]
-		book2_final_section, book2_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		book2_final_section, book2_final_order = get_section_order(concept, type, title_section, content_section, wikipedia_data_file, book_content_file)
 		df.at[i, "book2_fs"] = book2_final_section
 		df.at[i, "book2_fo"] = book2_final_order
 
 		title_section = df[["book3_title"]].iloc[i]
 		content_section = df[["book3_content"]].iloc[i]
-		book3_final_section, book3_final_order = get_section_order(concept, title_section, content_section, wikipedia_data_file, book_content_file)
+		book3_final_section, book3_final_order = get_section_order(concept, type, title_section, content_section, wikipedia_data_file, book_content_file)
 		df.at[i, "book3_fs"] = book3_final_section
 		df.at[i, "book3_fo"] = book3_final_order
 	return df

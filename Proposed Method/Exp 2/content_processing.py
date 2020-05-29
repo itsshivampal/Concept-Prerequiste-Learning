@@ -101,28 +101,34 @@ def concepts_collections(concepts):
 
 
 def get_concept_content(df_concept_data, book_data_file):
-	book_data = read_book_data(book_data_file)
-	section_data = get_section_data(book_data)
+    book_data = read_book_data(book_data_file)
+    section_data = get_section_data(book_data)
 
-	concept_sections = df_concept_data[["book1_fs", "book2_fs", "book3_fs"]].values
-	final_sections = []
-	for concept_data in concept_sections:
-		sections = [concept_data[j] for j in range(3) if concept_data[j] == concept_data[j]]
-		final_sections.append(sections)
+    concept_sections = df_concept_data[["book1_fs", "book2_fs", "book3_fs"]].values
+    final_sections = []
+    for concept_data in concept_sections:
+        sections = [concept_data[j] for j in range(3) if concept_data[j] == concept_data[j]]
+        final_sections.append(sections)
 
-	for i in range(df_concept_data.shape[0]):
-		if df_concept_data[["type"]].iloc[i].values[0] != 0:
-			section = final_sections[i]
-			concept_content = get_complete_section_data(section, section_data, book_data)
+    for i in range(df_concept_data.shape[0]):
+        if df_concept_data[["type"]].iloc[i].values[0] != 0:
+            section = final_sections[i]
+            concept_content = get_complete_section_data(section, section_data, book_data)
 
-			match_concepts = get_concept_from_content(concept_content)
-			match_concept_list, match_freq_list = concepts_collections(match_concepts)
+            match_concepts = get_concept_from_content(concept_content)
+            match_concept_list, match_freq_list = concepts_collections(match_concepts)
 
-		else:
-			match_concept_list = ""
-			match_freq_list = ""
+        else:
+            # section = [final_sections[i][0]]
+            # concept_content = get_complete_section_data(section, section_data, book_data)
+            #
+            # match_concepts = get_concept_from_content(concept_content)
+            # match_concept_list, match_freq_list = concepts_collections(match_concepts)
+            
+            match_concept_list = ""
+            match_freq_list = ""
 
-		df_concept_data.at[i, "concept_list"] = match_concept_list
-		df_concept_data.at[i, "freq_list"] = match_freq_list
+        df_concept_data.at[i, "concept_list"] = match_concept_list
+        df_concept_data.at[i, "freq_list"] = match_freq_list
 
-	return df_concept_data[["concept", "type", "concept_list", "freq_list"]]
+    return df_concept_data[["concept", "type", "concept_list", "freq_list"]]

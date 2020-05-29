@@ -22,10 +22,21 @@ def get_first_prereq_pairs(df):
 
     concept_index = {concept_list[i] : i for i in range(0, len(concept_list))}
 
+    #  First pass of finding prereq pairs
     for c1 in concept_list:
         for c2 in concept_list:
             val = df_final.at[c1, c2]
             if val == 0.0:
                 df_final.at[c1, c2] = get_tfidf_val(c1, c2, concept_index, df_val)
+
+    # 2nd pass of finding prereq pairs
+    # df = df_final
+    # df_val = df.values
+    #
+    # for c1 in concept_list:
+    #     for c2 in concept_list:
+    #         val = df_final.at[c1, c2]
+    #         if val == 0.0:
+    #             df_final.at[c1, c2] = get_tfidf_val(c1, c2, concept_index, df_val)
 
     return df_final
