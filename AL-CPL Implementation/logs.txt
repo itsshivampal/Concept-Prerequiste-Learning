@@ -1,6 +1,0 @@
-**Data Mining Dataset**
-No. of features =
-Output = Binary
-Dataset Size =
-No. of "1" Dataset =
-No. of "0" Dataset =
