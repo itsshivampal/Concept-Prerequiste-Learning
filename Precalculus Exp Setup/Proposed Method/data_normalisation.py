@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 
 
-def book_name_correction(concept_list, df):
-	for concept in concept_list:
-		df.at[concept, "Geometry"] = 1.0
-	for concept in concept_list:
-		df.at["Geometry", concept] = 0.0
-	return df
+# def book_name_correction(concept_list, df):
+# 	for concept in concept_list:
+# 		df.at[concept, "Geometry"] = 1.0
+# 	for concept in concept_list:
+# 		df.at["Geometry", concept] = 0.0
+# 	return df
 
 
 def normalise_data(df):
@@ -21,6 +21,6 @@ def normalise_data(df):
 
     normal_df = df/df_max
 
-    df = book_name_correction(concept_list, df)
+    # df = book_name_correction(concept_list, df)
 
     return df

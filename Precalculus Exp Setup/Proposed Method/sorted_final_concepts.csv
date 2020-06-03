@@ -1,0 +1,225 @@
+,Unnamed: 0,concept,type,book1_title,book1_content,book1_fs,book1_fo
+0,0,Cone,0,,11,,11
+1,138,Union (set theory),0,,1.1,,1.1
+2,134,Algebraic operation,0,,9.4,,9.4
+3,130,Cartesian coordinate system,0,,1.8,,1.8
+4,126,Displacement (vector),0,,9.1,,9.1
+5,125,Circular sector,0,,6.1,,6.1
+6,124,Circular motion,0,,6.1,,6.1
+7,123,Existential quantification,0,,3.2,,3.2
+8,121,Vector field,0,,9.4,,9.4
+9,119,Radius,0,,1.8,,1.8
+10,116,Descartes' rule of signs,0,,3.4,,3.4
+11,114,Symmetry,0,,1.8,,1.8
+12,113,Origin (mathematics),0,,1.1,,1.1
+13,222,List of mathematical symbols,0,,1.1,,1.1
+14,109,Universal quantification,0,,1.1,,1.1
+15,139,Prime number,0,,1.1,,1.1
+16,105,Polynomial long division,0,,,,3.3
+17,102,Sign (mathematics),0,,1.1,,1.1
+18,100,Binary logarithm,0,,4.3,,4.3
+19,99,Norm (mathematics),0,,,,9.6
+20,98,Length,0,,1.6,,1.6
+21,96,Set (mathematics),0,,1.1,,1.1
+22,94,Operation (mathematics),0,,1.1,,1.1
+23,91,Mathematical analysis,0,,5.4,,5.4
+24,90,Negative number,0,,1.1,,1.1
+25,83,Division (mathematics),0,,1.4,,1.4
+26,82,Empty set,0,,1.1,,1.1
+27,77,Semi-minor axis,0,,11.2,,11.2
+28,73,Base (exponentiation),0,,1.2,,1.2
+29,72,Natural number,0,,1.1,,1.1
+30,70,Mathematical proof,0,,1.2,,1.2
+31,104,Square matrix,0,,10.5,,10.5
+32,68,Maxima and minima,0,,1.9,,1.9
+33,142,Trigonometric substitution,0,,6.3,,6.3
+34,144,Synthetic division,0,,,,3.3
+35,221,Edge,0,,2.3,,2.3
+36,219,Minute and second of arc,0,,6.1,,6.1
+37,218,Quadrant (plane geometry),0,,1.8,,1.8
+38,216,Parity (mathematics),0,,1.7,,1.7
+39,215,Distributive property,0,,1.3,,1.3
+40,212,Area,0,,1.6,,1.6
+41,210,Change of variables,0,,1.3,,1.3
+42,209,Main diagonal,0,,10.5,,10.5
+43,208,Matrix multiplication,0,,10.4,,10.4
+44,207,Minor (linear algebra),0,,10.6,,10.6
+45,206,Factorization,0,,1.2,,1.2
+46,198,Distance,0,,1.1,,1.1
+47,197,Polygon,0,,13,,13
+48,193,Elementary matrix,0,,10.3,,10.3
+49,143,Arithmetic mean,0,,1.1,,1.1
+50,189,Rational root theorem,0,,3.4,,3.4
+51,183,Degree of a polynomial,0,,,,3.6
+52,182,Triangular matrix,0,,10.1,,10.1
+53,181,Work (physics),0,,1,,1
+54,180,Scalar multiplication,0,,10.4,,10.4
+55,170,Inverse element,0,,,,2.7
+56,169,Equality (mathematics),0,,1.5,,1.5
+57,168,E (mathematical constant),0,,4.2,,4.2
+58,165,Force,0,,9,,9
+59,162,Trigonometric tables,0,,5.2,,5.2
+60,160,Orientation (geometry),0,,9.3,,9.3
+61,157,Quadratic formula,0,,3.4,,3.4
+62,156,Identity matrix,0,,10.5,,10.5
+63,147,Scalar (mathematics),0,,9.1,,9.1
+64,145,Piecewise,0,,,,2.2
+65,184,Integer,0,,1.1,,1.1
+66,67,Square (algebra),0,,1.1,,1.1
+67,223,Equality,0,,1.5,,1.5
+68,65,Closed set,0,,1.1,,1.1
+69,55,Complex conjugate,0,,3.6,,3.6
+70,53,Imaginary number,0,,8.3,,8.3
+71,52,Cylinder (geometry),0,,11,,11
+72,45,Simple harmonic motion,0,,5.6,,5.6
+73,16,Rectangle,0,,1.9,,1.9
+74,42,Associative property,0,,2.1,,2.1
+75,19,Amplitude,0,,5.3,,5.3
+76,37,Commutative property,0,,10.4,,10.4
+77,23,Right angle,0,,6.1,,6.1
+78,24,Degree (angle),0,,6.1,,6.1
+79,25,Semi-major axis,0,,11.2,,11.2
+80,26,Binary number,0,,1.1,,1.1
+81,34,Chord (geometry),0,,7.2,,7.2
+82,33,Eccentricity (mathematics),0,,11.2,,11.2
+83,32,Point (geometry),0,,1.1,,1.1
+84,27,Mereology,0,,1.8,,1.8
+85,29,Solution of triangles,0,,6.2,,6.2
+86,57,Set-builder notation,0,,1.1,,1.1
+87,58,Open set,0,,1.1,,1.1
+88,48,Ellipse,0,,11.2,,11.2
+89,64,Monomial,0,,1.3,,1.3
+90,5,Common logarithm,0,,4.3,,4.3
+91,47,Trigonometric functions,1,6.5,5,5,5
+92,63,Binomial theorem,1,12.6,12.6,12.6,12.6
+93,158,Transformation (function),1,2.5,2.5,2.5,2.5
+94,159,Complex number,1,3.5,3.5,3.5,3.5
+95,44,Logarithm,1,4.3,4.3,4.3,4.3
+96,117,Function (mathematics),1,2,1.8,2,2
+97,213,Line (geometry),1,1.10,1.1,1.10,1.10
+98,17,Inequality (mathematics),1,1.7,1.1,1.7,1.7
+99,1,Hyperbola,1,11.3,11.3,11.3,11.3
+100,214,Partial fraction decomposition,1,10.7,10.7,10.7,10.7
+101,122,Rationalisation (mathematics),1,1.4,1.4,1.4,1.4
+102,179,Real number,1,1.1,1.1,1.1,1.1
+103,171,Geometric progression,1,12.3,12.3,12.3,12.3
+104,22,Logistic function,1,4.1,4,4,4
+105,78,Law of sines,1,6.5,6.5,6.5,6.5
+106,131,Rational number,1,1.4,1.1,1.1,1.1
+107,112,Exponential function,1,4.1,1.2,4.1,4.1
+108,71,Series (mathematics),1,12,5.4,12,12
+109,76,Angle,1,6.1,1.8,6.1,6.1
+110,15,Mathematical induction,1,12.5,12.5,12.5,12.5
+111,10,Rational function,1,3.7,3.7,3.7,3.7
+112,92,Geometric series,1,12.3,12.3,12.3,12.3
+113,93,Conic section,1,11,11,11,11
+114,56,Matrix ring,1,10.4,10.4,10.4,10.4
+115,148,Rotation of axes,1,11.5,11.5,11.5,11.5
+116,9,Graph of a function,1,2.2,1.1,2.2,2.2
+117,153,Polar coordinate system,1,8.1,8,8.1,8.1
+118,69,Dot product,1,9.2,9.2,9.2,9.2
+119,199,Exponentiation,1,4.1,1.2,1.2,1.2
+120,7,Analytic geometry,1,1.8,1.8,1.8,1.8
+121,13,Unit circle,1,5.1,5.1,5.1,5.1
+122,103,Algebraic expression,1,1.3,1.3,1.3,1.3
+123,194,Cross product,1,9.5,9.5,9.5,9.5
+124,106,Equation,1,1.5,1,1.5,1.5
+125,190,Spherical law of cosines,1,6.6,6.5,6.6,6.6
+126,28,Limit (mathematics),2,13.4,12.3,13.4,13.4
+127,2,Triangle,2,6,1.8,6,6
+128,3,Calculus,2,13,3.2,13,13
+129,163,Matrix (mathematics),2,10.4,1.1,10.4,10.4
+130,164,Derivative,2,13.3,1.1,13.3,13.3
+131,154,Infinity,2,13.4,1.1,1.1,1.1
+132,155,Determinant,2,10.6,1.6,10.6,10.6
+133,203,Limit of a function,2,13.4,13,13.4,13.4
+134,18,Sine,2,6.5,5.2,5.2,5.2
+135,217,Euclidean vector,2,9,9,9,9
+136,205,Scientific notation,2,12.1,1.1,1.1,1.1
+137,201,Geometry,2,1.8,1.6,1.8,1.8
+138,12,Quadratic function,2,3.1,3.1,3.1,3.1
+139,8,Injective function,2,2.7,2.7,2.7,2.7
+140,196,Parametric equation,2,8.4,8.4,8.4,8.4
+141,14,Plane (geometry),2,9.6,1,9.6,9.6
+142,167,Vector (mathematics and physics),2,9.4,9,9.4,9.4
+143,188,Curve,2,8.4,1.8,8.4,8.4
+144,211,Homogeneous polynomial,2,8.3,1.2,1.2,1.2
+145,186,Expression (mathematics),2,1.3,1.1,1.3,1.3
+146,204,Arithmetic,2,12.2,3.5,3.5,3.5
+147,176,Right triangle,2,6,5.2,6,6
+148,175,Basis (linear algebra),2,1.8,1,1,1
+149,173,Formula,2,7.3,1.3,7.3,7.3
+150,187,Empty sum,2,7.3,1.3,1.3,1.3
+151,152,Linear equation,2,9.6,1.5,1.5,1.5
+152,30,Mathematics,2,12.5,1.10,12.5,12.5
+153,111,Plane curve,2,8.4,8.4,8.4,8.4
+154,101,Division by zero,2,3.3,1.1,1.1,1.1
+155,60,Rotation (mathematics),2,11.5,6.1,11.5,11.5
+156,59,Binomial,2,12.6,1.3,1.3,1.3
+157,40,Vector space,2,9.4,9,9,9
+158,41,Simultaneous equations,2,10,10,10,10
+159,120,Trigonometry,2,5.2,5,5.2,5.2
+160,43,Fundamental theorem of algebra,2,3.6,3.6,3.6,3.6
+161,86,Zero of a function,2,3.4,3.2,3.2,3.2
+162,115,Coordinate system,2,8.1,1,8.1,8.1
+163,151,Limit of a sequence,2,13.4,13.4,13.4,13.4
+164,108,Zero (complex analysis),2,3.6,1.1,3.6,3.6
+165,88,System of linear equations,2,10.1,1.5,10.1,10.1
+166,89,Polynomial,2,3,1.3,3,3
+167,50,Product topology,2,7.3,1.3,1.3,1.3
+168,51,Inverse trigonometric functions,2,5.5,5.2,5.5,5.5
+169,80,Graph (mathematics),2,2.2,1.1,2.2,2.2
+170,128,Nth root,2,3.6,1.2,1.2,1.2
+171,38,Algebra,2,3.6,1.3,1.3,1.3
+172,129,Product (mathematics),2,9.2,1.3,1.3,1.3
+173,149,Quadratic equation,2,3.1,1.5,1.5,1.5
+174,146,Inverse function,2,2.7,,2.7,2.7
+175,66,Identity (mathematics),2,7.1,1.1,7.1,7.1
+176,31,Dependent and independent variables,2,10.1,1.8,10.1,10.1
+177,141,Addition,2,7.2,1.1,1.1,1.1
+178,62,Circle,2,5.1,1.1,5.1,5.1
+179,74,Sum,2,7.3,1.3,1.3,1.3
+180,137,Multiplication,2,7.3,1.1,1.1,1.1
+181,136,Number,2,1.1,1.1,1.1,1.1
+182,97,Invertible matrix,2,10.5,,10.5,10.5
+183,36,Subtraction,2,7.2,1.1,1.1,1.1
+184,133,Equation solving,2,1.9,1.5,1.5,1.5
+185,75,Summation,2,12.1,1.3,12.1,12.1
+186,85,Interval (mathematics),3,1.10,1.1,1.1,1.1
+187,79,Line segment,3,1.10,1.8,1.10,1.10
+188,220,Line–line intersection,3,1.10,2.2,1.10,1.10
+189,87,Perpendicular,3,1.10,1.10,1.10,1.10
+190,84,Slope,3,1.10,1.10,1.10,1.10
+191,61,Constant function,3,2,2.2,2.2,2.2
+192,4,Complex plane,3,3.5,8.3,8.3,8.3
+193,202,Range (mathematics),3,2.1,1.9,2.1,2.1
+194,95,Extended real number line,3,1.1,3.7,3.7,3.7
+195,6,Exponential growth,3,2,4.6,4.6,4.6
+196,200,Function composition,3,2,2.6,2.6,2.6
+197,81,Multiplicative inverse,3,2,5.4,2,2
+198,11,Floor and ceiling functions,3,2,9.3,9.3,9.3
+199,150,Absolute value,3,2,1.1,1.1,1.1
+200,195,Differential equation,3,1.5,1.8,1.5,1.5
+201,140,Secant line,3,1.10,5.4,1.10,1.10
+202,35,Sine wave,3,2,5.3,5.3,5.3
+203,161,Cubic function,3,1.5,3,3,3
+204,135,Even and odd functions,3,2,2.5,2,2
+205,166,Monotonic function,3,2,2.1,2,2
+206,132,Position (vector),3,2,1.1,2,2
+207,21,Focus (geometry),3,11.1,11.1,11.1,11.1
+208,172,Real line,3,1.1,1.1,1.1,1.1
+209,127,Pythagorean trigonometric identity,3,7.1,5.2,5.2,5.2
+210,174,Parallel (geometry),3,1.10,1.10,1.10,1.10
+211,39,Continuous function,3,2,1.3,2,2
+212,177,Linear inequality,3,1.7,1.7,1.7,1.7
+213,178,Vertical line test,3,1.10,2.2,2.2,2.2
+214,20,Algebraic equation,3,1.5,1.8,1.5,1.5
+215,118,Square root,3,2,1.2,1.2,1.2
+216,185,Periodic function,3,2.1,4.1,2.1,2.1
+217,46,Natural logarithm,3,2,4.3,4.3,4.3
+218,107,Binomial coefficient,3,2,12.6,12.6,12.6
+219,191,Linear function,3,2,2.2,2.2,2.2
+220,192,Asymptote,3,2,3.7,3.7,3.7
+221,49,Domain of a function,3,2.1,1.4,2.1,2.1
+222,54,Pythagorean theorem,3,1.5,1.8,1.8,1.8
+223,110,Image (mathematics),3,2,2.7,2.7,2.7

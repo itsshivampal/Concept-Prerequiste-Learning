@@ -72,12 +72,12 @@ def get_tf_idf_matrix(concept_list, df, idf_data):
 
 
 
-def book_name_correction(concept_list, df):
-	for concept in concept_list:
-		df.at[concept, "Geometry"] = 1.0
-	for concept in concept_list:
-		df.at["Geometry", concept] = 0.0
-	return df
+# def book_name_correction(concept_list, df):
+# 	for concept in concept_list:
+# 		df.at[concept, "Geometry"] = 1.0
+# 	for concept in concept_list:
+# 		df.at["Geometry", concept] = 0.0
+# 	return df
 
 
 def get_tfidf_score(df):
@@ -85,5 +85,5 @@ def get_tfidf_score(df):
 	df_match = get_tf_matrix(concept_list, match_data)
 	match_idf_data = get_term_idf(concept_list, df_match)
 	df_match_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
-	df_match_tfidf = book_name_correction(concept_list, df_match_tfidf)
+	# df_match_tfidf = book_name_correction(concept_list, df_match_tfidf)
 	return df_match_tfidf

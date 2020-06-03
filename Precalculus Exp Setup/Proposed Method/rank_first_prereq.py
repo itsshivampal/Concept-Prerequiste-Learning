@@ -2,8 +2,8 @@ import pandas as pd
 
 
 def get_rank_score(c1, c2, concept_rank):
-    r1 = int(concept_rank[c1])
-    r2 = int(concept_rank[c2])
+    r1 = float(concept_rank[c1])
+    r2 = float(concept_rank[c2])
 
     if r1 >= r2:
         return 1
