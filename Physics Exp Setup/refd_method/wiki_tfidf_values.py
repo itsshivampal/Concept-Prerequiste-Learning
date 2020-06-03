@@ -115,5 +115,5 @@ prereq_file = "../output_files/physics_labeled_pairs.csv"
 wiki_data_file = "../output_files/physics_correct_wikipedia_data.csv"
 df_tfidf_matrix = generate_tfidf_values(prereq_file, wiki_data_file)
 
-output_file = "wiki_tfidf_matrix.csv"
+output_file = "../output_files/wiki_tfidf_matrix.csv"
 df_tfidf_matrix.to_csv(output_file)
