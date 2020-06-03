@@ -178,11 +178,11 @@ def main_function(prereq_file, wiki_data_file, tfidf_file):
 
 
 
-prereq_file = "../../output_files/geometry_labeled_pairs.csv"
-wiki_data_file = "../../output_files/geometry_correct_wikipedia_data.csv"
-tfidf_file = "../../output_files/wiki_tfidf_matrix.csv"
+prereq_file = "../output_files/geometry_labeled_pairs.csv"
+wiki_data_file = "../output_files/geometry_correct_wikipedia_data.csv"
+tfidf_file = "../output_files/wiki_tfidf_matrix.csv"
 
 df_estimated = main_function(prereq_file, wiki_data_file, tfidf_file)
 
-output_file = "../../result_analysis/refd_estimated_results.csv"
+output_file = "../result_analysis/refd_estimated_results.csv"
 df_estimated.to_csv(output_file)
