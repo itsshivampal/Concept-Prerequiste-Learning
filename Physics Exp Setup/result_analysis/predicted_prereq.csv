@@ -1,0 +1,1963 @@
+,Unnamed: 0,topic_a,topic_b,relation,tfidf_score,wiki_tfidf_score
+0,0,Magnetic field,Inertial frame of reference,0,0.08113415695920606,0.0
+1,1,Gravitational acceleration,Position (vector),1,0.13119982355709436,0.0
+2,2,Energy,Planet,0,0.09127779903291916,0.09127779903291916
+3,3,Mechanical energy,Gravitational field,0,0.030923811680138982,0.030923811680138982
+4,4,Physics,Electric potential energy,0,0.0,0.0
+5,5,Newton's laws of motion,Motion,0,0.058596891137204364,0.058596891137204364
+6,6,Motion graphs and derivatives,Acceleration,0,0.015956374927553522,0.015956374927553522
+7,7,Speed,Length,0,0.09398200059283736,0.09398200059283736
+8,8,Energy,Intensity (physics),0,0.0,0.0
+9,9,Snell's law,Refractive index,1,0.6893211276125752,0.6893211276125752
+10,10,Hooke's law,Work (physics),0,0.04290547209059396,0.0
+11,11,Acceleration,Displacement (vector),1,0.1600131572212584,0.0
+12,12,Physics,Collision,0,0.0,0.0
+13,13,Electron,Mechanical energy,0,0.11529827246263474,0.0
+14,14,Mass,Wave,0,0.0,0.0
+15,15,Potential energy,Gravity,0,0.034772494869683486,0.034772494869683486
+16,16,Refractive index,Electric field,0,0.0,0.0
+17,17,Hardness,Elasticity (physics),1,0.0,0.0
+18,18,Photoelectric effect,Collision,0,0.04596188526032614,0.04596188526032614
+19,19,Refractive index,Reflection (physics),0,0.01818548463545153,0.0
+20,20,Shock wave,Wave,1,0.2344774669007248,0.2344774669007248
+21,21,Projectile motion,Gravity,1,0.09127779903291916,0.09127779903291916
+22,22,Non-inertial reference frame,Frame of reference,1,1.211993191406726,1.211993191406726
+23,23,Diffraction,Field (physics),0,0.202350058445962,0.0
+24,24,Intensity (physics),Energy,1,0.2397145566225461,0.2397145566225461
+25,25,Electrical conductor,Electromagnetic spectrum,0,0.0,0.0
+26,26,Magnetic field,Velocity,0,0.0953929276492407,0.0953929276492407
+27,27,Crest (physics),Doppler effect,0,0.0,0.0
+28,28,Wave,Reflection (physics),0,0.0,0.0
+29,29,Energy,Collision,0,0.0,0.0
+30,30,Sound intensity,Wave,0,0.254698084690944,0.254698084690944
+31,31,Refractive index,Scattering,0,0.0,0.0
+32,32,Physics,Stiffness,0,0.0,0.0
+33,33,Magnetic field,Relative velocity,0,0.0,0.0
+34,34,Snell's law,Speed,1,0.15657197877264187,0.15657197877264187
+35,35,Electric potential,Joule,0,0.044707839334268,0.044707839334268
+36,36,Temperature,Physics,0,1.0,1.0
+37,37,Energy level,Temperature,0,0.06343785040016521,0.06343785040016521
+38,38,Velocity,Doppler effect,0,0.0,0.0
+39,39,Normal force,Velocity,0,0.043067902020116934,0.043067902020116934
+40,40,Electromagnetic radiation,Velocity,0,0.13686405428787266,0.13686405428787266
+41,41,Magnetism,Electric current,0,0.0,0.0
+42,42,Electric potential,Magnetic field,0,0.2133508762950112,0.2133508762950112
+43,43,Newton's law of universal gravitation,Physics,1,1.0,1.0
+44,44,Position (vector),Acceleration,0,0.0,0.0
+45,45,Refractive index,Wave,1,0.007095377253153529,0.007095377253153529
+46,46,Physics,Snell's law,0,0.0,0.0
+47,47,Energy,Joule,0,0.09220991862692772,0.09220991862692772
+48,48,Electromotive force,Voltage,1,0.5628229496516238,0.5628229496516238
+49,49,Diffraction,Scattering,0,0.0,0.0
+50,50,Plane mirror,Length,0,0.03957136867066837,0.03957136867066837
+51,51,Capacitance,Coulomb,0,0.1795545468750705,0.1795545468750705
+52,52,Dielectric,Voltage,0,0.3042286214333102,0.3042286214333102
+53,53,Refractive index,Refraction,1,0.5950508443852397,0.5950508443852397
+54,54,Magnetism,Field line,0,0.0,0.0
+55,55,Energy level,Energy,1,0.6925087191317999,0.6925087191317999
+56,56,Distance,Optical microscope,0,0.0,0.0
+57,57,Elastic collision,Kinetic energy,1,0.8601655473335104,0.8601655473335104
+58,58,Electrostatics,Electric current,0,0.0,0.0
+59,59,Displacement (vector),Mass,0,0.0,0.0
+60,60,Projectile motion,Speed,1,0.15450609849716948,0.15450609849716948
+61,61,Electron,Electroscope,0,0.0,0.0
+62,62,Electroscope,Electrostatics,0,0.2264953060897261,0.2264953060897261
+63,63,Intensity (physics),Light,0,0.137746953289387,0.137746953289387
+64,64,Electron,Frequency,0,0.15340976885032975,0.15340976885032975
+65,65,Angle of incidence,Ray (optics),0,0.0,0.0
+66,66,Temperature,Absorption spectroscopy,0,0.0,0.0
+67,67,Newton's laws of motion,Collision,0,0.0,0.0
+68,68,Mirror image,Reflection (physics),1,0.2374747788945221,0.2374747788945221
+69,69,Laser,Absorption spectroscopy,0,0.0,0.0
+70,70,Work (physics),Potential energy,0,0.0,0.0
+71,71,Voltage,Electromotive force,0,0.0,0.0
+72,72,Absorption spectroscopy,Wavelength,1,0.11520291032279648,0.11520291032279648
+73,73,Position (vector),Force,0,0.0,0.0
+74,74,Acceleration,Work (physics),0,0.031548141243083784,0.0
+75,75,Reflection (physics),Total internal reflection,0,0.0,0.0
+76,76,Power (physics),Energy,1,0.124651569443724,0.124651569443724
+77,77,Absorption spectroscopy,Planet,0,0.1405270022442705,0.1405270022442705
+78,78,Refractive index,Laser,0,0.0,0.0
+79,79,Gravity,Doppler effect,0,0.0,0.0
+80,80,Amplitude,Doppler effect,0,0.0,0.0
+81,81,Wave,Tension (physics),0,0.04274958849709671,0.0
+82,82,Intensity (physics),Velocity,0,0.14604335349737355,0.14604335349737355
+83,83,Gravity of Earth,Torque,0,0.0,0.0
+84,84,Deformation (engineering),Elasticity (physics),0,0.0,0.0
+85,85,Acceleration,Electric potential,0,0.0,0.0
+86,86,Work (physics),Position (vector),1,0.0,0.0
+87,87,Magnetic field,Mirror image,0,0.04677318641660515,0.0
+88,88,Electromagnetic spectrum,Wavelength,1,0.5940150063519194,0.5940150063519194
+89,89,Emission spectrum,Frequency,1,0.05278288221660943,0.05278288221660943
+90,90,Potential energy,Power (physics),0,0.0,0.0
+91,91,Specular reflection,Wave,1,0.0900225988993854,0.0900225988993854
+92,92,Energy,Power (physics),0,0.0,0.0
+93,93,Le Sage's theory of gravitation,Collision,0,0.0,0.0
+94,94,Specular reflection,Euclidean vector,0,0.14300553209602704,0.14300553209602704
+95,95,Electron,Absorption spectroscopy,0,0.0,0.0
+96,96,Total internal reflection,Light,1,0.07427531795015965,0.07427531795015965
+97,97,Physics,Rarefaction,0,0.0,0.0
+98,98,Plasticity (physics),Hardness,0,0.07763075167608605,0.0
+99,99,Physics,Gravitational acceleration,0,0.0,0.0
+100,100,Speed,Magnetic field,0,0.0,0.0
+101,101,Energy level,Physics,1,1.0,1.0
+102,102,Magnetic field,Magnet,1,0.0,0.0
+103,103,Elasticity (physics),Wave,0,0.15868586694114226,0.0
+104,104,Phase velocity,Dispersion (optics),0,0.0,0.0
+105,105,Physics,Wavelength,0,0.0,0.0
+106,106,Fracture,Strength of materials,0,0.11306623774040228,0.0
+107,107,Diffraction,Wave,1,0.5524674562592419,0.5524674562592419
+108,108,Free fall,Displacement (vector),1,0.13119982355709436,0.0
+109,109,Force,Sound intensity,0,0.0,0.0
+110,110,Wavelength,Dispersion (optics),0,0.0,0.0
+111,111,Temperature,Electrical resistance and conductance,0,0.0,0.0
+112,112,Magnetic field,Absorption spectroscopy,0,0.0,0.0
+113,113,Field (physics),Planet,0,0.11529827246263474,0.11529827246263474
+114,114,Le Sage's theory of gravitation,Speed,1,0.060113113107630324,0.060113113107630324
+115,115,Inelastic collision,Physics,1,1.0,1.0
+116,116,Energy,Sound intensity,0,0.0,0.0
+117,117,Energy level,Wavelength,0,0.0,0.0
+118,118,Electromagnetic radiation,Magnet,1,0.06084572428666204,0.06084572428666204
+119,119,Euclidean vector,Electrostatics,0,0.0,0.0
+120,120,Friction,Hooke's law,0,0.0,0.0
+121,121,Le Sage's theory of gravitation,Elastic collision,0,0.0,0.0
+122,122,Hertz,Velocity,0,0.0,0.0
+123,123,Doppler effect,Speed,1,0.05416515284738633,0.05416515284738633
+124,124,Newton's law of universal gravitation,Gravitational constant,0,0.0,0.0
+125,125,Wave,Transverse wave,0,0.0,0.0
+126,126,Refractive index,Speed,1,0.15657197877264187,0.15657197877264187
+127,127,Laser,Doppler effect,0,0.0,0.0
+128,128,Acceleration,Non-inertial reference frame,0,0.11742210458750801,0.11742210458750801
+129,129,Magnetic field,Electric current,1,0.0,0.0
+130,130,Newton's law of universal gravitation,Gravitational field,0,0.0,0.0
+131,131,Potential energy,Torque,0,0.0,0.0
+132,132,Gravitational acceleration,Force,1,0.12133943201355007,0.12133943201355007
+133,133,Free fall,Physics,1,1.0,1.0
+134,134,Photoelectric effect,Kinetic energy,0,0.11296733267044225,0.11296733267044225
+135,135,Position (vector),Motion,0,0.009751243656953172,0.009751243656953172
+136,136,Energy,Electromotive force,0,0.0,0.0
+137,137,Dispersion (optics),Light,1,0.6460225328688305,0.6460225328688305
+138,138,Newton's laws of motion,Gravity of Earth,0,0.0,0.0
+139,139,Light,Wavelength,0,0.23564231656935644,0.23564231656935644
+140,140,Force,Plasticity (physics),0,0.0,0.0
+141,141,Newton's law of universal gravitation,Kilogram,0,0.3224894164269358,0.3224894164269358
+142,142,Doppler effect,Physics,1,1.0,1.0
+143,143,Total internal reflection,Laser,0,0.0,0.0
+144,144,Electrical conductor,Metre,0,0.14097300088925602,0.14097300088925602
+145,145,Telescope,Reflection (physics),0,0.0,0.0
+146,146,Energy,Hertz,0,0.04990574540960068,0.0
+147,147,Wavelength,Interference (wave propagation),0,0.0,0.0
+148,148,Magnet,Electric field,0,0.01679452951571139,0.01679452951571139
+149,149,Work (physics),Joule,0,0.09220991862692772,0.09220991862692772
+150,150,Non-inertial reference frame,Motion,1,0.062410889968620036,0.062410889968620036
+151,151,Photoelectric effect,Hertz,0,0.047877056571812036,0.047877056571812036
+152,152,Inertial frame of reference,Collision,0,0.0,0.0
+153,153,Light,Plane mirror,0,0.0,0.0
+154,154,Speed,Snell's law,0,0.0,0.0
+155,155,Electromotive force,Physics,1,1.0,1.0
+156,156,Magnification,Refracting telescope,0,0.0,0.0
+157,157,Force,Projectile motion,0,0.0,0.0
+158,158,Force,Hardness,0,0.0,0.0
+159,159,Snell's law,Velocity,0,0.15657197877264187,0.15657197877264187
+160,160,Velocity,Elastic collision,0,0.0,0.0
+161,161,Power (physics),Kilogram,0,0.124651569443724,0.124651569443724
+162,162,Magnetic field,Energy,0,0.11529827246263474,0.11529827246263474
+163,163,Joule,Mechanical energy,0,0.0,0.0
+164,164,Speed,Motion,1,0.08250931216190446,0.08250931216190446
+165,165,Mass,Electron,0,0.0,0.0
+166,166,Force,Potential energy,0,0.0,0.0
+167,167,Virtual image,Ray (optics),1,0.0,0.0
+168,168,Electric field,Mass,0,0.11529827246263474,0.11529827246263474
+169,169,Refractive index,Temperature,0,0.09398200059283736,0.09398200059283736
+170,170,Field line,Magnetic field,0,0.07934293347057113,0.07934293347057113
+171,171,Newton's laws of motion,Work (physics),0,0.00893864001887374,0.0
+172,172,Equations of motion,Motion,1,0.6349629675068299,0.6349629675068299
+173,173,Electrostatics,Field line,0,0.03872131429465831,0.03872131429465831
+174,174,Diffraction,Huygens–Fresnel principle,0,0.0,0.0
+175,175,Force,Elasticity (physics),0,0.0,0.0
+176,176,Energy,Potential energy,0,0.2287363847800249,0.2287363847800249
+177,177,Electric field,Coulomb,0,0.0,0.0
+178,178,Electric field,Electric current,0,0.0,0.0
+179,179,Wave,Total internal reflection,0,0.0,0.0
+180,180,Frequency,Energy,0,0.11529827246263474,0.0
+181,181,Lever,Length,0,0.01838778272468557,0.01838778272468557
+182,182,Physics,Transmission medium,0,0.0,0.0
+183,183,Intensity (physics),Laser,0,0.007622927008533541,0.007622927008533541
+184,184,Magnetism,Length,0,0.07225781327248927,0.07225781327248927
+185,185,Light,Refracting telescope,0,0.0,0.0
+186,186,Physics,Shock wave,0,0.0,0.0
+187,187,Photoelectric effect,Electromagnetic radiation,0,0.0539122517117712,0.0539122517117712
+188,188,Dielectric,Hertz,0,0.05386168864328854,0.0
+189,189,Magnetic field,Voltage,0,0.0,0.0
+190,190,Tension (physics),Mass,0,0.0333247942670338,0.0333247942670338
+191,191,Interference (wave propagation),Electron,0,0.0,0.0
+192,192,Euclidean vector,Force,0,0.0,0.0
+193,193,Contact force,Force,1,0.6273506804104824,0.6273506804104824
+194,194,Standing wave,Frequency,1,0.03244849316594842,0.03244849316594842
+195,195,Magnetic field,Dielectric,0,0.0,0.0
+196,196,Interference (wave propagation),Huygens–Fresnel principle,0,0.0,0.0
+197,197,Amplitude,Refractive index,0,0.0,0.0
+198,198,Specular reflection,Refractive index,0,0.0,0.0
+199,199,Speed,Electron,0,0.0,0.0
+200,200,Gravitational acceleration,Planet,0,0.2370565292166791,0.2370565292166791
+201,201,Distance,Free fall,0,0.0,0.0
+202,202,Acceleration,Velocity,1,0.6751526993153625,0.6751526993153625
+203,203,Velocity,Metre,0,0.09398200059283736,0.09398200059283736
+204,204,Capacitance,Voltage,1,0.08534035051800448,0.08534035051800448
+205,205,Refractive index,Mass,0,0.10475356962837573,0.10475356962837573
+206,206,Electrostatics,Electrical conductor,0,0.0,0.0
+207,207,Sonic boom,Physics,1,1.0,0.0
+208,208,Frame of reference,Electromagnetic spectrum,0,0.0,0.0
+209,209,Capacitor,Laser,0,0.033667927621023136,0.033667927621023136
+210,210,Ohm,Coulomb,0,0.0,0.0
+211,211,Electric field,Physics,1,1.0,1.0
+212,212,Magnetic field,Torque,0,0.0,0.0
+213,213,Physics,Displacement (vector),0,0.0,0.0
+214,214,Intensity (physics),Wave,0,0.254698084690944,0.254698084690944
+215,215,Wave,Energy,0,0.11529827246263474,0.11529827246263474
+216,216,Capacitor,Dielectric,0,0.0,0.0
+217,217,Geometrical optics,Snell's law,0,0.0,0.0
+218,218,Wave,Doppler effect,0,0.0,0.0
+219,219,Ohm's law,Voltage,1,0.4288174854488562,0.4288174854488562
+220,220,Power (physics),Intensity (physics),0,0.0,0.0
+221,221,Le Sage's theory of gravitation,Energy,0,0.0,0.0
+222,222,Capacitance,Electric current,0,0.08534035051800448,0.08534035051800448
+223,223,Hooke's law,Stiffness,0,0.11306623774040228,0.11306623774040228
+224,224,Electromagnetic spectrum,Electric field,1,0.202350058445962,0.0
+225,225,Physics,Emission spectrum,0,0.0,0.0
+226,226,Total internal reflection,Physics,1,1.0,1.0
+227,227,Snell's law,Motion,1,0.08250931216190446,0.08250931216190446
+228,228,Motion,Energy,0,0.0,0.0
+229,229,Energy,Sonic boom,0,0.0,0.0
+230,230,Magnetic field,Gravity of Earth,0,0.11228993489211114,0.0
+231,231,Electron,Electromagnetic radiation,0,0.0,0.0
+232,232,Acceleration,Torque,0,0.0,0.0
+233,233,Physics,Electric field,0,0.0,0.0
+234,234,Diffraction,Interference (wave propagation),0,0.0,0.0
+235,235,Fatigue (material),Deformation (engineering),1,0.2308158064598433,0.0
+236,236,Force,Stiffness,0,0.0,0.0
+237,237,Distance,Gravity of Earth,0,0.0,0.0
+238,238,Electric potential,Force,1,0.1377366525559217,0.1377366525559217
+239,239,Electric charge,Capacitance,0,0.0,0.0
+240,240,Friction,Mass,0,0.0,0.0
+241,241,Elastic collision,Physics,1,1.0,1.0
+242,242,Free fall,Gravitational field,0,0.2915673672698818,0.2915673672698818
+243,243,Energy,Laser,0,0.0,0.0
+244,244,Electric field,Wavelength,0,0.06749499597823637,0.0
+245,245,Elasticity (physics),Hardness,0,0.11306623774040228,0.0
+246,246,Force,Elastic collision,0,0.0,0.0
+247,247,Refraction,Absorption spectroscopy,0,0.0,0.0
+248,248,Refraction,Electromagnetic spectrum,0,0.0,0.0
+249,249,Electric potential energy,Field (physics),1,0.14453575603283006,0.0
+250,250,Newton's laws of motion,Contact force,0,0.0,0.0
+251,251,Coulomb's law,Dielectric,0,0.0,0.0
+252,252,Projectile motion,Velocity,1,0.2207229978530993,0.2207229978530993
+253,253,Electron,Distance,0,0.011585896139514159,0.011585896139514159
+254,254,Le Sage's theory of gravitation,Wavelength,0,0.0,0.0
+255,255,Collision,Le Sage's theory of gravitation,0,0.08889619845625465,0.0
+256,256,Gravity of Earth,Force,1,0.13104658657463408,0.13104658657463408
+257,257,Magnetic field,Potential energy,0,0.11529827246263474,0.11529827246263474
+258,258,Intensity (physics),Physics,1,1.0,1.0
+259,259,Electric field,Force,0,0.11517766398161201,0.11517766398161201
+260,260,Physics,Wave,0,0.0,0.0
+261,261,Refractive index,Snell's law,0,0.0,0.0
+262,262,Amplitude,Huygens–Fresnel principle,0,0.0,0.0
+263,263,Motion,Electrostatics,0,0.0,0.0
+264,264,Acceleration,Field (physics),0,0.0,0.0
+265,265,Scattering,Velocity,0,0.14604335349737355,0.14604335349737355
+266,266,Hardness,Deformation (engineering),1,0.0,0.0
+267,267,Electron,Specular reflection,0,0.1850180055334412,0.0
+268,268,Standing wave,Voltage,0,0.0,0.0
+269,269,Doppler effect,Wavelength,1,0.20142840148464414,0.20142840148464414
+270,270,Diffraction,Dispersion (optics),0,0.0,0.0
+271,271,Inelastic collision,Elastic collision,0,0.0,0.0
+272,272,Magnetism,Coulomb,0,0.0,0.0
+273,273,Gravitational acceleration,Gravity,1,0.06085186602194612,0.06085186602194612
+274,274,Refractive index,Telescope,0,0.11642531754888755,0.11642531754888755
+275,275,Energy,Mechanical energy,0,0.0,0.0
+276,276,Elastic collision,Energy,1,0.62325784721862,0.62325784721862
+277,277,Wave,Intensity (physics),0,0.0,0.0
+278,278,Mass,Distance,0,0.03719072660784045,0.03719072660784045
+279,279,Equations of motion,Field (physics),0,0.0,0.0
+280,280,Displacement (vector),Work (physics),0,0.023318191353583668,0.0
+281,281,Kinetic energy,Mechanical energy,0,0.0,0.0
+282,282,Gravitational field,Newton's law of universal gravitation,1,0.266688595368764,0.266688595368764
+283,283,Velocity,Wave,0,0.0,0.0
+284,284,Mirror image,Distance,0,0.05799723447616445,0.05799723447616445
+285,285,Gravity,Gravitational acceleration,0,0.0,0.0
+286,286,Potential energy,Euclidean vector,1,0.11742210458750801,0.0
+287,287,Wave,Elasticity (physics),0,0.0,0.0
+288,288,Pitch (music),Hertz,0,0.368054872395805,0.368054872395805
+289,289,Speed,Shock wave,0,0.0,0.0
+290,290,Doppler effect,Frequency,1,0.30358252808632724,0.30358252808632724
+291,291,Speed,Electromagnetic spectrum,0,0.0,0.0
+292,292,Electron,Electrostatics,0,0.0,0.0
+293,293,Electric potential,Coulomb's law,1,0.0,0.0
+294,294,Euclidean vector,Gravitational acceleration,0,0.0,0.0
+295,295,Frequency,Doppler effect,0,0.0,0.0
+296,296,Fracture,Elasticity (physics),0,0.0,0.0
+297,297,Temperature,Kilogram,0,0.0,0.0
+298,298,Distance,Elastic collision,0,0.0,0.0
+299,299,Gravitational acceleration,Motion,1,0.2253726582200168,0.2253726582200168
+300,300,Physics,Doppler effect,0,0.0,0.0
+301,301,Potential energy,Metre,0,0.04885667256811052,0.04885667256811052
+302,302,Displacement (vector),Distance,1,0.1408739644236381,0.1408739644236381
+303,303,Displacement (vector),Projectile motion,0,0.0,0.0
+304,304,Electric potential,Capacitance,0,0.0,0.0
+305,305,Motion,Newton's laws of motion,0,0.0,0.0
+306,306,Speed,Rarefaction,0,0.0,0.0
+307,307,Pigment,Wavelength,0,0.150085389380755,0.150085389380755
+308,308,Wave,Physics,1,1.0,1.0
+309,309,Temperature,Wavelength,0,0.0,0.0
+310,310,Interference (wave propagation),Crest (physics),0,0.9996595449253092,0.0
+311,311,Wave,Electromagnetic spectrum,0,0.0,0.0
+312,312,Electrical conductor,Electric current,1,0.0,0.0
+313,313,Motion,Elastic collision,0,0.0,0.0
+314,314,Inertial frame of reference,Velocity,0,0.0,0.0
+315,315,Work (physics),Electrostatics,0,0.0,0.0
+316,316,Force,Magnet,0,0.0,0.0
+317,317,Force,Torque,0,0.0,0.0
+318,318,Absorption spectroscopy,Energy,1,0.41550523147908,0.41550523147908
+319,319,Motion,Inertial frame of reference,0,0.0,0.0
+320,320,Capacitance,Distance,0,0.1770986981325736,0.1770986981325736
+321,321,Coulomb's law,Emission spectrum,0,0.0,0.0
+322,322,Position (vector),Free fall,0,0.0,0.0
+323,323,Deformation (engineering),Creep (deformation),0,0.0,0.0
+324,324,Shock wave,Energy,1,0.11529827246263474,0.11529827246263474
+325,325,Electrical resistance and conductance,Energy,0,0.15478257795164402,0.15478257795164402
+326,326,Motion,Mass,0,0.0,0.0
+327,327,Magnet,Euclidean vector,0,0.0903222665906116,0.0
+328,328,Voltage,Electric current,0,0.0,0.0
+329,329,Snell's law,Light,1,0.11048453545086248,0.11048453545086248
+330,330,Magnetism,Physics,1,1.0,1.0
+331,331,Force,Creep (deformation),0,0.0,0.0
+332,332,Dielectric,Velocity,0,0.14604335349737355,0.14604335349737355
+333,333,Velocity,Speed,0,0.15450609849716948,0.15450609849716948
+334,334,Energy,Temperature,0,0.06343785040016521,0.06343785040016521
+335,335,Euclidean vector,Gravity of Earth,0,0.0,0.0
+336,336,Electrical conductor,Electroscope,0,0.0,0.0
+337,337,Electrical resistance and conductance,Ohm,0,0.0,0.0
+338,338,Amplitude,Voltage,0,0.0,0.0
+339,339,Energy,Dielectric,0,0.0,0.0
+340,340,Wave,Mass,0,0.11529827246263474,0.11529827246263474
+341,341,Energy,Equations of motion,0,0.007978187463776761,0.007978187463776761
+342,342,Physics,Contact force,0,0.0,0.0
+343,343,Energy,Transverse wave,0,0.0,0.0
+344,344,Magnet,Mass,0,0.11529827246263474,0.11529827246263474
+345,345,Speed,Gravity of Earth,0,0.0,0.0
+346,346,Energy,Electrostatics,0,0.0,0.0
+347,347,Gravitational acceleration,Physics,1,1.0,1.0
+348,348,Gravity,Physics,1,1.0,1.0
+349,349,Mirror image,Length,0,0.03957136867066837,0.03957136867066837
+350,350,Diffraction,Specular reflection,0,0.1512972697129779,0.0
+351,351,Projectile motion,Motion,1,0.6085061771940454,0.6085061771940454
+352,352,Potential energy,Work (physics),1,0.22225807614496867,0.0
+353,353,Motion,Temperature,0,0.028855767746028445,0.028855767746028445
+354,354,Photoelectric effect,Color,0,0.019388806432772503,0.019388806432772503
+355,355,Deformation (engineering),Hardness,0,0.11306623774040228,0.0
+356,356,Intensity (physics),Speed,0,0.14604335349737355,0.14604335349737355
+357,357,Electric potential energy,Coulomb,0,0.0,0.0
+358,358,Specular reflection,Refraction,0,0.0,0.0
+359,359,Refractive index,Frequency,0,0.16224246582974208,0.16224246582974208
+360,360,Lever,Energy,0,0.10779920755895783,0.10779920755895783
+361,361,Electromagnetic radiation,Laser,0,0.008240979427143023,0.008240979427143023
+362,362,Emission spectrum,Magnet,1,0.2189630705226948,0.2189630705226948
+363,363,Snell's law,Telescope,0,0.11642531754888755,0.11642531754888755
+364,364,Velocity,Equations of motion,0,0.0,0.0
+365,365,Electron,Electrical conductor,0,0.0,0.0
+366,366,Interference (wave propagation),Ray (optics),0,0.0,0.0
+367,367,Energy,Energy level,0,0.0,0.0
+368,368,Refraction,Length,0,0.09398200059283736,0.09398200059283736
+369,369,Joule,Coulomb,0,0.0,0.0
+370,370,Dielectric,Coulomb's law,1,0.2104595126010915,0.0
+371,371,Magnetism,Force,1,0.012735333972267645,0.012735333972267645
+372,372,Sonic boom,Wave,1,0.1800451977987708,0.1800451977987708
+373,373,Series and parallel circuits,Ohm's law,1,0.0,0.0
+374,374,Wave,Frequency,0,0.018673189463423143,0.018673189463423143
+375,375,Creep (deformation),Force,1,0.2481942927549888,0.2481942927549888
+376,376,Telescope,Optical microscope,0,0.11642531754888755,0.0
+377,377,Stiffness,Hooke's law,0,0.0,0.0
+378,378,Ohm,Electromotive force,0,0.0,0.0
+379,379,Kinetic energy,Physics,1,1.0,1.0
+380,380,Electrostatics,Electric field,1,0.11978563974219722,0.11978563974219722
+381,381,Physics,Electromagnetic spectrum,0,0.0,0.0
+382,382,Electron,Potential energy,0,0.11529827246263474,0.11529827246263474
+383,383,Torque,Speed,0,0.10817887594560806,0.10817887594560806
+384,384,Scattering,Wavelength,1,0.22060131763939755,0.22060131763939755
+385,385,Electric potential,Motion,1,0.14198477467861054,0.14198477467861054
+386,386,Electrostatics,Motion,1,0.08113415695920606,0.08113415695920606
+387,387,Emission spectrum,Magnetic field,1,0.2189630705226948,0.0
+388,388,Force,Emission spectrum,0,0.0,0.0
+389,389,Hooke's law,Mass,0,0.11529827246263474,0.11529827246263474
+390,390,Sonic boom,Hertz,0,0.05386168864328854,0.05386168864328854
+391,391,Photoelectric effect,Light,1,0.21557958136753647,0.21557958136753647
+392,392,Displacement (vector),Free fall,0,0.0,0.0
+393,393,Electron,Le Sage's theory of gravitation,0,0.10475356962837573,0.0
+394,394,Force,Electrostatics,0,0.0,0.0
+395,395,Elasticity (physics),Energy,0,0.11529827246263474,0.11529827246263474
+396,396,Energy,Emission spectrum,0,0.0,0.0
+397,397,Elastic collision,Distance,1,0.09398200059283736,0.09398200059283736
+398,398,Torque,Lever,1,0.0,0.0
+399,399,Amplitude,Distance,0,0.1487629064313618,0.1487629064313618
+400,400,Frequency,Interference (wave propagation),0,0.0,0.0
+401,401,Tension (physics),Physics,1,1.0,1.0
+402,402,Color,Dispersion (optics),0,0.0,0.0
+403,403,Physics,Newton's law of universal gravitation,0,0.0,0.0
+404,404,Diffraction,Wavelength,0,0.26039013977070435,0.26039013977070435
+405,405,Gravitational constant,Newton's law of universal gravitation,1,0.0,0.0
+406,406,Motion,Gravity of Earth,0,0.0,0.0
+407,407,Field (physics),Dielectric,0,0.0,0.0
+408,408,Magnetic field,Temperature,0,0.07247835752589889,0.07247835752589889
+409,409,Tension (physics),Compression (physics),0,0.0,0.0
+410,410,Electric potential,Gravity,0,0.11529827246263474,0.0
+411,411,Specular reflection,Light,1,0.07891752532204463,0.07891752532204463
+412,412,Ray (optics),Light,1,0.5050721620610856,0.5050721620610856
+413,413,Distance,Lever,0,0.0,0.0
+414,414,Force,Length,0,0.029166827770190907,0.029166827770190907
+415,415,Physics,Refractive index,0,0.0,0.0
+416,416,Refractive index,Color,0,0.0,0.0
+417,417,Total internal reflection,Wave,1,0.16224246582974208,0.16224246582974208
+418,418,Total internal reflection,Reflection (physics),1,0.3257341218526466,0.0
+419,419,Sound,Sound intensity,0,0.0,0.0
+420,420,Torque,Energy,0,0.10817887594560806,0.10817887594560806
+421,421,Electrical resistance and conductance,Metre,0,0.1067446445943308,0.1067446445943308
+422,422,Field (physics),Electrostatics,0,0.0,0.0
+423,423,Gravity of Earth,Free fall,0,0.0,0.0
+424,424,Position (vector),Electric potential,0,0.0,0.0
+425,425,Diffraction,Transverse wave,0,0.0,0.0
+426,426,Dielectric,Reflection (physics),0,0.1512972697129779,0.0
+427,427,Interference (wave propagation),Energy,0,0.11529827246263474,0.11529827246263474
+428,428,Force,Inelastic collision,0,0.0,0.0
+429,429,Mirror image,Physics,1,1.0,1.0
+430,430,Energy,Electromagnetic radiation,0,0.0,0.0
+431,431,Magnetism,Field (physics),0,0.2688449339619404,0.0
+432,432,Friction,Deformation (engineering),0,0.0,0.0
+433,433,Temperature,Velocity,0,0.0,0.0
+434,434,Elasticity (physics),Strength of materials,0,0.11306623774040228,0.0
+435,435,Gravity of Earth,Motion,1,0.08113415695920606,0.08113415695920606
+436,436,Displacement (vector),Position (vector),1,0.2189630705226948,0.0
+437,437,Intensity (physics),Power (physics),1,0.18914855102959527,0.0
+438,438,Physics,Motion graphs and derivatives,0,0.0,0.0
+439,439,Magnetic field,Physics,1,1.0,1.0
+440,440,Curved mirror,Geometrical optics,0,0.02789266890328676,0.0
+441,441,Interference (wave propagation),Standing wave,0,0.32211722720869584,0.0
+442,442,Physics,Elastic collision,0,0.0,0.0
+443,443,Speed,Inelastic collision,0,0.0,0.0
+444,444,Energy,Mirror image,0,0.0,0.0
+445,445,Wave,Dispersion (optics),0,0.0,0.0
+446,446,Distance,Physics,0,1.0,1.0
+447,447,Force,Fatigue (material),0,0.0,0.0
+448,448,Mass,Collision,0,0.0,0.0
+449,449,Electromotive force,Magnetic field,1,0.2133508762950112,0.2133508762950112
+450,450,Electromagnetic radiation,Energy,1,0.13686405428787266,0.13686405428787266
+451,451,Normal force,Physics,1,1.0,1.0
+452,452,Electric field,Wave,0,0.11529827246263474,0.11529827246263474
+453,453,Speed,Refraction,0,0.0,0.0
+454,454,Gravity of Earth,Newton's law of universal gravitation,0,0.08534035051800448,0.08534035051800448
+455,455,Refraction,Snell's law,0,0.0,0.0
+456,456,Dielectric,Energy,1,0.27342795534473746,0.27342795534473746
+457,457,Sound intensity,Velocity,0,0.14604335349737355,0.14604335349737355
+458,458,Electromagnetic radiation,Transverse wave,0,0.0,0.0
+459,459,Gravitational field,Mass,1,0.4832095168719902,0.4832095168719902
+460,460,Magnification,Virtual image,0,0.13977250443792533,0.13977250443792533
+461,461,Motion,Force,0,0.0,0.0
+462,462,Dielectric,Physics,1,1.0,1.0
+463,463,Mass,Gravity of Earth,0,0.08534035051800448,0.0
+464,464,Voltmeter,Voltage,1,0.3554671260957624,0.3554671260957624
+465,465,Transmission medium,Electromagnetic spectrum,0,0.0,0.0
+466,466,Shock wave,Velocity,0,0.4722445535461659,0.4722445535461659
+467,467,Electric field,Electric potential,0,0.0,0.0
+468,468,Position (vector),Electric potential energy,0,0.0,0.0
+469,469,Hertz,Kilogram,0,0.0,0.0
+470,470,Electron,Field (physics),0,0.014858816040758225,0.0
+471,471,Joule,Velocity,0,0.0,0.0
+472,472,Insulator (electricity),Dielectric,0,0.0,0.0
+473,473,Mass,Velocity,0,0.0953929276492407,0.0953929276492407
+474,474,Force,Le Sage's theory of gravitation,0,0.0,0.0
+475,475,Force,Direction (geometry),0,0.060099307669666535,0.0
+476,476,Inelastic collision,Mass,1,0.09127779903291916,0.09127779903291916
+477,477,Electromagnetic spectrum,Coulomb's law,1,0.2104595126010915,0.0
+478,478,Doppler effect,Relative velocity,1,0.0,0.0
+479,479,Snell's law,Wavelength,1,0.021600545685524344,0.021600545685524344
+480,480,Speed,Dielectric,0,0.0,0.0
+481,481,Magnet,Force,0,0.13067323447613086,0.13067323447613086
+482,482,Physics,Energy,0,0.0,0.0
+483,483,Mass,Absorption spectroscopy,0,0.0,0.0
+484,484,Acceleration,Energy,0,0.0,0.0
+485,485,Joule,Torque,0,0.0,0.0
+486,486,Sound intensity,Physics,1,1.0,0.0
+487,487,Scalar multiplication,Scalar (mathematics),1,0.5962057978077544,0.0
+488,488,Velocity,Length,0,0.09398200059283736,0.0
+489,489,Velocity,Mechanical energy,0,0.0,0.0
+490,490,Amplitude,Electromagnetic spectrum,0,0.0,0.0
+491,491,Standing wave,Amplitude,1,0.11728638645398448,0.11728638645398448
+492,492,Electron,Dielectric,0,0.0,0.0
+493,493,Refracting telescope,Refraction,1,0.4923722340089823,0.4923722340089823
+494,494,Dispersion (optics),Refracting telescope,0,0.11642531754888755,0.0
+495,495,Voltage,Power (physics),0,0.026264943141632125,0.0
+496,496,Equations of motion,Length,0,0.09398200059283736,0.09398200059283736
+497,497,Electric current,Electrical resistance and conductance,0,0.0,0.0
+498,498,Emission spectrum,Electric current,1,0.08762668707160241,0.0
+499,499,Amplitude,Electrical resistance and conductance,0,0.0,0.0
+500,500,Distance,Equations of motion,0,0.0,0.0
+501,501,Absorption spectroscopy,Electromagnetic spectrum,0,0.05304416529970495,0.05304416529970495
+502,502,Electrical resistance and conductance,Ohm's law,1,0.08153563898784008,0.08153563898784008
+503,503,Motion,Power (physics),0,0.0,0.0
+504,504,Le Sage's theory of gravitation,Mass,1,0.0,0.0
+505,505,Wavelength,Doppler effect,0,0.0,0.0
+506,506,Wave,Length,0,0.07225781327248927,0.07225781327248927
+507,507,Normal force,Force,1,0.4794387313706125,0.4794387313706125
+508,508,Telescope,Electromagnetic radiation,0,0.0,0.0
+509,509,Curved mirror,Reflection (physics),0,0.2374747788945221,0.0
+510,510,Voltage,Coulomb,0,0.02019988652344543,0.02019988652344543
+511,511,Friction,Normal force,0,0.0,0.0
+512,512,Physics,Hardness,0,0.0,0.0
+513,513,Euclidean vector,Inertial frame of reference,0,0.04039977304689086,0.0
+514,514,Voltage,Electrical resistance and conductance,0,0.0,0.0
+515,515,Distance,Doppler effect,0,0.0,0.0
+516,516,Coulomb's law,Electric field,0,0.15591062138868386,0.15591062138868386
+517,517,Electromagnetic radiation,Dispersion (optics),0,0.0,0.0
+518,518,Displacement (vector),Potential energy,0,0.0,0.0
+519,519,Equations of motion,Force,1,0.09496129461930006,0.09496129461930006
+520,520,Friction,Physics,1,1.0,1.0
+521,521,Gravitational acceleration,Displacement (vector),1,0.13119982355709436,0.0
+522,522,Specular reflection,Mirror image,0,0.0,0.0
+523,523,Electromagnetic spectrum,Reflection (physics),0,0.057682084078072834,0.0
+524,524,Electron,Refractive index,0,0.2283465433085136,0.0
+525,525,Electric potential,Gravitational field,0,0.13606477139261153,0.13606477139261153
+526,526,Coulomb's law,Electric potential energy,0,0.04885667256811052,0.0
+527,527,Magnet,Electromagnetic spectrum,0,0.0,0.0
+528,528,Plasticity (physics),Hooke's law,0,0.0,0.0
+529,529,Snell's law,Total internal reflection,0,0.0,0.0
+530,530,Physics,Diffraction,0,0.0,0.0
+531,531,Electromotive force,Joule,0,0.09220991862692772,0.09220991862692772
+532,532,Deformation (engineering),Strength of materials,0,0.11306623774040228,0.11306623774040228
+533,533,Virtual image,Plane mirror,0,0.0,0.0
+534,534,Total internal reflection,Refraction,1,0.3604293477712812,0.3604293477712812
+535,535,Magnetic field,Coulomb,0,0.0,0.0
+536,536,Sonic boom,Mass,0,0.11529827246263474,0.11529827246263474
+537,537,Gravitational constant,Physics,1,1.0,1.0
+538,538,Equations of motion,Torque,0,0.0,0.0
+539,539,Electromagnetic spectrum,Metre,0,0.09398200059283736,0.0
+540,540,Motion,Acceleration,0,0.0,0.0
+541,541,Angle of incidence,Reflection (physics),0,0.0,0.0
+542,542,Intensity (physics),Sound intensity,0,0.0,0.0
+543,543,Doppler effect,Wave,1,0.22091435312732613,0.22091435312732613
+544,544,Electric field,Electric potential energy,0,0.010540994423941654,0.0
+545,545,Magnetic field,Hertz,0,0.04990574540960068,0.04990574540960068
+546,546,Motion graphs and derivatives,Euclidean vector,1,0.18952869055079155,0.0
+547,547,Capacitance,Energy,0,0.11529827246263474,0.11529827246263474
+548,548,Wave,Dielectric,0,0.0,0.0
+549,549,Force,Kilogram,0,0.0660977165410794,0.0660977165410794
+550,550,Shock wave,Force,0,0.08999332797098179,0.08999332797098179
+551,551,Interference (wave propagation),Electromagnetic spectrum,0,0.0,0.0
+552,552,Virtual image,Optical microscope,0,0.0,0.0
+553,553,Motion,Velocity,0,0.0,0.0
+554,554,Free fall,Gravitational acceleration,1,0.0,0.0
+555,555,Hooke's law,Distance,0,0.10140741236461426,0.10140741236461426
+556,556,Transverse wave,Physics,1,1.0,1.0
+557,557,Field (physics),Emission spectrum,0,0.0,0.0
+558,558,Refractive index,Wavelength,0,0.00851253031941846,0.00851253031941846
+559,559,Le Sage's theory of gravitation,Velocity,0,0.043199608142502614,0.043199608142502614
+560,560,Speed,Collision,0,0.0,0.0
+561,561,Electron,Dispersion (optics),0,0.0,0.0
+562,562,Electromagnetic radiation,Magnetic field,1,0.0514656865755056,0.0514656865755056
+563,563,Inertial frame of reference,Speed,1,0.0,0.0
+564,564,Acceleration,Electromagnetic radiation,0,0.0,0.0
+565,565,Specular reflection,Angle of incidence,1,0.4923722340089823,0.4923722340089823
+566,566,Magnet,Length,0,0.0903222665906116,0.0903222665906116
+567,567,Mechanical energy,Position (vector),1,0.13119982355709436,0.0
+568,568,Euclidean vector,Free fall,0,0.0,0.0
+569,569,Intensity (physics),Interference (wave propagation),0,0.0,0.0
+570,570,Wave,Le Sage's theory of gravitation,0,0.11228993489211114,0.0
+571,571,Voltage,Electric potential,0,0.0,0.0
+572,572,Newton's laws of motion,Newton's law of universal gravitation,0,0.0,0.0
+573,573,Acceleration,Direction (geometry),0,0.1093571716028442,0.0
+574,574,Photoelectric effect,Voltage,0,0.01830318535452436,0.01830318535452436
+575,575,Force,Physics,1,1.0,1.0
+576,576,Energy,Absorption spectroscopy,0,0.0,0.0
+577,577,Physics,Electric potential,0,0.0,0.0
+578,578,Gravity,Force,1,0.13104658657463408,0.13104658657463408
+579,579,Inelastic collision,Velocity,0,0.18110604952049167,0.18110604952049167
+580,580,Speed,Mass,0,0.0,0.0
+581,581,Sonic boom,Sound,1,0.8112592989169141,0.8112592989169141
+582,582,Coulomb's law,Electromagnetic spectrum,0,0.0,0.0
+583,583,Energy,Physics,1,1.0,1.0
+584,584,Gravitational field,Distance,1,0.08534035051800448,0.0
+585,585,Physics,Projectile motion,0,0.0,0.0
+586,586,Power (physics),Velocity,0,0.14198477467861054,0.14198477467861054
+587,587,Gravity of Earth,Kilogram,0,0.42015763968766495,0.42015763968766495
+588,588,Hooke's law,Wave,0,0.2880723164780333,0.2880723164780333
+589,589,Acceleration,Newton's law of universal gravitation,0,0.0,0.0
+590,590,Kinetic energy,Force,0,0.22225807614496867,0.22225807614496867
+591,591,Magnet,Electrical resistance and conductance,0,0.0,0.0
+592,592,Energy,Projectile motion,0,0.0,0.0
+593,593,Motion,Magnetism,0,0.0,0.0
+594,594,Torque,Distance,0,0.08264605912853434,0.08264605912853434
+595,595,Strength of materials,Force,1,0.08736439104975606,0.08736439104975606
+596,596,Electric potential energy,Energy,1,0.16997941287780546,0.16997941287780546
+597,597,Displacement (vector),Velocity,0,0.0,0.0
+598,598,Magnet,Field (physics),0,0.31350009055008193,0.0
+599,599,Voltage,Voltmeter,0,0.0,0.0
+600,600,Diffraction,Optical microscope,0,0.11642531754888755,0.11642531754888755
+601,601,Energy,Electric potential energy,0,0.04885667256811052,0.04885667256811052
+602,602,Amplitude,Power (physics),0,0.0,0.0
+603,603,Laser,Power (physics),0,0.0,0.0
+604,604,Distance,Electric potential energy,0,0.0,0.0
+605,605,Le Sage's theory of gravitation,Laser,0,0.0,0.0
+606,606,Torque,Length,0,0.08264605912853434,0.08264605912853434
+607,607,Projectile motion,Euclidean vector,1,0.18952869055079155,0.0
+608,608,Electroscope,Capacitance,0,0.0,0.0
+609,609,Dispersion (optics),Phase velocity,1,0.0,0.0
+610,610,Gravity of Earth,Physics,1,1.0,1.0
+611,611,Photoelectric effect,Electric field,0,0.202350058445962,0.202350058445962
+612,612,Energy level,Potential energy,0,0.2287363847800249,0.2287363847800249
+613,613,Physics,Non-inertial reference frame,0,0.0,0.0
+614,614,Wave,Interference (wave propagation),0,0.0,0.0
+615,615,Interference (wave propagation),Frequency,1,0.06749499597823637,0.06749499597823637
+616,616,Light,Hertz,0,0.05386168864328854,0.05386168864328854
+617,617,Elasticity (physics),Hooke's law,0,0.15868586694114226,0.15868586694114226
+618,618,Reflection (physics),Wavelength,0,0.23564231656935644,0.23564231656935644
+619,619,Joule,Power (physics),0,0.0,0.0
+620,620,Specular reflection,Wavelength,0,0.23564231656935644,0.23564231656935644
+621,621,Electromagnetic radiation,Metre,0,0.013703704373596522,0.0
+622,622,Magnetism,Electron,0,0.0,0.0
+623,623,Motion graphs and derivatives,Physics,1,1.0,1.0
+624,624,Collision,Planet,0,0.09127779903291916,0.09127779903291916
+625,625,Gravitational acceleration,Inertial frame of reference,0,0.11742210458750801,0.0
+626,626,Friction,Velocity,0,0.0,0.0
+627,627,Le Sage's theory of gravitation,Force,1,0.060113113107630324,0.060113113107630324
+628,628,Electron,Reflection (physics),0,0.1850180055334412,0.0
+629,629,Temperature,Magnetism,0,0.0,0.0
+630,630,Electron,Kilogram,0,0.10475356962837573,0.10475356962837573
+631,631,Potential energy,Electric potential energy,0,0.04885667256811052,0.04885667256811052
+632,632,Free fall,Metre,0,0.07225781327248927,0.07225781327248927
+633,633,Electromotive force,Voltmeter,0,0.0,0.0
+634,634,Friction,Coulomb,0,0.0,0.0
+635,635,Intensity (physics),Force,1,0.22225807614496867,0.0
+636,636,Deformation (engineering),Fatigue (material),0,0.0,0.0
+637,637,Wave,Electron,0,0.0,0.0
+638,638,Work (physics),Planet,0,0.0,0.0
+639,639,Newton's law of universal gravitation,Velocity,0,0.0953929276492407,0.0953929276492407
+640,640,Relative velocity,Velocity,1,1.7657839828247943,1.7657839828247943
+641,641,Energy,Wavelength,0,0.0,0.0
+642,642,Free fall,Planet,0,0.30478696613573025,0.30478696613573025
+643,643,Telescope,Planet,0,0.1405270022442705,0.1405270022442705
+644,644,Hooke's law,Length,1,0.10140741236461426,0.10140741236461426
+645,645,Position (vector),Potential energy,0,0.0,0.0
+646,646,Electromagnetic spectrum,Magnetic field,1,0.2189630705226948,0.2189630705226948
+647,647,Potential energy,Energy,1,0.6430438106223857,0.6430438106223857
+648,648,Electrostatics,Euclidean vector,1,0.005793410995448878,0.0
+649,649,Speed,Work (physics),0,0.023318191353583668,0.0
+650,650,Motion graphs and derivatives,Displacement (vector),1,0.03497555349098545,0.03497555349098545
+651,651,Electrostatics,Electric potential energy,1,0.010540994423941654,0.010540994423941654
+652,652,Displacement (vector),Electrostatics,0,0.0,0.0
+653,653,Force,Mechanical energy,0,0.0,0.0
+654,654,Voltage,Electric field,0,0.202350058445962,0.202350058445962
+655,655,Electrostatics,Coulomb's law,1,0.0,0.0
+656,656,Gravitational acceleration,Euclidean vector,1,0.13119982355709436,0.0
+657,657,Crest (physics),Frequency,0,0.0,0.0
+658,658,Dielectric,Frequency,0,0.586476469073438,0.586476469073438
+659,659,Electric potential,Electroscope,0,0.10434378469064527,0.0
+660,660,Shock wave,Magnetic field,0,0.18080582736865355,0.18080582736865355
+661,661,Hooke's law,Dielectric,0,0.053770797701070766,0.053770797701070766
+662,662,Physics,Motion,0,0.0,0.0
+663,663,Newton's law of universal gravitation,Free fall,0,0.0,0.0
+664,664,Mass,Elastic collision,0,0.0,0.0
+665,665,Electron,Electromagnetic spectrum,0,0.0,0.0
+666,666,Acceleration,Motion,1,0.14317792404565774,0.14317792404565774
+667,667,Gravity,Gravitational field,0,0.0,0.0
+668,668,Light,Reflection (physics),0,0.0,0.0
+669,669,Magnetism,Magnetic field,0,0.0,0.0
+670,670,Energy level,Emission spectrum,0,0.0,0.0
+671,671,Physics,Lever,0,0.0,0.0
+672,672,Resonance (particle physics),Scattering,0,0.0,0.0
+673,673,Energy,Tension (physics),0,0.0,0.0
+674,674,Kinetic energy,Elastic collision,0,0.0,0.0
+675,675,Wavelength,Scattering,0,0.0,0.0
+676,676,Capacitance,Length,0,0.09398200059283736,0.09398200059283736
+677,677,Energy level,Absorption spectroscopy,0,0.0,0.0
+678,678,Acceleration,Photoelectric effect,0,0.0,0.0
+679,679,Strength of materials,Hardness,0,0.5463108173459482,0.0
+680,680,Wave,Force,0,0.08999332797098179,0.08999332797098179
+681,681,Electron,Contact force,0,0.0,0.0
+682,682,Friction,Electron,0,0.0,0.0
+683,683,Electromagnetic radiation,Electric field,1,0.06445468084408155,0.06445468084408155
+684,684,Distance,Electric potential,0,0.0,0.0
+685,685,Gravity of Earth,Euclidean vector,1,0.06766704042684289,0.0
+686,686,Magnetism,Le Sage's theory of gravitation,0,0.11228993489211114,0.0
+687,687,Snell's law,Wave,1,0.16224246582974208,0.16224246582974208
+688,688,Ray (optics),Snell's law,0,0.0,0.0
+689,689,Light,Mirror image,0,0.0,0.0
+690,690,Displacement (vector),Physics,1,1.0,1.0
+691,691,Velocity,Gravity of Earth,0,0.0,0.0
+692,692,Refracting telescope,Wave,1,0.16224246582974208,0.16224246582974208
+693,693,Position (vector),Euclidean vector,1,0.0,0.0
+694,694,Hooke's law,Torque,0,0.0,0.0
+695,695,Crest (physics),Physics,1,1.0,1.0
+696,696,Field (physics),Electromotive force,0,0.0,0.0
+697,697,Angle of incidence,Total internal reflection,0,0.0,0.0
+698,698,Gravitational acceleration,Energy,0,0.0,0.0
+699,699,Inertial frame of reference,Physics,1,1.0,1.0
+700,700,Pigment,Color,1,1.300812649762373,1.300812649762373
+701,701,Magnetism,Capacitance,0,0.0,0.0
+702,702,Wavelength,Snell's law,0,0.0,0.0
+703,703,Euclidean vector,Position (vector),0,0.025839320199613026,0.0
+704,704,Rarefaction,Wave,1,0.4014122442726693,0.4014122442726693
+705,705,Distance,Acceleration,0,0.0,0.0
+706,706,Electric potential energy,Force,1,0.1377366525559217,0.1377366525559217
+707,707,Electric potential energy,Electric potential,0,0.0,0.0
+708,708,Electron,Electromotive force,0,0.0,0.0
+709,709,Hardness,Kilogram,0,0.0,0.0
+710,710,Electrical conductor,Electrical resistance and conductance,0,0.0,0.0
+711,711,Elastic collision,Collision,1,0.3230463935440065,0.3230463935440065
+712,712,Physics,Reflection (physics),0,0.0,0.0
+713,713,Newton's law of universal gravitation,Electric field,0,0.0,0.0
+714,714,Emission spectrum,Wavelength,1,0.11520291032279648,0.11520291032279648
+715,715,Snell's law,Ray (optics),1,0.3042222370938428,0.0
+716,716,Sound intensity,Distance,0,0.09536083745600116,0.09536083745600116
+717,717,Friction,Force,1,0.0,0.0
+718,718,Friction,Hardness,0,0.0,0.0
+719,719,Transmission medium,Wave,1,0.0,0.0
+720,720,Deformation (engineering),Plasticity (physics),0,0.13914187584457252,0.13914187584457252
+721,721,Tangential and normal components,Euclidean vector,0,0.0,0.0
+722,722,Magnetic field,Mass,0,0.11529827246263474,0.11529827246263474
+723,723,Force,Tension (physics),0,0.0,0.0
+724,724,Electron,Field line,0,0.202350058445962,0.0
+725,725,Light,Photoelectric effect,0,0.0,0.0
+726,726,Speed,Magnetism,0,0.0,0.0
+727,727,Energy,Elastic collision,0,0.0,0.0
+728,728,Friction,Temperature,0,0.0,0.0
+729,729,Torque,Gravity,0,0.09127779903291916,0.09127779903291916
+730,730,Capacitor,Insulator (electricity),0,0.07901884307222637,0.0
+731,731,Power (physics),Physics,1,1.0,1.0
+732,732,Electric current,Electromagnetic radiation,0,0.0,0.0
+733,733,Scalar (mathematics),Distance,0,0.09398200059283736,0.0
+734,734,Fracture,Hardness,0,0.11306623774040228,0.0
+735,735,Electromotive force,Force,1,0.06825343050762192,0.06825343050762192
+736,736,Magnetic field,Wave,0,0.11529827246263474,0.11529827246263474
+737,737,Wave,Motion,0,0.045924994505210974,0.045924994505210974
+738,738,Velocity,Work (physics),0,0.023318191353583668,0.0
+739,739,Friction,Torque,0,0.0,0.0
+740,740,Speed,Distance,1,0.042023419895864916,0.042023419895864916
+741,741,Amplitude,Standing wave,0,0.0,0.0
+742,742,Electromagnetic spectrum,Wave,1,0.13503389834907809,0.13503389834907809
+743,743,Physics,Electromagnetic radiation,0,0.0,0.0
+744,744,Speed,Physics,1,1.0,1.0
+745,745,Coulomb's law,Coulomb,0,0.26856667309580856,0.26856667309580856
+746,746,Dielectric,Electromagnetic spectrum,0,0.0,0.0
+747,747,Electrostatics,Energy,1,0.02134444682255548,0.02134444682255548
+748,748,Hooke's law,Deformation (engineering),1,0.1269486935529138,0.0
+749,749,Wave,Magnet,0,0.0,0.0
+750,750,Energy,Creep (deformation),0,0.0,0.0
+751,751,Electromotive force,Magnet,1,0.2133508762950112,0.2133508762950112
+752,752,Electrostatics,Work (physics),1,0.007346827412772938,0.0
+753,753,Speed,Magnet,0,0.0,0.0
+754,754,Electric field,Coulomb's law,1,0.0,0.0
+755,755,Frequency,Hooke's law,0,0.0,0.0
+756,756,Physics,Electrical conductor,0,0.0,0.0
+757,757,Wave,Photoelectric effect,0,0.0,0.0
+758,758,Electroscope,Coulomb's law,0,0.0,0.0
+759,759,Energy,Mass,0,0.0348259111259092,0.0348259111259092
+760,760,Ray (optics),Diffraction,0,0.0,0.0
+761,761,Frequency,Metre,0,0.09398200059283736,0.0
+762,762,Speed,Equations of motion,0,0.0,0.0
+763,763,Creep (deformation),Deformation (engineering),1,0.2308158064598433,0.0
+764,764,Wavelength,Speed,0,0.019404219591481257,0.019404219591481257
+765,765,Motion,Mechanical energy,0,0.0,0.0
+766,766,Speed,Projectile motion,0,0.0,0.0
+767,767,Wavelength,Absorption spectroscopy,0,0.0,0.0
+768,768,Mass,Wavelength,0,0.0,0.0
+769,769,Motion,Projectile motion,0,0.0,0.0
+770,770,Shock wave,Physics,1,1.0,1.0
+771,771,Energy,Dispersion (optics),0,0.0,0.0
+772,772,Physics,Friction,0,0.0,0.0
+773,773,Specular reflection,Physics,1,1.0,0.0
+774,774,Electromagnetic spectrum,Force,1,0.13686405428787266,0.13686405428787266
+775,775,Speed,Elastic collision,0,0.0,0.0
+776,776,Projectile motion,Position (vector),1,0.12042968878748213,0.0
+777,777,Electromotive force,Electric potential,0,0.07103008550286838,0.07103008550286838
+778,778,Mechanical energy,Displacement (vector),1,0.2133508762950112,0.0
+779,779,Ohm,Velocity,0,0.0,0.0
+780,780,Sonic boom,Speed,0,0.6180243939886779,0.6180243939886779
+781,781,Gravity,Gravitational constant,0,0.0,0.0
+782,782,Distance,Gravitational constant,0,0.0,0.0
+783,783,Wave,Absorption spectroscopy,0,0.0,0.0
+784,784,Electromagnetic spectrum,Electromagnetic radiation,1,0.3201039945386415,0.3201039945386415
+785,785,Force,Gravity of Earth,0,0.0,0.0
+786,786,Mass,Kilogram,0,0.26259852480479057,0.26259852480479057
+787,787,Acceleration,Free fall,0,0.0,0.0
+788,788,Electromotive force,Energy,1,0.2921521158837281,0.2921521158837281
+789,789,Electron,Emission spectrum,0,0.0,0.0
+790,790,Electron,Capacitance,0,0.0,0.0
+791,791,Distance,Length,0,0.09398200059283736,0.09398200059283736
+792,792,Force,Lever,0,0.0,0.0
+793,793,Displacement (vector),Acceleration,0,0.0,0.0
+794,794,Emission spectrum,Field (physics),1,0.202350058445962,0.0
+795,795,Scalar (mathematics),Euclidean vector,0,0.5413363234147431,0.5413363234147431
+796,796,Energy,Magnet,0,0.0,0.0
+797,797,Magnetic field,Electromagnetic spectrum,0,0.0,0.0
+798,798,Electrostatics,Force,1,0.07479828000835279,0.07479828000835279
+799,799,Interference (wave propagation),Geometrical optics,0,0.0,0.0
+800,800,Amplitude,Frequency,0,0.0,0.0
+801,801,Specular reflection,Ray (optics),1,0.25351853091153564,0.0
+802,802,Equations of motion,Displacement (vector),1,0.1600131572212584,0.0
+803,803,Relative velocity,Physics,1,1.0,1.0
+804,804,Voltage,Ohm,0,0.0,0.0
+805,805,Free fall,Normal force,0,0.0,0.0
+806,806,Plane mirror,Reflection (physics),0,0.2374747788945221,0.0
+807,807,Physics,Transverse wave,0,0.0,0.0
+808,808,Work (physics),Resultant force,0,0.0,0.0
+809,809,Electroscope,Voltage,0,0.0,0.0
+810,810,Physics,Dielectric,0,0.0,0.0
+811,811,Free fall,Euclidean vector,1,0.13119982355709436,0.0
+812,812,Emission spectrum,Collision,0,0.04596188526032614,0.04596188526032614
+813,813,Electromotive force,Electrical resistance and conductance,0,0.0,0.0
+814,814,Electron,Joule,0,0.0893864001887374,0.0893864001887374
+815,815,Free fall,Motion,1,0.28976484628287874,0.28976484628287874
+816,816,Wave,Refracting telescope,0,0.0,0.0
+817,817,Displacement (vector),Equations of motion,0,0.0,0.0
+818,818,Acceleration,Physics,1,1.0,1.0
+819,819,Motion,Distance,0,0.0,0.0
+820,820,Field line,Coulomb's law,0,0.0,0.0
+821,821,Photoelectric effect,Electroscope,0,0.08534035051800448,0.08534035051800448
+822,822,Plasticity (physics),Elasticity (physics),0,0.0,0.0
+823,823,Refraction,Ray (optics),0,0.17983580517862627,0.0
+824,824,Force,Motion,0,0.020982971627380883,0.020982971627380883
+825,825,Scattering,Physics,1,1.0,1.0
+826,826,Refraction,Wave,1,0.007095377253153529,0.007095377253153529
+827,827,Reflection (physics),Physics,1,1.0,1.0
+828,828,Creep (deformation),Temperature,0,0.09398200059283736,0.09398200059283736
+829,829,Hooke's law,Elasticity (physics),1,0.0,0.0
+830,830,Speed,Sound intensity,0,0.0,0.0
+831,831,Scattering,Collision,0,0.04596188526032614,0.04596188526032614
+832,832,Equations of motion,Gravitational field,0,0.0,0.0
+833,833,Work (physics),Kinetic energy,0,0.0,0.0
+834,834,Physics,Le Sage's theory of gravitation,0,0.0,0.0
+835,835,Refraction,Reflection (physics),0,0.01818548463545153,0.0
+836,836,Kinetic energy,Velocity,0,0.18110604952049167,0.18110604952049167
+837,837,Energy,Field (physics),0,0.028646726420921264,0.0
+838,838,Electron,Motion,0,0.0893864001887374,0.0893864001887374
+839,839,Speed,Field (physics),0,0.0,0.0
+840,840,Field (physics),Magnetic field,0,0.0,0.0
+841,841,Speed,Refractive index,0,0.0,0.0
+842,842,Ohm,Kilogram,0,0.0,0.0
+843,843,Physics,Crest (physics),0,0.0,0.0
+844,844,Frame of reference,Motion,1,0.03527572041704611,0.03527572041704611
+845,845,Dielectric,Temperature,0,0.09398200059283736,0.09398200059283736
+846,846,Hooke's law,Temperature,0,0.10140741236461426,0.10140741236461426
+847,847,Euclidean vector,Projectile motion,0,0.0,0.0
+848,848,Acceleration,Relative velocity,0,0.0,0.0
+849,849,Euclidean vector,Motion graphs and derivatives,0,0.0,0.0
+850,850,Physics,Relative velocity,0,0.0,0.0
+851,851,Electromagnetic radiation,Temperature,0,0.09398200059283736,0.09398200059283736
+852,852,Position (vector),Physical quantity,0,0.09398200059283736,0.0
+853,853,Fracture,Magnet,0,0.2004453056098639,0.0
+854,854,Motion,Speed,0,0.0,0.0
+855,855,Elasticity (physics),Force,1,0.20476029152286576,0.20476029152286576
+856,856,Absorption spectroscopy,Frequency,1,0.15340976885032975,0.15340976885032975
+857,857,Gravity,Acceleration,0,0.015956374927553522,0.015956374927553522
+858,858,Mass,Gravitational acceleration,0,0.0,0.0
+859,859,Equations of motion,Velocity,1,0.2303196499336688,0.2303196499336688
+860,860,Electric current,Magnetic field,0,0.15591062138868386,0.15591062138868386
+861,861,Force,Magnetism,0,0.0,0.0
+862,862,Electric potential energy,Displacement (vector),1,0.08534035051800448,0.0
+863,863,Force,Gravity,0,0.0,0.0
+864,864,Electromagnetic spectrum,Electric current,1,0.08534035051800448,0.08534035051800448
+865,865,Relative velocity,Distance,1,0.09398200059283736,0.0
+866,866,Wave,Emission spectrum,0,0.0,0.0
+867,867,Electrical conductor,Physics,1,1.0,1.0
+868,868,Joule,Potential energy,0,0.0,0.0
+869,869,Wave,Velocity,0,0.0953929276492407,0.0953929276492407
+870,870,Emission spectrum,Electron,1,0.23543786437663924,0.23543786437663924
+871,871,Force,Normal force,0,0.0,0.0
+872,872,Electric current,Series and parallel circuits,0,0.06495689570939972,0.0
+873,873,Ray (optics),Wavelength,0,0.23564231656935644,0.23564231656935644
+874,874,Lever,Power (physics),0,0.02298066507836205,0.0
+875,875,Transverse wave,Wave,1,0.0,0.0
+876,876,Frame of reference,Inertial frame of reference,0,0.1484540264527033,0.1484540264527033
+877,877,Refraction,Refracting telescope,0,0.0,0.0
+878,878,Euclidean vector,Work (physics),0,0.008219439097814933,0.0
+879,879,Intensity (physics),Refractive index,0,0.11642531754888755,0.11642531754888755
+880,880,Electrical polarity,Force,0,0.0,0.0
+881,881,Electron,Scattering,0,0.0,0.0
+882,882,Displacement (vector),Motion,1,0.03687916225418457,0.03687916225418457
+883,883,Force,Electric current,0,0.0,0.0
+884,884,Refracting telescope,Virtual image,0,0.11642531754888755,0.11642531754888755
+885,885,Distance,Displacement (vector),0,0.5579945995407986,0.0
+886,886,Electromagnetic radiation,Physics,1,1.0,1.0
+887,887,Joule,Kilogram,0,0.0,0.0
+888,888,Ray (optics),Total internal reflection,0,0.0,0.0
+889,889,Wave,Snell's law,0,0.0,0.0
+890,890,Inelastic collision,Kinetic energy,1,0.36565741890695785,0.36565741890695785
+891,891,Wave,Transmission medium,0,0.0,0.0
+892,892,Geometrical optics,Real image,0,0.0,0.0
+893,893,Acceleration,Projectile motion,0,0.0,0.0
+894,894,Speed,Dispersion (optics),0,0.0,0.0
+895,895,Light,Dispersion (optics),0,0.0,0.0
+896,896,Velocity,Planet,0,0.0,0.0
+897,897,Work (physics),Power (physics),0,0.0,0.0
+898,898,Mass,Projectile motion,0,0.0,0.0
+899,899,Electrical conductor,Insulator (electricity),0,0.0917038527662114,0.0
+900,900,Electric potential energy,Electrostatics,0,0.0,0.0
+901,901,Friction,Potential energy,0,0.0,0.0
+902,902,Hardness,Force,1,0.0,0.0
+903,903,Electric field,Absorption spectroscopy,0,0.0,0.0
+904,904,Physics,Refraction,0,0.0,0.0
+905,905,Relative velocity,Elastic collision,0,0.0,0.0
+906,906,Geometrical optics,Virtual image,0,0.0,0.0
+907,907,Physics,Creep (deformation),0,0.0,0.0
+908,908,Geometrical optics,Refractive index,0,0.0,0.0
+909,909,Magnetic field,Planet,0,0.11529827246263474,0.11529827246263474
+910,910,Electromagnetic radiation,Le Sage's theory of gravitation,0,0.11228993489211114,0.0
+911,911,Newton's law of universal gravitation,Energy,0,0.0,0.0
+912,912,Relative velocity,Speed,1,0.15450609849716948,0.15450609849716948
+913,913,Snell's law,Electromagnetic radiation,0,0.0,0.0
+914,914,Reflection (physics),Wave,1,0.09165937342482876,0.09165937342482876
+915,915,Acceleration,Tension (physics),0,0.0,0.0
+916,916,Force,Strength of materials,0,0.0,0.0
+917,917,Joule,Electrostatics,0,0.0,0.0
+918,918,Capacitance,Planet,0,0.08250931216190446,0.08250931216190446
+919,919,Magnetic field,Metre,0,0.07247835752589889,0.07247835752589889
+920,920,Snell's law,Reflection (physics),0,0.1512972697129779,0.1512972697129779
+921,921,Voltage,Hertz,0,0.04990574540960068,0.04990574540960068
+922,922,Potential energy,Velocity,0,0.14198477467861054,0.14198477467861054
+923,923,Hooke's law,Physics,1,1.0,1.0
+924,924,Light,Transverse wave,0,0.0,0.0
+925,925,Electrical resistance and conductance,Length,0,0.1067446445943308,0.1067446445943308
+926,926,Interference (wave propagation),Laser,0,0.0,0.0
+927,927,Energy,Electron,0,0.0,0.0
+928,928,Wave,Hertz,0,0.04990574540960068,0.04990574540960068
+929,929,Euclidean vector,Field (physics),0,0.0,0.0
+930,930,Projectile motion,Free fall,0,0.036017602191638416,0.036017602191638416
+931,931,Photoelectric effect,Amplitude,0,0.21557958136753647,0.21557958136753647
+932,932,Electrostatics,Position (vector),1,0.07148794311585696,0.0
+933,933,Shock wave,Rarefaction,0,0.15591062138868386,0.0
+934,934,Emission spectrum,Energy,1,0.4778310162009419,0.4778310162009419
+935,935,Magnet,Temperature,0,0.0903222665906116,0.0903222665906116
+936,936,Elasticity (physics),Temperature,0,0.09398200059283736,0.09398200059283736
+937,937,Wave,Crest (physics),0,0.02567259837596444,0.0
+938,938,Capacitance,Potential energy,0,0.11529827246263474,0.11529827246263474
+939,939,Rarefaction,Mass,0,0.11529827246263474,0.11529827246263474
+940,940,Collision,Velocity,0,0.18110604952049167,0.18110604952049167
+941,941,Light,Optical microscope,0,0.11642531754888755,0.0
+942,942,Force,Power (physics),0,0.0,0.0
+943,943,Potential energy,Gravitational field,0,0.08163886283556691,0.08163886283556691
+944,944,Speed,Position (vector),0,0.146965043944046,0.0
+945,945,Physics,Plasticity (physics),0,0.0,0.0
+946,946,Gravity of Earth,Velocity,1,0.0953929276492407,0.0
+947,947,Hooke's law,Kilogram,0,0.1199919484046136,0.1199919484046136
+948,948,Ray (optics),Specular reflection,0,0.0,0.0
+949,949,Inertial frame of reference,Force,0,0.0,0.0
+950,950,Torque,Velocity,0,0.10817887594560806,0.10817887594560806
+951,951,Friction,Work (physics),0,0.0,0.0
+952,952,Motion graphs and derivatives,Distance,1,0.09398200059283736,0.09398200059283736
+953,953,Diffraction,Refractive index,0,0.11642531754888755,0.11642531754888755
+954,954,Motion,Doppler effect,0,0.0,0.0
+955,955,Free fall,Velocity,1,0.28711934680077955,0.28711934680077955
+956,956,Refractive index,Electromagnetic radiation,0,0.0,0.0
+957,957,Ohm,Metre,0,0.0,0.0
+958,958,Electric potential energy,Voltage,0,0.0,0.0
+959,959,Magnetic field,Electric field,0,0.030574656297833562,0.030574656297833562
+960,960,Distance,Le Sage's theory of gravitation,0,0.0,0.0
+961,961,Dielectric,Specular reflection,0,0.1512972697129779,0.0
+962,962,Magnetic field,Mechanical energy,0,0.11529827246263474,0.0
+963,963,Mechanical energy,Physics,1,1.0,1.0
+964,964,Physics,Sound intensity,0,0.0,0.0
+965,965,Mass,Field (physics),0,0.0,0.0
+966,966,Frequency,Wavelength,0,0.3005293312768604,0.3005293312768604
+967,967,Position (vector),Mass,0,0.0,0.0
+968,968,Projectile motion,Physics,1,1.0,0.0
+969,969,Torque,Power (physics),0,0.02298066507836205,0.0
+970,970,Electromagnetic radiation,Coulomb's law,1,0.2104595126010915,0.2104595126010915
+971,971,Interference (wave propagation),Kilogram,0,0.1199919484046136,0.0
+972,972,Wave,Rarefaction,0,0.0,0.0
+973,973,Amplitude,Electric field,0,0.0,0.0
+974,974,Angle of incidence,Specular reflection,0,0.0,0.0
+975,975,Electromagnetic radiation,Electric current,1,0.08534035051800448,0.08534035051800448
+976,976,Position (vector),Displacement (vector),0,0.0,0.0
+977,977,Energy,Photoelectric effect,0,0.0,0.0
+978,978,Gravitational acceleration,Speed,1,0.15450609849716948,0.15450609849716948
+979,979,Position (vector),Distance,0,0.0,0.0
+980,980,Hooke's law,Creep (deformation),0,0.0,0.0
+981,981,Absorption spectroscopy,Length,0,0.14097300088925602,0.14097300088925602
+982,982,Kinetic energy,Inelastic collision,0,0.0,0.0
+983,983,Velocity,Gravitational acceleration,0,0.0,0.0
+984,984,Inertial frame of reference,Elastic collision,0,0.0,0.0
+985,985,Physics,Frame of reference,0,0.0,0.0
+986,986,Magnet,Field line,0,0.15924822216958068,0.15924822216958068
+987,987,Hooke's law,Amplitude,0,0.15638184860531265,0.15638184860531265
+988,988,Coulomb's law,Electric potential,0,0.07103008550286838,0.07103008550286838
+989,989,Physics,Elasticity (physics),0,0.0,0.0
+990,990,Ohm's law,Series and parallel circuits,0,0.2649897202449685,0.0
+991,991,Mass,Mechanical energy,0,0.0,0.0
+992,992,Field line,Mass,0,0.11529827246263474,0.11529827246263474
+993,993,Telescope,Electromagnetic spectrum,0,0.0,0.0
+994,994,Newton's laws of motion,Motion,1,0.058596891137204364,0.058596891137204364
+995,995,Refractive index,Optical microscope,0,0.11642531754888755,0.11642531754888755
+996,996,Inertial frame of reference,Distance,1,0.0,0.0
+997,997,Mass,Free fall,0,0.0,0.0
+998,998,Electric current,Electromagnetic spectrum,0,0.0,0.0
+999,999,Displacement (vector),Motion graphs and derivatives,0,0.0,0.0
+1000,1000,Collision,Inelastic collision,0,0.0,0.0
+1001,1001,Motion,Relative velocity,0,0.0,0.0
+1002,1002,Electromagnetic radiation,Voltage,0,0.08534035051800448,0.08534035051800448
+1003,1003,Photoelectric effect,Physics,1,1.0,1.0
+1004,1004,Wave,Wavelength,0,0.032604597261168815,0.032604597261168815
+1005,1005,Magnet,Magnetism,0,0.5862348782959316,0.5862348782959316
+1006,1006,Temperature,Force,0,0.0,0.0
+1007,1007,Acceleration,Potential energy,0,0.0,0.0
+1008,1008,Electrical resistance and conductance,Temperature,0,0.018719575784834814,0.018719575784834814
+1009,1009,Light,Electromagnetic spectrum,0,0.0,0.0
+1010,1010,Shock wave,Temperature,0,0.09398200059283736,0.09398200059283736
+1011,1011,Physics,Potential energy,0,0.0,0.0
+1012,1012,Refractive index,Transverse wave,0,0.0,0.0
+1013,1013,Refractive index,Real image,0,0.0,0.0
+1014,1014,Frequency,Absorption spectroscopy,0,0.0,0.0
+1015,1015,Field (physics),Gravitational field,0,0.13606477139261153,0.13606477139261153
+1016,1016,Wave,Gravitational field,0,0.1199919484046136,0.1199919484046136
+1017,1017,Dielectric,Insulator (electricity),1,0.07901884307222637,0.0
+1018,1018,Speed,Energy,0,0.0,0.0
+1019,1019,Potential energy,Physics,1,1.0,1.0
+1020,1020,Electric field,Electromagnetic radiation,0,0.0,0.0
+1021,1021,Contact force,Friction,0,0.08250931216190446,0.08250931216190446
+1022,1022,Electric potential,Displacement (vector),1,0.2133508762950112,0.0
+1023,1023,Electromagnetic spectrum,Field (physics),1,0.04968416613628532,0.0
+1024,1024,Sonic boom,Shock wave,0,0.004943759520874807,0.004943759520874807
+1025,1025,Physics,Photoelectric effect,0,0.0,0.0
+1026,1026,Specular reflection,Distance,0,0.09398200059283736,0.09398200059283736
+1027,1027,Le Sage's theory of gravitation,Motion,1,0.04962333758972847,0.04962333758972847
+1028,1028,Capacitance,Electric charge,1,0.2189630705226948,0.2189630705226948
+1029,1029,Energy,Distance,0,0.011168386368720858,0.011168386368720858
+1030,1030,Energy,Gravitational field,0,0.04903235005139154,0.04903235005139154
+1031,1031,Energy,Refraction,0,0.0,0.0
+1032,1032,Refractive index,Dispersion (optics),0,0.0,0.0
+1033,1033,Electric field,Energy,1,0.11529827246263474,0.11529827246263474
+1034,1034,Non-inertial reference frame,Force,0,0.0,0.0
+1035,1035,Electromagnetic spectrum,Energy,1,0.13686405428787266,0.13686405428787266
+1036,1036,Electric potential,Electric field,1,0.17344168663498308,0.17344168663498308
+1037,1037,Euclidean vector,Scalar (mathematics),0,0.0,0.0
+1038,1038,Voltage,Energy,0,0.1678001896357823,0.1678001896357823
+1039,1039,Coulomb's law,Electromagnetic radiation,0,0.0,0.0
+1040,1040,Electric field,Distance,0,0.00968508505412512,0.00968508505412512
+1041,1041,Speed,Temperature,0,0.09398200059283736,0.0
+1042,1042,Distance,Potential energy,0,0.0,0.0
+1043,1043,Speed,Relative velocity,0,0.0,0.0
+1044,1044,Emission spectrum,Force,1,0.22225807614496867,0.22225807614496867
+1045,1045,Electromagnetic radiation,Energy level,0,0.017743143567891258,0.017743143567891258
+1046,1046,Electric potential,Euclidean vector,1,0.11742210458750801,0.0
+1047,1047,Tension (physics),Potential energy,0,0.07763075167608605,0.07763075167608605
+1048,1048,Le Sage's theory of gravitation,Planet,0,0.0,0.0
+1049,1049,Voltage,Ohm's law,0,0.0,0.0
+1050,1050,Lever,Work (physics),0,0.023318191353583668,0.0
+1051,1051,Work (physics),Mechanical energy,0,0.0,0.0
+1052,1052,Work (physics),Length,0,0.06343785040016521,0.06343785040016521
+1053,1053,Amplitude,Geometrical optics,0,0.0,0.0
+1054,1054,Hooke's law,Tension (physics),0,0.30779703717909634,0.0
+1055,1055,Field line,Gravitational field,0,0.13606477139261153,0.13606477139261153
+1056,1056,Magnetism,Voltage,0,0.0,0.0
+1057,1057,Photoelectric effect,Electromagnetic spectrum,0,0.05304416529970495,0.0
+1058,1058,Light,Total internal reflection,0,0.0,0.0
+1059,1059,Electromagnetic radiation,Frequency,0,0.053496164408725774,0.053496164408725774
+1060,1060,Electrostatics,Coulomb,0,0.0,0.0
+1061,1061,Electrical conductor,Capacitance,0,0.0,0.0
+1062,1062,Wavelength,Standing wave,0,0.0,0.0
+1063,1063,Force,Coulomb,0,0.0,0.0
+1064,1064,Gravitational field,Force,1,0.2730137220304877,0.2730137220304877
+1065,1065,Wave,Specular reflection,0,0.0,0.0
+1066,1066,Gravitational acceleration,Acceleration,1,0.015956374927553522,0.015956374927553522
+1067,1067,Speed,Doppler effect,0,0.0,0.0
+1068,1068,Direction (geometry),Distance,0,0.0,0.0
+1069,1069,Physics,Electrostatics,0,0.0,0.0
+1070,1070,Physics,Magnetism,0,0.0,0.0
+1071,1071,Wavelength,Emission spectrum,0,0.0,0.0
+1072,1072,Magnetic field,Equations of motion,0,0.007978187463776761,0.0
+1073,1073,Frequency,Emission spectrum,0,0.0,0.0
+1074,1074,Elasticity (physics),Potential energy,0,0.11529827246263474,0.0
+1075,1075,Electric potential,Potential energy,1,0.2308158064598433,0.2308158064598433
+1076,1076,Le Sage's theory of gravitation,Temperature,0,0.060099307669666535,0.060099307669666535
+1077,1077,Laser,Physics,0,1.0,1.0
+1078,1078,Physics,Normal force,0,0.0,0.0
+1079,1079,Electron,Velocity,0,0.11006876267220082,0.11006876267220082
+1080,1080,Direction (geometry),Euclidean vector,0,0.0,0.0
+1081,1081,Electric current,Insulator (electricity),0,0.04488863671876762,0.0
+1082,1082,Physics,Equations of motion,0,0.0,0.0
+1083,1083,Acceleration,Normal force,0,0.0,0.0
+1084,1084,Strength of materials,Physics,1,1.0,0.0
+1085,1085,Motion,Electric potential,0,0.0,0.0
+1086,1086,Work (physics),Kilogram,0,0.0,0.0
+1087,1087,Collision,Elastic collision,0,0.0,0.0
+1088,1088,Potential energy,Kinetic energy,0,0.0,0.0
+1089,1089,Physics,Newton's laws of motion,0,0.0,0.0
+1090,1090,Mechanical energy,Velocity,1,0.06019718123266344,0.06019718123266344
+1091,1091,Capacitance,Force,0,0.07901884307222637,0.07901884307222637
+1092,1092,Speed,Mechanical energy,0,0.0,0.0
+1093,1093,Electromotive force,Field (physics),1,0.202350058445962,0.0
+1094,1094,Scattering,Energy,0,0.2762667762493883,0.2762667762493883
+1095,1095,Field line,Velocity,0,0.0953929276492407,0.0953929276492407
+1096,1096,Physics,Strength of materials,0,0.0,0.0
+1097,1097,Interference (wave propagation),Length,0,0.09398200059283736,0.09398200059283736
+1098,1098,Fatigue (material),Strength of materials,0,0.11306623774040228,0.0
+1099,1099,Lever,Distance,0,0.10779920755895783,0.10779920755895783
+1100,1100,Electromagnetic radiation,Field (physics),1,0.09668270167060927,0.0
+1101,1101,Voltage,Electron,0,0.11642531754888755,0.11642531754888755
+1102,1102,Distance,Work (physics),0,0.023318191353583668,0.0
+1103,1103,Refraction,Refractive index,0,0.5950508443852397,0.5950508443852397
+1104,1104,Wavelength,Amplitude,0,0.2620684825528591,0.2620684825528591
+1105,1105,Elasticity (physics),Fatigue (material),0,0.0,0.0
+1106,1106,Coulomb's law,Force,0,0.17373600492849214,0.17373600492849214
+1107,1107,Potential energy,Elastic collision,0,0.0,0.0
+1108,1108,Elastic collision,Speed,1,0.15450609849716948,0.15450609849716948
+1109,1109,Newton's law of universal gravitation,Coulomb's law,0,0.0,0.0
+1110,1110,Joule,Voltage,0,0.0,0.0
+1111,1111,Relative velocity,Motion,1,0.08113415695920606,0.08113415695920606
+1112,1112,Electromagnetic spectrum,Length,0,0.09398200059283736,0.09398200059283736
+1113,1113,Electric potential,Mass,0,0.11529827246263474,0.11529827246263474
+1114,1114,Free fall,Force,1,0.07800392058013933,0.07800392058013933
+1115,1115,Pigment,Subtractive color,0,0.020659306485148243,0.020659306485148243
+1116,1116,Gravitational field,Gravity,1,0.11529827246263474,0.11529827246263474
+1117,1117,Strength of materials,Fracture,1,0.0,0.0
+1118,1118,Collision,Distance,0,0.09398200059283736,0.09398200059283736
+1119,1119,Wave,Speed,0,0.016658339460611266,0.016658339460611266
+1120,1120,Electric potential energy,Coulomb's law,1,0.0,0.0
+1121,1121,Electric potential,Electron,0,0.11642531754888755,0.11642531754888755
+1122,1122,Mass,Planet,0,0.06464242103236444,0.06464242103236444
+1123,1123,Electric potential energy,Euclidean vector,1,0.08534035051800448,0.0
+1124,1124,Refractive index,Length,0,0.09398200059283736,0.09398200059283736
+1125,1125,Electric potential,Electric potential energy,1,0.1119261953378532,0.1119261953378532
+1126,1126,Gravity of Earth,Mass,1,0.0,0.0
+1127,1127,Dielectric,Dispersion (optics),0,0.0,0.0
+1128,1128,Acceleration,Distance,1,0.09398200059283736,0.09398200059283736
+1129,1129,Crest (physics),Wave,1,0.0,0.0
+1130,1130,Wave,Sonic boom,0,0.0,0.0
+1131,1131,Diffraction,Electron,0,0.11642531754888755,0.11642531754888755
+1132,1132,Displacement (vector),Euclidean vector,1,0.07689436412141239,0.0
+1133,1133,Field line,Capacitance,0,0.0,0.0
+1134,1134,Displacement (vector),Electric potential energy,0,0.0,0.0
+1135,1135,Stiffness,Physics,1,1.0,1.0
+1136,1136,Geometrical optics,Diffraction,0,0.0,0.0
+1137,1137,Mass,Coulomb,0,0.0,0.0
+1138,1138,Collision,Physics,1,1.0,0.0
+1139,1139,Magnetism,Energy,0,0.11529827246263474,0.11529827246263474
+1140,1140,Refractive index,Energy,0,0.11529827246263474,0.11529827246263474
+1141,1141,Shock wave,Speed,1,0.4722445535461659,0.4722445535461659
+1142,1142,Position (vector),Motion graphs and derivatives,0,0.0,0.0
+1143,1143,Gravity,Normal force,0,0.0,0.0
+1144,1144,Equations of motion,Speed,1,0.15450609849716948,0.15450609849716948
+1145,1145,Newton's laws of motion,Kilogram,0,0.036472017333998685,0.0
+1146,1146,Dispersion (optics),Wave,1,0.23015791664219226,0.23015791664219226
+1147,1147,Physics,Inelastic collision,0,0.0,0.0
+1148,1148,Newton's laws of motion,Force,1,0.4792907564535228,0.4792907564535228
+1149,1149,Physics,Gravitational constant,0,0.0,0.0
+1150,1150,Plasticity (physics),Fatigue (material),0,0.0,0.0
+1151,1151,Friction,Mechanical energy,0,0.0,0.0
+1152,1152,Motion,Gravity,0,0.0,0.0
+1153,1153,Normal force,Contact force,1,0.0,0.0
+1154,1154,Electrostatics,Displacement (vector),1,0.0903222665906116,0.0
+1155,1155,Free fall,Distance,1,0.09398200059283736,0.09398200059283736
+1156,1156,Refractive index,Total internal reflection,0,0.0,0.0
+1157,1157,Voltage,Potential energy,0,0.27342795534473746,0.27342795534473746
+1158,1158,Wave,Equations of motion,0,0.007978187463776761,0.0
+1159,1159,Huygens–Fresnel principle,Frequency,0,0.16224246582974208,0.16224246582974208
+1160,1160,Newton's law of universal gravitation,Mass,0,0.0,0.0
+1161,1161,Snell's law,Length,0,0.09398200059283736,0.09398200059283736
+1162,1162,Electric field,Potential energy,0,0.11529827246263474,0.11529827246263474
+1163,1163,Electron,Energy,0,0.11529827246263474,0.11529827246263474
+1164,1164,Electromagnetic radiation,Electromagnetic spectrum,0,0.0,0.0
+1165,1165,Acceleration,Kilogram,0,0.10826036047584048,0.0
+1166,1166,Physics,Magnetic field,0,0.0,0.0
+1167,1167,Motion,Field (physics),0,0.0,0.0
+1168,1168,Acceleration,Gravitational acceleration,0,0.0,0.0
+1169,1169,Acceleration,Magnetic field,0,0.0,0.0
+1170,1170,Plane mirror,Ray (optics),0,0.4862811587075069,0.0
+1171,1171,Motion,Electric potential energy,0,0.0,0.0
+1172,1172,Hardness,Stiffness,0,0.0,0.0
+1173,1173,Electron,Photoelectric effect,0,0.0,0.0
+1174,1174,Electrostatics,Physics,1,1.0,1.0
+1175,1175,Gravitational acceleration,Potential energy,0,0.0,0.0
+1176,1176,Non-inertial reference frame,Inertial frame of reference,0,0.13132471570816062,0.13132471570816062
+1177,1177,Light,Metre,0,0.09398200059283736,0.09398200059283736
+1178,1178,Force,Equations of motion,0,0.007978187463776761,0.007978187463776761
+1179,1179,Hertz,Wavelength,0,0.0,0.0
+1180,1180,Huygens–Fresnel principle,Wavelength,0,0.18038291502181628,0.18038291502181628
+1181,1181,Electron,Magnet,0,0.0,0.0
+1182,1182,Doppler effect,Motion,1,0.07761687836592503,0.07761687836592503
+1183,1183,Energy,Hooke's law,0,0.0,0.0
+1184,1184,Gravity of Earth,Speed,1,0.0953929276492407,0.0953929276492407
+1185,1185,Friction,Free body diagram,0,0.0,0.0
+1186,1186,Electron,Inelastic collision,0,0.0,0.0
+1187,1187,Emission spectrum,Mass,0,0.10475356962837573,0.10475356962837573
+1188,1188,Hardness,Strength of materials,1,0.0,0.0
+1189,1189,Refractive index,Physics,1,1.0,1.0
+1190,1190,Dispersion (optics),Velocity,0,0.15657197877264187,0.15657197877264187
+1191,1191,Hooke's law,Energy,0,0.11529827246263474,0.11529827246263474
+1192,1192,Angle of incidence,Plane mirror,0,0.0,0.0
+1193,1193,Amplitude,Electric current,0,0.0,0.0
+1194,1194,Euclidean vector,Equations of motion,0,0.0,0.0
+1195,1195,Physics,Tension (physics),0,0.0,0.0
+1196,1196,Free fall,Speed,1,0.15450609849716948,0.15450609849716948
+1197,1197,Gravity of Earth,Non-inertial reference frame,0,0.08113415695920606,0.0
+1198,1198,Force,Electric potential,0,0.0,0.0
+1199,1199,Motion,Refractive index,0,0.0,0.0
+1200,1200,Elastic collision,Potential energy,0,0.2287363847800249,0.2287363847800249
+1201,1201,Voltage,Electrostatics,0,0.2133508762950112,0.2133508762950112
+1202,1202,Magnetic field,Electrostatics,0,0.0,0.0
+1203,1203,Electron,Electrical resistance and conductance,0,0.0,0.0
+1204,1204,Hertz,Frequency,1,0.0,0.0
+1205,1205,Displacement (vector),Mechanical energy,0,0.0,0.0
+1206,1206,Energy,Electric field,0,0.0,0.0
+1207,1207,Wave,Scattering,0,0.0,0.0
+1208,1208,Potential energy,Force,1,0.017334204573364296,0.017334204573364296
+1209,1209,Mass,Physics,1,1.0,1.0
+1210,1210,Magnetic field,Emission spectrum,0,0.0,0.0
+1211,1211,Speed,Gravitational field,0,0.0,0.0
+1212,1212,Mirror image,Plane mirror,1,0.215997920827436,0.215997920827436
+1213,1213,Normal force,Friction,0,0.5797479978711988,0.5797479978711988
+1214,1214,Physics,Sonic boom,0,0.0,0.0
+1215,1215,Electric field,Electroscope,0,0.0,0.0
+1216,1216,Dielectric,Torque,0,0.0,0.0
+1217,1217,Friction,Lever,0,0.0,0.0
+1218,1218,Refraction,Diffraction,0,0.0,0.0
+1219,1219,Physics,Dispersion (optics),0,0.0,0.0
+1220,1220,Equations of motion,Gravity,0,0.0,0.0
+1221,1221,Hardness,Fracture,1,0.0,0.0
+1222,1222,Electrical resistance and conductance,Joule,0,0.09220991862692772,0.09220991862692772
+1223,1223,Plane mirror,Mirror image,0,0.04677318641660515,0.04677318641660515
+1224,1224,Scalar multiplication,Position (vector),0,0.14126271862598355,0.0
+1225,1225,Field (physics),Electric field,0,0.0,0.0
+1226,1226,Ohm's law,Magnetic field,0,0.2133508762950112,0.2133508762950112
+1227,1227,Energy,Length,0,0.06343785040016521,0.0
+1228,1228,Electromagnetic spectrum,Frequency,1,0.16224246582974208,0.16224246582974208
+1229,1229,Potential energy,Length,0,0.04885667256811052,0.04885667256811052
+1230,1230,Elastic collision,Motion,1,0.14198477467861054,0.14198477467861054
+1231,1231,Euclidean vector,Velocity,0,0.0,0.0
+1232,1232,Hertz,Electromagnetic radiation,0,0.0,0.0
+1233,1233,Motion,Motion graphs and derivatives,0,0.0,0.0
+1234,1234,Electron,Electrical polarity,0,0.0,0.0
+1235,1235,Electric field,Field (physics),1,0.2856839552836406,0.0
+1236,1236,Position (vector),Work (physics),0,0.009751243656953172,0.0
+1237,1237,Electromagnetic radiation,Absorption spectroscopy,0,0.0,0.0
+1238,1238,Motion,Potential energy,0,0.0,0.0
+1239,1239,Interference (wave propagation),Optical microscope,0,0.0,0.0
+1240,1240,Light,Geometrical optics,0,0.06686420162329956,0.0
+1241,1241,Potential energy,Position (vector),1,0.04587797668094557,0.0
+1242,1242,Speed,Inertial frame of reference,0,0.08250931216190446,0.08250931216190446
+1243,1243,Curved mirror,Laser,0,0.0,0.0
+1244,1244,Potential energy,Motion,1,0.14198477467861054,0.14198477467861054
+1245,1245,Emission spectrum,Absorption spectroscopy,0,0.0,0.0
+1246,1246,Distance,Projectile motion,0,0.0,0.0
+1247,1247,Photoelectric effect,Length,0,0.14097300088925602,0.14097300088925602
+1248,1248,Photoelectric effect,Frequency,0,0.01609234213921019,0.01609234213921019
+1249,1249,Transverse wave,Equations of motion,0,0.007978187463776761,0.0
+1250,1250,Acceleration,Friction,0,0.0,0.0
+1251,1251,Transmission medium,Physics,1,1.0,0.0
+1252,1252,Light,Specular reflection,0,0.0,0.0
+1253,1253,Inelastic collision,Energy,1,0.6560608918090736,0.6560608918090736
+1254,1254,Physics,Mirror image,0,0.0,0.0
+1255,1255,Gravity of Earth,Distance,1,0.09398200059283736,0.09398200059283736
+1256,1256,Distance,Shock wave,0,0.0,0.0
+1257,1257,Length,Hooke's law,0,0.0,0.0
+1258,1258,Electron,Optical microscope,0,0.6380898733574351,0.6380898733574351
+1259,1259,Wave,Potential energy,0,0.11529827246263474,0.0
+1260,1260,Rarefaction,Physics,1,1.0,0.0
+1261,1261,Physics,Standing wave,0,0.0,0.0
+1262,1262,Electric field,Dielectric,0,0.0,0.0
+1263,1263,Hooke's law,Force,1,0.3276164664365852,0.3276164664365852
+1264,1264,Power (physics),Length,0,0.06766704042684289,0.06766704042684289
+1265,1265,Speed,Displacement (vector),0,0.18080582736865355,0.0
+1266,1266,Reflection (physics),Light,1,0.137746953289387,0.137746953289387
+1267,1267,Laser,Dispersion (optics),0,0.0,0.0
+1268,1268,Acceleration,Newton's laws of motion,0,0.0,0.0
+1269,1269,Series and parallel circuits,Voltage,1,0.0,0.0
+1270,1270,Angle of incidence,Refractive index,0,0.0,0.0
+1271,1271,Coulomb's law,Electromotive force,0,0.08534035051800448,0.08534035051800448
+1272,1272,Gravitational field,Normal force,0,0.0,0.0
+1273,1273,Coulomb's law,Field (physics),0,0.01806696950410376,0.0
+1274,1274,Light,Ray (optics),0,0.0,0.0
+1275,1275,Contact force,Normal force,0,0.09579965100453172,0.09579965100453172
+1276,1276,Electric potential,Energy,1,0.16997941287780546,0.16997941287780546
+1277,1277,Hooke's law,Electric field,0,0.202350058445962,0.202350058445962
+1278,1278,Distance,Gravitational acceleration,0,0.0,0.0
+1279,1279,Voltage,Free fall,0,0.036017602191638416,0.0
+1280,1280,Elastic collision,Velocity,1,0.18110604952049167,0.18110604952049167
+1281,1281,Mechanical energy,Mass,1,0.021964068948726826,0.021964068948726826
+1282,1282,Force,Metre,0,0.058333655540381814,0.058333655540381814
+1283,1283,Wave,Field (physics),0,0.1199919484046136,0.0
+1284,1284,Refraction,Velocity,0,0.15657197877264187,0.15657197877264187
+1285,1285,Motion graphs and derivatives,Motion,1,0.3458177181867799,0.0
+1286,1286,Refracting telescope,Gravity,0,0.10475356962837573,0.10475356962837573
+1287,1287,Sound,Sonic boom,0,0.0,0.0
+1288,1288,Lever,Velocity,0,0.10779920755895783,0.10779920755895783
+1289,1289,Electron,Collision,0,0.0,0.0
+1290,1290,Optical microscope,Wavelength,0,0.1052233670960595,0.1052233670960595
+1291,1291,Coulomb,Electromotive force,0,0.0,0.0
+1292,1292,Insulator (electricity),Electric current,1,0.0,0.0
+1293,1293,Magnet,Wave,0,0.11529827246263474,0.11529827246263474
+1294,1294,Interference (wave propagation),Distance,0,0.1408739644236381,0.1408739644236381
+1295,1295,Magnetic field,Tangential and normal components,0,0.0,0.0
+1296,1296,Projectile motion,Force,1,0.04200211108161349,0.04200211108161349
+1297,1297,Torque,Force,1,0.3276164664365852,0.3276164664365852
+1298,1298,Wave,Electric field,0,0.0,0.0
+1299,1299,Gravitational field,Gravity of Earth,0,0.11228993489211114,0.11228993489211114
+1300,1300,Friction,Energy,0,0.0,0.0
+1301,1301,Joule,Mass,0,0.0,0.0
+1302,1302,Electric potential energy,Distance,1,0.08534035051800448,0.08534035051800448
+1303,1303,Acceleration,Length,0,0.09398200059283736,0.0
+1304,1304,Field (physics),Electromagnetic radiation,0,0.0,0.0
+1305,1305,Acceleration,Gravity of Earth,0,0.0,0.0
+1306,1306,Electron,Mass,0,0.10475356962837573,0.10475356962837573
+1307,1307,Dielectric,Distance,0,0.1770986981325736,0.1770986981325736
+1308,1308,Electron,Telescope,0,0.5129950619651604,0.5129950619651604
+1309,1309,Voltmeter,Electroscope,0,0.10434378469064527,0.0
+1310,1310,Euclidean vector,Mechanical energy,0,0.0,0.0
+1311,1311,Electron,Coulomb,0,0.0,0.0
+1312,1312,Hardness,Crystallinity,0,0.0,0.0
+1313,1313,Electron,Electric current,0,0.0,0.0
+1314,1314,Euclidean vector,Physics,0,1.0,1.0
+1315,1315,Projectile motion,Acceleration,1,0.015956374927553522,0.015956374927553522
+1316,1316,Euclidean vector,Potential energy,0,0.0,0.0
+1317,1317,Standing wave,Wavelength,1,0.056657169011211386,0.056657169011211386
+1318,1318,Gravity of Earth,Metre,0,0.06481517282264647,0.06481517282264647
+1319,1319,Series and parallel circuits,Electric current,1,0.0,0.0
+1320,1320,Field line,Force,0,0.13067323447613086,0.13067323447613086
+1321,1321,Energy level,Diffraction,0,0.0,0.0
+1322,1322,Electrical resistance and conductance,Ohmmeter,0,0.0,0.0
+1323,1323,Speed,Gravitational acceleration,0,0.0,0.0
+1324,1324,Physics,Specular reflection,0,0.0,0.0
+1325,1325,Electromagnetic spectrum,Absorption spectroscopy,1,0.0,0.0
+1326,1326,Work (physics),Metre,0,0.028855767746028445,0.028855767746028445
+1327,1327,Electrical conductor,Electric field,0,0.15591062138868386,0.15591062138868386
+1328,1328,Voltage,Electromagnetic spectrum,0,0.0,0.0
+1329,1329,Deformation (engineering),Force,1,0.3323645311675503,0.3323645311675503
+1330,1330,Voltmeter,Amplitude,0,0.17218369161173372,0.0
+1331,1331,Snell's law,Refracting telescope,0,0.0,0.0
+1332,1332,Distance,Contact force,0,0.0,0.0
+1333,1333,Mechanical energy,Energy,1,0.5311856652431419,0.5311856652431419
+1334,1334,Refractive index,Motion,1,0.08250931216190446,0.08250931216190446
+1335,1335,Voltage,Equations of motion,0,0.007978187463776761,0.0
+1336,1336,Speed,Transverse wave,0,0.0,0.0
+1337,1337,Dielectric,Electric current,1,0.155201936746008,0.155201936746008
+1338,1338,Tension (physics),Contact force,0,0.0,0.0
+1339,1339,Euclidean vector,Displacement (vector),0,0.1471385353758698,0.0
+1340,1340,Electric current,Power (physics),0,0.04313914321727613,0.0
+1341,1341,Scattering,Laser,0,0.008240979427143023,0.008240979427143023
+1342,1342,Magnet,Mechanical energy,0,0.11529827246263474,0.11529827246263474
+1343,1343,Free fall,Position (vector),1,0.13119982355709436,0.0
+1344,1344,Magnification,Optical microscope,0,0.11642531754888755,0.11642531754888755
+1345,1345,Wave,Standing wave,0,0.32211722720869584,0.32211722720869584
+1346,1346,Electromagnetic radiation,Diffraction,0,0.150085389380755,0.150085389380755
+1347,1347,Electron,Physics,0,1.0,1.0
+1348,1348,Geometrical optics,Wavelength,0,0.0020377873288230514,0.0020377873288230514
+1349,1349,Intensity (physics),Electric field,0,0.202350058445962,0.202350058445962
+1350,1350,Velocity,Relative velocity,0,0.0,0.0
+1351,1351,Plane mirror,Geometrical optics,0,0.02789266890328676,0.02789266890328676
+1352,1352,Newton's law of universal gravitation,Planet,0,0.0,0.0
+1353,1353,Electromagnetic radiation,Electron,1,0.11642531754888755,0.11642531754888755
+1354,1354,Magnetism,Temperature,0,0.07225781327248927,0.07225781327248927
+1355,1355,Acceleration,Force,1,0.0,0.0
+1356,1356,Strength of materials,Deformation (engineering),1,0.0,0.0
+1357,1357,Physics,Force,0,0.0,0.0
+1358,1358,Crest (physics),Amplitude,0,0.06749499597823637,0.06749499597823637
+1359,1359,Electric current,Emission spectrum,0,0.0,0.0
+1360,1360,Energy,Work (physics),0,0.22225807614496867,0.0
+1361,1361,Hardness,Plasticity (physics),1,0.0,0.0
+1362,1362,Force,Gravitational acceleration,0,0.0,0.0
+1363,1363,Electric potential energy,Potential energy,1,0.2308158064598433,0.2308158064598433
+1364,1364,Field (physics),Electric potential,0,0.0,0.0
+1365,1365,Standing wave,Physics,1,1.0,1.0
+1366,1366,Sound intensity,Intensity (physics),1,0.0,0.0
+1367,1367,Relative velocity,Inertial frame of reference,0,0.08113415695920606,0.08113415695920606
+1368,1368,Force,Acceleration,0,0.015956374927553522,0.015956374927553522
+1369,1369,Mass,Gravity,0,0.0657200153037018,0.0657200153037018
+1370,1370,Distance,Wavelength,0,0.0,0.0
+1371,1371,Refracting telescope,Wavelength,0,0.164697444150354,0.164697444150354
+1372,1372,Le Sage's theory of gravitation,Distance,1,0.007582207259498564,0.007582207259498564
+1373,1373,Telescope,Refracting telescope,0,0.0,0.0
+1374,1374,Euclidean vector,Electric potential,0,0.0,0.0
+1375,1375,Energy,Kilogram,0,0.14604335349737355,0.0
+1376,1376,Strength of materials,Elasticity (physics),1,0.0,0.0
+1377,1377,Gravitational acceleration,Distance,1,0.09398200059283736,0.09398200059283736
+1378,1378,Elastic collision,Force,1,0.22225807614496867,0.22225807614496867
+1379,1379,Electric potential,Field (physics),1,0.14453575603283006,0.0
+1380,1380,Photoelectric effect,Force,0,0.1377366525559217,0.1377366525559217
+1381,1381,Field (physics),Electromagnetic spectrum,0,0.0,0.0
+1382,1382,Physics,Acceleration,0,0.0,0.0
+1383,1383,Ohm,Power (physics),0,0.0,0.0
+1384,1384,Friction,Collision,0,0.0,0.0
+1385,1385,Work (physics),Electric potential energy,0,0.0,0.0
+1386,1386,Physics,Speed,0,0.0,0.0
+1387,1387,Sonic boom,Temperature,0,0.09398200059283736,0.09398200059283736
+1388,1388,Magnetic field,Refractive index,0,0.11529827246263474,0.0
+1389,1389,Dielectric,Refractive index,0,0.11642531754888755,0.11642531754888755
+1390,1390,Magnetic field,Force,1,0.014000703693871163,0.014000703693871163
+1391,1391,Field (physics),Velocity,0,0.044144599570619864,0.044144599570619864
+1392,1392,Gravitational acceleration,Gravitational field,0,0.0,0.0
+1393,1393,Euclidean vector,Electric potential energy,0,0.0,0.0
+1394,1394,Electron,Wavelength,0,0.04844982209837236,0.04844982209837236
+1395,1395,Magnet,Compass,0,0.0,0.0
+1396,1396,Magnet,Distance,0,0.0903222665906116,0.0903222665906116
+1397,1397,Work (physics),Displacement (vector),1,0.0,0.0
+1398,1398,Free fall,Acceleration,1,0.015956374927553522,0.015956374927553522
+1399,1399,Potential energy,Electric potential,0,0.0,0.0
+1400,1400,Work (physics),Energy,1,0.0,0.0
+1401,1401,Energy,Reflection (physics),0,0.0,0.0
+1402,1402,Potential energy,Kilogram,0,0.08336461104913986,0.08336461104913986
+1403,1403,Refraction,Frequency,0,0.16224246582974208,0.16224246582974208
+1404,1404,Motion,Work (physics),0,0.017441248817314618,0.0
+1405,1405,Velocity,Force,0,0.0,0.0
+1406,1406,Force,Electromagnetic spectrum,0,0.0,0.0
+1407,1407,Emission spectrum,Wave,1,0.1589882127487345,0.1589882127487345
+1408,1408,Acceleration,Sonic boom,0,0.0,0.0
+1409,1409,Photoelectric effect,Laser,0,0.0173455996987814,0.0173455996987814
+1410,1410,Electron,Force,0,0.08999332797098179,0.08999332797098179
+1411,1411,Electrical resistance and conductance,Series and parallel circuits,0,0.2649897202449685,0.2649897202449685
+1412,1412,Force,Free fall,0,0.0,0.0
+1413,1413,Hooke's law,Metre,0,0.10140741236461426,0.0
+1414,1414,Interference (wave propagation),Refractive index,0,0.0,0.0
+1415,1415,Work (physics),Electric potential,0,0.0,0.0
+1416,1416,Gravity of Earth,Acceleration,1,0.015956374927553522,0.015956374927553522
+1417,1417,Virtual image,Light,1,0.0,0.0
+1418,1418,Speed,Euclidean vector,0,0.05734494951427365,0.0
+1419,1419,Motion,Displacement (vector),0,0.0,0.0
+1420,1420,Electrostatics,Field (physics),1,0.13612100311311046,0.0
+1421,1421,Magnetic field,Electromagnetic radiation,0,0.0,0.0
+1422,1422,Gravitational acceleration,Velocity,1,0.2253726582200168,0.0
+1423,1423,Friction,Euclidean vector,0,0.0,0.0
+1424,1424,Position (vector),Gravitational acceleration,0,0.0,0.0
+1425,1425,Wave,Shock wave,0,0.0,0.0
+1426,1426,Electron,Temperature,0,0.14097300088925602,0.14097300088925602
+1427,1427,Non-inertial reference frame,Physics,1,1.0,1.0
+1428,1428,Refraction,Transmission medium,0,0.0,0.0
+1429,1429,Displacement (vector),Relative velocity,0,0.0,0.0
+1430,1430,Transverse wave,Electromagnetic spectrum,0,0.0,0.0
+1431,1431,Mass,Force,0,0.2402520753868292,0.2402520753868292
+1432,1432,Hertz,Musical tone,0,0.0,0.0
+1433,1433,Refraction,Wavelength,0,0.00851253031941846,0.00851253031941846
+1434,1434,Equations of motion,Euclidean vector,1,0.1806445331812232,0.1806445331812232
+1435,1435,Inertial frame of reference,Motion,1,0.062410889968620036,0.062410889968620036
+1436,1436,Electron,Laser,0,0.008240979427143023,0.008240979427143023
+1437,1437,Energy,Electromagnetic spectrum,0,0.0,0.0
+1438,1438,Refraction,Physics,1,1.0,1.0
+1439,1439,Le Sage's theory of gravitation,Physics,1,1.0,1.0
+1440,1440,Mirror image,Light,1,0.18460239841413947,0.18460239841413947
+1441,1441,Newton's law of universal gravitation,Field (physics),0,0.0,0.0
+1442,1442,Sound intensity,Force,1,0.22225807614496867,0.0
+1443,1443,Force,Friction,0,0.0,0.0
+1444,1444,Frequency,Hertz,0,0.04990574540960068,0.04990574540960068
+1445,1445,Electric field,Electrostatics,0,0.0,0.0
+1446,1446,Hardness,Physics,1,1.0,1.0
+1447,1447,Motion,Physics,1,1.0,1.0
+1448,1448,Absorption spectroscopy,Wave,1,0.1589882127487345,0.1589882127487345
+1449,1449,Magnetic field,Electron,0,0.0679147685701844,0.0679147685701844
+1450,1450,Potential energy,Distance,1,0.09398200059283736,0.09398200059283736
+1451,1451,Torque,Metre,0,0.08264605912853434,0.08264605912853434
+1452,1452,Crest (physics),Geometrical optics,0,0.0,0.0
+1453,1453,Power (physics),Sound intensity,0,0.0,0.0
+1454,1454,Ammeter,Metre,0,0.09459557050847113,0.0
+1455,1455,Energy level,Frequency,0,0.0,0.0
+1456,1456,Electric potential,Work (physics),1,0.07800994925562538,0.0
+1457,1457,Mass,Torque,0,0.0,0.0
+1458,1458,Elastic collision,Mass,1,0.09127779903291916,0.09127779903291916
+1459,1459,Equations of motion,Acceleration,1,0.015956374927553522,0.015956374927553522
+1460,1460,Sonic boom,Distance,0,0.09398200059283736,0.09398200059283736
+1461,1461,Absorption spectroscopy,Physics,1,1.0,1.0
+1462,1462,Energy,Wave,0,0.0,0.0
+1463,1463,Physics,Mass,0,0.0,0.0
+1464,1464,Force,Electromotive force,0,0.0,0.0
+1465,1465,Photoelectric effect,Energy,1,0.3040282181554244,0.3040282181554244
+1466,1466,Refractive index,Metre,0,0.09398200059283736,0.0
+1467,1467,Sound intensity,Power (physics),1,0.18914855102959527,0.0
+1468,1468,Emission spectrum,Coulomb's law,1,0.2104595126010915,0.0
+1469,1469,Electric field,Electromotive force,0,0.0,0.0
+1470,1470,Force,Wave,0,0.0,0.0
+1471,1471,Force,Planet,0,0.0,0.0
+1472,1472,Force,Gravitational field,0,0.0,0.0
+1473,1473,Interference (wave propagation),Telescope,0,0.0,0.0
+1474,1474,Velocity,Acceleration,0,0.0,0.0
+1475,1475,Light,Virtual image,0,0.0,0.0
+1476,1476,Acceleration,Frame of reference,0,0.11742210458750801,0.11742210458750801
+1477,1477,Interference (wave propagation),Physics,1,1.0,1.0
+1478,1478,Electrostatics,Distance,1,0.02547310041632908,0.02547310041632908
+1479,1479,Laser,Optical microscope,0,0.16737288936727907,0.0
+1480,1480,Field (physics),Electric potential energy,0,0.0,0.0
+1481,1481,Speed,Free fall,0,0.0,0.0
+1482,1482,Energy,Velocity,0,0.14604335349737355,0.14604335349737355
+1483,1483,Speed,Le Sage's theory of gravitation,0,0.0,0.0
+1484,1484,Frame of reference,Force,0,0.0,0.0
+1485,1485,Electron,Light,0,0.15340976885032975,0.15340976885032975
+1486,1486,Force,Intensity (physics),0,0.0,0.0
+1487,1487,Force,Field (physics),0,0.0,0.0
+1488,1488,Gravity of Earth,Position (vector),1,0.0953929276492407,0.0
+1489,1489,Specular reflection,Plane mirror,0,0.0,0.0
+1490,1490,Insulator (electricity),Electrostatics,0,0.2189630705226948,0.2189630705226948
+1491,1491,Acceleration,Position (vector),1,0.17001838417056306,0.0
+1492,1492,Intensity (physics),Electromagnetic radiation,0,0.0,0.0
+1493,1493,Electrical resistance and conductance,Distance,0,0.1067446445943308,0.1067446445943308
+1494,1494,Shock wave,Refraction,0,0.11642531754888755,0.0
+1495,1495,Rarefaction,Transmission medium,0,0.0,0.0
+1496,1496,Shock wave,Distance,1,0.014415010313116457,0.014415010313116457
+1497,1497,Force,Electric potential energy,0,0.0,0.0
+1498,1498,Geometrical optics,Total internal reflection,0,0.0,0.0
+1499,1499,Plasticity (physics),Physics,1,1.0,1.0
+1500,1500,Electric potential energy,Work (physics),1,0.07800994925562538,0.0
+1501,1501,Electrical resistance and conductance,Electric current,1,0.3772009708380236,0.3772009708380236
+1502,1502,Magnetic field,Field (physics),1,0.2853654670391772,0.0
+1503,1503,Pigment,Light,0,0.11478912774115582,0.11478912774115582
+1504,1504,Force,Work (physics),0,0.009246868985041802,0.0
+1505,1505,Motion,Non-inertial reference frame,0,0.0,0.0
+1506,1506,Ray (optics),Virtual image,0,0.0,0.0
+1507,1507,Color,Pigment,0,0.0,0.0
+1508,1508,Elasticity (physics),Physics,1,1.0,1.0
+1509,1509,Sonic boom,Length,0,0.09398200059283736,0.09398200059283736
+1510,1510,Gravitational constant,Force,1,0.0,0.0
+1511,1511,Amplitude,Dispersion (optics),0,0.0,0.0
+1512,1512,Motion graphs and derivatives,Position (vector),1,0.18952869055079155,0.0
+1513,1513,Equations of motion,Physics,1,1.0,1.0
+1514,1514,Electromagnetic radiation,Refraction,0,0.11642531754888755,0.11642531754888755
+1515,1515,Light,Emission spectrum,0,0.0,0.0
+1516,1516,Magnetic field,Electromotive force,0,0.0,0.0
+1517,1517,Sound intensity,Energy,1,0.2397145566225461,0.2397145566225461
+1518,1518,Physics,Gravity of Earth,0,0.0,0.0
+1519,1519,Position (vector),Mechanical energy,0,0.0,0.0
+1520,1520,Acceleration,Electron,0,0.0,0.0
+1521,1521,Distance,Electrostatics,0,0.0,0.0
+1522,1522,Motion,Gravitational acceleration,0,0.0,0.0
+1523,1523,Mass,Normal force,0,0.0,0.0
+1524,1524,Electromotive force,Ohm's law,0,0.10346118896776346,0.10346118896776346
+1525,1525,Voltmeter,Electric potential,0,0.07103008550286838,0.0
+1526,1526,Electric potential energy,Joule,0,0.044707839334268,0.044707839334268
+1527,1527,Dispersion (optics),Wavelength,0,0.0401870617405104,0.0401870617405104
+1528,1528,Electric potential,Distance,1,0.09398200059283736,0.09398200059283736
+1529,1529,Fracture,Light,0,0.137746953289387,0.137746953289387
+1530,1530,Friction,Kinetic energy,0,0.0,0.0
+1531,1531,Transverse wave,Ray (optics),0,0.0,0.0
+1532,1532,Magnetic field,Field line,0,0.07247835752589889,0.07247835752589889
+1533,1533,Frame of reference,Physics,1,1.0,1.0
+1534,1534,Gravitational constant,Gravity,1,0.0,0.0
+1535,1535,Strength of materials,Plasticity (physics),1,0.25602105155401345,0.0
+1536,1536,Physics,Torque,0,0.0,0.0
+1537,1537,Newton's law of universal gravitation,Gravity,1,0.11529827246263474,0.11529827246263474
+1538,1538,Photoelectric effect,Electron,1,0.3732551508410135,0.3732551508410135
+1539,1539,Newton's laws of motion,Equations of motion,0,0.007978187463776761,0.007978187463776761
+1540,1540,Motion,Free fall,0,0.0,0.0
+1541,1541,Electrical resistance and conductance,Voltage,1,0.193819823721089,0.193819823721089
+1542,1542,Motion,Frame of reference,0,0.0,0.0
+1543,1543,Light,Inertial frame of reference,0,0.08113415695920606,0.0
+1544,1544,Velocity,Motion,1,0.08113415695920606,0.08113415695920606
+1545,1545,Fatigue (material),Physics,1,1.0,0.0
+1546,1546,Dispersion (optics),Length,0,0.09398200059283736,0.09398200059283736
+1547,1547,Emission spectrum,Energy level,1,0.42015763968766495,0.42015763968766495
+1548,1548,Gravitational field,Field (physics),1,0.39747332909028255,0.0
+1549,1549,Force,Electromagnetic radiation,0,0.0,0.0
+1550,1550,Velocity,Motion graphs and derivatives,0,0.0,0.0
+1551,1551,Collision,Force,1,0.02275114350254064,0.02275114350254064
+1552,1552,Intensity (physics),Photoelectric effect,0,0.0,0.0
+1553,1553,Frequency,Electromagnetic spectrum,0,0.0,0.0
+1554,1554,Joule,Kinetic energy,0,0.0,0.0
+1555,1555,Power (physics),Force,1,0.2593630359289633,0.2593630359289633
+1556,1556,Standing wave,Interference (wave propagation),1,0.0,0.0
+1557,1557,Electrical resistance and conductance,Force,0,0.19395534208637386,0.19395534208637386
+1558,1558,Newton's laws of motion,Inertial frame of reference,0,0.06252345828685489,0.06252345828685489
+1559,1559,Euclidean vector,Normal force,0,0.0,0.0
+1560,1560,Displacement (vector),Gravitational acceleration,0,0.0,0.0
+1561,1561,Friction,Gravity,0,0.0,0.0
+1562,1562,Electron,Coulomb's law,0,0.0,0.0
+1563,1563,Electric field,Magnetism,0,0.008557293659336173,0.008557293659336173
+1564,1564,Reflection (physics),Mirror image,0,0.0,0.0
+1565,1565,Hooke's law,Lever,0,0.0,0.0
+1566,1566,Electric potential,Kilogram,0,0.14604335349737355,0.0
+1567,1567,Interference (wave propagation),Electromagnetic radiation,0,0.0,0.0
+1568,1568,Frame of reference,Mass,0,0.0,0.0
+1569,1569,Energy level,Electron,0,0.0,0.0
+1570,1570,Euclidean vector,Torque,0,0.0,0.0
+1571,1571,Motion,Le Sage's theory of gravitation,0,0.0,0.0
+1572,1572,Telescope,Mass,0,0.08250931216190446,0.08250931216190446
+1573,1573,Laser,Diffraction,0,0.0,0.0
+1574,1574,Friction,Contact force,1,0.0,0.0
+1575,1575,Gravity of Earth,Displacement (vector),1,0.0953929276492407,0.0
+1576,1576,Refractive index,Force,0,0.08999332797098179,0.08999332797098179
+1577,1577,Laser,Light,1,0.10173254449097696,0.10173254449097696
+1578,1578,Speed,Newton's law of universal gravitation,0,0.0,0.0
+1579,1579,Newton's law of universal gravitation,Distance,1,0.06524688878568499,0.06524688878568499
+1580,1580,Displacement (vector),Stiffness,0,0.0,0.0
+1581,1581,Inelastic collision,Collision,1,0.19836182059719693,0.19836182059719693
+1582,1582,Diffraction,Physics,1,1.0,1.0
+1583,1583,Electric field,Equations of motion,0,0.007978187463776761,0.0
+1584,1584,Inelastic collision,Friction,0,0.11076266501733062,0.11076266501733062
+1585,1585,Velocity,Projectile motion,0,0.0,0.0
+1586,1586,Reflection (physics),Diffraction,0,0.0,0.0
+1587,1587,Scattering,Light,0,0.2865657657084173,0.2865657657084173
+1588,1588,Equations of motion,Position (vector),1,0.1806445331812232,0.0
+1589,1589,Dielectric,Electric field,1,0.19336404253224468,0.19336404253224468
+1590,1590,Temperature,Field (physics),0,0.0,0.0
+1591,1591,Energy,Le Sage's theory of gravitation,0,0.08889619845625465,0.0
+1592,1592,Magnet,Electromagnetic radiation,0,0.0,0.0
+1593,1593,Electric field,Emission spectrum,0,0.0,0.0
+1594,1594,Scattering,Wave,1,0.16224246582974208,0.16224246582974208
+1595,1595,Potential energy,Mechanical energy,0,0.0,0.0
+1596,1596,Electrical conductor,Electromagnetic radiation,0,0.0,0.0
+1597,1597,Position (vector),Projectile motion,0,0.0,0.0
+1598,1598,Gravity of Earth,Potential energy,0,0.0,0.0
+1599,1599,Friction,Speed,0,0.0,0.0
+1600,1600,Wave,Refraction,0,0.0,0.0
+1601,1601,Magnetic field,Transverse wave,0,0.0,0.0
+1602,1602,Friction,Dielectric,0,0.0,0.0
+1603,1603,Emission spectrum,Temperature,0,0.07537749182693486,0.07537749182693486
+1604,1604,Interference (wave propagation),Wave,1,0.4409270150173977,0.4409270150173977
+1605,1605,Insulator (electricity),Electrical resistance and conductance,0,0.0,0.0
+1606,1606,Emission spectrum,Electromagnetic radiation,1,0.09105180289099137,0.09105180289099137
+1607,1607,Work (physics),Motion,1,0.0,0.0
+1608,1608,Mechanical energy,Motion,1,0.14198477467861054,0.14198477467861054
+1609,1609,Mass,Potential energy,0,0.0,0.0
+1610,1610,Hooke's law,Scalar (mathematics),0,0.11006876267220082,0.0
+1611,1611,Frame of reference,Non-inertial reference frame,0,0.1484540264527033,0.1484540264527033
+1612,1612,Kinetic energy,Energy,1,0.5992863915563654,0.5992863915563654
+1613,1613,Elasticity (physics),Stiffness,0,0.11306623774040228,0.11306623774040228
+1614,1614,Doppler effect,Velocity,1,0.043332122277909065,0.043332122277909065
+1615,1615,Dispersion (optics),Physics,1,1.0,1.0
+1616,1616,Electrostatics,Potential energy,1,0.02028860399247481,0.02028860399247481
+1617,1617,Electron,Wave,0,0.013461323199908096,0.013461323199908096
+1618,1618,Work (physics),Torque,0,0.0,0.0
+1619,1619,Hardness,Energy,0,0.0,0.0
+1620,1620,Mechanical energy,Distance,1,0.09398200059283736,0.09398200059283736
+1621,1621,Displacement (vector),Gravity of Earth,0,0.0,0.0
+1622,1622,Shock wave,Mass,0,0.11529827246263474,0.11529827246263474
+1623,1623,Snell's law,Refraction,1,0.6893211276125752,0.6893211276125752
+1624,1624,Magnification,Reflection (physics),0,0.2374747788945221,0.0
+1625,1625,Mechanical energy,Collision,0,0.0,0.0
+1626,1626,Acceleration,Inertial frame of reference,0,0.11742210458750801,0.11742210458750801
+1627,1627,Magnetism,Coulomb's law,0,0.0,0.0
+1628,1628,Position (vector),Gravity of Earth,0,0.0,0.0
+1629,1629,Electron,Hertz,0,0.05386168864328854,0.05386168864328854
+1630,1630,Energy,Kinetic energy,0,0.0,0.0
+1631,1631,Magnet,Kilogram,0,0.13606477139261153,0.13606477139261153
+1632,1632,Amplitude,Interference (wave propagation),0,0.0,0.0
+1633,1633,Distance,Snell's law,0,0.0,0.0
+1634,1634,Sound intensity,Sound,1,0.9360684218272086,0.9360684218272086
+1635,1635,Amplitude,Snell's law,0,0.0,0.0
+1636,1636,Speed,Normal force,0,0.0,0.0
+1637,1637,Scalar (mathematics),Scalar multiplication,0,0.0,0.0
+1638,1638,Deformation (engineering),Physics,1,1.0,1.0
+1639,1639,Tension (physics),Force,1,0.5130775120917787,0.5130775120917787
+1640,1640,Electron,Angle of incidence,0,0.1850180055334412,0.1850180055334412
+1641,1641,Sonic boom,Doppler effect,0,0.1512972697129779,0.1512972697129779
+1642,1642,Work (physics),Force,1,0.0,0.0
+1643,1643,Temperature,Kinetic energy,0,0.0,0.0
+1644,1644,Huygens–Fresnel principle,Amplitude,1,0.18038291502181628,0.18038291502181628
+1645,1645,Electron,Insulator (electricity),0,0.0,0.0
+1646,1646,Newton's law of universal gravitation,Gravitational acceleration,0,0.0,0.0
+1647,1647,Interference (wave propagation),Velocity,0,0.11006876267220082,0.11006876267220082
+1648,1648,Frequency,Wave,0,0.0,0.0
+1649,1649,Joule,Capacitance,0,0.0,0.0
+1650,1650,Electric potential energy,Electron,0,0.0,0.0
+1651,1651,Velocity,Physics,1,1.0,1.0
+1652,1652,Magnetism,Compass,0,0.0,0.0
+1653,1653,Gravity,Free fall,0,0.0,0.0
+1654,1654,Angle of incidence,Snell's law,0,0.0,0.0
+1655,1655,Reflection (physics),Plane mirror,0,0.0,0.0
+1656,1656,Refractive index,Electromagnetic spectrum,0,0.0,0.0
+1657,1657,Magnet,Voltage,0,0.0,0.0
+1658,1658,Euclidean vector,Distance,0,0.004749773513134157,0.004749773513134157
+1659,1659,Distance,Inertial frame of reference,0,0.04039977304689086,0.0
+1660,1660,Acceleration,Gravitational field,0,0.0,0.0
+1661,1661,Elasticity (physics),Deformation (engineering),1,0.15868586694114226,0.0
+1662,1662,Wave,Refractive index,0,0.0,0.0
+1663,1663,Physics,Gravitational field,0,0.0,0.0
+1664,1664,Real image,Virtual image,0,0.0,0.0
+1665,1665,Virtual image,Length,0,0.0,0.0
+1666,1666,Electric potential energy,Capacitance,0,0.0,0.0
+1667,1667,Acceleration,Equations of motion,0,0.0,0.0
+1668,1668,Refraction,Temperature,0,0.09398200059283736,0.09398200059283736
+1669,1669,Force,Magnetic field,0,0.0,0.0
+1670,1670,Intensity (physics),Distance,0,0.09536083745600116,0.09536083745600116
+1671,1671,Amplitude,Wave,0,0.0,0.0
+1672,1672,Position (vector),Equations of motion,0,0.0,0.0
+1673,1673,Physics,Hooke's law,0,0.0,0.0
+1674,1674,Laser,Wavelength,0,0.05732846248290821,0.05732846248290821
+1675,1675,Physics,Deformation (engineering),0,0.0,0.0
+1676,1676,Acceleration,Hooke's law,0,0.0,0.0
+1677,1677,Wavelength,Refractive index,0,0.0,0.0
+1678,1678,Field (physics),Distance,0,0.08534035051800448,0.08534035051800448
+1679,1679,Light,Snell's law,0,0.0,0.0
+1680,1680,Electromagnetic radiation,Emission spectrum,0,0.0,0.0
+1681,1681,Friction,Length,0,0.0,0.0
+1682,1682,Elastic collision,Inertial frame of reference,0,0.11742210458750801,0.0
+1683,1683,Joule,Force,0,0.0,0.0
+1684,1684,Velocity,Free fall,0,0.0,0.0
+1685,1685,Snell's law,Dispersion (optics),0,0.0,0.0
+1686,1686,Joule,Ohm,0,0.0,0.0
+1687,1687,Distance,Newton's law of universal gravitation,0,0.0,0.0
+1688,1688,Telescope,Wavelength,0,0.164697444150354,0.164697444150354
+1689,1689,Inelastic collision,Force,1,0.038317715372700026,0.038317715372700026
+1690,1690,Kinetic energy,Collision,0,0.0,0.0
+1691,1691,Physics,Gravity,0,0.0,0.0
+1692,1692,Electric current,Equations of motion,0,0.007978187463776761,0.0
+1693,1693,Free fall,Gravity,1,0.07823811345678787,0.07823811345678787
+1694,1694,Temperature,Electromagnetic spectrum,0,0.0,0.0
+1695,1695,Amplitude,Equations of motion,0,0.007978187463776761,0.0
+1696,1696,Electromagnetic spectrum,Magnet,1,0.2189630705226948,0.2189630705226948
+1697,1697,Refraction,Total internal reflection,0,0.0,0.0
+1698,1698,Distance,Velocity,0,0.0,0.0
+1699,1699,Displacement (vector),Length,0,0.09398200059283736,0.09398200059283736
+1700,1700,Photoelectric effect,Wave,0,0.08197179737179808,0.08197179737179808
+1701,1701,Distance,Gravitational field,0,0.0,0.0
+1702,1702,Angle of incidence,Refraction,0,0.0,0.0
+1703,1703,Electric current,Electromotive force,0,0.08534035051800448,0.08534035051800448
+1704,1704,Reflection (physics),Specular reflection,0,0.0,0.0
+1705,1705,Acceleration,Speed,1,0.15580446907277598,0.15580446907277598
+1706,1706,Mass,Kinetic energy,0,0.0,0.0
+1707,1707,Kinetic energy,Mass,1,0.04955995044840925,0.04955995044840925
+1708,1708,Electric potential energy,Motion,1,0.08113415695920606,0.0
+1709,1709,Ohm's law,Electrical resistance and conductance,0,0.0,0.0
+1710,1710,Doppler effect,Distance,1,0.02281639669192666,0.02281639669192666
+1711,1711,Light,Electromagnetic radiation,0,0.0,0.0
+1712,1712,Electric potential energy,Electric field,1,0.0,0.0
+1713,1713,Torque,Physics,1,1.0,1.0
+1714,1714,Hertz,Electromagnetic spectrum,0,0.0,0.0
+1715,1715,Motion,Equations of motion,0,0.0,0.0
+1716,1716,Mass,Gravitational field,0,0.0,0.0
+1717,1717,Electric field,Euclidean vector,0,0.01982432825005163,0.0
+1718,1718,Work (physics),Distance,1,0.0,0.0
+1719,1719,Magnetic field,Euclidean vector,0,0.08973674553326423,0.0
+1720,1720,Wave,Distance,0,0.08534035051800448,0.08534035051800448
+1721,1721,Energy,Shock wave,0,0.0,0.0
+1722,1722,Newton's laws of motion,Physics,1,1.0,1.0
+1723,1723,Real image,Ray (optics),0,0.0,0.0
+1724,1724,Newton's law of universal gravitation,Telescope,0,0.0,0.0
+1725,1725,Lever,Force,1,0.20179275106601266,0.20179275106601266
+1726,1726,Distance,Relative velocity,0,0.0,0.0
+1727,1727,Gravitational field,Kilogram,0,0.266688595368764,0.266688595368764
+1728,1728,Displacement (vector),Electric potential,0,0.0,0.0
+1729,1729,Physics,Electromotive force,0,0.0,0.0
+1730,1730,Standing wave,Energy level,0,0.029840741455089838,0.0
+1731,1731,Refractive index,Angle of incidence,1,0.09055121544992778,0.09055121544992778
+1732,1732,Joule,Metre,0,0.0,0.0
+1733,1733,Magnet,Energy,0,0.11529827246263474,0.11529827246263474
+1734,1734,Fracture,Creep (deformation),0,0.0,0.0
+1735,1735,Le Sage's theory of gravitation,Gravity,1,0.0,0.0
+1736,1736,Insulator (electricity),Velocity,0,0.14604335349737355,0.14604335349737355
+1737,1737,Inertial frame of reference,Length,0,0.09398200059283736,0.09398200059283736
+1738,1738,Intensity (physics),Metre,0,0.09398200059283736,0.09398200059283736
+1739,1739,Physics,Work (physics),0,0.0,0.0
+1740,1740,Projectile motion,Displacement (vector),1,0.1600131572212584,0.0
+1741,1741,Inelastic collision,Le Sage's theory of gravitation,0,0.08889619845625465,0.0
+1742,1742,Energy,Force,0,0.1377366525559217,0.1377366525559217
+1743,1743,Position (vector),Electrostatics,0,0.0,0.0
+1744,1744,Field line,Field (physics),0,0.39747332909028255,0.39747332909028255
+1745,1745,Intensity (physics),Kinetic energy,0,0.14604335349737355,0.14604335349737355
+1746,1746,Lever,Torque,0,0.0,0.0
+1747,1747,Euclidean vector,Length,0,0.06481517282264647,0.06481517282264647
+1748,1748,Dispersion (optics),Distance,0,0.1770986981325736,0.1770986981325736
+1749,1749,Electrical conductor,Dielectric,0,0.0,0.0
+1750,1750,Gravity,Projectile motion,0,0.0,0.0
+1751,1751,Mass,Inertial frame of reference,0,0.08113415695920606,0.08113415695920606
+1752,1752,Interference (wave propagation),Amplitude,1,0.06749499597823637,0.06749499597823637
+1753,1753,Mechanical energy,Work (physics),1,0.02437810914238293,0.0
+1754,1754,Series and parallel circuits,Electrical resistance and conductance,1,0.0,0.0
+1755,1755,Compass,Direction (geometry),0,0.1098542496555844,0.0
+1756,1756,Fatigue (material),Force,1,0.2481942927549888,0.2481942927549888
+1757,1757,Free fall,Mass,1,0.13805986196342576,0.13805986196342576
+1758,1758,Mechanical energy,Potential energy,1,0.11540790322992164,0.11540790322992164
+1759,1759,Euclidean vector,Acceleration,0,0.0,0.0
+1760,1760,Magnet,Electric current,0,0.0,0.0
+1761,1761,Tension (physics),Velocity,0,0.0660977165410794,0.0660977165410794
+1762,1762,Distance,Mechanical energy,0,0.0,0.0
+1763,1763,Magnet,Emission spectrum,0,0.0,0.0
+1764,1764,Tension (physics),Length,0,0.029166827770190907,0.029166827770190907
+1765,1765,Gravitational constant,Distance,1,0.0,0.0
+1766,1766,Magnetism,Velocity,0,0.0953929276492407,0.0953929276492407
+1767,1767,Elasticity (physics),Field (physics),0,0.15868586694114226,0.0
+1768,1768,Force,Deformation (engineering),0,0.0,0.0
+1769,1769,Work (physics),Mass,0,0.0,0.0
+1770,1770,Magnetic field,Distance,0,0.08534035051800448,0.08534035051800448
+1771,1771,Electric potential energy,Position (vector),1,0.07006818256726233,0.0
+1772,1772,Ray (optics),Geometrical optics,0,0.06686420162329956,0.06686420162329956
+1773,1773,Electromagnetic spectrum,Physics,1,1.0,1.0
+1774,1774,Physics,Kinetic energy,0,0.0,0.0
+1775,1775,Wave,Diffraction,0,0.0,0.0
+1776,1776,Magnetism,Metre,0,0.07225781327248927,0.07225781327248927
+1777,1777,Motion,Snell's law,0,0.0,0.0
+1778,1778,Gravitational acceleration,Free fall,0,0.0,0.0
+1779,1779,Velocity,Distance,1,0.030992272173200382,0.030992272173200382
+1780,1780,Wavelength,Electromagnetic spectrum,0,0.0,0.0
+1781,1781,Wavelength,Light,0,0.0,0.0
+1782,1782,Frequency,Standing wave,0,0.0,0.0
+1783,1783,Geometrical optics,Ray (optics),1,0.0,0.0
+1784,1784,Creep (deformation),Physics,1,1.0,0.0
+1785,1785,Physics,Energy level,0,0.0,0.0
+1786,1786,Dielectric,Magnet,0,0.2189630705226948,0.2189630705226948
+1787,1787,Gravity,Le Sage's theory of gravitation,0,0.17068070103600896,0.17068070103600896
+1788,1788,Motion,Planet,0,0.0,0.0
+1789,1789,Electromagnetic radiation,Power (physics),0,0.02298066507836205,0.0
+1790,1790,Electric field,Reflection (physics),0,0.007210260509759104,0.0
+1791,1791,Refracting telescope,Telescope,1,0.7694925929477408,0.7694925929477408
+1792,1792,Electron,Electric field,0,0.202350058445962,0.202350058445962
+1793,1793,Wave,Mirror image,0,0.0,0.0
+1794,1794,Magnet,Electromotive force,0,0.0,0.0
+1795,1795,Force,Distance,0,0.060099307669666535,0.060099307669666535
+1796,1796,Projectile motion,Distance,1,0.09398200059283736,0.09398200059283736
+1797,1797,Ohm,Ohm's law,0,0.0,0.0
+1798,1798,Speed,Metre,0,0.09398200059283736,0.09398200059283736
+1799,1799,Newton's law of universal gravitation,Force,1,0.2299062922362001,0.2299062922362001
+1800,1800,Coulomb's law,Electrostatics,0,0.3011358046874769,0.3011358046874769
+1801,1801,Inelastic collision,Mechanical energy,0,0.16385523242010747,0.0
+1802,1802,Distance,Refractive index,0,0.0,0.0
+1803,1803,Physics,Inertial frame of reference,0,0.0,0.0
+1804,1804,Magnet,Torque,0,0.0,0.0
+1805,1805,Physics,Free fall,0,0.0,0.0
+1806,1806,Amplitude,Field (physics),0,0.202350058445962,0.0
+1807,1807,Friction,Gravitational acceleration,0,0.0,0.0
+1808,1808,Interference (wave propagation),Metre,0,0.09398200059283736,0.09398200059283736
+1809,1809,Amplitude,Displacement (vector),0,0.25602105155401345,0.0
+1810,1810,Refractive index,Ray (optics),0,0.17983580517862627,0.0
+1811,1811,Distance,Speed,0,0.0,0.0
+1812,1812,Mirror image,Geometrical optics,0,0.02789266890328676,0.02789266890328676
+1813,1813,Force,Contact force,0,0.0,0.0
+1814,1814,Electric current,Dielectric,0,0.0,0.0
+1815,1815,Refraction,Dispersion (optics),0,0.0,0.0
+1816,1816,Wave,Amplitude,0,0.06749499597823637,0.06749499597823637
+1817,1817,Mirror image,Wave,1,0.16224246582974208,0.0
+1818,1818,Gravitational field,Physics,1,1.0,1.0
+1819,1819,Potential energy,Displacement (vector),1,0.2133508762950112,0.0
+1820,1820,Mechanical energy,Kinetic energy,1,0.1052650145338212,0.1052650145338212
+1821,1821,Plasticity (physics),Deformation (engineering),1,0.0,0.0
+1822,1822,Position (vector),Velocity,0,0.0,0.0
+1823,1823,Optical microscope,Light,1,0.0,0.0
+1824,1824,Mass,Inelastic collision,0,0.0,0.0
+1825,1825,Refractive index,Distance,1,0.09398200059283736,0.09398200059283736
+1826,1826,Deformation (engineering),Hooke's law,0,0.0,0.0
+1827,1827,Speed,Acceleration,0,0.0,0.0
+1828,1828,Electric field,Electromagnetic spectrum,0,0.0,0.0
+1829,1829,Virtual image,Mirror image,0,0.0,0.0
+1830,1830,Tension (physics),Transverse wave,0,0.0,0.0
+1831,1831,Field (physics),Coulomb,0,0.0,0.0
+1832,1832,Electric potential,Coulomb,0,0.047745186328143736,0.047745186328143736
+1833,1833,Elastic collision,Mechanical energy,0,0.16385523242010747,0.0
+1834,1834,Force,Hooke's law,0,0.0,0.0
+1835,1835,Friction,Le Sage's theory of gravitation,0,0.0,0.0
+1836,1836,Physics,Fatigue (material),0,0.0,0.0
+1837,1837,Elasticity (physics),Distance,0,0.09398200059283736,0.09398200059283736
+1838,1838,Dispersion (optics),Geometrical optics,0,0.07048738496249313,0.0
+1839,1839,Standing wave,Hertz,0,0.04990574540960068,0.04990574540960068
+1840,1840,Magnet,Potential energy,0,0.11529827246263474,0.11529827246263474
+1841,1841,Light,Laser,0,0.0,0.0
+1842,1842,Velocity,Intensity (physics),0,0.0,0.0
+1843,1843,Electromotive force,Electric field,1,0.202350058445962,0.202350058445962
+1844,1844,Work (physics),Physics,1,1.0,1.0
+1845,1845,Electromagnetic radiation,Force,1,0.13686405428787266,0.13686405428787266
+1846,1846,Energy,Electric potential,0,0.0,0.0
+1847,1847,Velocity,Wavelength,0,0.0,0.0
+1848,1848,Gravity,Newton's law of universal gravitation,0,0.08534035051800448,0.08534035051800448
+1849,1849,Temperature,Mass,0,0.0,0.0
+1850,1850,Wavelength,Wave,1,0.0,0.0
+1851,1851,Mass,Length,0,0.016916760106710726,0.016916760106710726
+1852,1852,Plasticity (physics),Force,1,0.20476029152286576,0.20476029152286576
+1853,1853,Potential energy,Electrostatics,0,0.0,0.0
+1854,1854,Compass,Force,0,0.13067323447613086,0.13067323447613086
+1855,1855,Emission spectrum,Physics,1,1.0,1.0
+1856,1856,Newton's laws of motion,Gravitational field,0,0.0,0.0
+1857,1857,Plasticity (physics),Strength of materials,0,0.0,0.0
+1858,1858,Electromotive force,Work (physics),0,0.22225807614496867,0.0
+1859,1859,Magnetic field,Wavelength,0,0.06749499597823637,0.0
+1860,1860,Physics,Total internal reflection,0,0.0,0.0
+1861,1861,Electric potential,Position (vector),1,0.07006818256726233,0.0
+1862,1862,Distance,Motion graphs and derivatives,0,0.0,0.0
+1863,1863,Intensity (physics),Amplitude,0,0.18344793778700136,0.18344793778700136
+1864,1864,Equations of motion,Distance,1,0.053899603779478916,0.053899603779478916
+1865,1865,Specular reflection,Total internal reflection,0,0.0,0.0
+1866,1866,Light,Refraction,0,0.0,0.0
+1867,1867,Shock wave,Motion,1,0.08250931216190446,0.0
+1868,1868,Physics,Interference (wave propagation),0,0.0,0.0
+1869,1869,Electromagnetic spectrum,Electron,1,0.11642531754888755,0.11642531754888755
+1870,1870,Mechanical energy,Euclidean vector,1,0.13119982355709436,0.0
+1871,1871,Refracting telescope,Physics,1,1.0,1.0
+1872,1872,Acceleration,Euclidean vector,1,0.0995103535688866,0.0
+1873,1873,Electromotive force,Magnetism,0,0.2133508762950112,0.2133508762950112
+1874,1874,Electric field,Insulator (electricity),0,0.0,0.0
+1875,1875,Magnetism,Magnet,1,0.0,0.0
+1876,1876,Electromagnetic radiation,Wavelength,0,0.1517876183307116,0.1517876183307116
+1877,1877,Potential energy,Coulomb,0,0.0,0.0
+1878,1878,Amplitude,Electromagnetic radiation,0,0.0,0.0
+1879,1879,Physics,Absorption spectroscopy,0,0.0,0.0
+1880,1880,Geometrical optics,Light,1,0.0,0.0
+1881,1881,Force,Newton's law of universal gravitation,0,0.0,0.0
+1882,1882,Plasticity (physics),Fracture,0,0.0,0.0
+1883,1883,Plane mirror,Real image,0,0.0,0.0
+1884,1884,Speed,Hertz,0,0.04990574540960068,0.0
+1885,1885,Motion,Shock wave,0,0.0,0.0
+1886,1886,Electric field,Gravitational field,0,0.13606477139261153,0.13606477139261153
+1887,1887,Force,Gravitational constant,0,0.0,0.0
+1888,1888,Fatigue (material),Elasticity (physics),1,0.11540790322992164,0.0
+1889,1889,Photoelectric effect,Wavelength,0,0.02809827081043817,0.02809827081043817
+1890,1890,Elastic collision,Relative velocity,1,0.0,0.0
+1891,1891,Physics,Mechanical energy,0,0.0,0.0
+1892,1892,Stiffness,Creep (deformation),0,0.0,0.0
+1893,1893,Elasticity (physics),Displacement (vector),0,0.1471385353758698,0.0
+1894,1894,Amplitude,Sound intensity,0,0.0,0.0
+1895,1895,Hooke's law,Potential energy,0,0.11529827246263474,0.11529827246263474
+1896,1896,Electron,Doppler effect,0,0.0,0.0
+1897,1897,Electric field,Field line,0,0.13249949735203392,0.13249949735203392
+1898,1898,Geometrical optics,Refraction,0,0.0,0.0
+1899,1899,Snell's law,Physics,1,1.0,1.0
+1900,1900,Force,Newton's laws of motion,0,0.0660977165410794,0.0660977165410794
+1901,1901,Wavelength,Physics,1,1.0,1.0
+1902,1902,Electric field,Metre,0,0.0903222665906116,0.0
+1903,1903,Electromotive force,Electric current,1,0.0,0.0
+1904,1904,Total internal reflection,Angle of incidence,1,0.4119192545957499,0.4119192545957499
+1905,1905,Gravity of Earth,Gravitational acceleration,0,0.0,0.0
+1906,1906,Standing wave,Laser,0,0.0,0.0
+1907,1907,Telescope,Dispersion (optics),0,0.0,0.0
+1908,1908,Emission spectrum,Electric field,1,0.202350058445962,0.202350058445962
+1909,1909,Friction,Electrical resistance and conductance,0,0.0,0.0
+1910,1910,Energy,Coulomb,0,0.0,0.0
+1911,1911,Electric potential energy,Physics,1,1.0,1.0
+1912,1912,Physics,Power (physics),0,0.0,0.0
+1913,1913,Diffraction,Plane mirror,0,0.11642531754888755,0.0
+1914,1914,Motion,Kinetic energy,0,0.0,0.0
+1915,1915,Physics,Intensity (physics),0,0.0,0.0
+1916,1916,Electromagnetic radiation,Scattering,0,0.0,0.0
+1917,1917,Speed,Force,0,0.0,0.0
+1918,1918,Hooke's law,Displacement (vector),0,0.1471385353758698,0.0
+1919,1919,Snell's law,Distance,1,0.09398200059283736,0.09398200059283736
+1920,1920,Real image,Optical microscope,0,0.0,0.0
+1921,1921,Electric current,Electrical conductor,0,0.08534035051800448,0.08534035051800448
+1922,1922,Electric current,Field (physics),0,0.13606477139261153,0.0
+1923,1923,Snell's law,Angle of incidence,1,0.2297737092041917,0.2297737092041917
+1924,1924,Mechanical energy,Force,1,0.1240971463774944,0.1240971463774944
+1925,1925,Work (physics),Euclidean vector,1,0.0,0.0
+1926,1926,Stiffness,Length,0,0.0,0.0
+1927,1927,Mass,Frequency,0,0.0,0.0
+1928,1928,Position (vector),Length,0,0.09398200059283736,0.09398200059283736
+1929,1929,Mass,Equations of motion,0,0.007978187463776761,0.007978187463776761
+1930,1930,Contact force,Physics,1,1.0,1.0
+1931,1931,Le Sage's theory of gravitation,Coulomb,0,0.0,0.0
+1932,1932,Dispersion (optics),Color,1,0.22184401778893187,0.22184401778893187
+1933,1933,Standing wave,Wave,1,0.8028244885453385,0.8028244885453385
+1934,1934,Magnet,Magnetic field,0,0.30396166061965274,0.30396166061965274
+1935,1935,Force,Collision,0,0.0,0.0
+1936,1936,Energy,Inelastic collision,0,0.0,0.0
+1937,1937,Temperature,Fatigue (material),0,0.0,0.0
+1938,1938,Relative velocity,Doppler effect,0,0.0,0.0
+1939,1939,Curved mirror,Plane mirror,0,0.215997920827436,0.215997920827436
+1940,1940,Physics,Refracting telescope,0,0.0,0.0
+1941,1941,Physics,Scattering,0,0.0,0.0
+1942,1942,Acceleration,Mass,0,0.0,0.0
+1943,1943,Gravitational acceleration,Mass,1,0.21475978527644005,0.21475978527644005
+1944,1944,Capacitance,Dielectric,0,0.0,0.0
+1945,1945,Specular reflection,Reflection (physics),1,0.8075491770930197,0.0
+1946,1946,Energy,Metre,0,0.058333655540381814,0.058333655540381814
+1947,1947,Mechanical energy,Energy level,0,0.029840741455089838,0.029840741455089838
+1948,1948,Dielectric,Field (physics),1,0.21485044815690948,0.0
+1949,1949,Voltage,Capacitance,0,0.0,0.0
+1950,1950,Electromotive force,Coulomb's law,1,0.0,0.0
+1951,1951,Lever,Physics,1,1.0,1.0
+1952,1952,Motion graphs and derivatives,Velocity,1,0.17368367044178304,0.17368367044178304
+1953,1953,Interference (wave propagation),Wavelength,1,0.06749499597823637,0.06749499597823637
+1954,1954,Electric potential,Physics,1,1.0,1.0
+1955,1955,Electromagnetic spectrum,Light,1,0.2762113386271562,0.2762113386271562
+1956,1956,Stiffness,Force,1,0.0,0.0
+1957,1957,Mass,Le Sage's theory of gravitation,0,0.08534035051800448,0.0
+1958,1958,Magnetic field,Length,0,0.07247835752589889,0.07247835752589889
+1959,1959,Voltage,Series and parallel circuits,0,0.16411605868847015,0.0
+1960,1960,Physics,Velocity,0,0.0,0.0
+1961,1961,Magnetic field,Work (physics),0,0.04290547209059396,0.0
