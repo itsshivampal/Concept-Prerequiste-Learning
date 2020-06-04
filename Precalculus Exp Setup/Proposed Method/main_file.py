@@ -59,58 +59,86 @@ chapter_distribution = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]]
 # sorted_concept_sections.to_csv("data/sorted_final_concepts.csv")
 
 
-# Step 6: Extracting Content for Concepts
-sorted_concept_sections = pd.read_csv("data/sorted_final_concepts.csv", dtype = "string")
-concept_content = get_concept_content(sorted_concept_sections, book_content_file)
-concept_content.to_csv("data/concept_content.csv")
-print("Step 6 done!!")
-
-
 #---------------------------------------------------------------------------------------------------
 
 
+# Step 6: Extracting Content for Concepts
+# sorted_concept_sections = pd.read_csv("data/sorted_final_concepts.csv", dtype = "string")
+# concept_content = get_concept_content(sorted_concept_sections, book_content_file)
+# concept_content.to_csv("data/concept_content.csv")
+# print("Step 6 done!!")
+
+
 # Step 7: Finding the universal ranking of concepts in book
-sorted_concept_sections = pd.read_csv("data/sorted_final_concepts.csv", dtype = "string")
-concept_ranking = get_concept_ranking(sorted_concept_sections, book_content_file)
-concept_ranking.to_csv("data/concept_rank.csv")
+# sorted_concept_sections = pd.read_csv("data/sorted_final_concepts.csv", dtype = "string")
+# concept_ranking = get_concept_ranking(sorted_concept_sections, book_content_file)
+# concept_ranking.to_csv("data/concept_rank.csv")
 
 
 # Step 8: Apply Rank filtering on extracted concepts
-concept_ranking = pd.read_csv("data/concept_rank.csv")
-concept_content = pd.read_csv("data/concept_content.csv")
-rank_filtered_concepts = apply_rank_filter(concept_content, concept_ranking)
-rank_filtered_concepts.to_csv("data/rank_filtered_concepts.csv")
+# concept_ranking = pd.read_csv("data/concept_rank.csv")
+# concept_content = pd.read_csv("data/concept_content.csv")
+# rank_filtered_concepts = apply_rank_filter(concept_content, concept_ranking)
+# rank_filtered_concepts.to_csv("data/rank_filtered_concepts.csv")
+# print("Step 8 done!!")
 
 
 # Step 9: Finding TF-IDF score of each concept in each document
+# rank_filtered_concepts = pd.read_csv("data/rank_filtered_concepts.csv")
+# tfidf_score = get_tfidf_score(rank_filtered_concepts)
+# tfidf_score.to_csv("data/content_tfidf_score.csv")
+# print("Step 9 done!!")
+
+#----------------------------------------------------------------------------------
+
+# Step 9: Finding TF-IDF score of each concept in each document
 rank_filtered_concepts = pd.read_csv("data/rank_filtered_concepts.csv")
-tfidf_score = get_tfidf_score(rank_filtered_concepts)
+df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+tfidf_score = get_tfidf_score(rank_filtered_concepts, df_wiki_tfidf)
 tfidf_score.to_csv("data/content_tfidf_score.csv")
 print("Step 9 done!!")
 
+# tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
+# print(tfidf_score)
+print(tfidf_score.shape)
+
 #----------------------------------------------------------------------------------
+
 # Step 10: Find 1st pass of TFIDF Score between concepts
-tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
-first_prereq_pairs = get_first_prereq_pairs(tfidf_score)
-first_prereq_pairs.to_csv("data/first_prereq_pairs.csv")
+# tfidf_score = pd.read_csv("data/content_tfidf_score.csv")
+# first_prereq_pairs = get_first_prereq_pairs(tfidf_score)
+# first_prereq_pairs.to_csv("data/first_prereq_pairs.csv")
+
 
 # Step 11: Apply rank filter to make entries 0
 rank_filtered_concepts = pd.read_csv("data/rank_filtered_concepts.csv")
-first_prereq_pairs = pd.read_csv("data/first_prereq_pairs.csv")
+first_prereq_pairs = pd.read_csv("data/content_tfidf_score.csv")
+# first_prereq_pairs = pd.read_csv(wiki_tfidf_matrix)
 first_rank_filter = apply_rank_first_prereq(first_prereq_pairs, rank_filtered_concepts)
 first_rank_filter.to_csv("data/first_rank_filter.csv")
 
 # Step 12: Data Normalisation
-first_rank_filter = pd.read_csv("data/first_rank_filter.csv")
-normal_data = normalise_data(first_rank_filter)
-normal_data.to_csv("data/normal_data.csv")
+# first_rank_filter = pd.read_csv("data/first_rank_filter.csv")
+# first_rank_filter = pd.read_csv("data/content_tfidf_score.csv")
+# df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+#
+# normal_data = normalise_data(first_rank_filter)
+# normal_wiki = normalise_data(df_wiki_tfidf)
+#
+# normal_wiki.to_csv("data/normal_wiki.csv")
+# normal_data.to_csv("data/normal_data.csv")
 
 # Step 13: Predict values of labeled pairs
-first_prereq_pairs = pd.read_csv("data/normal_data.csv")
+first_prereq_pairs = pd.read_csv("data/first_rank_filter.csv")
+# first_prereq_pairs = pd.read_csv("data/content_tfidf_score.csv")
 df_wiki_tfidf = pd.read_csv(wiki_tfidf_matrix)
+
 df_labeled_pairs = pd.read_csv(labeled_pairs_file)
 labeled_prereq_val = get_labeled_prereq_val(df_labeled_pairs, first_prereq_pairs, df_wiki_tfidf)
+
 labeled_prereq_val.to_csv("data/predicted_prereq.csv")
+labeled_prereq_val.to_csv("../Prop+Sup/data/predicted_prereq.csv")
+labeled_prereq_val.to_csv("../result_analysis/predicted_prereq.csv")
 
 #----------------------------------------------------------------------------------
 

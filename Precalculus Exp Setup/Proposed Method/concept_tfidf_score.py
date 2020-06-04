@@ -71,6 +71,33 @@ def get_tf_idf_matrix(concept_list, df, idf_data):
 	return df
 
 
+def normalise_data(df):
+    column_maxes = df.max()
+    df_max = column_maxes.max()
+    column_mins = df.min()
+    df_min = column_mins.min()
+    normal_df = df/df_max
+    return df
+
+
+def merge_df(df_tfidf, df_wiki, concept_type, concept_list):
+	df_wiki.set_index("concept", inplace = True)
+
+	df_tfidf = normalise_data(df_tfidf)
+	df_wiki = normalise_data(df_wiki)
+
+	for i in range(len(concept_list)):
+		concept = concept_list[i]
+		if concept_type[i] == 0 or concept_type[i] == 3:
+			df_tfidf = df_tfidf.drop(index = concept)
+		else:
+			df_wiki = df_wiki.drop(index = concept)
+	print(df_tfidf.shape)
+	print(df_wiki.shape)
+	final_df = pd.concat([df_tfidf, df_wiki])
+	return final_df
+
+
 
 # def book_name_correction(concept_list, df):
 # 	for concept in concept_list:
@@ -80,10 +107,16 @@ def get_tf_idf_matrix(concept_list, df, idf_data):
 # 	return df
 
 
-def get_tfidf_score(df):
+def get_tfidf_score(df, df_wiki):
 	concept_list, match_data = read_data(df)
 	df_match = get_tf_matrix(concept_list, match_data)
 	match_idf_data = get_term_idf(concept_list, df_match)
-	df_match_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
-	# df_match_tfidf = book_name_correction(concept_list, df_match_tfidf)
-	return df_match_tfidf
+	df_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
+
+	concept_type = df['type'].values
+	concept_list = df['concept'].values
+
+	df_final = merge_df(df_tfidf, df_wiki, concept_type, concept_list)
+
+	# df_final = book_name_correction(concept_list, df_final)
+	return df_final
