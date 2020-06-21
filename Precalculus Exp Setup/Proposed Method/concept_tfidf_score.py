@@ -88,7 +88,7 @@ def merge_df(df_tfidf, df_wiki, concept_type, concept_list):
 
 	for i in range(len(concept_list)):
 		concept = concept_list[i]
-		if concept_type[i] == 0 or concept_type[i] == 3:
+		if concept_type[i] == 0:
 			df_tfidf = df_tfidf.drop(index = concept)
 		else:
 			df_wiki = df_wiki.drop(index = concept)
@@ -99,12 +99,13 @@ def merge_df(df_tfidf, df_wiki, concept_type, concept_list):
 
 
 
-# def book_name_correction(concept_list, df):
-# 	for concept in concept_list:
-# 		df.at[concept, "Geometry"] = 1.0
-# 	for concept in concept_list:
-# 		df.at["Geometry", concept] = 0.0
-# 	return df
+def book_name_correction(concept_list, df):
+	for concept in concept_list:
+		df.at[concept, "Mathematics"] = 1.0
+		df.at[concept, "Calculus"] = 1.0
+		df.at["Mathematics", concept] = 0.0
+		df.at["Calculus", concept] = 0.0
+	return df
 
 
 def get_tfidf_score(df, df_wiki):
@@ -113,10 +114,9 @@ def get_tfidf_score(df, df_wiki):
 	match_idf_data = get_term_idf(concept_list, df_match)
 	df_tfidf = get_tf_idf_matrix(concept_list, df_match, match_idf_data)
 
-	concept_type = df['type'].values
-	concept_list = df['concept'].values
+	# concept_type = df['type'].values
+	# concept_list = df['concept'].values
+	# df_final = merge_df(df_tfidf, df_wiki, concept_type, concept_list)
 
-	df_final = merge_df(df_tfidf, df_wiki, concept_type, concept_list)
-
-	# df_final = book_name_correction(concept_list, df_final)
+	df_final = book_name_correction(concept_list, df_tfidf)
 	return df_final
