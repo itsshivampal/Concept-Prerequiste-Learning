@@ -1,0 +1,919 @@
+,topic_a,topic_b,relation,tfidf_score,wiki_tfidf_score
+0,Differential equation,Number,1,0.0064263306337703574,0.0064263306337703574
+1,Partial fraction decomposition,Arithmetic,1,0.047546626831744064,0.0
+2,Equation,Quadratic equation,0,0.186873430743695,0.186873430743695
+3,Mathematics,Linear inequality,0,0.0,0.0
+4,Binomial theorem,Addition,1,0.0351178834864004,0.0351178834864004
+5,Exponential growth,Exponential function,1,0.16509568338840908,0.16509568338840908
+6,Continuous function,Mathematics,1,1.0,1.0
+7,Mathematics,Vertical line test,0,0.0,0.0
+8,Real number,Inequality (mathematics),0,0.0,0.0
+9,Arithmetic,Mathematics,1,1.0,1.0
+10,Addition,Circle,0,0.015202877140457963,0.015202877140457963
+11,Line (geometry),Secant line,0,0.006701220504120186,0.006701220504120186
+12,Algebra,Number,1,0.011678620094063438,0.011678620094063438
+13,Circle,Geometry,1,0.011877339426256552,0.011877339426256552
+14,Multiplication,Common logarithm,0,0.027181347203316674,0.027181347203316674
+15,Linear equation,Equation,1,0.16817843156587678,0.16817843156587678
+16,Inequality (mathematics),Mathematics,1,1.0,1.0
+17,Function (mathematics),Exponential growth,0,0.014552718540005512,0.0
+18,Rational number,Nth root,0,0.027181347203316674,0.0
+19,Parametric equation,Equation,1,0.08340277320511848,0.08340277320511848
+20,Limit of a function,Function (mathematics),1,0.04841628468808217,0.0
+21,Constant function,Linear function,0,0.0440234281369358,0.0440234281369358
+22,Law of sines,Line segment,1,0.03178406583341601,0.0
+23,Coordinate system,Geometry,1,0.044831379872713004,0.044831379872713004
+24,Sine,Mathematics,1,1.0,1.0
+25,Arithmetic,Subtraction,0,0.05260172039512224,0.05260172039512224
+26,Limit of a sequence,Mathematics,1,1.0,1.0
+27,Exponentiation,Arithmetic,1,0.027181347203316674,0.027181347203316674
+28,Function (mathematics),Periodic function,0,0.014552718540005512,0.0
+29,Addition,Rational number,0,0.022568972652479747,0.022568972652479747
+30,Exponentiation,Quadratic equation,0,0.0,0.0
+31,Law of sines,Sine,1,0.2533998828760725,0.2533998828760725
+32,Constant function,Even and odd functions,0,0.021811752080828632,0.0
+33,Linear equation,Quadratic equation,0,0.186873430743695,0.186873430743695
+34,Multiplication,Rational number,0,0.022568972652479747,0.022568972652479747
+35,Linear equation,Mathematics,1,1.0,1.0
+36,Mathematics,Continuous function,0,0.0,0.0
+37,Algebra,Mathematics,1,1.0,1.0
+38,Real line,Geometry,1,0.007066265228279215,0.007066265228279215
+39,Position (vector),Vector (mathematics and physics),1,0.014552718540005512,0.0
+40,Sine,Law of sines,0,0.04860946401770085,0.04860946401770085
+41,Multiplicative inverse,Multiplication,1,0.005889363580115375,0.005889363580115375
+42,Polynomial,Circle,0,0.026493249134474543,0.0
+43,Function (mathematics),Nth root,0,0.014552718540005512,0.014552718540005512
+44,Arithmetic,Algebraic expression,0,0.024419477659284983,0.0
+45,Conic section,Mathematics,1,1.0,1.0
+46,Addition,Linear inequality,0,0.0,0.0
+47,Trigonometric functions,Inverse trigonometric functions,0,0.0,0.0
+48,Arithmetic,Exponentiation,0,0.027181347203316674,0.027181347203316674
+49,Coordinate system,Complex number,0,0.06486882360398104,0.06486882360398104
+50,Secant line,Curve,1,0.06185713993182765,0.06185713993182765
+51,Unit circle,Nth root,0,0.027181347203316674,0.0
+52,Geometry,Vector (mathematics and physics),0,0.0830996518039371,0.0
+53,Vector (mathematics and physics),Euclidean vector,0,0.7831457651878471,0.7831457651878471
+54,Binomial,Binomial theorem,0,0.04949126835362287,0.04949126835362287
+55,Multiplicative inverse,Mathematics,1,1.0,1.0
+56,Complex number,Zero of a function,0,0.0,0.0
+57,System of linear equations,Mathematics,1,1.0,1.0
+58,Right triangle,Line (geometry),1,0.00422968768256285,0.0
+59,Exponentiation,Multiplicative inverse,0,0.020978786735308008,0.0
+60,Spherical law of cosines,Geometry,1,0.011877339426256552,0.011877339426256552
+61,Mathematics,Common logarithm,0,0.0,0.0
+62,Multiplication,Binomial,0,0.008743321114897696,0.0
+63,Logarithm,Mathematics,1,1.0,1.0
+64,Geometry,System of linear equations,0,0.06481818439742056,0.0
+65,Exponential growth,Number,1,0.008662421474567911,0.008662421474567911
+66,Geometry,Polar coordinate system,0,0.06711127343186858,0.0
+67,Line (geometry),Real line,0,0.028542312710140245,0.0
+68,Linear inequality,Calculus,1,1.0,0.0
+69,Injective function,Function (mathematics),1,0.29939776046086103,0.29939776046086103
+70,Exponentiation,Real number,0,0.02068204141099673,0.02068204141099673
+71,Geometric series,Geometry,0,0.17444842282314313,0.17444842282314313
+72,Mathematics,Cross product,0,0.0,0.0
+73,Exponentiation,Imaginary number,0,0.027181347203316674,0.0
+74,Series (mathematics),Calculus,1,1.0,1.0
+75,Dot product,Arithmetic,1,0.047546626831744064,0.0
+76,Multiplication,Function (mathematics),0,0.020713232472835755,0.0
+77,Addition,Mathematics,1,1.0,1.0
+78,Mathematics,Algebraic equation,0,0.0,0.0
+79,Logarithm,Number,1,0.002940863171386435,0.002940863171386435
+80,Polynomial,Number,1,0.01269592149598534,0.01269592149598534
+81,Exponential function,Mathematics,1,1.0,1.0
+82,Real number,Nth root,0,0.027181347203316674,0.0
+83,Even and odd functions,Mathematics,1,1.0,1.0
+84,Trigonometry,Geometry,1,0.011877339426256552,0.011877339426256552
+85,Polynomial,Function (mathematics),0,0.08831776706259918,0.0
+86,Coordinate system,Real number,0,0.044777013448206365,0.044777013448206365
+87,Mathematics,Inverse trigonometric functions,0,0.0,0.0
+88,Plane curve,Geometry,1,0.011877339426256552,0.011877339426256552
+89,Line (geometry),Transformation (function),0,0.020978786735308008,0.0
+90,Function composition,Even and odd functions,0,0.021811752080828632,0.0
+91,Binomial,Arithmetic,1,0.047546626831744064,0.047546626831744064
+92,Circle,Quadratic equation,0,0.023914773678887016,0.0
+93,Partial fraction decomposition,Multiplication,1,0.016395988207041204,0.0
+94,Function (mathematics),Equation solving,0,0.014552718540005512,0.0
+95,Addition,Multiplication,0,0.02075441545195089,0.02075441545195089
+96,Arithmetic,Common logarithm,0,0.036393805266710016,0.0
+97,Exponentiation,Algebraic expression,0,0.02213853743836276,0.0
+98,Inverse trigonometric functions,Trigonometry,1,0.04031127057473953,0.04031127057473953
+99,Unit circle,Complex number,0,0.06045237685072737,0.06045237685072737
+100,Geometry,Line–line intersection,0,0.0220117140684679,0.0
+101,Mathematics,Simultaneous equations,0,0.0,0.0
+102,Inverse trigonometric functions,Geometry,1,0.011877339426256552,0.011877339426256552
+103,Circle,Real line,0,0.044777013448206365,0.0
+104,Number,Exponentiation,0,0.027181347203316674,0.027181347203316674
+105,Secant line,Derivative,0,0.024124393814832668,0.024124393814832668
+106,Linear equation,Geometry,1,0.011877339426256552,0.011877339426256552
+107,Multiplication,Linear inequality,0,0.0,0.0
+108,Polynomial,Mathematics,1,1.0,1.0
+109,Real line,Rational number,1,0.022568972652479747,0.022568972652479747
+110,Common logarithm,Mathematics,1,1.0,1.0
+111,Addition,Number,1,0.07028290718452644,0.07028290718452644
+112,Spherical law of cosines,Mathematics,1,1.0,1.0
+113,Exponentiation,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+114,Euclidean vector,Geometry,0,0.012633322840940492,0.012633322840940492
+115,Limit of a function,Calculus,1,1.0,1.0
+116,Mathematics,Complex plane,0,0.0,0.0
+117,Mathematics,Angle,0,0.0,0.0
+118,Addition,Sum,0,0.004557307806834618,0.004557307806834618
+119,Geometry,Trigonometry,0,0.028244953032986138,0.028244953032986138
+120,Equation,Parametric equation,0,0.0,0.0
+121,Complex number,Number,1,0.04448998131071786,0.04448998131071786
+122,Quadratic function,Graph of a function,0,0.07647879930443771,0.0
+123,Number,Algebra,0,0.005288402029124772,0.005288402029124772
+124,Geometry,Mathematics,1,1.0,1.0
+125,Position (vector),Euclidean vector,1,0.014552718540005512,0.014552718540005512
+126,Mathematics,Even and odd functions,0,0.0,0.0
+127,Monotonic function,Mathematics,1,1.0,1.0
+128,Mathematics,Real line,0,0.0,0.0
+129,Periodic function,Mathematics,1,1.0,1.0
+130,Mathematics,Line segment,0,0.0,0.0
+131,Exponential growth,Function (mathematics),1,0.0849665510411124,0.0
+132,Polar coordinate system,Geometry,1,0.044831379872713004,0.044831379872713004
+133,Function (mathematics),Domain of a function,0,0.06256081370209271,0.06256081370209271
+134,Equation,Inequality (mathematics),0,0.0,0.0
+135,Polynomial,Equation,0,0.008565111497316405,0.008565111497316405
+136,Equation solving,Number,1,0.0064263306337703574,0.0064263306337703574
+137,Addition,Binomial theorem,0,0.020713232472835755,0.0
+138,Mathematics,Product (mathematics),0,0.0,0.0
+139,Complex number,Multiplicative inverse,0,0.020978786735308008,0.0
+140,Linear inequality,Mathematics,1,1.0,1.0
+141,Fundamental theorem of algebra,Mathematics,1,1.0,1.0
+142,Logarithm,Sine,0,0.04095919218635853,0.04095919218635853
+143,Mathematics,Geometric series,0,0.0,0.0
+144,Rational function,Real number,0,0.003868583285510181,0.003868583285510181
+145,Trigonometry,Sine,0,0.04249563253201216,0.04249563253201216
+146,Mathematics,Algebraic expression,0,0.0,0.0
+147,Algebraic equation,Number,1,0.0064263306337703574,0.0064263306337703574
+148,Arithmetic,Formula,0,0.027348287857335785,0.0
+149,Equation,Linear inequality,0,0.0,0.0
+150,Multiplication,Multiplicative inverse,0,0.020713232472835755,0.020713232472835755
+151,Algebraic expression,Polynomial,1,0.2549850254344783,0.2549850254344783
+152,Line segment,Right triangle,0,0.026493249134474543,0.0
+153,Rational number,Sine,0,0.020713232472835755,0.020713232472835755
+154,Line (geometry),Equation,0,0.10314545864980837,0.10314545864980837
+155,Dot product,Multiplication,1,0.04947065407296915,0.04947065407296915
+156,Linear function,Equation,0,0.022881419260663505,0.022881419260663505
+157,Real line,Mathematics,1,1.0,1.0
+158,Cross product,Number,1,0.001204936993831942,0.001204936993831942
+159,Geometry,Pythagorean trigonometric identity,0,0.028244953032986138,0.0
+160,Geometric series,Calculus,1,1.0,1.0
+161,Number,Extended real number line,0,0.0,0.0
+162,Matrix ring,Number,1,0.00802362668725085,0.00802362668725085
+163,Parametric equation,Mathematics,1,1.0,1.0
+164,Calculus,Linear function,0,0.0,0.0
+165,Mathematics,Circle,0,0.0,0.0
+166,Addition,Binomial,0,0.008743321114897696,0.0
+167,Expression (mathematics),Mathematics,1,1.0,1.0
+168,Algebraic expression,Rational number,0,0.036393805266710016,0.036393805266710016
+169,Common logarithm,Multiplication,1,0.008197994103520602,0.008197994103520602
+170,Function (mathematics),Even and odd functions,0,0.021811752080828632,0.0
+171,Inequality (mathematics),Equation,1,0.011511769938594684,0.011511769938594684
+172,Number,Addition,0,0.0351178834864004,0.0351178834864004
+173,Geometry,Inverse trigonometric functions,0,0.0,0.0
+174,Real number,Domain of a function,0,0.020713232472835755,0.0
+175,Transformation (function),Geometry,0,0.011877339426256552,0.011877339426256552
+176,Rationalisation (mathematics),Nth root,0,0.036393805266710016,0.0
+177,Trigonometry,Law of sines,0,0.04860946401770085,0.04860946401770085
+178,Number,Differential equation,0,0.0,0.0
+179,Mathematics,Series (mathematics),0,0.0,0.0
+180,Secant line,Calculus,0,1.0,1.0
+181,Vertical line test,Function (mathematics),1,0.17767581016706693,0.0
+182,Exponentiation,Common logarithm,0,0.13579211677089767,0.0
+183,Mathematics,Formula,0,0.0,0.0
+184,Exponential function,Exponentiation,1,0.1698744637159193,0.1698744637159193
+185,Number,Common logarithm,0,0.027181347203316674,0.0
+186,Angle,Mathematics,1,1.0,1.0
+187,Plane (geometry),Polar coordinate system,0,0.04949126835362287,0.0
+188,Real line,Number,1,0.07028290718452644,0.07028290718452644
+189,Subtraction,Arithmetic,1,0.027181347203316674,0.027181347203316674
+190,Product (mathematics),Dot product,0,0.0,0.0
+191,Number,Polar coordinate system,0,0.016656459816499027,0.0
+192,Exponential function,Logarithm,0,0.5773550460407824,0.5773550460407824
+193,Plane curve,Plane (geometry),1,0.07603618140060245,0.0
+194,Even and odd functions,Graph of a function,0,0.1024957913755097,0.0
+195,Exponentiation,Exponential growth,0,0.13579211677089767,0.13579211677089767
+196,Function (mathematics),Real number,0,0.0038630249761919186,0.0038630249761919186
+197,Function (mathematics),Monotonic function,0,0.003483911962238929,0.0
+198,Quadratic equation,Mathematics,1,1.0,1.0
+199,Equation,Differential equation,0,0.0,0.0
+200,Geometry,Rotation of axes,0,0.010038339130143036,0.0
+201,Vector (mathematics and physics),Calculus,0,1.0,1.0
+202,Function (mathematics),Inverse function,0,0.0,0.0
+203,Polynomial,Multiplication,1,0.010523740826085495,0.010523740826085495
+204,Coordinate system,Rotation of axes,0,0.08630078876866244,0.08630078876866244
+205,Matrix ring,Mathematics,1,1.0,1.0
+206,Exponential function,Multiplication,1,0.0018603617481514226,0.0018603617481514226
+207,Cubic function,Function (mathematics),1,0.08831776706259918,0.0
+208,Number,Coordinate system,0,0.016656459816499027,0.016656459816499027
+209,Coordinate system,Equation,0,0.02851376861713452,0.02851376861713452
+210,Number,System of linear equations,0,0.044072631780966064,0.0
+211,Mathematics,Unit circle,0,0.0,0.0
+212,Geometry,Line segment,0,0.01892519721484535,0.01892519721484535
+213,Zero of a function,Mathematics,1,1.0,1.0
+214,Exponentiation,Rational number,0,0.045716636911433337,0.045716636911433337
+215,Number,Binomial,0,0.008743321114897696,0.0
+216,Trigonometry,Inverse trigonometric functions,0,0.0,0.0
+217,Exponentiation,Exponential function,0,0.13579211677089767,0.13579211677089767
+218,Logarithm,Addition,0,0.003483129686661183,0.003483129686661183
+219,Algebra,Algebraic expression,0,0.0765109867528953,0.0765109867528953
+220,Secant line,Line (geometry),1,0.286245646412978,0.0
+221,Line (geometry),Conic section,0,0.010038339130143036,0.0
+222,Mathematics,Differential equation,0,0.0,0.0
+223,Complex number,Identity (mathematics),0,0.03686327296772268,0.0
+224,Equation solving,Domain of a function,0,0.06256081370209271,0.0
+225,Addition,Matrix ring,0,0.0,0.0
+226,Logarithm,Identity (mathematics),0,0.04095919218635853,0.0
+227,Mathematics,Cubic function,0,0.0,0.0
+228,Mathematics,Identity (mathematics),0,0.0,0.0
+229,Equation,System of linear equations,0,0.1052319152586736,0.1052319152586736
+230,Mathematics,Logarithm,0,0.0,0.0
+231,Geometry,Unit circle,0,0.06562990678121199,0.06562990678121199
+232,Rotation (mathematics),Mathematics,1,1.0,1.0
+233,Quadratic equation,Nth root,0,0.027181347203316674,0.0
+234,Transformation (function),Coordinate system,0,0.027181347203316674,0.0
+235,Equation,Geometry,0,0.011877339426256552,0.011877339426256552
+236,Trigonometry,Pythagorean trigonometric identity,0,0.020155635287369758,0.0
+237,Mathematics,Rotation (mathematics),0,0.0,0.0
+238,Algebraic expression,Arithmetic,1,0.047546626831744064,0.047546626831744064
+239,Linear function,Mathematics,1,1.0,1.0
+240,Complex number,Subtraction,0,0.05260172039512224,0.05260172039512224
+241,Vertical line test,Geometry,1,0.011877339426256552,0.0
+242,Binomial theorem,Polynomial,1,0.2549850254344783,0.2549850254344783
+243,Matrix (mathematics),Vector (mathematics and physics),0,0.014625221048416888,0.0
+244,Polynomial,Addition,1,0.0047485028590939365,0.0047485028590939365
+245,Binomial,Number,1,0.011678620094063438,0.011678620094063438
+246,Linear equation,Line (geometry),1,0.03836625796910545,0.0
+247,Zero of a function,Graph of a function,0,0.1024957913755097,0.0
+248,Circle,Conic section,0,0.010869917519622341,0.010869917519622341
+249,Imaginary number,Real number,1,0.018384036809774875,0.018384036809774875
+250,Line segment,Transformation (function),0,0.020978786735308008,0.0
+251,Arithmetic,Product (mathematics),0,0.005700382975777104,0.0
+252,Matrix ring,Addition,1,0.028509315816833726,0.028509315816833726
+253,Geometry,Sine,0,0.028244953032986138,0.028244953032986138
+254,Linear equation,Graph of a function,0,0.1024957913755097,0.1024957913755097
+255,Geometry,Line (geometry),0,0.038051780444768514,0.038051780444768514
+256,Triangle,Geometry,1,0.011877339426256552,0.011877339426256552
+257,Equation,Algebraic equation,0,0.007066265228279215,0.007066265228279215
+258,Addition,Equation,0,0.044072631780966064,0.0
+259,Infinity,Limit (mathematics),0,0.5087397514064993,0.0
+260,Vector (mathematics and physics),Position (vector),0,0.01114343060281256,0.0
+261,Law of sines,Spherical law of cosines,0,0.057739813079226675,0.057739813079226675
+262,Number,Product (mathematics),0,0.004221169671936211,0.0
+263,Polynomial,Fundamental theorem of algebra,0,0.020012515444661358,0.020012515444661358
+264,Polynomial,Linear function,0,0.009155064644651604,0.009155064644651604
+265,Function (mathematics),Limit of a function,0,0.014552718540005512,0.0
+266,Fundamental theorem of algebra,Real number,1,0.010543785817370884,0.010543785817370884
+267,Algebraic expression,Subtraction,0,0.059176935444512524,0.059176935444512524
+268,Cross product,Real number,0,0.06806747806150824,0.06806747806150824
+269,Number,Linear inequality,0,0.0,0.0
+270,Mathematics,Summation,0,0.0,0.0
+271,Linear function,Derivative,0,0.009679540728173602,0.0
+272,Linear equation,Complex number,0,0.07795111398334649,0.07795111398334649
+273,Transformation (function),Circle,0,0.026493249134474543,0.0
+274,Graph of a function,Vertical line test,0,0.05339354225310626,0.0
+275,Cross product,Arithmetic,1,0.047546626831744064,0.0
+276,Product (mathematics),Arithmetic,1,0.047546626831744064,0.047546626831744064
+277,Binomial theorem,Mathematics,1,1.0,1.0
+278,Trigonometry,Mathematics,1,1.0,1.0
+279,Unit circle,Curve,1,0.06045237685072737,0.0
+280,Law of sines,Circle,0,0.3042602478376988,0.3042602478376988
+281,Arithmetic,Exponential function,0,0.036393805266710016,0.0
+282,Injective function,Inverse function,0,0.0,0.0
+283,Right triangle,Geometry,1,0.011877339426256552,0.011877339426256552
+284,Mathematics,Transformation (function),0,0.0,0.0
+285,Function (mathematics),Inverse trigonometric functions,0,0.0,0.0
+286,Algebraic expression,Real number,0,0.02068204141099673,0.0
+287,Rational number,Equation solving,0,0.044072631780966064,0.0
+288,Plane (geometry),Plane curve,0,0.09394010718349713,0.0
+289,Geometric progression,Geometry,0,0.17444842282314313,0.0
+290,Multiplication,Polynomial,0,0.027181347203316674,0.027181347203316674
+291,Linear equation,Vertical line test,0,0.027181347203316674,0.0
+292,Mathematics,Multiplicative inverse,0,0.0,0.0
+293,Function (mathematics),Inequality (mathematics),0,0.0,0.0
+294,Even and odd functions,Function (mathematics),1,0.21484726330336454,0.0
+295,Circle,Line (geometry),1,0.044072631780966064,0.0
+296,Identity (mathematics),Mathematics,1,1.0,1.0
+297,Coordinate system,Number,1,0.044777013448206365,0.044777013448206365
+298,Equation,Function (mathematics),0,0.1578478728880104,0.0
+299,Matrix (mathematics),Matrix ring,0,0.01802283182819792,0.01802283182819792
+300,Binomial,Calculus,0,1.0,1.0
+301,Cross product,Mathematics,1,1.0,1.0
+302,Sum,Arithmetic,1,0.047546626831744064,0.047546626831744064
+303,Multiplication,Product (mathematics),0,0.004221169671936211,0.004221169671936211
+304,Exponentiation,Identity (mathematics),0,0.020978786735308008,0.0
+305,Arithmetic,Matrix ring,0,0.009110026012909151,0.0
+306,Floor and ceiling functions,Series (mathematics),0,0.04949126835362287,0.0
+307,Real number,Graph of a function,0,0.007000006947046879,0.0
+308,Polynomial,Binomial,0,0.002680783683051453,0.002680783683051453
+309,Mathematics,Exponential function,0,0.0,0.0
+310,Number,Cross product,0,0.0,0.0
+311,Complex number,Rational number,0,0.022568972652479747,0.022568972652479747
+312,Absolute value,Real number,1,0.06806747806150824,0.06806747806150824
+313,Mathematics,Sine,0,0.0,0.0
+314,Matrix (mathematics),Determinant,0,0.06185713993182765,0.06185713993182765
+315,Function (mathematics),Transformation (function),0,0.00497602168148951,0.0
+316,Number,Multiplication,0,0.02075441545195089,0.02075441545195089
+317,Mathematics,Calculus,0,0.0,0.0
+318,Product (mathematics),Cross product,0,0.0,0.0
+319,Exponentiation,Number,1,0.031142986917502506,0.031142986917502506
+320,Plane (geometry),Complex plane,0,0.0,0.0
+321,Limit (mathematics),Limit of a function,0,0.578287117972616,0.578287117972616
+322,Fundamental theorem of algebra,Equation,1,0.0036341077649289103,0.0036341077649289103
+323,Addition,Inequality (mathematics),0,0.0,0.0
+324,Hyperbola,Rotation of axes,0,0.05776815460094786,0.05776815460094786
+325,Number,Absolute value,0,0.0258245314315038,0.0258245314315038
+326,Geometry,Linear equation,0,0.06481818439742056,0.06481818439742056
+327,Complex number,Equation,0,0.03168196513014947,0.03168196513014947
+328,Number,Parametric equation,0,0.0,0.0
+329,Invertible matrix,Matrix (mathematics),1,1.5852393087215142,0.0
+330,Addition,Algebraic expression,0,0.020713232472835755,0.0
+331,Complex number,Rational function,0,0.07498206811655657,0.0
+332,Line segment,Spherical law of cosines,0,0.026493249134474543,0.0
+333,Polynomial,Zero of a function,0,0.0,0.0
+334,Addition,Arithmetic,1,0.027181347203316674,0.027181347203316674
+335,Exponential growth,Mathematics,1,1.0,0.0
+336,System of linear equations,Geometry,1,0.01479898909234906,0.01479898909234906
+337,Mathematics,Exponentiation,0,0.0,0.0
+338,Euclidean vector,Position (vector),0,0.005957873787642359,0.0
+339,Spherical law of cosines,Trigonometry,1,0.04031127057473953,0.04031127057473953
+340,Linear inequality,Algebra,1,0.010379720752816322,0.010379720752816322
+341,System of linear equations,Equation,1,0.14602505746350708,0.14602505746350708
+342,Calculus,Limit of a function,0,0.0,0.0
+343,Unit circle,Line (geometry),1,0.044072631780966064,0.0
+344,Function (mathematics),Injective function,0,0.0,0.0
+345,Mathematics,Curve,0,0.0,0.0
+346,Triangle,Mathematics,1,1.0,1.0
+347,Exponentiation,Function (mathematics),0,0.0849665510411124,0.0
+348,Number,Rational number,0,0.022568972652479747,0.022568972652479747
+349,Function (mathematics),Constant function,0,0.005617238782967124,0.005617238782967124
+350,Multiplication,Number,1,0.07028290718452644,0.07028290718452644
+351,Function composition,Function (mathematics),1,0.22063992593568868,0.0
+352,Circle,Rational number,0,0.022568972652479747,0.022568972652479747
+353,Algebraic expression,Addition,1,0.011856037587289026,0.011856037587289026
+354,Logarithm,Complex number,0,0.044072631780966064,0.044072631780966064
+355,Exponential function,Real number,0,0.003254057952713556,0.003254057952713556
+356,Linear equation,Number,1,0.0064263306337703574,0.0064263306337703574
+357,Polynomial,Real number,0,0.005522290903064596,0.005522290903064596
+358,Mathematics,Floor and ceiling functions,0,0.0,0.0
+359,Circle,Curve,1,0.06045237685072737,0.06045237685072737
+360,Number,Binomial theorem,0,0.020713232472835755,0.0
+361,Multiplication,Dot product,0,0.0,0.0
+362,Mathematics,Constant function,0,0.0,0.0
+363,Differential equation,Equation,1,0.16817843156587678,0.16817843156587678
+364,Multiplication,Real line,0,0.08211791625003052,0.0
+365,Line (geometry),Vertical line test,0,0.027181347203316674,0.0
+366,Number,Equation solving,0,0.044072631780966064,0.0
+367,Fundamental theorem of algebra,Addition,1,0.0351178834864004,0.0351178834864004
+368,Polynomial,Partial fraction decomposition,0,0.03281838334665325,0.0
+369,Function (mathematics),Zero of a function,0,0.0,0.0
+370,Partial fraction decomposition,Mathematics,1,1.0,1.0
+371,Absolute value,Number,1,0.07028290718452644,0.07028290718452644
+372,Mathematics,Trigonometric functions,0,0.0,0.0
+373,Zero (complex analysis),Number,1,0.0187119627277431,0.0187119627277431
+374,Multiplication,Equation,0,0.044072631780966064,0.0
+375,Linear function,Function (mathematics),1,0.17767581016706693,0.0
+376,Addition,Geometry,0,0.007066265228279215,0.007066265228279215
+377,Linear equation,Real number,0,0.014937029907942084,0.014937029907942084
+378,Inequality (mathematics),Linear inequality,0,1.0998630636795022,0.0
+379,Mathematics,Conic section,0,0.0,0.0
+380,Equation,Real number,0,0.014937029907942084,0.014937029907942084
+381,Exponential function,Identity (mathematics),0,0.04095919218635853,0.0
+382,Exponential growth,Exponentiation,1,0.1698744637159193,0.1698744637159193
+383,Inequality (mathematics),Algebra,1,0.010379720752816322,0.010379720752816322
+384,Matrix ring,Matrix (mathematics),1,1.0860127998092153,1.0860127998092153
+385,Real number,Number,1,0.07028290718452644,0.07028290718452644
+386,Line (geometry),Right triangle,0,0.026493249134474543,0.0
+387,Inverse function,Function (mathematics),1,0.29939776046086103,0.0
+388,Number,Quadratic equation,0,0.0,0.0
+389,Rotation of axes,Number,1,0.044777013448206365,0.044777013448206365
+390,Real number,Zero (complex analysis),0,0.027181347203316674,0.0
+391,Extended real number line,Number,1,0.07028290718452644,0.07028290718452644
+392,Pythagorean trigonometric identity,Mathematics,1,1.0,0.0
+393,Addition,Partial fraction decomposition,0,0.0,0.0
+394,Polynomial,Binomial theorem,0,0.027181347203316674,0.0
+395,Mathematics,Monotonic function,0,0.0,0.0
+396,Unit circle,Sine,0,0.04249563253201216,0.04249563253201216
+397,Calculus,Series (mathematics),0,0.0,0.0
+398,Sum,Addition,1,0.011856037587289026,0.011856037587289026
+399,Line segment,Triangle,0,0.014633612008599285,0.014633612008599285
+400,Plane (geometry),Geometry,1,0.017721744540763744,0.017721744540763744
+401,Rational function,Function (mathematics),1,0.17172106727499642,0.0
+402,Line (geometry),Circle,0,0.026493249134474543,0.026493249134474543
+403,Complex number,Imaginary number,0,0.3892558832886341,0.3892558832886341
+404,Polynomial,Nth root,0,0.013596643271026979,0.0
+405,Common logarithm,Logarithm,1,1.2329639067833995,1.2329639067833995
+406,Fundamental theorem of algebra,Number,1,0.0187119627277431,0.0187119627277431
+407,Subtraction,Number,1,0.07028290718452644,0.07028290718452644
+408,Rational number,Real line,0,0.08211791625003052,0.0
+409,Constant function,Domain of a function,0,0.006891789543630345,0.0
+410,Zero of a function,Domain of a function,1,0.06256081370209271,0.0
+411,Number,Dot product,0,0.0,0.0
+412,Spherical law of cosines,Trigonometric functions,1,0.18604280526477346,0.0
+413,Function (mathematics),Function composition,0,0.010905876040414316,0.010905876040414316
+414,Mathematics,Line (geometry),0,0.0,0.0
+415,Equation,Equation solving,0,0.09668196708782786,0.09668196708782786
+416,Binomial theorem,Real number,0,0.06700283642300492,0.06700283642300492
+417,Polar coordinate system,Plane (geometry),1,0.05199055138502731,0.0
+418,Arithmetic,Cross product,0,0.01877436577792653,0.0
+419,Parametric equation,Number,1,0.028542312710140245,0.028542312710140245
+420,Complex number,Inequality (mathematics),0,0.0,0.0
+421,Exponential function,Graph of a function,0,0.01589562848338482,0.0
+422,Geometry,Triangle,0,0.02758795706539209,0.02758795706539209
+423,Line (geometry),Geometry,1,0.011877339426256552,0.011877339426256552
+424,Number,Partial fraction decomposition,0,0.0,0.0
+425,Trigonometric functions,Pythagorean trigonometric identity,0,0.020155635287369758,0.0
+426,Circle,Quadratic function,0,0.06045237685072737,0.0
+427,Product (mathematics),Number,1,0.011678620094063438,0.011678620094063438
+428,Mathematics,Polynomial,0,0.0,0.0
+429,Real number,Multiplicative inverse,0,0.020713232472835755,0.0
+430,Hyperbola,Geometry,0,0.043498827509147374,0.043498827509147374
+431,Equation,Mathematics,1,1.0,1.0
+432,Polynomial,Complex number,0,0.07795111398334649,0.07795111398334649
+433,Equation,Rational number,0,0.022568972652479747,0.022568972652479747
+434,Arithmetic,Multiplicative inverse,0,0.020978786735308008,0.020978786735308008
+435,Arithmetic,Sum,0,0.006154313106665554,0.006154313106665554
+436,Trigonometric functions,Spherical law of cosines,0,0.06944209145385838,0.0
+437,Addition,Nth root,0,0.027181347203316674,0.027181347203316674
+438,Number,Imaginary number,0,0.027181347203316674,0.027181347203316674
+439,Polynomial,Arithmetic,1,0.007141149344433959,0.007141149344433959
+440,Multiplication,Exponentiation,0,0.027181347203316674,0.027181347203316674
+441,Matrix (mathematics),Invertible matrix,0,0.0,0.0
+442,Mathematics,Matrix ring,0,0.0,0.0
+443,Law of sines,Geometry,1,0.011877339426256552,0.011877339426256552
+444,Subtraction,Mathematics,1,1.0,1.0
+445,Inverse trigonometric functions,Inverse function,1,0.0,0.0
+446,Calculus,Geometric series,0,0.0,0.0
+447,Quadratic equation,Equation solving,0,0.09668196708782786,0.0
+448,Logarithm,Exponential growth,0,0.0748007422890538,0.0
+449,Exponential function,Addition,0,0.0009326988722224347,0.0009326988722224347
+450,Inverse trigonometric functions,Mathematics,1,1.0,1.0
+451,Mathematics,Injective function,0,0.0,0.0
+452,Line (geometry),Line segment,0,0.015256351600039688,0.015256351600039688
+453,Line segment,Line (geometry),1,0.286245646412978,0.286245646412978
+454,Binomial theorem,Arithmetic,1,0.047546626831744064,0.047546626831744064
+455,Line (geometry),Complex number,0,0.07795111398334649,0.07795111398334649
+456,Mathematics,Linear function,0,0.0,0.0
+457,Inverse trigonometric functions,Sine,1,0.23102171140130245,0.23102171140130245
+458,Number,Fundamental theorem of algebra,0,0.027181347203316674,0.027181347203316674
+459,Plane curve,Line (geometry),1,0.06583649867498494,0.0
+460,Differential equation,Mathematics,1,1.0,1.0
+461,Conic section,Circle,1,0.01937140796929321,0.01937140796929321
+462,Calculus,Fundamental theorem of algebra,0,0.0,0.0
+463,Complex number,Graph of a function,0,0.004726500417236782,0.0
+464,Equation,Algebraic expression,0,0.01227954108379801,0.01227954108379801
+465,Algebra,Linear inequality,0,0.0,0.0
+466,Algebraic equation,Mathematics,1,1.0,1.0
+467,Determinant,Transformation (function),0,0.05526560250505371,0.0
+468,Geometry,Circle,0,0.06562990678121199,0.06562990678121199
+469,Unit circle,Mathematics,1,1.0,1.0
+470,Domain of a function,Mathematics,1,1.0,1.0
+471,Algebraic expression,Algebra,1,0.05624012157896152,0.05624012157896152
+472,Linear inequality,Number,1,0.0053885381090621005,0.0053885381090621005
+473,Number,Algebraic expression,0,0.020713232472835755,0.0
+474,Algebraic expression,Multiplication,1,0.06700283642300492,0.06700283642300492
+475,Quadratic equation,Graph of a function,0,0.1024957913755097,0.0
+476,Rotation (mathematics),Geometry,1,0.044831379872713004,0.044831379872713004
+477,Mathematics,Pythagorean trigonometric identity,0,0.0,0.0
+478,Trigonometric functions,Mathematics,1,1.0,1.0
+479,Linear inequality,Inequality (mathematics),1,1.0998630636795022,0.0
+480,Number,Inequality (mathematics),0,0.0,0.0
+481,Linear function,Matrix (mathematics),0,0.035169069805013324,0.0
+482,Secant line,Geometry,1,0.011877339426256552,0.011877339426256552
+483,Zero of a function,Geometry,0,0.0016041234282587874,0.0016041234282587874
+484,Common logarithm,Arithmetic,1,0.044072631780966064,0.0
+485,Algebraic expression,Mathematics,1,1.0,1.0
+486,Monotonic function,Function (mathematics),1,0.21484726330336454,0.0
+487,Geometry,Law of sines,0,0.02758795706539209,0.0
+488,Exponentiation,Mathematics,1,1.0,1.0
+489,Mathematics,Parametric equation,0,0.0,0.0
+490,Pythagorean trigonometric identity,Sine,0,0.04249563253201216,0.04249563253201216
+491,Plane curve,Conic section,0,0.04095919218635853,0.04095919218635853
+492,System of linear equations,Linear equation,1,0.13393152851103912,0.13393152851103912
+493,Mathematics,Arithmetic,0,0.0,0.0
+494,Transformation (function),Function (mathematics),1,0.05400277907516857,0.05400277907516857
+495,Multiplication,Cross product,0,0.0,0.0
+496,Polynomial,Graph of a function,0,0.058210584085968776,0.0
+497,Number,Polynomial,0,0.027181347203316674,0.027181347203316674
+498,Rotation of axes,Mathematics,1,1.0,1.0
+499,Mathematics,Subtraction,0,0.0,0.0
+500,Sine,Geometry,1,0.011877339426256552,0.011877339426256552
+501,Simultaneous equations,Number,1,0.00694940405744934,0.00694940405744934
+502,Number,Real line,0,0.08211791625003052,0.0
+503,Inverse function,Mathematics,1,1.0,1.0
+504,Geometry,Trigonometric functions,0,0.06562990678121199,0.0
+505,Constant function,Polynomial,0,0.035169069805013324,0.035169069805013324
+506,Exponentiation,Function composition,0,0.010905876040414316,0.010905876040414316
+507,Sine,Multiplicative inverse,0,0.011227057886698514,0.0
+508,Complex number,Fundamental theorem of algebra,0,0.027181347203316674,0.027181347203316674
+509,Euclidean vector,Vector (mathematics and physics),1,0.615541835242847,0.615541835242847
+510,Exponential function,Arithmetic,1,0.044072631780966064,0.044072631780966064
+511,Curve,Unit circle,0,0.026493249134474543,0.0
+512,Equation,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+513,Rational number,Multiplicative inverse,0,0.020713232472835755,0.020713232472835755
+514,Zero (complex analysis),Complex number,1,0.1488331318456542,0.1488331318456542
+515,Equation,Subtraction,0,0.028542312710140245,0.028542312710140245
+516,Even and odd functions,Sine,0,0.014552718540005512,0.014552718540005512
+517,Rotation of axes,Conic section,0,0.5011640186388675,0.5011640186388675
+518,Spherical law of cosines,Triangle,0,0.4362984321082379,0.4362984321082379
+519,Law of sines,Triangle,1,0.6232834744403398,0.6232834744403398
+520,Geometry,Conic section,0,0.010038339130143036,0.010038339130143036
+521,Multiplicative inverse,Number,1,0.00648173003578562,0.00648173003578562
+522,Linear function,Real number,0,0.028542312710140245,0.028542312710140245
+523,Real line,Graph of a function,0,0.007000006947046879,0.0
+524,Secant line,Circle,0,0.026493249134474543,0.026493249134474543
+525,Exponentiation,Addition,0,0.015808050116385367,0.015808050116385367
+526,Floor and ceiling functions,Function (mathematics),0,0.06731853281973067,0.0
+527,Dot product,Mathematics,1,1.0,1.0
+528,Logarithm,Common logarithm,0,0.5639060106353995,0.5639060106353995
+529,Real number,Fundamental theorem of algebra,0,0.027181347203316674,0.027181347203316674
+530,Addition,Function (mathematics),0,0.020713232472835755,0.0
+531,Multiplication,Mathematics,1,1.0,1.0
+532,Mathematical induction,Mathematics,1,1.0,1.0
+533,Graph of a function,Function (mathematics),1,0.17767581016706693,0.0
+534,Mathematics,Line–line intersection,0,0.0,0.0
+535,Mathematics,Graph of a function,0,0.0,0.0
+536,Linear inequality,Equation,1,0.011511769938594684,0.011511769938594684
+537,Curve,Line (geometry),1,0.06583649867498494,0.0
+538,Arithmetic,Polynomial,0,0.09583252858651026,0.0
+539,Line (geometry),Unit circle,0,0.015202877140457963,0.0
+540,System of linear equations,Line (geometry),1,0.03836625796910545,0.0
+541,Exponentiation,Polynomial,0,0.027181347203316674,0.027181347203316674
+542,Floor and ceiling functions,Limit of a sequence,0,0.07281045298924091,0.0
+543,Multiplication,Complex number,0,0.027181347203316674,0.027181347203316674
+544,Geometry,Plane (geometry),0,0.0830996518039371,0.0830996518039371
+545,Zero of a function,Real number,0,0.0038630249761919186,0.0038630249761919186
+546,Geometry,Vertical line test,0,0.05339354225310626,0.0
+547,Injective function,Mathematics,1,1.0,1.0
+548,Conic section,Geometry,1,0.042017684636972114,0.042017684636972114
+549,Multiplication,Inequality (mathematics),0,0.0,0.0
+550,Extended real number line,Mathematics,1,1.0,1.0
+551,Unit circle,Pythagorean trigonometric identity,0,0.03810243383091818,0.03810243383091818
+552,Algebra,Inequality (mathematics),0,0.0,0.0
+553,Mathematics,Triangle,0,0.0,0.0
+554,Line (geometry),Equation solving,0,0.09668196708782786,0.0
+555,Geometry,Angle,0,0.009195985688464027,0.009195985688464027
+556,Conic section,Line (geometry),1,0.015315562657021931,0.0
+557,Quadratic equation,Real number,0,0.014937029907942084,0.014937029907942084
+558,Multiplication,Algebraic expression,0,0.020713232472835755,0.020713232472835755
+559,Series (mathematics),Mathematics,1,1.0,1.0
+560,Line segment,Geometry,1,0.011877339426256552,0.011877339426256552
+561,Linear equation,Equation solving,0,0.09668196708782786,0.0
+562,Triangle,Law of sines,0,0.04860946401770085,0.04860946401770085
+563,Arithmetic,Exponential growth,0,0.036393805266710016,0.0
+564,Derivative,Vector (mathematics and physics),0,0.07603618140060245,0.0
+565,Sine,Graph of a function,0,0.1024957913755097,0.0
+566,Number,Simultaneous equations,0,0.0,0.0
+567,Addition,Even and odd functions,0,0.017773066531068134,0.0
+568,Complex number,Sine,0,0.03686327296772268,0.03686327296772268
+569,Algebraic expression,Number,1,0.011678620094063438,0.011678620094063438
+570,Unit circle,Real number,0,0.01734622828019081,0.0
+571,Partial fraction decomposition,Quadratic equation,0,0.05562955339314055,0.0
+572,Mathematics,Inverse function,0,0.0,0.0
+573,Mathematics,Domain of a function,0,0.0,0.0
+574,Triangle,Right triangle,0,0.09579682651089992,0.09579682651089992
+575,Quadratic function,Mathematics,1,1.0,0.0
+576,Limit of a function,Limit (mathematics),1,0.5087397514064993,0.0
+577,Line (geometry),Linear equation,0,0.18118190627145545,0.18118190627145545
+578,Real number,Common logarithm,0,0.027181347203316674,0.0
+579,Mathematics,Coordinate system,0,0.0,0.0
+580,Binomial,Multiplication,1,0.06700283642300492,0.0
+581,Function (mathematics),Rational function,0,0.014552718540005512,0.014552718540005512
+582,Algebraic equation,Equation,1,0.16817843156587678,0.16817843156587678
+583,Fundamental theorem of algebra,Arithmetic,1,0.047546626831744064,0.047546626831744064
+584,Graph (mathematics),Geometry,0,0.011877339426256552,0.0
+585,Circle,Mathematics,1,1.0,1.0
+586,Polynomial,Quadratic equation,0,0.014393332278076638,0.014393332278076638
+587,Trigonometric functions,Identity (mathematics),0,0.07114545066756629,0.0
+588,Logarithm,Equation solving,0,0.044072631780966064,0.0
+589,Mathematics,Multiplication,0,0.0,0.0
+590,Real number,Complex number,0,0.027181347203316674,0.027181347203316674
+591,Complex number,Real number,1,0.018384036809774875,0.018384036809774875
+592,Number,Exponential function,0,0.0,0.0
+593,Simultaneous equations,Mathematics,1,1.0,0.0
+594,Even and odd functions,Real number,0,0.0038630249761919186,0.0038630249761919186
+595,Calculus,Linear inequality,0,0.0,0.0
+596,Mathematics,Periodic function,0,0.0,0.0
+597,Circle,Equation,0,0.023914773678887016,0.023914773678887016
+598,Equation solving,Mathematics,1,1.0,1.0
+599,Complex number,Inverse trigonometric functions,0,0.0,0.0
+600,Inverse function,Inverse trigonometric functions,0,0.0,0.0
+601,Inequality (mathematics),Multiplicative inverse,0,0.009623192474313012,0.009623192474313012
+602,Line (geometry),Real number,0,0.028542312710140245,0.028542312710140245
+603,Common logarithm,Exponentiation,1,0.07569911495475684,0.0
+604,Multiplication,Logarithm,0,0.027181347203316674,0.027181347203316674
+605,Mathematics,Exponential growth,0,0.0,0.0
+606,Number,Zero (complex analysis),0,0.027181347203316674,0.0
+607,Polynomial,Equation solving,0,0.002680783683051453,0.0
+608,Logarithm,Multiplicative inverse,0,0.020978786735308008,0.0
+609,Angle,Triangle,0,0.08951411601004881,0.08951411601004881
+610,Function (mathematics),Quadratic function,0,0.014552718540005512,0.014552718540005512
+611,Exponential growth,Multiplication,1,0.0018603617481514226,0.0018603617481514226
+612,Calculus,Mathematics,1,1.0,1.0
+613,Number,Matrix ring,0,0.0,0.0
+614,Function (mathematics),Vertical line test,0,0.012427807248567836,0.0
+615,Plane (geometry),Mathematics,1,1.0,1.0
+616,Angle,Geometry,1,0.011877339426256552,0.011877339426256552
+617,Unit circle,Circle,1,0.34868534344727786,0.34868534344727786
+618,Mathematics,System of linear equations,0,0.0,0.0
+619,Mathematics,Law of sines,0,0.0,0.0
+620,Logarithm,Real number,0,0.045716636911433337,0.045716636911433337
+621,Geometry,Curve,0,0.046936096810098735,0.046936096810098735
+622,Geometry,Secant line,0,0.006701220504120186,0.0
+623,Number,Real number,0,0.06806747806150824,0.06806747806150824
+624,Law of sines,Trigonometric functions,0,0.038672786835131145,0.0
+625,Real number,Extended real number line,0,0.0,0.0
+626,Triangle,Angle,1,0.3972911589862478,0.3972911589862478
+627,Rational number,Number,1,0.07028290718452644,0.07028290718452644
+628,Mathematics,Function (mathematics),0,0.0,0.0
+629,Floor and ceiling functions,Periodic function,0,0.044831379872713004,0.0
+630,Number,Multiplicative inverse,0,0.020713232472835755,0.0
+631,Trigonometry,Spherical law of cosines,0,0.06944209145385838,0.0
+632,Real line,Line (geometry),1,0.044072631780966064,0.044072631780966064
+633,Mathematics,Linear equation,0,0.0,0.0
+634,Calculus,Limit (mathematics),0,0.0,0.0
+635,Mathematics,Right triangle,0,0.0,0.0
+636,Polar coordinate system,Mathematics,1,1.0,1.0
+637,Complex plane,Geometry,1,0.014573758660817096,0.0
+638,Mathematics,Sum,0,0.0,0.0
+639,Pythagorean trigonometric identity,Trigonometric functions,1,0.3480550815161803,0.3480550815161803
+640,Mathematics,Limit of a sequence,0,0.0,0.0
+641,Continuous function,Function (mathematics),1,0.21484726330336454,0.0
+642,Right triangle,Line segment,1,0.03178406583341601,0.03178406583341601
+643,Exponential function,Complex number,0,0.044072631780966064,0.044072631780966064
+644,Dot product,Product (mathematics),1,0.0689942904999229,0.0
+645,Mathematics,Dot product,0,0.0,0.0
+646,Mathematics,Partial fraction decomposition,0,0.0,0.0
+647,Real line,Real number,1,0.06806747806150824,0.06806747806150824
+648,Fundamental theorem of algebra,Matrix (mathematics),0,0.09583252858651026,0.0
+649,Partial fraction decomposition,Real number,0,0.010754661533718304,0.010754661533718304
+650,Mathematics,Zero of a function,0,0.0,0.0
+651,Law of sines,Line (geometry),1,0.044072631780966064,0.0
+652,Function composition,Mathematics,1,1.0,1.0
+653,Polynomial,Subtraction,0,0.009480464112291608,0.009480464112291608
+654,Trigonometric functions,Geometry,1,0.011877339426256552,0.011877339426256552
+655,Mathematics,Function composition,0,0.0,0.0
+656,Line (geometry),Triangle,0,0.014633612008599285,0.014633612008599285
+657,Equation,Domain of a function,0,0.06256081370209271,0.0
+658,Rotation of axes,Geometry,1,0.044831379872713004,0.044831379872713004
+659,Curve,Conic section,0,0.04095919218635853,0.04095919218635853
+660,Cross product,Multiplication,1,0.07400966899011653,0.07400966899011653
+661,Real number,Vector (mathematics and physics),0,0.0,0.0
+662,Constant function,Zero of a function,0,0.0,0.0
+663,Geometric series,Series (mathematics),1,0.5358976401415726,0.5358976401415726
+664,Polar coordinate system,Coordinate system,1,0.3374000834624161,0.3374000834624161
+665,Function composition,Real number,0,0.007681901095513072,0.007681901095513072
+666,Summation,Mathematics,1,1.0,1.0
+667,Position (vector),Real number,0,0.0038630249761919186,0.0
+668,Binomial,Mathematics,1,1.0,1.0
+669,Logarithm,Nth root,0,0.09979167696483954,0.09979167696483954
+670,Curve,Secant line,0,0.010965502712528524,0.0
+671,Determinant,Vector (mathematics and physics),0,0.06185713993182765,0.0
+672,Multiplication,Exponential growth,0,0.027181347203316674,0.0
+673,Vertical line test,Mathematics,1,1.0,1.0
+674,Plane curve,Curve,1,0.3220989643593026,0.3220989643593026
+675,Coordinate system,Mathematics,1,1.0,1.0
+676,Constant function,Function (mathematics),1,0.17767581016706693,0.0
+677,Arithmetic,Partial fraction decomposition,0,0.03281838334665325,0.0
+678,Zero (complex analysis),Real number,1,0.010543785817370884,0.010543785817370884
+679,Geometry,Real line,0,0.01181660361339237,0.0
+680,Mathematics,Rotation of axes,0,0.0,0.0
+681,Right triangle,Mathematics,1,1.0,1.0
+682,Algebraic expression,Nth root,0,0.036393805266710016,0.036393805266710016
+683,Constant function,Mathematics,1,1.0,1.0
+684,Complex plane,Plane (geometry),1,0.026679361894948225,0.0
+685,Mathematics,Geometry,0,0.0,0.0
+686,Mathematics,Quadratic equation,0,0.0,0.0
+687,Right triangle,Angle,1,0.3972911589862478,0.3972911589862478
+688,Function (mathematics),Mathematics,1,1.0,1.0
+689,Algebraic expression,Exponentiation,1,0.036393805266710016,0.036393805266710016
+690,Curve,Mathematics,1,1.0,1.0
+691,Floor and ceiling functions,Real number,0,0.03432338787356905,0.03432338787356905
+692,Geometry,Spherical law of cosines,0,0.02758795706539209,0.0
+693,Circle,Unit circle,0,0.3910972138255314,0.3910972138255314
+694,Linear equation,Linear inequality,0,0.0,0.0
+695,Complex number,Equation solving,0,0.09583252858651026,0.0
+696,Exponential growth,Arithmetic,1,0.044072631780966064,0.044072631780966064
+697,Product (mathematics),Mathematics,1,1.0,1.0
+698,Partial fraction decomposition,Number,1,0.003470218542235993,0.003470218542235993
+699,Imaginary number,Number,1,0.04448998131071786,0.04448998131071786
+700,Inequality (mathematics),Domain of a function,0,0.04223888163744927,0.0
+701,Linear function,Calculus,1,1.0,1.0
+702,Arithmetic,Addition,0,0.015808050116385367,0.015808050116385367
+703,Zero of a function,Multiplicative inverse,0,0.002226054580983326,0.0
+704,Product (mathematics),Multiplication,1,0.06700283642300492,0.06700283642300492
+705,Arithmetic,Binomial theorem,0,0.03686327296772268,0.0
+706,Formula,Mathematics,1,1.0,1.0
+707,Law of sines,Mathematics,1,1.0,1.0
+708,Angle,Right triangle,0,0.055003548725567855,0.055003548725567855
+709,Complex number,Nth root,0,0.027181347203316674,0.027181347203316674
+710,Function (mathematics),Cubic function,0,0.009316496867892763,0.0
+711,Geometry,Rotation (mathematics),0,0.010038339130143036,0.0
+712,Complex number,Quadratic equation,0,0.09583252858651026,0.0
+713,Domain of a function,Zero of a function,0,0.0,0.0
+714,Geometry,Plane curve,0,0.046936096810098735,0.046936096810098735
+715,Quadratic function,Function (mathematics),1,0.2464594917366736,0.0
+716,Law of sines,Trigonometry,1,0.04031127057473953,0.04031127057473953
+717,Transformation (function),Hyperbola,0,0.010869917519622341,0.0
+718,Number,Floor and ceiling functions,0,0.01169243502874151,0.0
+719,Exponential function,Sine,0,0.04095919218635853,0.04095919218635853
+720,Exponentiation,Nth root,0,0.10184408757817326,0.10184408757817326
+721,Partial fraction decomposition,Rational function,0,0.05562955339314055,0.05562955339314055
+722,Multiplicative inverse,Arithmetic,1,0.014552718540005512,0.014552718540005512
+723,Function (mathematics),Linear inequality,0,0.0,0.0
+724,Extended real number line,Real number,1,0.06806747806150824,0.06806747806150824
+725,Complex plane,Mathematics,1,1.0,1.0
+726,Line (geometry),Mathematics,1,1.0,1.0
+727,Binomial theorem,Binomial,1,0.4898552999116612,0.4898552999116612
+728,Addition,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+729,Curve,Geometry,1,0.011877339426256552,0.011877339426256552
+730,Vertical line test,Graph of a function,1,0.11264825994414328,0.11264825994414328
+731,Coordinate system,Polar coordinate system,0,0.7443642112911243,0.7443642112911243
+732,Line–line intersection,Mathematics,1,1.0,0.0
+733,Inverse trigonometric functions,Trigonometric functions,1,0.09492411314077644,0.09492411314077644
+734,Arithmetic,Multiplication,0,0.021020497701334875,0.021020497701334875
+735,Inverse trigonometric functions,Multiplicative inverse,0,0.020978786735308008,0.020978786735308008
+736,Algebra,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+737,Linear equation,System of linear equations,0,0.1052319152586736,0.1052319152586736
+738,Line segment,Mathematics,1,1.0,1.0
+739,Complex number,Domain of a function,0,0.06256081370209271,0.0
+740,Mathematics,Inequality (mathematics),0,0.0,0.0
+741,Number,Rotation of axes,0,0.0,0.0
+742,Equation,Number,1,0.0064263306337703574,0.0064263306337703574
+743,Rationalisation (mathematics),Complex number,0,0.07795111398334649,0.07795111398334649
+744,Function (mathematics),Multiplicative inverse,0,0.002226054580983326,0.0
+745,Number,Equation,0,0.044072631780966064,0.044072631780966064
+746,Line (geometry),Law of sines,0,0.026493249134474543,0.0
+747,Mathematics,Secant line,0,0.0,0.0
+748,Exponentiation,Logarithm,0,0.13579211677089767,0.13579211677089767
+749,Geometry,Complex plane,0,0.0,0.0
+750,Function composition,Domain of a function,0,0.17544527095356108,0.0
+751,Graph of a function,Mathematics,1,1.0,1.0
+752,Vertical line test,Domain of a function,0,0.006891789543630345,0.0
+753,Multiplication,Partial fraction decomposition,0,0.0,0.0
+754,Fundamental theorem of algebra,Complex number,1,0.1488331318456542,0.1488331318456542
+755,Equation,Simultaneous equations,0,0.1052319152586736,0.1052319152586736
+756,Pythagorean trigonometric identity,Trigonometry,1,0.04031127057473953,0.04031127057473953
+757,Multiplication,Subtraction,0,0.0311615254998952,0.0311615254998952
+758,Mathematics,Plane curve,0,0.0,0.0
+759,Addition,Subtraction,0,0.0311615254998952,0.0311615254998952
+760,Exponentiation,Unit circle,0,0.015202877140457963,0.015202877140457963
+761,Linear function,Linear inequality,0,0.0,0.0
+762,Floor and ceiling functions,Number,1,0.025842052974097817,0.025842052974097817
+763,Geometry,Coordinate system,0,0.06711127343186858,0.0
+764,Unit circle,Geometry,1,0.011877339426256552,0.011877339426256552
+765,Addition,Real number,0,0.06806747806150824,0.06806747806150824
+766,Mathematics,Quadratic function,0,0.0,0.0
+767,Mathematics,Extended real number line,0,0.0,0.0
+768,Polynomial,Quadratic function,0,0.09239875486127436,0.09239875486127436
+769,Dot product,Number,1,0.001495783854412066,0.001495783854412066
+770,Mathematics,Mathematical induction,0,0.0,0.0
+771,Logarithm,Function (mathematics),0,0.11898917423342226,0.0
+772,Vertical line test,Line (geometry),1,0.035169069805013324,0.0
+773,Line (geometry),Curve,0,0.06185713993182765,0.06185713993182765
+774,Exponentiation,Complex number,0,0.027181347203316674,0.027181347203316674
+775,Sine,Identity (mathematics),0,0.07114545066756629,0.0
+776,Quadratic function,Quadratic equation,0,0.035169069805013324,0.035169069805013324
+777,Multiplication,Exponential function,0,0.0,0.0
+778,Mathematics,Equation,0,0.0,0.0
+779,Multiplication,Arithmetic,1,0.027181347203316674,0.027181347203316674
+780,Geometry,Right triangle,0,0.01382602864139957,0.0
+781,Curve,Circle,0,0.026493249134474543,0.026493249134474543
+782,Sum,Number,1,0.011678620094063438,0.011678620094063438
+783,Function (mathematics),Graph of a function,0,0.1024957913755097,0.1024957913755097
+784,Domain of a function,Function (mathematics),1,0.3200458818719548,0.0
+785,Logarithm,Multiplication,1,0.0023158175433674014,0.0023158175433674014
+786,Floor and ceiling functions,Mathematics,1,1.0,1.0
+787,Zero of a function,Function (mathematics),1,0.21484726330336454,0.0
+788,Triangle,Line (geometry),1,0.00422968768256285,0.0
+789,Inverse trigonometric functions,Domain of a function,0,0.1319464434444137,0.0
+790,Exponential function,Number,1,0.008662421474567911,0.008662421474567911
+791,Mathematics,Binomial,0,0.0,0.0
+792,Cubic function,Mathematics,1,1.0,1.0
+793,Polynomial,Algebraic expression,0,0.001702426748459801,0.001702426748459801
+794,Binomial theorem,Number,1,0.0064263306337703574,0.0064263306337703574
+795,Line (geometry),System of linear equations,0,0.1152975767181989,0.0
+796,Arithmetic,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+797,Fundamental theorem of algebra,Polynomial,1,0.3528364217496703,0.3528364217496703
+798,Summation,Addition,1,0.018969660139662444,0.018969660139662444
+799,Sum,Mathematics,1,1.0,1.0
+800,Unit circle,Inverse trigonometric functions,0,0.0,0.0
+801,System of linear equations,Number,1,0.007010542509567664,0.007010542509567664
+802,Simultaneous equations,Equation,1,0.053638303755229794,0.053638303755229794
+803,Fundamental theorem of algebra,Multiplication,1,0.03616762104494383,0.0
+804,Mathematics,Trigonometry,0,0.0,0.0
+805,Sine,Real number,0,0.04286278147496424,0.04286278147496424
+806,Matrix ring,Arithmetic,1,0.047546626831744064,0.0
+807,Plane curve,Mathematics,1,1.0,1.0
+808,Multiplication,Even and odd functions,0,0.017773066531068134,0.0
+809,Right triangle,Triangle,1,0.2436219371142085,0.2436219371142085
+810,Rotation of axes,Coordinate system,1,0.0438620108501141,0.0438620108501141
+811,Even and odd functions,Domain of a function,0,0.06256081370209271,0.0
+812,Exponential growth,Common logarithm,0,0.337530642300765,0.0
+813,Coordinate system,Circle,0,0.08630078876866244,0.08630078876866244
+814,Mathematics,Spherical law of cosines,0,0.0,0.0
+815,Exponential function,Function (mathematics),1,0.0849665510411124,0.0
+816,Partial fraction decomposition,Polynomial,1,0.037883489493122494,0.037883489493122494
+817,Trigonometry,Trigonometric functions,0,0.3480550815161803,0.3480550815161803
+818,Arithmetic,Binomial,0,0.0178489785392913,0.0
+819,Line–line intersection,Geometry,1,0.011877339426256552,0.011877339426256552
+820,Number,Complex number,0,0.027181347203316674,0.027181347203316674
+821,Function (mathematics),Linear function,0,0.0230553729251625,0.0230553729251625
+822,Quadratic equation,Equation,1,0.16817843156587678,0.16817843156587678
+823,Mathematics,Expression (mathematics),0,0.0,0.0
+824,Secant line,Mathematics,1,1.0,1.0
+825,Mathematics,Fundamental theorem of algebra,0,0.0,0.0
+826,Polynomial,Rational number,0,0.002288766161162901,0.002288766161162901
+827,Mathematics,Limit of a function,0,0.0,0.0
+828,Line segment,Law of sines,0,0.026493249134474543,0.0
+829,Quadratic equation,Sine,0,0.02213853743836276,0.02213853743836276
+830,Equation solving,Nth root,0,0.027181347203316674,0.027181347203316674
+831,Inverse trigonometric functions,Function (mathematics),1,0.2935787444268254,0.0
+832,Binomial,Polynomial,1,0.2549850254344783,0.2549850254344783
+833,Multiplication,Binomial theorem,0,0.020713232472835755,0.0
+834,Real number,Rational number,0,0.022568972652479747,0.022568972652479747
+835,Limit (mathematics),Calculus,1,1.0,1.0
+836,Limit of a function,Mathematics,1,1.0,1.0
+837,Number,Sum,0,0.004557307806834618,0.004557307806834618
+838,Multiplication,Fundamental theorem of algebra,0,0.027181347203316674,0.0
+839,Real number,System of linear equations,0,0.044072631780966064,0.0
+840,Line (geometry),Plane curve,0,0.011877339426256552,0.0
+841,Linear function,Graph of a function,0,0.11264825994414328,0.0
+842,Number,Subtraction,0,0.0311615254998952,0.0311615254998952
+843,Determinant,Matrix (mathematics),1,0.7495221317832218,0.0
+844,Inequality (mathematics),Number,1,0.0053885381090621005,0.0053885381090621005
+845,Number,Nth root,0,0.027181347203316674,0.0
+846,Function composition,Transformation (function),0,0.020978786735308008,0.0
+847,Subtraction,Inequality (mathematics),0,0.0,0.0
+848,Mathematical induction,Real number,0,0.06700283642300492,0.06700283642300492
+849,Multiplication,Real number,0,0.06806747806150824,0.06806747806150824
+850,Real number,Absolute value,0,0.0258245314315038,0.0258245314315038
+851,Complex number,Zero (complex analysis),0,0.09583252858651026,0.0
+852,Exponentiation,Multiplication,1,0.04204099540266975,0.04204099540266975
+853,Law of sines,Angle,1,0.3428059109421869,0.3428059109421869
+854,Unit circle,Equation,0,0.023914773678887016,0.023914773678887016
+855,Addition,Polynomial,0,0.027181347203316674,0.0
+856,Arithmetic,Dot product,0,0.01877436577792653,0.0
+857,Equation solving,Equation,1,0.16817843156587678,0.16817843156587678
+858,Function (mathematics),Exponential function,0,0.014552718540005512,0.014552718540005512
+859,Transformation (function),Mathematics,1,1.0,1.0
+860,Number,Exponential growth,0,0.027181347203316674,0.0
+861,Imaginary number,Complex number,1,0.3892558832886341,0.3892558832886341
+862,Exponentiation,Sine,0,0.020978786735308008,0.020978786735308008
+863,Periodic function,Function (mathematics),1,0.3200458818719548,0.0
+864,Equation,Linear equation,0,0.1052319152586736,0.1052319152586736
+865,Mathematics,Rational function,0,0.0,0.0
+866,Fundamental theorem of algebra,Algebra,1,0.04095919218635853,0.04095919218635853
+867,Real number,Limit of a sequence,0,0.0,0.0
+868,Number,Linear equation,0,0.044072631780966064,0.0
+869,Sine,Trigonometry,1,0.04031127057473953,0.04031127057473953
+870,Mathematics,Limit (mathematics),0,0.0,0.0
+871,Polar coordinate system,Number,1,0.044777013448206365,0.044777013448206365
+872,Angle,Law of sines,0,0.04860946401770085,0.0
+873,Equation solving,Real number,0,0.014937029907942084,0.014937029907942084
+874,Rational function,Mathematics,1,1.0,1.0
+875,Function (mathematics),Continuous function,0,0.004288951806922272,0.004288951806922272
+876,Quadratic equation,Number,1,0.0064263306337703574,0.0064263306337703574
+877,Subtraction,Real number,0,0.06806747806150824,0.06806747806150824
+878,Mathematics,Algebra,0,0.0,0.0
+879,Series (mathematics),Geometric series,0,0.16101655217313013,0.16101655217313013
+880,Addition,Complex number,0,0.027181347203316674,0.027181347203316674
+881,Number,Summation,0,0.004557307806834618,0.0
+882,Exponential function,Exponential growth,0,0.2483701500393575,0.2483701500393575
+883,Real number,Real line,0,0.08211791625003052,0.08211791625003052
+884,Number,Algebraic equation,0,0.007066265228279215,0.007066265228279215
+885,Linear inequality,Function (mathematics),1,0.04223888163744927,0.0
+886,Cross product,Product (mathematics),1,0.11578902919547245,0.0
+887,Linear inequality,Linear function,1,0.027181347203316674,0.027181347203316674
+888,Mathematics,Equation solving,0,0.0,0.0
+889,Mathematics,Polar coordinate system,0,0.0,0.0
+890,Mathematics,Binomial theorem,0,0.0,0.0
+891,Addition,Summation,0,0.004557307806834618,0.004557307806834618
+892,Binomial theorem,Multiplication,1,0.025302450936791968,0.0
+893,Conic section,Curve,1,0.011544765747645251,0.011544765747645251
+894,Curve,Plane curve,0,0.1670546728796225,0.1670546728796225
+895,Binomial,Addition,1,0.011856037587289026,0.011856037587289026
+896,Triangle,Line segment,1,0.03178406583341601,0.03178406583341601
+897,Partial fraction decomposition,Addition,1,0.0351178834864004,0.0351178834864004
+898,Trigonometric functions,Trigonometry,1,0.04031127057473953,0.04031127057473953
+899,Summation,Number,1,0.03470218542235993,0.03470218542235993
+900,Arithmetic,Summation,0,0.006154313106665554,0.006154313106665554
+901,Pythagorean trigonometric identity,Geometry,1,0.011877339426256552,0.011877339426256552
+902,Arithmetic,Logarithm,0,0.036393805266710016,0.036393805266710016
+903,Mathematics,Plane (geometry),0,0.0,0.0
+904,Geometric series,Mathematics,1,1.0,1.0
+905,Binomial,Summation,0,0.02769440897999499,0.02769440897999499
+906,Real number,Imaginary number,0,0.027181347203316674,0.027181347203316674
+907,Logarithm,Exponentiation,1,0.09979167696483954,0.09979167696483954
+908,Logarithm,Arithmetic,1,0.044072631780966064,0.044072631780966064
+909,Mathematics,Addition,0,0.0,0.0
+910,Number,Logarithm,0,0.027181347203316674,0.0
+911,Polynomial,Function composition,0,0.010905876040414316,0.0
+912,Common logarithm,Number,1,0.013880874168943971,0.013880874168943971
+913,Limit (mathematics),Mathematics,1,1.0,1.0
+914,Sine,Inverse trigonometric functions,0,0.0,0.0
+915,Quadratic equation,Rational number,0,0.022568972652479747,0.022568972652479747
+916,Summation,Arithmetic,1,0.047546626831744064,0.047546626831744064
+917,Equation,Zero of a function,0,0.0,0.0
